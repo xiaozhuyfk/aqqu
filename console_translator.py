@@ -58,6 +58,8 @@ def main():
             result_str = "Result: %s\n" % (" ".join(result))
             writeFile(test_file, query_str, "a")
             writeFile(test_file, result_str, "a")
+            writeFile(test_file, graph_str, "a")
+            writeFile(test_file, graph_str_simple, "a")
         writeFile(test_file, "\n", "a")
 
     """
