@@ -43,7 +43,7 @@ def main():
     for query in test_set:
         results = translator.translate_and_execute_query(query)
         if (len(results) > 0):
-            for i in len(results):
+            for i in xrange(len(results)):
                 if (i > 5):
                     break
                 candidate = results[i].query_candidate
