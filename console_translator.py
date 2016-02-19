@@ -59,7 +59,7 @@ def main():
                 query_str = "SPARQL query: %s\n" % sparql_query.encode('utf-8')
                 graph_str = "Candidate Graph: %s\n" % candidate.graph_as_string().encode('utf-8')
                 graph_str_simple = "Simple Candidate Graph: %s\n" % candidate.graph_as_simple_string().encode('utf-8')
-                result_str = "Result: %s\n" % (" ".join(result))
+                result_str = "Result: %s\n" % (" ".join(result)).encode('utf-8')
                 writeFile(test_file, root_name, "a")
                 writeFile(test_file, graph_str, "a")
                 writeFile(test_file, graph_str_simple, "a")
