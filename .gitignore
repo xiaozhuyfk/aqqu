@@ -8,4 +8,7 @@ corenlp-frontend/
 lib/
 virtuoso-db/
 virtuoso-opensource/
+.idea/
+.project
+.pydevproject
 
