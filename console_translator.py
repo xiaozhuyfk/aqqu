@@ -53,6 +53,8 @@ def main():
                 else:
                     result.append("%s" % r[0])
             query_str = "SPARQL query: %s\n" % sparql_query
+            graph_str = "Candidate Graph: %s\n" % best_candidate.graph_as_string()
+            graph_str_simple = "Simple Candidate Graph: %s\n" % best_candidate.graph_as_simple_string()
             result_str = "Result: %s\n" % (" ".join(result))
             writeFile(test_file, query_str, "a")
             writeFile(test_file, result_str, "a")
