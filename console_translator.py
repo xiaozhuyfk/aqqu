@@ -43,24 +43,29 @@ def main():
     for query in test_set:
         results = translator.translate_and_execute_query(query)
         if (len(results) > 0):
-            best_candidate = results[0].query_candidate
-            sparql_query = best_candidate.to_sparql_query()
-            result_rows = results[0].query_result_rows
-            result = []
-            for r in result_rows:
-                if len(r) > 1:
-                    result.append("%s (%s)" % (r[1], r[0]))
-                else:
-                    result.append("%s" % r[0])
-            query_str = "SPARQL query: %s\n" % sparql_query
-            graph_str = "Candidate Graph: %s\n" % best_candidate.graph_as_string().encode('utf-8')
-            graph_str_simple = "Simple Candidate Graph: %s\n" % best_candidate.graph_as_simple_string().encode('utf-8')
-            result_str = "Result: %s\n" % (" ".join(result))
-            writeFile(test_file, query_str, "a")
-            writeFile(test_file, result_str, "a")
-            writeFile(test_file, graph_str, "a")
-            writeFile(test_file, graph_str_simple, "a")
-        writeFile(test_file, "\n", "a")
+            for i in len(results):
+                if (i > 5):
+                    break
+                candidate = results[i].query_candidate
+                sparql_query = candidate.to_sparql_query()
+                result_rows = results[i].query_result_rows
+                result = []
+                for r in result_rows:
+                    if len(r) > 1:
+                        result.append("%s (%s)" % (r[1], r[0]))
+                    else:
+                        result.append("%s" % r[0])
+                root_name = "Root Node: %s\n" % candidate.root_node.entity.name
+                query_str = "SPARQL query: %s\n" % sparql_query
+                graph_str = "Candidate Graph: %s\n" % candidate.graph_as_string().encode('utf-8')
+                graph_str_simple = "Simple Candidate Graph: %s\n" % candidate.graph_as_simple_string().encode('utf-8')
+                result_str = "Result: %s\n" % (" ".join(result))
+                writeFile(test_file, root_name, "a")
+                writeFile(test_file, graph_str, "a")
+                writeFile(test_file, graph_str_simple, "a")
+                writeFile(test_file, query_str, "a")
+                writeFile(test_file, result_str, "a")
+            writeFile(test_file, "\n", "a")
 
     """
     while True:
