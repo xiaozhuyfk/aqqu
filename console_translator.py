@@ -44,7 +44,7 @@ def main():
         results = translator.translate_and_execute_query(query)
         if (len(results) > 0):
             for i in xrange(len(results)):
-                if (i > 5):
+                if (i > 0):
                     break
                 candidate = results[i].query_candidate
                 sparql_query = candidate.to_sparql_query()
