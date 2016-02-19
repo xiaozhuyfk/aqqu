@@ -1,0 +1,848 @@
+Query: when was oxygen discovered
+Entity: (u'wasoxygen', 1.0, 0, True)
+Entity: (u'Oxygen', 1.0, 255237, False)
+TargetType: Date
+Root Node: Oxygen
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Oxygen, Oxygen: tokens:oxygen,discovered prob:1.000 score:255237 perfect_match:False]
+    ->Relation [name:chemistry.chemical_element.discovery_date, chemistry.chemical_element.discovery_date:
+  ]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Oxygen (m.025s6bf)] -> [chemistry.chemical_element.discovery_date] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.025s6bf fb:chemistry.chemical_element.discovery_date ?0 .
+ FILTER (?0 != fb:m.025s6bf) 
+} LIMIT 300
+Result: 1774
+
+Query: who designed the parthenon
+Entity: (u'Parthenon', 0.604093622193, 98612, True)
+Entity: (u'Parthenon (Venue)', 0.382668332122, 2328, True)
+Entity: (u'Parthenon', 0.961783697742, 98612, True)
+TargetType: person, organization, employer, character
+Root Node: Parthenon
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Parthenon, Parthenon: tokens:the,parthenon prob:0.604 score:98612 perfect_match:True]
+    ->Relation [name:architecture.structure.architect, architecture.structure.architect:
+  DerivationMatch: design=architect
+  RelationContext: design:0.1143
+  RelationNameSynonym: design=architect:0.48]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Parthenon (m.05x7b)] -> [architecture.structure.architect] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.05x7b fb:architecture.structure.architect ?0 .
+ FILTER (?0 != fb:m.05x7b) 
+} LIMIT 300
+Result: Ictinus (m.03w1d) Callicrates (m.04937) Phidias (m.0j4yg)
+
+Query: who was 8 mile directed by
+Entity: (u'8 Mile', 0.718789728861, 275, True)
+Entity: (u'Film director (Profession)', 0.499643274822, 12592, False)
+Entity: (u'Jean Negulesco', 0.403966256452, 1171, False)
+Entity: (u'Mile', 0.919329395517, 2082, True)
+TargetType: person, organization, employer, character
+Root Node: 8 Mile
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:8 Mile, 8 Mile: tokens:8,mile prob:0.719 score:275 perfect_match:True]
+    ->Relation [name:film.film.directed_by, film.film.directed_by:
+  RelationName: direct=direct
+  RelationContext: direct:0.1397
+  RelationNameSynonym: direct=direct:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [8 Mile (m.017d93)] -> [film.film.directed_by] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.017d93 fb:film.film.directed_by ?0 .
+ FILTER (?0 != fb:m.017d93) 
+} LIMIT 300
+Result: Curtis Hanson (m.0184jw)
+
+Query: when was facebook launched
+Entity: (u'Facebook', 0.980081051933, 20490157, True)
+TargetType: Date
+Root Node: Facebook
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Facebook, Facebook: tokens:facebook prob:0.980 score:20490157 perfect_match:True]
+    ->Relation [name:internet.website.launched, internet.website.launched:
+  RelationName: launch=launch
+  DerivationMatch: launch=launch
+  RelationContext: launch:0.0543
+  RelationNameSynonym: launch=launch:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Facebook (m.02y1vz)] -> [internet.website.launched] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.02y1vz fb:internet.website.launched ?0 .
+ FILTER (?0 != fb:m.02y1vz) 
+} LIMIT 300
+Result: 2004-02-04
+
+Query: who was titanic directed by
+Entity: (u'Film director (Profession)', 0.499643274822, 12592, False)
+Entity: (u'Jean Negulesco', 0.403966256452, 1171, False)
+Entity: (u'RMS Titanic', 0.509296562585, 130691, False)
+Entity: (u'Titanic', 0.409702044761, 131297, True)
+TargetType: person, organization, employer, character
+Root Node: Titanic
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Titanic, Titanic: tokens:titanic prob:0.410 score:131297 perfect_match:True]
+    ->Relation [name:film.film.directed_by, film.film.directed_by:
+  RelationName: direct=direct
+  RelationContext: direct:0.1397
+  RelationNameSynonym: direct=direct:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Titanic (m.0dr_4)] -> [film.film.directed_by] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.0dr_4 fb:film.film.directed_by ?0 .
+ FILTER (?0 != fb:m.0dr_4) 
+} LIMIT 300
+Result: James Cameron (m.03_gd)
+
+Query: who is the ceo of savealot
+Entity: (u'C. Edward McVaney', 0.958904109589, 140, False)
+Entity: (u'Save-A-Lot', 1.0, 661, True)
+Entity: (u'Managing Director', 0.97081319684, 92293, False)
+TargetType: person, organization, employer, character
+Root Node: Managing Director
+Candidate Graph:   QueryCandidate [pattern:ERMRERT
+  Entity [name:Managing Director, Managing Director: tokens:ceo prob:0.971 score:92293 perfect_match:False]
+    ->Relation [name:organization.role.leaders, organization.role.leaders -> organization.leadership.organization:
+  ]
+  Variable [index:0]
+    ->Relation [name:organization.leadership.organization, organization.role.leaders -> organization.leadership.organization:
+  ]
+    ->Relation [name:organization.leadership.person, organization.leadership.person:
+  ]
+  Entity [name:Save-A-Lot, Save-A-Lot: tokens:savealot prob:1.000 score:661 perfect_match:True]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [Managing Director (m.0dq_5)] -> [organization.role.leaders] -> [?0]
+  [?0] -> [organization.leadership.organization] -> [Save-A-Lot (m.0209r2)]
+  [?0] -> [organization.leadership.person] -> [?1]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?1 where {
+ fb:m.0dq_5 fb:organization.role.leaders ?0 .
+ ?0 fb:organization.leadership.organization fb:m.0209r2 .
+ ?0 fb:organization.leadership.person ?1 .
+ FILTER (?1 != fb:m.0dq_5 && ?1 != fb:m.0209r2) 
+} LIMIT 300
+Result: Santiago Roces (m.0ncnxfr)
+
+Query: what is europe 's area
+Entity: (u'Europe', 0.85924160737, 39937138, False)
+Entity: (u'Sarea', 0.393782347338, 4, True)
+Entity: (u'Europe (Hard rock Artist)', 0.129742527375, 863, False)
+Entity: (u'Europe', 0.924371413609, 39937138, True)
+Entity: (u'Area', 0.850698126258, 76568, True)
+TargetType: Other
+Root Node: Europe
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Europe, Europe: tokens:europe,'s prob:0.859 score:39937138 perfect_match:False]
+    ->Relation [name:location.location.area, location.location.area:
+  RelationName: area=area
+  RelationContext: area:0.0815
+  RelationNameSynonym: area=location:0.46,area=area:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Europe (m.02j9z)] -> [location.location.area] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.02j9z fb:location.location.area ?0 .
+ FILTER (?0 != fb:m.02j9z) 
+} LIMIT 300
+Result: 10180000
+
+Query: where was omarion born
+Entity: (u'Omarion', 0.99980405604, 20410, True)
+TargetType: location, event, conference
+Root Node: Omarion
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Omarion, Omarion: tokens:omarion prob:1.000 score:20410 perfect_match:True]
+    ->Relation [name:people.person.place_of_birth, people.person.place_of_birth:
+  RelationContext: bear:0.2166]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Omarion (m.019g40)] -> [people.person.place_of_birth] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.019g40 fb:people.person.place_of_birth ?0 .
+ FILTER (?0 != fb:m.019g40) 
+} LIMIT 300
+Result: Inglewood (m.0r0f7)
+
+Query: what is yahoo!'s slogan
+Entity: (u'Yahoo (Character Species)', 0.70089766458, 134, False)
+Entity: (u'Yahoo!', 0.185242715267, 10885291, False)
+Entity: (u'Yahoo!', 0.942008697844, 10885291, True)
+Entity: (u'Slogan', 0.767881657439, 9222, True)
+TargetType: Other
+Root Node: Yahoo!
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Yahoo!, Yahoo!: tokens:yahoo! prob:0.942 score:10885291 perfect_match:True]
+    ->Relation [name:organization.organization.slogan, organization.organization.slogan:
+  RelationName: slogan=slogan
+  RelationNameSynonym: slogan=slogan:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Yahoo! (m.019rl6)] -> [organization.organization.slogan] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.019rl6 fb:organization.organization.slogan ?0 .
+ FILTER (?0 != fb:m.019rl6) 
+} LIMIT 300
+Result: Do You Yahoo!?
+
+Query: who created the far side
+Entity: (u'The Far Side', 0.990166308402, 8107, True)
+Entity: (u'Far side of the Moon', 0.603548026821, 9954, False)
+Entity: (u'Side', 0.692583545351, 4773, True)
+TargetType: person, organization, employer, character
+Root Node: The Far Side
+Candidate Graph:   QueryCandidate [pattern:ERMRT
+  Entity [name:The Far Side, The Far Side: tokens:the,far,side prob:0.990 score:8107 perfect_match:True]
+    ->Relation [name:comic_strips.comic_strip.creator_of_strip, comic_strips.comic_strip.creator_of_strip -> comic_strips.comic_strip_creator_duration.creator_of_strip:
+  DerivationMatch: create=creator,create=creator,create=creator
+  RelationContext: create:0.0166]
+  Variable [index:0]
+    ->Relation [name:comic_strips.comic_strip_creator_duration.creator_of_strip, comic_strips.comic_strip.creator_of_strip -> comic_strips.comic_strip_creator_duration.creator_of_strip:
+  DerivationMatch: create=creator,create=creator,create=creator
+  RelationContext: create:0.0166]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [The Far Side (m.016p4x)] -> [comic_strips.comic_strip.creator_of_strip] -> [?0]
+  [?0] -> [comic_strips.comic_strip_creator_duration.creator_of_strip] -> [?1]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?1 where {
+ fb:m.016p4x fb:comic_strips.comic_strip.creator_of_strip ?0 .
+ ?0 fb:comic_strips.comic_strip_creator_duration.creator_of_strip ?1 .
+ FILTER (?1 != fb:m.016p4x) 
+} LIMIT 300
+Result: Gary Larson (m.0m8g2)
+
+Query: when was walmart founded
+Entity: (u'Walmart', 0.983760899289, 3391946, True)
+TargetType: Date
+Root Node: Walmart
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Walmart, Walmart: tokens:walmart prob:0.984 score:3391946 perfect_match:True]
+    ->Relation [name:organization.organization.date_founded, organization.organization.date_founded:
+  RelationName: found=found
+  RelationContext: found:0.1343
+  RelationNameSynonym: found=found:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Walmart (m.0841v)] -> [organization.organization.date_founded] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.0841v fb:organization.organization.date_founded ?0 .
+ FILTER (?0 != fb:m.0841v) 
+} LIMIT 300
+Result: 1962
+
+Query: who designed pac-man
+Entity: (u'Pac-Man', 0.882586406895, 196287, True)
+TargetType: person, organization, employer, character
+Root Node: Pac-Man
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Pac-Man, Pac-Man: tokens:pac-man prob:0.883 score:196287 perfect_match:True]
+    ->Relation [name:cvg.computer_videogame.designers, cvg.computer_videogame.designers:
+  RelationName: design=designer
+  DerivationMatch: design=designer
+  RelationContext: design:0.0166
+  RelationNameSynonym: design=designer:0.58]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pac-Man (m.0jt_x)] -> [cvg.computer_videogame.designers] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.0jt_x fb:cvg.computer_videogame.designers ?0 .
+ FILTER (?0 != fb:m.0jt_x) 
+} LIMIT 300
+Result: Tōru Iwatani (m.01vhj6)
+
+Query: who invented koolaid
+Entity: (u'Kool-Aid', 0.711291198868, 163763, True)
+Entity: (u'Drinking the Kool-Aid', 0.143353777538, 63, False)
+TargetType: person, organization, employer, character
+Root Node: Kool-Aid
+Candidate Graph:   QueryCandidate [pattern:ERMRT
+  Entity [name:Kool-Aid, Kool-Aid: tokens:koolaid prob:0.711 score:163763 perfect_match:True]
+    ->Relation [name:business.brand.owner_s, business.brand.owner_s -> business.company_brand_relationship.company:
+  RelationContext: invent:0.0011]
+  Variable [index:0]
+    ->Relation [name:business.company_brand_relationship.company, business.brand.owner_s -> business.company_brand_relationship.company:
+  RelationContext: invent:0.0011]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Kool-Aid (m.01l566)] -> [business.brand.owner_s] -> [?0]
+  [?0] -> [business.company_brand_relationship.company] -> [?1]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?1 where {
+ fb:m.01l566 fb:business.brand.owner_s ?0 .
+ ?0 fb:business.company_brand_relationship.company ?1 .
+ FILTER (?1 != fb:m.01l566) 
+} LIMIT 300
+Result: Kraft Foods (m.02ktt7)
+
+Query: what causes syphilis
+Entity: (u'Syphilis', 0.993693902013, 25796, True)
+TargetType: Other
+Root Node: Syphilis
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Syphilis, Syphilis: tokens:syphilis prob:0.994 score:25796 perfect_match:True]
+    ->Relation [name:medicine.disease.causes, medicine.disease.causes:
+  RelationName: cause=cause
+  DerivationMatch: cause=cause
+  RelationContext: cause:0.0637
+  RelationNameSynonym: cause=cause:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Syphilis (m.074m2)] -> [medicine.disease.causes] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.074m2 fb:medicine.disease.causes ?0 .
+ FILTER (?0 != fb:m.074m2) 
+} LIMIT 300
+Result: Treponema pallidum (m.0gr12)
+
+Query: who started starbucks
+Entity: (u'Starbucks', 0.990318457842, 1747549, True)
+TargetType: person, organization, employer, character
+Root Node: Starbucks
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Starbucks, Starbucks: tokens:starbucks prob:0.990 score:1747549 perfect_match:True]
+    ->Relation [name:organization.organization.founders, organization.organization.founders:
+  RelationContext: start:0.0052]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Starbucks (m.018c_r)] -> [organization.organization.founders] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.018c_r fb:organization.organization.founders ?0 .
+ FILTER (?0 != fb:m.018c_r) 
+} LIMIT 300
+Result: Gordon Bowker (m.06q6mf) Zev Siegl (m.05f9x3z) Jerry Baldwin (m.06th9v)
+
+Query: what team does mike babcock coach
+Entity: (u'Mike Babcock', 0.99929349426, 16973, True)
+Entity: (u'Team', 0.441557255154, 414089, True)
+Entity: (u'Coach', 0.367595380119, 4446, True)
+Entity: (u'Baseball Coach', 0.107632822168, 1596, False)
+TargetType: Other
+Root Node: Mike Babcock
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Mike Babcock, Mike Babcock: tokens:mike,babcock prob:0.999 score:16973 perfect_match:True]
+    ->Relation [name:ice_hockey.hockey_coach.current_team, ice_hockey.hockey_coach.current_team:
+  RelationName: coach=coach,team=team
+  DerivationMatch: coach=coach,team=team
+  RelationContext: coach:0.1478,team:0.0045
+  RelationNameSynonym: coach=coach:1.00,coach=team:0.53,team=coach:0.53,team=team:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Mike Babcock (m.02_0bm)] -> [ice_hockey.hockey_coach.current_team] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.02_0bm fb:ice_hockey.hockey_coach.current_team ?0 .
+ FILTER (?0 != fb:m.02_0bm) 
+} LIMIT 300
+Result: Detroit Red Wings (m.02fp3)
+
+Query: what is the nutty professor rated
+Entity: (u'The Nutty Professor (Romantic comedy Film) #1', 0.587665354296, 780, True)
+Entity: (u'The Nutty Professor', 0.36256872237, 3321, True)
+Entity: (u'The Nutty Professor (Romantic comedy Film) #1', 0.805671264665, 780, True)
+Entity: (u'Professor', 0.959717640992, 550241, True)
+TargetType: Other
+Root Node: The Nutty Professor
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:The Nutty Professor, The Nutty Professor: tokens:the,nutty,professor prob:0.363 score:3321 perfect_match:True]
+    ->Relation [name:film.film.rating, film.film.rating:
+  DerivationMatch: rate=rating]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Nutty Professor (m.0d87hc)] -> [film.film.rating] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.0d87hc fb:film.film.rating ?0 .
+ FILTER (?0 != fb:m.0d87hc) 
+} LIMIT 300
+Result: PG-13 (USA) (m.0kprd3)
+
+Query: what team does alan butcher coach
+Entity: (u'Alan Butcher', 1.0, 414, True)
+Entity: (u'Team', 0.441557255154, 414089, True)
+Entity: (u'Coach', 0.367595380119, 4446, True)
+Entity: (u'Baseball Coach', 0.107632822168, 1596, False)
+TargetType: Other
+Root Node: Alan Butcher
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Alan Butcher, Alan Butcher: tokens:alan,butcher prob:1.000 score:414 perfect_match:True]
+    ->Relation [name:cricket.cricket_coach.current_team, cricket.cricket_coach.current_team:
+  RelationName: team=team,coach=coach
+  DerivationMatch: team=team,coach=coach
+  RelationContext: team:0.0109,coach:0.1116
+  RelationNameSynonym: team=coach:0.53,team=team:1.00,coach=coach:1.00,coach=team:0.53]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Alan Butcher (m.07hjmq)] -> [cricket.cricket_coach.current_team] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.07hjmq fb:cricket.cricket_coach.current_team ?0 .
+ FILTER (?0 != fb:m.07hjmq) 
+} LIMIT 300
+Result: Zimbabwe national cricket team (m.038_3y)
+
+Query: what is the area of south america
+Entity: (u'Carinthian Slovenes', 1.0, 702, False)
+Entity: (u'South America', 0.959975493807, 3896540, True)
+Entity: (u'Burkina Faso', 0.646300053495, 289381, False)
+Entity: (u'Lot-et-Garonne', 0.137402560241, 9503, False)
+Entity: (u'Area', 0.850698126258, 76568, True)
+TargetType: Other
+Root Node: South America
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:South America, South America: tokens:south,america prob:0.960 score:3896540 perfect_match:True]
+    ->Relation [name:location.location.area, location.location.area:
+  RelationName: area=area
+  RelationContext: area:0.0815
+  RelationNameSynonym: area=location:0.46,area=area:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [South America (m.06n3y)] -> [location.location.area] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.06n3y fb:location.location.area ?0 .
+ FILTER (?0 != fb:m.06n3y) 
+} LIMIT 300
+Result: 17840000
+
+Query: how many religions use the bible
+Entity: (u'Holy of Holies', 1.0, 36892, False)
+Entity: (u'The Bible', 0.730411116385, 8936253, True)
+Entity: (u'The Bible', 0.963573301128, 8936253, True)
+Entity: (u'Religion (TV Genre)', 0.872776747502, 224215, False)
+TargetType: Other
+Root Node: The Bible
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:The Bible, The Bible: tokens:the,bible prob:0.730 score:8936253 perfect_match:True]
+    ->Relation [name:religion.religious_text.religious_text_of, religion.religious_text.religious_text_of:
+  RelationName: religion=religion
+  RelationContext: many:0.0009,use:0.0027,religion:0.0033
+  RelationNameSynonym: religion=religious:0.72,religion=religious:0.72]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Bible (m.015j7)] -> [religion.religious_text.religious_text_of] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT count(?0) where {
+ SELECT ?0 where {
+ fb:m.015j7 fb:religion.religious_text.religious_text_of ?0 .
+ FILTER (?0 != fb:m.015j7) 
+} LIMIT 30000}
+Result: 10
+
+Query: what was henry viii's royal line
+Entity: (u'Henry VIII of England', 1.0, 223708, False)
+Entity: (u'S\xe9gol\xe8ne Royal', 1.0, 21911, False)
+Entity: (u'Royal Line (Canonical Version)', 0.111111111111, 0, True)
+Entity: (u'Royal Line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Line', 0.2556582535, 3802, True)
+Entity: (u'Color Lines', 0.215124552327, 1575, False)
+TargetType: Other
+Root Node: Henry VIII of England
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Henry VIII of England, Henry VIII of England: tokens:henry,viii,'s prob:1.000 score:223708 perfect_match:False]
+    ->Relation [name:royalty.monarch.royal_line, royalty.monarch.royal_line:
+  RelationName: royal=royalty,royal=royal,line=line
+  DerivationMatch: line=line
+  RelationContext: royal:0.0023,line:0.0014
+  RelationNameSynonym: royal=monarch:0.66,royal=royal:1.00,line=line:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Henry VIII of England (m.03p77)] -> [royalty.monarch.royal_line] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.03p77 fb:royalty.monarch.royal_line ?0 .
+ FILTER (?0 != fb:m.03p77) 
+} LIMIT 300
+Result: Tudor dynasty (m.07ply)
+
+Query: when was the sony nex-5 released
+Entity: (u'Sony NEX-5', 0.999915952261, 11897, True)
+Entity: (u'Sony NEX-5', 1.0, 11897, False)
+Entity: (u'Sony Corporation', 0.872445622211, 4138529, False)
+TargetType: Date
+Root Node: Sony NEX-5
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Sony NEX-5, Sony NEX-5: tokens:sony,nex-5 prob:1.000 score:11897 perfect_match:True]
+    ->Relation [name:digicams.digital_camera.released, digicams.digital_camera.released:
+  RelationName: release=release
+  DerivationMatch: release=release
+  RelationContext: release:0.0354
+  RelationNameSynonym: release=release:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Sony NEX-5 (m.0cp1pcv)] -> [digicams.digital_camera.released] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.0cp1pcv fb:digicams.digital_camera.released ?0 .
+ FILTER (?0 != fb:m.0cp1pcv) 
+} LIMIT 300
+Result: 2010-05-11
+
+Query: how thick is the aletsch glacier
+Entity: (u'Aletsch Glacier', 1.0, 4859, True)
+TargetType: Other
+Root Node: Aletsch Glacier
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Aletsch Glacier, Aletsch Glacier: tokens:aletsch,glacier prob:1.000 score:4859 perfect_match:True]
+    ->Relation [name:geography.glacier.thickness, geography.glacier.thickness:
+  RelationName: thick=thickness
+  DerivationMatch: thick=thickness
+  RelationNameSynonym: thick=thickness:0.41]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Aletsch Glacier (m.01prvz)] -> [geography.glacier.thickness] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.01prvz fb:geography.glacier.thickness ?0 .
+ FILTER (?0 != fb:m.01prvz) 
+} LIMIT 300
+Result: 1000
+
+Query: who published the amazing spider-man
+Entity: (u'The Amazing Spider-Man (Comic Book Series)', 0.573326775499, 18235, True)
+Entity: (u'The Amazing Spider-Man', 0.186005670214, 19513, True)
+Entity: (u'The Amazing Spider-Man', 0.996730857639, 19513, False)
+Entity: (u'The Amazing Spider-Man (Comic Book Series)', 0.925543177251, 18235, True)
+Entity: (u'Spider-Man', 0.703701210683, 396380, True)
+TargetType: person, organization, employer, character
+Root Node: The Amazing Spider-Man (Comic Book Series)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:The Amazing Spider-Man (Comic Book Series), The Amazing Spider-Man (Comic Book Series): tokens:the,amazing,spider-man prob:0.573 score:18235 perfect_match:True]
+    ->Relation [name:comic_books.comic_book_series.publisher, comic_books.comic_book_series.publisher:
+  RelationName: publish=publisher
+  DerivationMatch: publish=publisher
+  RelationContext: publish:0.0726
+  RelationNameSynonym: publish=publisher:0.48]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Amazing Spider-Man (Comic Book Series) (m.0l27)] -> [comic_books.comic_book_series.publisher] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.0l27 fb:comic_books.comic_book_series.publisher ?0 .
+ FILTER (?0 != fb:m.0l27) 
+} LIMIT 300
+Result: Marvel Comics (m.058j2)
+
+Query: what armed forces does thailand have
+Entity: (u'Armed forces', 0.595912185844, 287183, True)
+Entity: (u'United States Armed Forces', 0.157455420528, 381293, False)
+Entity: (u'Thailand', 0.85256682469, 7425965, True)
+Entity: (u'Force (Dimension)', 0.66674208351, 16640, False)
+Entity: (u'United States Army Air Forces', 0.118974114304, 109208, False)
+TargetType: Other
+Root Node: Thailand
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Thailand, Thailand: tokens:thailand prob:0.853 score:7425965 perfect_match:True]
+    ->Relation [name:military.military_combatant.armed_forces, military.military_combatant.armed_forces:
+  RelationName: armed=armed,force=force
+  DerivationMatch: force=force
+  RelationContext: armed:0.0055,have:0.0031,force:0.0053
+  RelationNameSynonym: armed=armed:1.00,force=force:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Thailand (m.07f1x)] -> [military.military_combatant.armed_forces] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.07f1x fb:military.military_combatant.armed_forces ?0 .
+ FILTER (?0 != fb:m.07f1x) 
+} LIMIT 300
+Result: Royal Thai Navy (m.04js6n) Royal Thai Armed Forces (m.0vb3mwn) Royal Thai Army (m.04kfp9) Royal Thai Air Force (m.05w6hg)
+
+Query: who was charlie_s angels produced by
+Entity: (u"Charlie's Angels", 0.735632890574, 10805, True)
+Entity: (u"Charlie's Angels (Crime Fiction Film)", 0.188576706004, 6506, True)
+TargetType: person, organization, employer, character
+Root Node: Charlie's Angels (Crime Fiction Film)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Charlie's Angels (Crime Fiction Film), Charlie's Angels (Crime Fiction Film): tokens:charlie_s,angels prob:0.189 score:6506 perfect_match:True]
+    ->Relation [name:film.film.produced_by, film.film.produced_by:
+  RelationName: produce=produce
+  DerivationMatch: produce=produce
+  RelationContext: produce:0.0371
+  RelationNameSynonym: produce=produce:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Charlie's Angels (Crime Fiction Film) (m.01y9jr)] -> [film.film.produced_by] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.01y9jr fb:film.film.produced_by ?0 .
+ FILTER (?0 != fb:m.01y9jr) 
+} LIMIT 300
+Result: Drew Barrymore (m.026c1) Leonard Goldberg (m.05zh9c) Nancy Juvonen (m.05p185j)
+
+Query: when was the printing press invented
+Entity: (u'Printing press', 0.998846440931, 14720, True)
+Entity: (u'The Printing', 1.0, 2, True)
+Entity: (u'Printing', 0.881219704238, 72546, True)
+Entity: (u'Freedom of the press', 0.250455738796, 182501, False)
+Entity: (u'Mass media', 0.14167457831, 168495, False)
+Entity: (u'News media', 0.105698767855, 28588, False)
+TargetType: Date
+Root Node: Printing press
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Printing press, Printing press: tokens:the,printing,press prob:0.999 score:14720 perfect_match:True]
+    ->Relation [name:law.invention.date_of_invention, law.invention.date_of_invention:
+  RelationName: invent=invention,invent=invention
+  DerivationMatch: invent=invention,invent=invention
+  RelationContext: invent:0.0788
+  RelationNameSynonym: invent=invention:0.59,invent=invention:0.59]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Printing press (m.05sxt)] -> [law.invention.date_of_invention] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.05sxt fb:law.invention.date_of_invention ?0 .
+ FILTER (?0 != fb:m.05sxt) 
+} LIMIT 300
+Result: 1440
+
+Query: what is the theme song of full house
+Entity: (u'The World Is Not Enough (Composition)', 0.438699859638, 179, False)
+Entity: (u'The NeverEnding Story (Composition) #2', 0.299599183851, 159, False)
+Entity: (u'When the Wind Blows (Composition) #62', 0.171199350201, 19, False)
+Entity: (u'Full House', 0.777945715252, 32918, True)
+Entity: (u'Theme music', 0.552542726412, 8391, False)
+Entity: (u'Full House (TV Romantic Comedy) #27', 0.124765609267, 1452, True)
+Entity: (u'Song', 0.572532232892, 206492, True)
+Entity: (u'House (TV Drama)', 0.311248122988, 41658, True)
+Entity: (u'House music', 0.306339887015, 62058, False)
+Entity: (u'House', 0.119683772698, 236649, True)
+TargetType: Other
+Root Node: Full House
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Full House, Full House: tokens:full,house prob:0.778 score:32918 perfect_match:True]
+    ->Relation [name:tv.tv_program.theme_song, tv.tv_program.theme_song:
+  RelationName: song=song,theme=theme
+  RelationContext: song:0.0734,theme:0.0958
+  RelationNameSynonym: song=song:1.00,theme=theme:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Full House (m.0lqsy)] -> [tv.tv_program.theme_song] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.0lqsy fb:tv.tv_program.theme_song ?0 .
+ FILTER (?0 != fb:m.0lqsy) 
+} LIMIT 300
+Result: Everywhere You Look (m.0c0l1tk)
+
+Query: what product lines does ipod include
+Entity: (u'Product lining', 0.910321061256, 1894, False)
+Entity: (u'iPod', 0.976600785647, 6246180, True)
+Entity: (u'Product', 0.65305977864, 96836, True)
+Entity: (u'Line', 0.425166411023, 3802, False)
+Entity: (u'Color Lines', 0.174321717817, 1575, False)
+TargetType: Other
+Root Node: iPod
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:iPod, iPod: tokens:ipod prob:0.977 score:6246180 perfect_match:True]
+    ->Relation [name:business.product_line.includes_product_lines, business.product_line.includes_product_lines:
+  RelationName: line=line,line=line,include=include,product=product,product=product
+  DerivationMatch: line=line,line=line
+  RelationContext: line:0.0040,include:0.0010
+  RelationNameSynonym: line=line:1.00,line=line:1.00,include=include:1.00,product=product:1.00,product=product:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [iPod (m.0mcx2)] -> [business.product_line.includes_product_lines] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.0mcx2 fb:business.product_line.includes_product_lines ?0 .
+ FILTER (?0 != fb:m.0mcx2) 
+} LIMIT 300
+Result: iPod touch (m.02z6z4v) iPod classic (m.02z6yz_) iPod shuffle (m.04yg_s) iPod nano (m.07t99m) iPod mini (m.026ysq)
+
+Query: how many rna codons does glycine have
+Entity: (u'RNA Codons', 0.333333333333, 0, True)
+Entity: (u'RNA Codons', 0.333333333333, 0, True)
+Entity: (u'RNA-codons', 0.333333333333, 0, True)
+Entity: (u'Genetic code', 1.0, 9493, False)
+Entity: (u'RNA', 0.970390513211, 740804, True)
+Entity: (u'Glycine (Amino Acid)', 0.803683345255, 27567, True)
+Entity: (u'Glycine', 0.1169782139, 1116, True)
+TargetType: Other
+Root Node: Glycine (Amino Acid)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Glycine (Amino Acid), Glycine (Amino Acid): tokens:glycine prob:0.804 score:27567 perfect_match:True]
+    ->Relation [name:biology.amino_acid.rna_codons, biology.amino_acid.rna_codons:
+  RelationName: codon=codon,rna=rna
+  RelationNameSynonym: codon=amino:0.44,codon=codon:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Glycine (Amino Acid) (m.02kc008)] -> [biology.amino_acid.rna_codons] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT count(?0) where {
+ SELECT ?0 where {
+ fb:m.02kc008 fb:biology.amino_acid.rna_codons ?0 .
+ FILTER (?0 != fb:m.02kc008) 
+} LIMIT 30000}
+Result: 4
+
+Query: how many employees does nintendo have
+Entity: (u'Employment', 0.996849820118, 182140, False)
+Entity: (u'Nintendo', 0.958340931966, 1855975, True)
+TargetType: Other
+Root Node: Nintendo
+Candidate Graph:   QueryCandidate [pattern:ERMRT
+  Entity [name:Nintendo, Nintendo: tokens:nintendo prob:0.958 score:1855975 perfect_match:True]
+    ->Relation [name:business.employer.employees, business.employer.employees -> business.employment_tenure.person:
+  RelationName: employee=employee
+  RelationContext: employee:0.0010,have:0.0048,many:0.0005
+  RelationNameSynonym: employee=employer:0.66,employee=employee:1.00,employee=person:0.41]
+  Variable [index:0]
+    ->Relation [name:business.employment_tenure.person, business.employer.employees -> business.employment_tenure.person:
+  RelationName: employee=employee
+  RelationContext: employee:0.0010,have:0.0048,many:0.0005
+  RelationNameSynonym: employee=employer:0.66,employee=employee:1.00,employee=person:0.41]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Nintendo (m.059wk)] -> [business.employer.employees] -> [?0]
+  [?0] -> [business.employment_tenure.person] -> [?1]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT count(?1) where {
+ SELECT ?1 where {
+ fb:m.059wk fb:business.employer.employees ?0 .
+ ?0 fb:business.employment_tenure.person ?1 .
+ FILTER (?1 != fb:m.059wk) 
+} LIMIT 30000}
+Result: 11
+
+Query: what spirits are produced in kentucky
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced in', 0.2, 0, True)
+Entity: (u'Kentucky', 0.832334426438, 2769768, True)
+Entity: (u'Spirit', 0.520667307528, 108105, False)
+Entity: (u'Distilled beverage', 0.21588262561, 21946, False)
+TargetType: Other
+Root Node: Kentucky
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Kentucky, Kentucky: tokens:kentucky prob:0.832 score:2769768 perfect_match:True]
+    ->Relation [name:distilled_spirits.spirit_producing_region.distilleries, distilled_spirits.spirit_producing_region.distilleries:
+  RelationName: produce=produce,spirit=spirit,spirit=spirit
+  DerivationMatch: produce=produce,spirit=spirit,spirit=spirit
+  RelationContext: produce:0.0128
+  RelationNameSynonym: produce=produce:1.00,spirit=spirit:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Kentucky (m.0498y)] -> [distilled_spirits.spirit_producing_region.distilleries] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.0498y fb:distilled_spirits.spirit_producing_region.distilleries ?0 .
+ FILTER (?0 != fb:m.0498y) 
+} LIMIT 300
+Result: Woodford Reserve (m.04m1h1) Angel's Envy (m.0nk3wm7)
+
+Query: what is ashok malhotra's bowling pace
+Entity: (u'Bowling Pace', 1.0, 0, True)
+Entity: (u'Ashok Malhotra', 0.909090909091, 110, True)
+Entity: (u'Bowling', 0.736844199501, 15451, True)
+Entity: (u'Peace', 0.355393621034, 442651, False)
+TargetType: Other
+Root Node: Ashok Malhotra
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Ashok Malhotra, Ashok Malhotra: tokens:ashok,malhotra prob:0.909 score:110 perfect_match:True]
+    ->Relation [name:cricket.cricket_bowler.pace, cricket.cricket_bowler.pace:
+  RelationName: pace=pace
+  DerivationMatch: pace=pace
+  RelationNameSynonym: pace=pace:1.00,bowling=cricket:0.53,bowling=bowler:0.76]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Ashok Malhotra (m.0b8z_d)] -> [cricket.cricket_bowler.pace] -> [?0]
+
+SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.0b8z_d fb:cricket.cricket_bowler.pace ?0 .
+ FILTER (?0 != fb:m.0b8z_d) 
+} LIMIT 300
+Result: Medium (m.02k87p1)
+
