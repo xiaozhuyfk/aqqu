@@ -56,6 +56,7 @@ def main():
             result_str = "Result: %s\n" % (" ".join(result))
             writeFile("test.log", query_str, "a")
             writeFile("test.log", result_str, "a")
+            writeFile("test.log", "\n", "a")
 
 
     """
