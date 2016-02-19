@@ -26,3 +26,7 @@ start-parser:
 
 start-virtuoso:
 	$(VIRTUOSO_BINARY) -f +configfile virtuoso-db/virtuoso.ini
+
+download-virtuoso:
+	echo "Downloading and extracting virtuoso index of Freebase..."
+	wget "http://$(HOST)/$(URL_PREFIX)/virtuoso.tar.gz"; tar xvfz virtuoso.tar.gz

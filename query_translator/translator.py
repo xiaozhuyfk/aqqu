@@ -110,9 +110,13 @@ class QueryTranslator(object):
         query = self.parse_and_identify_entities(query_text)
         # Set the relation oracle.
         query.relation_oracle = self.scorer.get_parameters().relation_oracle
+	for e in query.identified_entities:
+		logging.error((e.name, e.surface_score, e.score, e.perfect_match))
         # Identify the target type.
         target_identifier = AnswerTypeIdentifier()
         target_identifier.identify_target(query)
+	logging.error(query.target_type.as_string())
+
         # Get content tokens of the query.
         query.query_content_tokens = get_content_tokens(query.query_tokens)
         # Match the patterns.
@@ -146,6 +150,7 @@ class QueryTranslator(object):
         if not self.scorer.get_parameters().entity_oracle:
             entities = self.entity_linker.identify_entities_in_tokens(
                 query.query_tokens)
+            print entities
         else:
             entity_oracle = self.scorer.get_parameters().entity_oracle
             entities = entity_oracle.identify_entities_in_tokens(

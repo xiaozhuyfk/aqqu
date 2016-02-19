@@ -1,3 +1,11 @@
 *.pyc
 data
 webserver/
+Makefile
+config.cfg
+build/
+corenlp-frontend/
+lib/
+virtuoso-db/
+virtuoso-opensource/
+
