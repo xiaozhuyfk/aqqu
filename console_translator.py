@@ -11,7 +11,7 @@ import globals
 import scorer_globals
 import sys
 from query_translator.translator import QueryTranslator
-from util import test_set, writeFile
+from query_translator.util import test_set, writeFile
 
 logging.basicConfig(format="%(asctime)s : %(levelname)s "
                            ": %(module)s : %(message)s",
