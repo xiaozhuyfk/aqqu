@@ -39,7 +39,7 @@ def main():
     translator = QueryTranslator.init_from_config()
     translator.set_scorer(ranker)
 
-    writeFile("test.log", "", "w")
+    writeFile(test_file, "", "w")
     for query in test_set:
         results = translator.translate_and_execute_query(query)
         if (len(results) > 0):
