@@ -18,6 +18,27 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?1 != fb:m.0q9kd && ?1 != "1981"^^xsd:datetime) 
 } LIMIT 300
 Result: Primetime Emmy Award for Outstanding Supporting Actor - Comedy Series (m.09qv3c) Primetime Emmy Award for Outstanding Supporting Actor in a Comedy, Variety or Music Series (m.0t4r672)
+Candidate Graph:   QueryCandidate [pattern:ERMRERT
+  Entity [name:Danny DeVito, Danny DeVito: tokens:danny,devito prob:1.000 score:52351 perfect_match:True]
+    ->Relation [name:award.award_winner.awards_won, award.award_winner.awards_won -> award.award_honor.year:
+  RelationName: win=winner,win=win,award=award,award=award,award=award,award=award,award=award
+  RelationNameSynonym: win=winner:0.55,win=win:1.00,award=award:1.00,award=award:1.00,award=award:1.00,award=honor:0.51]
+  Variable [index:0]
+    ->Relation [name:award.award_honor.year, award.award_winner.awards_won -> award.award_honor.year:
+  RelationName: win=winner,win=win,award=award,award=award,award=award,award=award,award=award
+  RelationNameSynonym: win=winner:0.55,win=win:1.00,award=award:1.00,award=award:1.00,award=award:1.00,award=honor:0.51]
+    ->Relation [name:award.award_honor.award, award.award_honor.award:
+  RelationName: award=award,award=award,award=award
+  DerivationMatch: award=award,award=award,award=honor,award=award
+  RelationNameSynonym: award=award:1.00,award=honor:0.51,award=award:1.00]
+  Entity [name:1981, 1981: tokens:1981 prob:0.000 score:0 perfect_match:True]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [Danny DeVito (m.0q9kd)] -> [award.award_winner.awards_won] -> [?0]
+  [?0] -> [award.award_honor.year] -> [1981]
+  [?0] -> [award.award_honor.award] -> [?1]
+
 
 Query: when did japan end as a musical group
 Entity: (u'Musical ensemble', 0.983225293265, 120561, False)
@@ -35,6 +56,25 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?1 != fb:m.03_3d) 
 } LIMIT 300
 Result: 
+Candidate Graph:   QueryCandidate [pattern:ERMRT
+  Entity [name:Japan, Japan: tokens:japan prob:0.923 score:31422360 perfect_match:True]
+    ->Relation [name:military.military_combatant.military_conflicts, military.military_combatant.military_conflicts -> military.military_combatant_group.combatants:
+  RelationName: group=group
+  DerivationMatch: group=group
+  RelationContext: end:0.0010,group:0.0012
+  RelationNameSynonym: group=group:1.00]
+  Variable [index:0]
+    ->Relation [name:military.military_combatant_group.combatants, military.military_combatant.military_conflicts -> military.military_combatant_group.combatants:
+  RelationName: group=group
+  DerivationMatch: group=group
+  RelationContext: end:0.0010,group:0.0012
+  RelationNameSynonym: group=group:1.00]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Japan (m.03_3d)] -> [military.military_combatant.military_conflicts] -> [?0]
+  [?0] -> [military.military_combatant_group.combatants] -> [?1]
+
 
 Query: what sort of weave is used to make tweed
 Entity: (u'GNU/Linux', 1.0, 7995206, False)
@@ -58,6 +98,23 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?1 != fb:m.05j49) 
 } LIMIT 300
 Result: Coat of arms of St. John's, Newfoundland and Labrador (m.0958jz)
+Candidate Graph:   QueryCandidate [pattern:ERMRT
+  Entity [name:Newfoundland and Labrador, Newfoundland and Labrador: tokens:to,make prob:1.000 score:101392 perfect_match:False]
+    ->Relation [name:symbols.coat_of_arms_bearer.coat_of_arms_used, symbols.coat_of_arms_bearer.coat_of_arms_used -> symbols.armorial_grant.coat_of_arms:
+  RelationName: use=use
+  DerivationMatch: use=use
+  RelationNameSynonym: tweed=coat:0.44,tweed=coat:0.44,tweed=coat:0.44,use=use:1.00]
+  Variable [index:0]
+    ->Relation [name:symbols.armorial_grant.coat_of_arms, symbols.coat_of_arms_bearer.coat_of_arms_used -> symbols.armorial_grant.coat_of_arms:
+  RelationName: use=use
+  DerivationMatch: use=use
+  RelationNameSynonym: tweed=coat:0.44,tweed=coat:0.44,tweed=coat:0.44,use=use:1.00]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Newfoundland and Labrador (m.05j49)] -> [symbols.coat_of_arms_bearer.coat_of_arms_used] -> [?0]
+  [?0] -> [symbols.armorial_grant.coat_of_arms] -> [?1]
+
 
 Query: what bicycle models does raleigh manufacture
 Entity: (u'Bicycle Models', 0.166666666667, 0, True)
@@ -77,6 +134,17 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.0199g) 
 } LIMIT 300
 Result: Bicycle handlebar (m.02rqv26) Bicycle frame (m.01bqgn) Bicycle wheel (m.01bqk0) Crankset (m.01ms7j) Bicycle saddle (m.0g7v8f)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Bicycle, Bicycle: tokens:bicycle prob:0.955 score:55244 perfect_match:True]
+    ->Relation [name:base.engineeringdraft.manufactured_component_category.meronyms, base.engineeringdraft.manufactured_component_category.meronyms:
+  RelationName: manufacture=manufacture
+  DerivationMatch: manufacture=manufacture
+  RelationNameSynonym: manufacture=manufacture:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Bicycle (m.0199g)] -> [base.engineeringdraft.manufactured_component_category.meronyms] -> [?0]
+
 
 Query: how many writing systems are used in japanese
 Entity: (u'Writing system', 0.911144873965, 2543, False)
@@ -93,6 +161,15 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.040tm1) 
 } LIMIT 30000}
 Result: 1
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Wakame, Wakame: tokens:used,in prob:0.853 score:5563 perfect_match:False]
+    ->Relation [name:base.schemastaging.food_extra.broader, base.schemastaging.food_extra.broader:
+  RelationContext: many:0.0008]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Wakame (m.040tm1)] -> [base.schemastaging.food_extra.broader] -> [?0]
+
 
 Query: what characters were on the cover of batman #1
 Entity: (u'On the Cover', 0.742656151724, 47, True)
@@ -115,6 +192,18 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.01d5g) 
 } LIMIT 300
 Result: Batman #477 (m.03dfh34) Identity Crisis #1 (m.04cp09x) Identity Crisis #6 (m.04cp0f0) Detective Comics #33 (m.030rk_k) Batman #1 (m.02wkbg7) Batwing #7 (m.0j3rxq1) Batman #568 (m.03bw1dh) Batman #68 (m.03bwqlv) Detective Comics #734 (m.03bw1p5) Shadow of the Bat #1 (m.02wm2wd) Detective Comics #27 (m.02wk9x1) Detective Comics #38 (m.02wlp16) Batman #436 (m.02wlpqt) Detective Comics #779 (m.02wlytc) World's Finest Comics #3 (m.02wlzzk) Batman #567 (m.030rjwt) Detective Comics #411 (m.030rk6x) Detective Comics #741 (m.03bvjsf) Detective Comics #580 (m.03bx0cp) Superman/Batman #47 (m.042_zcz) Batman #611 (m.09vvtf1) Batman #612 (m.09vvwdt) Secret Origins, Vol. 1 (m.030rl69) Detective Comics #140 (m.02wlzl_) Batman #426 (m.02wkc7r) Batman #427 (m.02wkc9c)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Batman, Batman: tokens:batman prob:0.609 score:398670 perfect_match:True]
+    ->Relation [name:comic_books.comic_book_character.cover_appearances, comic_books.comic_book_character.cover_appearances:
+  RelationName: character=character,cover=cover
+  DerivationMatch: character=character,cover=cover
+  RelationContext: character:0.0413
+  RelationNameSynonym: character=comic:0.45,character=character:1.00,cover=cover:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [comic_books.comic_book_character.cover_appearances] -> [?0]
+
 
 Query: how many episodes of taylor made piano were there
 Entity: (u'TaylorMade-Adidas', 0.605763224569, 58054, False)
@@ -145,6 +234,15 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.01bndp) 
 } LIMIT 300
 Result: Don Hewitt (m.078q1l) CBS News (m.01_8w2)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:CBS Evening News, CBS Evening News: tokens:cbs,evening,news prob:0.992 score:237659 perfect_match:True]
+    ->Relation [name:tv.tv_program.program_creator, tv.tv_program.program_creator:
+  RelationContext: present:0.0017]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [CBS Evening News (m.01bndp)] -> [tv.tv_program.program_creator] -> [?0]
+
 
 Query: did the big bang exhibit at the science museum cost money
 Entity: (u'Science Museum', 0.999929373543, 28316, True)
@@ -177,6 +275,21 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?1 != fb:m.013yrz) 
 } LIMIT 300
 Result: 0 1
+Candidate Graph:   QueryCandidate [pattern:ERMRT
+  Entity [name:Science Museum, Science Museum: tokens:the,science,museum prob:1.000 score:28316 perfect_match:True]
+    ->Relation [name:exhibitions.exhibition_venue.exhibitions_at_this_venue, exhibitions.exhibition_venue.exhibitions_at_this_venue:
+  RelationName: exhibit=exhibition,exhibit=exhibition,exhibit=exhibition
+  RelationNameSynonym: exhibit=exhibition:0.71,exhibit=exhibition:0.71]
+  Variable [index:0]
+    ->Relation [name:exhibitions.exhibition_run.admission_fee, exhibitions.exhibition_run.admission_fee:
+  RelationName: exhibit=exhibition,exhibit=exhibition
+  RelationNameSynonym: exhibit=exhibition:0.71,cost=fee:0.50]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Science Museum (m.013yrz)] -> [exhibitions.exhibition_venue.exhibitions_at_this_venue] -> [?0]
+  [?0] -> [exhibitions.exhibition_run.admission_fee] -> [?1]
+
 
 Query: in what season of stargate sg-1 is the episode show and tell
 Entity: (u'Show and Tell (Musical Recording) #34', 0.189136131061, 126, True)
@@ -199,6 +312,17 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.09kn9) 
 } LIMIT 300
 Result: Counterstrike (m.0cf24w) Within the Serpent's Grasp (1) (m.0hpgj1r) Thor's Hammer (m.0647nf) Desperate Measures (m.09sl0d) Evolution (2) (m.06yfkb9) Heroes (m.07m60n) Beachhead (m.07mcsq) Babylon (m.07mctr) New Order (m.07m5_l) Fragile Balance (m.07mf2m) Prometheus (m.07mf7h) Thor's Chariot (m.079rzk) Abyss (m.07p75k) Space Race (m.07md_w) Maternal Instinct (m.08msmh) Ethon (m.09yk86) Seth (m.0644vf) Prototype (m.07mcvf) Shadow Play (m.07mfgr) Foothold (m.0697mp) A Matter of Time (m.08mp85) Jolinar's Memories (m.08mr3b) The Devil You Know (m.08msdj) Cold Lazarus (m.06476g) Redemption (2) (m.06yfk8b) The Fourth Horseman (2) (m.06yfkg9) Redemption (m.07m61b) Full Alert (m.07mckh) Disclosure (m.07mf9x) 48 Hours (m.09sl25) Crusade (m.0b0fs6) Camelot (m.0b0fsx) Flesh and Blood (m.0br51c) Covenant (m.07mcmk) Sight Unseen (m.07mfby) Proving Ground (m.09jyyl) The Sentinel (m.09rryk) Between Two Fires (m.09sk_0) Red Sky (m.09skq2) Demons (m.08mqtz) The Warrior (m.09gqyq) The Quest (1) (m.06yfkhg) Prisoners (m.079r9n) Children of the Gods (m.041178) Threads (m.07mcjf) Out of Mind (m.07mcwt) Hathor (m.0647yv) Family (m.07b_14) Into the Fire (m.07mcy5) Spirits (m.03910v) The Enemy Within (m.0608sd) 1969 (m.060vv6) Emancipation (m.064713) The Broca Divide (m.06472v) The First Commandment (m.06474_) The Nox (m.0647d0) Brief Candle (m.0647hj) The Torment of Tantalus (m.0647r6) Bloodlines (m.0647s_) Fire and Water (m.0647vd) Singularity (m.064822) Cor-ai (m.064833) Enigma (m.06485j) Solitudes (m.06yfk23) Tin Man (m.06yfk2f) There But For the Grace of God (m.06yfk2r) Politics (1) (m.06yfk31) The Tok'ra (1) (m.06yfk3_) The Tok'ra (2) (m.06yfk49) Avalon (1) (m.07m5y3) The Serpent's Lair (m.07ysb8) Need (m.07ysn2) Touchstone (m.08mp4w) One False Step (m.08mpkz) Show and Tell (m.08mpny) 200 (m.0cb0_f) Moebius (2) (m.06yfkf2) Lockdown (m.07mcny) Birthright (m.07mdz3) Origin (m.07mcpz) 2001 (m.09sk_q) Off the Grid (m.0b0fp1) Unnatural Selection (m.07mf7v) Ripple Effect (m.08mlrc) Memento Mori (m.0cf25x) The Pegasus Project (m.0bqvhm) Full Circle (m.07mf4b) In the Line of Duty (m.079qw1) Fallout (m.07mdy2) Memento (m.07mfdp) Resurrection (m.07mdwq) Chain Reaction (m.092g5k) Frozen (m.07p76l) Nemesis (m.08msr_) Small Victories (m.09rb33) Tangent (m.09bc08) Point of No Return (m.09ryq7) The Shroud (m.0dmc6w) Line In The Sand (m.0dzp2m) Icon (m.07mcpm) Pretense (m.08mshc) Affinity (m.07mcn7) Reckoning (2) (m.06yfkdd) Gemini (m.07mcl5) The Changeling (m.07mfcm) The Tomb (m.09skxy) Lost City (m.06zf2x) Zero Hour (m.07mcp8) Stronghold (m.09yk9l) Ex Deus Machina (m.07ht9j) Bane (m.08mp0x) Heroes, Part 2 (m.06yfkby) Fail Safe (m.09r6px) Death Knell (m.07mdxd) Sci Fi Inside: Stargate SG-1 200 (m.0j86wp5) Scorched Earth (m.09kcnk) Insiders (m.0cf22q) Uninvited (m.0cf23v) Cure (m.07mffc) The Fourth Horseman (1) (m.06yfkf_) Forsaken (m.07mfc8) Inauguration (m.07mdw0) Point of View (m.08mqkm) The Fifth Man (m.09sknc) The Quest (2) (m.06yfkhs) Holiday (m.08mpfm) The Serpent's Venom (m.09ryv1) Allegiance (m.07mfg1) The First Ones (m.08qv9k) The Curse (m.09rysp) Shades of Grey (m.06c533) Beast of Burden (m.06hvw_) Watergate (m.06hw4_) Lost City (2) (m.06yfkcf) Avenger 2.0 (m.07mdzt) Revisions (m.07mf1y) Homecoming (m.07mf39) Fallen (m.07mf3n) Revelations (m.07nxtd) Fair Game (m.07q1m7) The Gamekeeper (m.07yslp) Learning Curve (m.08mq9k) Deadman Switch (m.08mqqh) Crystal Skull (m.08msqz) Enemies (m.09l2f_) Menace (m.09rrk4) Last Stand (2) (m.09s97h) Summit (1) (m.09s9j9) Ascension (m.09skl_) The Other Guys (m.0h3_chv) Continuum (m.0j86wry) Secrets (m.08mn_j) Window of Opportunity (m.08cz71) Nightwalkers (m.07p75x) Divide and Conquer (m.09k7qr) Upgrades (m.09rb6l) Crossroads (m.09rb89) Threshold (m.09rz91) Moebius (m.07m5cw) Wormhole X-Treme! (m.040sz8) Prophecy (m.07mff0) A Hundred Days (m.08msks) The Fifth Race (m.064pjz) Message In a Bottle (m.07bzrd) Serpent's Song (m.07mc_0) Smoke & Mirrors (m.07mf8w) Legacy (m.07q1lx) Citizen Joe (m.07mck4) Descent (m.07p76y) Talion (m.0g9lkq) Collateral Damage (m.08mlqm) Unending (m.025w7_5) Evolution (1) (m.06yfk9_) Avalon (2) (m.06yfkfg) Avatar (m.07mcnl) The Ties That Bind (m.07mcqn) Paradise Lost (m.07mfb7) Prodigy (m.07syyd) The Scourge (m.0b0fqg) Arthur's Mantle (m.0b0frh) Bounty (m.0djyr6) The Road Not Taken (m.0g0bg6) Family Ties (m.0gxbd7) 2010 (m.06fjz1) Absolute Power (m.0418qm) The Light (m.06fprj) The Other Side (m.09rb45) Bad Guys (m.0g2zpz) Stargate SG-1: True Science (m.0j86wmt) Urgo (m.08mskf) The Powers That Be (m.07mcq_) Company of Thieves (m.0cf278) It's Good to Be King (m.05tsmw) Prometheus Unbound (m.07lqlp) Endgame (m.07mclj) Yesterday, Today and Tomorrow (m.0fyb58) Morpheus (m.0cf21b) Chimera (m.07mdxr) Grace (m.07mdyf) Entity (m.09l1tt) Forever in a Day (m.068zj1) Rules of Engagement (m.08mqwd) Past and Present (m.08mqxs) Dominion (m.025w7z4) Meridian (m.09l1rc) New Ground (m.08msl3) Exodus (m.09l25_) Metamorphosis (m.07mf9k) Orpheus (m.07mf28) Enemy Mine (m.07mf0k) Lifeboat (m.07mf17) Children of the Gods (2) (m.0j86wx1) Reckoning (m.07m568) Beneath the Surface (m.09kcpy) Rite of Passage (m.09skt0) From Stargate To Atlantis - A Sci-Fi Lowdown (m.0j86wk1) Behind The Stargate - Secrets Revealed (m.0j86wlf) Double Jeopardy (m.09h2vc) Evolution (m.07m60_) Sacrifices (m.07mclw) Stargate: The Movie (m.0j86whp) The Ark of Truth (m.0j86wqk) Behind The Mythology of Stargate SG-1 (m.0j86wt9) New Order (2) (m.0j86xpn)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Stargate SG-1, Stargate SG-1: tokens:stargate,sg-1 prob:0.971 score:144974 perfect_match:True]
+    ->Relation [name:tv.tv_program.episodes, tv.tv_program.episodes:
+  RelationName: episode=episode
+  RelationContext: episode:0.1075,season:0.0199,show:0.0041,tell:0.0040
+  RelationNameSynonym: episode=episode:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.episodes] -> [?0]
+
 
 Query: how many beers come a can
 Entity: (u'Acan', 0.659340934401, 20, True)
@@ -214,6 +338,15 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.02p0xwc) 
 } LIMIT 30000}
 Result: 2
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Acan, Acan: tokens:a,can prob:0.659 score:20 perfect_match:True]
+    ->Relation [name:religion.deity.deity_of, religion.deity.deity_of:
+  RelationContext: come:0.0010]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Acan (m.02p0xwc)] -> [religion.deity.deity_of] -> [?0]
+
 
 Query: what are the christian holidays
 Entity: (u'Liturgical year', 1.0, 30330, False)
@@ -241,6 +374,15 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.04wb9ps) 
 } LIMIT 300
 Result: Philosophy (m.037mh8)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:The Texts of Taoism, The Texts of Taoism: tokens:the,texts,of,taoism prob:1.000 score:35 perfect_match:True]
+    ->Relation [name:book.book.genre, book.book.genre:
+  ]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Texts of Taoism (m.04wb9ps)] -> [book.book.genre] -> [?0]
+
 
 Query: in 1982 who were the primetieme emmy award for comedy series nominees
 Entity: (u'Award (Chivalric Title)', 1.0, 214152, False)
@@ -260,6 +402,22 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?1 != fb:m.02pgky2) 
 } LIMIT 300
 Result: The Golden Compass (m.04w7rn) Juno (m.02rv_dz) Michael Clayton (m.0fh694) There Will Be Blood (m.08zrbl) The Counterfeiters (m.03cgqbr) La Vie en Rose (m.02q6gfp) Falling Slowly (m.03nsp04) Ratatouille (m.03x7hd) Sweeney Todd: The Demon Barber of Fleet Street (m.0ds11z) The Bourne Ultimatum (m.061681) Peter and the Wolf (m.02vpt_d) Elizabeth: The Golden Age (m.03_gz8) No Country for Old Men (m.0b6tzs) Atonement (m.0ctb4g) Le Mozart des pickpockets (m.03qhs4f) Freeheld (m.03qhrvg) Taxi to the Dark Side (m.02qz5kl)
+Candidate Graph:   QueryCandidate [pattern:ERMRT
+  Entity [name:80th Academy Awards, 80th Academy Awards: tokens:nominees prob:0.139 score:5229 perfect_match:False]
+    ->Relation [name:award.award_ceremony.awards_presented, award.award_ceremony.awards_presented:
+  RelationName: award=award,award=award,award=award
+  RelationNameSynonym: award=award:1.00,award=award:1.00]
+  Variable [index:0]
+    ->Relation [name:award.award_honor.honored_for, award.award_honor.honored_for:
+  RelationName: award=award,award=award
+  DerivationMatch: award=award,award=award,award=honor,award=honor
+  RelationNameSynonym: award=award:1.00,award=honor:0.51,award=honor:0.51]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [80th Academy Awards (m.02pgky2)] -> [award.award_ceremony.awards_presented] -> [?0]
+  [?0] -> [award.award_honor.honored_for] -> [?1]
+
 
 Query: what year was the album decade released
 Entity: (u'The Album', 0.242627058026, 531, True)
@@ -276,6 +434,18 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.01hnjdn) 
 } LIMIT 300
 Result: 1977-12-12
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:The Album, The Album: tokens:the,album prob:0.243 score:531 perfect_match:True]
+    ->Relation [name:music.album.release_date, music.album.release_date:
+  RelationName: release=release
+  DerivationMatch: release=release
+  RelationContext: decade:0.0001,release:0.1666,year:0.0006
+  RelationNameSynonym: release=release:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Album (m.01hnjdn)] -> [music.album.release_date] -> [?0]
+
 
 Query: how many countries are in south america
 Entity: (u'In South America (Gramophone record Musical Release)', 0.366459568149, 0, True)
@@ -293,6 +463,15 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.0q8f6wp) 
 } LIMIT 30000}
 Result: 1
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:In South America (Musical Album), In South America (Musical Album): tokens:in,south,america prob:0.366 score:0 perfect_match:True]
+    ->Relation [name:music.album.release_type, music.album.release_type:
+  RelationContext: many:0.0006,country:0.0003]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [In South America (Musical Album) (m.0q8f6wp)] -> [music.album.release_type] -> [?0]
+
 
 Query: what area did the meiji constitution govern
 Entity: (u'The Meiji Constitution', 1.0, 0, True)
@@ -306,6 +485,15 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.01bsgq) 
 } LIMIT 300
 Result: Japan (m.03_3d)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Emperor Meiji, Emperor Meiji: tokens:the,meiji prob:1.000 score:8934 perfect_match:False]
+    ->Relation [name:royalty.monarch.kingdom, royalty.monarch.kingdom:
+  RelationContext: area:0.0005,govern:0.0005,constitution:0.0008]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Emperor Meiji (m.01bsgq)] -> [royalty.monarch.kingdom] -> [?0]
+
 
 Query: what is the collection of postcards called
 Entity: (u'The Collection (Funk Album)', 0.108681689217, 251, True)
@@ -320,6 +508,21 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?1 != fb:m.0fd4f) 
 } LIMIT 300
 Result: Chris Webber (m.02l_4s)
+Candidate Graph:   QueryCandidate [pattern:ERMRT
+  Entity [name:Postcard, Postcard: tokens:postcards prob:0.801 score:23099 perfect_match:False]
+    ->Relation [name:interests.collection_category.collectors, interests.collection_category.collectors:
+  RelationName: collection=collection
+  RelationNameSynonym: collection=collection:1.00,collection=collector:0.53]
+  Variable [index:0]
+    ->Relation [name:interests.collection.collector, interests.collection.collector:
+  RelationName: collection=collection
+  RelationNameSynonym: collection=collection:1.00,collection=collector:0.53]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Postcard (m.0fd4f)] -> [interests.collection_category.collectors] -> [?0]
+  [?0] -> [interests.collection.collector] -> [?1]
+
 
 Query: how was pluto discovered
 Entity: (u'Pluto', 0.641672151936, 513041, True)
@@ -331,6 +534,18 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.0c3qy) 
 } LIMIT 300
 Result: Lowell Observatory (m.0kyyk)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Pluto, Pluto: tokens:pluto prob:0.642 score:513041 perfect_match:True]
+    ->Relation [name:astronomy.astronomical_discovery.discovery_organization, astronomy.astronomical_discovery.discovery_organization:
+  RelationName: discover=discovery,discover=discovery
+  DerivationMatch: discover=discovery,discover=discovery
+  RelationContext: discover:0.1337
+  RelationNameSynonym: discover=discovery:0.48,discover=discovery:0.48]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [astronomy.astronomical_discovery.discovery_organization] -> [?0]
+
 
 Query: how many people practice buddhism
 Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
@@ -348,6 +563,18 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.092bf5) 
 } LIMIT 30000}
 Result: 9
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Buddhism, Buddhism: tokens:buddhism prob:0.959 score:3064402 perfect_match:True]
+    ->Relation [name:religion.religion.practices, religion.religion.practices:
+  RelationName: practice=practice
+  DerivationMatch: practice=practice
+  RelationContext: many:0.0004,practice:0.0104
+  RelationNameSynonym: practice=practice:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [religion.religion.practices] -> [?0]
+
 
 Query: how many students are there at the university of iceland
 Entity: (u'University of Iceland', 1.0, 10491, True)
@@ -372,6 +599,21 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?1 != fb:m.022hyn) 
 } LIMIT 30000}
 Result: 56
+Candidate Graph:   QueryCandidate [pattern:ERMRT
+  Entity [name:University of Iceland, University of Iceland: tokens:the,university,of,iceland prob:1.000 score:10491 perfect_match:True]
+    ->Relation [name:education.educational_institution.students_graduates, education.educational_institution.students_graduates:
+  RelationName: student=student
+  RelationNameSynonym: student=student:1.00,student=graduate:0.54]
+  Variable [index:0]
+    ->Relation [name:education.education.student, education.education.student:
+  RelationName: student=student
+  RelationNameSynonym: student=education:0.40,student=student:1.00]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [education.education.student] -> [?1]
+
 
 Query: how many libretti did wagner write
 Entity: (u'Libretto', 0.998252922994, 14856, False)
@@ -384,6 +626,17 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.06c44) 
 } LIMIT 30000}
 Result: 12
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Richard Wagner, Richard Wagner: tokens:wagner prob:0.720 score:448189 perfect_match:False]
+    ->Relation [name:music.lyricist.lyrics_written, music.lyricist.lyrics_written:
+  RelationName: write=write
+  RelationContext: many:0.0006,write:0.0398,libretto:0.0007
+  RelationNameSynonym: write=write:1.00,libretto=lyricist:0.47,libretto=lyric:0.47]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Richard Wagner (m.06c44)] -> [music.lyricist.lyrics_written] -> [?0]
+
 
 Query: how many other names is ron glass known by
 Entity: (u'Flash fiction', 0.439999507201, 9321, False)
@@ -409,6 +662,15 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.03h82p) 
 } LIMIT 30000}
 Result: 2
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Ron Glass, Ron Glass: tokens:ron,glass prob:1.000 score:2326 perfect_match:True]
+    ->Relation [name:people.person.profession, people.person.profession:
+  RelationContext: many:0.0006,other:0.0004,name:0.0041,know:0.0115]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Ron Glass (m.03h82p)] -> [people.person.profession] -> [?0]
+
 
 Query: what was the american past about
 Entity: (u'The American Past', 0.454545454545, 5, True)
@@ -423,6 +685,15 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.05v0tbd) 
 } LIMIT 300
 Result: Calder Pickett (m.065m87j)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:The American Past, The American Past: tokens:the,american,past prob:0.455 score:5 perfect_match:True]
+    ->Relation [name:broadcast.content.artist, broadcast.content.artist:
+  ]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The American Past (m.05v0tbd)] -> [broadcast.content.artist] -> [?0]
+
 
 Query: who completed mozart_s requiem
 Entity: (u'Requiem in D minor, K. 626 (S\xfc\xdfmayr completion): IIIf. Sequenz: "Lacrimosa"', 0.999922964332, 12980, False)
@@ -435,6 +706,17 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.02xtrr) 
 } LIMIT 300
 Result: 1791
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa", Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa": tokens:mozart_s,requiem prob:1.000 score:12980 perfect_match:False]
+    ->Relation [name:music.composition.date_completed, music.composition.date_completed:
+  RelationName: complete=complete
+  RelationContext: complete:0.0156
+  RelationNameSynonym: complete=complete:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa" (m.02xtrr)] -> [music.composition.date_completed] -> [?0]
+
 
 Query: when gatorade was first developed
 Entity: (u'First developed', 0.5, 0, True)
@@ -447,6 +729,15 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.01ghgx) 
 } LIMIT 300
 Result: Gatorade G2 (m.0rnz2d8)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Gatorade, Gatorade: tokens:gatorade prob:0.999 score:181507 perfect_match:True]
+    ->Relation [name:business.brand.products, business.brand.products:
+  RelationContext: develop:0.0008,first:0.0010]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Gatorade (m.01ghgx)] -> [business.brand.products] -> [?0]
+
 
 Query: what are the theme areas at disneyland
 Entity: (u'Theme areas', 0.5, 0, True)
@@ -461,6 +752,17 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.02fzs) 
 } LIMIT 300
 Result: 0.647
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Disneyland, Disneyland: tokens:disneyland prob:0.938 score:528268 perfect_match:True]
+    ->Relation [name:location.location.area, location.location.area:
+  RelationName: area=area
+  RelationContext: theme:0.0002,area:0.0815
+  RelationNameSynonym: area=location:0.46,area=area:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Disneyland (m.02fzs)] -> [location.location.area] -> [?0]
+
 
 Query: how many films has tim burton produced
 Entity: (u'Bruce Lee', 1.0, 227180, False)
@@ -474,6 +776,18 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.07rd7) 
 } LIMIT 30000}
 Result: 15
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Tim Burton, Tim Burton: tokens:tim,burton prob:0.994 score:1638763 perfect_match:True]
+    ->Relation [name:film.producer.film, film.producer.film:
+  RelationName: film=film,film=film,produce=producer
+  DerivationMatch: film=film,film=film,produce=producer
+  RelationContext: film:0.0810,have:0.0038,produce:0.0371,many:0.0004
+  RelationNameSynonym: film=film:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Tim Burton (m.07rd7)] -> [film.producer.film] -> [?0]
+
 
 Query: how many politicians have served in the us navy
 Entity: (u'The U.S. Navy', 0.333333333333, 0, True)
@@ -501,6 +815,21 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?1 != fb:m.07wg3) 
 } LIMIT 30000}
 Result: 8
+Candidate Graph:   QueryCandidate [pattern:ERMRT
+  Entity [name:United States Navy, United States Navy: tokens:us,navy prob:0.991 score:1565298 perfect_match:False]
+    ->Relation [name:military.armed_force.personnel, military.armed_force.personnel:
+  ]
+  Variable [index:0]
+    ->Relation [name:freebase.valuenotation.has_value, freebase.valuenotation.has_value:
+  RelationName: have=have
+  DerivationMatch: have=have
+  RelationNameSynonym: many=have:0.42,have=have:1.00]
+  Variable [index:1]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [United States Navy (m.07wg3)] -> [military.armed_force.personnel] -> [?0]
+  [?0] -> [freebase.valuenotation.has_value] -> [?1]
+
 
 Query: what are some object-oriented programming languages
 Entity: (u'Object-oriented programming', 0.999987096885, 232499, False)
@@ -515,6 +844,16 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.05r20) 
 } LIMIT 300
 Result: Programming language
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Programming language, Programming language: tokens:programming,languages prob:0.982 score:18949 perfect_match:False]
+    ->Relation [name:type.object.name, type.object.name:
+  RelationName: object-oriented=object
+  RelationNameSynonym: object-oriented=object:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Programming language (m.05r20)] -> [type.object.name] -> [?0]
+
 
 Query: what are the books in the chronicles of narnia series
 Entity: (u'The Chronicles of Narnia', 0.831933, 43405, False)
@@ -539,6 +878,17 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.07k3w) 
 } LIMIT 300
 Result: C. S. Lewis (m.01wd02c)
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:The Chronicles of Narnia, The Chronicles of Narnia: tokens:the,chronicles,of,narnia,series prob:0.832 score:43405 perfect_match:False]
+    ->Relation [name:book.literary_series.author_s, book.literary_series.author_s:
+  RelationName: book=book
+  RelationContext: book:0.0309
+  RelationNameSynonym: book=literary:0.46,book=author:0.54]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia (m.07k3w)] -> [book.literary_series.author_s] -> [?0]
+
 
 Query: what decision did manny pacquiao vs. timothy bradley end with
 Entity: (u'Manny Pacquiao vs. Timothy Bradley', 1.0, 4, True)
@@ -552,4 +902,15 @@ SPARQL query: PREFIX fb: <http://rdf.freebase.com/ns/>
  FILTER (?0 != fb:m.0j24b7h) 
 } LIMIT 300
 Result: 12
+Candidate Graph:   QueryCandidate [pattern:ERT
+  Entity [name:Manny Pacquiao vs. Timothy Bradley, Manny Pacquiao vs. Timothy Bradley: tokens:manny,pacquiao,vs.,timothy,bradley prob:1.000 score:4 perfect_match:True]
+    ->Relation [name:boxing.boxing_match.round_match_ended, boxing.boxing_match.round_match_ended:
+  RelationName: end=end
+  DerivationMatch: end=end
+  RelationNameSynonym: end=end:1.00]
+  Variable [index:0]
+  ]
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Manny Pacquiao vs. Timothy Bradley (m.0j24b7h)] -> [boxing.boxing_match.round_match_ended] -> [?0]
+
 
