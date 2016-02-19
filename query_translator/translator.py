@@ -6,17 +6,20 @@ Copyright 2015, University of Freiburg.
 Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 
 """
-from entity_linker.entity_linker import EntityLinker
-from answer_type import AnswerTypeIdentifier
-from pattern_matcher import QueryCandidateExtender, QueryPatternMatcher, get_content_tokens
-import logging
-import ranker
-import time
-from corenlp_parser.parser import CoreNLPParser
-import globals
 import collections
+import logging
+import time
+
+import globals
+import ranker
+from answer_type import AnswerTypeIdentifier
+from corenlp_parser.parser import CoreNLPParser
+from entity_linker.entity_linker import EntityLinker
+from pattern_matcher import QueryCandidateExtender, QueryPatternMatcher, get_content_tokens
+from util import writeFile
 
 logger = logging.getLogger(__name__)
+
 
 class Query:
     """
@@ -54,9 +57,7 @@ class Query:
             self.original_query = text
 
 
-
 class QueryTranslator(object):
-
     def __init__(self, sparql_backend,
                  query_extender,
                  entity_linker,
@@ -103,6 +104,9 @@ class QueryTranslator(object):
         :param entity_oracle:
         :return:
         """
+
+        partial_result = query_text + '\n'
+
         # Parse query.
         logger.info("Translating query: %s." % query_text)
         start_time = time.time()
@@ -110,12 +114,15 @@ class QueryTranslator(object):
         query = self.parse_and_identify_entities(query_text)
         # Set the relation oracle.
         query.relation_oracle = self.scorer.get_parameters().relation_oracle
-	for e in query.identified_entities:
-		logging.error((e.name, e.surface_score, e.score, e.perfect_match))
+        for e in query.identified_entities:
+            partial_result += "Entity: " + str((e.name, e.surface_score, e.score, e.perfect_match)) + '\n'
+            #logging.error((e.name, e.surface_score, e.score, e.perfect_match))
+
         # Identify the target type.
         target_identifier = AnswerTypeIdentifier()
         target_identifier.identify_target(query)
-	logging.error(query.target_type.as_string())
+        #logging.error(query.target_type.as_string())
+        partial_result += "TargetType: " + str(query.target_type.as_string())
 
         # Get content tokens of the query.
         query.query_content_tokens = get_content_tokens(query.query_tokens)
@@ -159,7 +166,7 @@ class QueryTranslator(object):
         query.identified_entities = entities
         return query
 
-    def translate_and_execute_query(self, query, n_top=200):
+    def translate_and_execute_query(self, query, n_top = 200):
         """
         Translates the query and returns a list
         of namedtuples of type TranslationResult.
@@ -169,7 +176,7 @@ class QueryTranslator(object):
         TranslationResult = collections.namedtuple('TranslationResult',
                                                    ['query_candidate',
                                                     'query_result_rows'],
-                                                   verbose=False)
+                                                   verbose = False)
         # Parse query.
         results = []
         num_sparql_queries = self.sparql_backend.num_queries_executed
@@ -190,7 +197,7 @@ class QueryTranslator(object):
         if len(ranked_candidates) > n_top:
             logger.info("Truncating returned candidates to %s." % n_top)
         for query_candidate in ranked_candidates[:n_top]:
-            query_result = query_candidate.get_result(include_name=True)
+            query_result = query_candidate.get_result(include_name = True)
             n_total_results += sum([len(rows) for rows in query_result])
             result = TranslationResult(query_candidate, query_result)
             results.append(result)
@@ -206,8 +213,8 @@ class QueryTranslator(object):
 
 
 class TranslatorParameters(object):
-
     """A class that holds parameters for the translator."""
+
     def __init__(self):
         self.entity_oracle = None
         self.relation_oracle = None
@@ -238,4 +245,3 @@ def get_suffix_for_params(parameters):
 
 if __name__ == '__main__':
     logger.warn("No MAIN")
-
