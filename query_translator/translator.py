@@ -105,7 +105,7 @@ class QueryTranslator(object):
         :return:
         """
 
-        partial_result = query_text + '\n'
+        partial_result = "Query: " + query_text + '\n'
 
         # Parse query.
         logger.info("Translating query: %s." % query_text)
@@ -122,7 +122,9 @@ class QueryTranslator(object):
         target_identifier = AnswerTypeIdentifier()
         target_identifier.identify_target(query)
         #logging.error(query.target_type.as_string())
-        partial_result += "TargetType: " + str(query.target_type.as_string())
+        partial_result += "TargetType: " + str(query.target_type.as_string()) + "\n"
+
+        writeFile("test.log", partial_result, "a")
 
         # Get content tokens of the query.
         query.query_content_tokens = get_content_tokens(query.query_tokens)
@@ -135,7 +137,7 @@ class QueryTranslator(object):
         ermrert_matches = []
         ert_matches = pattern_matcher.match_ERT_pattern()
         ermrt_matches = pattern_matcher.match_ERMRT_pattern()
-        ermrert_matches = pattern_matcher.match_ERMRERT_pattern()
+        ermrert_matches = pattern_matcher.match_eERMRERT_pattern()
         duration = (time.time() - start_time) * 1000
         logging.info("Total translation time: %.2f ms." % duration)
         return ert_matches + ermrt_matches + ermrert_matches

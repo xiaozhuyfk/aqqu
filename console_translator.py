@@ -11,6 +11,7 @@ import globals
 import scorer_globals
 import sys
 from query_translator.translator import QueryTranslator
+from util import test_set, writeFile
 
 logging.basicConfig(format="%(asctime)s : %(levelname)s "
                            ": %(module)s : %(message)s",
@@ -37,6 +38,27 @@ def main():
     ranker = scorer_globals.scorers_dict[args.ranker_name]
     translator = QueryTranslator.init_from_config()
     translator.set_scorer(ranker)
+
+    writeFile("test.log", "", "w")
+    for query in test_set:
+        results = translator.translate_and_execute_query(query)
+        if (len(results) > 0):
+            best_candidate = results[0].query_candidate
+            sparql_query = best_candidate.to_sparql_query()
+            result_rows = results[0].query_results_rows
+            result = []
+            for r in result_rows:
+                if len(r) > 1:
+                    result.append("%s (%s)" % (r[1], r[0]))
+                else:
+                    result.append("%s" % r[0])
+            query_str = "SPARQL query: %s\n" % sparql_query
+            result_str = "Result: %s\n" % (" ".join(result))
+            writeFile("test.log", query_str, "a")
+            writeFile("test.log", result_str, "a")
+
+
+    """
     while True:
         sys.stdout.write("enter question> ")
         sys.stdout.flush()
@@ -58,6 +80,7 @@ def main():
                     result.append("%s" % r[0])
             logger.info("SPARQL query: %s" % sparql_query)
             logger.info("Result: %s " % " ".join(result))
+    """
 
 
 if __name__ == "__main__":
