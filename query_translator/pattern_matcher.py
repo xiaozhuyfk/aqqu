@@ -244,7 +244,7 @@ class QueryPatternMatcher:
 
     def construct_initial_query_candidates(self):
         '''
-        Construct a list of candidates with single root node (each entity)
+        Construct a list of candidates with single root node (for each token)
         :return:
         '''
         query_candidates = []

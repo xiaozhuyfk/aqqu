@@ -39,6 +39,7 @@ def main():
     translator = QueryTranslator.init_from_config()
     translator.set_scorer(ranker)
 
+    """
     writeFile(test_file, "", "w")
     for query in correct_set:
         results = translator.translate_and_execute_query(query)
@@ -89,7 +90,6 @@ def main():
                     result.append("%s" % r[0])
             logger.info("SPARQL query: %s" % sparql_query)
             logger.info("Result: %s " % " ".join(result))
-    """
 
 
 if __name__ == "__main__":
