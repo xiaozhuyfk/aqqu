@@ -55,8 +55,8 @@ def main():
                         result.append("%s (%s)" % (r[1], r[0]))
                     else:
                         result.append("%s" % r[0])
-                root_name = "Root Node: %s\n" % candidate.root_node.entity.name
-                query_str = "SPARQL query: %s\n" % sparql_query
+                root_name = "Root Node: %s\n" % candidate.root_node.entity.name.encode('utf-8')
+                query_str = "SPARQL query: %s\n" % sparql_query.encode('utf-8')
                 graph_str = "Candidate Graph: %s\n" % candidate.graph_as_string().encode('utf-8')
                 graph_str_simple = "Simple Candidate Graph: %s\n" % candidate.graph_as_simple_string().encode('utf-8')
                 result_str = "Result: %s\n" % (" ".join(result))
