@@ -11,4 +11,5 @@ virtuoso-opensource/
 .idea/
 .project
 .pydevproject
+*.so
 
