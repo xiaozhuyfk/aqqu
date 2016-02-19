@@ -11,7 +11,7 @@ import globals
 import scorer_globals
 import sys
 from query_translator.translator import QueryTranslator
-from query_translator.util import test_set, writeFile
+from query_translator.util import test_set, writeFile, test_file
 
 logging.basicConfig(format="%(asctime)s : %(levelname)s "
                            ": %(module)s : %(message)s",
@@ -54,10 +54,9 @@ def main():
                     result.append("%s" % r[0])
             query_str = "SPARQL query: %s\n" % sparql_query
             result_str = "Result: %s\n" % (" ".join(result))
-            writeFile("test.log", query_str, "a")
-            writeFile("test.log", result_str, "a")
-            writeFile("test.log", "\n", "a")
-
+            writeFile(test_file, query_str, "a")
+            writeFile(test_file, result_str, "a")
+        writeFile(test_file, "\n", "a")
 
     """
     while True:

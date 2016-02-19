@@ -16,7 +16,7 @@ from answer_type import AnswerTypeIdentifier
 from corenlp_parser.parser import CoreNLPParser
 from entity_linker.entity_linker import EntityLinker
 from pattern_matcher import QueryCandidateExtender, QueryPatternMatcher, get_content_tokens
-from util import writeFile
+from util import writeFile, test_file
 
 logger = logging.getLogger(__name__)
 
@@ -124,7 +124,7 @@ class QueryTranslator(object):
         #logging.error(query.target_type.as_string())
         partial_result += "TargetType: " + str(query.target_type.as_string()) + "\n"
 
-        writeFile("test.log", partial_result, "a")
+        writeFile(test_file, partial_result, "a")
 
         # Get content tokens of the query.
         query.query_content_tokens = get_content_tokens(query.query_tokens)

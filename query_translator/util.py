@@ -40,6 +40,7 @@ test_set = ["what movie did danny devito win an award for in 1981",
             "what are some object-oriented programming languages",
             "what are the books in the chronicles of narnia series",
             "what decision did manny pacquiao vs. timothy bradley end with"]
+test_file = "test.log"
 
 
 def edit_distance(s1, s2, compare_lower = True):
