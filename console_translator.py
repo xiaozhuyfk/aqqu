@@ -45,7 +45,7 @@ def main():
         if (len(results) > 0):
             best_candidate = results[0].query_candidate
             sparql_query = best_candidate.to_sparql_query()
-            result_rows = results[0].query_results_rows
+            result_rows = results[0].query_result_rows
             result = []
             for r in result_rows:
                 if len(r) > 1:
