@@ -243,6 +243,10 @@ class QueryPatternMatcher:
         self.sparql_backend = sparql_backend
 
     def construct_initial_query_candidates(self):
+        '''
+        Construct a list of candidates with single root node (each entity)
+        :return:
+        '''
         query_candidates = []
         for entity in self.query.identified_entities:
             if isinstance(entity.entity, Value):

@@ -40,7 +40,44 @@ test_set = ["what movie did danny devito win an award for in 1981",
             "what are some object-oriented programming languages",
             "what are the books in the chronicles of narnia series",
             "what decision did manny pacquiao vs. timothy bradley end with"]
-test_file = "test1.log"
+
+correct_set = [
+    "when was oxygen discovered",
+    "who designed the parthenon",
+    "who was 8 mile directed by",
+    "when was facebook launched",
+    "who was titanic directed by",
+    "who is the ceo of savealot",
+    "what is europe 's area",
+    "where was omarion born",
+    "what is yahoo!'s slogan",
+    "who created the far side",
+    "when was walmart founded",
+    "who designed pac-man",
+    "who invented koolaid",
+    "what causes syphilis",
+    "who started starbucks",
+    "what team does mike babcock coach",
+    "what is the nutty professor rated",
+    "what team does alan butcher coach",
+    "what is the area of south america",
+    "how many religions use the bible",
+    "what was henry viii's royal line",
+    "when was the sony nex-5 released",
+    "how thick is the aletsch glacier",
+    "who published the amazing spider-man",
+    "what armed forces does thailand have",
+    "who was charlie_s angels produced by",
+    "when was the printing press invented",
+    "what is the theme song of full house",
+    "what product lines does ipod include",
+    "how many rna codons does glycine have",
+    "how many employees does nintendo have",
+    "what spirits are produced in kentucky",
+    "what is ashok malhotra's bowling pace"
+]
+
+test_file = "correct_test.log"
 
 
 def edit_distance(s1, s2, compare_lower = True):
