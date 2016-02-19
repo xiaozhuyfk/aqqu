@@ -123,6 +123,7 @@ Entity: (u'Episode', 0.176139928418, 22364, False)
 Entity: (u'Episodes', 0.157919044247, 4070, True)
 Entity: (u'Pianos', 0.140255452171, 21389, False)
 TargetType: Other
+
 Query: who is the present newscaster on cbs evening news
 Entity: (u'CBS Evening News', 0.99231284123, 237659, True)
 Entity: (u'The Evening News (Newspaper) #2', 0.322500187702, 129, True)
@@ -224,6 +225,7 @@ Entity: (u'Holiday', 0.458137425129, 581658, False)
 Entity: (u'Jewish holiday', 0.197398835787, 32889, False)
 Entity: (u'Buddhist holidays', 0.156667734196, 49, False)
 TargetType: Other
+
 Query: what are the texts of taoism
 Entity: (u'The Texts of Taoism', 1.0, 35, True)
 Entity: (u'Texts of Taoism', 0.333333333333, 0, True)
