@@ -41,7 +41,7 @@ def main():
 
 
     writeFile(test_file, "", "w")
-    for query in unidentified:
+    for query in test_set + unidentified:
         results = translator.translate_and_execute_query(query)
         if (len(results) > 0):
             for i in xrange(len(results)):
