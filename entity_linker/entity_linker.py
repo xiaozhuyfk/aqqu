@@ -290,7 +290,6 @@ class EntityLinker:
                     continue
                 for e, surface_score in entities:
                     # Ignore entities with low surface score.
-                    print e.name
                     if surface_score < min_surface_score:
                         continue
                     perfect_match = False

@@ -44,6 +44,11 @@ def main():
 
     writeFile(test_file, "", "w")
 
+    linker = translator.entity_linker
+    entities = linker.surface_index.get_entities_for_surface("spanish")
+    for (e, score) in entities:
+        print e.name, score
+
     """
     for i in xrange(len(rank_error)):
         query = rank_error[i]
