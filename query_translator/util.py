@@ -127,7 +127,7 @@ unidentified = [
     "how many engineers worked on the design and construction of the plymouth breakwater"
 ]
 
-test_file = "unidentified.log"
+test_file = "error.log"
 
 
 def edit_distance(s1, s2, compare_lower = True):
