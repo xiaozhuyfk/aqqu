@@ -1,0 +1,291 @@
+Query: when was oxygen discovered
+Entity: (u'wasoxygen', 1.0, 0, True)
+Entity: (u'Oxygen', 1.0, 255237, False)
+TargetType: Date
+Root Node: Oxygen
+Result: 1774
+
+Query: who designed the parthenon
+Entity: (u'Parthenon', 0.604093622193, 98612, True)
+Entity: (u'Parthenon (Venue)', 0.382668332122, 2328, True)
+Entity: (u'Parthenon', 0.961783697742, 98612, True)
+TargetType: person, organization, employer, character
+Root Node: Parthenon
+Result: Ictinus (m.03w1d) Callicrates (m.04937) Phidias (m.0j4yg)
+
+Query: who was 8 mile directed by
+Entity: (u'8 Mile', 0.718789728861, 275, True)
+Entity: (u'Film director (Profession)', 0.499643274822, 12592, False)
+Entity: (u'Jean Negulesco', 0.403966256452, 1171, False)
+Entity: (u'Mile', 0.919329395517, 2082, True)
+TargetType: person, organization, employer, character
+Root Node: 8 Mile
+Result: Curtis Hanson (m.0184jw)
+
+Query: when was facebook launched
+Entity: (u'Facebook', 0.980081051933, 20490157, True)
+TargetType: Date
+Root Node: Facebook
+Result: 2004-02-04
+
+Query: who was titanic directed by
+Entity: (u'Film director (Profession)', 0.499643274822, 12592, False)
+Entity: (u'Jean Negulesco', 0.403966256452, 1171, False)
+Entity: (u'RMS Titanic', 0.509296562585, 130691, False)
+Entity: (u'Titanic', 0.409702044761, 131297, True)
+TargetType: person, organization, employer, character
+Root Node: Titanic
+Result: James Cameron (m.03_gd)
+
+Query: who is the ceo of savealot
+Entity: (u'C. Edward McVaney', 0.958904109589, 140, False)
+Entity: (u'Save-A-Lot', 1.0, 661, True)
+Entity: (u'Managing Director', 0.97081319684, 92293, False)
+TargetType: person, organization, employer, character
+Root Node: Managing Director
+Result: Santiago Roces (m.0ncnxfr)
+
+Query: what is europe 's area
+Entity: (u'Europe', 0.85924160737, 39937138, False)
+Entity: (u'Sarea', 0.393782347338, 4, True)
+Entity: (u'Europe (Hard rock Artist)', 0.129742527375, 863, False)
+Entity: (u'Europe', 0.924371413609, 39937138, True)
+Entity: (u'Area', 0.850698126258, 76568, True)
+TargetType: Other
+Root Node: Europe
+Result: 10180000
+
+Query: where was omarion born
+Entity: (u'Omarion', 0.99980405604, 20410, True)
+TargetType: location, event, conference
+Root Node: Omarion
+Result: Inglewood (m.0r0f7)
+
+Query: what is yahoo!'s slogan
+Entity: (u'Yahoo (Character Species)', 0.70089766458, 134, False)
+Entity: (u'Yahoo!', 0.185242715267, 10885291, False)
+Entity: (u'Yahoo!', 0.942008697844, 10885291, True)
+Entity: (u'Slogan', 0.767881657439, 9222, True)
+TargetType: Other
+Root Node: Yahoo!
+Result: Do You Yahoo!?
+
+Query: who created the far side
+Entity: (u'The Far Side', 0.990166308402, 8107, True)
+Entity: (u'Far side of the Moon', 0.603548026821, 9954, False)
+Entity: (u'Side', 0.692583545351, 4773, True)
+TargetType: person, organization, employer, character
+Root Node: The Far Side
+Result: Gary Larson (m.0m8g2)
+
+Query: when was walmart founded
+Entity: (u'Walmart', 0.983760899289, 3391946, True)
+TargetType: Date
+Root Node: Walmart
+Result: 1962
+
+Query: who designed pac-man
+Entity: (u'Pac-Man', 0.882586406895, 196287, True)
+TargetType: person, organization, employer, character
+Root Node: Pac-Man
+Result: Tōru Iwatani (m.01vhj6)
+
+Query: who invented koolaid
+Entity: (u'Kool-Aid', 0.711291198868, 163763, True)
+Entity: (u'Drinking the Kool-Aid', 0.143353777538, 63, False)
+TargetType: person, organization, employer, character
+Root Node: Kool-Aid
+Result: Kraft Foods (m.02ktt7)
+
+Query: what causes syphilis
+Entity: (u'Syphilis', 0.993693902013, 25796, True)
+TargetType: Other
+Root Node: Syphilis
+Result: Treponema pallidum (m.0gr12)
+
+Query: who started starbucks
+Entity: (u'Starbucks', 0.990318457842, 1747549, True)
+TargetType: person, organization, employer, character
+Root Node: Starbucks
+Result: Gordon Bowker (m.06q6mf) Zev Siegl (m.05f9x3z) Jerry Baldwin (m.06th9v)
+
+Query: what team does mike babcock coach
+Entity: (u'Mike Babcock', 0.99929349426, 16973, True)
+Entity: (u'Team', 0.441557255154, 414089, True)
+Entity: (u'Coach', 0.367595380119, 4446, True)
+Entity: (u'Baseball Coach', 0.107632822168, 1596, False)
+TargetType: Other
+Root Node: Mike Babcock
+Result: Detroit Red Wings (m.02fp3)
+
+Query: what is the nutty professor rated
+Entity: (u'The Nutty Professor (Romantic comedy Film) #1', 0.587665354296, 780, True)
+Entity: (u'The Nutty Professor', 0.36256872237, 3321, True)
+Entity: (u'The Nutty Professor (Romantic comedy Film) #1', 0.805671264665, 780, True)
+Entity: (u'Professor', 0.959717640992, 550241, True)
+TargetType: Other
+Root Node: The Nutty Professor
+Result: PG-13 (USA) (m.0kprd3)
+
+Query: what team does alan butcher coach
+Entity: (u'Alan Butcher', 1.0, 414, True)
+Entity: (u'Team', 0.441557255154, 414089, True)
+Entity: (u'Coach', 0.367595380119, 4446, True)
+Entity: (u'Baseball Coach', 0.107632822168, 1596, False)
+TargetType: Other
+Root Node: Alan Butcher
+Result: Zimbabwe national cricket team (m.038_3y)
+
+Query: what is the area of south america
+Entity: (u'Carinthian Slovenes', 1.0, 702, False)
+Entity: (u'South America', 0.959975493807, 3896540, True)
+Entity: (u'Burkina Faso', 0.646300053495, 289381, False)
+Entity: (u'Lot-et-Garonne', 0.137402560241, 9503, False)
+Entity: (u'Area', 0.850698126258, 76568, True)
+TargetType: Other
+Root Node: South America
+Result: 17840000
+
+Query: how many religions use the bible
+Entity: (u'Holy of Holies', 1.0, 36892, False)
+Entity: (u'The Bible', 0.730411116385, 8936253, True)
+Entity: (u'The Bible', 0.963573301128, 8936253, True)
+Entity: (u'Religion (TV Genre)', 0.872776747502, 224215, False)
+TargetType: Other
+Root Node: The Bible
+Result: 10
+
+Query: what was henry viii's royal line
+Entity: (u'Henry VIII of England', 1.0, 223708, False)
+Entity: (u'S\xe9gol\xe8ne Royal', 1.0, 21911, False)
+Entity: (u'Royal Line (Canonical Version)', 0.111111111111, 0, True)
+Entity: (u'Royal Line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Line', 0.2556582535, 3802, True)
+Entity: (u'Color Lines', 0.215124552327, 1575, False)
+TargetType: Other
+Root Node: Henry VIII of England
+Result: Tudor dynasty (m.07ply)
+
+Query: when was the sony nex-5 released
+Entity: (u'Sony NEX-5', 0.999915952261, 11897, True)
+Entity: (u'Sony NEX-5', 1.0, 11897, False)
+Entity: (u'Sony Corporation', 0.872445622211, 4138529, False)
+TargetType: Date
+Root Node: Sony NEX-5
+Result: 2010-05-11
+
+Query: how thick is the aletsch glacier
+Entity: (u'Aletsch Glacier', 1.0, 4859, True)
+TargetType: Other
+Root Node: Aletsch Glacier
+Result: 1000
+
+Query: who published the amazing spider-man
+Entity: (u'The Amazing Spider-Man (Comic Book Series)', 0.573326775499, 18235, True)
+Entity: (u'The Amazing Spider-Man', 0.186005670214, 19513, True)
+Entity: (u'The Amazing Spider-Man', 0.996730857639, 19513, False)
+Entity: (u'The Amazing Spider-Man (Comic Book Series)', 0.925543177251, 18235, True)
+Entity: (u'Spider-Man', 0.703701210683, 396380, True)
+TargetType: person, organization, employer, character
+Root Node: The Amazing Spider-Man (Comic Book Series)
+Result: Marvel Comics (m.058j2)
+
+Query: what armed forces does thailand have
+Entity: (u'Armed forces', 0.595912185844, 287183, True)
+Entity: (u'United States Armed Forces', 0.157455420528, 381293, False)
+Entity: (u'Thailand', 0.85256682469, 7425965, True)
+Entity: (u'Force (Dimension)', 0.66674208351, 16640, False)
+Entity: (u'United States Army Air Forces', 0.118974114304, 109208, False)
+TargetType: Other
+Root Node: Thailand
+Result: Royal Thai Navy (m.04js6n) Royal Thai Armed Forces (m.0vb3mwn) Royal Thai Army (m.04kfp9) Royal Thai Air Force (m.05w6hg)
+
+Query: who was charlie_s angels produced by
+Entity: (u"Charlie's Angels", 0.735632890574, 10805, True)
+Entity: (u"Charlie's Angels (Crime Fiction Film)", 0.188576706004, 6506, True)
+TargetType: person, organization, employer, character
+Root Node: Charlie's Angels (Crime Fiction Film)
+Result: Drew Barrymore (m.026c1) Leonard Goldberg (m.05zh9c) Nancy Juvonen (m.05p185j)
+
+Query: when was the printing press invented
+Entity: (u'Printing press', 0.998846440931, 14720, True)
+Entity: (u'The Printing', 1.0, 2, True)
+Entity: (u'Printing', 0.881219704238, 72546, True)
+Entity: (u'Freedom of the press', 0.250455738796, 182501, False)
+Entity: (u'Mass media', 0.14167457831, 168495, False)
+Entity: (u'News media', 0.105698767855, 28588, False)
+TargetType: Date
+Root Node: Printing press
+Result: 1440
+
+Query: what is the theme song of full house
+Entity: (u'The World Is Not Enough (Composition)', 0.438699859638, 179, False)
+Entity: (u'The NeverEnding Story (Composition) #2', 0.299599183851, 159, False)
+Entity: (u'When the Wind Blows (Composition) #62', 0.171199350201, 19, False)
+Entity: (u'Full House', 0.777945715252, 32918, True)
+Entity: (u'Theme music', 0.552542726412, 8391, False)
+Entity: (u'Full House (TV Romantic Comedy) #27', 0.124765609267, 1452, True)
+Entity: (u'Song', 0.572532232892, 206492, True)
+Entity: (u'House (TV Drama)', 0.311248122988, 41658, True)
+Entity: (u'House music', 0.306339887015, 62058, False)
+Entity: (u'House', 0.119683772698, 236649, True)
+TargetType: Other
+Root Node: Full House
+Result: Everywhere You Look (m.0c0l1tk)
+
+Query: what product lines does ipod include
+Entity: (u'Product lining', 0.910321061256, 1894, False)
+Entity: (u'iPod', 0.976600785647, 6246180, True)
+Entity: (u'Product', 0.65305977864, 96836, True)
+Entity: (u'Line', 0.425166411023, 3802, False)
+Entity: (u'Color Lines', 0.174321717817, 1575, False)
+TargetType: Other
+Root Node: iPod
+Result: iPod touch (m.02z6z4v) iPod classic (m.02z6yz_) iPod shuffle (m.04yg_s) iPod nano (m.07t99m) iPod mini (m.026ysq)
+
+Query: how many rna codons does glycine have
+Entity: (u'RNA Codons', 0.333333333333, 0, True)
+Entity: (u'RNA Codons', 0.333333333333, 0, True)
+Entity: (u'RNA-codons', 0.333333333333, 0, True)
+Entity: (u'Genetic code', 1.0, 9493, False)
+Entity: (u'RNA', 0.970390513211, 740804, True)
+Entity: (u'Glycine (Amino Acid)', 0.803683345255, 27567, True)
+Entity: (u'Glycine', 0.1169782139, 1116, True)
+TargetType: Other
+Root Node: Glycine (Amino Acid)
+Result: 4
+
+Query: how many employees does nintendo have
+Entity: (u'Employment', 0.996849820118, 182140, False)
+Entity: (u'Nintendo', 0.958340931966, 1855975, True)
+TargetType: Other
+Root Node: Nintendo
+Result: 11
+
+Query: what spirits are produced in kentucky
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced in', 0.2, 0, True)
+Entity: (u'Kentucky', 0.832334426438, 2769768, True)
+Entity: (u'Spirit', 0.520667307528, 108105, False)
+Entity: (u'Distilled beverage', 0.21588262561, 21946, False)
+TargetType: Other
+Root Node: Kentucky
+Result: Woodford Reserve (m.04m1h1) Angel's Envy (m.0nk3wm7)
+
+Query: what is ashok malhotra's bowling pace
+Entity: (u'Bowling Pace', 1.0, 0, True)
+Entity: (u'Ashok Malhotra', 0.909090909091, 110, True)
+Entity: (u'Bowling', 0.736844199501, 15451, True)
+Entity: (u'Peace', 0.355393621034, 442651, False)
+TargetType: Other
+Root Node: Ashok Malhotra
+Result: Medium (m.02k87p1)
+
