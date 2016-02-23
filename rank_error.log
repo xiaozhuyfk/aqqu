@@ -1,0 +1,91 @@
+Query: who is the present newscaster on cbs evening news
+Entity: (u'CBS Evening News', 0.99231284123, 237659, True)
+Entity: (u'The Evening News (Newspaper) #2', 0.322500187702, 129, True)
+Entity: (u'The Present', 0.317390777508, 284, True)
+Entity: (u'Edinburgh Evening News', 0.214999545135, 6912, False)
+Entity: (u'The Present', 0.203398315164, 182, True)
+Entity: (u'The Present (Rock Album)', 0.182164425119, 163, True)
+Entity: (u'CBS', 0.856024728164, 1667770, True)
+Entity: (u'News Presenter', 0.849008927996, 0, False)
+Entity: (u'Evening (m/04mx32)', 0.511346892319, 36337, True)
+Entity: (u'News', 0.492882295248, 131990, True)
+Entity: (u'Evening (Romance Film)', 0.243171504344, 991, True)
+Entity: (u'NEWS', 0.184980476678, 672, True)
+Entity: (u'Evening Magazine', 0.165656777078, 1602, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 116, ERMRT = 240, ERMRERT = 4
+Root Node: CBS Evening News
+Result: Don Hewitt (m.078q1l) CBS News (m.01_8w2)
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [CBS Evening News (m.01bndp)] -> [tv.tv_program.program_creator] -> [?0]
+Answer Candidate Graph: QueryCandidate pattern:ERMRERT
+  [News Presenter (m.014l7h)] -> [business.job_title.people_with_this_title] -> [?0]
+  [?0] -> [business.employment_tenure.company] -> [CBS (m.09d5h)]
+  [?0] -> [business.employment_tenure.person] -> [?1]
+Result Features: {'n_literal_entities': 1, 'total_literal_length': 3, 'literal_entities_length': 3, 'n_literal_relation_tokens': 0, 'result_size_0': 0, 'n_literal_relations': 0, 'matches_answer_type': 1, 'coverage': 0.4444444444444444, 'n_relations': 1, 'cardinality': 9, 'avg_em_surface_score': 0.99231284123, 'result_size_1_to_20': 1, 'avg_em_popularity': 12.378592152143504, 'sum_em_popularity': 12.378592152143504, 'n_weak_relation_tokens': 0, 'sum_em_surface_score': 0.99231284123, 'sum_context_relation_tokens': 0.001661167077020476, 'sum_weak_relation_tokens': 0, 'n_entity_matches': 1, 'n_context_relation_tokens': 1, 'n_derivation_relation_tokens': 0, 'result_size_gt_20': 0}
+Answer Features: {'n_literal_entities': 2, 'total_literal_length': 2, 'literal_entities_length': 2, 'n_literal_relation_tokens': 0, 'result_size_0': 0, 'n_literal_relations': 0, 'matches_answer_type': 1, 'coverage': 0.4444444444444444, 'n_relations': 3, 'cardinality': 11, 'avg_em_surface_score': 0.85251682808, 'result_size_1_to_20': 1, 'avg_em_popularity': 6.663498981352461, 'sum_em_popularity': 13.326997962704922, 'n_weak_relation_tokens': 0, 'sum_em_surface_score': 1.70503365616, 'sum_context_relation_tokens': 0.002570655363585248, 'sum_weak_relation_tokens': 0, 'n_entity_matches': 2, 'n_context_relation_tokens': 2, 'n_derivation_relation_tokens': 0, 'result_size_gt_20': 0}
+Feature Diff: {'sum_em_surface_score_a': 0.99231284123, 'total_literal_length': 1, 'result_size_gt_20': 0, 'n_relations_a': 1, 'n_relations_b': 3, 'sum_em_surface_score': -0.71272081493, 'n_context_relation_tokens_a': 1, 'n_context_relation_tokens_b': 2, 'matches_answer_type': 0, 'result_size_gt_20_a': 0, 'result_size_gt_20_b': 0, 'n_relations': -2, 'n_derivation_relation_tokens_b': 0, 'result_size_1_to_20': 0, 'sum_weak_relation_tokens': 0, 'avg_em_surface_score': 0.13979601315, 'cardinality_a': 9, 'cardinality_b': 11, 'n_literal_relations': 0, 'avg_em_popularity': 5.715093170791043, 'sum_em_popularity': -0.9484058105614181, 'n_weak_relation_tokens': 0, 'sum_context_relation_tokens': -0.0009094882865647721, 'literal_entities_length_a': 3, 'literal_entities_length_b': 2, 'n_literal_entities_a': 1, 'n_entity_matches': -1, 'n_context_relation_tokens': -1, 'sum_context_relation_tokens_a': 0.001661167077020476, 'n_weak_relation_tokens_a': 0, 'n_weak_relation_tokens_b': 0, 'sum_context_relation_tokens_b': 0.002570655363585248, 'n_literal_relation_tokens_a': 0, 'n_literal_entities': -1, 'literal_entities_length': 1, 'result_size_0_b': 0, 'n_literal_relation_tokens': 0, 'n_literal_relation_tokens_b': 0, 'result_size_0_a': 0, 'n_entity_matches_a': 1, 'result_size_0': 0, 'n_entity_matches_b': 2, 'sum_em_popularity_b': 13.326997962704922, 'sum_weak_relation_tokens_a': 0, 'coverage': 0.0, 'sum_em_popularity_a': 12.378592152143504, 'n_literal_relations_a': 0, 'n_literal_relations_b': 0, 'cardinality': -2, 'result_size_1_to_20_a': 1, 'result_size_1_to_20_b': 1, 'n_literal_entities_b': 2, 'coverage_a': 0.4444444444444444, 'coverage_b': 0.4444444444444444, 'matches_answer_type_b': 1, 'matches_answer_type_a': 1, 'sum_weak_relation_tokens_b': 0, 'avg_em_popularity_b': 6.663498981352461, 'avg_em_popularity_a': 12.378592152143504, 'total_literal_length_b': 2, 'sum_em_surface_score_b': 1.70503365616, 'total_literal_length_a': 3, 'avg_em_surface_score_a': 0.99231284123, 'avg_em_surface_score_b': 0.85251682808, 'n_derivation_relation_tokens_a': 0, 'n_derivation_relation_tokens': 0}
+
+Query: what year was the album decade released
+Entity: (u'The Album', 0.242627058026, 531, True)
+Entity: (u'Album (m/02lx2r)', 0.924086966045, 118924, True)
+Entity: (u'Year', 0.708396384259, 1064748, True)
+Entity: (u'Decade (Unit of frequency)', 0.566263388268, 15554, True)
+Entity: (u'Year', 0.244091331527, 366879, True)
+Entity: (u'Fin de si\xe8cle', 0.146565609253, 923, False)
+Entity: (u'Decade (Rock Album)', 0.128339579923, 48, True)
+TargetType: Date
+Pattern matches: ERT = 36, ERMRT = 22, ERMRERT = 0
+Root Node: The Album
+Result: 1977-12-12
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Album (m.01hnjdn)] -> [music.album.release_date] -> [?0]
+Answer Candidate Graph: QueryCandidate pattern:ERT
+  [Decade (Rock Album) (m.02967)] -> [music.album.release_date] -> [?0]
+Result Features: {'n_literal_entities': 1, 'total_literal_length': 3, 'literal_entities_length': 2, 'n_literal_relation_tokens': 1, 'result_size_0': 0, 'n_literal_relations': 1, 'matches_answer_type': 1, 'coverage': 0.7142857142857143, 'n_relations': 1, 'cardinality': 12, 'avg_em_surface_score': 0.242627058026, 'result_size_1_to_20': 1, 'avg_em_popularity': 6.274762021241939, 'sum_em_popularity': 6.274762021241939, 'n_weak_relation_tokens': 1, 'sum_em_surface_score': 0.242627058026, 'sum_context_relation_tokens': 0.16738158133792153, 'sum_weak_relation_tokens': 0.99999999999999889, 'n_entity_matches': 1, 'n_context_relation_tokens': 3, 'n_derivation_relation_tokens': 1, 'result_size_gt_20': 0}
+Answer Features: {'n_literal_entities': 1, 'total_literal_length': 2, 'literal_entities_length': 1, 'n_literal_relation_tokens': 2, 'result_size_0': 0, 'n_literal_relations': 1, 'matches_answer_type': 1, 'coverage': 0.5714285714285714, 'n_relations': 1, 'cardinality': 12, 'avg_em_surface_score': 0.128339579923, 'result_size_1_to_20': 1, 'avg_em_popularity': 3.871201010907891, 'sum_em_popularity': 3.871201010907891, 'n_weak_relation_tokens': 2, 'sum_em_surface_score': 0.128339579923, 'sum_context_relation_tokens': 0.3361095115267512, 'sum_weak_relation_tokens': 1.9999999999999987, 'n_entity_matches': 1, 'n_context_relation_tokens': 3, 'n_derivation_relation_tokens': 1, 'result_size_gt_20': 0}
+Feature Diff: {'sum_em_surface_score_a': 0.242627058026, 'total_literal_length': 1, 'result_size_gt_20': 0, 'n_relations_a': 1, 'n_relations_b': 1, 'sum_em_surface_score': 0.114287478103, 'n_context_relation_tokens_a': 3, 'n_context_relation_tokens_b': 3, 'matches_answer_type': 0, 'result_size_gt_20_a': 0, 'result_size_gt_20_b': 0, 'n_relations': 0, 'n_derivation_relation_tokens_b': 1, 'result_size_1_to_20': 0, 'sum_weak_relation_tokens': -0.99999999999999978, 'avg_em_surface_score': 0.114287478103, 'cardinality_a': 12, 'cardinality_b': 12, 'n_literal_relations': 0, 'avg_em_popularity': 2.4035610103340477, 'sum_em_popularity': 2.4035610103340477, 'n_weak_relation_tokens': -1, 'sum_context_relation_tokens': -0.1687279301888297, 'literal_entities_length_a': 2, 'literal_entities_length_b': 1, 'n_literal_entities_a': 1, 'n_entity_matches': 0, 'n_context_relation_tokens': 0, 'sum_context_relation_tokens_a': 0.16738158133792153, 'n_weak_relation_tokens_a': 1, 'n_weak_relation_tokens_b': 2, 'sum_context_relation_tokens_b': 0.3361095115267512, 'n_literal_relation_tokens_a': 1, 'n_literal_entities': 0, 'literal_entities_length': 1, 'result_size_0_b': 0, 'n_literal_relation_tokens': -1, 'n_literal_relation_tokens_b': 2, 'result_size_0_a': 0, 'n_entity_matches_a': 1, 'result_size_0': 0, 'n_entity_matches_b': 1, 'sum_em_popularity_b': 3.871201010907891, 'sum_weak_relation_tokens_a': 0.99999999999999889, 'coverage': 0.1428571428571429, 'sum_em_popularity_a': 6.274762021241939, 'n_literal_relations_a': 1, 'n_literal_relations_b': 1, 'cardinality': 0, 'result_size_1_to_20_a': 1, 'result_size_1_to_20_b': 1, 'n_literal_entities_b': 1, 'coverage_a': 0.7142857142857143, 'coverage_b': 0.5714285714285714, 'matches_answer_type_b': 1, 'matches_answer_type_a': 1, 'sum_weak_relation_tokens_b': 1.9999999999999987, 'avg_em_popularity_b': 3.871201010907891, 'avg_em_popularity_a': 6.274762021241939, 'total_literal_length_b': 2, 'sum_em_surface_score_b': 0.128339579923, 'total_literal_length_a': 3, 'avg_em_surface_score_a': 0.242627058026, 'avg_em_surface_score_b': 0.128339579923, 'n_derivation_relation_tokens_a': 1, 'n_derivation_relation_tokens': 0}
+
+Query: when was the construction of new steubenville bridge finished
+Entity: (u'Construction of New Steubenville Bridge', 1.0, 0, True)
+Entity: (u'New Steubenville Bridge', 1.0, 0, True)
+Entity: (u'Steubenville Bridge', 1.0, 0, True)
+Entity: (u'The Construction', 0.571428571429, 4, True)
+Entity: (u'The Construction (m/0ktfzyc)', 0.142857142857, 0, True)
+Entity: (u'The Construction (m/0rs5cyy)', 0.142857142857, 0, True)
+Entity: (u'The Construction', 0.142857142857, 0, True)
+Entity: (u'Construction', 0.839494647276, 118556, True)
+TargetType: Date
+Pattern matches: ERT = 37, ERMRT = 20, ERMRERT = 0
+Root Node: Construction of New Steubenville Bridge
+Result: 1979
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Construction of New Steubenville Bridge (m.0jb4_0h)] -> [projects.project.start_date] -> [?0]
+Answer Candidate Graph: QueryCandidate pattern:ERT
+  [Construction of New Steubenville Bridge (m.0jb4_0h)] -> [projects.project.actual_completion_date] -> [?0]
+Result Features: {'n_literal_entities': 1, 'total_literal_length': 5, 'literal_entities_length': 5, 'n_literal_relation_tokens': 0, 'result_size_0': 0, 'n_literal_relations': 0, 'matches_answer_type': 1, 'coverage': 0.6666666666666666, 'n_relations': 1, 'cardinality': 8, 'avg_em_surface_score': 1.0, 'result_size_1_to_20': 1, 'avg_em_popularity': -1, 'sum_em_popularity': -1, 'n_weak_relation_tokens': 1, 'sum_em_surface_score': 1.0, 'sum_context_relation_tokens': 0, 'sum_weak_relation_tokens': 0.49348106674883407, 'n_entity_matches': 1, 'n_context_relation_tokens': 0, 'n_derivation_relation_tokens': 0, 'result_size_gt_20': 0}
+Answer Features: {'n_literal_entities': 1, 'total_literal_length': 5, 'literal_entities_length': 5, 'n_literal_relation_tokens': 0, 'result_size_0': 0, 'n_literal_relations': 0, 'matches_answer_type': 1, 'coverage': 0.5555555555555556, 'n_relations': 1, 'cardinality': 6, 'avg_em_surface_score': 1.0, 'result_size_1_to_20': 1, 'avg_em_popularity': -1, 'sum_em_popularity': -1, 'n_weak_relation_tokens': 0, 'sum_em_surface_score': 1.0, 'sum_context_relation_tokens': 0, 'sum_weak_relation_tokens': 0, 'n_entity_matches': 1, 'n_context_relation_tokens': 0, 'n_derivation_relation_tokens': 0, 'result_size_gt_20': 0}
+Feature Diff: {'sum_em_surface_score_a': 1.0, 'total_literal_length': 0, 'result_size_gt_20': 0, 'n_relations_a': 1, 'n_relations_b': 1, 'sum_em_surface_score': 0.0, 'n_context_relation_tokens_a': 0, 'n_context_relation_tokens_b': 0, 'matches_answer_type': 0, 'result_size_gt_20_a': 0, 'result_size_gt_20_b': 0, 'n_relations': 0, 'n_derivation_relation_tokens_b': 0, 'result_size_1_to_20': 0, 'sum_weak_relation_tokens': 0.49348106674883407, 'avg_em_surface_score': 0.0, 'cardinality_a': 8, 'cardinality_b': 6, 'n_literal_relations': 0, 'avg_em_popularity': 0, 'sum_em_popularity': 0, 'n_weak_relation_tokens': 1, 'sum_context_relation_tokens': 0, 'literal_entities_length_a': 5, 'literal_entities_length_b': 5, 'n_literal_entities_a': 1, 'n_entity_matches': 0, 'n_context_relation_tokens': 0, 'sum_context_relation_tokens_a': 0, 'n_weak_relation_tokens_a': 1, 'n_weak_relation_tokens_b': 0, 'sum_context_relation_tokens_b': 0, 'n_literal_relation_tokens_a': 0, 'n_literal_entities': 0, 'literal_entities_length': 0, 'result_size_0_b': 0, 'n_literal_relation_tokens': 0, 'n_literal_relation_tokens_b': 0, 'result_size_0_a': 0, 'n_entity_matches_a': 1, 'result_size_0': 0, 'n_entity_matches_b': 1, 'sum_em_popularity_b': -1, 'sum_weak_relation_tokens_a': 0.49348106674883407, 'coverage': 0.11111111111111105, 'sum_em_popularity_a': -1, 'n_literal_relations_a': 0, 'n_literal_relations_b': 0, 'cardinality': 2, 'result_size_1_to_20_a': 1, 'result_size_1_to_20_b': 1, 'n_literal_entities_b': 1, 'coverage_a': 0.6666666666666666, 'coverage_b': 0.5555555555555556, 'matches_answer_type_b': 1, 'matches_answer_type_a': 1, 'sum_weak_relation_tokens_b': 0, 'avg_em_popularity_b': -1, 'avg_em_popularity_a': -1, 'total_literal_length_b': 5, 'sum_em_surface_score_b': 1.0, 'total_literal_length_a': 5, 'avg_em_surface_score_a': 1.0, 'avg_em_surface_score_b': 1.0, 'n_derivation_relation_tokens_a': 0, 'n_derivation_relation_tokens': 0}
+
+Query: what is the lcd screen resolution of a nikon d80
+Entity: (u'LCD screen resolution', 0.5, 0, True)
+Entity: (u'LCD screen resolution', 0.5, 0, True)
+Entity: (u'Nikon Corporation', 0.999997495818, 798662, False)
+Entity: (u'Nikon D80', 0.999981920741, 55311, True)
+Entity: (u'Liquid-crystal display', 0.91350212558, 531058, False)
+Entity: (u'Display resolution', 0.858256503715, 158047, False)
+Entity: (u'Image resolution', 0.141743496285, 51077, False)
+Entity: (u'GNU Screen', 0.467100349642, 4097, False)
+Entity: (u'Image resolution', 0.268592687575, 51077, False)
+TargetType: Other
+Pattern matches: ERT = 75, ERMRT = 69, ERMRERT = 0
+Root Node: Nikon D80
+Result: 2.5
+Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Nikon D80 (m.0g22rl)] -> [digicams.digital_camera.lcd_screen_dimensions] -> [?0]
+Answer Candidate Graph: QueryCandidate pattern:ERT
+  [Nikon D80 (m.0g22rl)] -> [digicams.digital_camera.lcd_pixels] -> [?0]
+Result Features: {'n_literal_entities': 1, 'total_literal_length': 3, 'literal_entities_length': 2, 'n_literal_relation_tokens': 2, 'result_size_0': 0, 'n_literal_relations': 1, 'matches_answer_type': 1, 'coverage': 0.4, 'n_relations': 1, 'cardinality': 6, 'avg_em_surface_score': 0.999981920741, 'result_size_1_to_20': 1, 'avg_em_popularity': 10.9207270827385, 'sum_em_popularity': 10.9207270827385, 'n_weak_relation_tokens': 2, 'sum_em_surface_score': 0.999981920741, 'sum_context_relation_tokens': 0.26309314586994725, 'sum_weak_relation_tokens': 2.4427932463484745, 'n_entity_matches': 1, 'n_context_relation_tokens': 2, 'n_derivation_relation_tokens': 1, 'result_size_gt_20': 0}
+Answer Features: {'n_literal_entities': 1, 'total_literal_length': 3, 'literal_entities_length': 2, 'n_literal_relation_tokens': 1, 'result_size_0': 0, 'n_literal_relations': 1, 'matches_answer_type': 1, 'coverage': 0.4, 'n_relations': 1, 'cardinality': 6, 'avg_em_surface_score': 0.999981920741, 'result_size_1_to_20': 1, 'avg_em_popularity': 10.9207270827385, 'sum_em_popularity': 10.9207270827385, 'n_weak_relation_tokens': 2, 'sum_em_surface_score': 0.999981920741, 'sum_context_relation_tokens': 0.3018169582772544, 'sum_weak_relation_tokens': 1.8938623624999014, 'n_entity_matches': 1, 'n_context_relation_tokens': 2, 'n_derivation_relation_tokens': 0, 'result_size_gt_20': 0}
+Feature Diff: {'sum_em_surface_score_a': 0.999981920741, 'total_literal_length': 0, 'result_size_gt_20': 0, 'n_relations_a': 1, 'n_relations_b': 1, 'sum_em_surface_score': 0.0, 'n_context_relation_tokens_a': 2, 'n_context_relation_tokens_b': 2, 'matches_answer_type': 0, 'result_size_gt_20_a': 0, 'result_size_gt_20_b': 0, 'n_relations': 0, 'n_derivation_relation_tokens_b': 0, 'result_size_1_to_20': 0, 'sum_weak_relation_tokens': 0.54893088384857314, 'avg_em_surface_score': 0.0, 'cardinality_a': 6, 'cardinality_b': 6, 'n_literal_relations': 0, 'avg_em_popularity': 0.0, 'sum_em_popularity': 0.0, 'n_weak_relation_tokens': 0, 'sum_context_relation_tokens': -0.03872381240730716, 'literal_entities_length_a': 2, 'literal_entities_length_b': 2, 'n_literal_entities_a': 1, 'n_entity_matches': 0, 'n_context_relation_tokens': 0, 'sum_context_relation_tokens_a': 0.26309314586994725, 'n_weak_relation_tokens_a': 2, 'n_weak_relation_tokens_b': 2, 'sum_context_relation_tokens_b': 0.3018169582772544, 'n_literal_relation_tokens_a': 2, 'n_literal_entities': 0, 'literal_entities_length': 0, 'result_size_0_b': 0, 'n_literal_relation_tokens': 1, 'n_literal_relation_tokens_b': 1, 'result_size_0_a': 0, 'n_entity_matches_a': 1, 'result_size_0': 0, 'n_entity_matches_b': 1, 'sum_em_popularity_b': 10.9207270827385, 'sum_weak_relation_tokens_a': 2.4427932463484745, 'coverage': 0.0, 'sum_em_popularity_a': 10.9207270827385, 'n_literal_relations_a': 1, 'n_literal_relations_b': 1, 'cardinality': 0, 'result_size_1_to_20_a': 1, 'result_size_1_to_20_b': 1, 'n_literal_entities_b': 1, 'coverage_a': 0.4, 'coverage_b': 0.4, 'matches_answer_type_b': 1, 'matches_answer_type_a': 1, 'sum_weak_relation_tokens_b': 1.8938623624999014, 'avg_em_popularity_b': 10.9207270827385, 'avg_em_popularity_a': 10.9207270827385, 'total_literal_length_b': 3, 'sum_em_surface_score_b': 0.999981920741, 'total_literal_length_a': 3, 'avg_em_surface_score_a': 0.999981920741, 'avg_em_surface_score_b': 0.999981920741, 'n_derivation_relation_tokens_a': 1, 'n_derivation_relation_tokens': 1}
+
