@@ -1,3 +1,1519 @@
+Query: what movie did danny devito win an award for in 1981
+Entity: (u'Award (Chivalric Title)', 1.0, 214152, False)
+Entity: (u'Danny DeVito', 0.999885402143, 52351, True)
+Entity: (u'1981 Irish hunger strike', 0.677418808325, 583, False)
+Entity: (u'FIL Award', 0.588235220761, 89, False)
+Entity: (u'The Axemen', 0.193548949844, 1531, False)
+Entity: (u'Twitter', 0.164705313107, 19446405, False)
+Entity: (u'Pacem in Terris Award', 0.152941805869, 180, False)
+Entity: (u'United States presidential election, 1980', 0.129032241831, 26, False)
+Entity: (u'Film', 0.498307458078, 3444452, False)
+Entity: (u'1981', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 107, ERMRT = 127, ERMRERT = 5
+1 Root Node: Danny DeVito
+1 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [Danny DeVito (m.0q9kd)] -> [award.award_winner.awards_won] -> [?0]
+  [?0] -> [award.award_honor.year] -> [1981]
+  [?0] -> [award.award_honor.award] -> [?1]
+1 Result: Primetime Emmy Award for Outstanding Supporting Actor - Comedy Series (m.09qv3c) Primetime Emmy Award for Outstanding Supporting Actor in a Comedy, Variety or Music Series (m.0t4r672)
+2 Root Node: Danny DeVito
+2 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [Danny DeVito (m.0q9kd)] -> [award.award_winner.awards_won] -> [?0]
+  [?0] -> [award.award_honor.year] -> [1981]
+  [?0] -> [award.award_honor.honored_for] -> [?1]
+2 Result: Taxi (m.0q9jk)
+3 Root Node: Danny DeVito
+3 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [Danny DeVito (m.0q9kd)] -> [award.award_winner.awards_won] -> [?0]
+  [?0] -> [award.award_honor.year] -> [1981]
+  [?0] -> [award.award_honor.ceremony] -> [?1]
+3 Result: 33rd Primetime Emmy Awards (m.0lv9lz0)
+4 Root Node: Danny DeVito
+4 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [Danny DeVito (m.0q9kd)] -> [award.award_nominee.award_nominations] -> [?0]
+  [?0] -> [award.award_nomination.year] -> [1981]
+  [?0] -> [award.award_nomination.award] -> [?1]
+4 Result: Golden Globe Award for Best Supporting Actor - Series, Miniseries or Television Film (m.08pfq2p) Razzie Award for Worst Supporting Actor (m.04ljl_l) Primetime Emmy Award for Outstanding Supporting Actor - Comedy Series (m.09qv3c) Primetime Emmy Award for Outstanding Supporting Actor in a Comedy, Variety or Music Series (m.0t4r672)
+5 Root Node: Danny DeVito
+5 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Danny DeVito (m.0q9kd)] -> [award.award_winner.awards_won] -> [?0]
+  [?0] -> [award.award_honor.award] -> [?1]
+5 Result: Golden Globe Award for Best Supporting Actor - Series, Miniseries or Television Film (m.08pfq2p) Primetime Emmy Award for Outstanding Supporting Actor - Comedy Series (m.09qv3c) Primetime Emmy Award for Outstanding Supporting Actor in a Comedy, Variety or Music Series (m.0t4r672)
+6 Root Node: Danny DeVito
+6 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [Danny DeVito (m.0q9kd)] -> [award.award_nominee.award_nominations] -> [?0]
+  [?0] -> [award.award_nomination.year] -> [1981]
+  [?0] -> [award.award_nomination.nominated_for] -> [?1]
+6 Result: Taxi (m.0q9jk) Going Ape! (m.03y9nrn)
+7 Root Node: Danny DeVito
+7 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Danny DeVito (m.0q9kd)] -> [award.award_winner.awards_won] -> [?0]
+  [?0] -> [award.award_honor.year] -> [?1]
+7 Result: 1981 1980
+8 Root Node: Danny DeVito
+8 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Danny DeVito (m.0q9kd)] -> [award.award_winner.awards_won] -> [?0]
+  [?0] -> [award.award_honor.honored_for] -> [?1]
+8 Result: Taxi (m.0q9jk) Alice (m.02xhpl)
+9 Root Node: Danny DeVito
+9 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Danny DeVito (m.0q9kd)] -> [award.award_winner.awards_won] -> [?0]
+  [?0] -> [award.award_honor.ceremony] -> [?1]
+9 Result: 37th Golden Globe Awards (m.026kq4q) 33rd Primetime Emmy Awards (m.0lv9lz0)
+10 Root Node: Danny DeVito
+10 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Danny DeVito (m.0q9kd)] -> [award.award_winner.awards_won] -> [?0]
+  [?0] -> [award.award_honor.award] -> [?1]
+10 Result: Golden Globe Award for Best Supporting Actor - Series, Miniseries or Television Film (m.08pfq2p) Primetime Emmy Award for Outstanding Supporting Actor - Comedy Series (m.09qv3c) Primetime Emmy Award for Outstanding Supporting Actor in a Comedy, Variety or Music Series (m.0t4r672)
+11 Root Node: Danny DeVito
+11 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Danny DeVito (m.0q9kd)] -> [award.award_nominee.award_nominations] -> [?0]
+  [?0] -> [award.award_nomination.award] -> [?1]
+11 Result: Golden Globe Award for Best Supporting Actor - Series, Miniseries or Television Film (m.08pfq2p) Primetime Emmy Award for Outstanding Guest Actor - Comedy Series (m.09qvc0) Screen Actors Guild Award for Outstanding Performance by a Cast in a Motion Picture (m.09sb52) Golden Globe Award for Best Drama Film (m.019f4d) Razzie Award for Worst Supporting Actor (m.04ljl_l) Blockbuster Entertainment Award for Favorite Supporting Actor - Drama (m.0gkfnx6) BAFTA Award for Best Film (m.040njc) Academy Award for Best Picture (m.0gq9h) Razzie Award for Worst Director (m.05f4m9q) Golden Globe Award for Best Film - Musical or Comedy (m.019f5n) Golden Globe Award for Best Actor - Musical or Comedy Film (m.019f7x) Satellite Award for Best Actor - Television Series Musical or Commedy (m.02x3599) Primetime Emmy Award for Outstanding Supporting Actor - Comedy Series (m.09qv3c) Satellite Award for Best Supporting Actor – Drama (m.09rlhs_) MTV Movie Award for Best Villain (m.057xs89) Satellite Award for Best Supporting Actor – Comedy or Musical (m.09rlhst) Primetime Emmy Award for Outstanding Supporting Actor in a Comedy, Variety or Music Series (m.0t4r672) Chlotrudis Award for Best Actor (m.05zhm69)
+
+Query: when did japan end as a musical group
+Entity: (u'Musical ensemble', 0.983225293265, 120561, False)
+Entity: (u'Send in the Clowns', 0.693379984885, 895, False)
+Entity: (u'Asa', 0.17427230227, 37629, True)
+Entity: (u'Japan', 0.922832946225, 31422360, True)
+Entity: (u'Group', 0.176437573469, 846, True)
+Entity: (u'Social group', 0.138610333259, 11792, False)
+Entity: (u'Group', 0.133716825004, 749, True)
+TargetType: Date
+Pattern matches: ERT = 87, ERMRT = 264, ERMRERT = 0
+1 Root Node: Japan
+1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Japan (m.03_3d)] -> [military.military_combatant.military_conflicts] -> [?0]
+  [?0] -> [military.military_combatant_group.combatants] -> [?1]
+1 Result: 
+2 Root Node: Japan
+2 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Japan (m.03_3d)] -> [military.military_combatant.military_conflicts] -> [?0]
+  [?0] -> [military.military_combatant_group.combatants] -> [?1]
+2 Result: 
+3 Root Node: Japan
+3 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Japan (m.03_3d)] -> [military.military_combatant.military_conflicts] -> [?0]
+  [?0] -> [military.military_combatant_group.conflict] -> [?1]
+3 Result: Battle of Pingxingguan (m.03g36k) Battle of Makin (m.04f2l7) Marshalls–Gilberts raids (m.05q9jbm) Battle of Gemas (m.0660dvt) Battle of Guilin–Liuzhou (m.08_0l7) Battle of Suixian–Zaoyang (m.08n5bs) Battle of Xinkou (m.095wh1) Battle of Mindanao (m.09c30b) Battle of West Henan–North Hubei (m.09f_wk) Battle of South Shanxi (m.09fgvq) Solomon Islands campaign (m.09fqjm) Battle of South Henan (m.09g0sc) Battle of West Hubei (m.09g0x6) Raid at Los Baños (m.0bhf5n) Battle of Ratsua (m.0crbyd4) Invasion of Palawan (m.0dcsph) Battle of Lanfeng (m.0dz9t4) Battle of Northern and Eastern Henan (m.0ffx9z) Battle of Kunlun Pass (m.0fkwt6) Second Guangxi Campaign (m.0g3_k0) Battle of Yenangyaung (m.0gk_jk) Battle of Biak (m.0h7m10) Battle of Pearl Ridge (m.09gb2p_) Siege of Ilocos (m.05h7bvs) Iraq War (m.0d06vc) Battle of the Babuyan Islands (m.05h71_w) Japanese invasions of Korea (m.03c_kz) Operation Zipper (m.05zhnw) Battle of Camiguin (m.05h74fh) Battle of Marinduque (m.079yzzx) Battle of Tsimba Ridge (m.09k4j1k) Battle of Mabitac (1945) (m.05h7m0c) Invasion of Sarangani (m.05h78v8) Mongol conquests (m.03c3jzx) Battle of Nanking (m.0hf82) Battle of Noryang (m.06c3xd) Siege of Jinju (m.078xs6) Siege of Jinju (m.07vt21) Siege of Pyongyang (m.07xxc6) Siege of Pyongyang (m.091rcj) Battle of Byeokjegwan (m.0bm90np) Battle of Jiksan (m.0c02p5w) Battle of Imjin River (m.0d588_) Siege of Suncheon (m.0dlmm_s) Siege of Ulsan (m.0f2zpb) Siege of Dongnae (m.0gp34k) Masbate (m.01lxm7) Battle of the Hongorai River (m.09rv5x4) Battle of Porton Plantation (m.09gnjfw) Battle of Masbate (m.05h982k) Battle of Daanbantayan (m.05prg3d) Invasion of Ryukyu (m.02r8z1v) Battle of Amami-Ōshima (m.03d4b9j) Hamgyong campaign (m.07mkjq)
+4 Root Node: Japan
+4 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Japan (m.03_3d)] -> [military.military_combatant.military_conflicts] -> [?0]
+  [?0] -> [military.military_combatant_group.conflict] -> [?1]
+4 Result: Battle of Pingxingguan (m.03g36k) Battle of Makin (m.04f2l7) Marshalls–Gilberts raids (m.05q9jbm) Battle of Gemas (m.0660dvt) Battle of Guilin–Liuzhou (m.08_0l7) Battle of Suixian–Zaoyang (m.08n5bs) Battle of Xinkou (m.095wh1) Battle of Mindanao (m.09c30b) Battle of West Henan–North Hubei (m.09f_wk) Battle of South Shanxi (m.09fgvq) Solomon Islands campaign (m.09fqjm) Battle of South Henan (m.09g0sc) Battle of West Hubei (m.09g0x6) Raid at Los Baños (m.0bhf5n) Battle of Ratsua (m.0crbyd4) Invasion of Palawan (m.0dcsph) Battle of Lanfeng (m.0dz9t4) Battle of Northern and Eastern Henan (m.0ffx9z) Battle of Kunlun Pass (m.0fkwt6) Second Guangxi Campaign (m.0g3_k0) Battle of Yenangyaung (m.0gk_jk) Battle of Biak (m.0h7m10) Battle of Pearl Ridge (m.09gb2p_) Siege of Ilocos (m.05h7bvs) Iraq War (m.0d06vc) Battle of the Babuyan Islands (m.05h71_w) Japanese invasions of Korea (m.03c_kz) Operation Zipper (m.05zhnw) Battle of Camiguin (m.05h74fh) Battle of Marinduque (m.079yzzx) Battle of Tsimba Ridge (m.09k4j1k) Battle of Mabitac (1945) (m.05h7m0c) Invasion of Sarangani (m.05h78v8) Mongol conquests (m.03c3jzx) Battle of Nanking (m.0hf82) Battle of Noryang (m.06c3xd) Siege of Jinju (m.078xs6) Siege of Jinju (m.07vt21) Siege of Pyongyang (m.07xxc6) Siege of Pyongyang (m.091rcj) Battle of Byeokjegwan (m.0bm90np) Battle of Jiksan (m.0c02p5w) Battle of Imjin River (m.0d588_) Siege of Suncheon (m.0dlmm_s) Siege of Ulsan (m.0f2zpb) Siege of Dongnae (m.0gp34k) Masbate (m.01lxm7) Battle of the Hongorai River (m.09rv5x4) Battle of Porton Plantation (m.09gnjfw) Battle of Masbate (m.05h982k) Battle of Daanbantayan (m.05prg3d) Invasion of Ryukyu (m.02r8z1v) Battle of Amami-Ōshima (m.03d4b9j) Hamgyong campaign (m.07mkjq)
+
+Query: what sort of weave is used to make tweed
+Entity: (u'GNU/Linux', 1.0, 7995206, False)
+Entity: (u'Newfoundland and Labrador', 0.999980274967, 101392, False)
+Entity: (u'Clarence Thomas', 0.513434075445, 155203, False)
+Entity: (u'Fenway Park', 0.378319068515, 185205, False)
+Entity: (u'Medicare', 0.108091373211, 2941905, False)
+Entity: (u'Tweed', 0.511330286787, 10762, True)
+Entity: (u'Artificial hair integrations', 0.476172290178, 9107, False)
+Entity: (u'Weaving', 0.321245010874, 44182, False)
+Entity: (u'sort', 0.257736795752, 247, True)
+Entity: (u'Sort, Lleida', 0.249271273773, 51, False)
+Entity: (u'Strategic Offensive Reductions Treaty', 0.24425471268, 3612, False)
+Entity: (u'River Tweed', 0.168975605687, 7474, False)
+Entity: (u'Weave', 0.104803172017, 370, True)
+TargetType: Other
+Pattern matches: ERT = 107, ERMRT = 117, ERMRERT = 0
+1 Root Node: Newfoundland and Labrador
+1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Newfoundland and Labrador (m.05j49)] -> [symbols.coat_of_arms_bearer.coat_of_arms_used] -> [?0]
+  [?0] -> [symbols.armorial_grant.coat_of_arms] -> [?1]
+1 Result: Coat of arms of St. John's, Newfoundland and Labrador (m.0958jz)
+2 Root Node: Newfoundland and Labrador
+2 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Newfoundland and Labrador (m.05j49)] -> [symbols.coat_of_arms_bearer.coat_of_arms_used] -> [?0]
+  [?0] -> [symbols.armorial_grant.coat_of_arms] -> [?1]
+2 Result: Coat of arms of St. John's, Newfoundland and Labrador (m.0958jz)
+3 Root Node: Newfoundland and Labrador
+3 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Newfoundland and Labrador (m.05j49)] -> [symbols.coat_of_arms_bearer.coat_of_arms_used] -> [?0]
+  [?0] -> [symbols.armorial_grant.granted_by] -> [?1]
+3 Result: 
+4 Root Node: Tweed
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Tweed (m.09_f46)] -> [fashion.textile.weave] -> [?0]
+4 Result: Herringbone (m.04zx47y)
+5 Root Node: GNU/Linux
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [GNU/Linux (m.0fpzzp)] -> [organization.organization_sector.organizations_in_this_sector] -> [?0]
+5 Result: Linux-Manipur (m.03wjbhq) GOLUM (m.0877_q) Ontario Linux Fest (m.02vrbkq) LinuxChix (m.02v7q0) Linux user group (m.020_pp) SEUL (m.06yq7) RLUG (m.0cgnx4) Linuxfest Northwest (m.02qn268) NYLXS (m.06l1q3) Zlug (m.0c5mz3) Bangalore Linux User Group (m.03pzrp) Hellenic Linux User Group (m.04cgvh) Tidewater Unix Users Group (m.0b9j13) ILUG-Delhi (m.075rys) Linux Users of Victoria (m.026t0qr) Ohio LinuxFest (m.09tzp1) CalLUG (m.0gkv8w) Linux Users' Group of Davis (m.06b5gy) Lanka Linux User Group (m.04ghk5) LoCo team (m.027x9_5) Southern California Linux Expo (m.027j1th) Linux Australia (m.025wkw) Grupo de Usuarios de Linux de Costa Rica (m.041309)
+6 Root Node: GNU/Linux
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [GNU/Linux (m.0fpzzp)] -> [computer.software.languages_used] -> [?0]
+6 Result: C (m.01t6b)
+7 Root Node: GNU/Linux
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [GNU/Linux (m.0fpzzp)] -> [computer.operating_system.includes_os_versions] -> [?0]
+7 Result: linuX-gamers (m.052ts69) Hikarunix (m.03_t3r) Korora (m.0bykr0) Sabayon Linux (m.0b2g03) PCLinuxOS (m.034xct) Red Hat Linux (m.06hkz) Damn Small Linux (m.021890) Linux for PlayStation 2 (m.05ht22) Android (m.02wxtgw) Vida Linux (m.052ns0s) Maemo (m.07drgr) Kubuntu (m.05d5q_) Foresight Linux (m.06g6lk) openSUSE (m.079d8p) WebOS (m.05b4fvc) Red Hat Enterprise Linux (m.02prjf) Linux Mint (m.0278lsn) BackTrack (m.0f5sr4) OpenWrt (m.060jc7) Fedora (m.02pxwz1) Arch Linux (m.031y74) Ubuntu (m.03x5qm) CentOS (m.03x_8t) Mandriva Linux (m.04x8h) Gentoo Linux (m.0nd4x) Pardus (m.07ms7n) Scientific Linux (m.0566rg) Pentoo (m.09b6qq) SystemRescueCD (m.025_6b) SUSE Linux (m.06vnt) Debian GNU/Linux (m.02996) Mythbuntu (m.02rm997) TinyMe (m.03mbrjs) Frugalware Linux (m.073jdp) Puppy Linux (m.0402cv) Ubuntu Studio (m.0288lgl) MEPIS (m.0278j4) MeeGo (m.0b69jls) Slax (m.025_1k) Slackware (m.0706s) OpenSolaris (m.04dvf5) Moblin (m.0409hvq) Parted Magic (m.052ts66) OpenGEU (m.03gtnhf) VectorLinux (m.05f0wm) Absolute (m.052ts63) GoblinX (m.09lp9v) Knoppix (m.014v95) Zenwalk (m.06y6t2) Elive (m.0h6vcd) Fluxbuntu (m.0fn6xx) Ultimate Edition (m.04g1mvy) Yellow Dog Linux (m.01kpq8) UserLinux (m.02c5kj) Dreamlinux (m.0g59x5) aptosid (m.027j321) gOS (m.052ts5y)
+8 Root Node: GNU/Linux
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [GNU/Linux (m.0fpzzp)] -> [cvg.cvg_platform.games_on_this_platform] -> [?0]
+8 Result: Air Forte (m.0kys11d) Metasoy (m.04d9s5p) Vega Strike (m.04hs_z1) TetraVex (m.04ht3b0) Shadow Warrior (m.04hw1fq) A House in California (m.0kyxm8_) Ballistics (m.040kz22) NoLimits 2 (m.04dctsc) Penumbra: Black Plague (m.04lnkrp) Secret Maryo Chronicles (m.0kymq5m) Quake Mission Pack 2: Dissolution Of Eternity (m.052cbd7) SubTerra (m.0kymzmc) Exile III: Ruined World (m.0kyq9xx) Abuse (m.02hl5bg) Armadillo Run (m.02hlksg) Frets on Fire (m.02hmkzk) Rocks'n'Diamonds (m.02hm6z1) Marathon 2: Durandal (m.02hltlv) Scratches (m.02hlcp1) Unreal Tournament (m.02hmjd3) Ancient Domains of Mystery (m.04hxfb8) RRootage (m.02hl5y6) Shifter (m.040htyp) Monsterbowl (m.02hmh2m) Ultimate Stunts (m.02hm0_5) Penny Arcade Adventures: On the Rain-Slick Precipice of Darkness - Episode Two (m.0kyr94m) Tribes 2 (m.02hl3xq) Doom 3: Resurrection of Evil (m.02hmjrn) The Sims (m.02hl446) A Tale in the Desert (m.02hlxl7) FlightGear (m.04hx65k) Catloaf 2600 (m.0kymvg1) Inside a Star-filled Sky (m.0kyn16z) Tux Racer (m.04hx60f) Wolfenstein: Enemy Territory (m.02hlckd) Civilization: Call to Power (m.02hmf18) Shrek 2 (m.0kypcqt) Heavy Gear II (m.0kyxv0t) Mari0 (m.0kyq73h) Bang! Howdy (m.02hlcjn) Crack Attack! (m.02hlvj3) Dominions 3: The Awakening (m.02hmlwx) Morpheus (m.0kysx6x) Doom 3 (m.02hm506) Medal of Honor: Allied Assault (m.02hmcxb) Jagged Alliance 2 (m.040q6g8) DeFRaG (m.045zmbr) Minecraft (m.0kypzp1) .heartbeats (m.0kz0k85) Dynamite Jack (m.0kyqhv1) Widelands (m.04lp97z) Vangers (m.04mgxjg) Lords: Rising Sun (m.02hmplx) Galcon Fusion (m.0kytbl8) Lemmingball Z (m.04dht9k) FlipOut (m.0kyq3yp) Bolo (m.0kysz18) Primrose (m.0kyvf89) Trine 2 (m.0kyxhqz) Spandex Force (m.0kz44bp) Tong (m.04df861) Eschalon: Book II (m.04fsbzy) Cube (m.04hvh27) Ataxx (m.04hwqh4) Darkwind: War on Wheels (m.04mgtk7) Bonkheads (m.04hq9c6) Screamer 2 (m.0kz3mpx) Project Starfighter (m.062yrbz) Defcon (m.02hmqxm) Bullet Candy Perfect (m.0kynlvv) Ben Jordan: Paranormal Investigator Case 1: In Search of the Skunk-Ape (m.02hlj41) Crayon Physics Deluxe (m.0kyqh9l) Alizarin Tetris (m.0kyxwbl) Heretic II (m.02hlmy8) Tenes Empanadas Graciela (m.04hwwmb) Blocks That Matter (m.0kypbdl) Air Pressure (m.0kysvqt) Knights and Merchants: The Shattered Kingdom (m.02hm8d5) Cold War (m.02hlml3) Narcissu (m.02hm9k8) Robin Hood: The Legend of Sherwood (m.02hm8d8) Airline Tycoon Deluxe (m.0h7g6pm) Dofus Arena (m.04dj1jy) Ashura: Dark Reign (m.04mjqp5) Glest (m.040rdpw) Hyperspace Delivery Boy! (m.04hvrnf) Neverwinter Nights: Shadows of Undrentide (m.02hm8lv) PlaneShift (m.02hmlcw) Savage 2: A Tortured Soul (m.02hlcp7) No Time To Explain: Season 2 (m.0kyq31h) Celetania (m.0kynct7) Linyca (m.0kyr3jj) The First Mile (m.0kys85h) Sleeping Beauty (m.0kz4mw9) Alex the Allegator 4 (m.0kyxxv0) Deadly Rooms of Death (m.040pr8_) Crimson Fields (m.04hq5__) Wings 2 (m.0kysv8f) Secret Maryo Chronicles (m.02hlhgp) SuperTux (m.04hvmqp) Trine (m.0kyq6m5) Software Tycoon: Der Spielemanager (m.0kyz4dv) Molecule Man (m.0kz2r1c) Warsow (m.02hl_qy) Homeworld (m.02hlv_w) Urban Terror (m.02hml4g) Sacred (m.045y453) Vacation Gone Awry (m.0kyy8cz) Bridge Builder (m.040rzhk) Heroes of Newerth (m.0kymnwf) Soul Ride (m.0kyrp7b) OpenTTD (m.040tm3y) UFO2000 (m.02hmpb5) Dominions II (m.02hlbcj) Ultima Iris (m.02hlvhc) Mobility (m.04d5f9d) BaboViolent 2 (m.040gpgb) Liquid War (m.04hwvsk) N (m.02hl476) MindRover: The Europa Project (m.0kyp77s) Mondrian (m.0kypj12) Dofus (m.02hm9xb) Spear of Destiny (m.04hw_qb) America's Army: Operations (m.0kynzm5) Purgatorio (m.0kypjk5) Wing Commander: Privateer - Gemini Gold (m.0kyr7wn) King's Quest I: Quest for the Crown (m.0kysxd9) Jewel Twist (m.0kymxt2) F-19 Stealth Fighter (m.0kyn01p) Golly (m.0kyp16y) MyMan (m.0kyp13y) Runes of Avalon 2 (m.0kyswh6) First Encounters (m.040pzyb) Unreal (m.040r4qy) Warcraft III: The Frozen Throne (m.040sht2) Tactical Ops: Assault on Terror (m.02hmc3z) The Broken Hourglass (m.040gv_h) Swords & Soldiers (m.0kyxxbp) Ankh: Heart of Osiris (m.040tjxk) Battle for Wesnoth (m.04htl0j) Neverwinter Nights: Hordes of the Underdark (m.02hlc75) Neverwinter Nights (m.02hmg3l) Sid Meier's Alien Crossfire (m.02hm0y6) Toribash (m.059rn6y) Penumbra: Overture (m.040gt2t) Serious Sam II (m.02hl6jt) Space Trader (m.040spfs) Barkanoid II (m.0kyq483) Drakan: Order of the Flame (m.0kymzh1) Theocracy (m.0kz2bpz) Summer Session (m.0666jgz) Bionic Heart (m.0b_6v4g) ButterFlight (m.0kyw5xx) C-Dogs (m.040hqqc) Harvest: Massive Encounter (m.0kys3g_) Las Tres Luces de Glaurung (m.0kys1l2) Heavy Metal: F.A.K.K.² (m.02hmb3b) LBreakout2 (m.0kyq3sy) Tibia (m.02hmc2k) The Guardian of Zarmallion (m.040lb23) OpenRTS (m.02hlhj2) Egoboo (m.04djd2d) Gate 88 (m.02hlprw) Heroes of Might and Magic III: The Restoration of Erathia (m.02hm7y5) Beacon (m.0kys1j9) IQ Game (m.0kytxn5) ThinkTanks (m.02hl7zy) Solarwolf (m.05yz9cm) FooBillard (m.04hpj6s) Chicken Invaders 2: The Next Wave (m.0kymyq5) Eat the whistle (m.04hhnmh) Foldit (m.05y_8fy) Advanced Strategic Command (m.0kyms_t) Rune: Halls of Valhalla (m.04d7l0j) Marathon Infinity (m.02hmknt) Aevum Obscurum (m.0kys1p4) Majesty: The Fantasy Kingdom Sim (m.02hmfj8) Descent II (m.02hm59w) Vendetta Online (m.02hlz9x) Uplink (m.02hm9rc) Sauerbraten (m.04hrwqt) VDrift (m.02hmdj0) Serious Sam (m.04hw65h) World of Padman (m.040j965) Tapan Kaikki: Bloodshed (m.02hl8z_) Postal (m.02hm0w7) Secret Service (m.02hlqrv) Breve (m.02hl3ll) X²: The Threat (m.02hl6rv) Ankh: Tales of Mystery (m.02hl702) Warcraft II (m.02hll07) SimCity 3000 (m.02hllbr) Zap! (m.02hlsfj) PoxNora (m.02hlsk8) Kingpin: Life of Crime (m.02hlvpn) Space Federation (m.02hly65) Postal² (m.02hm2mw) Turbo Sliders (m.02hm47g) InfiltrationMod (m.02hm4jn) Majesty: The Northern Expansion (m.02hmprz) EzQuake (m.040q3xp) SimCity (m.040qx6p) BatMUD (m.04d4v0w) KAsteroids (m.04hly00) Terminus (m.04hw2gs) Crossfire (m.04hwm83) Hexen (m.04hxh89) Freeciv (m.04hxhpf) Yo Frankie! (m.05cmsf4) PokerTH (m.05y_0rl) Furcadia (m.06642j9) TOJam Thing (m.0kymmm4) Newton Adventure (m.0kyms3r) I-0: Jailbait on Interstate Zero (m.0kymscp) Maniac Mansion Deluxe (m.0kys_yd) Clonk Planet (m.02hm6ys) ActionCube (m.04hlg88) Wolfenstein (m.05nsn5r) Alien Swarm (m.02hldkv) Battleships Forever (m.040nj2z) Tribal Trouble (m.04hl294) Challenge ProMode Arena (m.045_z2w) Malice (m.02hlbcf) Life Flashes By (m.0kyq6l6) Quake 4 (m.02hlckl) Quake II (m.02hldqj) Quake III Arena (m.02hlvzg) Enemy Territory: Quake Wars (m.02hm4rp) Quake (m.02hmg0w) Doom (m.04hxh_4) Active Worlds (m.02hmbht) Cube (m.0kyrvxs) America's Army: Rise of a Soldier (m.045xb4d) Lux (m.02hmq_x) Stoked Rider (m.04hnykt) Police Forces (m.02hltyg) Transcendence (m.04z0xrf) Cute Knight (m.052cpqj) Once and Future (m.0kypcqm) Devastation (m.02hlrxd) Galaxylife (m.02hlryl) Wakfu (m.040pg86) SourceForts (m.05np2pm) Smokin' Guns (m.0kyml0m) Shadowgrounds (m.0kz0qm0) Gl-117 (m.040j20j) Horse Isle (m.040j2_p) Disciples II: Dark Prophecy (m.04d7gkp) Inherit the Earth: Quest for the Orb (m.02hmjgr) DropTeam: Mechanized Combat in the Far Future (m.0kyp310) Nerd Quest (m.0kyp5ny) Ascii Sector (m.0kys37v) FreeOrion (m.02hl4lv) Oolite (m.02hm6l8) Atom Zombie Smasher (m.0kymn0w) Gish (m.02hlj5v) Darwinia (m.02hl4dk) Thousand Parsec (m.02hlj4x) POWDER (m.0kyxyc7) Sid Meier's Alpha Centauri (m.02hmlp7) All Heroes Die (m.0kyqy4p) Eschalon: Book I (m.040jx5b) Kohan: Immortal Sovereigns (m.02hmnt6) Scoregasm (m.0kyp6fp) The Amazing Brain Train! (m.0kz2z3k) Eternal Lands (m.040pxt1) Military Forces (m.02hm77m) SimCity 4 (m.02hmflq) Armagetron Advanced (m.02hmp_n) Space Tripper (m.0kyn14t) Will Fight for Food (m.0kyp536) Sleepless Night (m.0kys36p) Unreal Tournament III (m.04hsbfy) Kung Fu Master (m.04hvh5j) Goal Line Blitz (m.05ns4zn) Bandits: Phoenix Rising (m.05nsqv7) Beats of Rage (m.02hlx72) Descent (m.02hmg88) YS Flight Simulation 2000 (m.040qq94) The Clockwork Man (m.0kynh_4) X-Moto (m.040r5w8) X³: Reunion (m.02hm9p9) Caster (m.0kyn16k) Lupercalia (m.0kyr7sm) Jump 'n Bump (m.04ysvcx) Torus Trooper (m.02hlldf) Firearms (m.04d58bp) Dominions: Priests, Prophets and Pretenders (m.05nqz95) robotfindskitten (m.0kymmbd) TUMIKI Fighters (m.02hld4w) XBill (m.04hssjs) War! Age of Imperialism (m.0kymxxg) The Saga of Ryzom (m.0ky_0vc) Second Life (m.02hmg_4) SiN (m.02hmpmn) Pingus (m.04hww7g) Micropolis (m.04hgp9x) The City Beneath (m.02hmpg9) Braid (m.0kys8w9) Jets'n'Guns (m.04yxr_5)
+9 Root Node: GNU/Linux
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [GNU/Linux (m.0fpzzp)] -> [base.argumentmaps.thing_of_disputed_value.disparagement] -> [?0]
+9 Result: Criticism of Linux (m.027htzg)
+10 Root Node: GNU/Linux
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [GNU/Linux (m.0fpzzp)] -> [conferences.conference_subject.series_of_conferences_about_this] -> [?0]
+10 Result: Linux Kernel Developers Summit (m.06z3pr) LinuxTag (m.032g5x) Linuxfest Northwest (m.02qn268) Linux Kongress (m.02gg45) linux.conf.au (m.03s7r5)
+
+Query: what bicycle models does raleigh manufacture
+Entity: (u'Bicycle Models', 0.166666666667, 0, True)
+Entity: (u'Bicycle Models', 0.166666666667, 0, True)
+Entity: (u'Bicycle Models', 0.166666666667, 0, True)
+Entity: (u'Bicycle Models', 0.166666666667, 0, True)
+Entity: (u'Bicycle models', 0.166666666667, 0, True)
+Entity: (u'Bicycle models', 0.166666666667, 0, True)
+Entity: (u'Bicycle', 0.955090129129, 55244, True)
+Entity: (u'Raleigh', 0.770311942976, 2008038, True)
+Entity: (u'Model', 0.173636206762, 78754, False)
+Entity: (u'Scientific modelling', 0.115049636351, 3188, False)
+TargetType: Other
+Pattern matches: ERT = 87, ERMRT = 76, ERMRERT = 0
+1 Root Node: Bicycle
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Bicycle (m.0199g)] -> [base.engineeringdraft.manufactured_component_category.meronyms] -> [?0]
+1 Result: Bicycle handlebar (m.02rqv26) Bicycle frame (m.01bqgn) Bicycle wheel (m.01bqk0) Crankset (m.01ms7j) Bicycle saddle (m.0g7v8f)
+2 Root Node: Bicycle
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Bicycle (m.0199g)] -> [base.argumentmaps.original_idea.innovator] -> [?0]
+2 Result: Pierre Lallement (m.0chbjn) Olivier brothers (m.0cjh95) Pierre Michaux (m.0chgkt)
+3 Root Node: Bicycle
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Bicycle (m.0199g)] -> [interests.collection_category.parent_category] -> [?0]
+3 Result: Vehicle (m.07yv9)
+
+Query: how many writing systems are used in japanese
+Entity: (u'Writing system', 0.911144873965, 2543, False)
+Entity: (u'Wakame', 0.853329924581, 5563, False)
+Entity: (u'Japanese general election, 1928', 0.461111064259, 0, False)
+Entity: (u'Newfoundland and Labrador', 0.142221654097, 101392, False)
+Entity: (u'Soramimi', 0.122222269074, 29, False)
+Entity: (u'System', 0.58453182609, 83083, False)
+TargetType: Other
+Pattern matches: ERT = 39, ERMRT = 58, ERMRERT = 0
+1 Root Node: Wakame
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Wakame (m.040tm1)] -> [base.schemastaging.food_extra.broader] -> [?0]
+1 Result: 1
+
+Query: what characters were on the cover of batman #1
+Entity: (u'On the Cover', 0.742656151724, 47, True)
+Entity: (u'On the Cover (TV Program)', 0.199568583871, 9, True)
+Entity: (u'He Hit Me (Composition)', 1.0, 128, False)
+Entity: (u'Twilight (Young Adult Book) #147', 0.418281104676, 2190, False)
+Entity: (u'The Luv Show', 0.227066917834, 18, False)
+Entity: (u'Lagopus', 0.210770954847, 272, False)
+Entity: (u'The Cover', 0.197189452785, 25, True)
+Entity: (u'Soviet Union', 0.164664808474, 5858281, False)
+Entity: (u'Happy Nation', 0.164664808474, 38, False)
+Entity: (u'David Horowitz', 0.144905183608, 65415, False)
+Entity: (u'Cover version', 0.620217133283, 72764, False)
+Entity: (u'Batman', 0.608938484599, 398670, True)
+Entity: (u'Characters', 0.305673921723, 437, True)
+TargetType: Other
+Pattern matches: ERT = 153, ERMRT = 200, ERMRERT = 0
+1 Root Node: Batman
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [comic_books.comic_book_character.cover_appearances] -> [?0]
+1 Result: Batman #477 (m.03dfh34) Identity Crisis #1 (m.04cp09x) Identity Crisis #6 (m.04cp0f0) Detective Comics #33 (m.030rk_k) Batman #1 (m.02wkbg7) Batwing #7 (m.0j3rxq1) Batman #568 (m.03bw1dh) Batman #68 (m.03bwqlv) Detective Comics #734 (m.03bw1p5) Shadow of the Bat #1 (m.02wm2wd) Detective Comics #27 (m.02wk9x1) Detective Comics #38 (m.02wlp16) Batman #436 (m.02wlpqt) Detective Comics #779 (m.02wlytc) World's Finest Comics #3 (m.02wlzzk) Batman #567 (m.030rjwt) Detective Comics #411 (m.030rk6x) Detective Comics #741 (m.03bvjsf) Detective Comics #580 (m.03bx0cp) Superman/Batman #47 (m.042_zcz) Batman #611 (m.09vvtf1) Batman #612 (m.09vvwdt) Secret Origins, Vol. 1 (m.030rl69) Detective Comics #140 (m.02wlzl_) Batman #426 (m.02wkc7r) Batman #427 (m.02wkc9c)
+2 Root Node: Batman
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [fictional_universe.fictional_character_creator.fictional_characters_created] -> [?0]
+2 Result: Batman (m.026ffnz)
+3 Root Node: Batman
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [fictional_universe.fictional_character.character_created_by] -> [?0]
+3 Result: Bruce Timm (m.05vtbl) Bill Finger (m.011w20) Bob Kane (m.02nygk) Paul Dini (m.06jrhz)
+4 Root Node: Batman
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [comic_strips.comic_strip_character.comic_strips_appeared_in] -> [?0]
+4 Result: Batman (m.07n2sj)
+5 Root Node: Batman
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [comic_books.comic_book_character.regular_featured_appearances] -> [?0]
+5 Result: Batman (m.09qkx3) Final Crisis (m.02w7zww) Superman: Red Son (m.02s6d9) Batman: The Man Who Laughs (m.06g2lr) Batman: The Dark Knight Returns (m.0jp9r) Infinite Crisis (m.05t57z) Batman: Legends of the Dark Knight (m.03h8z1) The Dark Knight Strikes Again (m.03pdq6) Blackest Night (m.03qnhwm) Batman: Cacophony (m.04f_07x) Superman/Batman (m.056p0l) Batman/Hellboy/Starman (m.05mslkb) Batman: The Return of Bruce Wayne (m.09k6wcg) Green Lantern: Rebirth (m.0bssw5) One Year Later (m.0c6_g5) Batman Confidential (m.0f0qn5) Flashpoint (m.0g9tfyz) Batman: Gates of Gotham (m.0gmgqh6) Identity Crisis (m.04z7tb) Detective Comics (m.02b66p)
+6 Root Node: Batman
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [comic_books.comic_book_series.featured_characters] -> [?0]
+6 Result: 
+7 Root Node: Batman
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [fictional_universe.fictional_character.appears_in_these_fictional_universes] -> [?0]
+7 Result: DC Universe (m.01q_ks)
+8 Root Node: Batman
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [fictional_universe.fictional_character.parents] -> [?0]
+8 Result: Thomas Wayne (m.09xjgk) Martha Wayne (m.0cqn2w)
+9 Root Node: Batman
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [fictional_universe.fictional_character.children] -> [?0]
+9 Result: Ibn al Xu'ffasch (m.060xl2) Helena Wayne (m.02pc9qd) Damian Wayne (m.026mbxq)
+10 Root Node: Batman
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [comic_books.comic_book_character.first_appearance] -> [?0]
+10 Result: Detective Comics #27 (m.02wk9x1)
+11 Root Node: Batman
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Batman (m.01d5g)] -> [fictional_universe.fictional_character.species] -> [?0]
+11 Result: Human (m.0dgw9r)
+
+Query: how many episodes of taylor made piano were there
+Entity: (u'TaylorMade-Adidas', 0.605763224569, 58054, False)
+Entity: (u'Piano', 0.833676442114, 147843, True)
+Entity: (u'Episode', 0.176139928418, 22364, False)
+Entity: (u'Episodes', 0.157919044247, 4070, True)
+Entity: (u'Pianos', 0.140255452171, 21389, False)
+TargetType: Other
+Pattern matches: ERT = 49, ERMRT = 147, ERMRERT = 0
+
+Query: who is the present newscaster on cbs evening news
+Entity: (u'CBS Evening News', 0.99231284123, 237659, True)
+Entity: (u'The Evening News (Newspaper) #2', 0.322500187702, 129, True)
+Entity: (u'The Present', 0.317390777508, 284, True)
+Entity: (u'Edinburgh Evening News', 0.214999545135, 6912, False)
+Entity: (u'The Present', 0.203398315164, 182, True)
+Entity: (u'The Present (Rock Album)', 0.182164425119, 163, True)
+Entity: (u'CBS', 0.856024728164, 1667770, True)
+Entity: (u'News Presenter', 0.849008927996, 0, False)
+Entity: (u'Evening (m/04mx32)', 0.511346892319, 36337, True)
+Entity: (u'News', 0.492882295248, 131990, True)
+Entity: (u'Evening (Romance Film)', 0.243171504344, 991, True)
+Entity: (u'NEWS', 0.184980476678, 672, True)
+Entity: (u'Evening Magazine', 0.165656777078, 1602, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 116, ERMRT = 240, ERMRERT = 4
+1 Root Node: CBS Evening News
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [CBS Evening News (m.01bndp)] -> [tv.tv_program.program_creator] -> [?0]
+1 Result: Don Hewitt (m.078q1l) CBS News (m.01_8w2)
+2 Root Node: CBS
+2 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [CBS (m.09d5h)] -> [base.newsevents.news_reporting_organisation.news_reports] -> [?0]
+  [?0] -> [base.newsevents.news_report.title] -> [?1]
+2 Result: Spacewalk No. 4 moved from Friday to Saturday; no decision yet on tile repair Villages Flattened In Iran Quake
+3 Root Node: CBS
+3 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [CBS (m.09d5h)] -> [base.newsevents.news_reporting_organisation.news_reports] -> [?0]
+  [?0] -> [base.newsevents.news_report.event] -> [?1]
+3 Result: STS-118 (m.06b4bx) 2005 Qeshm earthquake (m.091h9r)
+4 Root Node: CBS
+4 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [CBS (m.09d5h)] -> [base.newsevents.news_reporting_organisation.news_reports] -> [?0]
+  [?0] -> [base.newsevents.news_report.date] -> [?1]
+4 Result: 2007-08-15 2005-11-27
+5 Root Node: CBS
+5 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [CBS (m.09d5h)] -> [base.newsevents.news_reporting_organisation.news_reports] -> [?0]
+  [?0] -> [base.newsevents.news_report.url] -> [?1]
+5 Result: http://www.cbsnews.com/network/news/space/118/STS-118_Archive.html http://www.cbsnews.com/stories/2005/11/27/world/main1075797.shtml
+6 Root Node: News Presenter
+6 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [News Presenter (m.014l7h)] -> [business.job_title.people_with_this_title] -> [?0]
+  [?0] -> [business.employment_tenure.company] -> [CBS (m.09d5h)]
+  [?0] -> [business.employment_tenure.person] -> [?1]
+6 Result: Katie Couric (m.01w_10) Julie Chen (m.03h7zw) Charles Kuralt (m.027k8d) Harry Smith (m.03j9by) Roger Welsch (m.02wz2tk) Bob Schieffer (m.041r07) Richard Schlesinger (m.0gx0b12) Ross Palombo (m.0b6fby3) Laura Diaz (m.02718w0)
+7 Root Node: CBS
+7 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [CBS (m.09d5h)] -> [business.employer.employees] -> [?0]
+  [?0] -> [business.employment_tenure.title] -> [News Presenter (m.014l7h)]
+  [?0] -> [business.employment_tenure.person] -> [?1]
+7 Result: Katie Couric (m.01w_10) Julie Chen (m.03h7zw) Charles Kuralt (m.027k8d) Harry Smith (m.03j9by) Roger Welsch (m.02wz2tk) Bob Schieffer (m.041r07) Richard Schlesinger (m.0gx0b12) Ross Palombo (m.0b6fby3) Laura Diaz (m.02718w0)
+8 Root Node: CBS
+8 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [CBS (m.09d5h)] -> [business.employer.employees] -> [?0]
+  [?0] -> [business.employment_tenure.title] -> [News Presenter (m.014l7h)]
+  [?0] -> [business.employment_tenure.from] -> [?1]
+8 Result: 1999
+9 Root Node: News Presenter
+9 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [News Presenter (m.014l7h)] -> [business.job_title.people_with_this_title] -> [?0]
+  [?0] -> [business.employment_tenure.company] -> [CBS (m.09d5h)]
+  [?0] -> [business.employment_tenure.from] -> [?1]
+9 Result: 1999
+10 Root Node: CBS
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [CBS (m.09d5h)] -> [broadcast.broadcast.area_served] -> [?0]
+10 Result: United States of America (m.09c7w0)
+11 Root Node: CBS
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [CBS (m.09d5h)] -> [broadcast.broadcast.content] -> [?0]
+11 Result: Television (m.07c52)
+
+Query: did the big bang exhibit at the science museum cost money
+Entity: (u'Science Museum', 0.999929373543, 28316, True)
+Entity: (u'Big Bang', 0.392090468579, 296322, True)
+Entity: (u'The Big Bang', 0.173080424431, 0, True)
+Entity: (u'Conservation status', 1.0, 766, False)
+Entity: (u'Big Bang', 0.600751269585, 296322, True)
+Entity: (u'Malaysia', 0.527271766275, 4351832, False)
+Entity: (u'Cardcaptor Sakura', 0.472726779795, 46890, False)
+Entity: (u'Medical cannabis', 0.460306007727, 17293, False)
+Entity: (u'Big Bang (K-pop Artist)', 0.282017893058, 139106, True)
+Entity: (u'Brining', 0.223576462003, 3325, False)
+Entity: (u'Emotion', 0.197274003311, 23284, False)
+Entity: (u'Science museum', 0.164249954413, 7702, True)
+Entity: (u'Musical acoustics', 0.118364401987, 1291, False)
+Entity: (u'Money (Quotation Subject)', 0.750863000671, 70037, True)
+Entity: (u'Collection (Organisation sector)', 0.239241545864, 14554, False)
+Entity: (u'Art exhibition', 0.230697347509, 51269, False)
+Entity: (u'Exhibit', 0.205064253453, 93, True)
+Entity: (u'Bang!', 0.201390239198, 1630, True)
+Entity: (u'Ernesto Neto', 0.119620772932, 3879, False)
+Entity: (u'Bang! (Book) #37', 0.103042613185, 834, True)
+Entity: (u'Exhibit', 0.102531877232, 0, True)
+Entity: (u"Vincent van Gogh's display at Les XX, 1890", 0.102531877232, 0, False)
+TargetType: Other
+Pattern matches: ERT = 167, ERMRT = 328, ERMRERT = 0
+1 Root Node: Science Museum
+1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Science Museum (m.013yrz)] -> [exhibitions.exhibition_venue.exhibitions_at_this_venue] -> [?0]
+  [?0] -> [exhibitions.exhibition_run.admission_fee] -> [?1]
+1 Result: 0 1
+2 Root Node: Science Museum
+2 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Science Museum (m.013yrz)] -> [exhibitions.exhibition_venue.exhibitions_at_this_venue] -> [?0]
+  [?0] -> [exhibitions.exhibition_run.exhibition] -> [?1]
+2 Result: Listening Post (m.046chvt) Maurice Broomfield's 'New Look' at Industry: photographs from post-war Britain (m.046chwg) Alfa Romeo Sustaining Beauty (m.046chz_) Talking Points (m.046cj28) Health Matters (m.046cj3w) Dan Dare & the Birth of Hi-tech Britain (m.046chvm) Grossology (m.046chzq) Things (m.046ch_y) Space detectives (m.046cj2g) Who Am I? (m.046ch_g) Cold War, Hot Science (m.046ch_5) The Human Factor (m.046cj0d) Agriculture (m.046cj8b) The Lord of the Rings Motion Picture Trilogy: The Exhibition (m.04zf21) Energy: fuelling the future (m.046cj79) Bond, James Bond (m.046chzj) Does flying cost the Earth? (m.046chl0) NorthSouthEastWest (m.046chxh) Veterinary History (m.046ch_n) Nuclear Waste: can you handle it? (m.046cj33) The Science and Art of Medicine (m.046cj03) Inside the Spitfire (m.046chx9) The Science of Spying (m.03c1c0c) Weather (m.046ch_k) Changing Our World (m.06w95jp) millennium bug: all or nothing? (m.046ch_2) Launchpad (m.046cj3l) Game On (m.046chwr) Docks and Diving (m.046cj7h) Geographical Magazine Photographer of the Year (m.046cj44) Science of Sport (m.046cj2r) Computing (m.046cj7s) Can algae save the world? (m.046chvx) Mind your Head? 100 years of Psychology in Britain (m.046cj39) Grace Weir - In my own time (m.046chv_) Science in the 18th Century (m.046cj2v) The Hitchhiker's Guide to the Galaxy Exhibition (m.046cj0h) Nanotechnology: small science, big deal (m.046cj36) Japan Car: Designs for the Crowded Globe (m.04st6l2) Big Bang! (m.046chwc) Titanic: The Artifact Exhibition (m.046ch_r) Geophysics and Oceanography (m.046cj41) The Garden (m.046cj22) Flight (m.046cj70) Metamorphing (m.046chzm) The MMR Files (m.046cj09) Exclusive! Tales From the Tabloid Front Line (m.046cj76) The Secret Life of the Home (m.046cj00) Pain (m.046cj30) Time Measurement (m.046ch_v) Climate Change: the Burning Issue (m.046cj7w) Antenna (m.046cj87) Prove It! All the evidence you need to believe in climate change (m.0dgkkqt) Making the Modern World (m.02hz0zf) Shipping (m.046cj2n) Penicillin: A story of triumph and tragedy (m.046chw8) Move Over Einstein (m.046chxd) Climate change - what's it to you? Photography Competition (m.046cj7z) The Science Of Survival (m.046chvq) Fast Forward: 20 ways F1™ is changing our world (m.05kkz55) The Science of Aliens (m.03d24gx) EYE to the future: The Vision of Arthur C. Clarke (m.046ch_c) Plasticity - 100 years of making plastics (m.046chw5) Playing with Science (m.046chwn) NEURObotics... the future of thinking? (m.046chwv) Pure Iceland (m.046chx3) Digital You (m.046chx6) Surveying (m.046cj2c) Pattern Pod (m.046cj2y) In Future (m.046cj3p) Glimpses of Medical History (m.046cj3z) Digitopolis (m.046cj7l) Challenge of Materials (m.046cj81) Building to the limits (m.046cj84) Dead Ringers? (m.046cj7p) Energy Hall (m.046cj7d) Mathematics (m.046cj3d) Wallace and Gromit's World of Cracking Ideas (m.04st6f2) Marine Engineering (m.046cj3h) Films of Fact (m.046chvj) Treat Yourself: Health consumers in a medical age (m.046chzf) Exploring Space (m.046cj73) Pixar: 20 Years of Animation (m.046chwy) Japan: Gateway to the Future (m.046chzx) Heat and Temperature (m.046cj3s) Head on: art with the brain in mind (m.046chzt) Future Face (m.046cj47) Isambard Kingdom Brunel: fame and fate (m.046chwk) Telecommunications (m.046cj25) The Art of Invention (m.046ch_8)
+3 Root Node: Science Museum
+3 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Science Museum (m.013yrz)] -> [exhibitions.exhibition_venue.exhibitions_at_this_venue] -> [?0]
+  [?0] -> [exhibitions.exhibition_run.sponsor] -> [?1]
+3 Result: Nintendo (m.059wk) Siemens (m.016l20) Suzuki Motor Corporation (m.02ws0w) European Aeronautic Defence and Space Company N.V. (EADS) (m.0n3tb) Toyota Motor Corporation (m.07mb6) Mitsubishi Motors (m.01cylx) Nissan Motor Co., Ltd. (m.05b4c) HSBC (m.01vq1f) Royal Dutch Shell (m.0g5vy) Science and Technology Facilities Council (m.02qjph5) United Kingdom Department for Environment, Food and Rural Affairs (m.01rypg) Alfa Romeo (m.09c50) Daihatsu Motor Company (m.01gm7z) TAU Corporation (m.04st6sg) Yamagin Corporation (m.04st6sp) Arai Shoji Co., Ltd. (m.04st6sz) Nippon Design Center, Inc. (m.04st6t5) Garfield Weston Foundation (m.03w9pf4) SITA Trust (m.047hq93) Intellectual Property Office (m.04kd2n) Zochonis Charitable Trust (m.047l2gk)
+4 Root Node: Science Museum
+4 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Science Museum (m.013yrz)] -> [exhibitions.exhibition_venue.exhibitions_at_this_venue] -> [?0]
+  [?0] -> [exhibitions.exhibition_run.opened_on] -> [?1]
+4 Result: 2000-12-01 2008-04-30 2007-10-18 2000-06-23 1999-12-06 2002-10-16 2008-05-15 2005-03-14 2005-10-24 1999-12-10 2003-07-01 2001-01-19 2007-10-02 2005-05-28 2005-02-25 2008-02-19 2008-11-29 2007-02-10 2002-10-03 2007-02-21 2009-10-21 2005-04-16 2009-03-11 1995-12-11 2006-01-20 2005-11-08 2008-04-05 2009-03-27 2007-05-22 2005-10-14 2002-05-11 2006-11-18 2006-10-17 2005-09-14 2006-04-01 2007-04-03 2007-05-10 2006-03-29 2008-05-29 2008-05-23 2002-02-01 2002-03-15 2007-01-01 2003-09-16 2006-10-21 1999-10-15
+5 Root Node: Science Museum
+5 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Science Museum (m.013yrz)] -> [exhibitions.exhibition_venue.exhibitions_at_this_venue] -> [?0]
+  [?0] -> [exhibitions.exhibition_run.exhibition] -> [?1]
+5 Result: Listening Post (m.046chvt) Maurice Broomfield's 'New Look' at Industry: photographs from post-war Britain (m.046chwg) Alfa Romeo Sustaining Beauty (m.046chz_) Talking Points (m.046cj28) Health Matters (m.046cj3w) Dan Dare & the Birth of Hi-tech Britain (m.046chvm) Grossology (m.046chzq) Things (m.046ch_y) Space detectives (m.046cj2g) Who Am I? (m.046ch_g) Cold War, Hot Science (m.046ch_5) The Human Factor (m.046cj0d) Agriculture (m.046cj8b) The Lord of the Rings Motion Picture Trilogy: The Exhibition (m.04zf21) Energy: fuelling the future (m.046cj79) Bond, James Bond (m.046chzj) Does flying cost the Earth? (m.046chl0) NorthSouthEastWest (m.046chxh) Veterinary History (m.046ch_n) Nuclear Waste: can you handle it? (m.046cj33) The Science and Art of Medicine (m.046cj03) Inside the Spitfire (m.046chx9) The Science of Spying (m.03c1c0c) Weather (m.046ch_k) Changing Our World (m.06w95jp) millennium bug: all or nothing? (m.046ch_2) Launchpad (m.046cj3l) Game On (m.046chwr) Docks and Diving (m.046cj7h) Geographical Magazine Photographer of the Year (m.046cj44) Science of Sport (m.046cj2r) Computing (m.046cj7s) Can algae save the world? (m.046chvx) Mind your Head? 100 years of Psychology in Britain (m.046cj39) Grace Weir - In my own time (m.046chv_) Science in the 18th Century (m.046cj2v) The Hitchhiker's Guide to the Galaxy Exhibition (m.046cj0h) Nanotechnology: small science, big deal (m.046cj36) Japan Car: Designs for the Crowded Globe (m.04st6l2) Big Bang! (m.046chwc) Titanic: The Artifact Exhibition (m.046ch_r) Geophysics and Oceanography (m.046cj41) The Garden (m.046cj22) Flight (m.046cj70) Metamorphing (m.046chzm) The MMR Files (m.046cj09) Exclusive! Tales From the Tabloid Front Line (m.046cj76) The Secret Life of the Home (m.046cj00) Pain (m.046cj30) Time Measurement (m.046ch_v) Climate Change: the Burning Issue (m.046cj7w) Antenna (m.046cj87) Prove It! All the evidence you need to believe in climate change (m.0dgkkqt) Making the Modern World (m.02hz0zf) Shipping (m.046cj2n) Penicillin: A story of triumph and tragedy (m.046chw8) Move Over Einstein (m.046chxd) Climate change - what's it to you? Photography Competition (m.046cj7z) The Science Of Survival (m.046chvq) Fast Forward: 20 ways F1™ is changing our world (m.05kkz55) The Science of Aliens (m.03d24gx) EYE to the future: The Vision of Arthur C. Clarke (m.046ch_c) Plasticity - 100 years of making plastics (m.046chw5) Playing with Science (m.046chwn) NEURObotics... the future of thinking? (m.046chwv) Pure Iceland (m.046chx3) Digital You (m.046chx6) Surveying (m.046cj2c) Pattern Pod (m.046cj2y) In Future (m.046cj3p) Glimpses of Medical History (m.046cj3z) Digitopolis (m.046cj7l) Challenge of Materials (m.046cj81) Building to the limits (m.046cj84) Dead Ringers? (m.046cj7p) Energy Hall (m.046cj7d) Mathematics (m.046cj3d) Wallace and Gromit's World of Cracking Ideas (m.04st6f2) Marine Engineering (m.046cj3h) Films of Fact (m.046chvj) Treat Yourself: Health consumers in a medical age (m.046chzf) Exploring Space (m.046cj73) Pixar: 20 Years of Animation (m.046chwy) Japan: Gateway to the Future (m.046chzx) Heat and Temperature (m.046cj3s) Head on: art with the brain in mind (m.046chzt) Future Face (m.046cj47) Isambard Kingdom Brunel: fame and fate (m.046chwk) Telecommunications (m.046cj25) The Art of Invention (m.046ch_8)
+6 Root Node: Science Museum
+6 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Science Museum (m.013yrz)] -> [exhibitions.exhibition_venue.exhibitions_at_this_venue] -> [?0]
+  [?0] -> [exhibitions.exhibition_run.sponsor] -> [?1]
+6 Result: Nintendo (m.059wk) Siemens (m.016l20) Suzuki Motor Corporation (m.02ws0w) European Aeronautic Defence and Space Company N.V. (EADS) (m.0n3tb) Toyota Motor Corporation (m.07mb6) Mitsubishi Motors (m.01cylx) Nissan Motor Co., Ltd. (m.05b4c) HSBC (m.01vq1f) Royal Dutch Shell (m.0g5vy) Science and Technology Facilities Council (m.02qjph5) United Kingdom Department for Environment, Food and Rural Affairs (m.01rypg) Alfa Romeo (m.09c50) Daihatsu Motor Company (m.01gm7z) TAU Corporation (m.04st6sg) Yamagin Corporation (m.04st6sp) Arai Shoji Co., Ltd. (m.04st6sz) Nippon Design Center, Inc. (m.04st6t5) Garfield Weston Foundation (m.03w9pf4) SITA Trust (m.047hq93) Intellectual Property Office (m.04kd2n) Zochonis Charitable Trust (m.047l2gk)
+7 Root Node: Science Museum
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Science Museum (m.013yrz)] -> [exhibitions.exhibition_producer.exhibitions_produced] -> [?0]
+7 Result: Dan Dare & the Birth of Hi-tech Britain (m.046chvm) Does flying cost the Earth? (m.046chl0) Japan Car: Designs for the Crowded Globe (m.04st6l2) Fast Forward: 20 ways F1™ is changing our world (m.05kkz55)
+8 Root Node: Science Museum
+8 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Science Museum (m.013yrz)] -> [exhibitions.exhibition_venue.exhibitions_at_this_venue] -> [?0]
+  [?0] -> [exhibitions.exhibition_run.closed_on] -> [?1]
+8 Result: 2001-05-31 2009-10-25 2008-04-30 2003-04-27 2008-11-15 2005-05-15 2008-02-24 2003-11-01 2007-11-25 2005-11-27 2005-08-31 2009-02-19 2009-04-19 2007-10-28 2003-02-16 2007-07-15 2010-02-02 2005-06-12 2010-04-05 1997-06-02 2006-04-23 2006-01-02 2008-11-02 2009-10-31 2009-01-01 2006-02-26 2002-09-06 1905-06-28 2007-03-26 2007-03-25 2006-03-19 2006-06-10 2007-10-07 2008-03-31 2006-09-29 2004-09-05 2009-02-09 2003-11-09 2008-03-16 2002-07-28 2007-01-22 2004-01-11 2007-02-25 2000-08-31
+9 Root Node: Science Museum
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Science Museum (m.013yrz)] -> [architecture.museum.type_of_museum] -> [?0]
+9 Result: Science museum (m.0j58y)
+10 Root Node: Science Museum
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Science Museum (m.013yrz)] -> [architecture.museum.director] -> [?0]
+10 Result: Ian Blatchford (m.0glnt0g)
+11 Root Node: Science Museum
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Science Museum (m.013yrz)] -> [base.movietheatres.movie_theatre.type_of_movietheatre] -> [?0]
+11 Result: IMAX (m.017fx5)
+
+Query: in what season of stargate sg-1 is the episode show and tell
+Entity: (u'Show and Tell (Musical Recording) #34', 0.189136131061, 126, True)
+Entity: (u'Show and tell', 0.133596156067, 89, True)
+Entity: (u'Show and tell', 0.102073467557, 68, True)
+Entity: (u'Stargate SG-1', 0.971065355264, 144974, True)
+Entity: (u'Burr\u2013Hamilton duel', 0.618213820768, 271, False)
+Entity: (u'The Strike (TV Episode) #1', 0.202219249023, 0, False)
+Entity: (u'Stargate (Fictional Universe)', 0.390924840692, 21596, True)
+Entity: (u'Episode', 0.292628485896, 22364, True)
+Entity: (u'Season', 0.283846106731, 10457, True)
+Entity: (u'Season', 0.277508146975, 29811, True)
+Entity: (u'Stargate (Science Fiction Film)', 0.174839456559, 2195, True)
+Entity: (u'Stargate', 0.167295734986, 22793, True)
+Entity: (u'Stargate (Fictional Object)', 0.103086553801, 9803, True)
+TargetType: Other
+Pattern matches: ERT = 107, ERMRT = 123, ERMRERT = 0
+1 Root Node: Stargate SG-1
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.episodes] -> [?0]
+1 Result: Counterstrike (m.0cf24w) Within the Serpent's Grasp (1) (m.0hpgj1r) Thor's Hammer (m.0647nf) Desperate Measures (m.09sl0d) Evolution (2) (m.06yfkb9) Heroes (m.07m60n) Beachhead (m.07mcsq) Babylon (m.07mctr) New Order (m.07m5_l) Fragile Balance (m.07mf2m) Prometheus (m.07mf7h) Thor's Chariot (m.079rzk) Abyss (m.07p75k) Space Race (m.07md_w) Maternal Instinct (m.08msmh) Ethon (m.09yk86) Seth (m.0644vf) Prototype (m.07mcvf) Shadow Play (m.07mfgr) Foothold (m.0697mp) A Matter of Time (m.08mp85) Jolinar's Memories (m.08mr3b) The Devil You Know (m.08msdj) Cold Lazarus (m.06476g) Redemption (2) (m.06yfk8b) The Fourth Horseman (2) (m.06yfkg9) Redemption (m.07m61b) Full Alert (m.07mckh) Disclosure (m.07mf9x) 48 Hours (m.09sl25) Crusade (m.0b0fs6) Camelot (m.0b0fsx) Flesh and Blood (m.0br51c) Covenant (m.07mcmk) Sight Unseen (m.07mfby) Proving Ground (m.09jyyl) The Sentinel (m.09rryk) Between Two Fires (m.09sk_0) Red Sky (m.09skq2) Demons (m.08mqtz) The Warrior (m.09gqyq) The Quest (1) (m.06yfkhg) Prisoners (m.079r9n) Children of the Gods (m.041178) Threads (m.07mcjf) Out of Mind (m.07mcwt) Hathor (m.0647yv) Family (m.07b_14) Into the Fire (m.07mcy5) Spirits (m.03910v) The Enemy Within (m.0608sd) 1969 (m.060vv6) Emancipation (m.064713) The Broca Divide (m.06472v) The First Commandment (m.06474_) The Nox (m.0647d0) Brief Candle (m.0647hj) The Torment of Tantalus (m.0647r6) Bloodlines (m.0647s_) Fire and Water (m.0647vd) Singularity (m.064822) Cor-ai (m.064833) Enigma (m.06485j) Solitudes (m.06yfk23) Tin Man (m.06yfk2f) There But For the Grace of God (m.06yfk2r) Politics (1) (m.06yfk31) The Tok'ra (1) (m.06yfk3_) The Tok'ra (2) (m.06yfk49) Avalon (1) (m.07m5y3) The Serpent's Lair (m.07ysb8) Need (m.07ysn2) Touchstone (m.08mp4w) One False Step (m.08mpkz) Show and Tell (m.08mpny) 200 (m.0cb0_f) Moebius (2) (m.06yfkf2) Lockdown (m.07mcny) Birthright (m.07mdz3) Origin (m.07mcpz) 2001 (m.09sk_q) Off the Grid (m.0b0fp1) Unnatural Selection (m.07mf7v) Ripple Effect (m.08mlrc) Memento Mori (m.0cf25x) The Pegasus Project (m.0bqvhm) Full Circle (m.07mf4b) In the Line of Duty (m.079qw1) Fallout (m.07mdy2) Memento (m.07mfdp) Resurrection (m.07mdwq) Chain Reaction (m.092g5k) Frozen (m.07p76l) Nemesis (m.08msr_) Small Victories (m.09rb33) Tangent (m.09bc08) Point of No Return (m.09ryq7) The Shroud (m.0dmc6w) Line In The Sand (m.0dzp2m) Icon (m.07mcpm) Pretense (m.08mshc) Affinity (m.07mcn7) Reckoning (2) (m.06yfkdd) Gemini (m.07mcl5) The Changeling (m.07mfcm) The Tomb (m.09skxy) Lost City (m.06zf2x) Zero Hour (m.07mcp8) Stronghold (m.09yk9l) Ex Deus Machina (m.07ht9j) Bane (m.08mp0x) Heroes, Part 2 (m.06yfkby) Fail Safe (m.09r6px) Death Knell (m.07mdxd) Sci Fi Inside: Stargate SG-1 200 (m.0j86wp5) Scorched Earth (m.09kcnk) Insiders (m.0cf22q) Uninvited (m.0cf23v) Cure (m.07mffc) The Fourth Horseman (1) (m.06yfkf_) Forsaken (m.07mfc8) Inauguration (m.07mdw0) Point of View (m.08mqkm) The Fifth Man (m.09sknc) The Quest (2) (m.06yfkhs) Holiday (m.08mpfm) The Serpent's Venom (m.09ryv1) Allegiance (m.07mfg1) The First Ones (m.08qv9k) The Curse (m.09rysp) Shades of Grey (m.06c533) Beast of Burden (m.06hvw_) Watergate (m.06hw4_) Lost City (2) (m.06yfkcf) Avenger 2.0 (m.07mdzt) Revisions (m.07mf1y) Homecoming (m.07mf39) Fallen (m.07mf3n) Revelations (m.07nxtd) Fair Game (m.07q1m7) The Gamekeeper (m.07yslp) Learning Curve (m.08mq9k) Deadman Switch (m.08mqqh) Crystal Skull (m.08msqz) Enemies (m.09l2f_) Menace (m.09rrk4) Last Stand (2) (m.09s97h) Summit (1) (m.09s9j9) Ascension (m.09skl_) The Other Guys (m.0h3_chv) Continuum (m.0j86wry) Secrets (m.08mn_j) Window of Opportunity (m.08cz71) Nightwalkers (m.07p75x) Divide and Conquer (m.09k7qr) Upgrades (m.09rb6l) Crossroads (m.09rb89) Threshold (m.09rz91) Moebius (m.07m5cw) Wormhole X-Treme! (m.040sz8) Prophecy (m.07mff0) A Hundred Days (m.08msks) The Fifth Race (m.064pjz) Message In a Bottle (m.07bzrd) Serpent's Song (m.07mc_0) Smoke & Mirrors (m.07mf8w) Legacy (m.07q1lx) Citizen Joe (m.07mck4) Descent (m.07p76y) Talion (m.0g9lkq) Collateral Damage (m.08mlqm) Unending (m.025w7_5) Evolution (1) (m.06yfk9_) Avalon (2) (m.06yfkfg) Avatar (m.07mcnl) The Ties That Bind (m.07mcqn) Paradise Lost (m.07mfb7) Prodigy (m.07syyd) The Scourge (m.0b0fqg) Arthur's Mantle (m.0b0frh) Bounty (m.0djyr6) The Road Not Taken (m.0g0bg6) Family Ties (m.0gxbd7) 2010 (m.06fjz1) Absolute Power (m.0418qm) The Light (m.06fprj) The Other Side (m.09rb45) Bad Guys (m.0g2zpz) Stargate SG-1: True Science (m.0j86wmt) Urgo (m.08mskf) The Powers That Be (m.07mcq_) Company of Thieves (m.0cf278) It's Good to Be King (m.05tsmw) Prometheus Unbound (m.07lqlp) Endgame (m.07mclj) Yesterday, Today and Tomorrow (m.0fyb58) Morpheus (m.0cf21b) Chimera (m.07mdxr) Grace (m.07mdyf) Entity (m.09l1tt) Forever in a Day (m.068zj1) Rules of Engagement (m.08mqwd) Past and Present (m.08mqxs) Dominion (m.025w7z4) Meridian (m.09l1rc) New Ground (m.08msl3) Exodus (m.09l25_) Metamorphosis (m.07mf9k) Orpheus (m.07mf28) Enemy Mine (m.07mf0k) Lifeboat (m.07mf17) Children of the Gods (2) (m.0j86wx1) Reckoning (m.07m568) Beneath the Surface (m.09kcpy) Rite of Passage (m.09skt0) From Stargate To Atlantis - A Sci-Fi Lowdown (m.0j86wk1) Behind The Stargate - Secrets Revealed (m.0j86wlf) Double Jeopardy (m.09h2vc) Evolution (m.07m60_) Sacrifices (m.07mclw) Stargate: The Movie (m.0j86whp) The Ark of Truth (m.0j86wqk) Behind The Mythology of Stargate SG-1 (m.0j86wt9) New Order (2) (m.0j86xpn)
+2 Root Node: Stargate SG-1
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.number_of_seasons] -> [?0]
+2 Result: 10
+3 Root Node: Stargate SG-1
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.seasons] -> [?0]
+3 Result: Stargate SG-1 - Season 9 (m.03m3yjd) Stargate SG-1 - Season 3 (m.03m8lfs) Stargate SG-1 - Season 6 (m.03m8pws) Stargate SG-1 - Season 8 (m.03m3z05) Stargate SG-1 - Season 1 (m.03m8h2t) Stargate SG-1 - Season 2 (m.03m8j45) Stargate SG-1 - Season 4 (m.03m8lx6) Stargate SG-1 - Season 5 (m.03m8mjv) Stargate SG-1 - Season 7 (m.03m8qlt) Stargate SG-1 - Season 10 (m.03m8rmt) Stargate SG-1 - Season 0 (m.0k231q_)
+4 Root Node: Stargate SG-1
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.episode_running_time] -> [?0]
+4 Result: 42 43 45 60
+5 Root Node: Stargate SG-1
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.number_of_episodes] -> [?0]
+5 Result: 214
+6 Root Node: Stargate SG-1
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.multipart_episodes] -> [?0]
+6 Result: Within the Serpent's Grasp (m.06yfk3c)
+7 Root Node: Stargate SG-1
+7 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.regular_cast] -> [?0]
+  [?0] -> [tv.regular_tv_appearance.seasons] -> [?1]
+7 Result: Stargate SG-1 - Season 9 (m.03m3yjd) Stargate SG-1 - Season 3 (m.03m8lfs) Stargate SG-1 - Season 6 (m.03m8pws) Stargate SG-1 - Season 8 (m.03m3z05) Stargate SG-1 - Season 1 (m.03m8h2t) Stargate SG-1 - Season 2 (m.03m8j45) Stargate SG-1 - Season 4 (m.03m8lx6) Stargate SG-1 - Season 5 (m.03m8mjv) Stargate SG-1 - Season 7 (m.03m8qlt) Stargate SG-1 - Season 10 (m.03m8rmt)
+8 Root Node: Stargate SG-1
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.air_date_of_final_episode] -> [?0]
+8 Result: 2007-03-13
+9 Root Node: Stargate SG-1
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.air_date_of_first_episode] -> [?0]
+9 Result: 1997-07-27
+10 Root Node: Stargate SG-1
+10 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.regular_cast] -> [?0]
+  [?0] -> [tv.regular_tv_appearance.seasons] -> [?1]
+10 Result: Stargate SG-1 - Season 9 (m.03m3yjd) Stargate SG-1 - Season 3 (m.03m8lfs) Stargate SG-1 - Season 6 (m.03m8pws) Stargate SG-1 - Season 8 (m.03m3z05) Stargate SG-1 - Season 1 (m.03m8h2t) Stargate SG-1 - Season 2 (m.03m8j45) Stargate SG-1 - Season 4 (m.03m8lx6) Stargate SG-1 - Season 5 (m.03m8mjv) Stargate SG-1 - Season 7 (m.03m8qlt) Stargate SG-1 - Season 10 (m.03m8rmt)
+11 Root Node: Stargate SG-1
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Stargate SG-1 (m.09kn9)] -> [tv.tv_program.spun_off_from] -> [?0]
+11 Result: Stargate (m.070g7)
+
+Query: how many beers come a can
+Entity: (u'Acan', 0.659340934401, 20, True)
+Entity: (u'comEA (Gene) #2', 0.5, 0, True)
+Entity: (u'comEA (Gene) #1', 0.5, 0, True)
+Entity: (u'Aggrecan', 0.164834983295, 382, False)
+Entity: (u'Beer (Beverage type)', 0.820150180697, 62289, False)
+TargetType: Other
+Pattern matches: ERT = 34, ERMRT = 10, ERMRERT = 0
+1 Root Node: Acan
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Acan (m.02p0xwc)] -> [religion.deity.deity_of] -> [?0]
+1 Result: 2
+2 Root Node: Beer (Beverage type)
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Beer (Beverage type) (m.01599)] -> [base.schemastaging.food_extra.narrower] -> [?0]
+2 Result: 2
+3 Root Node: Beer (Beverage type)
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Beer (Beverage type) (m.01599)] -> [base.schemastaging.food_extra.broader] -> [?0]
+3 Result: 1
+4 Root Node: comEA (Gene) #1
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [comEA (Gene) #1 (m.0rph1qn)] -> [biology.gene.symbol] -> [?0]
+4 Result: 1
+5 Root Node: comEA (Gene) #2
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [comEA (Gene) #2 (m.0rdhbhz)] -> [biology.gene.ncbi_id] -> [?0]
+5 Result: 1
+6 Root Node: comEA (Gene) #2
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [comEA (Gene) #2 (m.0rdhbhz)] -> [biology.gene.symbol] -> [?0]
+6 Result: 1
+7 Root Node: comEA (Gene) #1
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [comEA (Gene) #1 (m.0rph1qn)] -> [biology.gene.ncbi_id] -> [?0]
+7 Result: 1
+8 Root Node: comEA (Gene) #1
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [comEA (Gene) #1 (m.0rph1qn)] -> [biology.gene.locus] -> [?0]
+8 Result: 1
+9 Root Node: comEA (Gene) #2
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [comEA (Gene) #2 (m.0rdhbhz)] -> [biology.gene.locus] -> [?0]
+9 Result: 1
+10 Root Node: comEA (Gene) #1
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [comEA (Gene) #1 (m.0rph1qn)] -> [biology.gene.genome] -> [?0]
+10 Result: 1
+11 Root Node: comEA (Gene) #2
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [comEA (Gene) #2 (m.0rdhbhz)] -> [biology.gene.genome] -> [?0]
+11 Result: 1
+
+Query: what are the christian holidays
+Entity: (u'Liturgical year', 1.0, 30330, False)
+Entity: (u'The Christian (Book) #3', 0.443820224719, 79, True)
+Entity: (u'The Christian', 0.191011235955, 463, True)
+Entity: (u'The Christian', 0.191011235955, 34, True)
+Entity: (u'The Christian (Musical Recording) #4', 0.101123595506, 18, True)
+Entity: (u'Holiday', 0.458137425129, 581658, False)
+Entity: (u'Jewish holiday', 0.197398835787, 32889, False)
+Entity: (u'Buddhist holidays', 0.156667734196, 49, False)
+TargetType: Other
+Pattern matches: ERT = 30, ERMRT = 15, ERMRERT = 0
+
+Query: what are the texts of taoism
+Entity: (u'The Texts of Taoism', 1.0, 35, True)
+Entity: (u'Texts of Taoism', 0.333333333333, 0, True)
+Entity: (u'Texts of Taoism (Volume 2)', 0.333333333333, 0, True)
+Entity: (u'Texts of Taoism (Volume 1)', 0.333333333333, 0, True)
+Entity: (u'Taoism', 0.982920151219, 399341, True)
+Entity: (u'Buddhist texts', 0.400543403998, 11737, False)
+Entity: (u'Hindu texts', 0.200380405858, 3294, False)
+TargetType: Other
+Pattern matches: ERT = 43, ERMRT = 13, ERMRERT = 0
+1 Root Node: The Texts of Taoism
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Texts of Taoism (m.04wb9ps)] -> [book.book.genre] -> [?0]
+1 Result: Philosophy (m.037mh8)
+2 Root Node: The Texts of Taoism
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Texts of Taoism (m.04wb9ps)] -> [type.object.name] -> [?0]
+2 Result: The Texts of Taoism
+3 Root Node: The Texts of Taoism
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Texts of Taoism (m.04wb9ps)] -> [common.topic.alias] -> [?0]
+3 Result: Texts of Taoism
+4 Root Node: The Texts of Taoism
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Texts of Taoism (m.04wb9ps)] -> [book.book.editions] -> [?0]
+4 Result: Texts of Taoism (m.08pfyjs) Texts of Taoism (Volume 1) (m.0b2vbnx) Texts of Taoism: The Sacred Books of China (m.08rl0dq) Texts of Taoism (Volume 2) (m.0b2h3mp)
+5 Root Node: The Texts of Taoism
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Texts of Taoism (m.04wb9ps)] -> [book.written_work.author] -> [?0]
+5 Result: James Legge (m.021kq9)
+6 Root Node: The Texts of Taoism
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Texts of Taoism (m.04wb9ps)] -> [book.written_work.subjects] -> [?0]
+6 Result: Religion (m.06bvp) Taoism (m.07gvx)
+7 Root Node: The Texts of Taoism
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Texts of Taoism (m.04wb9ps)] -> [user.alust.default_domain.processed_with_review_queue.question_id] -> [?0]
+7 Result: /rabj/store/questions/question_1f35d755d627ee8a
+8 Root Node: Taoism
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Taoism (m.07gvx)] -> [religion.religion.texts] -> [?0]
+8 Result: I Ching (m.03ydb) Tao Te Ching (m.02czn) Zhuangzi (m.0164zy) Daozang (m.05blr4)
+9 Root Node: Texts of Taoism (Volume 2)
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Texts of Taoism (Volume 2) (m.0b2h3mp)] -> [book.book_edition.publisher] -> [?0]
+9 Result: Dover Publications (m.03dgb6)
+10 Root Node: Texts of Taoism (Volume 1)
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Texts of Taoism (Volume 1) (m.0b2vbnx)] -> [book.book_edition.publisher] -> [?0]
+10 Result: Dover Publications (m.03dgb6)
+11 Root Node: Texts of Taoism (Volume 2)
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Texts of Taoism (Volume 2) (m.0b2h3mp)] -> [book.book_edition.book] -> [?0]
+11 Result: The Texts of Taoism (m.04wb9ps)
+
+Query: in 1982 who were the primetieme emmy award for comedy series nominees
+Entity: (u'Award (Chivalric Title)', 1.0, 214152, False)
+Entity: (u'Emmy Award', 0.961690893815, 651786, True)
+Entity: (u'Television comedy', 0.738231871669, 7963, False)
+Entity: (u'1982 FIFA World Cup', 0.71009907012, 2361, False)
+Entity: (u'1982 Hama massacre', 0.170949617853, 1527, False)
+Entity: (u'1982 Lebanon War', 0.118349788037, 6412, False)
+Entity: (u'Resident Evil: Degeneration', 0.410762587684, 6609, False)
+Entity: (u'80th Academy Awards', 0.138570825224, 5229, False)
+Entity: (u'1982', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 69, ERMRT = 66, ERMRERT = 0
+1 Root Node: 80th Academy Awards
+1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [80th Academy Awards (m.02pgky2)] -> [award.award_ceremony.awards_presented] -> [?0]
+  [?0] -> [award.award_honor.honored_for] -> [?1]
+1 Result: The Golden Compass (m.04w7rn) Juno (m.02rv_dz) Michael Clayton (m.0fh694) There Will Be Blood (m.08zrbl) The Counterfeiters (m.03cgqbr) La Vie en Rose (m.02q6gfp) Falling Slowly (m.03nsp04) Ratatouille (m.03x7hd) Sweeney Todd: The Demon Barber of Fleet Street (m.0ds11z) The Bourne Ultimatum (m.061681) Peter and the Wolf (m.02vpt_d) Elizabeth: The Golden Age (m.03_gz8) No Country for Old Men (m.0b6tzs) Atonement (m.0ctb4g) Le Mozart des pickpockets (m.03qhs4f) Freeheld (m.03qhrvg) Taxi to the Dark Side (m.02qz5kl)
+2 Root Node: 80th Academy Awards
+2 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [80th Academy Awards (m.02pgky2)] -> [award.award_ceremony.awards_presented] -> [?0]
+  [?0] -> [award.award_honor.award_winner] -> [?1]
+2 Result: Alex Gibney (m.0bq4j6) Trevor Wood (m.03nh4j8) Christopher Rouse (m.02854h_) Vanessa Roth (m.05cb7yb) Eva Orner (m.03qj9xn) Joel Coen (m.02kxbx3) Daniel Day-Lewis (m.016yvw) Didier Lavergne (m.03nq_gg) Alexandra Byrne (m.0b_26s) Markéta Irglová (m.0280k1w) David Parker (m.098j9zs) Ethan Coen (m.02kxbwx) Glen Hansard (m.04kxzr) Diablo Cody (m.0gy134) Francesca Lo Schiavo (m.03nq_0f) Cynthia Wade (m.07k8ns7) Dante Ferretti (m.0bytkq) Javier Bardem (m.01713c) Bill Westenhofer (m.02x16n1) Ben Morris (m.03nh4j1) Michael L. Fink (m.0bd6k73) Scott Rudin (m.0fvf9q) Tilda Swinton (m.02f2dn) Scott Millan (m.03qf_rv) Robert Elswit (m.02vx4c2) Philippe Pollet-Villard (m.05cb9h_) Marion Cotillard (m.07lt7b) Dario Marianelli (m.0bmyhb) Per Hallberg (m.02p911r) Karen Baker Landers (m.03nh4mx) Suzie Templeton (m.04lg4h8) Kirk Francis (m.03nh4nc) Jan Archibald (m.03nh4h4) Brad Bird (m.04gcd1) Stefan Ruzowitzky (m.03m7c6m) Hugh Welchman (m.03nh4v5)
+3 Root Node: 80th Academy Awards
+3 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [80th Academy Awards (m.02pgky2)] -> [award.award_ceremony.awards_presented] -> [?0]
+  [?0] -> [award.award_honor.award] -> [?1]
+3 Result: Academy Award for Best Actor (m.0f4x7) Academy Award for Best Art Direction (m.0gq_v) Academy Award for Actress in a Leading Role (m.0gqwc) Academy Award for Actress in a Supporting Role (m.0gqyl) Academy Award for Best Original Song (m.0gqz2) Academy Award for Writing Adapted Screenplay (m.0gr4k) Academy Award for Documentary Feature (m.0gvx_) Academy Award for Best Sound Editing (m.018wdw) Academy Award for Best Picture (m.0gq9h) Academy Award for Best Foreign Language Film (m.0gqng) Academy Award for Best Live Action Short Film (m.0gr07) Academy Award for Best Cinematography (m.0gr0m) Academy Award for Best Director (m.0gs9p) Academy Award for Film Editing (m.0k611) Academy Award for Sound Mixing (m.0p9sw) Academy Award for Original Music Score (m.0l8z1) Academy Award for Costume Design (m.0gs96) Academy Award for Best Documentary Short Subject (m.018wng) Academy Award for  Actor in a Supporting Role (m.0gqy2) Academy Award for Best Original Screenplay (m.0gr51) Academy Award for Animated Short Film (m.0gq_d) Academy Award for Visual Effects (m.0gr42) Academy Award for  Animated Feature Film (m.0gqzz) Academy Award for Makeup (m.0gqxm)
+4 Root Node: 80th Academy Awards
+4 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [80th Academy Awards (m.02pgky2)] -> [award.award_ceremony.awards_presented] -> [?0]
+  [?0] -> [award.award_honor.notes_description] -> [?1]
+4 Result: Role: Daniel Plainview Role:  Anton Chigurh Once Country: Austria; in German, Russian, English, Hebrew Role:  Karen Crowder Role: Edith Piaf
+5 Root Node: 80th Academy Awards
+5 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [80th Academy Awards (m.02pgky2)] -> [award.award_ceremony.awards_presented] -> [?0]
+  [?0] -> [award.award_honor.year] -> [?1]
+5 Result: 2007
+6 Root Node: 80th Academy Awards
+6 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [80th Academy Awards (m.02pgky2)] -> [award.award_ceremony.awards_presented] -> [?0]
+  [?0] -> [award.award_honor.award] -> [?1]
+6 Result: Academy Award for Best Actor (m.0f4x7) Academy Award for Best Art Direction (m.0gq_v) Academy Award for Actress in a Leading Role (m.0gqwc) Academy Award for Actress in a Supporting Role (m.0gqyl) Academy Award for Best Original Song (m.0gqz2) Academy Award for Writing Adapted Screenplay (m.0gr4k) Academy Award for Documentary Feature (m.0gvx_) Academy Award for Best Sound Editing (m.018wdw) Academy Award for Best Picture (m.0gq9h) Academy Award for Best Foreign Language Film (m.0gqng) Academy Award for Best Live Action Short Film (m.0gr07) Academy Award for Best Cinematography (m.0gr0m) Academy Award for Best Director (m.0gs9p) Academy Award for Film Editing (m.0k611) Academy Award for Sound Mixing (m.0p9sw) Academy Award for Original Music Score (m.0l8z1) Academy Award for Costume Design (m.0gs96) Academy Award for Best Documentary Short Subject (m.018wng) Academy Award for  Actor in a Supporting Role (m.0gqy2) Academy Award for Best Original Screenplay (m.0gr51) Academy Award for Animated Short Film (m.0gq_d) Academy Award for Visual Effects (m.0gr42) Academy Award for  Animated Feature Film (m.0gqzz) Academy Award for Makeup (m.0gqxm)
+7 Root Node: 80th Academy Awards
+7 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [80th Academy Awards (m.02pgky2)] -> [award.award_ceremony.awards_presented] -> [?0]
+  [?0] -> [award.award_honor.honored_for] -> [?1]
+7 Result: The Golden Compass (m.04w7rn) Juno (m.02rv_dz) Michael Clayton (m.0fh694) There Will Be Blood (m.08zrbl) The Counterfeiters (m.03cgqbr) La Vie en Rose (m.02q6gfp) Falling Slowly (m.03nsp04) Ratatouille (m.03x7hd) Sweeney Todd: The Demon Barber of Fleet Street (m.0ds11z) The Bourne Ultimatum (m.061681) Peter and the Wolf (m.02vpt_d) Elizabeth: The Golden Age (m.03_gz8) No Country for Old Men (m.0b6tzs) Atonement (m.0ctb4g) Le Mozart des pickpockets (m.03qhs4f) Freeheld (m.03qhrvg) Taxi to the Dark Side (m.02qz5kl)
+8 Root Node: 80th Academy Awards
+8 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [80th Academy Awards (m.02pgky2)] -> [award.award_ceremony.awards_presented] -> [?0]
+  [?0] -> [award.award_honor.award_winner] -> [?1]
+8 Result: Alex Gibney (m.0bq4j6) Trevor Wood (m.03nh4j8) Christopher Rouse (m.02854h_) Vanessa Roth (m.05cb7yb) Eva Orner (m.03qj9xn) Joel Coen (m.02kxbx3) Daniel Day-Lewis (m.016yvw) Didier Lavergne (m.03nq_gg) Alexandra Byrne (m.0b_26s) Markéta Irglová (m.0280k1w) David Parker (m.098j9zs) Ethan Coen (m.02kxbwx) Glen Hansard (m.04kxzr) Diablo Cody (m.0gy134) Francesca Lo Schiavo (m.03nq_0f) Cynthia Wade (m.07k8ns7) Dante Ferretti (m.0bytkq) Javier Bardem (m.01713c) Bill Westenhofer (m.02x16n1) Ben Morris (m.03nh4j1) Michael L. Fink (m.0bd6k73) Scott Rudin (m.0fvf9q) Tilda Swinton (m.02f2dn) Scott Millan (m.03qf_rv) Robert Elswit (m.02vx4c2) Philippe Pollet-Villard (m.05cb9h_) Marion Cotillard (m.07lt7b) Dario Marianelli (m.0bmyhb) Per Hallberg (m.02p911r) Karen Baker Landers (m.03nh4mx) Suzie Templeton (m.04lg4h8) Kirk Francis (m.03nh4nc) Jan Archibald (m.03nh4h4) Brad Bird (m.04gcd1) Stefan Ruzowitzky (m.03m7c6m) Hugh Welchman (m.03nh4v5)
+9 Root Node: 80th Academy Awards
+9 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [80th Academy Awards (m.02pgky2)] -> [award.award_ceremony.awards_presented] -> [?0]
+  [?0] -> [award.award_honor.achievement_level] -> [?1]
+9 Result: 
+
+Query: what year was the album decade released
+Entity: (u'The Album', 0.242627058026, 531, True)
+Entity: (u'Album (m/02lx2r)', 0.924086966045, 118924, True)
+Entity: (u'Year', 0.708396384259, 1064748, True)
+Entity: (u'Decade (Unit of frequency)', 0.566263388268, 15554, True)
+Entity: (u'Year', 0.244091331527, 366879, True)
+Entity: (u'Fin de si\xe8cle', 0.146565609253, 923, False)
+Entity: (u'Decade (Rock Album)', 0.128339579923, 48, True)
+TargetType: Date
+Pattern matches: ERT = 36, ERMRT = 22, ERMRERT = 0
+1 Root Node: The Album
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Album (m.01hnjdn)] -> [music.album.release_date] -> [?0]
+1 Result: 1977-12-12
+2 Root Node: Decade (Rock Album)
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Decade (Rock Album) (m.02967)] -> [music.album.release_date] -> [?0]
+2 Result: 1977-10-28
+3 Root Node: Decade (Rock Album)
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Decade (Rock Album) (m.02967)] -> [music.album.release_type] -> [?0]
+3 Result: Album (m.02lx2r)
+4 Root Node: Decade (Rock Album)
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Decade (Rock Album) (m.02967)] -> [music.album.primary_release] -> [?0]
+4 Result: Decade (m.03_sty2)
+5 Root Node: Decade (Rock Album)
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Decade (Rock Album) (m.02967)] -> [music.album.releases] -> [?0]
+5 Result: Decade (m.03_sty2) Decade (m.03_sv0k) Decade (m.0npf7wl)
+6 Root Node: The Album
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Album (m.01hnjdn)] -> [music.album.releases] -> [?0]
+6 Result: The Album (m.0qckylm) The Album (m.0gbjdf0) The Album (m.0dy12bg) The Album (m.0nscg43) The Album (m.01hnjcs) The Album (m.031ggxv) The Album (m.0f5_lzz) The Album (m.0f60hyy) The Album (m.0ft5cz6) The Album (m.0fthqrz) The Album (m.0nrvmv1) ABBA: The Album (m.0vyd1h8)
+7 Root Node: The Album
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Album (m.01hnjdn)] -> [music.album.primary_release] -> [?0]
+7 Result: The Album (m.031ggxv)
+8 Root Node: Album (m/02lx2r)
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Album (m/02lx2r) (m.02lx2r)] -> [music.album_release_type.albums] -> [?0]
+8 Result: Back From the Grave, Volume 4 (m.01g2lhy) Global Underground: Homelands (m.01g3ygk) Dark Drums (m.01g47jz) Wipeout: The Music (m.01g8qnq) Soundtrack to a Generation: A Tribute to Simon & Garfunkel (m.01ggwry) HR 3 Clubnight, Volume 3 (m.01gml_z) It Goes Without Saying: An Instrumental Compilation (m.01h26l_) The Grind Date (m.01hccdl) The Remixes (m.01hl4l8) The Very Best of Cream (m.01hxrfg) 20th Century Masters: The Millennium Collection: The Best of Cream (m.01hxrh1) The Best of Cream (m.01hxrq9) The First Farewell (m.01hxrr8) Royal Albert Hall: London May 2-3-5-6 2005 (m.01hxrty) Best of Cream (m.01hxrzd) Best Of (m.01hxs10) Bloke on Bloke (m.01j30jq) 2 Sides of My Heart, Volume 1 (m.01j706_) Repeat: The Best of Jethro Tull, Volume 2 (m.01j9gg0) Please to See the King (m.01j_tlf) Bach Concertos (Los Angeles Chamber Orchestra feat. conductor: Jeffrey Kahane, violin: Hilary Hahn) (m.01jbv8j) Just Jazz: Solar Heat (m.01jx_1v) Fun With Knives (m.01jzqrj) Music From the Unrealized Film Script, Dusk at Cubist Castle (m.01k45d4) Singles Going Steady (m.01k5014) Ten (m.01kg57r) Strangeitude (m.01kgc96) Death Metal (m.01krn_l) Indestructible (m.01ksz2v) Best of And One (m.01ky1ms) C'mon Kids (m.01l5hwp) Toppatakkeja ja Toledon terästä (m.01lbt_b) Grin (m.01lc3lb) ReliXIV (m.01lg1h_) Talking Voice vs. Singing Voice (m.01ll5z1) Schumann: Piano Concerto / Strauss: Burleske (Deutsches Symphonie-Orchester Berlin feat. piano: Hélène Grimaud, conductor: David Zinman) (m.01lnr_l) Bakesale (m.01ls0gf) Eurosis (m.01lxfks) Chocolate Synthesizer (m.01m3xzv) Rainbirds (m.01mctk_) III: The Soul Is in the Software / Access and Amplify (m.01mhwsh) Wounded Land (m.01ms7jy) El Baile Alemán (m.01mt4qx) That's Your Fire (m.01mzg02) Shaded Elementz (m.01n18g0) Alles klar auf der Andrea Doria (m.01n44wq) Twice (m.01n7b7x) Phenomena 256 (m.01ndk46) Happiness Hurts Me (m.01nfky9) The Quiet Album (m.01p5hs3) Cosmic Blues (m.01p822h) Comptant (m.01pddg6) Skinhead Moonstomp (m.01pdyfh) La vela puerca (m.01pfygj) Ísbjarnablús (m.01pj0vx) The Servant (m.01pv84x) Cristina Donà (m.01pxnw_) Mentre tutto scorre (m.01q1zlv) Forever (m.01q5r5p) Smoke 'n' Breu (m.01q7c69) Dans mon monde (m.01qfh5f) Soul Kitchen (m.01qfs1k) Peach (m.01qfs2f) Caroline, or Change (2004 original Broadway cast) (m.01qfv19) Above the Weeping World (m.01qg7r1) The Best of Basil Valdez (m.01qzmp7) The Only Thing I Ever Wanted (m.01r43wl) The Raging Fire (m.01r67tp) Tyranny Returns (m.01rhgxh) The Milk of Human Kindness (m.01rn14r) Makara (m.01rv_6d) Bella Ciao (m.01rydp9) 4 Visions (m.01s0yxr) Bitter Honey (m.01s3_zs) Blue Alice Blue (m.01sykvz) The Baroque Christmas Album (m.023ttx7) U.S.S.R.: Repertoire (The Theory of Verticality) (m.02414ft) Schwarz Weiss (m.0269j4h) Diabolical (m.0279twk) Danzig III: How the Gods Kill (m.02r9t2) Echelons (m.02wtlfl) Bridges (m.02z3hp5) Para Los Rumberos (m.03f_2n1) The Conduit (m.03f_c6m) Version (m.03g3843) Vertical Reality (m.03g3sr0) The Beauty of Destruction (m.03g5_n_) Sunho Mere Meeta (m.03g8f7s) Redemption (m.03g8snl) Esquemas juveniles (m.03gb69k) Io uomo (m.03gb8j7) Blue Collar (m.03jf66f) Bonjour chez vous : Deuxième vague (m.03jf6fh) Cuban Odyssey (m.03jhqpc) Videosex 84 (m.03jj_r4) Rocket Science (m.03jl3dq) Melodrom (m.03jlrcb) The Guide (m.03jlrck) Overdosed on You (m.03jmt8b) Prince d'azur (m.03jncn_) Living In The Past (m.03wh6y1) The Golden Hour (m.03xwpt2) Sings Live at the Golden Bear (m.03xwymr) Kosmopolak (m.03xxvfj) Yaari Maar Gai (m.03xzczb) Wise To The Heat (m.03xzf24) I Feel Free (m.03z2cp6) The Threatened Kind (m.03z889z) Deified (m.0413pcg) Greatest Hits (m.049rpyv) Bob Marley (m.049tp9h) Dark Outside (m.049ttrf) Hindi Kita Malilimutan (m.04ckyd_) The Bungled & the Botched (m.04d_d92) Leichenlager (m.04f4jph) Lose Big (m.04fg408) Eurotrash (m.04jb39j) Born a Lion (m.04m8ks) Powerful People (m.04n5j_n) Herald Moth (m.04n6dmf) Trans Am (m.04zy4l4) Conclusion of an Age (m.05f3stp) Labyrinthes (m.05f4h7j) Chained to the Chariot (m.05kj8b_) Genesis Underground (m.063ygw0) No Nations (m.064pztd) Stage Dolls (m.06zsqjw) 10 (m.07s6hdh) Live Cream Volume II (m.08bd4x) Gold (m.08rscq) Meenaxi (m.0b75j49) MMX (m.0bhcc27) Life, Scars, Apologies (m.0cmb9hw) No Escape from the Blues: The Electric Lady Sessions (m.0cmdmz0) Geeving (m.0crbwpt) Bombay (m.0d_b9s7) One for the Lads (m.0d_bdd_) Business the American Way (m.0d_bpy1) Pachoto (m.0d_bszd) Demolishing England (m.0d_byyq) The Original (m.0d_bz5x) Greensleeves Rhythm Album #71: Slingshot (m.0d_cbp_) Ileqqorsuutit Pingajuat (m.0d_chqg) Deeper Transmissions (m.0d_d3h3) キューティーハニー SONG COLLECTION SPECIAL (m.0d_d5_c) Result (m.0d_d6pb) How to Wake the Dead (m.0d_d6x5) These Days (m.0d_d9__) Pavans and Galliards for Lutes (lute: Christopher Wilson, Shirley Rumsey) (m.0d_d9mp) The Howlin' Wolf Anthology (m.0d_qlqj) Just for Tonight (m.0d_qw_b) exit? (m.0d_r7fd) The Quintessential Billie Holiday, Volume 1: 1933-1935 (m.0d_r86m) A Picture of a Picture (m.0d_rfmn) Medicine Compilation - from the Quiet Lodge (m.0d_s3c1) The Wildman Meets Madman (m.0d_s3sd) Fragments (m.0d_s7hd) Tough Talk (m.0d_sf73) The History of Cut Nails in America (m.0d_sflx) Watching Behind (m.0d_sggv) The Scientist (m.0d_sndq) Cambucha (m.0dgrcpg) Ruttu (m.0dmg_sv) Anthology-Greatest & Latest (m.0dmgv8b) Alexis (m.0dmh0jr) Excuse Me (m.0dmh3db) In Search of the Fantastic (m.0dmhfs1) Trapped (m.0dmhnz2) Digital Drugs 3 - Shape the Machine (m.0dmhph_) Ultimate Rachmaninov: The Essential Masterpieces (m.0dmj_w2) Feesten als de beesten (m.0dmj_xh) Dick Clark's #1's: 50s to 70s "When AM Radio Was King", Volume 6 (m.0dmjbs9) Burden State (m.0dmjqxd) Blue Constellations (m.0dmjttt) Parichehr (m.0dmjx8y) Sick to Death (m.0dmjyx3) The Very Best of The Shirelles (m.0dmk268) Artemisia (m.0dmm818) Mastercuts Classic 80's Groove 3 (m.0dmxqf8) The Comparative Anatomy of Angels (m.0dmxry7) A Fistful of Dub (m.0dmxvf7) Piano Concertos Nos. 1, 4, 5 (Royal Concertgebouw Orchestra feat. conductor: Neeme Järvi, piano: Boris Berman) (m.0dmy4p5) Eine Ganze Menge (m.0dmzf17) Radical Turf presents: Hello Future? (m.0dmzgvj) The Quintessential Billie Holiday, Volume 7: 1938-1939 (m.0dmzk_4) Picturephone (m.0dmzq9f) Flaix History, Volume 3 (m.0dmzr8x) The Adventures Of Mini-Goddess In The Handy 'Petite' Size! OST 2 (m.0dmzr9c) Funkymix 56 (m.0dmzsw0) Copenhagen Disco Sound (m.0dmzvhl) Water Garden (m.0dmzvqf) Deer In The Night (m.0dmzvwl) Nice Middle (m.0dnb942) Now (m.0dnbkw_) Contemplation (m.0dnbtly) イタリア民謡 (m.0dnc1xq) Blue Highways: The Ultimate Americana Musicfest 2008 (m.0dnc8gz) Lory F. Band (m.0dnccnl) Soft Soul Transition (m.0dncq_c) Other Ink (m.0dnd037) Chill Out Lover, Volume 7 (m.0dnd36r) Alms House (m.0dnd882) Don't Dance (m.0dnd8hw) The Best of Witchfynde (m.0dnd96n) Vena (m.0dnd9mg) メガゾーン23 (m.0dng_35) Soulful Architectures (m.0dnstbz) The American Dream (m.0dnsty_) The Paris Symphonies (Concertus Musicus Wien feat. conductor: Nikolaus Harnoncourt) (m.0dntgt_) Delicately (m.0dntt3m) All Through the Night: A Christmas Lullaby (m.0dnttb6) 夢の始まり… Hard Rock Summit in Osaka (m.0dntzmd) A Very Fine Adventure (m.0dnv030) Laura Andreşan (m.0dnv18_) Essential Vibes (m.0dp562k) String Quartets Nos. 1, 2 (Kreuzberger String Quartet) (m.0dp5cqm) Omat, vieraat & käännetyt (m.0dp68kr) Kulturkantine: Electronic Lounge Session (m.0dp76tk) Nji. Njiijn. Njiiijn. (m.0dp76zg) Twilight 22 (m.0dp77fv) Jazzraptor's Secret (m.0dp7b71) Candy (m.0dp7f7m) Jazz Behind the Dikes, Part 1 (m.0dp7gdk) Mirrors: Remixes 2001 (m.0dpm2qg) Hot and Ready to Serve (m.0dpmjv7) Perseverance (m.0dpnng1) Consumotionality (m.0dpnrpp) Là-bas dans ma campagne (m.0dpnrsm) Speechless (m.0dpnsc8) Shemhamphorash (m.0dpnxc6) Mozart: String Quartets K. 387 & 421(Emerson String Quartet) (m.0dq10sb) DMC Commercial Collection 289 (m.0dq1k49) Corridos De Accion Y Muerte (m.0dq1th6) Songs to Defy (m.0dq1wrm) Lost in Chaos (m.0dq1x_s) Neues Elektro Blut, Volume 01 (m.0dq1y9r) Atmoz: The Only Way to Escape II (m.0dq1y_2) Wishful Thinking (m.0dq201k) Fresh Outtakes (m.0dq208r) Zillo Romantic Sounds, Volume 5 (m.0dq23s9) Rakish Paddies (m.0dq23w2) Works for Piano and Violin (feat. violin: Ulf Wallin, piano: Roland Pöntinen) (m.0dq3zj4) Welcome to Hell (m.0dqf_s8) Best Of (m.0dqg_7p) Pronto Pronto, Volume 3 (m.0dqgcts) Anthology of the Blues: Memphis Blues: Archive Series, Volume 2 (m.0dqgp9g) 傳統二胡音樂 (m.0dqh6yb) The Essential Sarah Vaughan (m.0dqh84b) Pilot (m.0dqh8nt) Cream Reunion 2, May, 2005 First Night (m.0dqhd2y) La Fida Ninfa (Ensemble Matheus feat. conductor: Jean-Christophe Spinosi) (m.0dqvm27) Pierced by Our Inequities (m.0dqx4n4) Whisperin' Bluegrass (m.0dqx4r2) Music for Relaxation, Volume 2 - The Romantic Bach (m.0dqx56c) The Unexpected Mix CD (m.0dqx6gv) Cars (m.0dqx6nf) Algophobia (m.0dr7d_c) The Caruso Edition, Volume I: 1902-1908 (m.0dr7vxg) World Tour: Tango Passion (m.0dr7zk7) Symphony of Scorpions (m.0dr85qp) Omen (m.0dr8pr9) East of Everything (m.0dr8skq) This and That (m.0dr8z57) The Final Countdown (m.0dr951c) Catch As Catch Can Remixes and B Sides (m.0dr9904) Olde Hansa Musicus (m.0dr99vy) Holemole (m.0dr99x7) Die Zauberflöte (Scottish Chamber Orchestra & Chorus feat. conductor: Sir Charles Mackerras) (m.0dr9c4c) L'Œuvre électronique (m.0dr9cty) Platinum Slow Jams 21 (Mixed by DJ Finesse) (m.0dr9d3k) Veine Allégeance (m.0dr9dgx) The Mystical Powers Of Shaolin Kung Fu (m.0drnzxx) LP2 (m.0drp3t7) Natural (m.0drpchv) Unchained (m.0drpdr9) Live in Glasgow (m.0drpvxm) Vinyl Raritäten 88 (m.0drqg84) In Parallel (m.0drqpr2) 2004-06-04: Brixton Academy, London, UK (m.0drqqdk) A Very Special Country Collection, Volume Three (m.0drqv8q) Memoirs of an Afterlife (m.0ds_28_) March in D major, KV 249 / Serenade in D major, KV 250 "Haffner" (Academy of St. Martin-in-the-Fields feat. conductor: Sir Neville Marriner, violin: Iona Brown) (m.0ds_2xf) Believe It (m.0ds_416) Liberation Suite: 25th Anniversary Edition (m.0dsgd9b) First Two Years (m.0dshbt4) III (m.0dshgdx) Unnatural Causes (m.0dshk51) Yellow Fever: A Retrospective 1998-2004 (m.0dshrrv) Eat the Night (m.0dsj9gr) Sukzession (m.0dt9zvn) Both Sides (m.0dtb5h3) Oh Dear! (m.0dtb6hz) Ultimate Funk Classics (m.0dtbdcj) The Greatest Hits '93, Volume 4 (m.0dtbf0c) 100% Rock, Volume 4 (m.0dtbxdh) Ballade nocturne, Volume 2 (m.0dtc8m1) New Years Revolutions (m.0dtcmmt) History of Rock (m.0dtcmqv) The Ultimate Hand on the Torch (m.0dtcmtk) Smashy Trashy (m.0dtcr3b)
+9 Root Node: Decade (Rock Album)
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Decade (Rock Album) (m.02967)] -> [music.album.album_content_type] -> [?0]
+9 Result: Compilation album (m.02jbfk)
+10 Root Node: Decade (Rock Album)
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Decade (Rock Album) (m.02967)] -> [music.album.artist] -> [?0]
+10 Result: Neil Young (m.0m2l9)
+11 Root Node: Decade (Rock Album)
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Decade (Rock Album) (m.02967)] -> [music.album.genre] -> [?0]
+11 Result: Folk rock (m.016jny) Rock music (m.06by7) Country rock (m.0mhfr)
+
+Query: how many countries are in south america
+Entity: (u'In South America (Gramophone record Musical Release)', 0.366459568149, 0, True)
+Entity: (u'In South America (Musical Album)', 0.366459568149, 0, True)
+Entity: (u'South America', 0.959975493807, 3896540, True)
+Entity: (u'United Nations Framework Convention on Climate Change', 0.217686725545, 327658, False)
+Entity: (u'Blasphemy law', 0.200680504161, 3058, False)
+Entity: (u"International Women's Day", 0.159864154474, 1136796, False)
+Entity: (u'Country (Quotation Subject)', 0.840984198953, 97485, False)
+TargetType: Other
+Pattern matches: ERT = 47, ERMRT = 26, ERMRERT = 0
+1 Root Node: In South America (Musical Album)
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [In South America (Musical Album) (m.0q8f6wp)] -> [music.album.release_type] -> [?0]
+1 Result: 1
+2 Root Node: In South America (Gramophone record Musical Release)
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [In South America (Gramophone record Musical Release) (m.0q9kbfc)] -> [music.release.format] -> [?0]
+2 Result: 1
+3 Root Node: In South America (Gramophone record Musical Release)
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [In South America (Gramophone record Musical Release) (m.0q9kbfc)] -> [music.release.region] -> [?0]
+3 Result: 1
+4 Root Node: In South America (Gramophone record Musical Release)
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [In South America (Gramophone record Musical Release) (m.0q9kbfc)] -> [music.release.catalog_number] -> [?0]
+4 Result: 1
+5 Root Node: In South America (Musical Album)
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [In South America (Musical Album) (m.0q8f6wp)] -> [music.album.artist] -> [?0]
+5 Result: 1
+6 Root Node: South America
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [South America (m.06n3y)] -> [location.location.contains_major_portion_of] -> [?0]
+6 Result: 1
+7 Root Node: South America
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [South America (m.06n3y)] -> [location.location.contains] -> [?0]
+7 Result: 400
+8 Root Node: In South America (Gramophone record Musical Release)
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [In South America (Gramophone record Musical Release) (m.0q9kbfc)] -> [media_common.creative_work.credit] -> [?0]
+8 Result: 1
+9 Root Node: South America
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [South America (m.06n3y)] -> [location.location.events] -> [?0]
+9 Result: 17
+10 Root Node: South America
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [South America (m.06n3y)] -> [base.mystery.cryptid_observation_location.cryptid_s_occurring_here] -> [?0]
+10 Result: 2
+11 Root Node: South America
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [South America (m.06n3y)] -> [base.locations.continents.planet] -> [?0]
+11 Result: 1
+
+Query: what area did the meiji constitution govern
+Entity: (u'The Meiji Constitution', 1.0, 0, True)
+Entity: (u'Emperor Meiji', 1.0, 8934, False)
+Entity: (u'Meiji Constitution', 0.987831850544, 2077, True)
+Entity: (u'Area', 0.850698126258, 76568, True)
+TargetType: Other
+Pattern matches: ERT = 34, ERMRT = 24, ERMRERT = 0
+1 Root Node: Emperor Meiji
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Emperor Meiji (m.01bsgq)] -> [royalty.monarch.kingdom] -> [?0]
+1 Result: Japan (m.03_3d)
+2 Root Node: The Meiji Constitution
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Meiji Constitution (m.0c3v6d6)] -> [book.written_work.author] -> [?0]
+2 Result: Kazuhiro Takii (m.0c3v6cz)
+3 Root Node: Meiji Constitution
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Meiji Constitution (m.01_syn)] -> [law.constitution.country] -> [?0]
+3 Result: Japan (m.03_3d)
+4 Root Node: The Meiji Constitution
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Meiji Constitution (m.0c3v6d6)] -> [type.object.name] -> [?0]
+4 Result: The Meiji Constitution
+5 Root Node: The Meiji Constitution
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Meiji Constitution (m.0c3v6d6)] -> [book.book.editions] -> [?0]
+5 Result: The Meiji Constitution : the Japanese experience of the West and the shaping of the modern state (m.0c94xnf)
+6 Root Node: Emperor Meiji
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Emperor Meiji (m.01bsgq)] -> [royalty.monarch.royal_line] -> [?0]
+6 Result: Imperial House of Japan (m.08x9pc)
+7 Root Node: Emperor Meiji
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Emperor Meiji (m.01bsgq)] -> [royalty.chivalric_order_founder.orders_founded] -> [?0]
+7 Result: Order of the Chrysanthemum (m.04qc6x) Order of the Golden Kite (m.04qc40) Order of the Rising Sun (m.04g6vq)
+8 Root Node: Meiji Constitution
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Meiji Constitution (m.01_syn)] -> [law.constitution.in_force_from] -> [?0]
+8 Result: 1889-11-29
+9 Root Node: Meiji Constitution
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Meiji Constitution (m.01_syn)] -> [law.constitution.in_force_until] -> [?0]
+9 Result: 1947-05-02
+
+Query: what is the collection of postcards called
+Entity: (u'The Collection (Funk Album)', 0.108681689217, 251, True)
+Entity: (u'Postcard', 0.801281284561, 23099, False)
+Entity: (u'Collection (Organisation sector)', 0.137579251692, 14554, True)
+Entity: (u'Collection', 0.11959893317, 518, True)
+TargetType: Other
+Pattern matches: ERT = 20, ERMRT = 9, ERMRERT = 0
+1 Root Node: Postcard
+1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Postcard (m.0fd4f)] -> [interests.collection_category.collectors] -> [?0]
+  [?0] -> [interests.collection.collector] -> [?1]
+1 Result: Chris Webber (m.02l_4s)
+2 Root Node: Postcard
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Postcard (m.0fd4f)] -> [interests.collection_category.name_of_collection_activity] -> [?0]
+2 Result: Deltiology (m.09q4qb)
+3 Root Node: Postcard
+3 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Postcard (m.0fd4f)] -> [interests.collection_category.collectors] -> [?0]
+  [?0] -> [interests.collection.items] -> [?1]
+3 Result: 
+4 Root Node: Postcard
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Postcard (m.0fd4f)] -> [visual_art.visual_art_support.artworks] -> [?0]
+4 Result: Landscape Near Figueras (m.0d1wzv)
+
+Query: how was pluto discovered
+Entity: (u'Pluto', 0.641672151936, 513041, True)
+Entity: (u'Pluto (Film character) #3', 0.123765069373, 20041, True)
+TargetType: Other
+Pattern matches: ERT = 35, ERMRT = 33, ERMRERT = 0
+1 Root Node: Pluto
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [astronomy.astronomical_discovery.discovery_organization] -> [?0]
+1 Result: Lowell Observatory (m.0kyyk)
+2 Root Node: Pluto
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [astronomy.astronomical_discovery.discoverer] -> [?0]
+2 Result: Clyde Tombaugh (m.01ylz)
+3 Root Node: Pluto
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [astronomy.astronomical_discovery.discovery_site] -> [?0]
+3 Result: Lowell Observatory (m.0kyyk)
+4 Root Node: Pluto
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [astronomy.astronomical_discovery.discovery_technique] -> [?0]
+4 Result: Image differencing (m.07lqp5) Mathematical prediction (m.05v3ykx)
+5 Root Node: Pluto
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [astronomy.astronomical_discovery.discovery_date] -> [?0]
+5 Result: 1930-02-18
+6 Root Node: Pluto
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [astronomy.trans_neptunian_object.region] -> [?0]
+6 Result: Kuiper belt (m.048w_)
+7 Root Node: Pluto
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [astronomy.celestial_object.category] -> [?0]
+7 Result: Plutoid (m.0ggr_x) Dwarf planet (m.0g3tzt) Kuiper belt object (m.09tmj8s) Trans-Neptunian object (m.07j0r)
+8 Root Node: Pluto
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [astronomy.orbital_relationship.orbited_by] -> [?0]
+8 Result: Charon (m.0dwjs) Nix (m.08m_wd) Hydra (m.08m_x7) P4 (m.0gyg47y) P5 (m.0k3pxsp)
+9 Root Node: Pluto
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [user.radiusrs.default_domain.astrology.related_topics] -> [?0]
+9 Result: Evolution (m.02j8z) Hades (m.03g72) Scorpio (m.07bdjm) Pluto (m.0p8qk) Generational planet (m.076hvr)
+10 Root Node: Pluto
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [astronomy.orbital_relationship.orbits] -> [?0]
+10 Result: Sun (m.06m_p)
+11 Root Node: Pluto
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Pluto (m.0c3qy)] -> [astronomy.dwarf_planet.star_system] -> [?0]
+11 Result: Solar System (m.06p5g)
+
+Query: how many people practice buddhism
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'Buddhism', 0.958841007958, 3064402, True)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'Practice', 0.339400323183, 30524, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+Entity: (u'Praxis', 0.153781107459, 3103, False)
+TargetType: Other
+Pattern matches: ERT = 51, ERMRT = 52, ERMRERT = 0
+1 Root Node: Buddhism
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [religion.religion.practices] -> [?0]
+1 Result: 9
+2 Root Node: Buddhism
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [religion.religion.organizations] -> [?0]
+2 Result: 5
+3 Root Node: Buddhism
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [book.book_subject.works] -> [?0]
+3 Result: 98
+4 Root Node: Buddhism
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [religion.religion.is_part_of] -> [?0]
+4 Result: 1
+5 Root Node: Buddhism
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [religion.religion.includes] -> [?0]
+5 Result: 8
+6 Root Node: Buddhism
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [religion.religion.texts] -> [?0]
+6 Result: 12
+7 Root Node: Buddhism
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [religion.religion.beliefs] -> [?0]
+7 Result: 6
+8 Root Node: Buddhism
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [religion.religion.types_of_places_of_worship] -> [?0]
+8 Result: 3
+9 Root Node: Buddhism
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [religion.religion.holidays] -> [?0]
+9 Result: 4
+10 Root Node: Buddhism
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [religion.religion.sacred_sites] -> [?0]
+10 Result: 4
+11 Root Node: Buddhism
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Buddhism (m.092bf5)] -> [religion.religion.founding_figures] -> [?0]
+11 Result: 1
+
+Query: how many students are there at the university of iceland
+Entity: (u'University of Iceland', 1.0, 10491, True)
+Entity: (u'University of Iceland', 1.0, 10491, True)
+Entity: (u'Conservation status', 1.0, 766, False)
+Entity: (u'Wesleyan University', 0.369864400705, 72582, False)
+Entity: (u'University of Michigan', 0.167597785362, 1011854, False)
+Entity: (u'University of California, Berkeley', 0.128491695109, 1709617, False)
+Entity: (u'University of Oxford', 0.125910935291, 553135, False)
+Entity: (u'University of Virginia', 0.111731856908, 685995, False)
+Entity: (u'Uppsala University', 0.102302620021, 52141, False)
+Entity: (u'Student', 0.923982877027, 95407, False)
+Entity: (u'University', 0.790236592261, 1631423, True)
+Entity: (u'Iceland', 0.74242798662, 1742658, True)
+Entity: (u'Iceland national football team', 0.100369570192, 576, False)
+TargetType: Other
+Pattern matches: ERT = 243, ERMRT = 883, ERMRERT = 0
+1 Root Node: University of Iceland
+1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [education.education.student] -> [?1]
+1 Result: 56
+2 Root Node: University of Iceland
+2 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [education.education.student] -> [?1]
+2 Result: 56
+3 Root Node: University of Iceland
+3 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [education.education.major_field_of_study] -> [?1]
+3 Result: 1
+4 Root Node: University of Iceland
+4 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [people.deceased_person.place_of_death] -> [?1]
+4 Result: 0
+5 Root Node: University of Iceland
+5 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [people.person.nationality] -> [?1]
+5 Result: 0
+6 Root Node: University of Iceland
+6 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [people.person.place_of_birth] -> [?1]
+6 Result: 0
+7 Root Node: University of Iceland
+7 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [education.education.minor] -> [?1]
+7 Result: 0
+8 Root Node: University of Iceland
+8 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [education.education.specialization] -> [?1]
+8 Result: 0
+9 Root Node: University of Iceland
+9 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [education.education.degree] -> [?1]
+9 Result: 2
+10 Root Node: University of Iceland
+10 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [education.education.student] -> [?1]
+10 Result: 56
+11 Root Node: University of Iceland
+11 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [University of Iceland (m.022hyn)] -> [education.educational_institution.students_graduates] -> [?0]
+  [?0] -> [people.person.languages] -> [?1]
+11 Result: 0
+
+Query: how many libretti did wagner write
+Entity: (u'Libretto', 0.998252922994, 14856, False)
+Entity: (u'Richard Wagner', 0.720335255032, 448189, False)
+TargetType: Other
+Pattern matches: ERT = 49, ERMRT = 51, ERMRERT = 0
+1 Root Node: Richard Wagner
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Richard Wagner (m.06c44)] -> [music.lyricist.lyrics_written] -> [?0]
+1 Result: 12
+2 Root Node: Richard Wagner
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Richard Wagner (m.06c44)] -> [book.author.works_written] -> [?0]
+2 Result: 43
+3 Root Node: Richard Wagner
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Richard Wagner (m.06c44)] -> [opera.librettist.libretti] -> [?0]
+3 Result: 15
+4 Root Node: Richard Wagner
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Richard Wagner (m.06c44)] -> [music.composer.compositions] -> [?0]
+4 Result: 79
+5 Root Node: Richard Wagner
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Richard Wagner (m.06c44)] -> [base.catalog.cataloged_composer.music_catalog] -> [?0]
+5 Result: 1
+
+Query: how many other names is ron glass known by
+Entity: (u'Flash fiction', 0.439999507201, 9321, False)
+Entity: (u'Goddess', 0.266666901333, 92476, False)
+Entity: (u'Cochineal', 0.186666990933, 4534, False)
+Entity: (u'camelCase', 0.106666600533, 47709, False)
+Entity: (u'Ron Glass', 1.0, 2326, True)
+Entity: (u'known by', 1.0, 0, True)
+Entity: (u'Naming the American Civil War', 0.313541801419, 10198, False)
+Entity: (u'Aardman Animations', 0.297297184989, 28660, False)
+Entity: (u'Nir Rosen', 0.18918929401, 3744, False)
+Entity: (u'Dark matter', 0.18918929401, 24942, False)
+Entity: (u'Iraqi diaspora', 0.148648592495, 22, False)
+Entity: (u'Glass', 0.844008317206, 223546, True)
+Entity: (u'Ronald Weasley', 0.456242204414, 104582, False)
+Entity: (u'Rum', 0.107941108947, 60456, False)
+Entity: (u'Name', 0.100479565776, 45222, False)
+TargetType: Other
+Pattern matches: ERT = 107, ERMRT = 118, ERMRERT = 0
+1 Root Node: Ron Glass
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Ron Glass (m.03h82p)] -> [people.person.profession] -> [?0]
+1 Result: 2
+2 Root Node: Ron Glass
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Ron Glass (m.03h82p)] -> [people.person.religion] -> [?0]
+2 Result: 1
+3 Root Node: Ron Glass
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Ron Glass (m.03h82p)] -> [people.person.ethnicity] -> [?0]
+3 Result: 1
+4 Root Node: Ron Glass
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Ron Glass (m.03h82p)] -> [people.person.nationality] -> [?0]
+4 Result: 1
+5 Root Node: Ron Glass
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Ron Glass (m.03h82p)] -> [people.person.parents] -> [?0]
+5 Result: 2
+6 Root Node: Ron Glass
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Ron Glass (m.03h82p)] -> [common.topic.alias] -> [?0]
+6 Result: 4
+7 Root Node: Glass
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Glass (m.039jq)] -> [visual_art.visual_art_form.artists] -> [?0]
+7 Result: 61
+8 Root Node: Ronald Weasley
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Ronald Weasley (m.0c8jw)] -> [fictional_universe.fictional_character.species] -> [?0]
+8 Result: 1
+9 Root Node: Ron Glass
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Ron Glass (m.03h82p)] -> [type.object.name] -> [?0]
+9 Result: 1
+10 Root Node: known by
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [known by (m.0c0m_vq)] -> [type.object.name] -> [?0]
+10 Result: 1
+11 Root Node: Glass
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Glass (m.039jq)] -> [fictional_universe.fictional_substance.appears_in_fictional_universe] -> [?0]
+11 Result: 1
+
+Query: what was the american past about
+Entity: (u'The American Past', 0.454545454545, 5, True)
+Entity: (u'The American past', 0.181818181818, 2, True)
+Entity: (u'Cinema of the United States', 0.413306543581, 65777, False)
+Entity: (u'The American (Novel)', 0.170842698919, 847, True)
+Entity: (u'Past', 0.590100512354, 21774, True)
+TargetType: Other
+Pattern matches: ERT = 28, ERMRT = 10, ERMRERT = 0
+1 Root Node: The American Past
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The American Past (m.05v0tbd)] -> [broadcast.content.artist] -> [?0]
+1 Result: Calder Pickett (m.065m87j)
+2 Root Node: The American Past
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The American Past (m.05v0tbd)] -> [broadcast.content.genre] -> [?0]
+2 Result: Educational Radio (m.0645qx2)
+3 Root Node: The American Past
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The American Past (m.05v0tbd)] -> [radio.radio_program.subjects] -> [?0]
+3 Result: History (m.03g3w)
+4 Root Node: The American Past
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The American Past (m.05v0tbd)] -> [radio.radio_program.first_broadcast] -> [?0]
+4 Result: 1973
+5 Root Node: The American Past
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The American Past (m.05v0tbd)] -> [radio.radio_program.final_broadcast] -> [?0]
+5 Result: 2005
+6 Root Node: The American Past
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The American Past (m.05v0tbd)] -> [broadcast.content.production_start] -> [?0]
+6 Result: 1973
+7 Root Node: The American (Novel)
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The American (Novel) (m.0981w6)] -> [book.written_work.original_language] -> [?0]
+7 Result: English Language (m.02h40lc)
+
+Query: who completed mozart_s requiem
+Entity: (u'Requiem in D minor, K. 626 (S\xfc\xdfmayr completion): IIIf. Sequenz: "Lacrimosa"', 0.999922964332, 12980, False)
+Entity: (u'Wolfgang Amadeus Mozart', 1.0, 749859, False)
+Entity: (u'Requiem', 0.431997595907, 42986, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 64, ERMRT = 59, ERMRERT = 0
+1 Root Node: Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa"
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa" (m.02xtrr)] -> [music.composition.date_completed] -> [?0]
+1 Result: 1791
+2 Root Node: Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa"
+2 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa" (m.02xtrr)] -> [media_common.unfinished_work.completions] -> [?0]
+  [?0] -> [media_common.completion_of_unfinished_work.finisher] -> [?1]
+2 Result: Franz Xaver Süssmayr (m.02xttb)
+3 Root Node: Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa"
+3 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa" (m.02xtrr)] -> [media_common.unfinished_work.completions] -> [?0]
+  [?0] -> [media_common.completion_of_unfinished_work.finisher] -> [?1]
+3 Result: Franz Xaver Süssmayr (m.02xttb)
+4 Root Node: Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa"
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa" (m.02xtrr)] -> [music.composition.composer] -> [?0]
+4 Result: Wolfgang Amadeus Mozart (m.082db) Franz Xaver Süssmayr (m.02xttb)
+5 Root Node: Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa"
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa" (m.02xtrr)] -> [music.composition.form] -> [?0]
+5 Result: Requiem (m.0197d_)
+6 Root Node: Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa"
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Requiem in D minor, K. 626 (Süßmayr completion): IIIf. Sequenz: "Lacrimosa" (m.02xtrr)] -> [music.composition.musical_key] -> [?0]
+6 Result: D minor (m.06bhsw)
+7 Root Node: Wolfgang Amadeus Mozart
+7 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Wolfgang Amadeus Mozart (m.082db)] -> [royalty.chivalric_order_member.belongs_to_order] -> [?0]
+  [?0] -> [royalty.chivalric_order_membership.presented_by] -> [?1]
+7 Result: 
+8 Root Node: Wolfgang Amadeus Mozart
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Wolfgang Amadeus Mozart (m.082db)] -> [theater.theatrical_composer.plays_composed] -> [?0]
+8 Result: Thamos, King of Egypt (m.0270_th)
+
+Query: when gatorade was first developed
+Entity: (u'First developed', 0.5, 0, True)
+Entity: (u'First developed', 0.5, 0, True)
+Entity: (u'Gatorade', 0.998550317651, 181507, True)
+TargetType: Date
+Pattern matches: ERT = 17, ERMRT = 16, ERMRERT = 0
+1 Root Node: Gatorade
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Gatorade (m.01ghgx)] -> [business.brand.products] -> [?0]
+1 Result: Gatorade G2 (m.0rnz2d8)
+2 Root Node: Gatorade
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Gatorade (m.01ghgx)] -> [medicine.medical_treatment.used_to_treat] -> [?0]
+2 Result: Viral Gastroenteritis (m.06z3t1z) Gastroenteritis (m.03k2qf)
+
+Query: what are the theme areas at disneyland
+Entity: (u'Theme areas', 0.5, 0, True)
+Entity: (u'Theme areas', 0.5, 0, True)
+Entity: (u'Disneyland', 0.937570247085, 528268, True)
+Entity: (u'Area', 0.517436829902, 76568, False)
+Entity: (u'L\xe9og\xe2ne', 0.115932990343, 8494, False)
+TargetType: Other
+Pattern matches: ERT = 39, ERMRT = 33, ERMRERT = 0
+1 Root Node: Disneyland
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Disneyland (m.02fzs)] -> [location.location.area] -> [?0]
+1 Result: 0.647
+2 Root Node: Disneyland
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Disneyland (m.02fzs)] -> [amusement_parks.park.areas] -> [?0]
+2 Result: Adventureland (m.05l6k8) Critter Country (m.05g7l2) Frontierland (m.05gkvs) Main Street, U.S.A. (m.055l1n) Tomorrowland (m.050h8f) New Orleans Square (m.05zp1w) Mickey's Toontown (m.06544j) Fantasyland (m.057_4r)
+3 Root Node: Disneyland
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Disneyland (m.02fzs)] -> [base.disneyana.disney_product_theme.disney_products_based_on_this_theme] -> [?0]
+3 Result: Disneyland ticket booth (m.05kxr90)
+4 Root Node: Disneyland
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Disneyland (m.02fzs)] -> [amusement_parks.park.rides] -> [?0]
+4 Result: Indiana Jones Adventure: Temple of the Forbidden Eye (m.0bwh682) Pirates of the Caribbean (m.01q8w9) Splash Mountain (m.05086j) Haunted Mansion (m.01p79p) Sailing Ship Columbia (m.0263qj9) Pirate's Lair on Tom Sawyer Island (m.02pm2fm) Golden Horseshoe Saloon (m.0gmbgw) Gadget's Go Coaster (m.0bkxys) King Arthur Carrousel (m.0byx2l) Mr. Toad's Wild Ride (m.05g79s) Alice in Wonderland (m.026wwxd) It's a Small World (m.028k8w) Motor Boat Cruise (m.02r0_rt) Disneyland Railroad (m.0550hw) Adventure Thru Inner Space (m.058hb9) Finding Nemo Submarine Voyage (m.05jzmt) Disneyland Monorail System (m.05k9c5) Skyway (m.05np4w) America Sings (m.060rkf) Rocket Jets (m.06n8lk) Submarine Voyage (m.07s33k) Peter Pan's Flight (m.08959f) Holidayland (m.0by64_) Main Street Cinema (m.0f3wfk) The Disney Gallery (m.0f3wvt) Flying Saucers (m.0fz48l) Star Tours: The Adventures Continue (m.0h_j_hj) Autopia (m.05k9d7) Big Thunder Mountain Railroad (m.04s4p6) Matterhorn Bobsleds (m.04h1hd) PeopleMover (m.0431hs) Jungle Cruise (m.060lwt) Rocket Rods (m.04tpgr) Storybook Land Canal Boats (m.0h7505) Mad Tea Party (m.0cgzmk) Buzz Lightyear attractions (m.04c7h4) Dumbo the Flying Elephant (m.02693xq) Space Mountain (m.02z2qmd) Indiana Jones Adventure: Temple of the Crystal Skull (m.0421l_)
+5 Root Node: Disneyland
+5 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Disneyland (m.02fzs)] -> [amusement_parks.park.annual_visits] -> [?0]
+  [?0] -> [measurement_unit.dated_integer.number] -> [?1]
+5 Result: 14800000
+6 Root Node: Disneyland
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Disneyland (m.02fzs)] -> [amusement_parks.park.opened] -> [?0]
+6 Result: 1955-07-17
+
+Query: how many films has tim burton produced
+Entity: (u'Bruce Lee', 1.0, 227180, False)
+Entity: (u'Tim Burton', 0.994362828949, 1638763, True)
+Entity: (u'Film', 0.710032297078, 3444452, False)
+TargetType: Other
+Pattern matches: ERT = 100, ERMRT = 180, ERMRERT = 0
+1 Root Node: Tim Burton
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Tim Burton (m.07rd7)] -> [film.producer.film] -> [?0]
+1 Result: 15
+2 Root Node: Tim Burton
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Tim Burton (m.07rd7)] -> [film.film_production_designer.films_production_designed] -> [?0]
+2 Result: 1
+3 Root Node: Tim Burton
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Tim Burton (m.07rd7)] -> [film.cinematographer.film] -> [?0]
+3 Result: 1
+4 Root Node: Tim Burton
+4 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Tim Burton (m.07rd7)] -> [film.actor.film] -> [?0]
+  [?0] -> [film.performance.film] -> [?1]
+4 Result: 6
+5 Root Node: Tim Burton
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Tim Burton (m.07rd7)] -> [film.writer.film] -> [?0]
+5 Result: 4
+6 Root Node: Tim Burton
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Tim Burton (m.07rd7)] -> [film.director.film] -> [?0]
+6 Result: 32
+7 Root Node: Tim Burton
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Tim Burton (m.07rd7)] -> [film.film_story_contributor.film_story_credits] -> [?0]
+7 Result: 5
+8 Root Node: Tim Burton
+8 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Tim Burton (m.07rd7)] -> [film.actor.film] -> [?0]
+  [?0] -> [film.performance.special_performance_type] -> [?1]
+8 Result: 3
+9 Root Node: Tim Burton
+9 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Tim Burton (m.07rd7)] -> [film.actor.film] -> [?0]
+  [?0] -> [film.performance.character] -> [?1]
+9 Result: 6
+10 Root Node: Tim Burton
+10 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Tim Burton (m.07rd7)] -> [film.person_or_entity_appearing_in_film.films] -> [?0]
+  [?0] -> [film.personal_film_appearance.type_of_appearance] -> [?1]
+10 Result: 5
+11 Root Node: Tim Burton
+11 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Tim Burton (m.07rd7)] -> [film.actor.film] -> [?0]
+  [?0] -> [film.performance.film] -> [?1]
+11 Result: 6
+
+Query: how many politicians have served in the us navy
+Entity: (u'The U.S. Navy', 0.333333333333, 0, True)
+Entity: (u'The U.S. Navy', 0.333333333333, 0, True)
+Entity: (u'The U.S. Navy', 0.333333333333, 0, True)
+Entity: (u'Entrapment', 0.264493311955, 1724, False)
+Entity: (u'Alimony', 0.15579687904, 18386, False)
+Entity: (u'Treason', 0.130434649717, 46582, False)
+Entity: (u'United States Navy', 0.991049786961, 1565298, False)
+Entity: (u'United States of America', 0.596041510844, 149531631, False)
+Entity: (u'served in', 0.5, 0, True)
+Entity: (u'served in', 0.5, 0, True)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Th\xe9us', 0.175952614665, 4, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Politician', 0.769146936589, 73566, False)
+Entity: (u'Politics', 0.111597642535, 464041, False)
+TargetType: Other
+Pattern matches: ERT = 207, ERMRT = 443, ERMRERT = 258
+1 Root Node: United States Navy
+1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [United States Navy (m.07wg3)] -> [military.armed_force.personnel] -> [?0]
+  [?0] -> [freebase.valuenotation.has_value] -> [?1]
+1 Result: 8
+2 Root Node: The U.S. Navy
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The U.S. Navy (m.06nz8hk)] -> [book.written_work.author] -> [?0]
+2 Result: 1
+3 Root Node: United States Navy
+3 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [United States Navy (m.07wg3)] -> [military.armed_force.personnel] -> [?0]
+  [?0] -> [military.military_service.military_person] -> [?1]
+3 Result: 2006
+4 Root Node: The U.S. Navy
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The U.S. Navy (m.093nytk)] -> [book.book_edition.book] -> [?0]
+4 Result: 1
+5 Root Node: Politician
+5 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [Politician (m.0fj9f)] -> [people.profession.people_with_this_profession] -> [?0]
+  [?0] -> [people.person.nationality] -> [United States of America (m.09c7w0)]
+  [?0] -> [base.kwebbase.kwtopic.has_sentences] -> [?1]
+5 Result: 1613
+6 Root Node: Politician
+6 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [Politician (m.0fj9f)] -> [people.profession.people_with_this_profession] -> [?0]
+  [?0] -> [people.person.nationality] -> [United States of America (m.09c7w0)]
+  [?0] -> [freebase.valuenotation.has_value] -> [?1]
+6 Result: 402
+7 Root Node: United States Navy
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [United States Navy (m.07wg3)] -> [fictional_universe.fictional_organization.members] -> [?0]
+7 Result: 1
+8 Root Node: United States Navy
+8 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [United States Navy (m.07wg3)] -> [boats.ship_owner.ships_owned] -> [?0]
+  [?0] -> [boats.ship_ownership.ship] -> [?1]
+8 Result: 32
+9 Root Node: United States Navy
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [United States Navy (m.07wg3)] -> [military.armed_force.units] -> [?0]
+9 Result: 3
+10 Root Node: United States of America
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [United States of America (m.09c7w0)] -> [fictional_universe.fictional_setting.characters_that_have_lived_here] -> [?0]
+10 Result: 1
+11 Root Node: Politician
+11 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
+  [Politician (m.0fj9f)] -> [people.profession.people_with_this_profession] -> [?0]
+  [?0] -> [government.politician.government_positions_held..government.government_position_held.jurisdiction_of_office] -> [United States of America (m.09c7w0)]
+  [?0] -> [freebase.valuenotation.has_value] -> [?1]
+11 Result: 57
+
+Query: what are some object-oriented programming languages
+Entity: (u'Object-oriented programming', 0.999987096885, 232499, False)
+Entity: (u'Programming language', 0.982300081132, 18949, False)
+Entity: (u'Language', 0.546601915644, 110409, False)
+Entity: (u'Computer programming', 0.535864586069, 62728, False)
+Entity: (u'Programming', 0.18876521462, 245, True)
+TargetType: Other
+Pattern matches: ERT = 41, ERMRT = 43, ERMRERT = 0
+1 Root Node: Programming language
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Programming language (m.05r20)] -> [type.object.name] -> [?0]
+1 Result: Programming language
+2 Root Node: Object-oriented programming
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Object-oriented programming (m.05prj)] -> [computer.programming_language_paradigm.languages] -> [?0]
+2 Result: Java (m.07sbkfb) Io (m.01vtm2) Curl (m.0bp8q) ELENA (m.0dg9lh5) T (m.03ks39) ActionScript (m.02ky6z) Scala (m.091hdj) MiniD (m.02qwj88) Inform (m.01h67x) MetaL (m.03d4cmc) Embarcadero Delphi (m.01z1nj) Sather (m.073yv) Simula (m.079l6) Eiffel (m.02p6w) Mantra (m.02xkxpr) D (m.01kbt7) Vala (m.02wz_qj) SuperCollider (m.01ytpb) C++ (m.0jgqg) J (m.0jp72) CLU (m.02471) Lasso (m.02ldnl) Common Lisp Object System (m.01b5hv) Common Lisp (m.01tlw) NetRexx (m.0282msx) Oaklisp (m.042tk1) Rexx (m.06g3m) Smalltalk (m.070d2) EuLisp (m.0bm90n) NewtonScript (m.0gfwm) Smalltalk YX (m.0420zs3) Visual Prolog (m.05sfxb) PHP (m.060kv) C# (m.07657k) Dylan (m.02f70) GOO (m.02q47bp) Oxygene (m.0bsb33) Tcl (m.07fw2) Joule (m.02j2p7) Modula-3 (m.01k159) Oberon-2 (m.029rvn) Oberon (m.05mrv) Corba IDL (m.05tthtg) Python (m.05z1_) Falcon (m.05mxmzj) Caml (m.076kx1) Lua (m.0chpd) Scratch (m.028167f) Etoys (m.0bfq5w) BETA (m.010134) Z++ (m.011jv1) XLISP (m.0172dd) ECMAScript (m.019syg) Component Pascal (m.01_1zc) Visual Basic .NET (m.01dpgv) Blitz BASIC (m.01jm0) F# (m.01jt82) ABAP (m.01nxv3) Q (m.01t8hq) Lexico (m.01xc3x) ZZT-oop (m.01yv1f) R (m.0212jm) Pike (m.025dw31) EusLisp Robot Programming Language (m.0260znl) J# (m.0268yl) Logtalk (m.026d5hv) Turing+ (m.026d9_y) MooTools (m.026x8k3) Keykit (m.026xgmc) A++ (m.0270f0) VistaSmalltalk (m.0272tx2) Kite (m.027fhy7) S2 (m.028p7g) Frink (m.02_nh6) Nemerle (m.02h31b) Groovy (m.02js86) Generic Java (m.02jy2q) CorbaScript (m.02k1jt) Prograph (m.02l3jl) Cecil (m.02lvpc) Processing (m.02npry) The Green Object Oriented Language (m.02pm0j2) OTcl (m.02pp7t7) TOM (m.02q_q2j) Clascal (m.02qjcnn) Aikido Programming Language (m.02r51yv) .QL (m.02rh5fj) Polyphonic C# (m.02srjv) AmbientTalk (m.02vmqtb) Vala (m.02xj4df) Windows PowerShell (m.03790v) Judoscript (m.03c9pzr) QUILL (m.03ckhvp) Cobra (m.03clk94) Dialect (m.03cmd8m) Cool (m.03gxv97) Neko (m.03hhr4m) F-Script (m.03n27r) Unicon (m.03n9v6) LPC (m.03nk21) SETL (m.03ppzh) S (m.03pxm2) Water programming language (m.03qtl5) Claire (m.03r1wd) ROOP (m.03r370) Afnix programming language (m.03r9fn) Aldor (m.03sjgv) Abel programming language (m.03sk94) Extensible ML (m.03t8dm) O'Haskell (m.03t8dz) Pnuts (m.04043kd) Fuxi Programming Language (m.04050bb) Felix (m.0419cp) Object Lisp (m.042ttz) ObjectLOGO (m.042tvq) Object Oberon (m.042tyz) Object-Oriented Turing (m.042v27) C* (m.042vgj) Nu (m.043jn7w) LiveCode (m.0490j1) Hugo (m.04bq33) Python for S60 (m.04grg7w) Objective-J (m.04ldrth) Object REXX (m.04w43s) E (m.04xw5j) Microsoft Small Basic (m.04ygytb) Mercury (m.04zsm) Karel (m.051624) Scriptol (m.0521mgd) MOO (m.0521z) MATLAB (m.053_x) BeanShell (m.05bw2b) SMALL (m.05yl8k) Axum (m.05ztn31) Harbour (m.063h0s) X10 (m.0672c1) Ferite (m.06mmmy) Yoix (m.06z3b2) Compact Application Solution Language (m.070s08) Bistro (m.0729m2) SNOBOL (m.079lq) Turing (m.07n77) Squirrel (m.084pb2) A♯ (Axiom) (m.08jcqx) Sing# (m.08pndh) Spec# (m.08pytf) Fjölnir (m.090b_z) Tea (m.09c3bc) Alice (m.09fhy0) Turbo Pascal (m.09jsd) Karel++ (m.0bss63) Little b (m.0ckv51) Objeck (m.0cz9tkr) Dao Language (m.0f1qvd) Realbasic (m.0f78ns) JADE (m.0fbzc1) Visual Basic (m.0fp_1y) Lisaac (m.0gb_wh) Speedcoding (m.0gdxqx) Alpoca (m.0gh50t7) Cadence SKILL (m.0ghmfk) Chapel (m.0gnckq) AgentSheets (m.0gzx5x) PowerBASIC (m.0h6g8) CoffeeScript (m.0hjc5m0) MoonScript (m.0hjlb4k) Pike (m.0lxk7) F* (m.0ql079r) UnrealScript (m.0vgmh) Nimrod (m.0vpk27_) Oz (m.01m1y8) Objective-C (m.05q31) JavaScript (m.02p97) Lisp (m.04kyw) Ruby (m.06ff5) COBOL (m.01zpg) Self (m.0gd42) Fortran (m.02_94) ColdFusion Markup Language (m.03tsq7) Perl (m.05zrn) Object Pascal (m.02yjg_) Cω (m.040zrk) Caché ObjectScript (m.06yp6q) Squeak (m.09bhx) Visual FoxPro (m.017v2d) Racket (m.0974fb) Game Maker Language (m.0340d7) Ioke (m.04ybtsc) JavaFX Script (m.02r0l4g) Bigloo (m.0c00_c)
+3 Root Node: Programming
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Programming (m.02snj9)] -> [type.object.name] -> [?0]
+3 Result: Programming
+4 Root Node: Language
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Language (m.04g7d)] -> [type.object.name] -> [?0]
+4 Result: Language
+5 Root Node: Computer programming
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Computer programming (m.01mf_)] -> [type.object.name] -> [?0]
+5 Result: Computer programming
+
+Query: what are the books in the chronicles of narnia series
+Entity: (u'The Chronicles of Narnia', 0.831933, 43405, False)
+Entity: (u'The Chronicles of Narnia (Film series)', 0.168067, 17332, False)
+Entity: (u'The Chronicles of Narnia', 1.0, 43405, False)
+Entity: (u'The Chronicles of Narnia: Prince Caspian', 1.0, 1652, False)
+Entity: (u'The Chronicles of Narnia', 1.0, 43405, False)
+Entity: (u'The Books', 0.776898125835, 3045, True)
+Entity: (u'Terminator: The Sarah Connor Chronicles', 0.512775368798, 47135, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'The Chronicles (Southern rap Album)', 0.324758400181, 0, True)
+Entity: (u'The Chronicles of Amber', 0.16237920009, 20286, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Book (m/0bt_c3)', 0.659496685521, 299831, False)
+Entity: (u'Books of Chronicles', 0.192183839637, 30619, False)
+Entity: (u'Chronicles: Volume One', 0.105350964125, 1389, False)
+TargetType: Other
+Pattern matches: ERT = 133, ERMRT = 184, ERMRERT = 0
+1 Root Node: The Chronicles of Narnia
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia (m.07k3w)] -> [book.literary_series.author_s] -> [?0]
+1 Result: C. S. Lewis (m.01wd02c)
+2 Root Node: The Chronicles of Narnia
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia (m.07k3w)] -> [book.literary_series.works_in_this_series] -> [?0]
+2 Result: Prince Caspian (m.01k43c) The Magician's Nephew (m.0dy6y) The Horse and His Boy (m.026gmg) The Silver Chair (m.0276f9) The Voyage of the Dawn Treader (m.0276dv) The Lion, the Witch and the Wardrobe (m.01k43v) The Last Battle (m.01zk6m)
+3 Root Node: The Chronicles of Narnia
+3 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia (m.07k3w)] -> [book.literary_series.fictional_universe] -> [?0]
+3 Result: Narnian Multiverse (m.051shsp)
+4 Root Node: The Chronicles of Narnia
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia (m.07k3w)] -> [book.literary_series.author_s] -> [?0]
+4 Result: C. S. Lewis (m.01wd02c)
+5 Root Node: The Chronicles of Narnia
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia (m.07k3w)] -> [book.literary_series.works_in_this_series] -> [?0]
+5 Result: Prince Caspian (m.01k43c) The Magician's Nephew (m.0dy6y) The Horse and His Boy (m.026gmg) The Silver Chair (m.0276f9) The Voyage of the Dawn Treader (m.0276dv) The Lion, the Witch and the Wardrobe (m.01k43v) The Last Battle (m.01zk6m)
+6 Root Node: The Chronicles of Narnia
+6 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia (m.07k3w)] -> [book.literary_series.fictional_universe] -> [?0]
+6 Result: Narnian Multiverse (m.051shsp)
+7 Root Node: The Chronicles of Narnia: Prince Caspian
+7 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia: Prince Caspian (m.063fh9)] -> [film.film.film_series] -> [?0]
+7 Result: The Chronicles of Narnia (m.0b6s7w)
+8 Root Node: The Chronicles of Narnia
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia (m.07k3w)] -> [book.literary_series.author_s] -> [?0]
+8 Result: C. S. Lewis (m.01wd02c)
+9 Root Node: The Chronicles of Narnia
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia (m.07k3w)] -> [book.literary_series.works_in_this_series] -> [?0]
+9 Result: Prince Caspian (m.01k43c) The Magician's Nephew (m.0dy6y) The Horse and His Boy (m.026gmg) The Silver Chair (m.0276f9) The Voyage of the Dawn Treader (m.0276dv) The Lion, the Witch and the Wardrobe (m.01k43v) The Last Battle (m.01zk6m)
+10 Root Node: The Chronicles of Narnia: Prince Caspian
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia: Prince Caspian (m.063fh9)] -> [film.film.prequel] -> [?0]
+10 Result: The Chronicles of Narnia: The Lion, the Witch and the Wardrobe (m.0639bg)
+11 Root Node: The Chronicles of Narnia: Prince Caspian
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [The Chronicles of Narnia: Prince Caspian (m.063fh9)] -> [fictional_universe.work_of_fiction.setting] -> [?0]
+11 Result: Narnia (m.01wd33)
+
+Query: what decision did manny pacquiao vs. timothy bradley end with
+Entity: (u'Manny Pacquiao vs. Timothy Bradley', 1.0, 4, True)
+Entity: (u'Timothy Bradley', 0.999511582473, 14325, True)
+Entity: (u'Manny Pacqui\xe1o', 0.997628984622, 260311, False)
+Entity: (u'Decision-making', 0.237567736896, 16435, False)
+TargetType: Other
+Pattern matches: ERT = 43, ERMRT = 60, ERMRERT = 0
+1 Root Node: Manny Pacquiao vs. Timothy Bradley
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Manny Pacquiao vs. Timothy Bradley (m.0j24b7h)] -> [boxing.boxing_match.round_match_ended] -> [?0]
+1 Result: 12
+2 Root Node: Manny Pacquiao vs. Timothy Bradley
+2 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Manny Pacquiao vs. Timothy Bradley (m.0j24b7h)] -> [boxing.boxing_match.decision] -> [?0]
+2 Result: Split decision (m.0bwm3g)
+3 Root Node: Manny Pacquiao vs. Timothy Bradley
+3 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Manny Pacquiao vs. Timothy Bradley (m.0j24b7h)] -> [boxing.boxing_match.fighters] -> [?0]
+  [?0] -> [boxing.match_boxer_relationship.boxer] -> [?1]
+3 Result: Timothy Bradley (m.043mjq4) Manny Pacquiáo (m.03pmbb)
+4 Root Node: Manny Pacquiao vs. Timothy Bradley
+4 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Manny Pacquiao vs. Timothy Bradley (m.0j24b7h)] -> [time.event.locations] -> [?0]
+4 Result: MGM Grand Garden Arena (m.069qh6)
+5 Root Node: Manny Pacquiao vs. Timothy Bradley
+5 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Manny Pacquiao vs. Timothy Bradley (m.0j24b7h)] -> [boxing.boxing_match.planned_number_of_rounds] -> [?0]
+5 Result: 12
+6 Root Node: Manny Pacquiao vs. Timothy Bradley
+6 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Manny Pacquiao vs. Timothy Bradley (m.0j24b7h)] -> [boxing.boxing_match.fighters] -> [?0]
+  [?0] -> [boxing.match_boxer_relationship.boxer] -> [?1]
+6 Result: Timothy Bradley (m.043mjq4) Manny Pacquiáo (m.03pmbb)
+7 Root Node: Manny Pacquiao vs. Timothy Bradley
+7 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Manny Pacquiao vs. Timothy Bradley (m.0j24b7h)] -> [boxing.boxing_match.fighters] -> [?0]
+  [?0] -> [boxing.match_boxer_relationship.winner_won] -> [?1]
+7 Result: 0 1
+8 Root Node: Manny Pacquiao vs. Timothy Bradley
+8 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Manny Pacquiao vs. Timothy Bradley (m.0j24b7h)] -> [boxing.boxing_match.weight_class] -> [?0]
+8 Result: Welterweight (m.03c723)
+9 Root Node: Manny Pacquiao vs. Timothy Bradley
+9 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Manny Pacquiao vs. Timothy Bradley (m.0j24b7h)] -> [type.object.name] -> [?0]
+9 Result: Manny Pacquiao vs. Timothy Bradley
+10 Root Node: Manny Pacquiáo
+10 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Manny Pacquiáo (m.03pmbb)] -> [type.object.name] -> [?0]
+10 Result: Manny Pacquiáo
+11 Root Node: Manny Pacquiao vs. Timothy Bradley
+11 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Manny Pacquiao vs. Timothy Bradley (m.0j24b7h)] -> [time.event.start_date] -> [?0]
+11 Result: 2012-06-09
+
 Query: when was 300 released
 TargetType: Date
 Pattern matches: ERT = 0, ERMRT = 0, ERMRERT = 0
