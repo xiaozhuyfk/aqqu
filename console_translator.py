@@ -59,7 +59,7 @@ def main():
                 root_name = "%d Root Node: %s\n" % (i+1, candidate.root_node.entity.name.encode('utf-8'))
                 query_str = "%d SPARQL query: %s\n" % (i+1, sparql_query.encode('utf-8'))
                 graph_str = "%d Candidate Graph: %s\n" % (i+1, candidate.graph_as_string().encode('utf-8'))
-                graph_str_simple = "%d Simple Candidate Graph: %s\n" % (i+1, candidate.graph_as_simple_string().encode('utf-8'))
+                graph_str_simple = "%d Simple Candidate Graph: %s" % (i+1, candidate.graph_as_simple_string().encode('utf-8'))
                 result_str = "%d Result: %s\n" % (i+1, (" ".join(result)).encode('utf-8'))
                 writeFile(test_file, root_name, "a")
                 #writeFile(test_file, graph_str, "a")
