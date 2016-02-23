@@ -1,291 +1,642 @@
-Query: when was oxygen discovered
-Entity: (u'wasoxygen', 1.0, 0, True)
-Entity: (u'Oxygen', 1.0, 255237, False)
+Query: when was 300 released
 TargetType: Date
-Root Node: Oxygen
-Result: 1774
-
-Query: who designed the parthenon
-Entity: (u'Parthenon', 0.604093622193, 98612, True)
-Entity: (u'Parthenon (Venue)', 0.382668332122, 2328, True)
-Entity: (u'Parthenon', 0.961783697742, 98612, True)
-TargetType: person, organization, employer, character
-Root Node: Parthenon
-Result: Ictinus (m.03w1d) Callicrates (m.04937) Phidias (m.0j4yg)
-
-Query: who was 8 mile directed by
-Entity: (u'8 Mile', 0.718789728861, 275, True)
-Entity: (u'Film director (Profession)', 0.499643274822, 12592, False)
-Entity: (u'Jean Negulesco', 0.403966256452, 1171, False)
-Entity: (u'Mile', 0.919329395517, 2082, True)
-TargetType: person, organization, employer, character
-Root Node: 8 Mile
-Result: Curtis Hanson (m.0184jw)
-
-Query: when was facebook launched
-Entity: (u'Facebook', 0.980081051933, 20490157, True)
+Query: when was barbie launched
+Entity: (u'Barbie', 0.96649402726, 859774, True)
 TargetType: Date
-Root Node: Facebook
-Result: 2004-02-04
+Root Node: Barbie
+Result: Stolen Magic Barbie Doll (m.05gkydr) Midnight Waltz Barbie #16705 (m.05d_yz9) David’s Bridal Eternal Barbie Doll #H1707 (m.05f_vtp) David's Bridal Eternal Barbie Doll #H1706 (m.05g0h90) David’s Bridal Eternal Barbie Doll #H0186 (m.05g0wd1) David's Bridal Unforgettable Barbie #G2891 (m.05g23y6) David's Bridal Unforgettable Barbie #G2890 (m.05g4mn4) David's Bridal Unforgettable Barbie #G2889 (m.05g4vlg) Perfect Pair Tommy doll and Kelly doll #H8153 (m.05g5c90) Perfect Pair Tommy doll and Kelly doll #H8152 (m.05g5hqp) Perfect Pair Tommy doll and Kelly doll #H7548 (m.05g5t_2) Romance Barbie Doll #K7943 (m.05ggytp) Badgley Mischka Bride Barbie #B8946a (m.05gjscc) Badgley Mischka Bride Barbie #B8946 (m.05gjthp) Carolina Herrera Bride Barbie Doll #J6771 (m.05gjv2y) Carolina Herrera Bride Barbie Doll #B9797 (m.05gjvyv) Monique Lhuillier Bride Barbie Doll #J0975 (m.05gjw9z) 35th Anniversary Midge (m.05gk8n5) Reem Acra Bride Barbie Doll #L3549 (m.05gl0n7) Reem Acra Bride Barbie Doll #K7968 (m.05gl0vb) Autumn in London Barbie (m.05gl2dc) Autumn in Paris Barbie (m.05gl2mm) Spring in Tokyo Barbie (m.05gl2rd) Summer in Rome Barbie (m.05gl2xg) Summer in San Francisco Barbie (m.05gl336) Vintage Spring in Tokyo Barbie (m.05gl388) Winter in Montreal Barbie (m.05gl3rb) Winter in New York Barbie (m.05gl41l) 40th Anniversary Ken #52967 (m.05glnvs) 40th Anniversary Ken #50722 (m.05glpky) 45th Anniversary Barbie by Bob Mackie #G3105 (m.05glr20) 45th Anniversary Barbie by Bob Mackie #B3452 (m.05gls6j) 45th Anniversary Barbie by Bob Mackie #B3453 (m.05glsm5) Coca-Cola Barbie (Cheerleader) (m.05glxh1) Romance Barbie Doll #K8672 (m.05glxzh) Romance Barbie Doll #K8671 (m.05gly35) Dallas Darlin' Barbie Doll #L8812 (m.05gm17r) Dallas Darlin' Barbie Doll #L8811 (m.05gm1lf) Barbie & Kenny Country Duet Doll Set (m.05gnt4h) Speed Racer Barbie Doll and Ken Doll Giftset (m.05gphkz) Birthday Wishes Barbie #C6230 (m.05gqdqj) Birthday Wishes Barbie #C6229 (m.05gqfyw) Birthday Wishes Barbie # C6228 (m.05gqgjs) Birthday Wishes Barbie #C0860 (m.05gqhbb) Birthday Wishes Barbie #24668 (m.05gqhyj) Birthday Wishes Barbie #24667 (m.05gqj0c) English Barbie (m.05gqkzd) #4 Ponytail Barbie Doll #850 in Original Swimsuit (m.05gw0xj) Birthday Wishes Barbie #21128 (m.05gw_8n) Birthday Wishes Barbie #21509 (m.05gwx90) Birthday Wishes Barbie #28434 (m.05gx3q_) Birthday Wishes Barbie #G8061 (m.05gx5wj) Birthday Wishes Barbie #G8059 (m.05gx7wk) Miss Amethyst Barbie Doll #L7573 (m.05gxh7v) Miss Amethyst Barbie Doll # K8691 (m.05gxk3f) Miss Aquamarine Barbie Doll #L7574 (m.05gxlj8) Miss Aquamarine Barbie Doll # K8692 (m.05gxrv3) Miss Diamond Barbie Doll #L7575 (m.05gxtsh) Miss Diamond Barbie Doll #K8693 (m.05gxwqv) Miss Emerald Barbie Doll #L7576 (m.05gxyjc) Miss Emerald Barbie Doll #K8694 (m.05gy0sy) Miss Garnet Barbie Doll #L7572 (m.05gy3x9) Miss Garnet Barbie Doll #K8690 (m.05gy73l) Miss Opal Barbie Doll #L7582 (m.05gy9q8) Miss Opal Barbie Doll #K8699 (m.05gycrt) Miss Pearl Barbie Doll #K8695 (m.05gyhdw) Miss Peridot Barbie Doll #L7580 (m.05gykkf) Miss Peridot Barbie Doll #K8697 (m.05gylp9) Miss Ruby Barbie Doll #L7579 (m.05gyn54) Miss Ruby Barbie Doll #K8696 (m.05gyqwz) Miss Sapphire Barbie Doll #L7581 (m.05gysfq) 50th Anniversary Barbie (m.05gytft) Miss Sapphire Barbie Doll #K8698 (m.05gyvcr) 50th Anniversary Barbie Doll #N5860 (m.05gyzh_) 50th Anniversary Barbie Doll #N4981 (m.05gz2bl) Miss Topaz Barbie Doll #L7583 (m.05h0093) Miss Topaz Barbie Doll #K8700 (m.05h00y3) Miss Turquoise Barbie Doll #L7584 (m.05h011t) Miss Turquoise Barbie Doll #K8701 (m.05h0159) April Diamond Barbie #C5334 (m.05h01g_) April Diamond Barbie #C0586 (m.05h01tj) April Diamond Barbie #B3412 (m.05h01y6) August Peridot Barbie #C5326 (m.05h0245) Autumn Glory Barbie (m.05h03cy) Snow Princess Barbie #11875 (m.05h03qn) Snow Princess Barbie #12905 (m.05h03v3) Spring Bouquet Barbie (m.05h0402) Summer Splendor Barbie (m.05h0440) Collector Edition 40th Anniversary Barbie (m.05h0fsn) Crystal Jubilee Barbie (m.05h0fy4) Gala 40th Anniversary Barbie (m.05h0gbn) Gold Jubilee Barbie (m.05h0gyw) Golden Anniversary Barbie (m.05h0h46) Pink Crystal Jubilee Barbie (m.05h0hgh) Pink Jubilee Barbie (m.05h0hn0) Society Hound Collection Barbie (m.05h1vjl) Bob Mackie The Charleston Barbie (m.05h8m1m) Aries Barbie Doll #C6240 (m.05h_d20) Cancer Barbie Doll #C6256 (m.05h_n9_) Cancer Barbie Doll #C6243 (m.05h_x0g) Millennium Wedding Barbie #27765 (m.05hg1hj) Millennium Wedding Barbie #27764 (m.05hg37d) Millennium Wedding Barbie #27674 (m.05hg4sq) Romantic Wedding Barbie #29439 (m.05hg5nx) Romantic Wedding Barbie #29438 (m.05hg7c2) Sophisticated Wedding Barbie #53371 (m.05hg941) Sophisticated Wedding Barbie #53370 (m.05hgb6v) August Peridot Barbie #B3416 (m.05hlflz) December Turquoise Barbie #C5330 (m.05hlh48) December Turquoise Barbie #C0582 (m.05hlh8b) December Turquoise Barbie #B2397 (m.05hlhfr) February Amethyst Barbie #C5332 (m.05hlhk9) February Amethyst Barbie #C0584 (m.05hlhn2) February Amethyst Barbie #B3410 (m.05hlhrc) January Garnet Barbie #C5331 (m.05hlhxm) January Garnet Barbie #C0583 (m.05hlj0v) January Garnet Barbie #B3409 (m.05hlj5b) July Ruby Barbie #C5325 (m.05hlk_z) July Ruby Barbie #C0577 (m.05hll1p) July Ruby Barbie #B3415 (m.05hll35) June Pearl Barbie #C5324 (m.05hll6d) May Emerald Barbie #C5323 (m.05hll_6) June Pearl Barbie #C0576 (m.05hllbd) June Pearl Barbie #B3414 (m.05hlld9) March Aquamarine Barbie #C5333 (m.05hllhk) March Aquamarine Barbie #C0585 (m.05hlln6) March Aquamarine Barbie #B3411 (m.05hlltt) May Emerald Barbie #C0575 (m.05hlm7g) May Emerald Barbie #B3413 (m.05hlmg2) November Topaz Barbie #C5329 (m.05hlmt2) November Topaz Barbie #C0581 (m.05hln32) November Topaz Barbie #B2396 (m.05hlnct) October Opal Barbie #C5328 (m.05hlnhx) October Opal Barbie #C0580 (m.05hlnm7) October Opal Barbie #B2395 (m.05hlnr4) September Sapphire Barbie #C5327 (m.05hlp0k) 2008 Holiday Barbie Doll #L9644 (m.05hlp30) September Sapphire Barbie #C0579 (m.05hlp8h) Celebration Barbie #28270 (m.05hlp_n) September Sapphire Barbie #B2394 (m.05hlpp4) Celebration Barbie #28269 (m.05hlq30) Holiday Barbie Doll #G8178 (m.05hlq89) Holiday Barbie Doll #G8177 (m.05hlqqp) Holiday Barbie Doll #B5849 (m.05hlqxj) Holiday Barbie Doll #B5848 (m.05hlrfb) Holiday Barbie Doll by Bob Mackie #J0950 (m.05hlrtn) Holiday Barbie Doll by Bob Mackie #J0949 (m.05hls26) Holiday Barbie Doll by Bob Mackie #H9648 (m.05hls5_) Holiday Barbie Doll by Bob Mackie #H8583 (m.05hls9p) Holiday Barbie Doll by Bob Mackie #H0178 (m.05hlshn) Holiday Barbie Doll by Bob Mackie #G8058 (m.05hlsvb) Holiday Barbie Doll by Bob Mackie #K7959 (m.05hltl7) AKA Centennial Barbie Doll (m.05hn35f) Barbie 2000 #27410 (m.05hn44w) Barbie 2000 #27409 (m.05hn4rl) Barbie 2001 #50842 (m.05hn5w1) Barbie 2001 #50841 (m.05hn6j2) Barbie 2002 #53976 (m.05hn6xn) Barbie 2002 #53975 (m.05hn72v) Barbie 2003 #B0145 (m.05hn7g7) Barbie 2003 #B0144 (m.05hn8l3) Barbie 2003 - Treasure Hunt doll (m.05hn9kv) Barbie Doll 2007 #L9069 (m.05hnc2k) Barbie Doll 2007 #K8667 (m.05hncry) Barbie Doll 2008 (m.05hndtp) Celebrate, Disco Doll! Barbie Doll #N2442 (m.05hngkf) Celebrate, Disco Doll! Barbie Doll #N2441 (m.05hnhvt) Go Red For Women Barbie Doll #L4103 (m.05hnlhl) Go Red For Women Barbie Doll #K7957 (m.05hnm19) Happy Birthday, Angel Barbie Doll (m.05hnmpw) Holiday Memories Barbie (m.05hnnp7) Millennium Bride Barbie The Barbie Collectibles doll for the Millennium! (m.05hnpjn) Millennium Princess Barbie (m.05hnq1d) Millennium PrincessTM Barbie #23995 (m.05hnql0) Millennium PrincessTM Barbie #25504 (m.05hnqxn) Pink Hope Barbie Doll (m.05hnr22) Pink Ribbon Barbie Doll #K7813 (m.05hnr7v) Pink Ribbon Barbie Doll #J0932 (m.05hnrrn) Sentimental Valentine Barbie (m.05hnry4) Sweet Valentine Barbie (m.05hns5t) Yuletide Romance Barbie (m.05hnsfk) Holiday Barbie Doll by Bob Mackie #K7958 (m.05hp99h) Holiday Celebration Barbie #56210 (m.05hpbh2) Holiday Celebration Barbie #56209 (m.05hpd6y) Holiday Celebration Barbie #50305 (m.05hpdwq) Holiday Celebration Barbie #50304 (m.05hpf3c) Winter Fantasy Barbie #C0166 (m.05hpg7y) Winter Fantasy Barbie  #B2519 (m.05hpjp2) Evergreen Princess Barbie (blonde) (m.05hpzr6) Midnight Princess Barbie (m.05hq0sj) Peppermint Princess Barbie (m.05hq2zg) Winter Princess Barbie (m.05hq3f9) Hollywood Cast Party Barbie (m.05hqs4y) Aquarius Barbie Doll #C6251 (m.05hy7r1) Aquarius Barbie Doll #C6238 (m.05hz3bs) Aries Barbie Doll #C6253 (m.05hz9cf) Capricorn Barbie Doll #C6237 (m.05j0bq3) Gemini Barbie Doll #C6255 (m.05j0k8f) Gemini Barbie Doll #C6242 (m.05j0r7d) Leo Barbie Doll #C6257 (m.05j0zp8) Leo Barbie Doll #C6244 (m.05j198y) Libra Barbie Doll #C6247 (m.05j1ft_) Libra Barbie Doll #C3824 (m.05j1ljp) Pisces Barbie Doll #C6252 (m.05j1qyn) Pisces Barbie Doll #C6239 (m.05j266v) Sagittarius Barbie Doll #C6249 (m.05j2cks) Sagittarius Barbie Doll #C6236 (m.05j2pbp) Scorpio Barbie Doll #C6248 (m.05j2xl4) Scorpio Barbie Doll #C3825 (m.05j31p0) Taurus Barbie Doll #C6254 (m.05j35cb) Taurus Barbie Doll #C6241 (m.05j39lq) Virgo Barbie Doll #C6246 (m.05j3fh_) Virgo Barbie Doll #C3823 (m.05j3lr7) Kate Spade Barbie (m.05k6lk6) Birthday Wishes Barbie #C6231 (m.05k7myn) Birthday Wishes Barbie #B9788 (m.05k7nbm) Birthday Wishes Barbie # B9787 (m.05k7q78) Birthday Wishes Barbie #B9786 (m.05k7qbd) Birthday Wishes Barbie #28435 (m.05k7qfk) Debut Barbie Doll #N5007 (m.05g0063) Mad Hatter Doll (m.05ghfvr) Scuderia Ferrari Barbie (m.05gq5hz) Chinese New Year Barbie Doll (m.05gw3g9) Hanae Mori Barbie (m.05hlhw8) Cabaret Dancer Barbie Doll #L6249 (m.05k6kmh) Barbie Doll as Titania (m.05glntx) Nolan Miller Sheer Illusion Barbie (m.05gqxy4) Oreo Fun Barbie (m.05cgpm5) Starlight Waltz Barbie #14954 (m.05f0n3t) Rhapsody in New York Barbie Doll (m.05fbs8s) Barbie as Snowflake in "The Nutcracker" (m.05glm08) Kenyan Barbie (m.05glwlq) Cynthia Rowley Barbie Doll (m.05gm1px) Chinese Barbie (m.05gm1z2) India Barbie #03897 (m.05gm29j) Japanese Barbie #09481 (m.05gm3y3) Korean Barbie (m.05gm58p) Malaysian Barbie (m.05gm5pj) Oriental Barbie (m.05gm60d) Australian Barbie (m.05gm7zd) Rendezvous Barbie (m.05gp2vc) Los Angeles Dodgers Barbie #23882 (m.05gpzsh) Czechoslovakian Barbie (m.05gqkbz) Dutch Barbie (m.05gqkjp) German Barbie #03188 (m.05gqmgd) Greek Barbie (m.05gqmvq) Icelandic Barbie (m.05gqnkm) Irish Barbie #07515 (m.05gqnzq) Irish Barbie #12998 (m.05gqpss) Italian Barbie #01682 (m.05gqpxp) Italian Barbie #02256 (m.05gqqhx) Kelly Doll and Friends (m.05gqqpd) Parisian Barbie #01600 (m.05gqtz7) Parisian Barbie #09843 (m.05gqvmm) Royal U.K. Barbie (m.05gqw70) Russian Barbie #01916 (m.05gqwk0) Scottish Barbie #03263 (m.05gqx0b) Spanish Barbie #04031 (m.05gqx60) Spanish Barbie #04963 (m.05gqx7r) Swedish Barbie #04032 (m.05gqxgw) Swiss Barbie (m.05gqxh5) Canadian Barbie (m.05gx6pg) Eskimo Barbie #03898 (m.05gx7lx) Eskimo Barbie #09844 (m.05gx8kp) Jamaican Barbie (m.05gxg3z) Mexican Barbie #01917 (m.05gxhvl) Native American Barbie #01753 (m.05gxksw) Native American Barbie #11609 (m.05gxltg) Native American Barbie ##12699 (m.05gxmtp) Polynesian Barbie (m.05gxqxw) Brazilian Barbie (m.05h01_j) Peruvian Barbie #02995 (m.05h02gl) Mrs. P.F.E. Albee Barbie #20330 (m.05h0l4h) Air Force Barbie and Ken Deluxe Set #11581 (m.05h6ybc) Air Force Barbie and Ken Deluxe Set  #11582 (m.05h717q) Army Barbie & Ken Deluxe Set #05627 (m.05h75xv) Marine Corps Barbie #07549 (m.05h78l8) Marine Corps Barbie #07594 (m.05h7c9x) Marine Corps Ken #07574 (m.05h7km7) Marine Corps Ken #05352 (m.05h7m84) Navy Barbie #09694 (m.05h9z0s) Navy Barbie #09693 (m.05h9zds) Sugar Barbie Doll (m.05hl7vp) Cool Collecting Barbie (m.05hlqtt) The Scarlet Macaw Barbie Doll (m.05hn622) 35th Anniversary Barbie #11782 (m.05hnqnv) Victorian Elegance Barbie (m.05hnvv0) 35th Anniversary Barbie #11590 (m.05hpg_q) Mademoiselle Isabelle Barbie (m.05hpjkr) Solo in the Spotlight Barbie #13534 (m.05hpl5b) Solo in the Spotlight Barbie #13820 (m.05hplx7) Barbie as Little Bo Peep (m.05gl0z_) Corvette Barbie Doll #N4984 (m.05ghhlw) Star Trek Uhura Barbie (m.05czynd) 1 Modern Circle Barbie #B2527 (m.05g3gpk) Swan Lake Barbie (m.05dzg8q) 45th Anniversary Barbie by Robert Best Doll #B8955 (m.05ff2nv) FAO Exclusive Joyeux Barbie (m.05g0p18) Hard Rock Barbie Doll #L9663 (m.05hhtpz) Hard Rock Barbie Doll #K7946 (m.05hhvpg)
 
-Query: who was titanic directed by
-Entity: (u'Film director (Profession)', 0.499643274822, 12592, False)
-Entity: (u'Jean Negulesco', 0.403966256452, 1171, False)
-Entity: (u'RMS Titanic', 0.509296562585, 130691, False)
-Entity: (u'Titanic', 0.409702044761, 131297, True)
+Query: who founded the red cross
+Entity: (u'International Red Cross and Red Crescent Movement', 0.830726497669, 97184, False)
+Entity: (u'The Red', 0.354360675937, 54, True)
 TargetType: person, organization, employer, character
-Root Node: Titanic
-Result: James Cameron (m.03_gd)
+Root Node: International Red Cross and Red Crescent Movement
+Result: Henry Dunant (m.0966l) Gustave Moynier (m.07786r)
 
-Query: who is the ceo of savealot
-Entity: (u'C. Edward McVaney', 0.958904109589, 140, False)
-Entity: (u'Save-A-Lot', 1.0, 661, True)
-Entity: (u'Managing Director', 0.97081319684, 92293, False)
-TargetType: person, organization, employer, character
-Root Node: Managing Director
-Result: Santiago Roces (m.0ncnxfr)
+Query: what causes prostate cancer
+Entity: (u'Prostate cancer', 0.998617319424, 67797, True)
+Entity: (u'Prostate', 0.881638204484, 18410, True)
+Entity: (u'Cancer (Disease or medical condition)', 0.86659843983, 400879, True)
+TargetType: Other
+Root Node: Prostate cancer
+Result: Assassination in ways which appear natural (m.05yr5jt) Cancer (m.0qcr0)
 
-Query: what is europe 's area
-Entity: (u'Europe', 0.85924160737, 39937138, False)
-Entity: (u'Sarea', 0.393782347338, 4, True)
-Entity: (u'Europe (Hard rock Artist)', 0.129742527375, 863, False)
+Query: what are the celtic languages
+Entity: (u'The Celtic Languages (Routledge Language Familydescriptions)', 0.5, 0, True)
+Entity: (u'The Celtic Languages', 0.5, 0, True)
+Entity: (u'Celtic languages', 0.991774158352, 9321, True)
+Entity: (u'Language', 0.546601915644, 110409, False)
+TargetType: Other
+Root Node: The Celtic Languages (Routledge Language Familydescriptions)
+Result: The Celtic Languages (m.06g13c_)
+
+Query: how many people practice karate
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'Karate', 0.936122751079, 87400, True)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'Practice', 0.339400323183, 30524, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+Entity: (u'Praxis', 0.153781107459, 3103, False)
+TargetType: Other
+Root Node: Karate
+Result: 33
+
+Query: what is jerry seinfeld religion
+Entity: (u'Jerry Seinfeld', 0.929733330903, 114386, True)
+TargetType: Other
+Root Node: Jerry Seinfeld
+Result: Male (m.05zppz)
+
+Query: what is the population of europe
+Entity: (u'The Population of Europe', 1.0, 1, True)
+Entity: (u'Medieval demography', 1.0, 12, False)
 Entity: (u'Europe', 0.924371413609, 39937138, True)
-Entity: (u'Area', 0.850698126258, 76568, True)
+Entity: (u'Population', 0.869365457191, 43740, True)
 TargetType: Other
-Root Node: Europe
-Result: 10180000
+Root Node: The Population of Europe
+Result: The Population of Europe
 
-Query: where was omarion born
-Entity: (u'Omarion', 0.99980405604, 20410, True)
-TargetType: location, event, conference
-Root Node: Omarion
-Result: Inglewood (m.0r0f7)
-
-Query: what is yahoo!'s slogan
-Entity: (u'Yahoo (Character Species)', 0.70089766458, 134, False)
-Entity: (u'Yahoo!', 0.185242715267, 10885291, False)
-Entity: (u'Yahoo!', 0.942008697844, 10885291, True)
-Entity: (u'Slogan', 0.767881657439, 9222, True)
+Query: what are some hotels in vancouver
+Entity: (u'Hotels in Vancouver', 1.0, 0, True)
+Entity: (u'Hotel', 0.969665423378, 475558, False)
+Entity: (u'Vancouver', 0.920592750927, 3755100, True)
 TargetType: Other
-Root Node: Yahoo!
-Result: Do You Yahoo!?
+Root Node: Hotels in Vancouver
+Result: m.04yk8tl
 
-Query: who created the far side
-Entity: (u'The Far Side', 0.990166308402, 8107, True)
-Entity: (u'Far side of the Moon', 0.603548026821, 9954, False)
-Entity: (u'Side', 0.692583545351, 4773, True)
-TargetType: person, organization, employer, character
-Root Node: The Far Side
-Result: Gary Larson (m.0m8g2)
+Query: how many awards did big daddy win
+Entity: (u'Soweto Kinch', 1.0, 1517, False)
+Entity: (u'Big Daddy', 0.165051107268, 11351, True)
+Entity: (u'Shirley Crabtree', 0.14531718449, 1184, False)
+Entity: (u'Award (Chivalric Title)', 0.274483106932, 214152, False)
+Entity: (u'Outline of science fiction', 0.141008576871, 0, False)
+Entity: (u"Lisa's First Word", 0.123711507751, 0, False)
+Entity: (u'Daddy', 0.105018474537, 2161, True)
+TargetType: Other
+Root Node: Soweto Kinch
+Result: 1
 
-Query: when was walmart founded
-Entity: (u'Walmart', 0.983760899289, 3391946, True)
+Query: how many tv channels does nbc own
+Entity: (u'Television channel', 0.962454277952, 14677, False)
+Entity: (u'NBC', 0.92486044332, 2126639, True)
+Entity: (u'Television', 0.843880864865, 780007, False)
+Entity: (u'Channel', 0.24177019987, 341, False)
+Entity: (u'Channel', 0.15198673958, 583, False)
+Entity: (u'Channels (Comedy)', 0.127620633362, 180, True)
+TargetType: Other
+Root Node: NBC
+Result: 1266
+
+Query: what is the state flower of alaska
+Entity: (u'Floral emblem', 0.615754638414, 4884, False)
+Entity: (u'Eschscholzia californica', 0.371332708416, 6272, False)
+Entity: (u'The State (TV Sketch Comedy Show)', 0.33963838976, 6250, True)
+Entity: (u'The State (Post-grunge Album)', 0.155075386828, 746, True)
+Entity: (u'Sovereignty', 0.136618890304, 49863, False)
+Entity: (u'Alaska', 0.885633457151, 5964258, True)
+Entity: (u'Flower (Quotation Subject)', 0.685458668885, 158290, True)
+Entity: (u'U.S. state', 0.264017426139, 2692783, False)
+Entity: (u'States of India', 0.155281370633, 30636, False)
+Entity: (u'Flower (Adventure Video Game)', 0.152637636786, 4208, True)
+TargetType: Other
+Root Node: Alaska
+Result: United States of America (m.09c7w0)
+
+Query: what is the highest drop on stealth
+Entity: (u'Kar\u014d', 0.639706495892, 681, False)
+Entity: (u'Highest Drop (m/0lc_2q2)', 0.5, 0, True)
+Entity: (u'Highest Drop (Musical Recording)', 0.5, 0, True)
+Entity: (u'Victoria Cross', 0.351839233237, 113283, False)
+Entity: (u'Northrop Grumman B-2 Spirit', 0.318687740525, 48574, False)
+Entity: (u'Stealth game', 0.233952757474, 14645, False)
+Entity: (u'Stealth technology', 0.183949804716, 1903, False)
+Entity: (u'Liquorice', 0.162609809886, 783, False)
+Entity: (u'Stealth', 0.136887547627, 3206, True)
+TargetType: Other
+Query: how many stores are in nittany mall
+Entity: (u'Nittany Mall', 1.0, 247, True)
+Entity: (u'Nittany Lion', 0.997830771848, 70379, False)
+Entity: (u'Retail', 0.584832348219, 268680, False)
+Entity: (u'Shopping mall', 0.57385241509, 165801, False)
+Entity: (u'National Mall', 0.190896820185, 145209, False)
+TargetType: Other
+Root Node: Nittany Mall
+Result: 65
+
+Query: what is currency code for uk currency
+Entity: (u'Genetics', 1.0, 82602, False)
+Entity: (u'ISO 4217', 0.999542543458, 4370, False)
+TargetType: Other
+Root Node: ISO 4217
+Result: International Organization for Standardization (m.03vq8)
+
+Query: how many seasons of seinfeld are there
+Entity: (u'Many Seasons (Musical Release)', 0.5, 0, True)
+Entity: (u'Many Seasons (Musical Album)', 0.5, 0, True)
+Entity: (u'Seinfeld', 0.929960029738, 184588, True)
+Entity: (u'Season', 0.653369923608, 29811, False)
+TargetType: Other
+Root Node: Seinfeld
+Result: 9
+
+Query: when did easy aces stop being produced
+Entity: (u'Easy Aces', 1.0, 287, True)
+Entity: (u'Stop! (Composition) #43', 0.125165597957, 0, True)
+Entity: (u'Stop consonant', 0.118956223918, 2531, False)
 TargetType: Date
-Root Node: Walmart
-Result: 1962
+Root Node: Easy Aces
+Result: 1930
 
-Query: who designed pac-man
-Entity: (u'Pac-Man', 0.882586406895, 196287, True)
-TargetType: person, organization, employer, character
-Root Node: Pac-Man
-Result: Tōru Iwatani (m.01vhj6)
-
-Query: who invented koolaid
-Entity: (u'Kool-Aid', 0.711291198868, 163763, True)
-Entity: (u'Drinking the Kool-Aid', 0.143353777538, 63, False)
-TargetType: person, organization, employer, character
-Root Node: Kool-Aid
-Result: Kraft Foods (m.02ktt7)
-
-Query: what causes syphilis
-Entity: (u'Syphilis', 0.993693902013, 25796, True)
+Query: how many countries is spanish spoken in
+Entity: (u'United Nations Framework Convention on Climate Change', 0.217686725545, 327658, False)
+Entity: (u'Blasphemy law', 0.200680504161, 3058, False)
+Entity: (u"International Women's Day", 0.159864154474, 1136796, False)
+Entity: (u'Country (Quotation Subject)', 0.840984198953, 97485, False)
 TargetType: Other
-Root Node: Syphilis
-Result: Treponema pallidum (m.0gr12)
+Query: what musicians have died of lung cancer
+Entity: (u'Kim Manners', 1.0, 3750, False)
+Entity: (u'Giordano Bruno', 1.0, 27046, False)
+Entity: (u'Lung cancer', 0.998259568804, 46522, True)
+Entity: (u'Musician (Profession)', 0.878535792375, 65719, False)
+Entity: (u'Cancer (Disease or medical condition)', 0.86659843983, 400879, True)
+Entity: (u'Lung', 0.786159721191, 53522, True)
+TargetType: Other
+Root Node: Kim Manners
+Result: Actor (m.02hrh1q) Television Director (m.02krf9) Television Producer (m.03gjzk)
 
-Query: who started starbucks
-Entity: (u'Starbucks', 0.990318457842, 1747549, True)
-TargetType: person, organization, employer, character
-Root Node: Starbucks
-Result: Gordon Bowker (m.06q6mf) Zev Siegl (m.05f9x3z) Jerry Baldwin (m.06th9v)
+Query: how many people died in hurricane wilma
+Entity: (u'2005 Quran desecration controversy', 1.0, 24, False)
+Entity: (u'Hurricane Wilma', 0.996322056565, 88039, True)
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u'Died in', 0.5, 0, True)
+Entity: (u'Died in', 0.5, 0, True)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'Tropical cyclone', 0.432491769184, 267489, False)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+Entity: (u'Hawker Hurricane', 0.11147375428, 17351, False)
+TargetType: Other
+Root Node: Hurricane Wilma
+Result: 14
 
-Query: what team does mike babcock coach
-Entity: (u'Mike Babcock', 0.99929349426, 16973, True)
+Query: what team does richard hamilton play for
+Entity: (u'Richard Hamilton (Painting Artist)', 0.629586765782, 4781, True)
+Entity: (u'Richard Hamilton', 0.167066419176, 40362, True)
+Entity: (u'Richard Hamilton (Mathematician)', 0.113055717485, 971, True)
 Entity: (u'Team', 0.441557255154, 414089, True)
-Entity: (u'Coach', 0.367595380119, 4446, True)
-Entity: (u'Baseball Coach', 0.107632822168, 1596, False)
 TargetType: Other
-Root Node: Mike Babcock
-Result: Detroit Red Wings (m.02fp3)
+Root Node: Richard Hamilton
+Result: m.0j2gr4w
 
-Query: what is the nutty professor rated
-Entity: (u'The Nutty Professor (Romantic comedy Film) #1', 0.587665354296, 780, True)
-Entity: (u'The Nutty Professor', 0.36256872237, 3321, True)
-Entity: (u'The Nutty Professor (Romantic comedy Film) #1', 0.805671264665, 780, True)
-Entity: (u'Professor', 0.959717640992, 550241, True)
+Query: how many countries use the spanish peseta
+Entity: (u'The Spanish', 1.0, 0, True)
+Entity: (u'Peseta', 0.999416228838, 1712, False)
+Entity: (u'United Nations Framework Convention on Climate Change', 0.217686725545, 327658, False)
+Entity: (u'Blasphemy law', 0.200680504161, 3058, False)
+Entity: (u"International Women's Day", 0.159864154474, 1136796, False)
+Entity: (u'Country (Quotation Subject)', 0.840984198953, 97485, False)
 TargetType: Other
-Root Node: The Nutty Professor
-Result: PG-13 (USA) (m.0kprd3)
+Root Node: Peseta
+Result: 3
 
-Query: what team does alan butcher coach
-Entity: (u'Alan Butcher', 1.0, 414, True)
-Entity: (u'Team', 0.441557255154, 414089, True)
-Entity: (u'Coach', 0.367595380119, 4446, True)
-Entity: (u'Baseball Coach', 0.107632822168, 1596, False)
-TargetType: Other
-Root Node: Alan Butcher
-Result: Zimbabwe national cricket team (m.038_3y)
-
-Query: what is the area of south america
-Entity: (u'Carinthian Slovenes', 1.0, 702, False)
-Entity: (u'South America', 0.959975493807, 3896540, True)
-Entity: (u'Burkina Faso', 0.646300053495, 289381, False)
-Entity: (u'Lot-et-Garonne', 0.137402560241, 9503, False)
-Entity: (u'Area', 0.850698126258, 76568, True)
-TargetType: Other
-Root Node: South America
-Result: 17840000
-
-Query: how many religions use the bible
-Entity: (u'Holy of Holies', 1.0, 36892, False)
-Entity: (u'The Bible', 0.730411116385, 8936253, True)
-Entity: (u'The Bible', 0.963573301128, 8936253, True)
-Entity: (u'Religion (TV Genre)', 0.872776747502, 224215, False)
-TargetType: Other
-Root Node: The Bible
-Result: 10
-
-Query: what was henry viii's royal line
-Entity: (u'Henry VIII of England', 1.0, 223708, False)
-Entity: (u'S\xe9gol\xe8ne Royal', 1.0, 21911, False)
-Entity: (u'Royal Line (Canonical Version)', 0.111111111111, 0, True)
-Entity: (u'Royal Line', 0.111111111111, 0, True)
-Entity: (u'Royal line', 0.111111111111, 0, True)
-Entity: (u'Royal line', 0.111111111111, 0, True)
-Entity: (u'Royal line', 0.111111111111, 0, True)
-Entity: (u'Royal line', 0.111111111111, 0, True)
-Entity: (u'Royal line', 0.111111111111, 0, True)
-Entity: (u'Line', 0.2556582535, 3802, True)
-Entity: (u'Color Lines', 0.215124552327, 1575, False)
-TargetType: Other
-Root Node: Henry VIII of England
-Result: Tudor dynasty (m.07ply)
-
-Query: when was the sony nex-5 released
-Entity: (u'Sony NEX-5', 0.999915952261, 11897, True)
-Entity: (u'Sony NEX-5', 1.0, 11897, False)
-Entity: (u'Sony Corporation', 0.872445622211, 4138529, False)
-TargetType: Date
-Root Node: Sony NEX-5
-Result: 2010-05-11
-
-Query: how thick is the aletsch glacier
-Entity: (u'Aletsch Glacier', 1.0, 4859, True)
-TargetType: Other
-Root Node: Aletsch Glacier
-Result: 1000
-
-Query: who published the amazing spider-man
-Entity: (u'The Amazing Spider-Man (Comic Book Series)', 0.573326775499, 18235, True)
-Entity: (u'The Amazing Spider-Man', 0.186005670214, 19513, True)
-Entity: (u'The Amazing Spider-Man', 0.996730857639, 19513, False)
-Entity: (u'The Amazing Spider-Man (Comic Book Series)', 0.925543177251, 18235, True)
-Entity: (u'Spider-Man', 0.703701210683, 396380, True)
+Query: who produced sabotage by the beastie boys
+Entity: (u'Sabotage (Composition) #57', 1.0, 125, False)
+Entity: (u'Beastie Boys', 0.965319260123, 125749, True)
+Entity: (u'Beastie Boys', 0.991890234835, 125749, True)
+Entity: (u'Sabotage', 0.58528547895, 9625, True)
 TargetType: person, organization, employer, character
-Root Node: The Amazing Spider-Man (Comic Book Series)
-Result: Marvel Comics (m.058j2)
+Root Node: Sabotage (Composition) #57
+Result: Beastie Boys (m.017j6)
 
-Query: what armed forces does thailand have
-Entity: (u'Armed forces', 0.595912185844, 287183, True)
-Entity: (u'United States Armed Forces', 0.157455420528, 381293, False)
-Entity: (u'Thailand', 0.85256682469, 7425965, True)
-Entity: (u'Force (Dimension)', 0.66674208351, 16640, False)
-Entity: (u'United States Army Air Forces', 0.118974114304, 109208, False)
+Query: what bridges go over the san francisco bay
+Entity: (u'San Francisco Bay', 0.984996368442, 254966, True)
+Entity: (u'G\u221eVER', 0.9375, 15, False)
+Entity: (u'San Francisco', 0.916784148194, 10239400, True)
+Entity: (u'Thesan', 0.83097381494, 820, True)
+Entity: (u'San People', 0.164972654255, 70075, False)
+Entity: (u'Bridge (Literature Subject)', 0.470191703234, 105322, False)
+Entity: (u'Bridge', 0.201181995349, 958, False)
 TargetType: Other
-Root Node: Thailand
-Result: Royal Thai Navy (m.04js6n) Royal Thai Armed Forces (m.0vb3mwn) Royal Thai Army (m.04kfp9) Royal Thai Air Force (m.05w6hg)
+Root Node: San Francisco Bay
+Result: Golden Gate Bridge (m.035p3) San Francisco-Oakland Bay Bridge (m.0163pw)
 
-Query: who was charlie_s angels produced by
-Entity: (u"Charlie's Angels", 0.735632890574, 10805, True)
-Entity: (u"Charlie's Angels (Crime Fiction Film)", 0.188576706004, 6506, True)
-TargetType: person, organization, employer, character
-Root Node: Charlie's Angels (Crime Fiction Film)
-Result: Drew Barrymore (m.026c1) Leonard Goldberg (m.05zh9c) Nancy Juvonen (m.05p185j)
+Query: what other titles does 13 going on 30 have
+Entity: (u'13 Going on 30', 0.970047338277, 1131, True)
+Entity: (u'On30', 1.0, 5511, True)
+Entity: (u'GoingOn', 0.716865848357, 249, True)
+Entity: (u'Independent circuit', 0.362204531452, 1238, False)
+Entity: (u'FIFA', 0.271653398589, 10624, False)
+Entity: (u'The Protocols of the Elders of Zion', 0.208661579357, 34385, False)
+Entity: (u'Title', 0.245931810123, 5203, False)
+Entity: (u'Title of honor', 0.10768811256, 33, False)
+TargetType: Other
+Root Node: 13 Going on 30
+Result: Comedy (m.05p553) Romantic Movies (m.0gw5m91) Comedies (m.0gw5nxs) Fantasy (m.01hmnh) Sci-Fi & Fantasy (m.0cq22mw) Romantic Comedies (m.0cq22j9)
 
-Query: when was the printing press invented
-Entity: (u'Printing press', 0.998846440931, 14720, True)
-Entity: (u'The Printing', 1.0, 2, True)
-Entity: (u'Printing', 0.881219704238, 72546, True)
-Entity: (u'Freedom of the press', 0.250455738796, 182501, False)
-Entity: (u'Mass media', 0.14167457831, 168495, False)
-Entity: (u'News media', 0.105698767855, 28588, False)
-TargetType: Date
-Root Node: Printing press
-Result: 1440
+Query: what are the neighborhoods in new york city
+Entity: (u'New York City', 0.999999837581, 12313837, False)
+Entity: (u'Williamsburg', 0.999959700169, 74439, False)
+Entity: (u'York City F.C.', 0.981980350066, 39925, False)
+Entity: (u'New York', 0.653213390066, 8940433, True)
+Entity: (u'Neighbourhood', 0.304148511515, 48079, False)
+TargetType: Other
+Root Node: New York City
+Result: Port Morris (m.0dx4jh) New Lots (m.0471r8) Ocean Hill (m.0b0077) Arrochar (m.033083) Elm Park (m.051tsl) Brooklyn Navy Yard (m.025rvss) Brownsville (m.04fg12) Jamaica (m.01sn04) Woodside (m.04vfb6) Downtown Brooklyn (m.051x0y) Bay Terrace (m.0273cjy) Jamaica Estates (m.0fmgm1) Van Cortlandt Village (m.027yvgh) Spuyten Duyvil (m.044yr9) Kingsbridge (m.04g04c) Kingsbridge Heights (m.08342b) Port Ivory (m.05vj80) Red Hook (m.02msg9) Graniteville (m.051gh9) Bellerose (m.05gdyg) Stuyvesant Heights (m.02r5kj4) Flatbush (m.02y38b) Queens Village (m.033mfh) Marine Park (m.090bqz) Carroll Gardens (m.026j4b) Borough Park (m.01wgsh) Ridgewood (m.05xs2h) Park Slope (m.039lmn) Tottenville (m.029rhh) Madison (m.04gh54v) South Ozone Park (m.0dr0j0) Ditmas Park (m.08xjj8) Meatpacking District (m.05q_tg) Long Island City (m.0g4k0) Harlem (m.0f94t) Marble Hill (m.01lhry) Rockefeller Center (m.0163ff) Riverdale (m.01plg6) Midtown Manhattan (m.01s0rb) Lower East Side (m.01y937) Fieldston (m.04514p) Washington Heights (m.018z6h) Bensonhurst (m.02d6fj) Howard Beach (m.03gxj9) Far Rockaway (m.04q_yy) Sunnyside (m.05xs7q) Mariners Harbor (m.03mmnc) BoCoCa (m.03qktlr) Neponsit (m.0bn_6g) Port Richmond (m.02znlk) New Brighton (m.032r92) Sunset Park (m.02nnlh) Fresh Meadows (m.04w5h2) Bedford-Stuyvesant (m.04z24x) Huguenot (m.050293) SoHo (m.0pn20) Williamsburg (m.02zqf6) Melrose (m.04h7wc) Hudson Heights (m.09tjg0) East Village (m.01q2_k) Pelham Gardens (m.04515c) Laurelton (m.069yqt) Lindenwood (m.073f0d) Livingston (m.074g8l) Whitestone (m.05gfm1) Bayside (m.04drtg) Blissvile (m.05_p3r) Vinegar Hill (m.0flrbc) Elmhurst (m.01qcvj) Astoria (m.01qcx_) Upper West Side (m.01w9hg) Upper East Side (m.01w9lq) Rockaway Beach (m.04vkng) Corona (m.01qcv5) Oakland Gardens (m.03c46hl) Jackson Heights (m.01qcvw) Brooklyn Heights (m.03hnhj) Homecrest (m.0dsr4_) Douglaston (m.037tmg) Concourse (m.03qcj80) Kew Gardens Hills (m.0b1qq1) South Jamaica (m.0596rb) New Utrecht (m.0314j9) Rochdale (m.0f778p) East Flatbush (m.03kf88) Flushing (m.01nl79) Richmond Hill (m.05gf8s) St. George (m.02sl6f) Broadway (m.01gx3) Five Points (m.0p15j) Inwood (m.011sj6) Hell's Kitchen (m.015jh6) Koreatown (m.018yy7) Chelsea (m.018yzb) TriBeCa (m.01_45p) Alphabet City (m.01bjb5) Battery Park City (m.01gl2) NoLIta (m.01nbmr) Little Italy (m.01nbpn) NoHo (m.01nh2k) Morningside Heights (m.01pc2c) Yorkville (m.01r5dz) Marcus Garvey Park (m.025y6v0) Tenderloin (m.025zc_) Cooperative Village (m.0260zfq) Two Bridges (m.027y9bw) Waterside Plaza (m.027yphx) Financial District (m.029g2t) Lower Manhattan (m.02bmd_) South Street Seaport (m.02by5w) East Harlem (m.02cx_2) Theatre District (m.02qb4mp) Rose Hill (m.02qlxs1) Lenox Hill (m.02qm5fh) Flatiron District (m.02t9m_) Le Petit Senegal (m.02w23vf) Herald Square (m.03021q) Hudson, Manhattan (m.03cb9j9) Union Square (m.03gmzy) Kips Bay (m.03hbst) Gramercy (m.03hkzq) Turtle Bay (m.03hl84) Little Germany (m.03lkzx) Carnegie Hill (m.03mfvs) Bowery (m.03sjc4) Stuyvesant Town—Peter Cooper Village (m.03tyx7) Upper Manhattan (m.04ft1b) Diamond District (m.056v6n) Manhattan Valley (m.05j91k) Madison Square (m.05khns) Garment District (m.05q_1n) Loisaida (m.05wg_r) Astor Row (m.067pxf) Korea Way (m.07r49l) Hamilton Heights (m.08byx9) Tudor City (m.09scjt) Manhattanville (m.09vrxp) West Village (m.0bwc0b) Lincoln Square (m.0by4_m) Sugar Hill (m.0flq06) Sutton Place (m.0flqm5) Civic Center (m.0g27r8) Fort George (m.0hpr4py) Murray Hill (m.0pn1n) Chinatown (m.0pnb8) Hunters Point (m.05_p5g) Hunts Point (m.02_krf) Longwood (m.0452zl) Cobble Hill (m.024h1d) Eltingville (m.0501s6) Murray Hill (m.0fmgn2) Little Neck (m.04mh_g) Forest Hills (m.02t3dc) Bushwick (m.037kyw) Cambria Heights (m.073rk8) Morrisania (m.027vs4) Rego Park (m.04b815) Norwood (m.04n4bc) Soundview (m.04fs6p) Glendale (m.050y_m) Gravesend (m.02blgr) Boerum Hill (m.04nx7l) Greenwich Village (m.03dm7) Mill Basin (m.07769r) Times Square (m.07qdr) West Farms (m.0dx451) Crown Heights (m.01xy9s) Wakefield (m.045335) Stapleton (m.02vsh8) St. Albans (m.0h63z) Fort Hamilton (m.04ndt5) Cypress Hills (m.027xnbc) Ozone Park (m.01jm6p) West New Brighton (m.0452k6) Midwood (m.02qk7r) Columbus Circle (m.04mrkv) Annadale (m.05026z) Bay Ridge (m.01wgvb) Clinton Hill (m.02371s) East Williamsburg (m.02p073) Canarsie (m.036k6b) Prospect Heights (m.0412c8) Gowanus (m.0416_v) East New York (m.0471ng) Bath Beach (m.04cbx2) Mott Haven (m.04m155) Kew Gardens (m.03dzsv) Brighton Beach (m.03pyx8) Middle Village (m.05h66p) Fort Wadsworth (m.0522j_) Wingate (m.03h4lvc) Country Club (m.06hhq0) Maspeth (m.04t1yr) Travis (m.050mc6) Greenpoint (m.02372m) Flatlands (m.02b8qf) Pelham Bay (m.03l5gd) Rosedale (m.0434dk) Castleton Corners (m.050m39) Briarwood (m.02sts9) Hollis (m.02vrh8) Fort Greene (m.02b0mb) Woodhaven (m.03vc_x) Dyker Heights (m.020mnz) Queensbridge (m.03rb22) Oakwood (m.04_kql) Shore Acres (m.05bsdl) Windsor Terrace (m.03ns3m) Ocean Parkway (m.0b4z_f) Kensington (m.03blks) Utopia (m.0fckz7) Prospect-Lefferts Gardens (m.026jr9c) Throggs Neck (m.02dpcy) Tompkinsville (m.02zczt) Willets Point (m.0646dl) Morris Heights (m.0dvvgp) University Heights (m.07sxvt) Rockaway Park (m.0fmgnf) Woodlawn (m.044ytx) Great Kills (m.04_ttz) Belle Harbor (m.05gf08) Breezy Point (m.04vkxc) Arverne (m.0cqkln) Morris Park (m.08fl_9) Highbridge (m.04c16y) Georgetown (m.0bx_kf) New Dorp (m.027t15) Fordham (m.04fsrm) City Line (m.0brt82) Edgemere (m.0cqkl9) Rosebank (m.050c09) Parkchester (m.08w_gw) Hammels (m.026w2pp) South Beach (m.04z5t9) Egbertville (m.051syh) Greenridge (m.051v1q) Bergen Beach (m.0287shg) Highland Park (m.02rxyrk) Plumb Beach, Brooklyn (m.03chyxv) Farragut (m.03hhlhh) Beverly Square East (m.03hkr_4) Beverly Square West (m.03hkrz3) Gerritsen Beach (m.03qfwp) Pigtown (m.04cbv7) Weeksville (m.0f7s5p) Pomonok (m.0c0j47) DUMBO (m.02z3wk) Castle Hill (m.0ghbcx) Fiske Terrace (m.04cbkl) Bedford (m.0byb26) Forest Hills Gardens (m.05h6pz) Heartland Village (m.07htzg) Starrett City (m.07lq9g) Arthur Avenue (m.037ksw) New Springville (m.051fxy) Pleasant Plains (m.050972) Howard Park (m.07g_z0) North New York (m.04gkhm) Bridge Plaza, Brooklyn (m.02r5h0d) Seagate (m.06952b) Woodrow (m.051g54) Stapleton Heights (m.02zns2) Greenwood Heights (m.02vkw73) College Point (m.0chqzk) Clason Point (m.03m54hd) Charleston (m.047rwn) Jamaica Hills, Queens (m.04c648) Sunnyside Gardens (m.0d2nkv) Beechhurst (m.0273mxb) Co-op City (m.03nxh_) Electchester (m.027sh2v) The Hub (m.03c19fg) Richmondtown (m.01g3t3) Holliswood (m.03cz3zn) Bedford Park (m.06jprp) Bloomfield (m.051txs) Dutch Kills (m.0gkqwx) Richmond Valley (m.0509mc) Baychester (m.044ywn) Todt Hill (m.027t4v) Meiers Corners (m.051h2s) Rossville (m.051g94) Edenwald (m.02vpp1t) Van Nest (m.08w_dt) Allerton (m.04fs30) Silver Beach (m.05cmqd) East Morrisania (m.0csgvm) Concord (m.051gr9) Fordham-Bedford (m.03hhnlx) Manhattan Beach (m.03tv5v) Broad Channel (m.03z_w3) Belmont (m.02q6tl6) Ditmars (m.03cz468) Tottenville Beach (m.0262k0d) Hollis Hills (m.0269m7v) Astoria Heights (m.026g_10) Seaside (m.0272qhs) Manor Heights (m.027nx8g) Glen Oaks (m.02pp4cg) Midland Beach (m.02ymyp)
 
-Query: what is the theme song of full house
-Entity: (u'The World Is Not Enough (Composition)', 0.438699859638, 179, False)
-Entity: (u'The NeverEnding Story (Composition) #2', 0.299599183851, 159, False)
-Entity: (u'When the Wind Blows (Composition) #62', 0.171199350201, 19, False)
-Entity: (u'Full House', 0.777945715252, 32918, True)
-Entity: (u'Theme music', 0.552542726412, 8391, False)
-Entity: (u'Full House (TV Romantic Comedy) #27', 0.124765609267, 1452, True)
-Entity: (u'Song', 0.572532232892, 206492, True)
+Query: what animal does marscapone cheese come from
+Entity: (u'Mascarpone', 1.0, 7786, False)
+Entity: (u'COMEFROM', 0.841571750678, 501, True)
+Entity: (u'Mascarpone', 1.0, 7786, False)
+Entity: (u'Animal', 0.845108066217, 139236, True)
+Entity: (u'Cheese (Food)', 0.839359526733, 54404, True)
+TargetType: Other
+Root Node: Mascarpone
+Result: Italy (m.03rjj) Ireland (m.03rt9)
+
+Query: what is the population estimated in the world
+Entity: (u"World's busiest airport", 0.196868127069, 141, False)
+Entity: (u'Texas Medical Center', 0.145510692144, 33494, False)
+Entity: (u'Hon Hai Precision Industry Co., Ltd.', 0.145510692144, 140098, False)
+Entity: (u'Colca Canyon', 0.11983226613, 19021, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'The World (United Arab Emirates)', 0.240704167885, 11125, True)
+Entity: (u'World', 0.199501437846, 1658878, True)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Population', 0.869365457191, 43740, True)
+Entity: (u'World', 0.491277033416, 1658878, True)
+Entity: (u'Hard disk drive', 0.135631008797, 647547, False)
+TargetType: Other
+Root Node: Population
+Result: 6677563921
+
+Query: how many monarchs are from the house of tutor
+Entity: (u'Inanna', 1.0, 33889, False)
+Entity: (u'New Zealand', 0.608695513044, 5456131, False)
+Entity: (u'Dick Cheney', 0.424241641248, 1452191, False)
+Entity: (u'Affiliate marketing', 0.260869791304, 296716, False)
+Entity: (u'Gerald Ford', 0.206060354061, 198655, False)
+Entity: (u'Royal house', 0.151515406505, 17759, False)
+Entity: (u'Francisco Franco', 0.130434695652, 102997, False)
+Entity: (u'Tutor', 0.864903031422, 59798, True)
+Entity: (u'Monarch (Male Noble Rank)', 0.604566733972, 359753, False)
 Entity: (u'House (TV Drama)', 0.311248122988, 41658, True)
 Entity: (u'House music', 0.306339887015, 62058, False)
+Entity: (u'Monarchy', 0.173562066695, 291730, False)
 Entity: (u'House', 0.119683772698, 236649, True)
+Entity: (u'Monarch butterfly', 0.102871155408, 26343, False)
 TargetType: Other
-Root Node: Full House
-Result: Everywhere You Look (m.0c0l1tk)
+Query: what was the cost of building the magnum xl-200
+Entity: (u'Arab\u2013Israeli conflict', 1.0, 7427, False)
+Entity: (u'Magnum XL-200', 1.0, 1054, True)
+Entity: (u'Falcon 9', 0.420218820801, 11330, False)
+Entity: (u'The Magnum (m/0msk5rd)', 0.333333333333, 0, True)
+Entity: (u'The Magnum (TV Episode)', 0.333333333333, 0, True)
+Entity: (u'The Magnum (Musical Recording)', 0.333333333333, 0, True)
+Entity: (u'Cost', 0.774598575482, 68910, True)
+Entity: (u'Magnum Photos', 0.301333083058, 29424, False)
+Entity: (u'Magnum, P.I.', 0.186677346964, 18304, False)
+Entity: (u'Magnum', 0.135211717405, 2704, True)
+Entity: (u'Magnum', 0.11480832251, 3519, True)
+TargetType: Other
+Root Node: Magnum XL-200
+Result: United States dollar (m.09nqf)
 
-Query: what product lines does ipod include
-Entity: (u'Product lining', 0.910321061256, 1894, False)
-Entity: (u'iPod', 0.976600785647, 6246180, True)
-Entity: (u'Product', 0.65305977864, 96836, True)
-Entity: (u'Line', 0.425166411023, 3802, False)
-Entity: (u'Color Lines', 0.174321717817, 1575, False)
-TargetType: Other
-Root Node: iPod
-Result: iPod touch (m.02z6z4v) iPod classic (m.02z6yz_) iPod shuffle (m.04yg_s) iPod nano (m.07t99m) iPod mini (m.026ysq)
+Query: who was the editor in chief of die welt in 2000
+Entity: (u'The editor in chief', 1.0, 0, True)
+Entity: (u'Editing', 0.993883000342, 457697, False)
+Entity: (u'Editing', 0.999997815153, 457697, False)
+Entity: (u'Die Welt', 0.997294786398, 22610, True)
+Entity: (u'Trent Dilfer', 0.453455651679, 12474, False)
+Entity: (u'United States presidential election, 2000', 0.162778935666, 1887, False)
+Entity: (u'2000 Camp David Summit', 0.139524621282, 2703, False)
+Entity: (u'2000 Republican National Convention', 0.139524621282, 125, False)
+Entity: (u'The Editor (Musical Recording)', 0.111111111111, 0, True)
+Entity: (u'The Editor (m/0mqqbfr)', 0.111111111111, 0, True)
+Entity: (u'The Editor (Film character) #2', 0.111111111111, 0, True)
+Entity: (u'The Editor (Film character) #1', 0.111111111111, 0, True)
+Entity: (u'The Editor (TV Episode) #5', 0.111111111111, 0, True)
+Entity: (u'The Editor (TV Episode) #4', 0.111111111111, 0, True)
+Entity: (u'The Editor (Fictional Character)', 0.111111111111, 0, True)
+Entity: (u'MPlayer', 0.104643465962, 60108, False)
+Entity: (u'World', 0.493376920138, 1658878, False)
+Entity: (u'Tribal chief', 0.331907500968, 10416, False)
+Entity: (u'Die', 0.198175856176, 1156, True)
+Entity: (u'Die (France)', 0.191733629266, 225, True)
+Entity: (u'Chief of police', 0.179531737066, 10639, False)
+Entity: (u'Scottish clan chief', 0.155823871627, 945, False)
+Entity: (u'Film editing', 0.132871027307, 5918, False)
+Entity: (u'Welt, Germany', 0.111782705149, 118, False)
+Entity: (u'Die', 0.107543440882, 3033, True)
+Entity: (u'2000', 0, 0, True)
+TargetType: person, organization, employer, character
+Root Node: The editor in chief
+Result: Benton Patterson (m.05xv1kl)
 
-Query: how many rna codons does glycine have
-Entity: (u'RNA Codons', 0.333333333333, 0, True)
-Entity: (u'RNA Codons', 0.333333333333, 0, True)
-Entity: (u'RNA-codons', 0.333333333333, 0, True)
-Entity: (u'Genetic code', 1.0, 9493, False)
-Entity: (u'RNA', 0.970390513211, 740804, True)
-Entity: (u'Glycine (Amino Acid)', 0.803683345255, 27567, True)
-Entity: (u'Glycine', 0.1169782139, 1116, True)
+Query: what is the lcd screen resolution of a nikon d80
+Entity: (u'LCD screen resolution', 0.5, 0, True)
+Entity: (u'LCD screen resolution', 0.5, 0, True)
+Entity: (u'Nikon Corporation', 0.999997495818, 798662, False)
+Entity: (u'Nikon D80', 0.999981920741, 55311, True)
+Entity: (u'Liquid-crystal display', 0.91350212558, 531058, False)
+Entity: (u'Display resolution', 0.858256503715, 158047, False)
+Entity: (u'Image resolution', 0.141743496285, 51077, False)
+Entity: (u'GNU Screen', 0.467100349642, 4097, False)
+Entity: (u'Image resolution', 0.268592687575, 51077, False)
 TargetType: Other
-Root Node: Glycine (Amino Acid)
-Result: 4
+Root Node: Nikon D80
+Result: 2.5
 
-Query: how many employees does nintendo have
-Entity: (u'Employment', 0.996849820118, 182140, False)
-Entity: (u'Nintendo', 0.958340931966, 1855975, True)
+Query: how many people ride the london underground daily
+Entity: (u'London Underground', 0.999980803931, 156279, True)
+Entity: (u'SS London', 0.986842105263, 75, False)
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'London', 0.919147270231, 22553522, True)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+Entity: (u'Daily', 0.217761705861, 2226, True)
+Entity: (u'Iveco Daily', 0.209739935923, 2144, False)
+Entity: (u'E.G. Daily', 0.108978679393, 1114, False)
 TargetType: Other
-Root Node: Nintendo
-Result: 11
+Root Node: London Underground
+Result: 4250000
 
-Query: what spirits are produced in kentucky
-Entity: (u'Produced_in', 0.2, 0, True)
-Entity: (u'Produced_in', 0.2, 0, True)
-Entity: (u'Produced_in', 0.2, 0, True)
-Entity: (u'Produced_in', 0.2, 0, True)
-Entity: (u'Produced in', 0.2, 0, True)
-Entity: (u'Kentucky', 0.832334426438, 2769768, True)
-Entity: (u'Spirit', 0.520667307528, 108105, False)
-Entity: (u'Distilled beverage', 0.21588262561, 21946, False)
+Query: how many runs does the thunder ridge ski area have
+Entity: (u'Thunder Ridge Ski Area', 1.0, 465, True)
+Entity: (u'Ski resort', 0.916020052239, 34885, False)
+Entity: (u'Oklahoma City Thunder', 0.551682865546, 235114, False)
+Entity: (u'Cardcaptor Sakura', 0.448242048105, 46890, False)
+Entity: (u'Area', 0.850698126258, 76568, True)
+Entity: (u'Run', 0.639985197285, 147862, False)
+Entity: (u'Thunder', 0.486833759831, 6459, True)
+Entity: (u'Run', 0.302589581531, 4, False)
+Entity: (u'Thunder (Hard rock Artist)', 0.100906012105, 1535, True)
 TargetType: Other
-Root Node: Kentucky
-Result: Woodford Reserve (m.04m1h1) Angel's Envy (m.0nk3wm7)
+Root Node: Thunder Ridge Ski Area
+Result: 30
 
-Query: what is ashok malhotra's bowling pace
-Entity: (u'Bowling Pace', 1.0, 0, True)
-Entity: (u'Ashok Malhotra', 0.909090909091, 110, True)
-Entity: (u'Bowling', 0.736844199501, 15451, True)
-Entity: (u'Peace', 0.355393621034, 442651, False)
+Query: who used to be quarterback for the green bay packers
+Entity: (u'Green Bay Packers', 0.999991570571, 949048, True)
+Entity: (u'The Times', 0.658868266945, 1154691, False)
+Entity: (u'Beach House', 0.10263780781, 14791, False)
+Entity: (u'Dave Pike', 0.563389121547, 664, False)
+Entity: (u'Green Bay', 0.548660455526, 25858, True)
+Entity: (u'Clarence Thomas', 0.513434075445, 155203, False)
+Entity: (u'Fenway Park', 0.378319068515, 185205, False)
+Entity: (u'Ta\u1e47h\u0101', 0.275143461221, 1130, False)
+Entity: (u'TO BE (Composition) #1', 0.257986196883, 0, True)
+Entity: (u'Copula', 0.190224110281, 805, False)
+Entity: (u'Money (Quotation Subject)', 0.171371200611, 70037, False)
+Entity: (u'Latin Language', 0.157225029268, 2641407, False)
+Entity: (u'New Haven Green', 0.138239749112, 3774, False)
+Entity: (u'The Green (Location)', 0.125672213781, 75, True)
+Entity: (u'Medicare', 0.108091373211, 2941905, False)
+Entity: (u'Quarterback', 0.999374849723, 41564, True)
+TargetType: person, organization, employer, character
+Root Node: Green Bay Packers
+Result: Brett Favre (m.0cv72h)
+
+Query: how many speeches have been given about world war ii
+Entity: (u'World War II', 0.999917758498, 5981889, True)
+Entity: (u'Risk (Game)', 0.593220773341, 129, False)
+Entity: (u'World war', 0.538615092509, 283462, True)
+Entity: (u'Basilica', 0.293750323438, 69333, False)
+Entity: (u'Worldwar', 0.175584138821, 557, True)
+Entity: (u'Microsoft Word', 0.162499353125, 2289945, False)
+Entity: (u'Open Letter to Hobbyists', 0.1500002875, 276, False)
+Entity: (u'Bombardier Aerospace and Embraer S.A. government subsidy controversy', 0.143750035938, 0, False)
+Entity: (u'World War I', 0.120219684792, 1939004, False)
+Entity: (u'Public speaking', 0.781470770482, 29740, False)
+Entity: (u'Speech', 0.122892670963, 51443, False)
 TargetType: Other
-Root Node: Ashok Malhotra
-Result: Medium (m.02k87p1)
+Root Node: World War II
+Result: 1
+
+Query: when did john j. raskob own the empire state building
+Entity: (u'Empire State Building', 0.9995525589, 194352, True)
+Entity: (u'John J. Raskob', 1.0, 1741, True)
+Entity: (u'Origin of the name "Empire State"', 0.90423050678, 16146, False)
+Entity: (u'John J. Pershing', 0.999543322124, 24076, False)
+Entity: (u'State-building', 0.995833333333, 956, True)
+Entity: (u'The Empire', 0.288313901064, 13707, True)
+Entity: (u'Constitution of the Roman Empire', 0.173175168004, 8, False)
+Entity: (u'Building', 0.803766397599, 176254, True)
+Entity: (u'U.S. state', 0.264017426139, 2692783, False)
+Entity: (u'Empire (Quotation Subject)', 0.157962731024, 3877, True)
+Entity: (u'States of India', 0.155281370633, 30636, False)
+Entity: (u'Empire', 0.116295462565, 23773, True)
+Entity: (u'Empire (TV Drama) #65', 0.102918199269, 2526, True)
+TargetType: Date
+Root Node: Empire State Building
+Result: 1879
+
+Query: what german athletes have participated in the olympics
+Entity: (u'Olympic Games', 0.393938598371, 4131205, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'2008 Summer Olympics', 0.225704702285, 480035, False)
+Entity: (u'The Olympics', 0.173458415468, 58, True)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Athlete (Profession)', 0.847023944375, 61446, False)
+Entity: (u'Olympic Games', 0.472683419347, 4131205, False)
+TargetType: Other
+Root Node: 2008 Summer Olympics
+Result: Erica Bartolina (m.04f9fgp) Magnus Petersson (m.03qhql) Stuart Musialik (m.08q3tg) Donny Robinson (m.02qh22l) Simon Sjödin (m.026b1mx) Sara Goller (m.03qkdhw) Jens Lundqvist (m.047rywk) Carrie Howe (m.04f9h5r) Dara Torres (m.05scsw) Birgit Prinz (m.02hby3) Lee Chong Wei (m.03nt6g) Jill Henselwood (m.04jjy0t) Satoshi Ishii (m.026xr4d) Lee Jae-jin (m.02z2442) Tarnee White (m.0bs5zx) Im Dong-Hyun (m.03np1g) Joseph Hagerty (m.04f9ggx) Hrysopiyí Devetzí (m.07yd_9) Ekaterina Khilko (m.04jny_m) Adam Wiercioch (m.04gc1l9) Calvin Smith (m.03d3mt) Philippe Beaudry (m.0j7kykn) Christopher Estrada (m.04f9g62) Teja Zupan (m.0py1xn4) Lindsay Tarpley (m.02r3nxv) Keeth Smart (m.03017t) Angela Hucles (m.03byqbb) Ryan Millar (m.04dz2gj) Tim Morehouse (m.04ggyp8) Heather Mitts (m.04pxcx) Chris Kaman (m.05r6n_) Daniel Walsh (m.0dvk4k) Emily Seebohm (m.02qb61s) Wang Weidong (m.04ghj58) Wang Hao (m.08kjzw) Therese Sjögran (m.03cg4sv) Victoria Sandell Svensson (m.0bnv0d) Ahed Joughili (m.06w2xg6) Olga Ovtchinnikova (m.04g4r3s) Sandra Sassine (m.04gr4_l) Anton Golotsutskov (m.04jks2c) Kyle Bennett (m.027kb93) Nancilea Underwood Foster (m.04f9ftr) Taylor Milne (m.04g4r2r) Daniel Liam Parsons (m.04g4r41) Joo Hyun-Jung (m.04gbgvd) Dag Albert (m.04gd7xh) Dmitry Klokov (m.04jq36x) Ruben Houkes (m.02rrl1t) Jake Wetzel (m.03pyx_) Michael Friedman (m.04f9h04) Seth Amoo (m.047g2mm) Chen Jin (m.027qm1h) He Wenna (m.04grrs2) Amber Neben (m.066p_g) Alina Dumitru (m.02qd278) Mihai Covaliu (m.04gl98b) Casey Eichfeld (m.09gc0tx) Albert Rocas (m.04jf7hf) Christie Rampone (m.0bf0l6) Kenenisa Bekele (m.01yk06) Elena Kaliská (m.02q92b9) Wang Ki-Chun (m.0407v62) Lu Ying-chi (m.04gkvtn) Alexander Dale Oen (m.0cjyhf) Jennifer Goldsack (m.0g9yr28) Diego Confalonieri (m.04gc1kg) Stefano Carozzo (m.04gc1kv) Alfredo Rota (m.04jlp5l) Becky Holder (m.04gp0yg) Mark Gangloff (m.028493g) Landry N'Guémo (m.03d69b3) Alain Junior Ollé Ollé (m.03mczym) Andrej Klimovets (m.03mhtck) Khasan Baroyev (m.07vq8t) Fabien Gilot (m.04gl0zm) Raúl Entrerríos (m.04jfccm) Tim Berrett (m.02709z4) Gary Reed (m.027bwyq) Svetlana Feofanova (m.03r0j7) Richard Mateelong (m.0gy4g9) Xian Dongmei (m.02z23xw) Nataliya Dobrynska (m.0268b9l) Benjamin Kleibrink (m.03cd3x2) Elise Laverick (m.026_108) Ruslan Tumenbaev (m.04gh60p) Kanatbek Begaliev (m.04gm8r5) Patrick Hausding (m.04gmpgs) Gabriel Beauchesne-Sévigny (m.09gk360) Mohamed Monir (m.0kcf_pk) Chen Yanqing (m.02z1_kv) Minna Nieminen (m.04jf7pm) Sanna Stén (m.04jf_l7) Hanna  Thompson (m.04f9g10) Katelyn Falgowski (m.04f9gcx) Lauren Bay Regula (m.04fzhq9) Halyna Pundyk (m.04gc19z) Olha Zhovnir (m.04gc1b6) Olena Khomrova (m.04gc1bg) Luigi Tarantino (m.04jccdf) Gábor Kis (m.04jk07y) Susanna Kallur (m.08zrz8) Benjamin Behrla (m.076_3p6) Linda Heed (m.04gd7xz) Svetlana Boiko (m.025yzdy) Aida Chanaeva (m.025yzg_) Andrew Campbell (m.027sy_9) Jeremy Wariner (m.03qb3s) Viktoria Nikishina (m.04jgbvt) Yevgeniya Lamonova (m.04jh9_n) Fabian Cancellara (m.08p1hq) Kobe Bryant (m.01kmd4) Chen Yibing (m.026xcqk) Jin Jong-Oh (m.02z2q1g) Michael V. Knudsen (m.03mh26s) Trevor Cahill (m.04f9gpv) Seth "Weston" Kelsey (m.04f9grb) Oliver Bone (m.04g4qrp) David Ford (m.04g4qw1) Mathew Hughes (m.04jb8k) Alison Gregorka (m.04jjb54) Neil Kilkenny (m.04tzpk) Heiner Brand (m.02z5wsd) Ben Rutledge (m.03q5lc) Rafael Nadal (m.051q39) Mike Mahood (m.090f3w) Georgina Earl (m.03nnqt) Rumyana Neykova (m.04jc5k2) Kerri Walsh Jennings (m.03qv2r) Kim Rhode (m.03qzrx) Bronte Barratt (m.0413435) Emma Samuelsson (m.04gd7x6) Isabelle Gulldén (m.04gd93_) Zuzana Štefečeková (m.04gj0f7) David Calder (m.04jf359) Tom Goegebuer (m.04jn6vv) Steven López (m.058yfd1) Chaunté Lowe (m.07brc0) DeeDee Trotter (m.07l_jl) Scott Parsons (m.08078g5) Benn Fraker (m.04gml4x) Krista Guloien (m.04j9l3b) Galen Rupp (m.0gz_9w) Tom Daley (m.028b92j) Walter Dix (m.02rdzqs) Kohei Uchimura (m.04gv794) Andréanne Morin (m.04jcms6) Anders Gustafsson (m.04jdr37) Julien Absalon (m.07fl3m) Emilie Fournel (m.07kbtxr) Nicole Cooke (m.0b1p0x) Yoon Kyung-Min (m.0k90l3y) Venelin Venkov (m.0kf7g88) Nikita Rukavytsya (m.027lbry) Jason Kidd (m.02cg2v) Simon Whitfield (m.02lyw0) Jason Lyon (m.02wwd4t) Louis Smith (m.02z90z5) Alison Bradley (m.03qhfv) Natalie du Toit (m.048sr1) Crystal Huang (m.04f9fzl) Daniel McCormick (m.04f9g16) Jodi-Ann Robinson (m.04g4r5r) Michael Winter (m.04g4rb1) Cha Kum Chol (m.04g6dhj) Otryadyn Gündegmaa (m.04gjssn) Lauren Crandall (m.0knv_sd) Ricardo Santos (m.02r7mvl) Sally McLellan (m.0287hgn) Pavol Hochschorner (m.02q9177) Teddy Riner (m.02rrhxb) Ranomi Kromowidjojo (m.03wj68x) Anton Dahlberg (m.04gd8ft) Emma Green Tregaro (m.079zzh) Christian Bekamenga (m.03hjx6s) Sally Barkow (m.04f9gf6) Stéphane Mbia (m.027lgj5) Nilla Fischer (m.03ckpzv) Emily Silver (m.04f9g1d) Ravinder Kahlon (m.04g4qzq) Romina Stefancic (m.04g4r85) Robert Newbery (m.090d1_) Oksana Chusovitina (m.098vcg) Nicholas Sprenger (m.09lt_y) Linus Thörnblad (m.0c07gv) Gustavo Endres (m.02qyt6z) Viktor Ruban (m.03qnbm) René Enders (m.04jgf_x) Haislan Garcia (m.04g4qwm) Will Frazer (m.04g54t6) Diego Ribas da Cunha (m.06mt5g) Fanny Rinne (m.0fkhdm) Trent McClenahan (m.0784gw) Alejandro Foglia Costa (m.0k86vp4) Mijail Lopez (m.03c710f) Gustav Erik Larsson (m.025yb39) Margherita Granbassi (m.025yhqz) Ryan Reser (m.04f9gj0) Brady Reardon (m.04g4r58) Mathew Helm (m.08kkm0) Giovanna Trillini (m.0ks1cj) Peter Short (m.09332x) Jake Deitchler (m.047qbsm) Shani Marks (m.04f9gcj) Mac Cone (m.04g4qt8) Du Li (m.02z3v0h) Roger Kluge (m.03m7cvx) Vadim Khamuttskikh (m.03wcgxd) Aleksey Kuleshov (m.04cr6tl) Warren Potent (m.04gsccj) Nastia Liukin (m.0bfy48) Nikola Grbić (m.0btdq2) Róbert Gunnarsson (m.04jb226) Hreiðar Guðmundsson (m.04jj12b) Godfrey Khotso Mokoena (m.0gh1tp) Tom Pappas (m.02ppgnb) Zhang Juanjuan (m.03pmll) Boris Steimetz (m.04g76zv) Michael Kraus (m.0cgz02z) Cheng Fei (m.06xxvq) Deontay Wilder (m.02rny4c) Michael Phelps (m.03cvfg) Anky van Grunsven (m.074ss1) Archie Thompson (m.058tt1) Guðmundur Guðmundsson (m.0280gyt) Maki Tsukada (m.02vrfm0) Dominic Seiterle (m.02z8qwy) Jarrod Shoemaker (m.03c2w7_) Sturla Ásgeirsson (m.04jf0p0) Guðjón Valur Sigurðsson (m.04jkk60) Sigfús Sigurðsson (m.04jl5rm) Anna Paulson (m.03cjl80) Adam van Koeverden (m.03s8sv) Jesse Gey (m.04f9g70) Travis Padgett (m.04f9gnj) Cheuk Yuen Victoria Poon (m.04g4r4q) Fabien Lefèvre (m.04gm3pz) Giovanni Pellielo (m.04gsbk1) Christina Loukas (m.04jjywm) Matt Gentry (m.04q7p_h) Bershawn Jackson (m.07qdk9) Peter Hudnut (m.04f9g4d) Lara Davenport (m.04gn1j3) Kevin Hansen (m.04jdy_7) Robin Söderling (m.059ntf) Deron Williams (m.06p0q8) Melissa Gorman (m.06zmf96) Chris Paul (m.0cymln) Jessica Mendoza (m.0dgrp1) Candace Parker (m.04bbs4) José Luis Abajo (m.025yyn5) Emily Zurrer (m.026v6pr) Stubby Clapp (m.03r3b6) Cao Lei (m.025yvm4) Dathan Ritzenhein (m.09f20j) Abhinav Bindra (m.0gftpr) David Zilberman (m.04g4rbt) Islambek Albiev (m.04ghdr8) Germaine Mason (m.07qnbp) Jared Connaughton (m.026xgnd) Kim Vandenberg (m.04ghy5p) Sandra Smisek (m.03bz405) Marleen Veldhuis (m.088yb6) Aaron Feltham (m.05q6wsm) Jason Rogers (m.047n14d) Shalane Flanagan (m.02qs9v4) André Heller (m.04cv3dx) Marcelo Elgarten (m.04jcf5v) Xiao Qin (m.06xvvf) Jill Penner (m.04f9fwx) Jeffrey Powers (m.04f9g_s) Jiang Lin (m.04g05fp) Geneviève Beauchesne-Sevigny (m.04g4qr0) Sandra Donnelly (m.04g4qv9) Zoë Hoskins (m.04g4qyz) Francis Luna-Grenier (m.04g4r0s) Karolina Kedzierska (m.04gd8h3) Augusto Midana (m.04gmgvp) Samuel Fuchs (m.04jf2z2) Anderson Rodrigues (m.04jkw2m) Markus Oscarsson (m.06m5jx) Nathan Brannen (m.027ck6j) Geir Gulliksen (m.04jdf80) Thomas Hall (m.04jnvtw) Igor Cassina (m.03qd3v) Suzy Powell-Roos (m.04f9g_6) Erin Cafaro (m.04jg3vn) Hunter Kemper (m.05tgjd) Elaine Youngs (m.07dy6h) Ildikó Mincza-Nébald (m.04gs30x) Scott Sandison (m.093315) James Blake (m.01m52l) Emily Cross (m.04gj6s2) Caryn Davies (m.04jk1ht) Malcolm Howard (m.04jkt30) Tyler Winklevoss (m.05ms8kl) Mark Bridge (m.08q3mp) Victoria Galindo (m.04f9gbs) Amirul Hamizan Ibrahim (m.04g6dhq) Peter Vanderkaay (m.0ckpj6)
+
+Query: how many people played in the 2010 fifa world cup final
+Entity: (u'2010 FIFA World Cup', 1.0, 93039, True)
+Entity: (u'2010 FIFA World Cup Final', 0.978494608602, 218, True)
+Entity: (u'2010 FIFA World Cup', 0.577319312658, 93039, False)
+Entity: (u'1954 FIFA World Cup Final', 0.340206363737, 196, False)
+Entity: (u'FIFA World Cup', 0.899885024582, 247309, True)
+Entity: (u'Show Jumping World Cup', 0.198443892208, 3099, False)
+Entity: (u'2006 FIFA World Cup Final', 0.128404735699, 102, False)
+Entity: (u'El Salvador national football team', 1.0, 3757, False)
+Entity: (u'played in', 1.0, 0, True)
+Entity: (u'2010 FIFA World Cup', 1.0, 93039, False)
+Entity: (u'1956 FA Cup Final', 0.584424332553, 69, False)
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'FA Cup Final', 0.156162705624, 32831, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+Entity: (u'2010', 0, 0, True)
+TargetType: Other
+Root Node: 2010 FIFA World Cup Final
+Result: 14 22 19 8 15 7 2 23 1 6 3 18 12 5 21 17 16 20 9 10 11 13 4
+
+Query: on how many projects was james walker a design engineer
+Entity: (u'Design engineer', 0.999850029994, 6667, True)
+Entity: (u'Walker motifs', 0.816901408451, 116, False)
+Entity: (u'James Walker (Civil engineer)', 0.234172974493, 260, True)
+Entity: (u'Walkera', 0.183098591549, 26, True)
+Entity: (u'James Walker (Record producer)', 0.13690112355, 152, True)
+Entity: (u'James Walker', 0.134729084419, 885, True)
+Entity: (u'Design', 0.787730412566, 197431, True)
+Entity: (u'Engineer', 0.782162713023, 32338, True)
+Entity: (u'Project (Quotation Subject)', 0.546876560321, 421844, False)
+Entity: (u'Audio Engineer', 0.126586309981, 21859, False)
+TargetType: Other
+Root Node: James Walker (Civil engineer)
+Result: Design and Construction of the Needles Lighthouse (m.05g_bx3) Design and Construction of the Start Point Lighthouse (m.05g_bwr) Design and Construction of the Maplin Sands Lighthouse (m.05h00g9) Design and Construction of the Bishop Rock Lighthouse (m.05g_bwy) Design and Construction of the Westminster Bridge (m.05g_bx9) Design and Construction of the Casquet Lighthouse (m.05g_bx0)
+
+Query: what is the genre of the skeptics' guide to the universe
+Entity: (u"The Skeptics' Guide to the Universe", 0.960127877323, 3146, True)
+Entity: (u'Caganer', 0.760456609637, 716, False)
+Entity: (u"The Skeptics' Guide to the Universe", 1.0, 3146, False)
+Entity: (u"Barlowe's Guide to Extraterrestrials", 1.0, 131, False)
+Entity: (u'Skeptics', 0.967741935484, 60, True)
+Entity: (u'To the Universe (Metalmouse remix)', 0.5, 0, True)
+Entity: (u'To the Universe (Metalmouse remix)', 0.5, 0, True)
+Entity: (u'GenreOf', 1.0, 0, True)
+Entity: (u"Barlowe's Guide to Extraterrestrials", 1.0, 131, False)
+Entity: (u'Skeptics', 0.967741935484, 60, True)
+Entity: (u'Indigenous', 0.589473109031, 1753, False)
+Entity: (u'Universe', 0.513196996765, 888820, True)
+Entity: (u'Steampunk', 0.487750779292, 97357, False)
+Entity: (u'Skepticism', 0.461346168827, 34496, False)
+Entity: (u'Guide', 0.346416618347, 52828, True)
+Entity: (u'Noise music', 0.336302705324, 2271, False)
+Entity: (u'Bird', 0.29473749662, 276259, False)
+Entity: (u'The Universe', 0.234104325248, 21402, True)
+Entity: (u'Guide (Musical Film)', 0.143258992552, 125, True)
+Entity: (u'Scientific skepticism', 0.121406617273, 376, False)
+Entity: (u'The Universe (Newspaper)', 0.117051652968, 121, True)
+Entity: (u'Counter-Strike', 0.115789394349, 157580, False)
+Entity: (u'Girl Guides', 0.108317696878, 53045, False)
+Entity: (u'Universe', 0.617414701133, 888820, True)
+Entity: (u'Skepticism', 0.461346168827, 34496, False)
+Entity: (u'Music genre', 0.409171239921, 7130, False)
+Entity: (u'Genre', 0.365010877152, 30154, True)
+Entity: (u'Guide', 0.346416618347, 52828, True)
+Entity: (u'Guide (Musical Film)', 0.143258992552, 125, True)
+Entity: (u'Genus', 0.130776085571, 45859, False)
+Entity: (u'Scientific skepticism', 0.121406617273, 376, False)
+Entity: (u'Girl Guides', 0.108317696878, 53045, False)
+Entity: (u'Marvel Universe', 0.106119103763, 75400, False)
+TargetType: Other
+Root Node: The Skeptics' Guide to the Universe
+Result: The Skeptics' Guide to the Universe
+
+Query: what versions of mac os x is mozilla firefox compatible with
+Entity: (u'OS X', 0.980697651493, 3054859, False)
+Entity: (u'Visual Basic .NET', 1.0, 4350, False)
+Entity: (u'X', 0.999854836368, 123980, False)
+Entity: (u'Firefox', 0.991472594276, 5164692, False)
+Entity: (u'Mac OS', 0.985882828889, 801151, True)
+Entity: (u'Compatible With', 0.5, 0, True)
+Entity: (u'Compatible With', 0.5, 0, True)
+TargetType: Other
+Root Node: Firefox
+Result: 10.6.x
+
+Query: when was the construction of new steubenville bridge finished
+Entity: (u'Construction of New Steubenville Bridge', 1.0, 0, True)
+Entity: (u'New Steubenville Bridge', 1.0, 0, True)
+Entity: (u'Steubenville Bridge', 1.0, 0, True)
+Entity: (u'The Construction', 0.571428571429, 4, True)
+Entity: (u'The Construction (m/0ktfzyc)', 0.142857142857, 0, True)
+Entity: (u'The Construction (m/0rs5cyy)', 0.142857142857, 0, True)
+Entity: (u'The Construction', 0.142857142857, 0, True)
+Entity: (u'Construction', 0.839494647276, 118556, True)
+TargetType: Date
+Root Node: Construction of New Steubenville Bridge
+Result: 1979
+
+Query: what sport did scott anderson play in the 1992 summer olympics
+Entity: (u'1992 Summer Olympics', 0.873898779205, 18208, True)
+Entity: (u'1992 Summer Olympics', 1.0, 18208, False)
+Entity: (u'Summer Olympic Games', 0.587111801353, 114045, False)
+Entity: (u'Scott Anderson (TV Character)', 0.422298811227, 590, True)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Scott Anderson', 0.175482259007, 543, True)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Summer', 0.746314173315, 46922, True)
+Entity: (u'Sports', 0.719860156648, 319071, False)
+Entity: (u'Olympic Games', 0.472683419347, 4131205, False)
+Entity: (u'1992', 0, 0, True)
+TargetType: Other
+Root Node: 1992 Summer Olympics
+Result: Beach volleyball (m.01gqfm) Roller hockey (m.0263qf6)
+
+Query: how many players are in the current roster of the new york mets
+Entity: (u'New York Mets', 0.999992815598, 974326, True)
+Entity: (u'The New York Times', 0.811321148451, 6922317, False)
+Entity: (u'New York World-Telegram', 0.188678851549, 1105, False)
+Entity: (u'In the Current (Musical Release)', 0.142857142857, 0, True)
+Entity: (u'In the Current (m/0sj0vhp)', 0.142857142857, 0, True)
+Entity: (u'In the Current (m/0lhr53w)', 0.142857142857, 0, True)
+Entity: (u'In the Current (Musical Recording) #1', 0.142857142857, 0, True)
+Entity: (u'In the Current (Musical Recording) #2', 0.142857142857, 0, True)
+Entity: (u'In the Current (Musical Album)', 0.142857142857, 0, True)
+Entity: (u'In the Current (m/0sk5fht)', 0.142857142857, 0, True)
+Entity: (u'New York', 0.653213390066, 8940433, True)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'New York City', 0.300971513607, 12313837, False)
+Entity: (u'Alfa Romeo Brera', 0.228914789934, 5626, False)
+Entity: (u'KCMP', 0.22710615648, 4155, False)
+Entity: (u'The Current', 0.220617350815, 2109, True)
+Entity: (u'The Current', 0.157892569686, 9, True)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Medicinal Fried Chicken', 0.132529466082, 0, False)
+Entity: (u'Roster', 0.570073701683, 7996, True)
+Entity: (u'Player', 0.195771275537, 233993, False)
+TargetType: Other
+Root Node: New York Mets
+Result: 33
+
+Query: how many wins did the philadelphia eagles have in the 2008 nfl season
+Entity: (u'2008 NFL season', 1.0, 215, True)
+Entity: (u'Philadelphia Eagles', 0.999994631507, 745084, True)
+Entity: (u'National Football League regular season', 1.0, 5241, False)
+Entity: (u'All in the Timing', 0.99914893617, 1174, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'National Football League', 0.965051298405, 4480683, False)
+Entity: (u'Windows Internet Name Service', 0.41313406189, 8181, False)
+Entity: (u'Win\u2013loss record', 0.336865360793, 296795, False)
+Entity: (u'Season', 0.283846106731, 10457, True)
+Entity: (u'Season', 0.277508146975, 29811, True)
+Entity: (u'Winning percentage', 0.17235362415, 2656, False)
+Entity: (u'2008', 0, 0, True)
+TargetType: Other
+Root Node: Philadelphia Eagles
+Result: 9
+
+Query: how many engineers worked on the design and construction of the plymouth breakwater
+Entity: (u'Design and Construction of the Plymouth Breakwater', 1.0, 0, True)
+Entity: (u'Statue of Liberty', 0.436402487002, 260200, False)
+Entity: (u'Plymouth Breakwater', 0.991666666667, 119, True)
+Entity: (u'The Plymouth', 0.5, 0, True)
+Entity: (u'The Plymouth', 0.5, 0, True)
+Entity: (u'Cirrus SR22', 0.421404936043, 6998, False)
+Entity: (u'The Design', 0.410440783497, 23, True)
+Entity: (u'Lagopus', 0.210770954847, 272, False)
+Entity: (u'Happy Nation', 0.164664808474, 38, False)
+Entity: (u'Soviet Union', 0.164664808474, 5858281, False)
+Entity: (u'Worked On', 0.147982057471, 0, True)
+Entity: (u'Worked On', 0.147982057471, 0, True)
+Entity: (u'Worked On', 0.147982057471, 0, True)
+Entity: (u'worked on', 0.147982057471, 0, True)
+Entity: (u'Worked on', 0.147982057471, 0, True)
+Entity: (u'Worked on', 0.147982057471, 0, True)
+Entity: (u'David Horowitz', 0.144905183608, 65415, False)
+Entity: (u'You Only Move Twice (TV Episode)', 0.112107655171, 0, False)
+Entity: (u'Construction', 0.839494647276, 118556, True)
+Entity: (u'Design', 0.787730412566, 197431, True)
+Entity: (u'Breakwater', 0.700340956747, 7937, True)
+Entity: (u'Engineer', 0.640751546391, 32338, False)
+Entity: (u'Plymouth', 0.614971937328, 156440, True)
+Entity: (u'Breakwater (Rhythm and blues Artist)', 0.128001760546, 104, True)
+TargetType: Other
+Root Node: Design and Construction of the Plymouth Breakwater
+Result: 5
 
