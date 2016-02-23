@@ -45,7 +45,7 @@ def main():
         results = translator.translate_and_execute_query(query)
         if (len(results) > 0):
             for i in xrange(len(results)):
-                if (i > 0):
+                if (i > 10):
                     break
                 candidate = results[i].query_candidate
                 sparql_query = candidate.to_sparql_query()
@@ -63,7 +63,7 @@ def main():
                 result_str = "Result: %s\n" % (" ".join(result)).encode('utf-8')
                 writeFile(test_file, root_name, "a")
                 #writeFile(test_file, graph_str, "a")
-                #writeFile(test_file, graph_str_simple, "a")
+                writeFile(test_file, graph_str_simple, "a")
                 #writeFile(test_file, query_str, "a")
                 writeFile(test_file, result_str, "a")
         writeFile(test_file, "\n", "a")
