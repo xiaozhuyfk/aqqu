@@ -281,6 +281,7 @@ class EntityLinker:
             for end in range(start + 1, n_tokens + 1):
                 entity_tokens = tokens[start:end]
                 if not self.is_entity_occurrence(tokens, start, end):
+                    print ' '.join([t.token for t in entity_tokens])
                     continue
                 entity_str = ' '.join([t.token for t in entity_tokens])
                 print entity_str
