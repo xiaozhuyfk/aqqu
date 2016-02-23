@@ -8,6 +8,7 @@ Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 """
 import logging
 
+import sys
 import globals
 import scorer_globals
 from query_translator.features import FeatureExtractor
