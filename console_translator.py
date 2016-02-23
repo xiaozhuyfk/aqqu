@@ -39,7 +39,7 @@ def main():
     translator = QueryTranslator.init_from_config()
     translator.set_scorer(ranker)
 
-    """
+
     writeFile(test_file, "", "w")
     for query in correct_set:
         results = translator.translate_and_execute_query(query)
@@ -62,9 +62,9 @@ def main():
                 graph_str_simple = "Simple Candidate Graph: %s\n" % candidate.graph_as_simple_string().encode('utf-8')
                 result_str = "Result: %s\n" % (" ".join(result)).encode('utf-8')
                 writeFile(test_file, root_name, "a")
-                writeFile(test_file, graph_str, "a")
-                writeFile(test_file, graph_str_simple, "a")
-                writeFile(test_file, query_str, "a")
+                #writeFile(test_file, graph_str, "a")
+                #writeFile(test_file, graph_str_simple, "a")
+                #writeFile(test_file, query_str, "a")
                 writeFile(test_file, result_str, "a")
             writeFile(test_file, "\n", "a")
 
@@ -90,7 +90,7 @@ def main():
                     result.append("%s" % r[0])
             logger.info("SPARQL query: %s" % sparql_query)
             logger.info("Result: %s " % " ".join(result))
-
+    """
 
 if __name__ == "__main__":
     main()

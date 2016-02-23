@@ -77,7 +77,57 @@ correct_set = [
     "what is ashok malhotra's bowling pace"
 ]
 
-test_file = "correct_test.log"
+unidentified = [
+    "when was 300 released",
+    "when was barbie launched",
+    "who founded the red cross",
+    "what causes prostate cancer",
+    "what are the celtic languages",
+    "how many people practice karate",
+    "what is jerry seinfeld religion",
+    "what is the population of europe",
+    "what are some hotels in vancouver",
+    "how many awards did big daddy win",
+    "how many tv channels does nbc own",
+    "what is the state flower of alaska",
+    "what is the highest drop on stealth",
+    "how many stores are in nittany mall",
+    "what is currency code for uk currency",
+    "how many seasons of seinfeld are there",
+    "when did easy aces stop being produced",
+    "how many countries is spanish spoken in",
+    "what musicians have died of lung cancer",
+    "how many people died in hurricane wilma",
+    "what team does richard hamilton play for",
+    "how many countries use the spanish peseta",
+    "who produced sabotage by the beastie boys",
+    "what bridges go over the san francisco bay",
+    "what other titles does 13 going on 30 have",
+    "what are the neighborhoods in new york city",
+    "what animal does marscapone cheese come from",
+    "what is the population estimated in the world",
+    "how many monarchs are from the house of tutor",
+    "what was the cost of building the magnum xl-200",
+    "who was the editor in chief of die welt in 2000",
+    "what is the lcd screen resolution of a nikon d80",
+    "how many people ride the london underground daily",
+    "how many runs does the thunder ridge ski area have",
+    "who used to be quarterback for the green bay packers",
+    "how many speeches have been given about world war ii",
+    "when did john j. raskob own the empire state building",
+    "what german athletes have participated in the olympics",
+    "how many people played in the 2010 fifa world cup final",
+    "on how many projects was james walker a design engineer",
+    "what is the genre of the skeptics' guide to the universe",
+    "what versions of mac os x is mozilla firefox compatible with",
+    "when was the construction of new steubenville bridge finished",
+    "what sport did scott anderson play in the 1992 summer olympics",
+    "how many players are in the current roster of the new york mets",
+    "how many wins did the philadelphia eagles have in the 2008 nfl season",
+    "how many engineers worked on the design and construction of the plymouth breakwater"
+]
+
+test_file = "unidentified.log"
 
 
 def edit_distance(s1, s2, compare_lower = True):
