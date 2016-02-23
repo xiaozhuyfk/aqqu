@@ -1,9 +1,11 @@
 Query: when was 300 released
 TargetType: Date
+Pattern matches: ERT = 0, ERMRT = 0, ERMRERT = 0
 
 Query: when was barbie launched
 Entity: (u'Barbie', 0.96649402726, 859774, True)
 TargetType: Date
+Pattern matches: ERT = 16, ERMRT = 26, ERMRERT = 0
 1 Root Node: Barbie
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Barbie (m.015w6q)] -> [business.brand.products] -> [?0]
@@ -13,6 +15,7 @@ Query: who founded the red cross
 Entity: (u'International Red Cross and Red Crescent Movement', 0.830726497669, 97184, False)
 Entity: (u'The Red', 0.354360675937, 54, True)
 TargetType: person, organization, employer, character
+Pattern matches: ERT = 10, ERMRT = 18, ERMRERT = 0
 1 Root Node: International Red Cross and Red Crescent Movement
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [International Red Cross and Red Crescent Movement (m.03zr5)] -> [organization.organization.founders] -> [?0]
@@ -33,6 +36,7 @@ Entity: (u'Prostate cancer', 0.998617319424, 67797, True)
 Entity: (u'Prostate', 0.881638204484, 18410, True)
 Entity: (u'Cancer (Disease or medical condition)', 0.86659843983, 400879, True)
 TargetType: Other
+Pattern matches: ERT = 54, ERMRT = 27, ERMRERT = 0
 1 Root Node: Prostate cancer
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Prostate cancer (m.0m32h)] -> [people.cause_of_death.parent_cause_of_death] -> [?0]
@@ -84,6 +88,7 @@ Entity: (u'The Celtic Languages', 0.5, 0, True)
 Entity: (u'Celtic languages', 0.991774158352, 9321, True)
 Entity: (u'Language', 0.546601915644, 110409, False)
 TargetType: Other
+Pattern matches: ERT = 22, ERMRT = 11, ERMRERT = 0
 1 Root Node: The Celtic Languages (Routledge Language Familydescriptions)
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [The Celtic Languages (Routledge Language Familydescriptions) (m.09x_y5z)] -> [book.book_edition.book] -> [?0]
@@ -139,6 +144,7 @@ Entity: (u'Practice', 0.339400323183, 30524, True)
 Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
 Entity: (u'Praxis', 0.153781107459, 3103, False)
 TargetType: Other
+Pattern matches: ERT = 36, ERMRT = 41, ERMRERT = 0
 1 Root Node: Karate
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Karate (m.048dz)] -> [media_common.netflix_genre.titles] -> [?0]
@@ -163,6 +169,7 @@ TargetType: Other
 Query: what is jerry seinfeld religion
 Entity: (u'Jerry Seinfeld', 0.929733330903, 114386, True)
 TargetType: Other
+Pattern matches: ERT = 39, ERMRT = 107, ERMRERT = 0
 1 Root Node: Jerry Seinfeld
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Jerry Seinfeld (m.0q5hw)] -> [people.person.gender] -> [?0]
@@ -215,6 +222,7 @@ Entity: (u'Medieval demography', 1.0, 12, False)
 Entity: (u'Europe', 0.924371413609, 39937138, True)
 Entity: (u'Population', 0.869365457191, 43740, True)
 TargetType: Other
+Pattern matches: ERT = 36, ERMRT = 26, ERMRERT = 0
 1 Root Node: The Population of Europe
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [The Population of Europe (m.0689gct)] -> [type.object.name] -> [?0]
@@ -242,6 +250,7 @@ Entity: (u'Hotels in Vancouver', 1.0, 0, True)
 Entity: (u'Hotel', 0.969665423378, 475558, False)
 Entity: (u'Vancouver', 0.920592750927, 3755100, True)
 TargetType: Other
+Pattern matches: ERT = 63, ERMRT = 58, ERMRERT = 0
 1 Root Node: Hotels in Vancouver
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Hotels in Vancouver (m.04yk8t7)] -> [common.document.content] -> [?0]
@@ -288,6 +297,7 @@ Entity: (u'Outline of science fiction', 0.141008576871, 0, False)
 Entity: (u"Lisa's First Word", 0.123711507751, 0, False)
 Entity: (u'Daddy', 0.105018474537, 2161, True)
 TargetType: Other
+Pattern matches: ERT = 45, ERMRT = 33, ERMRERT = 0
 1 Root Node: Soweto Kinch
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Soweto Kinch (m.06rgs4)] -> [music.group_member.instruments_played] -> [?0]
@@ -306,6 +316,7 @@ Entity: (u'Channel', 0.24177019987, 341, False)
 Entity: (u'Channel', 0.15198673958, 583, False)
 Entity: (u'Channels (Comedy)', 0.127620633362, 180, True)
 TargetType: Other
+Pattern matches: ERT = 67, ERMRT = 157, ERMRERT = 0
 1 Root Node: NBC
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
   [NBC (m.05gnf)] -> [tv.tv_network.programs] -> [?0]
@@ -372,6 +383,7 @@ Entity: (u'U.S. state', 0.264017426139, 2692783, False)
 Entity: (u'States of India', 0.155281370633, 30636, False)
 Entity: (u'Flower (Adventure Video Game)', 0.152637636786, 4208, True)
 TargetType: Other
+Pattern matches: ERT = 103, ERMRT = 140, ERMRERT = 0
 1 Root Node: Alaska
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Alaska (m.0hjy)] -> [base.locations.states_and_provences.country] -> [?0]
@@ -396,6 +408,7 @@ Entity: (u'Stealth technology', 0.183949804716, 1903, False)
 Entity: (u'Liquorice', 0.162609809886, 783, False)
 Entity: (u'Stealth', 0.136887547627, 3206, True)
 TargetType: Other
+Pattern matches: ERT = 59, ERMRT = 52, ERMRERT = 0
 
 Query: how many stores are in nittany mall
 Entity: (u'Nittany Mall', 1.0, 247, True)
@@ -404,6 +417,7 @@ Entity: (u'Retail', 0.584832348219, 268680, False)
 Entity: (u'Shopping mall', 0.57385241509, 165801, False)
 Entity: (u'National Mall', 0.190896820185, 145209, False)
 TargetType: Other
+Pattern matches: ERT = 41, ERMRT = 37, ERMRERT = 0
 1 Root Node: Nittany Mall
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
   [Nittany Mall (m.0g68bn)] -> [business.shopping_center.number_of_stores] -> [?0]
@@ -462,6 +476,7 @@ Query: what is currency code for uk currency
 Entity: (u'Genetics', 1.0, 82602, False)
 Entity: (u'ISO 4217', 0.999542543458, 4370, False)
 TargetType: Other
+Pattern matches: ERT = 11, ERMRT = 25, ERMRERT = 0
 1 Root Node: ISO 4217
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [ISO 4217 (m.03z6s)] -> [base.industrystandards.industry_standard.publishing_body] -> [?0]
@@ -477,6 +492,7 @@ Entity: (u'Many Seasons (Musical Album)', 0.5, 0, True)
 Entity: (u'Seinfeld', 0.929960029738, 184588, True)
 Entity: (u'Season', 0.653369923608, 29811, False)
 TargetType: Other
+Pattern matches: ERT = 36, ERMRT = 52, ERMRERT = 0
 1 Root Node: Seinfeld
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Seinfeld (m.072kp)] -> [tv.tv_program.number_of_seasons] -> [?0]
@@ -513,6 +529,7 @@ Entity: (u'Easy Aces', 1.0, 287, True)
 Entity: (u'Stop! (Composition) #43', 0.125165597957, 0, True)
 Entity: (u'Stop consonant', 0.118956223918, 2531, False)
 TargetType: Date
+Pattern matches: ERT = 11, ERMRT = 0, ERMRERT = 0
 1 Root Node: Easy Aces
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Easy Aces (m.0cp64s)] -> [broadcast.content.production_start] -> [?0]
@@ -532,6 +549,7 @@ Entity: (u'Blasphemy law', 0.200680504161, 3058, False)
 Entity: (u"International Women's Day", 0.159864154474, 1136796, False)
 Entity: (u'Country (Quotation Subject)', 0.840984198953, 97485, False)
 TargetType: Other
+Pattern matches: ERT = 16, ERMRT = 8, ERMRERT = 0
 
 Query: what musicians have died of lung cancer
 Entity: (u'Kim Manners', 1.0, 3750, False)
@@ -541,6 +559,7 @@ Entity: (u'Musician (Profession)', 0.878535792375, 65719, False)
 Entity: (u'Cancer (Disease or medical condition)', 0.86659843983, 400879, True)
 Entity: (u'Lung', 0.786159721191, 53522, True)
 TargetType: Other
+Pattern matches: ERT = 103, ERMRT = 85, ERMRERT = 0
 1 Root Node: Kim Manners
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Kim Manners (m.02q5xsx)] -> [people.person.profession] -> [?0]
@@ -604,6 +623,7 @@ Entity: (u'People', 0.370274503777, 228405, True)
 Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
 Entity: (u'Hawker Hurricane', 0.11147375428, 17351, False)
 TargetType: Other
+Pattern matches: ERT = 64, ERMRT = 47, ERMRERT = 0
 1 Root Node: Hurricane Wilma
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Hurricane Wilma (m.088nnl)] -> [meteorology.tropical_cyclone.affected_areas] -> [?0]
@@ -631,6 +651,7 @@ Entity: (u'Richard Hamilton', 0.167066419176, 40362, True)
 Entity: (u'Richard Hamilton (Mathematician)', 0.113055717485, 971, True)
 Entity: (u'Team', 0.441557255154, 414089, True)
 TargetType: Other
+Pattern matches: ERT = 45, ERMRT = 138, ERMRERT = 0
 1 Root Node: Richard Hamilton
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Richard Hamilton (m.038yrz)] -> [basketball.basketball_player.team] -> [?0]
@@ -692,6 +713,7 @@ Entity: (u'Blasphemy law', 0.200680504161, 3058, False)
 Entity: (u"International Women's Day", 0.159864154474, 1136796, False)
 Entity: (u'Country (Quotation Subject)', 0.840984198953, 97485, False)
 TargetType: Other
+Pattern matches: ERT = 26, ERMRT = 11, ERMRERT = 0
 1 Root Node: Peseta
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Peseta (m.014z03)] -> [finance.currency.countries_formerly_used] -> [?0]
@@ -715,6 +737,7 @@ Entity: (u'Beastie Boys', 0.965319260123, 125749, True)
 Entity: (u'Beastie Boys', 0.991890234835, 125749, True)
 Entity: (u'Sabotage', 0.58528547895, 9625, True)
 TargetType: person, organization, employer, character
+Pattern matches: ERT = 54, ERMRT = 84, ERMRERT = 0
 1 Root Node: Sabotage (Composition) #57
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Sabotage (Composition) #57 (m.082dr7)] -> [music.composition.composer] -> [?0]
@@ -774,6 +797,7 @@ Entity: (u'San People', 0.164972654255, 70075, False)
 Entity: (u'Bridge (Literature Subject)', 0.470191703234, 105322, False)
 Entity: (u'Bridge', 0.201181995349, 958, False)
 TargetType: Other
+Pattern matches: ERT = 89, ERMRT = 148, ERMRERT = 0
 1 Root Node: San Francisco Bay
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [San Francisco Bay (m.06ptx)] -> [base.nationalbridgeinventory.bridged_location.bridges] -> [?0]
@@ -814,6 +838,7 @@ Entity: (u'The Protocols of the Elders of Zion', 0.208661579357, 34385, False)
 Entity: (u'Title', 0.245931810123, 5203, False)
 Entity: (u'Title of honor', 0.10768811256, 33, False)
 TargetType: Other
+Pattern matches: ERT = 50, ERMRT = 63, ERMRERT = 0
 1 Root Node: 13 Going on 30
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [13 Going on 30 (m.02vzpb)] -> [media_common.netflix_title.netflix_genres] -> [?0]
@@ -872,6 +897,7 @@ Entity: (u'York City F.C.', 0.981980350066, 39925, False)
 Entity: (u'New York', 0.653213390066, 8940433, True)
 Entity: (u'Neighbourhood', 0.304148511515, 48079, False)
 TargetType: Other
+Pattern matches: ERT = 148, ERMRT = 234, ERMRERT = 0
 1 Root Node: New York City
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [New York City (m.02_286)] -> [location.place_with_neighborhoods.neighborhoods] -> [?0]
@@ -924,6 +950,7 @@ Entity: (u'Mascarpone', 1.0, 7786, False)
 Entity: (u'Animal', 0.845108066217, 139236, True)
 Entity: (u'Cheese (Food)', 0.839359526733, 54404, True)
 TargetType: Other
+Pattern matches: ERT = 59, ERMRT = 23, ERMRERT = 0
 1 Root Node: Mascarpone
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Mascarpone (m.01sy7q)] -> [food.cheese.country_of_origin] -> [?0]
@@ -983,6 +1010,7 @@ Entity: (u'Population', 0.869365457191, 43740, True)
 Entity: (u'World', 0.491277033416, 1658878, True)
 Entity: (u'Hard disk drive', 0.135631008797, 647547, False)
 TargetType: Other
+Pattern matches: ERT = 64, ERMRT = 93, ERMRERT = 0
 1 Root Node: Population
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
   [Population (m.05qlp)] -> [user.wellstone.default_domain.world_population_by_time.population_number] -> [?0]
@@ -1010,6 +1038,7 @@ Entity: (u'Monarchy', 0.173562066695, 291730, False)
 Entity: (u'House', 0.119683772698, 236649, True)
 Entity: (u'Monarch butterfly', 0.102871155408, 26343, False)
 TargetType: Other
+Pattern matches: ERT = 216, ERMRT = 646, ERMRERT = 8
 
 Query: what was the cost of building the magnum xl-200
 Entity: (u'Arab\u2013Israeli conflict', 1.0, 7427, False)
@@ -1024,6 +1053,7 @@ Entity: (u'Magnum, P.I.', 0.186677346964, 18304, False)
 Entity: (u'Magnum', 0.135211717405, 2704, True)
 Entity: (u'Magnum', 0.11480832251, 3519, True)
 TargetType: Other
+Pattern matches: ERT = 92, ERMRT = 79, ERMRERT = 0
 1 Root Node: Magnum XL-200
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
   [Magnum XL-200 (m.063h66)] -> [amusement_parks.ride.cost] -> [?0]
@@ -1091,6 +1121,7 @@ Entity: (u'Welt, Germany', 0.111782705149, 118, False)
 Entity: (u'Die', 0.107543440882, 3033, True)
 Entity: (u'2000', 0, 0, True)
 TargetType: person, organization, employer, character
+Pattern matches: ERT = 138, ERMRT = 123, ERMRERT = 0
 1 Root Node: The editor in chief
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [The editor in chief (m.0686p9m)] -> [book.written_work.author] -> [?0]
@@ -1111,6 +1142,7 @@ Entity: (u'Image resolution', 0.141743496285, 51077, False)
 Entity: (u'GNU Screen', 0.467100349642, 4097, False)
 Entity: (u'Image resolution', 0.268592687575, 51077, False)
 TargetType: Other
+Pattern matches: ERT = 75, ERMRT = 69, ERMRERT = 0
 1 Root Node: Nikon D80
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Nikon D80 (m.0g22rl)] -> [digicams.digital_camera.lcd_screen_dimensions] -> [?0]
@@ -1172,6 +1204,7 @@ Entity: (u'Daily', 0.217761705861, 2226, True)
 Entity: (u'Iveco Daily', 0.209739935923, 2144, False)
 Entity: (u'E.G. Daily', 0.108978679393, 1114, False)
 TargetType: Other
+Pattern matches: ERT = 117, ERMRT = 155, ERMRERT = 0
 1 Root Node: London Underground
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
   [London Underground (m.04jgv)] -> [metropolitan_transit.transit_system.daily_riders] -> [?0]
@@ -1232,6 +1265,7 @@ Entity: (u'Thunder', 0.486833759831, 6459, True)
 Entity: (u'Run', 0.302589581531, 4, False)
 Entity: (u'Thunder (Hard rock Artist)', 0.100906012105, 1535, True)
 TargetType: Other
+Pattern matches: ERT = 55, ERMRT = 56, ERMRERT = 0
 1 Root Node: Thunder Ridge Ski Area
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Thunder Ridge Ski Area (m.02qhs3m)] -> [skiing.ski_area.number_of_runs] -> [?0]
@@ -1281,6 +1315,7 @@ Entity: (u'The Green (Location)', 0.125672213781, 75, True)
 Entity: (u'Medicare', 0.108091373211, 2941905, False)
 Entity: (u'Quarterback', 0.999374849723, 41564, True)
 TargetType: person, organization, employer, character
+Pattern matches: ERT = 162, ERMRT = 383, ERMRERT = 48
 1 Root Node: Green Bay Packers
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
   [Green Bay Packers (m.03b3j)] -> [business.employer.employees] -> [?0]
@@ -1361,6 +1396,7 @@ Entity: (u'World War I', 0.120219684792, 1939004, False)
 Entity: (u'Public speaking', 0.781470770482, 29740, False)
 Entity: (u'Speech', 0.122892670963, 51443, False)
 TargetType: Other
+Pattern matches: ERT = 108, ERMRT = 112, ERMRERT = 0
 1 Root Node: World War II
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [World War II (m.081pw)] -> [freebase.valuenotation.has_no_value] -> [?0]
@@ -1431,6 +1467,7 @@ Entity: (u'States of India', 0.155281370633, 30636, False)
 Entity: (u'Empire', 0.116295462565, 23773, True)
 Entity: (u'Empire (TV Drama) #65', 0.102918199269, 2526, True)
 TargetType: Date
+Pattern matches: ERT = 105, ERMRT = 117, ERMRERT = 4
 1 Root Node: Empire State Building
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
   [Empire State Building (m.02nd_)] -> [architecture.structure.owner] -> [?0]
@@ -1501,6 +1538,7 @@ Entity: (u'Inthe', 0.143579278312, 0, True)
 Entity: (u'Athlete (Profession)', 0.847023944375, 61446, False)
 Entity: (u'Olympic Games', 0.472683419347, 4131205, False)
 TargetType: Other
+Pattern matches: ERT = 80, ERMRT = 74, ERMRERT = 0
 1 Root Node: 2008 Summer Olympics
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
   [2008 Summer Olympics (m.0kbws)] -> [olympics.olympic_games.athletes] -> [?0]
@@ -1574,6 +1612,7 @@ Entity: (u'People', 0.370274503777, 228405, True)
 Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
 Entity: (u'2010', 0, 0, True)
 TargetType: Other
+Pattern matches: ERT = 182, ERMRT = 199, ERMRERT = 11
 1 Root Node: 2010 FIFA World Cup Final
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
   [2010 FIFA World Cup Final (m.09v2l34)] -> [soccer.football_match.players] -> [?0]
@@ -1640,6 +1679,7 @@ Entity: (u'Engineer', 0.782162713023, 32338, True)
 Entity: (u'Project (Quotation Subject)', 0.546876560321, 421844, False)
 Entity: (u'Audio Engineer', 0.126586309981, 21859, False)
 TargetType: Other
+Pattern matches: ERT = 69, ERMRT = 80, ERMRERT = 6
 1 Root Node: James Walker (Civil engineer)
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
   [James Walker (Civil engineer) (m.05tqcd)] -> [projects.project_participant.projects] -> [?0]
@@ -1735,6 +1775,7 @@ Entity: (u'Scientific skepticism', 0.121406617273, 376, False)
 Entity: (u'Girl Guides', 0.108317696878, 53045, False)
 Entity: (u'Marvel Universe', 0.106119103763, 75400, False)
 TargetType: Other
+Pattern matches: ERT = 214, ERMRT = 167, ERMRERT = 0
 1 Root Node: The Skeptics' Guide to the Universe
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [The Skeptics' Guide to the Universe (m.026y456)] -> [type.object.name] -> [?0]
@@ -1789,6 +1830,7 @@ Entity: (u'Mac OS', 0.985882828889, 801151, True)
 Entity: (u'Compatible With', 0.5, 0, True)
 Entity: (u'Compatible With', 0.5, 0, True)
 TargetType: Other
+Pattern matches: ERT = 77, ERMRT = 22, ERMRERT = 2
 1 Root Node: Firefox
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
   [Firefox (m.01dyhm)] -> [computer.software.compatible_oses] -> [?0]
@@ -1854,6 +1896,7 @@ Entity: (u'The Construction (m/0rs5cyy)', 0.142857142857, 0, True)
 Entity: (u'The Construction', 0.142857142857, 0, True)
 Entity: (u'Construction', 0.839494647276, 118556, True)
 TargetType: Date
+Pattern matches: ERT = 37, ERMRT = 20, ERMRERT = 0
 1 Root Node: Construction of New Steubenville Bridge
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [Construction of New Steubenville Bridge (m.0jb4_0h)] -> [projects.project.start_date] -> [?0]
@@ -1920,6 +1963,7 @@ Entity: (u'Sports', 0.719860156648, 319071, False)
 Entity: (u'Olympic Games', 0.472683419347, 4131205, False)
 Entity: (u'1992', 0, 0, True)
 TargetType: Other
+Pattern matches: ERT = 128, ERMRT = 99, ERMRERT = 0
 1 Root Node: 1992 Summer Olympics
 1 Simple Candidate Graph: QueryCandidate pattern:ERT
   [1992 Summer Olympics (m.0l6m5)] -> [olympics.olympic_games.demonstration_sports] -> [?0]
@@ -1993,6 +2037,7 @@ Entity: (u'Medicinal Fried Chicken', 0.132529466082, 0, False)
 Entity: (u'Roster', 0.570073701683, 7996, True)
 Entity: (u'Player', 0.195771275537, 233993, False)
 TargetType: Other
+Pattern matches: ERT = 245, ERMRT = 372, ERMRERT = 0
 1 Root Node: New York Mets
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
   [New York Mets (m.05g76)] -> [sports.sports_team.roster] -> [?0]
@@ -2063,6 +2108,7 @@ Entity: (u'Season', 0.277508146975, 29811, True)
 Entity: (u'Winning percentage', 0.17235362415, 2656, False)
 Entity: (u'2008', 0, 0, True)
 TargetType: Other
+Pattern matches: ERT = 91, ERMRT = 178, ERMRERT = 33
 1 Root Node: Philadelphia Eagles
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRERT
   [Philadelphia Eagles (m.05tg3)] -> [sports.sports_team.season_record] -> [?0]
@@ -2147,6 +2193,7 @@ Entity: (u'Engineer', 0.640751546391, 32338, False)
 Entity: (u'Plymouth', 0.614971937328, 156440, True)
 Entity: (u'Breakwater (Rhythm and blues Artist)', 0.128001760546, 104, True)
 TargetType: Other
+Pattern matches: ERT = 232, ERMRT = 263, ERMRERT = 6
 1 Root Node: Design and Construction of the Plymouth Breakwater
 1 Simple Candidate Graph: QueryCandidate pattern:ERMRT
   [Design and Construction of the Plymouth Breakwater (m.05g_y0y)] -> [projects.project.participants] -> [?0]
