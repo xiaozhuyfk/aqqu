@@ -127,7 +127,24 @@ unidentified = [
     "how many engineers worked on the design and construction of the plymouth breakwater"
 ]
 
-test_file = "error.log"
+test_file = "rank_error.log"
+
+rank_error = [
+    "who is the present newscaster on cbs evening news",
+    "what year was the album decade released",
+    "when was the construction of new steubenville bridge finished",
+    "what is the lcd screen resolution of a nikon d80"
+]
+
+rank_pos = [5, 1, 1, 1]
+
+rm_error = [
+
+]
+
+er_error = [
+
+]
 
 
 def edit_distance(s1, s2, compare_lower = True):
