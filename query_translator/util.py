@@ -127,7 +127,7 @@ unidentified = [
     "how many engineers worked on the design and construction of the plymouth breakwater"
 ]
 
-test_file = "rank_error.log"
+test_file = "test.log"
 
 rank_error = [
     "who is the present newscaster on cbs evening news",

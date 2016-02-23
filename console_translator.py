@@ -43,6 +43,7 @@ def main():
 
     writeFile(test_file, "", "w")
 
+    """
     for i in xrange(len(rank_error)):
         query = rank_error[i]
         results = translator.translate_and_execute_query(query)
@@ -114,6 +115,7 @@ def main():
             writeFile(test_file, c_str, "a")
             writeFile(test_file, cmp_res, "a")
         writeFile(test_file, "\n", "a")
+    """
 
     """
     for query in test_set + unidentified:
@@ -150,7 +152,6 @@ def main():
         writeFile(test_file, "\n", "a")
     """
 
-    """
     while True:
         sys.stdout.write("enter question> ")
         sys.stdout.flush()
@@ -172,7 +173,6 @@ def main():
                     result.append("%s" % r[0])
             logger.info("SPARQL query: %s" % sparql_query)
             logger.info("Result: %s " % " ".join(result))
-    """
 
 
 if __name__ == "__main__":
