@@ -11,7 +11,7 @@ import globals
 import scorer_globals
 import sys
 from query_translator.translator import QueryTranslator
-from query_translator.util import test_set, writeFile, test_file, correct_set
+from query_translator.util import test_set, writeFile, test_file, correct_set, unidentified
 
 logging.basicConfig(format="%(asctime)s : %(levelname)s "
                            ": %(module)s : %(message)s",
@@ -41,7 +41,7 @@ def main():
 
 
     writeFile(test_file, "", "w")
-    for query in correct_set:
+    for query in unidentified:
         results = translator.translate_and_execute_query(query)
         if (len(results) > 0):
             for i in xrange(len(results)):
