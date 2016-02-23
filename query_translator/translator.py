@@ -124,8 +124,6 @@ class QueryTranslator(object):
         #logging.error(query.target_type.as_string())
         partial_result += "TargetType: " + str(query.target_type.as_string()) + "\n"
 
-        writeFile(test_file, partial_result, "a")
-
         # Get content tokens of the query.
         query.query_content_tokens = get_content_tokens(query.query_tokens)
         # Match the patterns.
@@ -138,6 +136,10 @@ class QueryTranslator(object):
         ert_matches = pattern_matcher.match_ERT_pattern()
         ermrt_matches = pattern_matcher.match_ERMRT_pattern()
         ermrert_matches = pattern_matcher.match_ERMRERT_pattern()
+
+        partial_result += "Pattern matches: ERT = %d, ERMRT = %d, ERMRERT = %d\n" % (len(ert_matches), len(ermrt_matches), len(ermrert_matches))
+        writeFile(test_file, partial_result, "a")
+
         duration = (time.time() - start_time) * 1000
         logging.info("Total translation time: %.2f ms." % duration)
         return ert_matches + ermrt_matches + ermrert_matches
