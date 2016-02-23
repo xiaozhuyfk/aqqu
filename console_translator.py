@@ -12,6 +12,7 @@ import scorer_globals
 import sys
 from query_translator.translator import QueryTranslator
 from query_translator.util import test_set, writeFile, test_file, correct_set, unidentified
+from query_translator.features import FeatureExtractor
 
 logging.basicConfig(format="%(asctime)s : %(levelname)s "
                            ": %(module)s : %(message)s",
@@ -56,14 +57,20 @@ def main():
                         result.append("%s (%s)" % (r[1], r[0]))
                     else:
                         result.append("%s" % r[0])
+
+                extractor = FeatureExtractor(True, False, None)
+                features = extractor.extract_features(candidate)
+
                 root_name = "%d Root Node: %s\n" % (i+1, candidate.root_node.entity.name.encode('utf-8'))
                 query_str = "%d SPARQL query: %s\n" % (i+1, sparql_query.encode('utf-8'))
                 graph_str = "%d Candidate Graph: %s\n" % (i+1, candidate.graph_as_string().encode('utf-8'))
                 graph_str_simple = "%d Simple Candidate Graph: %s" % (i+1, candidate.graph_as_simple_string().encode('utf-8'))
                 result_str = "%d Result: %s\n" % (i+1, (" ".join(result)).encode('utf-8'))
+                feature_str = "%d Features: %s\n" % (i+1, str(features).encode('utf-8'))
                 writeFile(test_file, root_name, "a")
                 #writeFile(test_file, graph_str, "a")
                 writeFile(test_file, graph_str_simple, "a")
+                writeFile(test_file, feature_str, "a")
                 #writeFile(test_file, query_str, "a")
                 writeFile(test_file, result_str, "a")
         writeFile(test_file, "\n", "a")
