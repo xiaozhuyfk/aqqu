@@ -1,0 +1,61 @@
+Query: how many countries is spanish spoken in
+Entity: (u'United Nations Framework Convention on Climate Change', 0.217686725545, 327658, False)
+Entity: (u'Blasphemy law', 0.200680504161, 3058, False)
+Entity: (u"International Women's Day", 0.159864154474, 1136796, False)
+Entity: (u'Country (Quotation Subject)', 0.840984198953, 97485, False)
+TargetType: Other
+Pattern matches: ERT = 16, ERMRT = 8, ERMRERT = 0
+
+Query: what is the highest drop on stealth
+Entity: (u'Kar\u014d', 0.639706495892, 681, False)
+Entity: (u'Highest Drop (m/0lc_2q2)', 0.5, 0, True)
+Entity: (u'Highest Drop (Musical Recording)', 0.5, 0, True)
+Entity: (u'Victoria Cross', 0.351839233237, 113283, False)
+Entity: (u'Northrop Grumman B-2 Spirit', 0.318687740525, 48574, False)
+Entity: (u'Stealth game', 0.233952757474, 14645, False)
+Entity: (u'Stealth technology', 0.183949804716, 1903, False)
+Entity: (u'Liquorice', 0.162609809886, 783, False)
+Entity: (u'Stealth', 0.136887547627, 3206, True)
+TargetType: Other
+Pattern matches: ERT = 59, ERMRT = 52, ERMRERT = 0
+
+Query: how many awards did big daddy win
+Entity: (u'Soweto Kinch', 1.0, 1517, False)
+Entity: (u'Big Daddy', 0.165051107268, 11351, True)
+Entity: (u'Shirley Crabtree', 0.14531718449, 1184, False)
+Entity: (u'Award (Chivalric Title)', 0.274483106932, 214152, False)
+Entity: (u'Outline of science fiction', 0.141008576871, 0, False)
+Entity: (u"Lisa's First Word", 0.123711507751, 0, False)
+Entity: (u'Daddy', 0.105018474537, 2161, True)
+TargetType: Other
+Pattern matches: ERT = 45, ERMRT = 33, ERMRERT = 0
+1 Root Node: Soweto Kinch
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Soweto Kinch (m.06rgs4)] -> [music.group_member.instruments_played] -> [?0]
+1 Features: {'n_literal_entities': 1, 'total_literal_length': 2, 'literal_entities_length': 2, 'n_literal_relation_tokens': 0, 'result_size_0': 0, 'n_literal_relations': 0, 'matches_answer_type': 1, 'coverage': 0.5714285714285714, 'n_relations': 1, 'cardinality': 10, 'avg_em_surface_score': 1.0, 'result_size_1_to_20': 1, 'avg_em_popularity': 7.324489979348532, 'sum_em_popularity': 7.324489979348532, 'n_weak_relation_tokens': 1, 'sum_em_surface_score': 1.0, 'sum_context_relation_tokens': 0.0011319213034032328, 'sum_weak_relation_tokens': 0.45498552666748648, 'n_entity_matches': 1, 'n_context_relation_tokens': 2, 'n_derivation_relation_tokens': 0, 'result_size_gt_20': 0}
+1 Result: 1
+2 Root Node: Soweto Kinch
+2 Simple Candidate Graph: QueryCandidate pattern:ERMRT
+  [Soweto Kinch (m.06rgs4)] -> [people.person.education] -> [?0]
+  [?0] -> [education.education.major_field_of_study] -> [?1]
+2 Features: {'n_literal_entities': 1, 'total_literal_length': 2, 'literal_entities_length': 2, 'n_literal_relation_tokens': 0, 'result_size_0': 1, 'n_literal_relations': 0, 'matches_answer_type': 1, 'coverage': 0.5714285714285714, 'n_relations': 2, 'cardinality': 9, 'avg_em_surface_score': 1.0, 'result_size_1_to_20': 0, 'avg_em_popularity': 7.324489979348532, 'sum_em_popularity': 7.324489979348532, 'n_weak_relation_tokens': 1, 'sum_em_surface_score': 1.0, 'sum_context_relation_tokens': 0.000560655720363261, 'sum_weak_relation_tokens': 0.60576865579986927, 'n_entity_matches': 1, 'n_context_relation_tokens': 1, 'n_derivation_relation_tokens': 0, 'result_size_gt_20': 0}
+2 Result: 0
+
+Query: when was 300 released
+TargetType: Date
+Pattern matches: ERT = 0, ERMRT = 0, ERMRERT = 0
+
+Query: how many writing systems are used in japanese
+Entity: (u'Writing system', 0.911144873965, 2543, False)
+Entity: (u'Wakame', 0.853329924581, 5563, False)
+Entity: (u'Japanese general election, 1928', 0.461111064259, 0, False)
+Entity: (u'Newfoundland and Labrador', 0.142221654097, 101392, False)
+Entity: (u'Soramimi', 0.122222269074, 29, False)
+Entity: (u'System', 0.58453182609, 83083, False)
+TargetType: Other
+Pattern matches: ERT = 39, ERMRT = 58, ERMRERT = 0
+1 Root Node: Wakame
+1 Simple Candidate Graph: QueryCandidate pattern:ERT
+  [Wakame (m.040tm1)] -> [base.schemastaging.food_extra.broader] -> [?0]
+1 Features: {'n_literal_entities': 1, 'total_literal_length': 2, 'literal_entities_length': 2, 'n_literal_relation_tokens': 0, 'result_size_0': 0, 'n_literal_relations': 0, 'matches_answer_type': 1, 'coverage': 0.375, 'n_relations': 1, 'cardinality': 7, 'avg_em_surface_score': 0.853329924581, 'result_size_1_to_20': 1, 'avg_em_popularity': 8.623892810075294, 'sum_em_popularity': 8.623892810075294, 'n_weak_relation_tokens': 0, 'sum_em_surface_score': 0.853329924581, 'sum_context_relation_tokens': 0.0008253370915196588, 'sum_weak_relation_tokens': 0, 'n_entity_matches': 1, 'n_context_relation_tokens': 1, 'n_derivation_relation_tokens': 0, 'result_size_gt_20': 0}
+1 Result: 1
