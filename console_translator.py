@@ -51,6 +51,8 @@ def main():
 
             candidate = results[0].query_candidate
             sparql_query = candidate.to_sparql_query()
+            correct_query = correct.to_sparql_query()
+
             result_rows = results[0].query_result_rows
             result = []
             for r in result_rows:
@@ -58,11 +60,26 @@ def main():
                     result.append("%s (%s)" % (r[1], r[0]))
                 else:
                     result.append("%s" % r[0])
+            correct_result_rows = results[rank_pos[i]].query_result_rows
+            correct_result = []
+            for r in correct_result_rows:
+                if len(r) > 1:
+                    correct_result.append("%s (%s)" % (r[1], r[0]))
+                else:
+                    correct_result.append("%s" % r[0])
 
             extractor = FeatureExtractor(True, False, None)
             features = extractor.extract_features(candidate)
             y_features = extractor.extract_features(correct)
             diff = feature_diff(features, y_features)
+
+            X = ranker.dict_vec.transform(diff)
+            if ranker.scaler:
+                X = ranker.scaler.transform(X)
+            ranker.model.n_jobs = 1
+            p = ranker.model.predict(X)
+            c = ranker.label_encoder.inverse_transform(p)
+            res = c[0]
 
             root_name = "Root Node: %s\n" % (candidate.root_node.entity.name.encode('utf-8'))
             query_str = "SPARQL query: %s\n" % (sparql_query.encode('utf-8'))
@@ -70,18 +87,32 @@ def main():
             graph_str_simple = "Simple Candidate Graph: %s" % (candidate.graph_as_simple_string().encode('utf-8'))
             y_graph_str_simple = "Answer Candidate Graph: %s" % (correct.graph_as_simple_string().encode('utf-8'))
             result_str = "Result: %s\n" % ((" ".join(result)).encode('utf-8'))
+            correct_result_str = "Correct Result: %s\n" % ((" ".join(correct_result)).encode('utf-8'))
+
             feature_str = "Result Features: %s\n" % (str(features).encode('utf-8'))
             y_feature_str = "Answer Features: %s\n" %(str(y_features).encode('utf-8'))
             diff_str = "Feature Diff: %s\n" %(str(diff).encode('utf-8'))
+
+            x_str = "X vector: %s\n" % (str(X).encode('utf-8'))
+            p_str = "Predict vector: %s\n" % (str(p).encode('utf-8'))
+            c_str = "C vector: %s\n" % (str(c).encode('utf-8'))
+            cmp_res = "Compare result: %d\n" % (res)
+
             writeFile(test_file, root_name, "a")
             writeFile(test_file, result_str, "a")
-            # writeFile(test_file, graph_str, "a")
+            writeFile(test_file, correct_result_str, "a")
+
             writeFile(test_file, graph_str_simple, "a")
             writeFile(test_file, y_graph_str_simple, "a")
+
             writeFile(test_file, feature_str, "a")
             writeFile(test_file, y_feature_str, "a")
             writeFile(test_file, diff_str, "a")
-            # writeFile(test_file, query_str, "a")
+
+            writeFile(test_file, x_str, "a")
+            writeFile(test_file, p_str, "a")
+            writeFile(test_file, c_str, "a")
+            writeFile(test_file, cmp_res, "a")
         writeFile(test_file, "\n", "a")
 
     """
