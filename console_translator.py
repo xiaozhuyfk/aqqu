@@ -42,7 +42,7 @@ def main():
     translator = QueryTranslator.init_from_config()
     translator.set_scorer(ranker)
 
-    #writeFile(test_file, "", "w")
+    writeFile(test_file, "", "w")
 
     """
     linker = translator.entity_linker

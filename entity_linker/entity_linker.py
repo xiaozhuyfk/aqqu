@@ -12,6 +12,7 @@ from surface_index_memory import EntitySurfaceIndexMemory
 from util import normalize_entity_name, remove_number_suffix,\
     remove_prefixes_from_name, remove_suffixes_from_name
 import globals
+import query_translator.tagme
 
 logger = logging.getLogger(__name__)
 
@@ -277,6 +278,33 @@ class EntityLinker:
         start_time = time.time()
         # First find all candidates.
         identified_entities = []
+
+        tagme = TagMe()
+        print tagme.api_url
+        for (spot, start, end) in tagme.tagme_spotting(" ".join([token.token for token in tokens])):
+            print (spot, start, end)
+            entity_tokens = tokens[start:end]
+            if not self.is_entity_occurrence(tokens, start, end):
+                continue
+            entity_str = ' '.join([t.token for t in entity_tokens])
+            logger.debug(u"Checking if '{0}' is an entity.".format(entity_str))
+            entities = self.surface_index.get_entities_for_surface(entity_str)
+            # No suggestions.
+            if len(entities) == 0:
+                continue
+            for e, surface_score in entities:
+                # Ignore entities with low surface score.
+                if surface_score < min_surface_score:
+                    continue
+                perfect_match = False
+                # Check if the main name of the entity exactly matches the text.
+                if self._text_matches_main_name(e, entity_str):
+                    perfect_match = True
+                ie = IdentifiedEntity(tokens[start:end],
+                                      e.name, e, e.score, surface_score,
+                                      perfect_match)
+                # self.boost_entity_score(ie)
+                identified_entities.append(ie)
         """
         for start in range(n_tokens):
             for end in range(start + 1, n_tokens + 1):
