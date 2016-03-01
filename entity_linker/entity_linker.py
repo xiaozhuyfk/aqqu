@@ -280,9 +280,7 @@ class EntityLinker:
         identified_entities = []
 
         tagme = TagMe()
-        print tagme.api_url
         for (spot, start, end) in tagme.tagme_spotting(" ".join([token.token for token in tokens])):
-            print (spot, start, end)
             entity_tokens = tokens[start:end]
             if not self.is_entity_occurrence(tokens, start, end):
                 continue
