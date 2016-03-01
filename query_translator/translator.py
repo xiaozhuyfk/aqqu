@@ -155,7 +155,6 @@ class QueryTranslator(object):
         # Parse query.
         parse_result = self.parser.parse(query_text)
         tokens = parse_result.tokens
-        print [token.index for token in tokens]
         # Create a query object.
         query = Query(query_text)
         query.query_tokens = tokens
