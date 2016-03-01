@@ -281,10 +281,8 @@ class EntityLinker:
             for end in range(start + 1, n_tokens + 1):
                 entity_tokens = tokens[start:end]
                 if not self.is_entity_occurrence(tokens, start, end):
-                    print ' '.join([t.token for t in entity_tokens])
                     continue
                 entity_str = ' '.join([t.token for t in entity_tokens])
-                print entity_str
                 logger.debug(u"Checking if '{0}' is an entity.".format(entity_str))
                 entities = self.surface_index.get_entities_for_surface(entity_str)
                 # No suggestions.

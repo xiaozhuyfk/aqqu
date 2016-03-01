@@ -7,6 +7,7 @@ from xml.etree import ElementTree
 
 api_url = "http://tagme.di.unipi.it/api"
 tag_url = "http://tagme.di.unipi.it/tag"
+spot_url = "http://tagme.di.unipi.it/spot"
 key = "CMU2016abhwqlao"
 
 def parse_xml_response(text):
@@ -18,14 +19,14 @@ def identify_entities_legacy(text, lang = "en"):
     r = requests.get(api_url, params = parameter)
     tree = ElementTree.fromstring(r.content)
 
-def identify_entities(text,
-                      lang = "en",
-                      tweet = "false",
-                      include_abstract = "false",
-                      include_categories = "false",
-                      include_all_spots = "false",
-                      long_text = 0,
-                      epsilon = 0.3):
+def tagme_tagging(text,
+                  lang = "en",
+                  tweet = "false",
+                  include_abstract = "false",
+                  include_categories = "false",
+                  include_all_spots = "false",
+                  long_text = 0,
+                  epsilon = 0.3):
     text = text.encode('utf-8')
     parameter = {
         'key' : key,
@@ -43,6 +44,22 @@ def identify_entities(text,
         print i
     return 0
 
+def tagme_spotting(text,
+                   lang = "en",
+                   tweet = "false"):
+    text = text.encode('utf-8')
+    parameter = {
+        'key' : key,
+        'text' : text,
+        'lang' : lang,
+        'tweet' : tweet
+    }
 
-identify_entities("when was 300 released")
-identify_entities("how many countries is spanish spoken in")
+    r = requests.get(spot_url, params = parameter)
+    spots = r.json()["spots"]
+    return [spot["spot"] for spot in spots]
+
+
+#tagme_tagging("when was 300 released")
+#tagme_tagging("how many countries is spanish spoken in")
+print tagme_spotting("when was 300 released")
