@@ -7,12 +7,11 @@ from xml.etree import ElementTree
 
 
 class TagMe(object):
-    def __init__(self, parser):
+    def __init__(self):
         self.api_url = "http://tagme.di.unipi.it/api"
         self.tag_url = "http://tagme.di.unipi.it/tag"
         self.spot_url = "http://tagme.di.unipi.it/spot"
         self.key = "CMU2016abhwqlao"
-        self.parser = parser
 
     def identify_entities_legacy(self, text, lang = "en"):
         text = text.encode('utf-8')
@@ -51,19 +50,26 @@ class TagMe(object):
                        lang = "en",
                        tweet = "false"):
         text = text.encode('utf-8')
-        tokens = self.parser.parse(text).tokens
+        head = [0]
+        tail = []
+        for token in text.split(" "):
+            tail.append(head[-1] + len(token))
+            head.append(head[-1] + len(token) + 1)
+
         parameter = {
             'key' : self.key,
             'text' : text,
             'lang' : lang,
             'tweet' : tweet
         }
+        print head
+        print tail
 
         r = requests.get(self.spot_url, params = parameter)
         spots = r.json()["spots"]
-        return [(spot["spot"], spot["start"], spot["end"]) for spot in spots]
+        return [(spot["spot"], head.index(spot["start"], tail.index(spot["end"]))) for spot in spots]
 
 
 #tagme_tagging("when was 300 released")
 #tagme_tagging("how many countries is spanish spoken in")
-print TagMe("").tagme_spotting("when was 300 released")
+#print TagMe().tagme_spotting("when was 300 released")
