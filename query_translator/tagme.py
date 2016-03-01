@@ -71,9 +71,9 @@ class TagMe(object):
 
         r = requests.get(self.spot_url, params = parameter)
         spots = r.json()["spots"]
-        return [(spot["spot"], head.index(spot["start"]), tail.index(spot["end"])+1) for spot in spots]
+        return [(spot["spot"], head.index(spot["start"]), head.index(spot["start"]) + text[spot["start"]:spot["end"]].count(" ") + 1) for spot in spots]
 
 
 #tagme_tagging("when was 300 released")
 #tagme_tagging("how many countries is spanish spoken in")
-#print TagMe().tagme_spotting("when was 300 released")
+#print TagMe().tagme_spotting("who is barack obama")
