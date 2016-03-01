@@ -13,7 +13,7 @@ import globals
 import scorer_globals
 from query_translator.features import FeatureExtractor
 from query_translator.translator import QueryTranslator
-from query_translator.util import writeFile, test_file, rank_error, rank_pos
+from query_translator.util import writeFile, test_file, rank_error, rank_pos, wq_index, wq_test
 from query_translator.ranker import feature_diff
 
 logging.basicConfig(format = "%(asctime)s : %(levelname)s "
@@ -44,11 +44,12 @@ def main():
 
     writeFile(test_file, "", "w")
 
+    """
     linker = translator.entity_linker
     entities = linker.surface_index.get_entities_for_surface("spanish")
     for (e, score) in entities:
         print e.name, score
-
+    """
     """
     for i in xrange(len(rank_error)):
         query = rank_error[i]
@@ -123,8 +124,9 @@ def main():
         writeFile(test_file, "\n", "a")
     """
 
-    """
-    for query in test_set + unidentified:
+    for i in xrange(60):
+        index = wq_index[i]
+        query = wq_test[i]
         results = translator.translate_and_execute_query(query)
         if (len(results) > 0):
             for i in xrange(len(results)):
@@ -143,12 +145,12 @@ def main():
                 extractor = FeatureExtractor(True, False, None)
                 features = extractor.extract_features(candidate)
 
-                root_name = "%d Root Node: %s\n" % (i+1, candidate.root_node.entity.name.encode('utf-8'))
-                query_str = "%d SPARQL query: %s\n" % (i+1, sparql_query.encode('utf-8'))
-                graph_str = "%d Candidate Graph: %s\n" % (i+1, candidate.graph_as_string().encode('utf-8'))
-                graph_str_simple = "%d Simple Candidate Graph: %s" % (i+1, candidate.graph_as_simple_string().encode('utf-8'))
+                root_name = "%d Root Node: %s\n" % (index, candidate.root_node.entity.name.encode('utf-8'))
+                query_str = "%d SPARQL query: %s\n" % (index, sparql_query.encode('utf-8'))
+                graph_str = "%d Candidate Graph: %s\n" % (index, candidate.graph_as_string().encode('utf-8'))
+                graph_str_simple = "%d Simple Candidate Graph: %s" % (index, candidate.graph_as_simple_string().encode('utf-8'))
                 result_str = "%d Result: %s\n" % (i+1, (" ".join(result)).encode('utf-8'))
-                feature_str = "%d Features: %s\n" % (i+1, str(features).encode('utf-8'))
+                feature_str = "%d Features: %s\n" % (index, str(features).encode('utf-8'))
                 writeFile(test_file, root_name, "a")
                 #writeFile(test_file, graph_str, "a")
                 writeFile(test_file, graph_str_simple, "a")
@@ -156,8 +158,8 @@ def main():
                 #writeFile(test_file, query_str, "a")
                 writeFile(test_file, result_str, "a")
         writeFile(test_file, "\n", "a")
-    """
 
+    """
     while True:
         sys.stdout.write("enter question> ")
         sys.stdout.flush()
@@ -179,7 +181,7 @@ def main():
                     result.append("%s" % r[0])
             logger.info("SPARQL query: %s" % sparql_query)
             logger.info("Result: %s " % " ".join(result))
-
+    """
 
 if __name__ == "__main__":
     main()

@@ -7,7 +7,7 @@ from xml.etree import ElementTree
 
 api_url = "http://tagme.di.unipi.it/api"
 tag_url = "http://tagme.di.unipi.it/tag"
-key = ""
+key = "CMU2016abhwqlao"
 
 def parse_xml_response(text):
     pass
@@ -28,6 +28,7 @@ def identify_entities(text,
                       epsilon = 0.3):
     text = text.encode('utf-8')
     parameter = {
+        'key' : key,
         'text' : text,
         'lang' : lang,
         'tweet' : tweet,
@@ -38,9 +39,10 @@ def identify_entities(text,
     }
 
     r = requests.get(tag_url, params = parameter)
-    json = r.json()
-    return [(e, )]
+    for i in  r.json()["annotations"]:
+        print i
+    return 0
 
 
-print identify_entities_legacy("what the fuck is this?")
-print identify_entities("wo le ge qu")
+identify_entities("when was 300 released")
+identify_entities("how many countries is spanish spoken in")
