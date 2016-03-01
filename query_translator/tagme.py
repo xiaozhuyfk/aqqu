@@ -62,8 +62,6 @@ class TagMe(object):
             'lang' : lang,
             'tweet' : tweet
         }
-        print head
-        print tail
 
         r = requests.get(self.spot_url, params = parameter)
         spots = r.json()["spots"]

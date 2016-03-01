@@ -12,7 +12,7 @@ from surface_index_memory import EntitySurfaceIndexMemory
 from util import normalize_entity_name, remove_number_suffix,\
     remove_prefixes_from_name, remove_suffixes_from_name
 import globals
-import query_translator.tagme
+from query_translator.tagme import TagMe
 
 logger = logging.getLogger(__name__)
 
