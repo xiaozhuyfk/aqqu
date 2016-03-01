@@ -61,6 +61,8 @@ class TagMe(object):
 
         for i in xrange(len(tail)):
             head.append(tail[i] - len(tokens[i]))
+        print head
+        print tail
 
         parameter = {
             'key' : self.key,
@@ -71,9 +73,16 @@ class TagMe(object):
 
         r = requests.get(self.spot_url, params = parameter)
         spots = r.json()["spots"]
-        return [(spot["spot"], head.index(spot["start"]), head.index(spot["start"]) + text[spot["start"]:spot["end"]].count(" ") + 1) for spot in spots]
+        print spots
+        return [(spot["spot"], findPrev(head, spot["start"]), findPrev(head, spot["start"]) + text[spot["start"]:spot["end"]].count(" ") + 1) for spot in spots]
 
+def findPrev(l, n):
+    for i in xrange(len(l)):
+        num = l[i]
+        if num > n:
+            return i-1
+    return len(l)-1
 
 #tagme_tagging("when was 300 released")
 #tagme_tagging("how many countries is spanish spoken in")
-#print TagMe().tagme_spotting("who is barack obama")
+#print TagMe().tagme_spotting("what was procter & gamble 's net profit in 1955")
