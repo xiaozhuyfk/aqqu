@@ -277,6 +277,7 @@ class EntityLinker:
         start_time = time.time()
         # First find all candidates.
         identified_entities = []
+        """
         for start in range(n_tokens):
             for end in range(start + 1, n_tokens + 1):
                 entity_tokens = tokens[start:end]
@@ -301,6 +302,7 @@ class EntityLinker:
                                           perfect_match)
                     # self.boost_entity_score(ie)
                     identified_entities.append(ie)
+        """
         identified_entities.extend(self.identify_dates(tokens))
         duration = (time.time() - start_time) * 1000
         identified_entities = self._filter_identical_entities(identified_entities)

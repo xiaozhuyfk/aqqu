@@ -253,7 +253,7 @@ wq_test = [
     "what did anton van leeuwenhoek contribute to our knowledge of cells?"
 ]
 
-test_file = "wq_error.log"
+test_file = "test.log"
 
 rank_error = [
     "who is the present newscaster on cbs evening news",

@@ -42,7 +42,7 @@ def main():
     translator = QueryTranslator.init_from_config()
     translator.set_scorer(ranker)
 
-    writeFile(test_file, "", "w")
+    #writeFile(test_file, "", "w")
 
     """
     linker = translator.entity_linker
@@ -124,7 +124,7 @@ def main():
         writeFile(test_file, "\n", "a")
     """
 
-    for i in xrange(60):
+    for i in [0]:
         index = wq_index[i]
         query = wq_test[i]
         results = translator.translate_and_execute_query(query)
