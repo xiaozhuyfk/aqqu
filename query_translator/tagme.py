@@ -50,11 +50,17 @@ class TagMe(object):
                        lang = "en",
                        tweet = "false"):
         text = text.encode('utf-8')
-        head = [0]
+        head = []
         tail = []
-        for token in text.split(" "):
-            tail.append(head[-1] + len(token))
-            head.append(head[-1] + len(token) + 1)
+        tokens = text.split(" ")
+        for token in tokens:
+            if tail:
+                tail.append(tail[-1] + len(token) + 1)
+            else:
+                tail.append(len(token))
+
+        for i in xrange(len(tail)):
+            head.append(tail[i] - len(tokens[i]))
 
         parameter = {
             'key' : self.key,
@@ -65,9 +71,9 @@ class TagMe(object):
 
         r = requests.get(self.spot_url, params = parameter)
         spots = r.json()["spots"]
-        return [(spot["spot"], head.index(spot["start"], tail.index(spot["end"]))) for spot in spots]
+        return [(spot["spot"], head.index(spot["start"]), tail.index(spot["end"])) for spot in spots]
 
 
 #tagme_tagging("when was 300 released")
 #tagme_tagging("how many countries is spanish spoken in")
-#print TagMe().tagme_spotting("when was 300 released")
+print TagMe().tagme_spotting("when was 300 released")
