@@ -161,7 +161,7 @@ class QueryTranslator(object):
         if not self.scorer.get_parameters().entity_oracle:
             #entities = self.entity_linker.identify_entities_in_tokens(
             #    query.query_tokens)
-            entities = self.entity_linker.identify_entities_with_tageme(query.query_tokens)
+            entities = self.entity_linker.identify_entities_with_tagme(query.query_tokens)
         else:
             entity_oracle = self.scorer.get_parameters().entity_oracle
             entities = entity_oracle.identify_entities_in_tokens(
