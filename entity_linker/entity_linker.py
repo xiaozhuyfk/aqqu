@@ -266,6 +266,58 @@ class EntityLinker:
                     identified_dates.append(ie)
         return identified_dates
 
+    def findPrev(self, l, n):
+        for i in xrange(len(l)):
+            num = l[i]
+            if num > n:
+                return i-1
+        return len(l)-1
+
+    def identify_entities_with_tagme(self, tokens):
+        tagme = TagMe()
+        text = (" ".join([token.token for token in tokens])).encode('utf-8').lower()
+
+        identified_entities = []
+        annotations = tagme.tagme_tagging(text)
+
+        for annotation in annotations:
+            id = annotation["id"]
+            title = annotation["title"]
+            start = annotation["start"]
+            end = annotation["end"]
+            rho = annotation["rho"]
+
+            head = []
+            tail = []
+            tokens = text.split(" ")
+            for token in tokens:
+                if tail:
+                    tail.append(tail[-1] + len(token) + 1)
+                else:
+                    tail.append(len(token))
+
+            for i in xrange(len(tail)):
+                head.append(tail[i] - len(tokens[i]))
+
+            token_start = self.findPrev(head, spot["start"])
+            token_end = self.findPrev(head, spot["start"]) + text[spot["start"]:spot["end"]].count(" ") + 1
+
+            e = KBEntity(title, id, rho, None)
+            ie = IdentifiedEntity(tokens[token_start:token_end],
+                                  e.name, e, e.score, rho,
+                                  (title in text))
+            identified_entities.append(ie)
+
+        identified_entities.extend(self.identify_dates(tokens))
+        identified_entities = self._filter_identical_entities(identified_entities)
+
+        # Sort by quality
+        identified_entities = sorted(identified_entities, key=lambda x: (len(x.tokens),
+                                                                         x.surface_score),
+                                     reverse=True)
+
+        return identified_entities
+
     def identify_entities_in_tokens(self, tokens, min_surface_score=0.1):
         '''
         Identify instances in the tokens.

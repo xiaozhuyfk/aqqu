@@ -6,6 +6,7 @@ import requests
 from xml.etree import ElementTree
 
 
+
 class TagMe(object):
     def __init__(self):
         self.api_url = "http://tagme.di.unipi.it/api"
@@ -41,9 +42,9 @@ class TagMe(object):
         }
 
         r = requests.get(self.tag_url, params = parameter)
-        for i in  r.json()["annotations"]:
-            print i
-        return 0
+        annotations = r.json()["annotations"]
+
+        return annotations
 
     def tagme_spotting(self,
                        text,
