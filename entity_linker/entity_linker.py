@@ -299,8 +299,8 @@ class EntityLinker:
             for i in xrange(len(tail)):
                 head.append(tail[i] - len(tokens[i]))
 
-            token_start = self.findPrev(head, spot["start"])
-            token_end = self.findPrev(head, spot["start"]) + text[spot["start"]:spot["end"]].count(" ") + 1
+            token_start = self.findPrev(head, start)
+            token_end = self.findPrev(head, start) + text[start:end].count(" ") + 1
 
             e = KBEntity(title, id, rho, None)
             ie = IdentifiedEntity(tokens[token_start:token_end],
