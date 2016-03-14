@@ -305,10 +305,10 @@ class EntityLinker:
             e = KBEntity(title, id, rho, None)
             ie = IdentifiedEntity(tokens[token_start:token_end],
                                   e.name, e, e.score, rho,
-                                  (title in text))
+                                  self._text_matches_main_name(e, text))
             identified_entities.append(ie)
 
-        identified_entities.extend(self.identify_dates(tokens))
+        #identified_entities.extend(self.identify_dates(tokens))
         identified_entities = self._filter_identical_entities(identified_entities)
 
         # Sort by quality
