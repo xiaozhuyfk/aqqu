@@ -61,8 +61,6 @@ class TagMe(object):
 
         for i in xrange(len(tail)):
             head.append(tail[i] - len(tokens[i]))
-        print head
-        print tail
 
         parameter = {
             'key' : self.key,
