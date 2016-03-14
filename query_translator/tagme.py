@@ -72,7 +72,7 @@ class TagMe(object):
 
         r = requests.get(self.spot_url, params = parameter)
         spots = r.json()["spots"]
-        print spots
+
         return [(spot["spot"], findPrev(head, spot["start"]), findPrev(head, spot["start"]) + text[spot["start"]:spot["end"]].count(" ") + 1) for spot in spots]
 
 def findPrev(l, n):
