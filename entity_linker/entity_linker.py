@@ -354,6 +354,7 @@ class EntityLinker:
         # First find all candidates.
         identified_entities = []
 
+        """
         tagme = TagMe()
         for (spot, start, end) in tagme.tagme_spotting(" ".join([token.token for token in tokens])):
             entity_tokens = tokens[start:end]
@@ -373,11 +374,6 @@ class EntityLinker:
                 # Check if the main name of the entity exactly matches the text.
                 if self._text_matches_main_name(e, entity_str):
                     perfect_match = True
-                print e.name
-                print e.score
-                print surface_score
-                print e.id
-                print e.aliases
                 ie = IdentifiedEntity(tokens[start:end],
                                       e.name, e, e.score, surface_score,
                                       perfect_match)
@@ -408,7 +404,7 @@ class EntityLinker:
                                           perfect_match)
                     # self.boost_entity_score(ie)
                     identified_entities.append(ie)
-        """
+
         identified_entities.extend(self.identify_dates(tokens))
         duration = (time.time() - start_time) * 1000
         identified_entities = self._filter_identical_entities(identified_entities)
