@@ -304,7 +304,7 @@ class EntityLinker:
 
             e = KBEntity(title, id, rho, None)
             ie = IdentifiedEntity(tokens[token_start:token_end],
-                                  e.name, e, e.score, rho,
+                                  e.name, e, e.score, int(rho * 10000),
                                   self._text_matches_main_name(e, text))
             identified_entities.append(ie)
 
