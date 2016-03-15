@@ -834,13 +834,14 @@ class QueryCandidateExtender:
         relations = self.get_relation_suggestions(query_candidate)
         remaining_query_content_tokens = get_content_tokens(
             query_candidate.unmatched_tokens)
-        print query_candidate.query.query_text
-        print relations
+        print query_candidate.query
+        #print relations
         # Find the relations that match.
         for rel in relations:
 
             # Ignore mediators here.
             if rel in self.mediator_relations:
+                print rel
                 continue
 
             # match = self.compute_answer_type_match(rel, query_candidate, )
@@ -848,6 +849,7 @@ class QueryCandidateExtender:
             at_match = self.relation_matches_answer_type(rel, query_candidate)
             # Do we care about the answer type?
             if self.parameters.restrict_answer_type and not at_match:
+                print rel
                 continue
 
             # Try to match remaining token to the relation.
@@ -869,6 +871,8 @@ class QueryCandidateExtender:
                 if self.relation_points_to_count(rel):
                     new_query_candidate.target_is_count = True
                 query_candidates.append(new_query_candidate)
+            else:
+                print rel
         return query_candidates
 
     def extend_entity_with_mediator_and_entity(self, query_candidate):
