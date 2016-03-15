@@ -285,7 +285,7 @@ class EntityLinker:
             title = annotation["title"]
             start = annotation["start"]
             end = annotation["end"]
-            rho = annotation["rho"]
+            rho = float(annotation["rho"])
 
             head = []
             tail = []
@@ -350,6 +350,10 @@ class EntityLinker:
                 # Check if the main name of the entity exactly matches the text.
                 if self._text_matches_main_name(e, entity_str):
                     perfect_match = True
+                print e.name
+                print e.score
+                print e.id
+                print e.aliases
                 ie = IdentifiedEntity(tokens[start:end],
                                       e.name, e, e.score, surface_score,
                                       perfect_match)
