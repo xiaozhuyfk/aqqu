@@ -287,6 +287,11 @@ class EntityLinker:
             start = annotation["start"]
             end = annotation["end"]
             rho = float(annotation["rho"])
+            print type(id)
+            print type(title)
+            print type(start)
+            print type(end)
+            print type(annotation["rho"])
 
             head = []
             tail = []
