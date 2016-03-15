@@ -290,15 +290,14 @@ class EntityLinker:
 
             head = []
             tail = []
-            token_list = text.split(" ")
-            for token in token_list:
+            for token in tokens:
                 if tail:
-                    tail.append(tail[-1] + len(token_list) + 1)
+                    tail.append(tail[-1] + len(token) + 1)
                 else:
-                    tail.append(len(token_list))
+                    tail.append(len(token))
 
             for i in xrange(len(tail)):
-                head.append(tail[i] - len(token_list[i]))
+                head.append(tail[i] - len(tokens[i]))
 
             token_start = self.findPrev(head, start)
             token_end = self.findPrev(head, start) + text[start:end].count(" ") + 1
@@ -312,7 +311,7 @@ class EntityLinker:
                                   self._text_matches_main_name(e, text))
             identified_entities.append(ie)
 
-        #identified_entities.extend(self.identify_dates(tokens))
+        identified_entities.extend(self.identify_dates(tokens))
         identified_entities = self._filter_identical_entities(identified_entities)
 
         # Sort by quality
