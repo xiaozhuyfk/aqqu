@@ -303,6 +303,9 @@ class EntityLinker:
             token_start = self.findPrev(head, start)
             token_end = self.findPrev(head, start) + text[start:end].count(" ") + 1
 
+            if not self.is_entity_occurrence(tokens, token_start, token_end):
+                continue
+
             e = KBEntity(title, id, rho, None)
             ie = IdentifiedEntity(tokens[token_start:token_end],
                                   e.name, e, int(e.score * 10000), rho,
