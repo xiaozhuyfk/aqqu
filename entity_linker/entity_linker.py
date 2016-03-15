@@ -290,15 +290,15 @@ class EntityLinker:
 
             head = []
             tail = []
-            tokens = text.split(" ")
-            for token in tokens:
+            token_list = text.split(" ")
+            for token in token_list:
                 if tail:
-                    tail.append(tail[-1] + len(token) + 1)
+                    tail.append(tail[-1] + len(token_list) + 1)
                 else:
-                    tail.append(len(token))
+                    tail.append(len(token_list))
 
             for i in xrange(len(tail)):
-                head.append(tail[i] - len(tokens[i]))
+                head.append(tail[i] - len(token_list[i]))
 
             token_start = self.findPrev(head, start)
             token_end = self.findPrev(head, start) + text[start:end].count(" ") + 1
