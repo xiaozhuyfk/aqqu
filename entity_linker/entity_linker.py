@@ -273,7 +273,7 @@ class EntityLinker:
                 return i-1
         return len(l)-1
 
-    def identify_entities_with_tagme(self, tokens):
+    def identify_entities_with_tagme(self, tokens, min_surface_score=0.1):
         tagme = TagMe()
         text = (" ".join([token.token for token in tokens])).encode('utf-8').lower()
         identified_entities = []
