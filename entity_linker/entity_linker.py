@@ -352,6 +352,7 @@ class EntityLinker:
                     perfect_match = True
                 print e.name
                 print e.score
+                print surface_score
                 print e.id
                 print e.aliases
                 ie = IdentifiedEntity(tokens[start:end],
