@@ -835,6 +835,8 @@ class QueryCandidateExtender:
         relations = self.get_relation_suggestions(query_candidate)
         remaining_query_content_tokens = get_content_tokens(
             query_candidate.unmatched_tokens)
+        print query_candidate.query.query_text
+        print relations
         # Find the relations that match.
         for rel in relations:
 
