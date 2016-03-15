@@ -281,7 +281,7 @@ class EntityLinker:
 
         for annotation in annotations:
             id = annotation["id"]
-            title = annotation["title"].endcode('utf-8')
+            title = annotation["title"].encode('utf-8')
             start = annotation["start"]
             end = annotation["end"]
             rho = annotation["rho"]
