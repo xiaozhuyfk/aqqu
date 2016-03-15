@@ -276,22 +276,15 @@ class EntityLinker:
     def identify_entities_with_tagme(self, tokens):
         tagme = TagMe()
         text = (" ".join([token.token for token in tokens])).encode('utf-8').lower()
-        print text
-
         identified_entities = []
         annotations = tagme.tagme_tagging(text)
 
         for annotation in annotations:
             id = annotation["id"]
-            title = annotation["title"]
+            title = annotation["title"].endcode('utf-8')
             start = annotation["start"]
             end = annotation["end"]
-            rho = float(annotation["rho"])
-            print type(id)
-            print type(title)
-            print type(start)
-            print type(end)
-            print type(annotation["rho"])
+            rho = annotation["rho"]
 
             head = []
             tail = []
@@ -308,14 +301,36 @@ class EntityLinker:
             token_start = self.findPrev(head, start)
             token_end = self.findPrev(head, start) + text[start:end].count(" ") + 1
 
-            if not self.is_entity_occurrence(tokens, token_start, token_end):
+            entities = self.surface_index.get_entities_for_surface(title)
+            # No suggestions.
+            if len(entities) == 0:
                 continue
+            for e, surface_score in entities:
+                # Ignore entities with low surface score.
+                if surface_score < min_surface_score:
+                    continue
+                perfect_match = False
+                # Check if the main name of the entity exactly matches the text.
+                if self._text_matches_main_name(e, entity_str):
+                    perfect_match = True
+                print e.name
+                print e.score
+                print surface_score
+                print e.id
+                print e.aliases
+                ie = IdentifiedEntity(tokens[token_start:token_end],
+                                      e.name, e, e.score, surface_score,
+                                      perfect_match)
+                # self.boost_entity_score(ie)
+                identified_entities.append(ie)
 
+            """
             e = KBEntity(title, id, rho, None)
             ie = IdentifiedEntity(tokens[token_start:token_end],
                                   e.name, e, int(e.score * 10000), rho,
                                   self._text_matches_main_name(e, text))
             identified_entities.append(ie)
+            """
 
         identified_entities.extend(self.identify_dates(tokens))
         identified_entities = self._filter_identical_entities(identified_entities)
