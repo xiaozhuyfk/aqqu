@@ -276,6 +276,7 @@ class EntityLinker:
     def identify_entities_with_tagme(self, tokens):
         tagme = TagMe()
         text = (" ".join([token.token for token in tokens])).encode('utf-8').lower()
+        print text
 
         identified_entities = []
         annotations = tagme.tagme_tagging(text)
@@ -304,7 +305,7 @@ class EntityLinker:
 
             e = KBEntity(title, id, rho, None)
             ie = IdentifiedEntity(tokens[token_start:token_end],
-                                  e.name, e, e.score, int(rho * 10000),
+                                  e.name, e, int(e.score * 10000), rho,
                                   self._text_matches_main_name(e, text))
             identified_entities.append(ie)
 
