@@ -311,13 +311,9 @@ class EntityLinker:
                     continue
                 perfect_match = False
                 # Check if the main name of the entity exactly matches the text.
-                if self._text_matches_main_name(e, entity_str):
+                if self._text_matches_main_name(e, text):
                     perfect_match = True
-                print e.name
-                print e.score
-                print surface_score
-                print e.id
-                print e.aliases
+
                 ie = IdentifiedEntity(tokens[token_start:token_end],
                                       e.name, e, e.score, surface_score,
                                       perfect_match)
