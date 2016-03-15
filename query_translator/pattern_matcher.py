@@ -825,7 +825,6 @@ class QueryCandidateExtender:
                     if domain in self.filter_domains:
                         domain_rels.append(r)
             return domain_rels
-        print relations
         return relations
 
     def extend_entity_with_target_relation(self, query_candidate):
