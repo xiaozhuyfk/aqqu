@@ -6734,3 +6734,2971 @@ Entity: (u'Outline of science fiction', 0.141008576871, 0, False)
 Entity: (u'Pictures', 0.100947960221, 0, True)
 TargetType: Other
 Pattern matches: ERT = 216, ERMRT = 229, ERMRERT = 38
+Query: what is pycon about
+Entity: (u'PyCon', 1.0, 13190, True)
+TargetType: Other
+Pattern matches: ERT = 5, ERMRT = 3, ERMRERT = 0
+Query: who designed pac-man
+Entity: (u'Pac-Man', 0.882586406895, 196287, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 10, ERMRT = 8, ERMRERT = 0
+Query: who invented koolaid
+Entity: (u'Kool-Aid', 0.711291198868, 163763, True)
+Entity: (u'Drinking the Kool-Aid', 0.143353777538, 63, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 11, ERMRT = 15, ERMRERT = 0
+Query: what causes syphilis
+Entity: (u'Syphilis', 0.993693902013, 25796, True)
+TargetType: Other
+Pattern matches: ERT = 20, ERMRT = 3, ERMRERT = 0
+Query: who started starbucks
+Entity: (u'Starbucks', 0.990318457842, 1747549, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 20, ERMRT = 120, ERMRERT = 0
+Query: when was 300 released
+TargetType: Date
+Pattern matches: ERT = 0, ERMRT = 0, ERMRERT = 0
+Query: what is europe 's area
+Entity: (u'Europe', 0.85924160737, 39937138, False)
+Entity: (u'Sarea', 0.393782347338, 4, True)
+Entity: (u'Europe (Hard rock Artist)', 0.129742527375, 863, False)
+Entity: (u'Europe', 0.924371413609, 39937138, True)
+Entity: (u'Area', 0.850698126258, 76568, True)
+TargetType: Other
+Pattern matches: ERT = 81, ERMRT = 59, ERMRERT = 0
+Query: where was omarion born
+Entity: (u'Omarion', 0.99980405604, 20410, True)
+TargetType: location, event, conference
+Pattern matches: ERT = 22, ERMRT = 52, ERMRERT = 0
+Query: what is yahoo!'s slogan
+Entity: (u'Yahoo (Character Species)', 0.70089766458, 134, False)
+Entity: (u'Yahoo!', 0.185242715267, 10885291, False)
+Entity: (u'Yahoo!', 0.942008697844, 10885291, True)
+Entity: (u'Slogan', 0.767881657439, 9222, True)
+TargetType: Other
+Pattern matches: ERT = 44, ERMRT = 216, ERMRERT = 0
+Query: who created the far side
+Entity: (u'The Far Side', 0.990166308402, 8107, True)
+Entity: (u'Far side of the Moon', 0.603548026821, 9954, False)
+Entity: (u'Side', 0.692583545351, 4773, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 13, ERMRT = 8, ERMRERT = 0
+Query: when was walmart founded
+Entity: (u'Walmart', 0.983760899289, 3391946, True)
+TargetType: Date
+Pattern matches: ERT = 20, ERMRT = 106, ERMRERT = 0
+Query: how was pluto discovered
+Entity: (u'Pluto', 0.641672151936, 513041, True)
+Entity: (u'Pluto (Film character) #3', 0.123765069373, 20041, True)
+TargetType: Other
+Pattern matches: ERT = 35, ERMRT = 33, ERMRERT = 0
+Query: when was barbie launched
+Entity: (u'Barbie', 0.96649402726, 859774, True)
+TargetType: Date
+Pattern matches: ERT = 16, ERMRT = 26, ERMRERT = 0
+Query: in what zoo was knut kept
+Entity: (u'Knut', 0.893015520917, 14894, True)
+Entity: (u'Zoo', 0.676994374067, 234890, True)
+TargetType: Other
+Pattern matches: ERT = 18, ERMRT = 7, ERMRERT = 0
+Query: when was doritos produced
+Entity: (u'Doritos', 0.984327710629, 89042, True)
+TargetType: Date
+Pattern matches: ERT = 3, ERMRT = 4, ERMRERT = 0
+Query: when was koolaid invented
+Entity: (u'Kool-Aid', 0.711291198868, 163763, True)
+Entity: (u'Drinking the Kool-Aid', 0.143353777538, 63, False)
+TargetType: Date
+Pattern matches: ERT = 11, ERMRT = 15, ERMRERT = 0
+Query: how many beers come a can
+Entity: (u'Acan', 0.659340934401, 20, True)
+Entity: (u'comEA (Gene) #2', 0.5, 0, True)
+Entity: (u'comEA (Gene) #1', 0.5, 0, True)
+Entity: (u'Aggrecan', 0.164834983295, 382, False)
+Entity: (u'Beer (Beverage type)', 0.820150180697, 62289, False)
+TargetType: Other
+Pattern matches: ERT = 34, ERMRT = 10, ERMRERT = 0
+Query: who founded the red cross
+Entity: (u'International Red Cross and Red Crescent Movement', 0.830726497669, 97184, False)
+Entity: (u'The Red', 0.354360675937, 54, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 10, ERMRT = 18, ERMRERT = 0
+Query: who is the ceo of savealot
+Entity: (u'C. Edward McVaney', 0.958904109589, 140, False)
+Entity: (u'Save-A-Lot', 1.0, 661, True)
+Entity: (u'Managing Director', 0.97081319684, 92293, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 21, ERMRT = 75, ERMRERT = 4
+Query: who destroyed the one ring
+Entity: (u'One Ring', 0.945606684435, 34171, True)
+Entity: (u'One Ring', 0.995720725613, 34171, True)
+Entity: (u'The One', 0.162297373586, 3301, True)
+Entity: (u'Ring', 0.166719472543, 639, True)
+Entity: (u'Ring', 0.131743978743, 12880, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 62, ERMRT = 67, ERMRERT = 0
+Query: when was oxygen discovered
+Entity: (u'wasoxygen', 1.0, 0, True)
+Entity: (u'Oxygen', 1.0, 255237, False)
+TargetType: Date
+Pattern matches: ERT = 25, ERMRT = 9, ERMRERT = 0
+Query: who designed the parthenon
+Entity: (u'Parthenon', 0.604093622193, 98612, True)
+Entity: (u'Parthenon (Venue)', 0.382668332122, 2328, True)
+Entity: (u'Parthenon', 0.961783697742, 98612, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 33, ERMRT = 26, ERMRERT = 0
+Query: who was 8 mile directed by
+Entity: (u'8 Mile', 0.718789728861, 275, True)
+Entity: (u'Film director (Profession)', 0.499643274822, 12592, False)
+Entity: (u'Jean Negulesco', 0.403966256452, 1171, False)
+Entity: (u'Mile', 0.919329395517, 2082, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 64, ERMRT = 111, ERMRERT = 0
+Query: when was facebook launched
+Entity: (u'Facebook', 0.980081051933, 20490157, True)
+TargetType: Date
+Pattern matches: ERT = 23, ERMRT = 7, ERMRERT = 0
+Query: who was titanic directed by
+Entity: (u'Film director (Profession)', 0.499643274822, 12592, False)
+Entity: (u'Jean Negulesco', 0.403966256452, 1171, False)
+Entity: (u'RMS Titanic', 0.509296562585, 130691, False)
+Entity: (u'Titanic', 0.409702044761, 131297, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 85, ERMRT = 135, ERMRERT = 0
+Query: what causes prostate cancer
+Entity: (u'Prostate cancer', 0.998617319424, 67797, True)
+Entity: (u'Prostate', 0.881638204484, 18410, True)
+Entity: (u'Cancer (Disease or medical condition)', 0.86659843983, 400879, True)
+TargetType: Other
+Pattern matches: ERT = 54, ERMRT = 27, ERMRERT = 0
+Query: when was home depot founded
+Entity: (u'Home Depot', 0.99625585797, 626059, True)
+Entity: (u'Train station', 0.43495405957, 148164, False)
+Entity: (u'Main Operating Base', 0.169039784248, 128, False)
+Entity: (u'Home', 0.138555757341, 2158, True)
+Entity: (u'Home (Quotation Subject)', 0.103499481387, 1612, True)
+TargetType: Date
+Pattern matches: ERT = 31, ERMRT = 112, ERMRERT = 0
+Query: when was capri sun developed
+Entity: (u'Capri Sun', 0.999501743896, 4012, True)
+TargetType: Date
+Pattern matches: ERT = 1, ERMRT = 3, ERMRERT = 0
+Query: what is bruce almighty rated
+Entity: (u'Bruce Almighty', 0.98724692202, 17576, True)
+TargetType: Other
+Pattern matches: ERT = 30, ERMRT = 50, ERMRERT = 0
+Query: who instructed steven seagal
+Entity: (u'Steven Seagal', 0.992210453355, 60741, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 35, ERMRT = 135, ERMRERT = 0
+Query: what is africa 's population
+Entity: (u'Africa', 1.0, 11731659, False)
+Entity: (u'Population', 0.869365457191, 43740, True)
+TargetType: Other
+Pattern matches: ERT = 30, ERMRT = 21, ERMRERT = 0
+Query: what are the texts of taoism
+Entity: (u'The Texts of Taoism', 1.0, 35, True)
+Entity: (u'Texts of Taoism', 0.333333333333, 0, True)
+Entity: (u'Texts of Taoism (Volume 2)', 0.333333333333, 0, True)
+Entity: (u'Texts of Taoism (Volume 1)', 0.333333333333, 0, True)
+Entity: (u'Taoism', 0.982920151219, 399341, True)
+Entity: (u'Buddhist texts', 0.400543403998, 11737, False)
+Entity: (u'Hindu texts', 0.200380405858, 3294, False)
+TargetType: Other
+Pattern matches: ERT = 43, ERMRT = 13, ERMRERT = 0
+Query: what causes bipolar disorder
+Entity: (u'Bipolar disorder', 0.995120977255, 107893, True)
+Entity: (u'Disease', 0.194551784842, 133495, False)
+Entity: (u'Mental illness', 0.171830152412, 48605, False)
+Entity: (u'Disorder', 0.130647632201, 58, True)
+Entity: (u'Narcissistic personality disorder', 0.111618512927, 21361, False)
+TargetType: Other
+Pattern matches: ERT = 61, ERMRT = 21, ERMRERT = 0
+Query: what's the symbol for mercury
+Entity: (u'At sign', 0.597507912712, 286, False)
+Entity: (u'Coimbra Academic Association', 0.350262374638, 162, False)
+Entity: (u'Symbol', 0.546737857264, 92961, True)
+Entity: (u'Mercury', 0.269246774927, 375272, True)
+Entity: (u'Mercury (Planet)', 0.197353565209, 114242, True)
+Entity: (u'Insignia', 0.182024121816, 13139, False)
+Entity: (u'Mercury Records', 0.117225127565, 41142, False)
+TargetType: Other
+Pattern matches: ERT = 86, ERMRT = 31, ERMRERT = 0
+Query: what starts are in ursa minor
+Entity: (u'Ursa Minor', 0.966293743488, 15108, True)
+Entity: (u'Starting pitcher', 0.674354868035, 4484, False)
+Entity: (u'Starting lineup', 0.20326950227, 3287, False)
+TargetType: Other
+Pattern matches: ERT = 12, ERMRT = 22, ERMRERT = 0
+Query: what are the isotopes of zinc
+Entity: (u'Isotopes of zinc', 0.857142857143, 6, True)
+Entity: (u'Isotopes of zinc', 0.142857142857, 0, True)
+Entity: (u'Zinc (m/025sqz8)', 0.983801684876, 135799, True)
+Entity: (u'Isotope', 0.924542024632, 6358, False)
+TargetType: Other
+Pattern matches: ERT = 43, ERMRT = 13, ERMRERT = 0
+Query: what are the celtic languages
+Entity: (u'The Celtic Languages (Routledge Language Familydescriptions)', 0.5, 0, True)
+Entity: (u'The Celtic Languages', 0.5, 0, True)
+Entity: (u'Celtic languages', 0.991774158352, 9321, True)
+Entity: (u'Language', 0.546601915644, 110409, False)
+TargetType: Other
+Pattern matches: ERT = 22, ERMRT = 11, ERMRERT = 0
+Query: who designed the giant dipper
+Entity: (u'Giant Dipper', 0.946302102801, 2020, True)
+Entity: (u'Big Show', 0.666374396937, 74140, False)
+Entity: (u'The Giant', 0.136431854655, 258, True)
+Entity: (u'Dipper', 0.504753202283, 2664, True)
+Entity: (u'Dipper', 0.248388598284, 461, True)
+Entity: (u'USS Dipper (AM-357)', 0.141285885966, 0, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 45, ERMRT = 81, ERMRERT = 0
+Query: who directed charlie_s angels
+Entity: (u"Charlie's Angels", 0.735632890574, 10805, True)
+Entity: (u"Charlie's Angels (Crime Fiction Film)", 0.188576706004, 6506, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 45, ERMRT = 109, ERMRERT = 0
+Query: where was liam gallagher born
+Entity: (u'Liam Gallagher', 0.995486334452, 50741, True)
+TargetType: location, event, conference
+Pattern matches: ERT = 25, ERMRT = 51, ERMRERT = 0
+Query: when was starry night painted
+Entity: (u'The Starry Night', 0.863693544339, 13521, True)
+Entity: (u'Night', 0.487823053771, 25921, True)
+Entity: (u'Night (Memoir)', 0.151642418593, 6237, True)
+TargetType: Date
+Pattern matches: ERT = 27, ERMRT = 17, ERMRERT = 0
+Query: where was polonium discovered
+Entity: (u'Polonium', 0.953026585052, 6466, True)
+TargetType: location, event, conference
+Pattern matches: ERT = 19, ERMRT = 6, ERMRERT = 0
+Query: when was the iphone introduced
+Entity: (u'iPhone', 0.946428385713, 9461016, True)
+Entity: (u'iPhone', 0.966682517763, 9461016, True)
+TargetType: Date
+Pattern matches: ERT = 60, ERMRT = 30, ERMRERT = 0
+Query: who sponsors the hoby seminars
+Entity: (u'HOBY Seminars', 1.0, 0, True)
+Entity: (u'Seminar', 0.982876901067, 66691, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 9, ERMRT = 0, ERMRERT = 0
+Query: when was interstate 579 formed
+Entity: (u'Interstate 579', 1.0, 730, True)
+TargetType: Date
+Pattern matches: ERT = 4, ERMRT = 0, ERMRERT = 0
+Query: what is the capital of iceland
+Entity: (u'Reykjavik', 0.999994776731, 191450, False)
+Entity: (u'Capital of Germany', 0.882352941176, 15, False)
+Entity: (u'The Capital', 0.445116944049, 689, True)
+Entity: (u'Iceland', 0.74242798662, 1742658, True)
+Entity: (u'Capital', 0.346308875457, 8469, True)
+Entity: (u'Capital', 0.16058034643, 3927, True)
+Entity: (u'Atlanta', 0.100804954805, 1657105, False)
+Entity: (u'Iceland national football team', 0.100369570192, 576, False)
+TargetType: Other
+Pattern matches: ERT = 127, ERMRT = 340, ERMRERT = 0
+Query: who completed mozart_s requiem
+Entity: (u'Requiem in D minor, K. 626 (S\xfc\xdfmayr completion): IIIf. Sequenz: "Lacrimosa"', 0.999922964332, 12980, False)
+Entity: (u'Wolfgang Amadeus Mozart', 1.0, 749859, False)
+Entity: (u'Requiem', 0.431997595907, 42986, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 64, ERMRT = 59, ERMRERT = 0
+Query: who is the founder of savealot
+Entity: (u'Andr\xe9 Citro\xebn', 1.0, 1452, False)
+Entity: (u'Tavistock Institute', 0.555465345279, 6884, False)
+Entity: (u'John Cotton Dana', 0.444373276062, 1083, False)
+Entity: (u'Sh\u014djir\u014d Ishibashi', 0.358480453517, 479, False)
+Entity: (u'Thomas Jefferson', 0.280971484425, 808814, False)
+Entity: (u'The Founder (School newspaper)', 0.237371626585, 9, True)
+Entity: (u'Save-A-Lot', 1.0, 661, True)
+Entity: (u'Entrepreneur', 0.502437641922, 257785, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 115, ERMRT = 164, ERMRERT = 0
+Query: what company owns nutter butter
+Entity: (u'Nutter Butter', 1.0, 444, True)
+Entity: (u'Butter', 0.97075341608, 33630, True)
+Entity: (u'Company (Website Category)', 0.638632733677, 5847028, True)
+Entity: (u'Nutter', 0.352548548761, 34, True)
+Entity: (u'Nutter, Netherlands', 0.165905199417, 16, False)
+Entity: (u'Michael Nutter', 0.133567284063, 40477, False)
+TargetType: Other
+Pattern matches: ERT = 33, ERMRT = 57, ERMRERT = 0
+Query: where was lady washington built
+Entity: (u'Lady Washington', 0.976007293473, 3003, True)
+Entity: (u'Lady', 0.347215539159, 2757, True)
+Entity: (u'Washington, D.C.', 0.331873251273, 11240852, False)
+TargetType: location, event, conference
+Pattern matches: ERT = 77, ERMRT = 122, ERMRERT = 0
+Query: how many people practice karate
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'Karate', 0.936122751079, 87400, True)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'Practice', 0.339400323183, 30524, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+Entity: (u'Praxis', 0.153781107459, 3103, False)
+TargetType: Other
+Pattern matches: ERT = 36, ERMRT = 41, ERMRERT = 0
+Query: what are the christian holidays
+Entity: (u'Liturgical year', 1.0, 30330, False)
+Entity: (u'The Christian (Book) #3', 0.443820224719, 79, True)
+Entity: (u'The Christian', 0.191011235955, 463, True)
+Entity: (u'The Christian', 0.191011235955, 34, True)
+Entity: (u'The Christian (Musical Recording) #4', 0.101123595506, 18, True)
+Entity: (u'Holiday', 0.458137425129, 581658, False)
+Entity: (u'Jewish holiday', 0.197398835787, 32889, False)
+Entity: (u'Buddhist holidays', 0.156667734196, 49, False)
+TargetType: Other
+Pattern matches: ERT = 30, ERMRT = 15, ERMRERT = 0
+Query: what is jerry seinfeld religion
+Entity: (u'Jerry Seinfeld', 0.929733330903, 114386, True)
+TargetType: Other
+Pattern matches: ERT = 39, ERMRT = 107, ERMRERT = 0
+Query: when was the sony nex-5 released
+Entity: (u'Sony NEX-5', 0.999915952261, 11897, True)
+Entity: (u'Sony NEX-5', 1.0, 11897, False)
+Entity: (u'Sony Corporation', 0.872445622211, 4138529, False)
+TargetType: Date
+Pattern matches: ERT = 71, ERMRT = 119, ERMRERT = 0
+Query: how thick is the aletsch glacier
+Entity: (u'Aletsch Glacier', 1.0, 4859, True)
+TargetType: Other
+Pattern matches: ERT = 8, ERMRT = 6, ERMRERT = 0
+Query: what was the american past about
+Entity: (u'The American Past', 0.454545454545, 5, True)
+Entity: (u'The American past', 0.181818181818, 2, True)
+Entity: (u'Cinema of the United States', 0.413306543581, 65777, False)
+Entity: (u'The American (Novel)', 0.170842698919, 847, True)
+Entity: (u'Past', 0.590100512354, 21774, True)
+TargetType: Other
+Pattern matches: ERT = 28, ERMRT = 10, ERMRERT = 0
+Query: how many religions use the bible
+Entity: (u'Holy of Holies', 1.0, 36892, False)
+Entity: (u'The Bible', 0.730411116385, 8936253, True)
+Entity: (u'The Bible', 0.963573301128, 8936253, True)
+Entity: (u'Religion (TV Genre)', 0.872776747502, 224215, False)
+TargetType: Other
+Pattern matches: ERT = 59, ERMRT = 42, ERMRERT = 0
+Query: what was henry viii's royal line
+Entity: (u'Henry VIII of England', 1.0, 223708, False)
+Entity: (u'S\xe9gol\xe8ne Royal', 1.0, 21911, False)
+Entity: (u'Royal Line (Canonical Version)', 0.111111111111, 0, True)
+Entity: (u'Royal Line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Royal line', 0.111111111111, 0, True)
+Entity: (u'Line', 0.2556582535, 3802, True)
+Entity: (u'Color Lines', 0.215124552327, 1575, False)
+TargetType: Other
+Pattern matches: ERT = 81, ERMRT = 67, ERMRERT = 0
+Query: what is the population of europe
+Entity: (u'The Population of Europe', 1.0, 1, True)
+Entity: (u'Medieval demography', 1.0, 12, False)
+Entity: (u'Europe', 0.924371413609, 39937138, True)
+Entity: (u'Population', 0.869365457191, 43740, True)
+TargetType: Other
+Pattern matches: ERT = 36, ERMRT = 26, ERMRERT = 0
+Query: who is the lyricist for spamalot
+Entity: (u'Glenn Slater', 0.997306397306, 1481, False)
+Entity: (u'Spamalot', 0.998031989122, 27892, True)
+Entity: (u'Lyricist (Profession)', 0.975505807294, 9495, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 29, ERMRT = 47, ERMRERT = 0
+Query: when was 13 going on 30 released
+Entity: (u'13 Going on 30', 0.970047338277, 1131, True)
+Entity: (u'On30', 1.0, 5511, True)
+Entity: (u'GoingOn', 0.716865848357, 249, True)
+TargetType: Date
+Pattern matches: ERT = 37, ERMRT = 61, ERMRERT = 0
+Query: when was cap'n crunch introduced
+Entity: (u"Cap'n Crunch", 0.795815565681, 14759, True)
+Entity: (u'John Draper', 0.188020406461, 2883, False)
+Entity: (u'Crunch', 0.217070431668, 2398, True)
+Entity: (u'Nestl\xe9 Crunch', 0.156019701071, 3035, False)
+Entity: (u'Crunch (Animated TV Program)', 0.144148054467, 24, True)
+TargetType: Date
+Pattern matches: ERT = 33, ERMRT = 12, ERMRERT = 0
+Query: what team does alan butcher coach
+Entity: (u'Alan Butcher', 1.0, 414, True)
+Entity: (u'Team', 0.441557255154, 414089, True)
+Entity: (u'Coach', 0.367595380119, 4446, True)
+Entity: (u'Baseball Coach', 0.107632822168, 1596, False)
+TargetType: Other
+Pattern matches: ERT = 33, ERMRT = 59, ERMRERT = 0
+Query: what is the area of south america
+Entity: (u'Carinthian Slovenes', 1.0, 702, False)
+Entity: (u'South America', 0.959975493807, 3896540, True)
+Entity: (u'Burkina Faso', 0.646300053495, 289381, False)
+Entity: (u'Lot-et-Garonne', 0.137402560241, 9503, False)
+Entity: (u'Area', 0.850698126258, 76568, True)
+TargetType: Other
+Pattern matches: ERT = 78, ERMRT = 216, ERMRERT = 0
+Query: what are some hotels in vancouver
+Entity: (u'Hotels in Vancouver', 1.0, 0, True)
+Entity: (u'Hotel', 0.969665423378, 475558, False)
+Entity: (u'Vancouver', 0.920592750927, 3755100, True)
+TargetType: Other
+Pattern matches: ERT = 63, ERMRT = 58, ERMRERT = 0
+Query: what team does mike babcock coach
+Entity: (u'Mike Babcock', 0.99929349426, 16973, True)
+Entity: (u'Team', 0.441557255154, 414089, True)
+Entity: (u'Coach', 0.367595380119, 4446, True)
+Entity: (u'Baseball Coach', 0.107632822168, 1596, False)
+TargetType: Other
+Pattern matches: ERT = 30, ERMRT = 38, ERMRERT = 0
+Query: what is the nutty professor rated
+Entity: (u'The Nutty Professor (Romantic comedy Film) #1', 0.587665354296, 780, True)
+Entity: (u'The Nutty Professor', 0.36256872237, 3321, True)
+Entity: (u'The Nutty Professor (Romantic comedy Film) #1', 0.805671264665, 780, True)
+Entity: (u'Professor', 0.959717640992, 550241, True)
+TargetType: Other
+Pattern matches: ERT = 67, ERMRT = 141, ERMRERT = 0
+Query: when gatorade was first developed
+Entity: (u'First developed', 0.5, 0, True)
+Entity: (u'First developed', 0.5, 0, True)
+Entity: (u'Gatorade', 0.998550317651, 181507, True)
+TargetType: Date
+Pattern matches: ERT = 17, ERMRT = 16, ERMRERT = 0
+Query: when was the san diego zoo opened
+Entity: (u'San Diego Zoo', 1.0, 111903, True)
+Entity: (u'San Diego', 0.87016073694, 2320142, True)
+Entity: (u'Thesan', 0.83097381494, 820, True)
+Entity: (u'San People', 0.164972654255, 70075, False)
+Entity: (u'Zoo', 0.676994374067, 234890, True)
+TargetType: Date
+Pattern matches: ERT = 58, ERMRT = 84, ERMRERT = 0
+Query: are lithium batteries rechargeable
+Entity: (u'Lithium battery', 0.896084655164, 7348, False)
+Entity: (u'Lithium-ion battery', 0.103793395373, 353427, False)
+Entity: (u'Battery', 0.725036987731, 157472, False)
+Entity: (u'Lithium', 0.638517144355, 28301, True)
+Entity: (u'Lithium (Composition) #22', 0.124624693637, 133, True)
+Entity: (u'Lithium (Mood stabilizer Drug)', 0.123693433578, 24738, True)
+TargetType: Other
+Pattern matches: ERT = 57, ERMRT = 13, ERMRERT = 0
+Query: what is the population of belgium
+Entity: (u'Population', 0.869365457191, 43740, True)
+Entity: (u'Belgium', 0.850604313198, 4305757, True)
+TargetType: Other
+Pattern matches: ERT = 59, ERMRT = 261, ERMRERT = 0
+Query: how many awards did big daddy win
+Entity: (u'Soweto Kinch', 1.0, 1517, False)
+Entity: (u'Big Daddy', 0.165051107268, 11351, True)
+Entity: (u'Shirley Crabtree', 0.14531718449, 1184, False)
+Entity: (u'Award (Chivalric Title)', 0.274483106932, 214152, False)
+Entity: (u'Outline of science fiction', 0.141008576871, 0, False)
+Entity: (u"Lisa's First Word", 0.123711507751, 0, False)
+Entity: (u'Daddy', 0.105018474537, 2161, True)
+TargetType: Other
+Pattern matches: ERT = 45, ERMRT = 33, ERMRERT = 0
+Query: what teams did babe ruth play for
+Entity: (u'Babe Ruth', 0.950284867682, 191556, True)
+Entity: (u'Team', 0.375677017016, 414089, False)
+Entity: (u'TEAMS', 0.2881285462, 944, True)
+Entity: (u'Team sport', 0.109776154415, 12837, False)
+TargetType: Other
+Pattern matches: ERT = 34, ERMRT = 102, ERMRERT = 0
+Query: when was nutty professor released
+Entity: (u'The Nutty Professor (Romantic comedy Film) #1', 0.805671264665, 780, True)
+Entity: (u'The Nutty Professor', 0.192262911579, 3321, True)
+Entity: (u'Professor', 0.959717640992, 550241, True)
+TargetType: Date
+Pattern matches: ERT = 50, ERMRT = 108, ERMRERT = 0
+Query: who manufactured millennium force
+Entity: (u'Millennium Force', 0.999597261377, 2482, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 19, ERMRT = 2, ERMRERT = 0
+Query: how many people practice buddhism
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'Buddhism', 0.958841007958, 3064402, True)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'Practice', 0.339400323183, 30524, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+Entity: (u'Praxis', 0.153781107459, 3103, False)
+TargetType: Other
+Pattern matches: ERT = 51, ERMRT = 52, ERMRERT = 0
+Query: what instruments did omarion play
+Entity: (u'Omarion', 0.99980405604, 20410, True)
+Entity: (u'Musical instrument (Industry)', 0.767550109899, 56815, False)
+TargetType: Other
+Pattern matches: ERT = 28, ERMRT = 57, ERMRERT = 0
+Query: how many tv channels does nbc own
+Entity: (u'Television channel', 0.962454277952, 14677, False)
+Entity: (u'NBC', 0.92486044332, 2126639, True)
+Entity: (u'Television', 0.843880864865, 780007, False)
+Entity: (u'Channel', 0.24177019987, 341, False)
+Entity: (u'Channel', 0.15198673958, 583, False)
+Entity: (u'Channels (Comedy)', 0.127620633362, 180, True)
+TargetType: Other
+Pattern matches: ERT = 67, ERMRT = 157, ERMRERT = 0
+Query: when was diet mountain dew created
+Entity: (u'Mountain Dew', 0.999844854899, 244894, False)
+Entity: (u'Dew', 0.396967771819, 15038, True)
+TargetType: Date
+Pattern matches: ERT = 6, ERMRT = 12, ERMRERT = 0
+Query: what are some mountain bike models
+Entity: (u'Mountain bike', 0.960154879117, 77232, True)
+Entity: (u'Mountain', 0.618334212994, 205615, True)
+Entity: (u'Bicycle', 0.236937004987, 55244, False)
+Entity: (u'Model', 0.173636206762, 78754, False)
+Entity: (u'Mountain (Hard rock Artist)', 0.158291289241, 1845, True)
+Entity: (u'Scientific modelling', 0.115049636351, 3188, False)
+Entity: (u'Bike (Composition) #26', 0.108145985799, 45, True)
+Entity: (u'Mountain Time Zone', 0.1020377111, 161271, False)
+TargetType: Other
+Pattern matches: ERT = 71, ERMRT = 40, ERMRERT = 0
+Query: who discovered the rings of saturn
+Entity: (u'The Rings of Saturn', 0.878484006821, 1295, True)
+Entity: (u'Rings of Saturn', 0.943065720798, 5338, True)
+Entity: (u'Saturn', 1.0, 743617, False)
+Entity: (u'Wedding ring', 0.310661435954, 48327, False)
+Entity: (u'Rings of Saturn', 0.265357128214, 5338, False)
+Entity: (u'The Rings (Horror Film)', 0.177983400942, 1, True)
+Entity: (u'Ring', 0.195417517246, 639, False)
+Entity: (u'Fighting Network Rings', 0.168112294501, 2551, False)
+Entity: (u'Ring', 0.139461181884, 12880, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 80, ERMRT = 23, ERMRERT = 0
+Query: who are the founders of home depot
+Entity: (u'Benjamin Brewster', 1.0, 54, False)
+Entity: (u'Home Depot', 0.99625585797, 626059, True)
+Entity: (u'Of Home (Musical Recording)', 0.5, 0, True)
+Entity: (u'Of Home (m/0mc_vz9)', 0.5, 0, True)
+Entity: (u'Enzo Ferrari', 0.33927570148, 35583, False)
+Entity: (u'Larry Page', 0.249992622143, 130689, False)
+Entity: (u'Menil Collection', 0.214279843968, 6844, False)
+Entity: (u'Founding Fathers of the United States', 0.1964232281, 66616, False)
+Entity: (u'Entrepreneur', 0.804356822246, 257785, False)
+Entity: (u'Train station', 0.43495405957, 148164, False)
+Entity: (u'Main Operating Base', 0.169039784248, 128, False)
+Entity: (u'Home', 0.138555757341, 2158, True)
+Entity: (u'Home (Quotation Subject)', 0.103499481387, 1612, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 91, ERMRT = 218, ERMRERT = 0
+Query: where does the chow chow originate
+Entity: (u'The chow chow', 0.2, 0, True)
+Entity: (u'The chow chow', 0.2, 0, True)
+Entity: (u'The Chow Chow', 0.2, 0, True)
+Entity: (u'The Chow Chow', 0.2, 0, True)
+Entity: (u'The Chow Chow', 0.2, 0, True)
+Entity: (u'Chow Chow', 0.826684001728, 40570, True)
+Entity: (u'Chow-chow', 0.1654371689, 321, True)
+TargetType: location, event, conference
+Pattern matches: ERT = 47, ERMRT = 19, ERMRERT = 0
+Query: what was viacom 's revenue in 2009
+Entity: (u'Viacom', 1.0, 229092, False)
+Entity: (u'VeryCD', 0.507936438095, 190, False)
+Entity: (u'2008\u201309 UEFA Champions League', 0.279761866295, 15, False)
+Entity: (u'Revenue', 0.970587754235, 62288, True)
+Entity: (u'2009', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 33, ERMRT = 94, ERMRERT = 6
+Query: what is the state flower of alaska
+Entity: (u'Floral emblem', 0.615754638414, 4884, False)
+Entity: (u'Eschscholzia californica', 0.371332708416, 6272, False)
+Entity: (u'The State (TV Sketch Comedy Show)', 0.33963838976, 6250, True)
+Entity: (u'The State (Post-grunge Album)', 0.155075386828, 746, True)
+Entity: (u'Sovereignty', 0.136618890304, 49863, False)
+Entity: (u'Alaska', 0.885633457151, 5964258, True)
+Entity: (u'Flower (Quotation Subject)', 0.685458668885, 158290, True)
+Entity: (u'U.S. state', 0.264017426139, 2692783, False)
+Entity: (u'States of India', 0.155281370633, 30636, False)
+Entity: (u'Flower (Adventure Video Game)', 0.152637636786, 4208, True)
+TargetType: Other
+Pattern matches: ERT = 103, ERMRT = 140, ERMRERT = 0
+Query: how many libretti did wagner write
+Entity: (u'Libretto', 0.998252922994, 14856, False)
+Entity: (u'Richard Wagner', 0.720335255032, 448189, False)
+TargetType: Other
+Pattern matches: ERT = 49, ERMRT = 51, ERMRERT = 0
+Query: how many turbojet engines are there
+Entity: (u'Turbojet', 1.0, 1236, False)
+Entity: (u'Internal combustion engine', 0.703204643582, 10536, False)
+Entity: (u'Engine (Literature Subject)', 0.15833671238, 20116, False)
+TargetType: Other
+Pattern matches: ERT = 23, ERMRT = 8, ERMRERT = 0
+Query: where is fry_s turkish delight sold
+Entity: (u"Fry's Turkish Delight", 1.0, 344, True)
+Entity: (u'Turkish Delight', 0.834397067727, 9216, True)
+Entity: (u"Fry's Electronics", 0.638127232909, 9574, False)
+Entity: (u"Fry's Chocolate Cream", 0.213960941253, 128, False)
+Entity: (u'Delight', 0.198020617776, 274, True)
+Entity: (u'Delight (Gothic metal Artist)', 0.14205799812, 24, True)
+Entity: (u'MV Delight', 0.113000717622, 124, False)
+Entity: (u'Happiness', 0.108695850227, 35357, False)
+TargetType: location, event, conference
+Pattern matches: ERT = 51, ERMRT = 93, ERMRERT = 0
+Query: how many teams did joe torre manage
+Entity: (u'Joe Torre', 0.999813576926, 112626, True)
+Entity: (u'Team', 0.375677017016, 414089, False)
+Entity: (u'TEAMS', 0.2881285462, 944, True)
+Entity: (u'Team sport', 0.109776154415, 12837, False)
+TargetType: Other
+Pattern matches: ERT = 27, ERMRT = 113, ERMRERT = 0
+Query: what position did mike schmidt play
+Entity: (u'Mike Schmidt (m/01nlch)', 0.999506757423, 20264, True)
+Entity: (u'Ice Hockey', 0.362594901995, 36069, False)
+Entity: (u'Aesthetic relativism', 0.103881758777, 4, False)
+TargetType: Other
+Pattern matches: ERT = 33, ERMRT = 107, ERMRERT = 0
+Query: who created the philosopher_s stone
+Entity: (u"Philosopher's Stone", 0.396026072349, 19949, True)
+Entity: (u"The Philosopher's Stone (Rhythm and blues Album)", 0.25790999555, 79, True)
+Entity: (u'Magical objects in Harry Potter', 0.155028036916, 22425, False)
+Entity: (u"Philosopher's Stone", 0.823627223376, 19949, True)
+Entity: (u'The philosophers (Book)', 0.1, 0, True)
+Entity: (u'The Philosophers (m/0ntt3vp)', 0.1, 0, True)
+Entity: (u'The Philosophers (Book)', 0.1, 0, True)
+Entity: (u'The Philosophers (Science Fiction Film)', 0.1, 0, True)
+Entity: (u'The philosophers (Book Edition)', 0.1, 0, True)
+Entity: (u'The Philosophers', 0.1, 0, True)
+Entity: (u'The Philosophers', 0.1, 0, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 58, ERMRT = 16, ERMRERT = 0
+Query: what is the highest drop on stealth
+Entity: (u'Kar\u014d', 0.639706495892, 681, False)
+Entity: (u'Highest Drop (m/0lc_2q2)', 0.5, 0, True)
+Entity: (u'Highest Drop (Musical Recording)', 0.5, 0, True)
+Entity: (u'Victoria Cross', 0.351839233237, 113283, False)
+Entity: (u'Northrop Grumman B-2 Spirit', 0.318687740525, 48574, False)
+Entity: (u'Stealth game', 0.233952757474, 14645, False)
+Entity: (u'Stealth technology', 0.183949804716, 1903, False)
+Entity: (u'Liquorice', 0.162609809886, 783, False)
+Entity: (u'Stealth', 0.136887547627, 3206, True)
+TargetType: Other
+Pattern matches: ERT = 59, ERMRT = 52, ERMRERT = 0
+Query: who is the newscaster on abc 6 news
+Entity: (u'ESPN on ABC', 1.0, 12165, False)
+Entity: (u'6 News', 0.463414929506, 0, True)
+Entity: (u'News Presenter', 0.849008927996, 0, False)
+Entity: (u'American Broadcasting Company', 0.677495923823, 2450960, False)
+Entity: (u'News', 0.492882295248, 131990, True)
+Entity: (u'NEWS', 0.184980476678, 672, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 54, ERMRT = 137, ERMRERT = 6
+Query: how many stores are in nittany mall
+Entity: (u'Nittany Mall', 1.0, 247, True)
+Entity: (u'Nittany Lion', 0.997830771848, 70379, False)
+Entity: (u'Retail', 0.584832348219, 268680, False)
+Entity: (u'Shopping mall', 0.57385241509, 165801, False)
+Entity: (u'National Mall', 0.190896820185, 145209, False)
+TargetType: Other
+Pattern matches: ERT = 41, ERMRT = 37, ERMRERT = 0
+Query: how many games has hasbro published
+Entity: (u'Mel Croucher', 0.555554049383, 262, False)
+Entity: (u'Ranger', 0.444445950617, 3102, False)
+Entity: (u'Hasbro', 0.998985750357, 342905, True)
+Entity: (u'Games (TV Genre)', 0.708876867318, 219191, True)
+Entity: (u'Game', 0.106622334827, 0, False)
+TargetType: Other
+Pattern matches: ERT = 44, ERMRT = 135, ERMRERT = 0
+Query: who founded the order of the dragon
+Entity: (u'Order of the Dragon', 0.998568019093, 2092, True)
+Entity: (u'Order of St Michael and St George', 0.733333495556, 45146, False)
+Entity: (u'The Order (Organisation)', 0.486524390864, 523, True)
+Entity: (u'Iraqi Air Force', 0.266666504444, 7261, False)
+Entity: (u'Deals Gap, North Carolina', 0.155825326959, 7492, False)
+Entity: (u'The Order', 0.154983010659, 1224, True)
+Entity: (u'Dragon', 0.147071163804, 4958, True)
+Entity: (u'Dragon (Magazine)', 0.140067629481, 17862, True)
+Entity: (u'The Order (Musical Recording) #11', 0.126514946764, 136, True)
+Entity: (u'The Order', 0.106360983724, 1415, True)
+Entity: (u'Major depression', 0.105050976859, 99647, False)
+Entity: (u'Order', 0.451402261408, 266, True)
+Entity: (u'Dragon (Character Species) #3', 0.414685035749, 22469, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 75, ERMRT = 81, ERMRERT = 0
+Query: what round did thrilla in manila end
+Entity: (u'Thrilla in Manila', 0.992554678829, 1979, True)
+Entity: (u'In Manila (m/0tyg_f1)', 0.25, 0, True)
+Entity: (u'In Manila (Musical Recording)', 0.25, 0, True)
+Entity: (u'In Manila (EP)', 0.25, 0, True)
+Entity: (u'In Manila (Digital media Musical Release)', 0.25, 0, True)
+Entity: (u'Round', 0.579159203644, 168, True)
+Entity: (u'Thrilla', 0.191780821918, 14, True)
+Entity: (u'Thrilla (Musical Recording) #1', 0.164383561644, 12, True)
+TargetType: Other
+Pattern matches: ERT = 32, ERMRT = 7, ERMRERT = 0
+Query: what tourist attractions are in rome
+Entity: (u'Tourist attraction (Building function)', 0.623679289563, 26268, False)
+Entity: (u'Rome', 0.549999874194, 4808978, False)
+Entity: (u'Sovereign Military Order of Malta', 0.449999897068, 20614, False)
+Entity: (u'Tourism', 0.862940143165, 194947, False)
+Entity: (u'Rome', 0.769089197571, 4808978, True)
+Entity: (u'Carlsbad', 0.152629761236, 144270, False)
+TargetType: Other
+Pattern matches: ERT = 127, ERMRT = 251, ERMRERT = 0
+Query: who published the amazing spider-man
+Entity: (u'The Amazing Spider-Man (Comic Book Series)', 0.573326775499, 18235, True)
+Entity: (u'The Amazing Spider-Man', 0.186005670214, 19513, True)
+Entity: (u'The Amazing Spider-Man', 0.996730857639, 19513, False)
+Entity: (u'The Amazing Spider-Man (Comic Book Series)', 0.925543177251, 18235, True)
+Entity: (u'Spider-Man', 0.703701210683, 396380, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 107, ERMRT = 123, ERMRERT = 4
+Query: what armed forces does thailand have
+Entity: (u'Armed forces', 0.595912185844, 287183, True)
+Entity: (u'United States Armed Forces', 0.157455420528, 381293, False)
+Entity: (u'Thailand', 0.85256682469, 7425965, True)
+Entity: (u'Force (Dimension)', 0.66674208351, 16640, False)
+Entity: (u'United States Army Air Forces', 0.118974114304, 109208, False)
+TargetType: Other
+Pattern matches: ERT = 68, ERMRT = 285, ERMRERT = 0
+Query: who was charlie_s angels produced by
+Entity: (u"Charlie's Angels", 0.735632890574, 10805, True)
+Entity: (u"Charlie's Angels (Crime Fiction Film)", 0.188576706004, 6506, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 45, ERMRT = 109, ERMRERT = 0
+Query: when was the printing press invented
+Entity: (u'Printing press', 0.998846440931, 14720, True)
+Entity: (u'The Printing', 1.0, 2, True)
+Entity: (u'Printing', 0.881219704238, 72546, True)
+Entity: (u'Freedom of the press', 0.250455738796, 182501, False)
+Entity: (u'Mass media', 0.14167457831, 168495, False)
+Entity: (u'News media', 0.105698767855, 28588, False)
+TargetType: Date
+Pattern matches: ERT = 37, ERMRT = 28, ERMRERT = 0
+Query: what is the theme song of full house
+Entity: (u'The World Is Not Enough (Composition)', 0.438699859638, 179, False)
+Entity: (u'The NeverEnding Story (Composition) #2', 0.299599183851, 159, False)
+Entity: (u'When the Wind Blows (Composition) #62', 0.171199350201, 19, False)
+Entity: (u'Full House', 0.777945715252, 32918, True)
+Entity: (u'Theme music', 0.552542726412, 8391, False)
+Entity: (u'Full House (TV Romantic Comedy) #27', 0.124765609267, 1452, True)
+Entity: (u'Song', 0.572532232892, 206492, True)
+Entity: (u'House (TV Drama)', 0.311248122988, 41658, True)
+Entity: (u'House music', 0.306339887015, 62058, False)
+Entity: (u'House', 0.119683772698, 236649, True)
+TargetType: Other
+Pattern matches: ERT = 99, ERMRT = 129, ERMRERT = 0
+Query: what product lines does ipod include
+Entity: (u'Product lining', 0.910321061256, 1894, False)
+Entity: (u'iPod', 0.976600785647, 6246180, True)
+Entity: (u'Product', 0.65305977864, 96836, True)
+Entity: (u'Line', 0.425166411023, 3802, False)
+Entity: (u'Color Lines', 0.174321717817, 1575, False)
+TargetType: Other
+Pattern matches: ERT = 30, ERMRT = 17, ERMRERT = 0
+Query: how many rna codons does glycine have
+Entity: (u'RNA Codons', 0.333333333333, 0, True)
+Entity: (u'RNA Codons', 0.333333333333, 0, True)
+Entity: (u'RNA-codons', 0.333333333333, 0, True)
+Entity: (u'Genetic code', 1.0, 9493, False)
+Entity: (u'RNA', 0.970390513211, 740804, True)
+Entity: (u'Glycine (Amino Acid)', 0.803683345255, 27567, True)
+Entity: (u'Glycine', 0.1169782139, 1116, True)
+TargetType: Other
+Pattern matches: ERT = 52, ERMRT = 36, ERMRERT = 0
+Query: how many employees does nintendo have
+Entity: (u'Employment', 0.996849820118, 182140, False)
+Entity: (u'Nintendo', 0.958340931966, 1855975, True)
+TargetType: Other
+Pattern matches: ERT = 31, ERMRT = 80, ERMRERT = 0
+Query: what spirits are produced in kentucky
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced_in', 0.2, 0, True)
+Entity: (u'Produced in', 0.2, 0, True)
+Entity: (u'Kentucky', 0.832334426438, 2769768, True)
+Entity: (u'Spirit', 0.520667307528, 108105, False)
+Entity: (u'Distilled beverage', 0.21588262561, 21946, False)
+TargetType: Other
+Pattern matches: ERT = 80, ERMRT = 87, ERMRERT = 0
+Query: what is ashok malhotra's bowling pace
+Entity: (u'Bowling Pace', 1.0, 0, True)
+Entity: (u'Ashok Malhotra', 0.909090909091, 110, True)
+Entity: (u'Bowling', 0.736844199501, 15451, True)
+Entity: (u'Peace', 0.355393621034, 442651, False)
+TargetType: Other
+Pattern matches: ERT = 29, ERMRT = 59, ERMRERT = 0
+Query: what year were the ny yankees founded
+Entity: (u'New York Yankees', 1.0, 2129321, False)
+Entity: (u'New York Yankees', 1.0, 2129321, False)
+Entity: (u'Year', 0.708396384259, 1064748, True)
+Entity: (u'Year', 0.244091331527, 366879, True)
+TargetType: Date
+Pattern matches: ERT = 58, ERMRT = 154, ERMRERT = 0
+Query: how many cow's milk cheeses are there
+Entity: (u'Milk', 0.999990755549, 108172, False)
+Entity: (u'Cattle', 0.827907310721, 175954, False)
+Entity: (u'Cheese (Food)', 0.857087919788, 54404, False)
+Entity: (u'Milk (Biographical Film)', 0.19298803726, 6940, True)
+Entity: (u'Processed cheese', 0.120604860982, 277, False)
+TargetType: Other
+Pattern matches: ERT = 92, ERMRT = 108, ERMRERT = 0
+Query: where was the peseta used as currency
+Entity: (u'Peseta', 0.950467662539, 1712, True)
+Entity: (u'Currency (Dimension)', 0.882145865363, 15803, True)
+TargetType: location, event, conference
+Pattern matches: ERT = 12, ERMRT = 6, ERMRERT = 0
+Query: when was the release date for titanic
+Entity: (u'iPhone', 0.302629214991, 9461016, False)
+Entity: (u'Mass Effect', 0.184208881953, 137942, False)
+Entity: (u'Film release', 0.171051217169, 1982, False)
+Entity: (u'Premiere', 0.131577772823, 103509, False)
+Entity: (u'Street Fighter EX', 0.105262218259, 1199, False)
+Entity: (u'Nacho Libre', 0.105262218259, 7990, False)
+Entity: (u'RMS Titanic', 0.509296562585, 130691, False)
+Entity: (u'Titanic', 0.409702044761, 131297, True)
+Entity: (u'Calendar date', 0.362365682798, 247514, False)
+Entity: (u'Date palm', 0.1523613683, 7984, False)
+Entity: (u'Dating', 0.10285492555, 52008, False)
+Entity: (u'Software release life cycle', 0.10199192534, 302989, False)
+TargetType: Date
+Pattern matches: ERT = 159, ERMRT = 166, ERMRERT = 0
+Query: when did japan end as a musical group
+Entity: (u'Musical ensemble', 0.983225293265, 120561, False)
+Entity: (u'Send in the Clowns', 0.693379984885, 895, False)
+Entity: (u'Asa', 0.17427230227, 37629, True)
+Entity: (u'Japan', 0.922832946225, 31422360, True)
+Entity: (u'Group', 0.176437573469, 846, True)
+Entity: (u'Social group', 0.138610333259, 11792, False)
+Entity: (u'Group', 0.133716825004, 749, True)
+TargetType: Date
+Pattern matches: ERT = 87, ERMRT = 264, ERMRERT = 0
+Query: what is currency code for uk currency
+Entity: (u'Genetics', 1.0, 82602, False)
+Entity: (u'ISO 4217', 0.999542543458, 4370, False)
+TargetType: Other
+Pattern matches: ERT = 11, ERMRT = 25, ERMRERT = 0
+Query: how long is wired_s gadget lab podcast
+Entity: (u"Wired's Gadget Lab Podcast", 0.5, 0, True)
+Entity: (u"Wired's Gadget Lab Podcast", 0.5, 0, True)
+Entity: (u'Longis', 1.0, 67, True)
+Entity: (u'Podcast', 0.997395540547, 259099, True)
+Entity: (u'Gadget', 0.863203933011, 31997, True)
+Entity: (u'Lab color space', 0.424653234632, 10128, False)
+Entity: (u'Rennet', 0.119027592899, 3765, False)
+TargetType: Other
+Pattern matches: ERT = 25, ERMRT = 11, ERMRERT = 0
+Query: what is the wingspan of an eclipse 500
+Entity: (u'Eclipse 500', 0.999884911958, 8688, True)
+Entity: (u'An Eclipse (Musical Release)', 0.5, 0, True)
+Entity: (u'An Eclipse (EP)', 0.5, 1, True)
+Entity: (u'Wingspan', 0.95531197104, 22477, True)
+Entity: (u'Eclipse', 0.430301370052, 453914, True)
+Entity: (u'Eclipse', 0.147249143512, 15619, True)
+TargetType: Other
+Pattern matches: ERT = 37, ERMRT = 13, ERMRERT = 0
+Query: how many seasons of seinfeld are there
+Entity: (u'Many Seasons (Musical Release)', 0.5, 0, True)
+Entity: (u'Many Seasons (Musical Album)', 0.5, 0, True)
+Entity: (u'Seinfeld', 0.929960029738, 184588, True)
+Entity: (u'Season', 0.653369923608, 29811, False)
+TargetType: Other
+Pattern matches: ERT = 36, ERMRT = 52, ERMRERT = 0
+Query: what games has macsoft games developed
+Entity: (u'MacSoft Games', 1.0, 2598, True)
+Entity: (u'Crytek', 0.999940803883, 33784, False)
+Entity: (u'Games (TV Genre)', 0.708876867318, 219191, True)
+Entity: (u'Game', 0.106622334827, 0, False)
+TargetType: Other
+Pattern matches: ERT = 30, ERMRT = 31, ERMRERT = 0
+Query: when was pride and prejudice published
+Entity: (u'Pride and Prejudice', 0.722524845588, 31185, True)
+Entity: (u'Pride and Prejudice (TV Miniseries) #5', 0.111977575284, 1646, True)
+Entity: (u'Prejudice', 0.940097482777, 9728, True)
+Entity: (u'Pride', 0.198047187694, 594, True)
+TargetType: Date
+Pattern matches: ERT = 43, ERMRT = 46, ERMRERT = 0
+Query: how heavy is a panasonic lumix dmc-tz3
+Entity: (u'Panasonic Lumix DMC-TZ3', 0.999551569507, 2229, True)
+Entity: (u'Lumix DMC-TZ3', 1.0, 0, True)
+Entity: (u'Lumix', 0.978134097813, 32996, False)
+Entity: (u'Panasonic Lumix DMC-TZ3', 1.0, 2229, False)
+TargetType: Other
+Pattern matches: ERT = 68, ERMRT = 54, ERMRERT = 0
+Query: what are the theme areas at disneyland
+Entity: (u'Theme areas', 0.5, 0, True)
+Entity: (u'Theme areas', 0.5, 0, True)
+Entity: (u'Disneyland', 0.937570247085, 528268, True)
+Entity: (u'Area', 0.517436829902, 76568, False)
+Entity: (u'L\xe9og\xe2ne', 0.115932990343, 8494, False)
+TargetType: Other
+Pattern matches: ERT = 39, ERMRT = 33, ERMRERT = 0
+Query: when did easy aces stop being produced
+Entity: (u'Easy Aces', 1.0, 287, True)
+Entity: (u'Stop! (Composition) #43', 0.125165597957, 0, True)
+Entity: (u'Stop consonant', 0.118956223918, 2531, False)
+TargetType: Date
+Pattern matches: ERT = 11, ERMRT = 0, ERMRERT = 0
+Query: how many films has tim burton produced
+Entity: (u'Bruce Lee', 1.0, 227180, False)
+Entity: (u'Tim Burton', 0.994362828949, 1638763, True)
+Entity: (u'Film', 0.710032297078, 3444452, False)
+TargetType: Other
+Pattern matches: ERT = 100, ERMRT = 180, ERMRERT = 0
+Query: how many countries is spanish spoken in
+Entity: (u'United Nations Framework Convention on Climate Change', 0.217686725545, 327658, False)
+Entity: (u'Blasphemy law', 0.200680504161, 3058, False)
+Entity: (u"International Women's Day", 0.159864154474, 1136796, False)
+Entity: (u'Country (Quotation Subject)', 0.840984198953, 97485, False)
+TargetType: Other
+Pattern matches: ERT = 16, ERMRT = 8, ERMRERT = 0
+Query: what year was the album decade released
+Entity: (u'The Album', 0.242627058026, 531, True)
+Entity: (u'Album (m/02lx2r)', 0.924086966045, 118924, True)
+Entity: (u'Year', 0.708396384259, 1064748, True)
+Entity: (u'Decade (Unit of frequency)', 0.566263388268, 15554, True)
+Entity: (u'Year', 0.244091331527, 366879, True)
+Entity: (u'Fin de si\xe8cle', 0.146565609253, 923, False)
+Entity: (u'Decade (Rock Album)', 0.128339579923, 48, True)
+TargetType: Date
+Pattern matches: ERT = 36, ERMRT = 22, ERMRERT = 0
+Query: what characters are in super mario bros
+Entity: (u'Super Mario Bros.', 0.841338142915, 138041, True)
+Entity: (u'Super Mario Bros. (Science Fiction Film)', 0.106515226683, 1153, True)
+Entity: (u'Mario Bros.', 0.878909112745, 43679, True)
+Entity: (u'Mario', 0.500320373375, 284134, False)
+Entity: (u'Characters', 0.305673921723, 437, True)
+TargetType: Other
+Pattern matches: ERT = 73, ERMRT = 76, ERMRERT = 0
+Query: what musicians have died of lung cancer
+Entity: (u'Kim Manners', 1.0, 3750, False)
+Entity: (u'Giordano Bruno', 1.0, 27046, False)
+Entity: (u'Lung cancer', 0.998259568804, 46522, True)
+Entity: (u'Musician (Profession)', 0.878535792375, 65719, False)
+Entity: (u'Cancer (Disease or medical condition)', 0.86659843983, 400879, True)
+Entity: (u'Lung', 0.786159721191, 53522, True)
+TargetType: Other
+Pattern matches: ERT = 103, ERMRT = 85, ERMRERT = 0
+Query: how many countries are in south america
+Entity: (u'In South America (Gramophone record Musical Release)', 0.366459568149, 0, True)
+Entity: (u'In South America (Musical Album)', 0.366459568149, 0, True)
+Entity: (u'South America', 0.959975493807, 3896540, True)
+Entity: (u'United Nations Framework Convention on Climate Change', 0.217686725545, 327658, False)
+Entity: (u'Blasphemy law', 0.200680504161, 3058, False)
+Entity: (u"International Women's Day", 0.159864154474, 1136796, False)
+Entity: (u'Country (Quotation Subject)', 0.840984198953, 97485, False)
+TargetType: Other
+Pattern matches: ERT = 47, ERMRT = 26, ERMRERT = 0
+Query: how many people died in hurricane wilma
+Entity: (u'2005 Quran desecration controversy', 1.0, 24, False)
+Entity: (u'Hurricane Wilma', 0.996322056565, 88039, True)
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u'Died in', 0.5, 0, True)
+Entity: (u'Died in', 0.5, 0, True)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'Tropical cyclone', 0.432491769184, 267489, False)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+Entity: (u'Hawker Hurricane', 0.11147375428, 17351, False)
+TargetType: Other
+Pattern matches: ERT = 64, ERMRT = 47, ERMRERT = 0
+Query: who coaches the australian cricket team
+Entity: (u'Australia national cricket team', 0.976288650647, 5320, False)
+Entity: (u'Australia national cricket team', 0.999061032864, 5320, False)
+Entity: (u'The Australian', 0.998005789145, 8033, True)
+Entity: (u'Cricket (Sport)', 0.878558640045, 127027, False)
+Entity: (u'Team', 0.441557255154, 414089, True)
+Entity: (u'Coach (Product category)', 0.222913747888, 2160, False)
+Entity: (u'Coach', 0.180735077573, 4446, False)
+Entity: (u"Coaches' Poll", 0.15859149186, 10278, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 70, ERMRT = 71, ERMRERT = 0
+Query: how many celebrities have abused cocaine
+Entity: (u'Cocaine', 0.915915329376, 51593, True)
+Entity: (u'Celebrity', 0.853758710099, 206800, False)
+TargetType: Other
+Pattern matches: ERT = 47, ERMRT = 23, ERMRERT = 0
+Query: what games has electronic arts developed
+Entity: (u'Electronic Arts', 0.991985546245, 1493920, True)
+Entity: (u'Games (TV Genre)', 0.708876867318, 219191, True)
+Entity: (u'The arts', 0.447747798284, 228479, True)
+Entity: (u'Art', 0.132344915643, 2913286, False)
+Entity: (u'Physician', 0.112655824423, 67848, False)
+Entity: (u'Game', 0.106622334827, 0, False)
+TargetType: Other
+Pattern matches: ERT = 75, ERMRT = 173, ERMRERT = 0
+Query: what sort of weave is used to make tweed
+Entity: (u'GNU/Linux', 1.0, 7995206, False)
+Entity: (u'Newfoundland and Labrador', 0.999980274967, 101392, False)
+Entity: (u'Clarence Thomas', 0.513434075445, 155203, False)
+Entity: (u'Fenway Park', 0.378319068515, 185205, False)
+Entity: (u'Medicare', 0.108091373211, 2941905, False)
+Entity: (u'Tweed', 0.511330286787, 10762, True)
+Entity: (u'Artificial hair integrations', 0.476172290178, 9107, False)
+Entity: (u'Weaving', 0.321245010874, 44182, False)
+Entity: (u'sort', 0.257736795752, 247, True)
+Entity: (u'Sort, Lleida', 0.249271273773, 51, False)
+Entity: (u'Strategic Offensive Reductions Treaty', 0.24425471268, 3612, False)
+Entity: (u'River Tweed', 0.168975605687, 7474, False)
+Entity: (u'Weave', 0.104803172017, 370, True)
+TargetType: Other
+Pattern matches: ERT = 107, ERMRT = 117, ERMRERT = 0
+Query: what year was ron glass an award nominee
+Entity: (u'Ron Glass', 1.0, 2326, True)
+Entity: (u'Glassan', 0.999320190347, 1470, True)
+Entity: (u'FIL Award', 0.588235220761, 89, False)
+Entity: (u'Twitter', 0.164705313107, 19446405, False)
+Entity: (u'Pacem in Terris Award', 0.152941805869, 180, False)
+Entity: (u'award nominee', 0.111111111111, 0, True)
+Entity: (u'award nominee', 0.111111111111, 0, True)
+Entity: (u'award nominee', 0.111111111111, 0, True)
+Entity: (u'Award Nominee', 0.111111111111, 0, True)
+Entity: (u'Award Nominee', 0.111111111111, 0, True)
+Entity: (u'Award Nominee', 0.111111111111, 0, True)
+Entity: (u'Award Nominee', 0.111111111111, 0, True)
+Entity: (u'Candidate', 0.882636922418, 16047, False)
+Entity: (u'Year', 0.708396384259, 1064748, True)
+Entity: (u'Award (Chivalric Title)', 0.700070889808, 214152, True)
+Entity: (u'Year', 0.244091331527, 366879, True)
+TargetType: Date
+Pattern matches: ERT = 85, ERMRT = 74, ERMRERT = 0
+Query: how many films has julie andrews been in
+Entity: (u'Bruce Lee', 1.0, 227180, False)
+Entity: (u'Julie Andrews', 0.991964359923, 73462, True)
+Entity: (u'Film', 0.710032297078, 3444452, False)
+TargetType: Other
+Pattern matches: ERT = 90, ERMRT = 207, ERMRERT = 0
+Query: what are the major exports of madagascar
+Entity: (u'Motoko Kusanagi', 0.597843872622, 6987, False)
+Entity: (u'Major exports', 0.25, 0, True)
+Entity: (u'Major exports', 0.25, 0, True)
+Entity: (u'Major exports', 0.25, 0, True)
+Entity: (u'Major exports', 0.25, 0, True)
+Entity: (u'Export', 0.981338049674, 159554, False)
+Entity: (u'Madagascar', 0.795217468571, 531890, True)
+TargetType: Other
+Pattern matches: ERT = 85, ERMRT = 219, ERMRERT = 0
+Query: how many children does danny devito have
+Entity: (u'Danny DeVito', 0.999885402143, 52351, True)
+Entity: (u'Child', 0.856750975759, 659398, False)
+TargetType: Other
+Pattern matches: ERT = 38, ERMRT = 89, ERMRERT = 0
+Query: how many awards did the movie 8 mile win
+Entity: (u'8 (Drama Film)', 1.0, 0, False)
+Entity: (u'Soweto Kinch', 1.0, 1517, False)
+Entity: (u'8 Mile', 0.718789728861, 275, True)
+Entity: (u'Mile', 0.919329395517, 2082, True)
+Entity: (u'Film', 0.498307458078, 3444452, False)
+Entity: (u'Award (Chivalric Title)', 0.274483106932, 214152, False)
+Entity: (u'Outline of science fiction', 0.141008576871, 0, False)
+TargetType: Other
+Pattern matches: ERT = 100, ERMRT = 120, ERMRERT = 0
+Query: what episode of snl did ben stiller host
+Entity: (u'The English Patient (TV Episode) #8', 1.0, 0, False)
+Entity: (u'Ben Stiller', 0.999863651858, 131997, True)
+Entity: (u'Saturday Night Live', 0.968227086875, 493122, False)
+Entity: (u'Episode', 0.292628485896, 22364, True)
+Entity: (u'Host', 0.217992273517, 2663, True)
+Entity: (u'Host', 0.210771660051, 855, True)
+Entity: (u'Presenter', 0.105269600391, 9972, False)
+TargetType: Other
+Pattern matches: ERT = 78, ERMRT = 250, ERMRERT = 0
+Query: where was the 3 juno asteroid discovered
+Entity: (u'3 Juno', 0.999389499389, 1637, True)
+Entity: (u'The 3 (Musical Recording)', 0.344537818021, 0, True)
+Entity: (u'The 3 (m/0ldwspx)', 0.344537818021, 0, True)
+Entity: (u'Asteroid (Celestial object category)', 0.963293220064, 17380, True)
+Entity: (u'Juno', 0.392331449876, 61843, True)
+Entity: (u'Juno (Deity)', 0.340947696015, 19366, True)
+TargetType: location, event, conference
+Pattern matches: ERT = 69, ERMRT = 73, ERMRERT = 0
+Query: what team does richard hamilton play for
+Entity: (u'Richard Hamilton (Painting Artist)', 0.629586765782, 4781, True)
+Entity: (u'Richard Hamilton', 0.167066419176, 40362, True)
+Entity: (u'Richard Hamilton (Mathematician)', 0.113055717485, 971, True)
+Entity: (u'Team', 0.441557255154, 414089, True)
+TargetType: Other
+Pattern matches: ERT = 45, ERMRT = 138, ERMRERT = 0
+Query: what was jack albertson 's cause of death
+Entity: (u'Death', 0.439419346224, 449735, False)
+Entity: (u'Cause of death', 0.193789438157, 0, True)
+Entity: (u'Cause of Death (Death metal Album)', 0.176508570549, 115, True)
+Entity: (u'Jack Albertson', 0.998848589522, 1735, True)
+Entity: (u'Albertsons', 0.765368315989, 34455, True)
+Entity: (u'Albertsons LLC', 0.219280921191, 0, False)
+Entity: (u'Of Death (Compact Disc Musical Release)', 0.2, 0, True)
+Entity: (u'...Of Death', 0.2, 0, True)
+Entity: (u'Of Death (Musical Album) #1', 0.2, 0, True)
+Entity: (u'Of Death', 0.2, 0, True)
+Entity: (u'Of Death (Musical Recording)', 0.2, 0, True)
+Entity: (u'Death', 0.508087120671, 449735, True)
+Entity: (u'Causality', 0.486650779535, 254528, False)
+TargetType: Other
+Pattern matches: ERT = 76, ERMRT = 164, ERMRERT = 0
+Query: what position does cristiano ronaldo play
+Entity: (u'Cristiano Ronaldo', 0.999962248362, 317855, True)
+Entity: (u'Ice Hockey', 0.362594901995, 36069, False)
+Entity: (u'Aesthetic relativism', 0.103881758777, 4, False)
+TargetType: Other
+Pattern matches: ERT = 48, ERMRT = 108, ERMRERT = 0
+Query: what was john f kennedy 's cause of death
+Entity: (u'John F. Kennedy', 0.965020619458, 631218, False)
+Entity: (u'John F. Kennedy', 0.965380106981, 631218, True)
+Entity: (u'Death', 0.439419346224, 449735, False)
+Entity: (u'Cause of death', 0.193789438157, 0, True)
+Entity: (u'Cause of Death (Death metal Album)', 0.176508570549, 115, True)
+Entity: (u'John F. Kennedy', 1.0, 631218, False)
+Entity: (u'Kennedy family', 0.792292658567, 51305, False)
+Entity: (u'Of Death (Musical Album) #1', 0.2, 0, True)
+Entity: (u'Of Death (Compact Disc Musical Release)', 0.2, 0, True)
+Entity: (u'Of Death', 0.2, 0, True)
+Entity: (u'Of Death (Musical Recording)', 0.2, 0, True)
+Entity: (u'...Of Death', 0.2, 0, True)
+Entity: (u'Death', 0.508087120671, 449735, True)
+Entity: (u'Causality', 0.486650779535, 254528, False)
+Entity: (u'Degree Fahrenheit', 0.239678657004, 119887, False)
+Entity: (u'Gospel of John', 0.142568696928, 278007, False)
+Entity: (u'F', 0.13852930516, 2174435, True)
+Entity: (u'John Lennon', 0.104796934928, 587650, False)
+TargetType: Other
+Pattern matches: ERT = 298, ERMRT = 592, ERMRERT = 0
+Query: how many cricket bowlers use fast bowling
+Entity: (u'Fast bowling', 1.0, 8316, True)
+Entity: (u'Bowling (cricket)', 0.882770029219, 18303, False)
+Entity: (u'Cricket (Sport)', 0.869357003848, 127027, True)
+Entity: (u'Bowling', 0.736844199501, 15451, True)
+TargetType: Other
+Pattern matches: ERT = 36, ERMRT = 30, ERMRERT = 0
+Query: who is the captain of the edmonton oilers
+Entity: (u'Edmonton Oilers', 1.0, 177148, True)
+Entity: (u'The Captain (TV Sitcom)', 0.861158345397, 4187, True)
+Entity: (u'Captain', 0.198860458694, 608, True)
+Entity: (u'Captain (Military rank) #35', 0.154764098692, 20, True)
+Entity: (u'Captain (Military rank) #47', 0.102476478375, 225, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 53, ERMRT = 96, ERMRERT = 0
+Query: how many people died of a skiing accident
+Entity: (u'2005 Quran desecration controversy', 1.0, 24, False)
+Entity: (u'Skiing accident', 1.0, 0, True)
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'Skiing', 0.884373503199, 88973, True)
+Entity: (u'Accident', 0.630864576587, 44571, True)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+TargetType: Other
+Pattern matches: ERT = 48, ERMRT = 46, ERMRERT = 0
+Query: how many notable people died by poisoning
+Entity: (u'2005 Quran desecration controversy', 1.0, 24, False)
+Entity: (u'Poison', 0.933297781864, 22712, False)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+TargetType: Other
+Pattern matches: ERT = 24, ERMRT = 18, ERMRERT = 0
+Query: how many countries use the spanish peseta
+Entity: (u'The Spanish', 1.0, 0, True)
+Entity: (u'Peseta', 0.999416228838, 1712, False)
+Entity: (u'United Nations Framework Convention on Climate Change', 0.217686725545, 327658, False)
+Entity: (u'Blasphemy law', 0.200680504161, 3058, False)
+Entity: (u"International Women's Day", 0.159864154474, 1136796, False)
+Entity: (u'Country (Quotation Subject)', 0.840984198953, 97485, False)
+TargetType: Other
+Pattern matches: ERT = 26, ERMRT = 11, ERMRERT = 0
+Query: what language family is afrikaans part of
+Entity: (u'Language family', 0.99019807688, 5467, True)
+Entity: (u'Countries of the United Kingdom', 0.86860174835, 2360, False)
+Entity: (u'Afrikaans Language', 0.998538047769, 161875, False)
+Entity: (u'Family', 0.602133146013, 18446, True)
+Entity: (u'Language', 0.557414524297, 110409, True)
+Entity: (u'Arvo P\xe4rt', 0.327484978025, 20185, False)
+Entity: (u'Family (Organism Classification Rank)', 0.142421496045, 4363, True)
+Entity: (u'Association of Evangelical Lutheran Churches', 0.107718575812, 1234, False)
+TargetType: Other
+Pattern matches: ERT = 53, ERMRT = 35, ERMRERT = 0
+Query: did jack dempsey win the long count fight
+Entity: (u'The Long Count Fight', 1.0, 22, True)
+Entity: (u'Liquid', 0.999973956299, 76792, False)
+Entity: (u'Jack Dempsey', 0.935801688041, 22972, True)
+Entity: (u'Mesoamerican Long Count calendar', 0.556739260139, 7942, False)
+Entity: (u'Mayan calendar', 0.392504677935, 59662, False)
+Entity: (u'Count', 0.807927329477, 70515, True)
+Entity: (u'Combat', 0.3524123415, 32019, False)
+Entity: (u'Fight', 0.178321325941, 192, True)
+Entity: (u"Conan O'Brien", 0.136245999633, 97320, False)
+TargetType: Other
+Pattern matches: ERT = 85, ERMRT = 183, ERMRERT = 2
+Query: who produced sabotage by the beastie boys
+Entity: (u'Sabotage (Composition) #57', 1.0, 125, False)
+Entity: (u'Beastie Boys', 0.965319260123, 125749, True)
+Entity: (u'Beastie Boys', 0.991890234835, 125749, True)
+Entity: (u'Sabotage', 0.58528547895, 9625, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 54, ERMRT = 84, ERMRERT = 0
+Query: how many types of cumulus clouds are there
+Entity: (u'Sushi', 1.0, 58246, False)
+Entity: (u'Cumulus', 0.999652052888, 5746, False)
+Entity: (u'Buddhahood', 0.67653017133, 144046, False)
+Entity: (u'Cloud (Literature Subject)', 0.627785615927, 50834, False)
+Entity: (u'Cloud computing', 0.155063914159, 438753, False)
+TargetType: Other
+Pattern matches: ERT = 29, ERMRT = 17, ERMRERT = 0
+Query: how many other names is ron glass known by
+Entity: (u'Flash fiction', 0.439999507201, 9321, False)
+Entity: (u'Goddess', 0.266666901333, 92476, False)
+Entity: (u'Cochineal', 0.186666990933, 4534, False)
+Entity: (u'camelCase', 0.106666600533, 47709, False)
+Entity: (u'Ron Glass', 1.0, 2326, True)
+Entity: (u'known by', 1.0, 0, True)
+Entity: (u'Naming the American Civil War', 0.313541801419, 10198, False)
+Entity: (u'Aardman Animations', 0.297297184989, 28660, False)
+Entity: (u'Nir Rosen', 0.18918929401, 3744, False)
+Entity: (u'Dark matter', 0.18918929401, 24942, False)
+Entity: (u'Iraqi diaspora', 0.148648592495, 22, False)
+Entity: (u'Glass', 0.844008317206, 223546, True)
+Entity: (u'Ronald Weasley', 0.456242204414, 104582, False)
+Entity: (u'Rum', 0.107941108947, 60456, False)
+Entity: (u'Name', 0.100479565776, 45222, False)
+TargetType: Other
+Pattern matches: ERT = 107, ERMRT = 118, ERMRERT = 0
+Query: what bridges go over the san francisco bay
+Entity: (u'San Francisco Bay', 0.984996368442, 254966, True)
+Entity: (u'G\u221eVER', 0.9375, 15, False)
+Entity: (u'San Francisco', 0.916784148194, 10239400, True)
+Entity: (u'Thesan', 0.83097381494, 820, True)
+Entity: (u'San People', 0.164972654255, 70075, False)
+Entity: (u'Bridge (Literature Subject)', 0.470191703234, 105322, False)
+Entity: (u'Bridge', 0.201181995349, 958, False)
+TargetType: Other
+Pattern matches: ERT = 89, ERMRT = 148, ERMRERT = 0
+Query: what is the collection of postcards called
+Entity: (u'The Collection (Funk Album)', 0.108681689217, 251, True)
+Entity: (u'Postcard', 0.801281284561, 23099, False)
+Entity: (u'Collection (Organisation sector)', 0.137579251692, 14554, True)
+Entity: (u'Collection', 0.11959893317, 518, True)
+TargetType: Other
+Pattern matches: ERT = 20, ERMRT = 9, ERMRERT = 0
+Query: what play was west side story adapted from
+Entity: (u'West Side Story', 0.639010452665, 48784, True)
+Entity: (u'West Side Story (Crime Fiction Film)', 0.312136625027, 1084, True)
+Entity: (u'Sequel', 0.89420672645, 19610, False)
+Entity: (u'Film adaptation', 0.665671440223, 1783, False)
+Entity: (u'Westside', 0.390501196847, 28641, True)
+Entity: (u'The Silence (TV Episode) #53', 0.332835185823, 0, False)
+Entity: (u'Westside, Fresno County, California', 0.129220460531, 0, False)
+Entity: (u'Side', 0.692583545351, 4773, True)
+Entity: (u'Play', 0.256008420281, 10561, True)
+Entity: (u'Narrative (m/01lyjl)', 0.199477874642, 39658, False)
+Entity: (u'Play', 0.130734489223, 2002, True)
+TargetType: Other
+Pattern matches: ERT = 79, ERMRT = 82, ERMRERT = 0
+Query: what type of organism was lucy a fossil of
+Entity: (u'Lucya', 1.0, 0, True)
+Entity: (u'Typeof', 0.931322797491, 2932, True)
+Entity: (u'Organism (Literature Subject)', 0.987706458628, 33829, True)
+Entity: (u'Fossil', 0.775775800195, 68565, True)
+Entity: (u'Lucy', 0.377936845674, 25680, True)
+Entity: (u'Types of business entity', 0.284280499137, 844, False)
+Entity: (u'TYPE', 0.186264355477, 553, True)
+TargetType: Other
+Pattern matches: ERT = 24, ERMRT = 13, ERMRERT = 0
+Query: who was the librettist for the magic flute
+Entity: (u'The Magic Flute', 0.897927081461, 57324, True)
+Entity: (u'The Magic Flute', 0.99951178686, 57324, True)
+Entity: (u'The Magic', 0.859162322629, 828, True)
+Entity: (u'Dave Pike', 0.563389121547, 664, False)
+Entity: (u'Ta\u1e47h\u0101', 0.275143461221, 1130, False)
+Entity: (u'Latin Language', 0.157225029268, 2641407, False)
+Entity: (u'Libretto', 0.999529031824, 14856, False)
+Entity: (u'Flute', 0.893504936893, 41238, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 83, ERMRT = 76, ERMRERT = 0
+Query: how many works have been lost due to theft
+Entity: (u'Duet', 0.571816846811, 180294, False)
+Entity: (u'Noizi Ito', 0.571428360544, 934, False)
+Entity: (u'C. S. Lewis', 0.428571639456, 371729, False)
+Entity: (u'Attribution of recent climate change', 0.428116550009, 481, False)
+Entity: (u'Basilica', 0.293750323438, 69333, False)
+Entity: (u'Microsoft Word', 0.162499353125, 2289945, False)
+Entity: (u'Open Letter to Hobbyists', 0.1500002875, 276, False)
+Entity: (u'Bombardier Aerospace and Embraer S.A. government subsidy controversy', 0.143750035938, 0, False)
+Entity: (u'Theft', 0.960851809715, 71318, True)
+Entity: (u'Works', 0.123180645235, 45, True)
+TargetType: Other
+Pattern matches: ERT = 79, ERMRT = 96, ERMRERT = 0
+Query: what other titles does 13 going on 30 have
+Entity: (u'13 Going on 30', 0.970047338277, 1131, True)
+Entity: (u'On30', 1.0, 5511, True)
+Entity: (u'GoingOn', 0.716865848357, 249, True)
+Entity: (u'Independent circuit', 0.362204531452, 1238, False)
+Entity: (u'FIFA', 0.271653398589, 10624, False)
+Entity: (u'The Protocols of the Elders of Zion', 0.208661579357, 34385, False)
+Entity: (u'Title', 0.245931810123, 5203, False)
+Entity: (u'Title of honor', 0.10768811256, 33, False)
+TargetType: Other
+Pattern matches: ERT = 50, ERMRT = 63, ERMRERT = 0
+Query: how many children does jerry seinfeld have
+Entity: (u'Jerry Seinfeld', 0.929733330903, 114386, True)
+Entity: (u'Child', 0.856750975759, 659398, False)
+TargetType: Other
+Pattern matches: ERT = 45, ERMRT = 116, ERMRERT = 0
+Query: how many radio stations does cbs radio own
+Entity: (u'Radio broadcasting', 0.947882797132, 0, False)
+Entity: (u'CBS Radio', 0.92714645448, 59790, True)
+Entity: (u'Radio', 0.623953754883, 241468, True)
+Entity: (u'Train station', 0.314776712293, 148164, False)
+Entity: (u'Metro station', 0.110572866633, 83637, False)
+Entity: (u'Station', 0.101952925703, 76, False)
+TargetType: Other
+Pattern matches: ERT = 29, ERMRT = 64, ERMRERT = 0
+Query: what mountain range is king edward peak in
+Entity: (u'King Edward Peak', 1.0, 3, True)
+Entity: (u'Mountain range (Geographical feature category)', 0.942412639429, 5489, True)
+Entity: (u'King Edward Station', 0.142628910099, 41, False)
+Entity: (u'King Edward Avenue', 0.134300118907, 327, False)
+Entity: (u'King Edward potato', 0.105149468941, 692, False)
+Entity: (u'Edward the Confessor', 0.104108340241, 28159, False)
+Entity: (u'Edward II of England', 0.102026202045, 29168, False)
+Entity: (u'Mountain', 0.618334212994, 205615, True)
+Entity: (u'Range', 0.354359235473, 161, True)
+Entity: (u'Summit (Geographical feature category)', 0.288485082103, 13886, False)
+Entity: (u'Mountain (Hard rock Artist)', 0.158291289241, 1845, True)
+Entity: (u'Peak', 0.147338052879, 7092, True)
+Entity: (u'Mountain Time Zone', 0.1020377111, 161271, False)
+TargetType: Other
+Pattern matches: ERT = 98, ERMRT = 57, ERMRERT = 0
+Query: when was crystal light originally marketed
+Entity: (u'Crystal Light', 0.996171201969, 7285, True)
+TargetType: Date
+Pattern matches: ERT = 3, ERMRT = 3, ERMRERT = 0
+Query: what are the treatments of prostate cancer
+Entity: (u'Prostate cancer', 0.998617319424, 67797, True)
+Entity: (u'Prostate', 0.881638204484, 18410, True)
+Entity: (u'Cancer (Disease or medical condition)', 0.86659843983, 400879, True)
+Entity: (u'Psychotherapist', 0.36623096189, 85983, False)
+TargetType: Other
+Pattern matches: ERT = 63, ERMRT = 31, ERMRERT = 0
+Query: what are some research only cancer centers
+Entity: (u'Cancer Centers', 1.0, 0, True)
+Entity: (u'Research Only', 1.0, 0, True)
+Entity: (u'Cytochrome P450', 0.192857214082, 58482, False)
+Entity: (u'Star Wars: The Old Republic', 0.1, 130296, False)
+Entity: (u'Cancer (Disease or medical condition)', 0.86659843983, 400879, True)
+Entity: (u'Research', 0.732450822542, 227285, True)
+Entity: (u'Center', 0.514062284707, 3935, False)
+Entity: (u'Galactic Center', 0.148487874584, 27014, False)
+TargetType: Other
+Pattern matches: ERT = 74, ERMRT = 45, ERMRERT = 0
+Query: how many major events happened in australia
+Entity: (u'Sedan, South Australia', 0.434803219117, 9, False)
+Entity: (u'United States Capitol', 0.212766023959, 211665, False)
+Entity: (u'Publication history of DC Comics crossover events', 0.132978721557, 0, False)
+Entity: (u'Incheon', 0.132978721557, 39235, False)
+Entity: (u'Champagne Supernova', 0.126641689398, 786, False)
+Entity: (u'Ford Field', 0.122340715598, 25651, False)
+Entity: (u'Australia', 0.880517921029, 26525610, True)
+Entity: (u'Great Chinese Famine', 0.104448880073, 201, False)
+TargetType: Other
+Pattern matches: ERT = 129, ERMRT = 296, ERMRERT = 0
+Query: what area did the meiji constitution govern
+Entity: (u'The Meiji Constitution', 1.0, 0, True)
+Entity: (u'Emperor Meiji', 1.0, 8934, False)
+Entity: (u'Meiji Constitution', 0.987831850544, 2077, True)
+Entity: (u'Area', 0.850698126258, 76568, True)
+TargetType: Other
+Pattern matches: ERT = 34, ERMRT = 24, ERMRERT = 0
+Query: what are the neighborhoods in new york city
+Entity: (u'New York City', 0.999999837581, 12313837, False)
+Entity: (u'Williamsburg', 0.999959700169, 74439, False)
+Entity: (u'York City F.C.', 0.981980350066, 39925, False)
+Entity: (u'New York', 0.653213390066, 8940433, True)
+Entity: (u'Neighbourhood', 0.304148511515, 48079, False)
+TargetType: Other
+Pattern matches: ERT = 148, ERMRT = 234, ERMRERT = 0
+Query: how many other names are there for jcpenney
+Entity: (u'Flash fiction', 0.439999507201, 9321, False)
+Entity: (u'Goddess', 0.266666901333, 92476, False)
+Entity: (u'Cochineal', 0.186666990933, 4534, False)
+Entity: (u'camelCase', 0.106666600533, 47709, False)
+Entity: (u'Naming the American Civil War', 0.313541801419, 10198, False)
+Entity: (u'Aardman Animations', 0.297297184989, 28660, False)
+Entity: (u'Nir Rosen', 0.18918929401, 3744, False)
+Entity: (u'Dark matter', 0.18918929401, 24942, False)
+Entity: (u'Iraqi diaspora', 0.148648592495, 22, False)
+Entity: (u'J. C. Penney', 0.976973439691, 259241, True)
+Entity: (u'Name', 0.100479565776, 45222, False)
+TargetType: Other
+Pattern matches: ERT = 63, ERMRT = 131, ERMRERT = 0
+Query: how many religions believe in reincarnation
+Entity: (u'Holy of Holies', 1.0, 36892, False)
+Entity: (u'Belief (Quotation Subject)', 0.9994092827, 35529, False)
+Entity: (u'Reincarnation', 0.902728066665, 18722, True)
+Entity: (u'Religion (TV Genre)', 0.872776747502, 224215, False)
+TargetType: Other
+Pattern matches: ERT = 38, ERMRT = 28, ERMRERT = 0
+Query: when was the order of saint michael founded
+Entity: (u'Order of Saint Michael', 1.0, 1899, True)
+Entity: (u'Saint Michael Parish', 0.746895289221, 3622, False)
+Entity: (u'Order of St Michael and St George', 0.733333495556, 45146, False)
+Entity: (u'The Order (Organisation)', 0.486524390864, 523, True)
+Entity: (u'Iraqi Air Force', 0.266666504444, 7261, False)
+Entity: (u'Michael', 0.223731145894, 229579, False)
+Entity: (u'The Order', 0.154983010659, 1224, True)
+Entity: (u'The Order (Musical Recording) #11', 0.126514946764, 136, True)
+Entity: (u'The Order', 0.106360983724, 1415, True)
+Entity: (u'Saint', 0.842725374504, 332875, True)
+Entity: (u'Order', 0.451402261408, 266, True)
+TargetType: Date
+Pattern matches: ERT = 64, ERMRT = 92, ERMRERT = 0
+Query: what is the subject of the atlantic monthly
+Entity: (u'The Atlantic', 1.0, 120498, False)
+Entity: (u'The Atlantic', 1.0, 120498, False)
+Entity: (u'Yucca Mountain nuclear waste repository', 0.339520930865, 49208, False)
+Entity: (u'Airwolf', 0.112041958657, 7320, False)
+Entity: (u'Atlantic Ocean', 0.507599893262, 1933169, False)
+Entity: (u'Subject', 0.460544325272, 19653, True)
+Entity: (u'Atlantic Records', 0.260835475396, 122063, False)
+Entity: (u'Subject', 0.24239133009, 190, True)
+TargetType: Other
+Pattern matches: ERT = 66, ERMRT = 108, ERMRERT = 0
+Query: when was letter from america last broadcast
+Entity: (u'Letter from America', 0.635414822842, 1254, True)
+Entity: (u'Letter from America (Composition)', 0.286063209216, 4, True)
+Entity: (u'Last Broadcast', 0.858490566038, 91, True)
+Entity: (u'Americas', 0.497467767827, 1719711, False)
+Entity: (u'Broadcasting', 0.446033342399, 126294, False)
+Entity: (u'Letter', 0.287841845194, 310, True)
+Entity: (u'Broadcasting', 0.2094059234, 201, False)
+Entity: (u'United States of America', 0.198497895809, 149531631, False)
+Entity: (u'Letter', 0.152977520701, 21162, True)
+Entity: (u'Broadcast (Electronic Artist)', 0.105799931623, 1948, True)
+TargetType: Date
+Pattern matches: ERT = 150, ERMRT = 368, ERMRERT = 0
+Query: what martial arts does chris maden practice
+Entity: (u'Chris Maden', 0.990384615385, 103, True)
+Entity: (u'Martial arts', 0.892294420125, 134446, True)
+Entity: (u'The arts', 0.447747798284, 228479, True)
+Entity: (u'Practice', 0.339400323183, 30524, True)
+Entity: (u'Praxis', 0.153781107459, 3103, False)
+Entity: (u'Art', 0.132344915643, 2913286, False)
+Entity: (u'Physician', 0.112655824423, 67848, False)
+TargetType: Other
+Pattern matches: ERT = 90, ERMRT = 118, ERMRERT = 0
+Query: who were the key designers of the macintosh
+Entity: (u'Macintosh 128K', 0.666421105731, 3613, False)
+Entity: (u'Key Designers', 0.5, 0, True)
+Entity: (u'Key Designers', 0.5, 0, True)
+Entity: (u'Macintosh', 0.333209992466, 7181296, True)
+Entity: (u'The key', 0.196944065883, 450, True)
+Entity: (u'Macintosh', 0.947452470728, 7181296, True)
+Entity: (u'Video game design', 0.485679864872, 24642, False)
+Entity: (u'Designer', 0.205066872904, 99716, False)
+Entity: (u'Fashion design', 0.162495284857, 45334, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 81, ERMRT = 69, ERMRERT = 0
+Query: how many islands are there in lake superior
+Entity: (u'Many Islands', 1.0, 0, True)
+Entity: (u'Lake Superior', 0.90442872159, 237368, True)
+Entity: (u'Island', 0.466425669073, 352075, False)
+Entity: (u'Iceland', 0.203848359202, 1742658, False)
+TargetType: Other
+Pattern matches: ERT = 86, ERMRT = 227, ERMRERT = 0
+Query: what type of bridge is the manhattan bridge
+Entity: (u'Manhattan Bridge', 1.0, 16849, True)
+Entity: (u'Manhattan (Beverage)', 0.997315436242, 743, True)
+Entity: (u'Typeof', 0.931322797491, 2932, True)
+Entity: (u'Types of business entity', 0.284280499137, 844, False)
+Entity: (u'Bridge (Literature Subject)', 0.241572670559, 105322, True)
+Entity: (u'Contract bridge', 0.214716460758, 2832, False)
+Entity: (u'TYPE', 0.186264355477, 553, True)
+Entity: (u'Bridging', 0.128273400643, 3102, False)
+TargetType: Other
+Pattern matches: ERT = 48, ERMRT = 23, ERMRERT = 0
+Query: how many speeches did winston churchill give
+Entity: (u'Winston Churchill', 0.980320721478, 407606, True)
+Entity: (u'Public speaking', 0.781470770482, 29740, False)
+Entity: (u'Speech', 0.122892670963, 51443, False)
+TargetType: Other
+Pattern matches: ERT = 50, ERMRT = 130, ERMRERT = 0
+Query: what public transportation is there in tokyo
+Entity: (u'Public transport', 0.900063927136, 51151, False)
+Entity: (u'In Tokyo (Canonical Version)', 0.113053610814, 0, True)
+Entity: (u'In Tokyo (m/0w3h86g)', 0.113053610814, 0, True)
+Entity: (u'In Tokyo (Musical Album)', 0.113053610814, 0, True)
+Entity: (u'In Tokyo (m/0w3ftkx)', 0.113053610814, 0, True)
+Entity: (u'In Tokyo (Musical Release)', 0.113053610814, 0, True)
+Entity: (u'In Tokyo (Compact Disc Musical Release)', 0.113053610814, 0, True)
+Entity: (u'...In Tokyo', 0.113053610814, 0, True)
+Entity: (u'Tokyo', 0.934295860321, 3130360, True)
+Entity: (u'Transport', 0.381578560263, 158292, False)
+TargetType: Other
+Pattern matches: ERT = 77, ERMRT = 73, ERMRERT = 0
+Query: what type of rock is the marcellus formation
+Entity: (u'Type of rock', 0.5, 0, True)
+Entity: (u'Type of rock', 0.5, 0, True)
+Entity: (u'Marcellus Formation', 1.0, 60632, True)
+Entity: (u'Typeof', 0.931322797491, 2932, True)
+Entity: (u'Rock music', 0.780859074217, 783080, False)
+Entity: (u'Types of business entity', 0.284280499137, 844, False)
+Entity: (u'TYPE', 0.186264355477, 553, True)
+Entity: (u'Formation', 0.172979209375, 895, True)
+Entity: (u'Marcellus, Lot-et-Garonne', 0.167578639746, 0, False)
+Entity: (u'Date of establishment', 0.134262847302, 2, False)
+Entity: (u'Military organization', 0.120020794068, 2492, False)
+Entity: (u'Marcellus', 0.115024576692, 37200, True)
+Entity: (u'Pope Marcellus I', 0.110562493154, 173, False)
+Entity: (u'Marcus Claudius Marcellus', 0.10560450308, 1066, False)
+Entity: (u'Marcellus (City/Town/Village) #7', 0.102133896587, 175, True)
+TargetType: Other
+Pattern matches: ERT = 83, ERMRT = 48, ERMRERT = 0
+Query: what island group is jekyll island a part of
+Entity: (u'Countries of the United Kingdom', 0.468740262196, 2360, False)
+Entity: (u'Archipelago', 0.999838266214, 43274, False)
+Entity: (u'Jekyll Island', 0.991613431368, 43300, True)
+Entity: (u'Countries of the United Kingdom', 0.86860174835, 2360, False)
+Entity: (u'Iceland', 0.868464036528, 1742658, False)
+Entity: (u'Island', 0.401994292043, 352075, True)
+Entity: (u'Arvo P\xe4rt', 0.327484978025, 20185, False)
+Entity: (u'Iceland', 0.288651828622, 1742658, False)
+Entity: (u'Musical ensemble', 0.252477898325, 120561, False)
+Entity: (u'Island Records', 0.186243285467, 30174, False)
+Entity: (u'Group', 0.176437573469, 846, True)
+Entity: (u'Social group', 0.138610333259, 11792, False)
+Entity: (u'Group', 0.133716825004, 749, True)
+Entity: (u'Association of Evangelical Lutheran Churches', 0.107718575812, 1234, False)
+TargetType: Other
+Pattern matches: ERT = 158, ERMRT = 493, ERMRERT = 48
+Query: how big is the screen on a nikon coolpix s50
+Entity: (u'Nikon Coolpix S50', 0.992307692308, 129, True)
+Entity: (u'Nikon Coolpix series', 1.0, 50395, False)
+Entity: (u'Nikon Corporation', 0.999997495818, 798662, False)
+Entity: (u'Marlon Brando', 0.998518263267, 115908, False)
+Entity: (u'Original net animation', 0.176409153965, 290, False)
+Entity: (u'Ona (United States of America) #2', 0.142343938027, 234, True)
+Entity: (u'o.n.a.', 0.132720895673, 0, True)
+Entity: (u'O\xf1a', 0.10092348054, 171, False)
+Entity: (u'GNU Screen', 0.467100349642, 4097, False)
+TargetType: Other
+Pattern matches: ERT = 100, ERMRT = 159, ERMRERT = 0
+Query: what bicycle models does raleigh manufacture
+Entity: (u'Bicycle Models', 0.166666666667, 0, True)
+Entity: (u'Bicycle Models', 0.166666666667, 0, True)
+Entity: (u'Bicycle Models', 0.166666666667, 0, True)
+Entity: (u'Bicycle Models', 0.166666666667, 0, True)
+Entity: (u'Bicycle models', 0.166666666667, 0, True)
+Entity: (u'Bicycle models', 0.166666666667, 0, True)
+Entity: (u'Bicycle', 0.955090129129, 55244, True)
+Entity: (u'Raleigh', 0.770311942976, 2008038, True)
+Entity: (u'Model', 0.173636206762, 78754, False)
+Entity: (u'Scientific modelling', 0.115049636351, 3188, False)
+TargetType: Other
+Pattern matches: ERT = 87, ERMRT = 76, ERMRERT = 0
+Query: what animal does marscapone cheese come from
+Entity: (u'Mascarpone', 1.0, 7786, False)
+Entity: (u'COMEFROM', 0.841571750678, 501, True)
+Entity: (u'Mascarpone', 1.0, 7786, False)
+Entity: (u'Animal', 0.845108066217, 139236, True)
+Entity: (u'Cheese (Food)', 0.839359526733, 54404, True)
+TargetType: Other
+Pattern matches: ERT = 59, ERMRT = 23, ERMRERT = 0
+Query: at what school was delta delta delta founded
+Entity: (u'Delta Delta Delta', 0.999880867286, 8393, True)
+Entity: (u'River delta', 1.0, 20426, False)
+Entity: (u'River delta', 1.0, 20426, False)
+Entity: (u'School', 0.678751850155, 588741, True)
+Entity: (u'Delta', 0.171390134803, 853, True)
+Entity: (u'Delta', 0.171390134803, 853, True)
+Entity: (u'Delta', 0.171390134803, 853, True)
+TargetType: Other
+Pattern matches: ERT = 40, ERMRT = 10, ERMRERT = 0
+Query: what production is the sopranos currently in
+Entity: (u'The Sopranos', 0.990769301865, 72320, True)
+Entity: (u'Soprano (Musical voice)', 0.376287069787, 156952, False)
+Entity: (u'Record producer', 0.169556063712, 12499, False)
+Entity: (u'Filmmaking', 0.11433364744, 176393, False)
+TargetType: Other
+Pattern matches: ERT = 45, ERMRT = 93, ERMRERT = 0
+Query: how many writing systems are used in japanese
+Entity: (u'Writing system', 0.911144873965, 2543, False)
+Entity: (u'Wakame', 0.853329924581, 5563, False)
+Entity: (u'Japanese general election, 1928', 0.461111064259, 0, False)
+Entity: (u'Newfoundland and Labrador', 0.142221654097, 101392, False)
+Entity: (u'Soramimi', 0.122222269074, 29, False)
+Entity: (u'System', 0.58453182609, 83083, False)
+TargetType: Other
+Pattern matches: ERT = 39, ERMRT = 58, ERMRERT = 0
+Query: what is the population estimated in the world
+Entity: (u"World's busiest airport", 0.196868127069, 141, False)
+Entity: (u'Texas Medical Center', 0.145510692144, 33494, False)
+Entity: (u'Hon Hai Precision Industry Co., Ltd.', 0.145510692144, 140098, False)
+Entity: (u'Colca Canyon', 0.11983226613, 19021, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'The World (United Arab Emirates)', 0.240704167885, 11125, True)
+Entity: (u'World', 0.199501437846, 1658878, True)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Population', 0.869365457191, 43740, True)
+Entity: (u'World', 0.491277033416, 1658878, True)
+Entity: (u'Hard disk drive', 0.135631008797, 647547, False)
+TargetType: Other
+Pattern matches: ERT = 64, ERMRT = 93, ERMRERT = 0
+Query: how many tv programs did danny devito produce
+Entity: (u'Television program', 0.999966309832, 237450, False)
+Entity: (u'Danny DeVito', 0.999885402143, 52351, True)
+Entity: (u'Television', 0.843880864865, 780007, False)
+Entity: (u'Programs', 0.452046081418, 68616, True)
+Entity: (u'Computer program', 0.33802000037, 51308, False)
+TargetType: Other
+Pattern matches: ERT = 74, ERMRT = 134, ERMRERT = 0
+Query: how many inversions does the mind eraser have
+Entity: (u'Mind Eraser', 0.981060606061, 518, True)
+Entity: (u'Mind', 0.940668946027, 87927, True)
+Entity: (u'Mind Eraser (Cocktail)', 0.126656848306, 86, True)
+Entity: (u'Eraser', 0.524168345001, 4599, True)
+Entity: (u'Eraser', 0.345070494686, 583, True)
+Entity: (u'Inversion', 0.2203132383, 346, False)
+Entity: (u'Roller coaster inversion', 0.14068201136, 0, False)
+Entity: (u'Inversion', 0.134842140111, 670, False)
+Entity: (u'Chromosomal inversion', 0.125817126045, 42, False)
+TargetType: Other
+Pattern matches: ERT = 60, ERMRT = 57, ERMRERT = 0
+Query: what universe is the lord of the rings set in
+Entity: (u'The Lord of the Rings', 0.64514321527, 502069, True)
+Entity: (u'The Lord of the Rings (Film series)', 0.135610108956, 20298, True)
+Entity: (u'The Lord of the Rings (Film series)', 1.0, 20298, False)
+Entity: (u'The Lord of the Rings', 0.647124609289, 502069, True)
+Entity: (u'The Lord of the Rings (Film series)', 0.223995624213, 20298, True)
+Entity: (u'Set-in neck', 0.5, 1, False)
+Entity: (u'set in', 0.5, 0, True)
+Entity: (u'Lord', 0.400250624374, 11511402, True)
+Entity: (u'Lord of the Manor', 0.363636123967, 7948, False)
+Entity: (u'Wedding ring', 0.310661435954, 48327, False)
+Entity: (u'Rings of Saturn', 0.265357128214, 5338, False)
+Entity: (u'The Rings (Horror Film)', 0.177983400942, 1, True)
+Entity: (u'God', 0.109159281305, 65938269, False)
+Entity: (u'Lord', 0.707179864739, 11511402, True)
+Entity: (u'Universe', 0.617414701133, 888820, True)
+Entity: (u'Ring', 0.195417517246, 639, False)
+Entity: (u'Fighting Network Rings', 0.168112294501, 2551, False)
+Entity: (u'Ring', 0.139461181884, 12880, False)
+Entity: (u'Marvel Universe', 0.106119103763, 75400, False)
+TargetType: Other
+Pattern matches: ERT = 136, ERMRT = 195, ERMRERT = 0
+Query: when was the latest release of microsoft word
+Entity: (u'Software release life cycle', 0.992107344991, 302989, False)
+Entity: (u'Microsoft Word', 0.977331873861, 2289945, True)
+Entity: (u'The Latest', 0.733024432879, 122, True)
+Entity: (u'Release of', 0.121481486161, 0, True)
+Entity: (u'Release of', 0.121481486161, 0, True)
+Entity: (u'Release of', 0.121481486161, 0, True)
+Entity: (u'Release of', 0.121481486161, 0, True)
+Entity: (u'release of', 0.121481486161, 0, True)
+Entity: (u'release of', 0.121481486161, 0, True)
+Entity: (u'release of', 0.121481486161, 0, True)
+Entity: (u'Microsoft Corporation', 0.983012698433, 16640836, False)
+Entity: (u'Word', 0.276578352346, 22219, True)
+TargetType: Date
+Pattern matches: ERT = 103, ERMRT = 194, ERMRERT = 0
+Query: how many monarchs are from the house of tutor
+Entity: (u'Inanna', 1.0, 33889, False)
+Entity: (u'New Zealand', 0.608695513044, 5456131, False)
+Entity: (u'Dick Cheney', 0.424241641248, 1452191, False)
+Entity: (u'Affiliate marketing', 0.260869791304, 296716, False)
+Entity: (u'Gerald Ford', 0.206060354061, 198655, False)
+Entity: (u'Royal house', 0.151515406505, 17759, False)
+Entity: (u'Francisco Franco', 0.130434695652, 102997, False)
+Entity: (u'Tutor', 0.864903031422, 59798, True)
+Entity: (u'Monarch (Male Noble Rank)', 0.604566733972, 359753, False)
+Entity: (u'House (TV Drama)', 0.311248122988, 41658, True)
+Entity: (u'House music', 0.306339887015, 62058, False)
+Entity: (u'Monarchy', 0.173562066695, 291730, False)
+Entity: (u'House', 0.119683772698, 236649, True)
+Entity: (u'Monarch butterfly', 0.102871155408, 26343, False)
+TargetType: Other
+Pattern matches: ERT = 216, ERMRT = 646, ERMRERT = 8
+Query: what are the lines of the new york city subway
+Entity: (u'New York City Subway', 1.0, 45307, True)
+Entity: (u'New York City', 0.991895702366, 12313837, True)
+Entity: (u'The New York Times', 0.811321148451, 6922317, False)
+Entity: (u'New York World-Telegram', 0.188678851549, 1105, False)
+Entity: (u'York City F.C.', 0.981980350066, 39925, False)
+Entity: (u'The Lines', 0.794701986755, 120, True)
+Entity: (u'New York', 0.653213390066, 8940433, True)
+Entity: (u'Alfa Romeo Brera', 0.228914789934, 5626, False)
+Entity: (u'Medicinal Fried Chicken', 0.132529466082, 0, False)
+Entity: (u'Line', 0.425166411023, 3802, False)
+Entity: (u'Subway', 0.423367941807, 82232, True)
+Entity: (u'Rapid transit', 0.262382712344, 34126, False)
+Entity: (u'Color Lines', 0.174321717817, 1575, False)
+TargetType: Other
+Pattern matches: ERT = 226, ERMRT = 330, ERMRERT = 0
+Query: what was procter & gamble's net profit in 1955
+Entity: (u'Procter & Gamble', 0.999987579491, 402555, True)
+Entity: (u'Martin Luther King, Jr.', 1.0, 1320280, False)
+Entity: (u'Net profit', 0.993068270392, 11011, True)
+Entity: (u'Gambles (City/Town/Village)', 0.75, 3, True)
+Entity: (u'Gambles (Person)', 0.25, 0, True)
+Entity: (u'Gambling', 0.487214630574, 213234, False)
+Entity: (u'Andrew Procter', 0.365664057965, 259, False)
+Entity: (u'Profit', 0.242448889299, 1020, True)
+Entity: (u'Mike Procter', 0.228540250142, 2456, False)
+Entity: (u'Luke Procter', 0.20111537449, 192, False)
+Entity: (u'James Sykes Gamble', 0.156663133493, 4, False)
+Entity: (u'Net income', 0.144557156027, 68716, False)
+Entity: (u'Profit', 0.129963121724, 5581, True)
+Entity: (u'USS Gamble', 0.11237109359, 46, False)
+Entity: (u'1955', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 110, ERMRT = 238, ERMRERT = 2
+Query: how many people have won the nobel peace prize
+Entity: (u'Nobel Peace Prize', 0.710526, 353103, True)
+Entity: (u'\u0426\u0435\u0440\u0435\u043c\u043e\u043d\u0456\u044f \u0432\u0440\u0443\u0447\u0435\u043d\u043d\u044f \u041d\u043e\u0431\u0435\u043b\u0456\u0432\u0441\u044c\u043a\u043e\u0457 \u043f\u0440\u0435\u043c\u0456\u0457 \u043c\u0438\u0440\u0443 2010 \u0440\u043e\u043a\u0443', 0.289474, 1107, False)
+Entity: (u'Nobel Peace Prize', 0.996177013274, 353103, True)
+Entity: (u'Anat Kamm \u2013 Uri Blau affair', 1.0, 1758, False)
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+TargetType: Other
+Pattern matches: ERT = 47, ERMRT = 68, ERMRERT = 0
+Query: what characters were on the cover of batman #1
+Entity: (u'On the Cover', 0.742656151724, 47, True)
+Entity: (u'On the Cover (TV Program)', 0.199568583871, 9, True)
+Entity: (u'He Hit Me (Composition)', 1.0, 128, False)
+Entity: (u'Twilight (Young Adult Book) #147', 0.418281104676, 2190, False)
+Entity: (u'The Luv Show', 0.227066917834, 18, False)
+Entity: (u'Lagopus', 0.210770954847, 272, False)
+Entity: (u'The Cover', 0.197189452785, 25, True)
+Entity: (u'Soviet Union', 0.164664808474, 5858281, False)
+Entity: (u'Happy Nation', 0.164664808474, 38, False)
+Entity: (u'David Horowitz', 0.144905183608, 65415, False)
+Entity: (u'Cover version', 0.620217133283, 72764, False)
+Entity: (u'Batman', 0.608938484599, 398670, True)
+Entity: (u'Characters', 0.305673921723, 437, True)
+TargetType: Other
+Pattern matches: ERT = 153, ERMRT = 200, ERMRERT = 0
+Query: what weight class was the fight of the century
+Entity: (u'Fight of the Century', 0.758380723139, 1410, True)
+Entity: (u'Jack Johnson (Professional Boxer)', 0.240543559523, 21451, False)
+Entity: (u'Fight of the Century', 0.985176038966, 1410, True)
+Entity: (u'Weight class', 0.489155227188, 459, True)
+Entity: (u'Weight class', 0.426898888481, 13, True)
+Entity: (u"The Century: America's Time", 0.234766765318, 413, False)
+Entity: (u'The Century Magazine', 0.193579932167, 4784, False)
+Entity: (u'19th century', 0.177104593455, 70277, False)
+Entity: (u'The Century (Book)', 0.156511176879, 126, True)
+Entity: (u'The Century (Art Deco Structure)', 0.119442421591, 137, True)
+Entity: (u'Weight', 0.578229759096, 22853, True)
+Entity: (u'Century', 0.388817201524, 19332, True)
+Entity: (u'Combat', 0.3524123415, 32019, False)
+Entity: (u'Car classification', 0.306884333991, 3285, False)
+Entity: (u'Body weight', 0.233671595379, 2979, False)
+Entity: (u'Century', 0.219143880902, 7931, True)
+Entity: (u'Fight', 0.178321325941, 192, True)
+Entity: (u'Class', 0.146956652648, 657, True)
+Entity: (u"Conan O'Brien", 0.136245999633, 97320, False)
+Entity: (u'Class', 0.118200177436, 24733, True)
+Entity: (u'Social class', 0.110693630974, 10814, False)
+Entity: (u'Types of motorcycles', 0.100013345027, 261, False)
+TargetType: Other
+Pattern matches: ERT = 140, ERMRT = 190, ERMRERT = 0
+Query: what was the cost of building the magnum xl-200
+Entity: (u'Arab\u2013Israeli conflict', 1.0, 7427, False)
+Entity: (u'Magnum XL-200', 1.0, 1054, True)
+Entity: (u'Falcon 9', 0.420218820801, 11330, False)
+Entity: (u'The Magnum (m/0msk5rd)', 0.333333333333, 0, True)
+Entity: (u'The Magnum (TV Episode)', 0.333333333333, 0, True)
+Entity: (u'The Magnum (Musical Recording)', 0.333333333333, 0, True)
+Entity: (u'Cost', 0.774598575482, 68910, True)
+Entity: (u'Magnum Photos', 0.301333083058, 29424, False)
+Entity: (u'Magnum, P.I.', 0.186677346964, 18304, False)
+Entity: (u'Magnum', 0.135211717405, 2704, True)
+Entity: (u'Magnum', 0.11480832251, 3519, True)
+TargetType: Other
+Pattern matches: ERT = 92, ERMRT = 79, ERMRERT = 0
+Query: how many politicians have served in the us navy
+Entity: (u'The U.S. Navy', 0.333333333333, 0, True)
+Entity: (u'The U.S. Navy', 0.333333333333, 0, True)
+Entity: (u'The U.S. Navy', 0.333333333333, 0, True)
+Entity: (u'Entrapment', 0.264493311955, 1724, False)
+Entity: (u'Alimony', 0.15579687904, 18386, False)
+Entity: (u'Treason', 0.130434649717, 46582, False)
+Entity: (u'United States Navy', 0.991049786961, 1565298, False)
+Entity: (u'United States of America', 0.596041510844, 149531631, False)
+Entity: (u'served in', 0.5, 0, True)
+Entity: (u'served in', 0.5, 0, True)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Th\xe9us', 0.175952614665, 4, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Politician', 0.769146936589, 73566, False)
+Entity: (u'Politics', 0.111597642535, 464041, False)
+TargetType: Other
+Pattern matches: ERT = 207, ERMRT = 443, ERMRERT = 258
+Query: what record label was ali farka toure signed to
+Entity: (u'Ali Farka Tour\xe9', 0.994053010669, 9314, False)
+Entity: (u'Vassal', 1.0, 7560, False)
+Entity: (u'Ali Farka Tour\xe9', 1.0, 9314, False)
+Entity: (u'Record label (Industry)', 0.976854503578, 62460, True)
+Entity: (u'Ali Farka', 0.631578947368, 12, True)
+Entity: (u'Gramophone record', 0.317193265538, 31394, False)
+Entity: (u'Label', 0.100560363068, 26631, True)
+TargetType: Other
+Pattern matches: ERT = 66, ERMRT = 105, ERMRERT = 0
+Query: when did the last episode of six feet under air
+Entity: (u'Six Feet Under (TV Drama)', 0.670515635507, 0, True)
+Entity: (u'The Last Episode (m/0twmk3m)', 0.229665054188, 0, True)
+Entity: (u'The Last Episode (Musical Recording) #1', 0.229665054188, 0, True)
+Entity: (u'The Last Episode (TV Episode) #4', 0.229665054188, 0, True)
+Entity: (u'The Last Episode (TV Episode) #3', 0.229665054188, 0, True)
+Entity: (u'Six Feet Under', 0.149142942922, 5463, True)
+Entity: (u'The English Patient (TV Episode) #8', 1.0, 0, False)
+Entity: (u'Feet Under (Musical Recording)', 0.5, 0, True)
+Entity: (u'Feet Under (m/0npdsh8)', 0.5, 0, True)
+Entity: (u'The Last', 0.456122580503, 684, True)
+Entity: (u'Six Feet', 0.363636363636, 4, True)
+Entity: (u'Excel Saga', 0.259205696967, 13695, False)
+Entity: (u'Goodbyeee', 0.240690772452, 0, False)
+Entity: (u'The Invitations (TV Episode) #2', 0.185145998908, 0, False)
+Entity: (u'The Last', 0.151310311645, 53, True)
+Entity: (u'The Last (Power pop Artist)', 0.108548213626, 89, True)
+Entity: (u'Series finale', 0.10491649888, 6824, False)
+Entity: (u'Foot (Unit Of Length)', 0.830477228737, 18386, False)
+Entity: (u'Air', 0.415492498151, 7152, True)
+Entity: (u'Episode', 0.292628485896, 22364, True)
+Entity: (u'Foot', 0.118827698684, 45290, False)
+TargetType: Date
+Pattern matches: ERT = 135, ERMRT = 109, ERMRERT = 0
+Query: who was the editor in chief of die welt in 2000
+Entity: (u'The editor in chief', 1.0, 0, True)
+Entity: (u'Editing', 0.993883000342, 457697, False)
+Entity: (u'Editing', 0.999997815153, 457697, False)
+Entity: (u'Die Welt', 0.997294786398, 22610, True)
+Entity: (u'Trent Dilfer', 0.453455651679, 12474, False)
+Entity: (u'United States presidential election, 2000', 0.162778935666, 1887, False)
+Entity: (u'2000 Camp David Summit', 0.139524621282, 2703, False)
+Entity: (u'2000 Republican National Convention', 0.139524621282, 125, False)
+Entity: (u'The Editor (Musical Recording)', 0.111111111111, 0, True)
+Entity: (u'The Editor (m/0mqqbfr)', 0.111111111111, 0, True)
+Entity: (u'The Editor (Film character) #2', 0.111111111111, 0, True)
+Entity: (u'The Editor (Film character) #1', 0.111111111111, 0, True)
+Entity: (u'The Editor (TV Episode) #5', 0.111111111111, 0, True)
+Entity: (u'The Editor (TV Episode) #4', 0.111111111111, 0, True)
+Entity: (u'The Editor (Fictional Character)', 0.111111111111, 0, True)
+Entity: (u'MPlayer', 0.104643465962, 60108, False)
+Entity: (u'World', 0.493376920138, 1658878, False)
+Entity: (u'Tribal chief', 0.331907500968, 10416, False)
+Entity: (u'Die', 0.198175856176, 1156, True)
+Entity: (u'Die (France)', 0.191733629266, 225, True)
+Entity: (u'Chief of police', 0.179531737066, 10639, False)
+Entity: (u'Scottish clan chief', 0.155823871627, 945, False)
+Entity: (u'Film editing', 0.132871027307, 5918, False)
+Entity: (u'Welt, Germany', 0.111782705149, 118, False)
+Entity: (u'Die', 0.107543440882, 3033, True)
+Entity: (u'2000', 0, 0, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 138, ERMRT = 123, ERMRERT = 0
+Query: what architectural style is the brooklyn bridge
+Entity: (u'Brooklyn Bridge', 0.846340578031, 140255, True)
+Entity: (u'Architectural style', 0.957377905483, 2303, True)
+Entity: (u'Brooklyn Bridge', 0.954987857171, 140255, True)
+Entity: (u'Style', 0.144715153157, 2606, True)
+TargetType: Other
+Pattern matches: ERT = 58, ERMRT = 42, ERMRERT = 0
+Query: how many radio programs about science are there
+Entity: (u'Radio programming', 0.951887762113, 48679, False)
+Entity: (u'About Science (Musical Recording)', 0.2, 0, True)
+Entity: (u'About science', 0.2, 0, True)
+Entity: (u'About science', 0.2, 0, True)
+Entity: (u'About science', 0.2, 0, True)
+Entity: (u'About Science (m/0lmdbyn)', 0.2, 0, True)
+Entity: (u'Science (TV Genre)', 0.655755654392, 1094286, True)
+Entity: (u'Radio', 0.623953754883, 241468, True)
+Entity: (u'Programs', 0.452046081418, 68616, True)
+Entity: (u'Computer program', 0.33802000037, 51308, False)
+Entity: (u'Science (Science Magazine)', 0.198229138575, 27958, True)
+TargetType: Other
+Pattern matches: ERT = 79, ERMRT = 81, ERMRERT = 0
+Query: how many tennis events are there at the olympics
+Entity: (u'Yugoslavia national basketball team', 0.857142857143, 12, False)
+Entity: (u'Conservation status', 1.0, 766, False)
+Entity: (u'Tennis at the 1988 Summer Olympics', 1.0, 0, False)
+Entity: (u'Olympic Games', 0.393938598371, 4131205, False)
+Entity: (u'2008 Summer Olympics', 0.225704702285, 480035, False)
+Entity: (u'The Olympics', 0.173458415468, 58, True)
+Entity: (u'Tennis', 0.864454935672, 235385, True)
+Entity: (u'Olympic Games', 0.472683419347, 4131205, False)
+Entity: (u'Great Chinese Famine', 0.104448880073, 201, False)
+TargetType: Other
+Pattern matches: ERT = 80, ERMRT = 56, ERMRERT = 4
+Query: how many species does the san francisco zoo have
+Entity: (u'San Francisco Zoo', 1.0, 14790, True)
+Entity: (u'San Francisco Zoo', 1.0, 14790, True)
+Entity: (u'Pteropus', 1.0, 2587, False)
+Entity: (u'San Francisco', 0.916784148194, 10239400, True)
+Entity: (u'Thesan', 0.83097381494, 820, True)
+Entity: (u'San People', 0.164972654255, 70075, False)
+Entity: (u'Species (Organism Classification Rank)', 0.935405181903, 62656, True)
+Entity: (u'Zoo', 0.676994374067, 234890, True)
+TargetType: Other
+Pattern matches: ERT = 107, ERMRT = 152, ERMRERT = 0
+Query: when was the pencarrow head lighthouse first lit
+Entity: (u'Pencarrow Head Lighthouse', 1.0, 256, True)
+Entity: (u'Pencarrow (New Zealand)', 0.650685, 196, True)
+Entity: (u'Head', 0.390684476439, 11853, True)
+Entity: (u'Pencarrow', 0.349315, 703, True)
+TargetType: Date
+Pattern matches: ERT = 24, ERMRT = 26, ERMRERT = 0
+Query: what meteor showers has the comet halley spawned
+Entity: (u"Halley's Comet", 0.99665269018, 28286, False)
+Entity: (u'Meteor shower', 0.896894185377, 6067, False)
+Entity: (u'The Comet', 0.52027609384, 411, True)
+Entity: (u'Comet', 0.201274693237, 159, True)
+Entity: (u'The Comet', 0.120258464513, 95, True)
+Entity: (u'Shower', 0.893155917805, 61947, False)
+Entity: (u'Meteoroid', 0.607784377623, 8674, False)
+TargetType: Other
+Pattern matches: ERT = 41, ERMRT = 13, ERMRERT = 0
+Query: how many actors use their middle name or initial
+Entity: (u'Middle name', 0.905833430244, 8055, True)
+Entity: (u'Actor', 0.704056799407, 33147, False)
+Entity: (u'Name', 0.358065725851, 45222, True)
+Entity: (u'Actor model', 0.152042249169, 22, False)
+Entity: (u'name', 0.113499519311, 759, True)
+TargetType: Other
+Pattern matches: ERT = 28, ERMRT = 23, ERMRERT = 0
+Query: what is the lcd screen resolution of a nikon d80
+Entity: (u'LCD screen resolution', 0.5, 0, True)
+Entity: (u'LCD screen resolution', 0.5, 0, True)
+Entity: (u'Nikon Corporation', 0.999997495818, 798662, False)
+Entity: (u'Nikon D80', 0.999981920741, 55311, True)
+Entity: (u'Liquid-crystal display', 0.91350212558, 531058, False)
+Entity: (u'Display resolution', 0.858256503715, 158047, False)
+Entity: (u'Image resolution', 0.141743496285, 51077, False)
+Entity: (u'GNU Screen', 0.467100349642, 4097, False)
+Entity: (u'Image resolution', 0.268592687575, 51077, False)
+TargetType: Other
+Pattern matches: ERT = 75, ERMRT = 69, ERMRERT = 0
+Query: what conditions have symptoms including headache
+Entity: (u'Headache', 0.973841479533, 38453, True)
+Entity: (u'Symptom', 0.743815486729, 45957, False)
+Entity: (u'Conditions', 0.261450281376, 30636, True)
+Entity: (u'Conditions (Magazine)', 0.176207559636, 5, True)
+Entity: (u'Guantanamo Bay detention camp', 0.144170206753, 79773, False)
+TargetType: Other
+Pattern matches: ERT = 25, ERMRT = 6, ERMRERT = 0
+Query: what is the currency code for the spanish peseta
+Entity: (u'Genetics', 1.0, 82602, False)
+Entity: (u'The Spanish', 1.0, 0, True)
+Entity: (u'Japanese yen', 0.99999124186, 228357, False)
+Entity: (u'ISO 4217', 0.999542543458, 4370, False)
+Entity: (u'Peseta', 0.999416228838, 1712, False)
+Entity: (u'Dave Pike', 0.563389121547, 664, False)
+Entity: (u'Ta\u1e47h\u0101', 0.275143461221, 1130, False)
+Entity: (u'Latin Language', 0.157225029268, 2641407, False)
+Entity: (u'Currency (Dimension)', 0.882145865363, 15803, True)
+Entity: (u'Code', 0.308432298798, 60152, True)
+Entity: (u'Source code', 0.151942167889, 69576, False)
+TargetType: Other
+Pattern matches: ERT = 69, ERMRT = 63, ERMRERT = 0
+Query: how many film performances did jack albertson do
+Entity: (u'Jack Albertson', 0.998848589522, 1735, True)
+Entity: (u'Film', 0.724393170157, 3444452, True)
+Entity: (u'Performance art', 0.472224138952, 10917, False)
+Entity: (u'Performance', 0.239140842942, 34235, False)
+TargetType: Other
+Pattern matches: ERT = 54, ERMRT = 110, ERMRERT = 0
+Query: who designed the costumes for alice in wonderland
+Entity: (u"Alice's Adventures in Wonderland", 0.482428538249, 42780, False)
+Entity: (u'Alice in Wonderland', 0.289955927232, 27987, True)
+Entity: (u'Alice in Wonderland (Animation Film)', 0.10691869803, 4122, True)
+Entity: (u'Alice In...', 0.826663669931, 0, True)
+Entity: (u'For Alice (Canonical Version)', 0.5, 0, True)
+Entity: (u'For Alice (m/0mx50dc)', 0.5, 0, True)
+Entity: (u'In Wonderland', 0.25, 4, True)
+Entity: (u'In Wonderland (Musical Album) #8', 0.125, 2, True)
+Entity: (u'Costume', 0.693568050273, 51546, False)
+Entity: (u'Halloween costume', 0.261544205709, 83267, False)
+Entity: (u'Wonderland (Crime Thriller Film)', 0.119038167516, 1390, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 115, ERMRT = 154, ERMRERT = 0
+Query: how many episodes of taylor made piano were there
+Entity: (u'TaylorMade-Adidas', 0.605763224569, 58054, False)
+Entity: (u'Piano', 0.833676442114, 147843, True)
+Entity: (u'Episode', 0.176139928418, 22364, False)
+Entity: (u'Episodes', 0.157919044247, 4070, True)
+Entity: (u'Pianos', 0.140255452171, 21389, False)
+TargetType: Other
+Pattern matches: ERT = 49, ERMRT = 147, ERMRERT = 0
+Query: what is the building function of the eiffel tower
+Entity: (u'Eiffel Tower', 0.976257863463, 356638, True)
+Entity: (u'Eiffel Tower', 0.995060044806, 356638, True)
+Entity: (u'Newtown', 0.247284888541, 17651, False)
+Entity: (u'Connecticut General Life Insurance Company Headquarters', 0.238011932722, 0, False)
+Entity: (u'Charles Street Meeting House', 0.173098966976, 215, False)
+Entity: (u'Building', 0.803766397599, 176254, True)
+Entity: (u'Function', 0.567530394267, 425682, True)
+Entity: (u'Subroutine', 0.181238412456, 16023, False)
+TargetType: Other
+Pattern matches: ERT = 74, ERMRT = 93, ERMRERT = 0
+Query: how many people ride the london underground daily
+Entity: (u'London Underground', 0.999980803931, 156279, True)
+Entity: (u'SS London', 0.986842105263, 75, False)
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'London', 0.919147270231, 22553522, True)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+Entity: (u'Daily', 0.217761705861, 2226, True)
+Entity: (u'Iveco Daily', 0.209739935923, 2144, False)
+Entity: (u'E.G. Daily', 0.108978679393, 1114, False)
+TargetType: Other
+Pattern matches: ERT = 117, ERMRT = 155, ERMRERT = 0
+Query: who is the present newscaster on cbs evening news
+Entity: (u'CBS Evening News', 0.99231284123, 237659, True)
+Entity: (u'The Evening News (Newspaper) #2', 0.322500187702, 129, True)
+Entity: (u'The Present', 0.317390777508, 284, True)
+Entity: (u'Edinburgh Evening News', 0.214999545135, 6912, False)
+Entity: (u'The Present', 0.203398315164, 182, True)
+Entity: (u'The Present (Rock Album)', 0.182164425119, 163, True)
+Entity: (u'CBS', 0.856024728164, 1667770, True)
+Entity: (u'News Presenter', 0.849008927996, 0, False)
+Entity: (u'Evening (m/04mx32)', 0.511346892319, 36337, True)
+Entity: (u'News', 0.492882295248, 131990, True)
+Entity: (u'Evening (Romance Film)', 0.243171504344, 991, True)
+Entity: (u'NEWS', 0.184980476678, 672, True)
+Entity: (u'Evening Magazine', 0.165656777078, 1602, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 116, ERMRT = 240, ERMRERT = 4
+Query: what football team does andy reid currently coach
+Entity: (u'Andy Reid', 0.776140467128, 56669, True)
+Entity: (u'Football team', 0.340036237011, 41934, True)
+Entity: (u'Andy Reid (Soccer Midfielder)', 0.223791052709, 2609, True)
+Entity: (u'American football', 0.122302183302, 44428, False)
+Entity: (u'Soccer', 0.457236112799, 93181, False)
+Entity: (u'Team', 0.441557255154, 414089, True)
+Entity: (u'Coach', 0.367595380119, 4446, True)
+Entity: (u'American football', 0.237573263875, 44428, False)
+Entity: (u'Baseball Coach', 0.107632822168, 1596, False)
+TargetType: Other
+Pattern matches: ERT = 121, ERMRT = 131, ERMRERT = 2
+Query: what titles does the world boxing association have
+Entity: (u'World Boxing Association', 1.0, 86550, True)
+Entity: (u'The World (United Arab Emirates)', 0.240704167885, 11125, True)
+Entity: (u'World', 0.199501437846, 1658878, True)
+Entity: (u'World', 0.491277033416, 1658878, True)
+Entity: (u'Title', 0.245931810123, 5203, False)
+Entity: (u'Hard disk drive', 0.135631008797, 647547, False)
+Entity: (u'Title of honor', 0.10768811256, 33, False)
+TargetType: Other
+Pattern matches: ERT = 28, ERMRT = 19, ERMRERT = 0
+Query: how many runs does the thunder ridge ski area have
+Entity: (u'Thunder Ridge Ski Area', 1.0, 465, True)
+Entity: (u'Ski resort', 0.916020052239, 34885, False)
+Entity: (u'Oklahoma City Thunder', 0.551682865546, 235114, False)
+Entity: (u'Cardcaptor Sakura', 0.448242048105, 46890, False)
+Entity: (u'Area', 0.850698126258, 76568, True)
+Entity: (u'Run', 0.639985197285, 147862, False)
+Entity: (u'Thunder', 0.486833759831, 6459, True)
+Entity: (u'Run', 0.302589581531, 4, False)
+Entity: (u'Thunder (Hard rock Artist)', 0.100906012105, 1535, True)
+TargetType: Other
+Pattern matches: ERT = 55, ERMRT = 56, ERMRERT = 0
+Query: how much did the construction of the taj mahal cost
+Entity: (u'Taj Mahal', 0.999971659804, 246992, True)
+Entity: (u'The Construction', 0.571428571429, 4, True)
+Entity: (u'The Taj Mahal Palace Hotel', 0.144927089723, 18380, False)
+Entity: (u'The Construction (m/0ktfzyc)', 0.142857142857, 0, True)
+Entity: (u'The Construction', 0.142857142857, 0, True)
+Entity: (u'The Construction (m/0rs5cyy)', 0.142857142857, 0, True)
+Entity: (u'Taj Mahal (Blues Artist)', 0.137344445, 17665, True)
+Entity: (u'Construction', 0.839494647276, 118556, True)
+Entity: (u'Cost', 0.774598575482, 68910, True)
+TargetType: Other
+Pattern matches: ERT = 64, ERMRT = 87, ERMRERT = 0
+Query: what library system is the sunset branch library in
+Entity: (u'Sunset Branch Library', 1.0, 52, True)
+Entity: (u'Korea University Library System', 0.491135018535, 0, False)
+Entity: (u'Library classification', 0.333270191149, 19353, False)
+Entity: (u'The Sun Set', 0.250697696078, 22, True)
+Entity: (u'Columbia University Libraries', 0.175405363762, 3439, False)
+Entity: (u'The Sunset', 0.136744197861, 12, True)
+Entity: (u'System', 0.645085766644, 83083, True)
+Entity: (u'Library', 0.568424771993, 1165248, True)
+Entity: (u'Library', 0.568424771993, 1165248, True)
+Entity: (u'Sunset', 0.442777083465, 44777, True)
+Entity: (u'Branch', 0.257152580571, 7861, True)
+Entity: (u'Library (Software Genre)', 0.17447896089, 9806, True)
+Entity: (u'Library (Software Genre)', 0.17447896089, 9806, True)
+Entity: (u'Branching', 0.150257226852, 609, False)
+Entity: (u'Sunset District', 0.116760873229, 11737, False)
+TargetType: Other
+Pattern matches: ERT = 65, ERMRT = 29, ERMRERT = 0
+Query: what are some object-oriented programming languages
+Entity: (u'Object-oriented programming', 0.999987096885, 232499, False)
+Entity: (u'Programming language', 0.982300081132, 18949, False)
+Entity: (u'Language', 0.546601915644, 110409, False)
+Entity: (u'Computer programming', 0.535864586069, 62728, False)
+Entity: (u'Programming', 0.18876521462, 245, True)
+TargetType: Other
+Pattern matches: ERT = 41, ERMRT = 43, ERMRERT = 0
+Query: who were the curators for renoir in the 20th century
+Entity: (u'Renoir in the 20th century', 1.0, 124, True)
+Entity: (u'In the 20th century', 0.5, 0, True)
+Entity: (u'In the 20th century', 0.5, 0, True)
+Entity: (u'20th century', 0.674308884597, 33114, True)
+Entity: (u'The 20th Century', 0.235841909403, 0, True)
+Entity: (u'20th century', 0.914106225632, 33114, True)
+Entity: (u'The Curators (Author)', 0.5, 0, True)
+Entity: (u'The Curators (Musical Group)', 0.5, 0, True)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Curator', 0.999907136556, 43070, False)
+Entity: (u'Pierre-Auguste Renoir', 0.959043254736, 100335, False)
+Entity: (u'Century', 0.388817201524, 19332, True)
+Entity: (u'Century', 0.219143880902, 7931, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 107, ERMRT = 125, ERMRERT = 0
+Query: who used to be quarterback for the green bay packers
+Entity: (u'Green Bay Packers', 0.999991570571, 949048, True)
+Entity: (u'The Times', 0.658868266945, 1154691, False)
+Entity: (u'Beach House', 0.10263780781, 14791, False)
+Entity: (u'Dave Pike', 0.563389121547, 664, False)
+Entity: (u'Green Bay', 0.548660455526, 25858, True)
+Entity: (u'Clarence Thomas', 0.513434075445, 155203, False)
+Entity: (u'Fenway Park', 0.378319068515, 185205, False)
+Entity: (u'Ta\u1e47h\u0101', 0.275143461221, 1130, False)
+Entity: (u'TO BE (Composition) #1', 0.257986196883, 0, True)
+Entity: (u'Copula', 0.190224110281, 805, False)
+Entity: (u'Money (Quotation Subject)', 0.171371200611, 70037, False)
+Entity: (u'Latin Language', 0.157225029268, 2641407, False)
+Entity: (u'New Haven Green', 0.138239749112, 3774, False)
+Entity: (u'The Green (Location)', 0.125672213781, 75, True)
+Entity: (u'Medicare', 0.108091373211, 2941905, False)
+Entity: (u'Quarterback', 0.999374849723, 41564, True)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 162, ERMRT = 383, ERMRERT = 48
+Query: what parks are in the canadian national parks system
+Entity: (u'U.S. National Park Service', 1.0, 641096, False)
+Entity: (u'Canadian National Parks', 1.0, 0, True)
+Entity: (u'Canadian National Railway Company', 0.96986524462, 344486, False)
+Entity: (u'Canadian', 0.926605504587, 101, True)
+Entity: (u'National park', 0.741288118967, 542492, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Park', 0.548955253972, 726255, False)
+TargetType: Other
+Pattern matches: ERT = 63, ERMRT = 93, ERMRERT = 0
+Query: what movie did danny devito win an award for in 1981
+Entity: (u'Award (Chivalric Title)', 1.0, 214152, False)
+Entity: (u'Danny DeVito', 0.999885402143, 52351, True)
+Entity: (u'1981 Irish hunger strike', 0.677418808325, 583, False)
+Entity: (u'FIL Award', 0.588235220761, 89, False)
+Entity: (u'The Axemen', 0.193548949844, 1531, False)
+Entity: (u'Twitter', 0.164705313107, 19446405, False)
+Entity: (u'Pacem in Terris Award', 0.152941805869, 180, False)
+Entity: (u'United States presidential election, 1980', 0.129032241831, 26, False)
+Entity: (u'Film', 0.498307458078, 3444452, False)
+Entity: (u'1981', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 107, ERMRT = 127, ERMRERT = 5
+Query: how many historical events happened in south america
+Entity: (u'In South America (Gramophone record Musical Release)', 0.366459568149, 0, True)
+Entity: (u'In South America (Musical Album)', 0.366459568149, 0, True)
+Entity: (u'South America', 0.959975493807, 3896540, True)
+Entity: (u'History', 0.648748212079, 315424, False)
+Entity: (u'College Station', 0.113243085181, 164830, False)
+Entity: (u'Great Chinese Famine', 0.104448880073, 201, False)
+TargetType: Other
+Pattern matches: ERT = 89, ERMRT = 77, ERMRERT = 0
+Query: what number is ryan callahan on the new york rangers
+Entity: (u'New York Rangers', 1.0, 262642, True)
+Entity: (u'The New York Times', 0.811321148451, 6922317, False)
+Entity: (u'New York World-Telegram', 0.188678851549, 1105, False)
+Entity: (u'Ryan Callahan', 0.999864452728, 14753, True)
+Entity: (u'New York', 0.653213390066, 8940433, True)
+Entity: (u'New York City', 0.300971513607, 12313837, False)
+Entity: (u'Alfa Romeo Brera', 0.228914789934, 5626, False)
+Entity: (u'Lagopus', 0.210770954847, 272, False)
+Entity: (u'Happy Nation', 0.164664808474, 38, False)
+Entity: (u'Soviet Union', 0.164664808474, 5858281, False)
+Entity: (u'David Horowitz', 0.144905183608, 65415, False)
+Entity: (u'Medicinal Fried Chicken', 0.132529466082, 0, False)
+Entity: (u'Number', 0.565077406298, 112359, True)
+Entity: (u'Grammatical number', 0.166166608333, 771, False)
+TargetType: Other
+Pattern matches: ERT = 276, ERMRT = 483, ERMRERT = 16
+Query: how many speeches have been given about world war ii
+Entity: (u'World War II', 0.999917758498, 5981889, True)
+Entity: (u'Risk (Game)', 0.593220773341, 129, False)
+Entity: (u'World war', 0.538615092509, 283462, True)
+Entity: (u'Basilica', 0.293750323438, 69333, False)
+Entity: (u'Worldwar', 0.175584138821, 557, True)
+Entity: (u'Microsoft Word', 0.162499353125, 2289945, False)
+Entity: (u'Open Letter to Hobbyists', 0.1500002875, 276, False)
+Entity: (u'Bombardier Aerospace and Embraer S.A. government subsidy controversy', 0.143750035938, 0, False)
+Entity: (u'World War I', 0.120219684792, 1939004, False)
+Entity: (u'Public speaking', 0.781470770482, 29740, False)
+Entity: (u'Speech', 0.122892670963, 51443, False)
+TargetType: Other
+Pattern matches: ERT = 108, ERMRT = 112, ERMRERT = 0
+Query: how many different industries are there in home depot
+Entity: (u'Home care', 1.0, 73412, False)
+Entity: (u'Home Depot', 0.99625585797, 626059, True)
+Entity: (u'C dynamic memory allocation', 0.685714449796, 12969, False)
+Entity: (u'Water quality', 0.314285550204, 25217, False)
+Entity: (u'Industry', 0.805764193389, 449995, False)
+TargetType: Other
+Pattern matches: ERT = 29, ERMRT = 108, ERMRERT = 0
+Query: what's the horsepower of an alluminum-alloy v6 engine
+Entity: (u'Alluminum-Alloy V6', 1.0, 0, True)
+Entity: (u'V6 engine', 0.947304413143, 299206, True)
+Entity: (u'Horsepower', 0.989940856043, 164253, True)
+Entity: (u'Engine (Literature Subject)', 0.399936482182, 20116, True)
+Entity: (u'Internal combustion engine', 0.205608764598, 10536, False)
+Entity: (u'Game engine', 0.16207801533, 7933, False)
+Entity: (u'V6', 0.121526173366, 1719, True)
+Entity: (u'Motorcycle engine', 0.101826566664, 181, False)
+TargetType: Other
+Pattern matches: ERT = 50, ERMRT = 23, ERMRERT = 0
+Query: when was the ss great britain established as a museum
+Entity: (u'The S.S. Great Britain', 0.5, 0, True)
+Entity: (u'The S.S. Great Britain', 0.5, 0, True)
+Entity: (u'SS Great Britain', 0.999300699301, 7145, True)
+Entity: (u'Schutzstaffel', 0.888869052013, 120878, False)
+Entity: (u'Great Britain', 0.665125788647, 201848, True)
+Entity: (u'Lyman Allyn Art Museum', 0.55414814815, 863, False)
+Entity: (u'30th Single Collection Live', 0.263880305527, 14, False)
+Entity: (u'Asa', 0.17427230227, 37629, True)
+Entity: (u'Kingdom of Great Britain', 0.137391268366, 94260, False)
+Entity: (u'Steamboat', 0.111108887669, 27373, False)
+Entity: (u'Museum (Building function)', 0.805800810314, 183296, True)
+Entity: (u'United Kingdom', 0.517959713488, 45611336, False)
+Entity: (u'\xdf', 0.104151147451, 1177, False)
+TargetType: Date
+Pattern matches: ERT = 180, ERMRT = 450, ERMRERT = 0
+Query: how many organizations are in the automobile industry
+Entity: (u'The automobile industry', 1.0, 0, True)
+Entity: (u'Automobile', 0.999950310045, 482971, True)
+Entity: (u'Unsafe at any speed', 0.501244364883, 768, False)
+Entity: (u'Automotive industry', 0.47456954916, 320912, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Organization', 0.794144614138, 227667, False)
+Entity: (u'Industry', 0.784401270506, 449995, True)
+TargetType: Other
+Pattern matches: ERT = 78, ERMRT = 66, ERMRERT = 0
+Query: when did john j. raskob own the empire state building
+Entity: (u'Empire State Building', 0.9995525589, 194352, True)
+Entity: (u'John J. Raskob', 1.0, 1741, True)
+Entity: (u'Origin of the name "Empire State"', 0.90423050678, 16146, False)
+Entity: (u'John J. Pershing', 0.999543322124, 24076, False)
+Entity: (u'State-building', 0.995833333333, 956, True)
+Entity: (u'The Empire', 0.288313901064, 13707, True)
+Entity: (u'Constitution of the Roman Empire', 0.173175168004, 8, False)
+Entity: (u'Building', 0.803766397599, 176254, True)
+Entity: (u'U.S. state', 0.264017426139, 2692783, False)
+Entity: (u'Empire (Quotation Subject)', 0.157962731024, 3877, True)
+Entity: (u'States of India', 0.155281370633, 30636, False)
+Entity: (u'Empire', 0.116295462565, 23773, True)
+Entity: (u'Empire (TV Drama) #65', 0.102918199269, 2526, True)
+TargetType: Date
+Pattern matches: ERT = 105, ERMRT = 117, ERMRERT = 4
+Query: what are the books in the chronicles of narnia series
+Entity: (u'The Chronicles of Narnia', 0.831933, 43405, False)
+Entity: (u'The Chronicles of Narnia (Film series)', 0.168067, 17332, False)
+Entity: (u'The Chronicles of Narnia', 1.0, 43405, False)
+Entity: (u'The Chronicles of Narnia: Prince Caspian', 1.0, 1652, False)
+Entity: (u'The Chronicles of Narnia', 1.0, 43405, False)
+Entity: (u'The Books', 0.776898125835, 3045, True)
+Entity: (u'Terminator: The Sarah Connor Chronicles', 0.512775368798, 47135, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'The Chronicles (Southern rap Album)', 0.324758400181, 0, True)
+Entity: (u'The Chronicles of Amber', 0.16237920009, 20286, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Book (m/0bt_c3)', 0.659496685521, 299831, False)
+Entity: (u'Books of Chronicles', 0.192183839637, 30619, False)
+Entity: (u'Chronicles: Volume One', 0.105350964125, 1389, False)
+TargetType: Other
+Pattern matches: ERT = 133, ERMRT = 184, ERMRERT = 0
+Query: what german athletes have participated in the olympics
+Entity: (u'Olympic Games', 0.393938598371, 4131205, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'2008 Summer Olympics', 0.225704702285, 480035, False)
+Entity: (u'The Olympics', 0.173458415468, 58, True)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Athlete (Profession)', 0.847023944375, 61446, False)
+Entity: (u'Olympic Games', 0.472683419347, 4131205, False)
+TargetType: Other
+Pattern matches: ERT = 80, ERMRT = 74, ERMRERT = 0
+Query: how many tv did jerry seinfeld have a starring role in
+Entity: (u'Beyer Speed Figure', 1.0, 7071, False)
+Entity: (u'Soane Havea', 1.0, 52, False)
+Entity: (u'Jerry Seinfeld', 0.929733330903, 114386, True)
+Entity: (u'Starring Role', 0.864197530864, 70, True)
+Entity: (u'Nguy\u1ec5n V\u0103n Thi\u1ec7u', 0.586207036861, 6163, False)
+Entity: (u'Juan Carlos I of Spain', 0.413792963139, 45754, False)
+Entity: (u'Television', 0.843880864865, 780007, False)
+Entity: (u'Role', 0.554885934753, 27672, True)
+TargetType: Other
+Pattern matches: ERT = 108, ERMRT = 231, ERMRERT = 0
+Query: in what disaster was old st paul_s cathedral destroyed
+Entity: (u"Old St Paul's Cathedral", 1.0, 496, True)
+Entity: (u"St Paul's Cathedral", 0.879512209853, 77335, True)
+Entity: (u"Old Saint Paul's", 0.429751594222, 1538, False)
+Entity: (u"Old St. Paul's", 0.148760400861, 0, True)
+Entity: (u'OldSt', 0.5, 0, True)
+Entity: (u'Old St', 0.5, 0, True)
+Entity: (u"St. Paul's Cathedral", 0.3, 201, False)
+Entity: (u"St. Paul's Cathedral (Buffalo)", 0.288059701493, 193, False)
+Entity: (u"St. Paul's Cathedral (Canada)", 0.25223880597, 169, False)
+Entity: (u"St Paul's School, London", 0.11531327049, 1734, False)
+Entity: (u'Paul the Apostle', 0.586170901062, 997851, False)
+Entity: (u'Disaster', 0.529635339677, 35757, True)
+Entity: (u'Cathedral', 0.518468396762, 327398, True)
+Entity: (u"Paul's walk", 0.355710145998, 250, False)
+TargetType: Other
+Pattern matches: ERT = 116, ERMRT = 79, ERMRERT = 0
+Query: how many people played in the 2010 fifa world cup final
+Entity: (u'2010 FIFA World Cup', 1.0, 93039, True)
+Entity: (u'2010 FIFA World Cup Final', 0.978494608602, 218, True)
+Entity: (u'2010 FIFA World Cup', 0.577319312658, 93039, False)
+Entity: (u'1954 FIFA World Cup Final', 0.340206363737, 196, False)
+Entity: (u'FIFA World Cup', 0.899885024582, 247309, True)
+Entity: (u'Show Jumping World Cup', 0.198443892208, 3099, False)
+Entity: (u'2006 FIFA World Cup Final', 0.128404735699, 102, False)
+Entity: (u'El Salvador national football team', 1.0, 3757, False)
+Entity: (u'played in', 1.0, 0, True)
+Entity: (u'2010 FIFA World Cup', 1.0, 93039, False)
+Entity: (u'1956 FA Cup Final', 0.584424332553, 69, False)
+Entity: (u'Unforgettable (Composition) #374', 0.554217247046, 92, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'FA Cup Final', 0.156162705624, 32831, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u"Medbury's-Grove Lawn Subdivisions Historic District", 0.126505920011, 0, False)
+Entity: (u'People', 0.370274503777, 228405, True)
+Entity: (u'People (Quotation Subject)', 0.222445557315, 941, True)
+Entity: (u'2010', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 182, ERMRT = 199, ERMRERT = 11
+Query: on how many projects was james walker a design engineer
+Entity: (u'Design engineer', 0.999850029994, 6667, True)
+Entity: (u'Walker motifs', 0.816901408451, 116, False)
+Entity: (u'James Walker (Civil engineer)', 0.234172974493, 260, True)
+Entity: (u'Walkera', 0.183098591549, 26, True)
+Entity: (u'James Walker (Record producer)', 0.13690112355, 152, True)
+Entity: (u'James Walker', 0.134729084419, 885, True)
+Entity: (u'Design', 0.787730412566, 197431, True)
+Entity: (u'Engineer', 0.782162713023, 32338, True)
+Entity: (u'Project (Quotation Subject)', 0.546876560321, 421844, False)
+Entity: (u'Audio Engineer', 0.126586309981, 21859, False)
+TargetType: Other
+Pattern matches: ERT = 69, ERMRT = 80, ERMRERT = 6
+Query: how many students are there at the university of iceland
+Entity: (u'University of Iceland', 1.0, 10491, True)
+Entity: (u'University of Iceland', 1.0, 10491, True)
+Entity: (u'Conservation status', 1.0, 766, False)
+Entity: (u'Wesleyan University', 0.369864400705, 72582, False)
+Entity: (u'University of Michigan', 0.167597785362, 1011854, False)
+Entity: (u'University of California, Berkeley', 0.128491695109, 1709617, False)
+Entity: (u'University of Oxford', 0.125910935291, 553135, False)
+Entity: (u'University of Virginia', 0.111731856908, 685995, False)
+Entity: (u'Uppsala University', 0.102302620021, 52141, False)
+Entity: (u'Student', 0.923982877027, 95407, False)
+Entity: (u'University', 0.790236592261, 1631423, True)
+Entity: (u'Iceland', 0.74242798662, 1742658, True)
+Entity: (u'Iceland national football team', 0.100369570192, 576, False)
+TargetType: Other
+Pattern matches: ERT = 243, ERMRT = 883, ERMRERT = 0
+Query: what is the genre of the skeptics' guide to the universe
+Entity: (u"The Skeptics' Guide to the Universe", 0.960127877323, 3146, True)
+Entity: (u'Caganer', 0.760456609637, 716, False)
+Entity: (u"The Skeptics' Guide to the Universe", 1.0, 3146, False)
+Entity: (u"Barlowe's Guide to Extraterrestrials", 1.0, 131, False)
+Entity: (u'Skeptics', 0.967741935484, 60, True)
+Entity: (u'To the Universe (Metalmouse remix)', 0.5, 0, True)
+Entity: (u'To the Universe (Metalmouse remix)', 0.5, 0, True)
+Entity: (u'GenreOf', 1.0, 0, True)
+Entity: (u"Barlowe's Guide to Extraterrestrials", 1.0, 131, False)
+Entity: (u'Skeptics', 0.967741935484, 60, True)
+Entity: (u'Indigenous', 0.589473109031, 1753, False)
+Entity: (u'Universe', 0.513196996765, 888820, True)
+Entity: (u'Steampunk', 0.487750779292, 97357, False)
+Entity: (u'Skepticism', 0.461346168827, 34496, False)
+Entity: (u'Guide', 0.346416618347, 52828, True)
+Entity: (u'Noise music', 0.336302705324, 2271, False)
+Entity: (u'Bird', 0.29473749662, 276259, False)
+Entity: (u'The Universe', 0.234104325248, 21402, True)
+Entity: (u'Guide (Musical Film)', 0.143258992552, 125, True)
+Entity: (u'Scientific skepticism', 0.121406617273, 376, False)
+Entity: (u'The Universe (Newspaper)', 0.117051652968, 121, True)
+Entity: (u'Counter-Strike', 0.115789394349, 157580, False)
+Entity: (u'Girl Guides', 0.108317696878, 53045, False)
+Entity: (u'Universe', 0.617414701133, 888820, True)
+Entity: (u'Skepticism', 0.461346168827, 34496, False)
+Entity: (u'Music genre', 0.409171239921, 7130, False)
+Entity: (u'Genre', 0.365010877152, 30154, True)
+Entity: (u'Guide', 0.346416618347, 52828, True)
+Entity: (u'Guide (Musical Film)', 0.143258992552, 125, True)
+Entity: (u'Genus', 0.130776085571, 45859, False)
+Entity: (u'Scientific skepticism', 0.121406617273, 376, False)
+Entity: (u'Girl Guides', 0.108317696878, 53045, False)
+Entity: (u'Marvel Universe', 0.106119103763, 75400, False)
+TargetType: Other
+Pattern matches: ERT = 214, ERMRT = 167, ERMRERT = 0
+Query: how many operating systems is adobe flash compatible with
+Entity: (u'Adobe Flash', 0.990499390503, 4367447, True)
+Entity: (u'Operating system', 0.968803964665, 2021052, False)
+Entity: (u'Compatible With', 0.5, 0, True)
+Entity: (u'Compatible With', 0.5, 0, True)
+Entity: (u'System', 0.58453182609, 83083, False)
+Entity: (u'Adobe', 0.551596452434, 22212, True)
+Entity: (u'Adobe Systems', 0.429861651134, 1459195, False)
+TargetType: Other
+Pattern matches: ERT = 64, ERMRT = 151, ERMRERT = 0
+Query: did the big bang exhibit at the science museum cost money
+Entity: (u'Science Museum', 0.999929373543, 28316, True)
+Entity: (u'Big Bang', 0.392090468579, 296322, True)
+Entity: (u'The Big Bang', 0.173080424431, 0, True)
+Entity: (u'Conservation status', 1.0, 766, False)
+Entity: (u'Big Bang', 0.600751269585, 296322, True)
+Entity: (u'Malaysia', 0.527271766275, 4351832, False)
+Entity: (u'Cardcaptor Sakura', 0.472726779795, 46890, False)
+Entity: (u'Medical cannabis', 0.460306007727, 17293, False)
+Entity: (u'Big Bang (K-pop Artist)', 0.282017893058, 139106, True)
+Entity: (u'Brining', 0.223576462003, 3325, False)
+Entity: (u'Emotion', 0.197274003311, 23284, False)
+Entity: (u'Science museum', 0.164249954413, 7702, True)
+Entity: (u'Musical acoustics', 0.118364401987, 1291, False)
+Entity: (u'Money (Quotation Subject)', 0.750863000671, 70037, True)
+Entity: (u'Collection (Organisation sector)', 0.239241545864, 14554, False)
+Entity: (u'Art exhibition', 0.230697347509, 51269, False)
+Entity: (u'Exhibit', 0.205064253453, 93, True)
+Entity: (u'Bang!', 0.201390239198, 1630, True)
+Entity: (u'Ernesto Neto', 0.119620772932, 3879, False)
+Entity: (u'Bang! (Book) #37', 0.103042613185, 834, True)
+Entity: (u'Exhibit', 0.102531877232, 0, True)
+Entity: (u"Vincent van Gogh's display at Les XX, 1890", 0.102531877232, 0, False)
+TargetType: Other
+Pattern matches: ERT = 167, ERMRT = 328, ERMRERT = 0
+Query: what titles were at stake in the the rumble in the jungle
+Entity: (u'The Rumble in the Jungle', 0.962676338711, 5127, True)
+Entity: (u'The Lion Sleeps Tonight', 0.470856589669, 1966, False)
+Entity: (u"I'm a Celebrity... Get Me Out of Here!", 0.249842171073, 7631, False)
+Entity: (u'John Wereat', 1.0, 38, False)
+Entity: (u'The Jungle', 0.927712966309, 12552, True)
+Entity: (u'The Rumble', 0.45449959665, 85, True)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'At Stake (Documentary Film)', 0.125, 0, True)
+Entity: (u'At Stake (m/0l6wz9k)', 0.125, 0, True)
+Entity: (u'At Stake (Musical Recording) #1', 0.125, 0, True)
+Entity: (u'At Stake (Musical Recording) #3', 0.125, 0, True)
+Entity: (u'At Stake (Musical Recording) #2', 0.125, 0, True)
+Entity: (u'At Stake (m/0l3p7gv)', 0.125, 0, True)
+Entity: (u'At Stake (m/0lbkzkd)', 0.125, 0, True)
+Entity: (u'Stake', 0.6647029995, 31479, True)
+Entity: (u'Jungle', 0.486597332936, 72075, True)
+Entity: (u'Oldschool jungle', 0.340561885804, 2412, False)
+Entity: (u'@stake', 0.295657672444, 603, False)
+Entity: (u'Title', 0.245931810123, 5203, False)
+Entity: (u'Title of honor', 0.10768811256, 33, False)
+TargetType: Other
+Pattern matches: ERT = 111, ERMRT = 123, ERMRERT = 24
+Query: how many domains are in the science & technology category
+Entity: (u'Science & Technology (TV Episode)', 0.5, 0, True)
+Entity: (u'Science & Technology', 0.5, 0, True)
+Entity: (u'Medical cannabis', 0.460306007727, 17293, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Brining', 0.223576462003, 3325, False)
+Entity: (u'Emotion', 0.197274003311, 23284, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Musical acoustics', 0.118364401987, 1291, False)
+Entity: (u'Technology', 0.825824468024, 74988, True)
+Entity: (u'Categorization', 0.777507772556, 1936434, False)
+Entity: (u'Science (TV Genre)', 0.655755654392, 1094286, True)
+Entity: (u'Domain name', 0.429868956853, 367208, False)
+Entity: (u'Science (Science Magazine)', 0.198229138575, 27958, True)
+Entity: (u'Domain (Organism Classification Rank)', 0.190405989744, 214, False)
+Entity: (u'Protein domain', 0.123888807448, 612, False)
+TargetType: Other
+Pattern matches: ERT = 134, ERMRT = 121, ERMRERT = 5
+Query: how many teams participated in the 1979 cricket world cup
+Entity: (u'1979 Cricket World Cup', 1.0, 36, True)
+Entity: (u'The Cricket World Cup', 0.840703311454, 61293, True)
+Entity: (u'2011 Cricket World Cup', 0.103598684702, 11509, False)
+Entity: (u'FIFA World Cup', 0.377238811722, 247309, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Cricket (Sport)', 0.869357003848, 127027, True)
+Entity: (u'World', 0.491277033416, 1658878, True)
+Entity: (u'Team', 0.375677017016, 414089, False)
+Entity: (u'TEAMS', 0.2881285462, 944, True)
+Entity: (u'Hard disk drive', 0.135631008797, 647547, False)
+Entity: (u'Cup', 0.109885670886, 18626, True)
+Entity: (u'Team sport', 0.109776154415, 12837, False)
+Entity: (u'1979', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 90, ERMRT = 75, ERMRERT = 0
+Query: what breed group is a shar pei in the american kennel club
+Entity: (u'American Kennel Club', 1.0, 350719, True)
+Entity: (u'American Kennel Club', 1.0, 350719, True)
+Entity: (u'Ashar', 1.0, 291, True)
+Entity: (u'Shar Pei', 0.999911664679, 45278, True)
+Entity: (u'Breed group (dog)', 0.973053892216, 325, True)
+Entity: (u'Kennel club', 0.710098615598, 42500, True)
+Entity: (u'Cinema of the United States', 0.413306543581, 65777, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'The Kennel Club', 0.284713639559, 15228, True)
+Entity: (u'The American (Novel)', 0.170842698919, 847, True)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Shar', 0.675953331767, 1555, True)
+Entity: (u'Dog breed', 0.450231671676, 17560, False)
+Entity: (u'Prince Edward Island', 0.375505984368, 245970, False)
+Entity: (u'Breed', 0.342293446935, 13925, True)
+Entity: (u'shar', 0.263860882561, 607, True)
+Entity: (u'Musical ensemble', 0.252477898325, 120561, False)
+Entity: (u'Group', 0.176437573469, 846, True)
+Entity: (u'Pe', 0.170730422951, 994, False)
+Entity: (u'Social group', 0.138610333259, 11792, False)
+Entity: (u'I. M. Pei', 0.1377024527, 57733, False)
+Entity: (u'Group', 0.133716825004, 749, True)
+TargetType: Other
+Pattern matches: ERT = 124, ERMRT = 188, ERMRERT = 4
+Query: what was the date of the first sesame street episode aired
+Entity: (u'Sesame Street', 0.975053690877, 258655, True)
+Entity: (u'420', 0.435097958316, 105, False)
+Entity: (u'First Evil', 0.206418045071, 4861, False)
+Entity: (u'Calendar date', 0.362365682798, 247514, False)
+Entity: (u'Episode', 0.292628485896, 22364, True)
+Entity: (u'Date palm', 0.1523613683, 7984, False)
+Entity: (u'Dating', 0.10285492555, 52008, False)
+TargetType: Other
+Pattern matches: ERT = 57, ERMRT = 78, ERMRERT = 0
+Query: what matches have had the wbc world champion title at stake
+Entity: (u'WBC World Champion', 1.0, 0, True)
+Entity: (u'Alfred Harmsworth', 0.999487704918, 3902, False)
+Entity: (u'World Boxing Council', 0.720927361439, 176631, False)
+Entity: (u'Westboro Baptist Church', 0.279068557016, 65096, False)
+Entity: (u'World Chess Championship', 0.232745250394, 14086, False)
+Entity: (u'NWA World Heavyweight Championship', 0.222044786603, 7899, False)
+Entity: (u'At Stake (m/0l3p7gv)', 0.125, 0, True)
+Entity: (u'At Stake (Musical Recording) #3', 0.125, 0, True)
+Entity: (u'At Stake (m/0l6wz9k)', 0.125, 0, True)
+Entity: (u'At Stake (Musical Recording) #2', 0.125, 0, True)
+Entity: (u'At Stake (Documentary Film)', 0.125, 0, True)
+Entity: (u'At Stake (Musical Recording) #1', 0.125, 0, True)
+Entity: (u'At Stake (m/0lbkzkd)', 0.125, 0, True)
+Entity: (u'World Figure Skating Championships', 0.124398500008, 177887, False)
+Entity: (u'World championship', 0.103531616962, 146874, False)
+Entity: (u'Match', 0.833033141614, 14633, False)
+Entity: (u'Stake', 0.6647029995, 31479, True)
+Entity: (u'Title', 0.352023966761, 5203, True)
+Entity: (u'@stake', 0.295657672444, 603, False)
+Entity: (u'Title', 0.225909672308, 3339, True)
+Entity: (u'Title', 0.163514335012, 14254, True)
+TargetType: Other
+Pattern matches: ERT = 61, ERMRT = 48, ERMRERT = 0
+Query: in what martial art does christopher adams have a black belt
+Entity: (u'Soane Havea', 1.0, 52, False)
+Entity: (u'Adam Black (Athlete)', 0.988095238095, 83, False)
+Entity: (u'Martial arts', 0.904670322561, 134446, False)
+Entity: (u'Chris Adams', 0.649214416313, 3223, False)
+Entity: (u'Black belt', 0.497588993504, 83991, True)
+Entity: (u'Black Belt', 0.223813266047, 2458, True)
+Entity: (u'Black Belt (Location)', 0.173648710303, 609, True)
+Entity: (u'Ammunition belt', 0.694740841777, 248, False)
+Entity: (u'Art', 0.593724960112, 2913286, True)
+TargetType: Other
+Pattern matches: ERT = 85, ERMRT = 67, ERMRERT = 2
+Query: what versions of mac os x is mozilla firefox compatible with
+Entity: (u'OS X', 0.980697651493, 3054859, False)
+Entity: (u'Visual Basic .NET', 1.0, 4350, False)
+Entity: (u'X', 0.999854836368, 123980, False)
+Entity: (u'Firefox', 0.991472594276, 5164692, False)
+Entity: (u'Mac OS', 0.985882828889, 801151, True)
+Entity: (u'Compatible With', 0.5, 0, True)
+Entity: (u'Compatible With', 0.5, 0, True)
+TargetType: Other
+Pattern matches: ERT = 77, ERMRT = 22, ERMRERT = 2
+Query: in what season of stargate sg-1 is the episode show and tell
+Entity: (u'Show and Tell (Musical Recording) #34', 0.189136131061, 126, True)
+Entity: (u'Show and tell', 0.133596156067, 89, True)
+Entity: (u'Show and tell', 0.102073467557, 68, True)
+Entity: (u'Stargate SG-1', 0.971065355264, 144974, True)
+Entity: (u'Burr\u2013Hamilton duel', 0.618213820768, 271, False)
+Entity: (u'The Strike (TV Episode) #1', 0.202219249023, 0, False)
+Entity: (u'Stargate (Fictional Universe)', 0.390924840692, 21596, True)
+Entity: (u'Episode', 0.292628485896, 22364, True)
+Entity: (u'Season', 0.283846106731, 10457, True)
+Entity: (u'Season', 0.277508146975, 29811, True)
+Entity: (u'Stargate (Science Fiction Film)', 0.174839456559, 2195, True)
+Entity: (u'Stargate', 0.167295734986, 22793, True)
+Entity: (u'Stargate (Fictional Object)', 0.103086553801, 9803, True)
+TargetType: Other
+Pattern matches: ERT = 107, ERMRT = 123, ERMRERT = 0
+Query: when was the construction of new steubenville bridge finished
+Entity: (u'Construction of New Steubenville Bridge', 1.0, 0, True)
+Entity: (u'New Steubenville Bridge', 1.0, 0, True)
+Entity: (u'Steubenville Bridge', 1.0, 0, True)
+Entity: (u'The Construction', 0.571428571429, 4, True)
+Entity: (u'The Construction (m/0ktfzyc)', 0.142857142857, 0, True)
+Entity: (u'The Construction (m/0rs5cyy)', 0.142857142857, 0, True)
+Entity: (u'The Construction', 0.142857142857, 0, True)
+Entity: (u'Construction', 0.839494647276, 118556, True)
+TargetType: Date
+Pattern matches: ERT = 37, ERMRT = 20, ERMRERT = 0
+Query: what decision did manny pacquiao vs. timothy bradley end with
+Entity: (u'Manny Pacquiao vs. Timothy Bradley', 1.0, 4, True)
+Entity: (u'Timothy Bradley', 0.999511582473, 14325, True)
+Entity: (u'Manny Pacqui\xe1o', 0.997628984622, 260311, False)
+Entity: (u'Decision-making', 0.237567736896, 16435, False)
+TargetType: Other
+Pattern matches: ERT = 43, ERMRT = 60, ERMRERT = 0
+Query: what sport did scott anderson play in the 1992 summer olympics
+Entity: (u'1992 Summer Olympics', 0.873898779205, 18208, True)
+Entity: (u'1992 Summer Olympics', 1.0, 18208, False)
+Entity: (u'Summer Olympic Games', 0.587111801353, 114045, False)
+Entity: (u'Scott Anderson (TV Character)', 0.422298811227, 590, True)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Scott Anderson', 0.175482259007, 543, True)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Summer', 0.746314173315, 46922, True)
+Entity: (u'Sports', 0.719860156648, 319071, False)
+Entity: (u'Olympic Games', 0.472683419347, 4131205, False)
+Entity: (u'1992', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 128, ERMRT = 99, ERMRERT = 0
+Query: how many sites are on the national register of historic places
+Entity: (u'National Register of Historic Places', 1.0, 344565, True)
+Entity: (u'National Register of Historic Places', 1.0, 344565, True)
+Entity: (u'National Register of Historic Places', 1.0, 344565, False)
+Entity: (u'National Register of Historic Places', 1.0, 344565, False)
+Entity: (u'Mount Vernon (United States of America) #41', 0.259740520324, 207, False)
+Entity: (u'Waterloo (United States of America) #3', 0.194805055827, 2336, False)
+Entity: (u'Canyon (City/Town/Village) #6', 0.194805055827, 5662, False)
+Entity: (u'Longview (United States of America) #14', 0.181817695396, 8459, False)
+Entity: (u'National Register of Historic Places', 1.0, 344565, False)
+Entity: (u'Arnold\u2013Chiari malformation', 1.0, 5765, False)
+Entity: (u'The National', 0.544034538715, 33526, True)
+Entity: (u'St. James (United States of America) #8', 0.262295130051, 2773, False)
+Entity: (u'Woonsocket', 0.245901623316, 49273, False)
+Entity: (u'Lagopus', 0.210770954847, 272, False)
+Entity: (u'Soviet Union', 0.164664808474, 5858281, False)
+Entity: (u'Happy Nation', 0.164664808474, 38, False)
+Entity: (u'Allegheny', 0.163934415544, 3416, False)
+Entity: (u'David Horowitz', 0.144905183608, 65415, False)
+Entity: (u'Mackinac Island', 0.131147402075, 23519, False)
+Entity: (u'Website (Industry)', 0.727014828905, 2213214, False)
+Entity: (u'OpenStreetMap', 0.246566475014, 151403, False)
+Entity: (u'Location (Literature Subject)', 0.15810613208, 1455887, False)
+TargetType: Other
+Pattern matches: ERT = 244, ERMRT = 389, ERMRERT = 4
+Query: how many national parks does the national wildlife refuge have
+Entity: (u'National Wildlife Refuge', 0.962388110751, 32571, True)
+Entity: (u'National Wildlife', 1.0, 1879, True)
+Entity: (u'Wildlife refuge', 0.981063068309, 20596, True)
+Entity: (u'National park', 0.741288118967, 542492, False)
+Entity: (u'The National', 0.544034538715, 33526, True)
+Entity: (u'U.S. National Park Service', 0.136998336982, 641096, False)
+Entity: (u'Wildlife', 0.692694254102, 42575, True)
+Entity: (u'Park', 0.548955253972, 726255, False)
+Entity: (u'Refuge', 0.499684360384, 2213, True)
+Entity: (u'Refuge', 0.287437049602, 1273, True)
+TargetType: Other
+Pattern matches: ERT = 72, ERMRT = 38, ERMRERT = 0
+Query: how many players are in the current roster of the new york mets
+Entity: (u'New York Mets', 0.999992815598, 974326, True)
+Entity: (u'The New York Times', 0.811321148451, 6922317, False)
+Entity: (u'New York World-Telegram', 0.188678851549, 1105, False)
+Entity: (u'In the Current (Musical Release)', 0.142857142857, 0, True)
+Entity: (u'In the Current (m/0sj0vhp)', 0.142857142857, 0, True)
+Entity: (u'In the Current (m/0lhr53w)', 0.142857142857, 0, True)
+Entity: (u'In the Current (Musical Recording) #1', 0.142857142857, 0, True)
+Entity: (u'In the Current (Musical Recording) #2', 0.142857142857, 0, True)
+Entity: (u'In the Current (Musical Album)', 0.142857142857, 0, True)
+Entity: (u'In the Current (m/0sk5fht)', 0.142857142857, 0, True)
+Entity: (u'New York', 0.653213390066, 8940433, True)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'New York City', 0.300971513607, 12313837, False)
+Entity: (u'Alfa Romeo Brera', 0.228914789934, 5626, False)
+Entity: (u'KCMP', 0.22710615648, 4155, False)
+Entity: (u'The Current', 0.220617350815, 2109, True)
+Entity: (u'The Current', 0.157892569686, 9, True)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Medicinal Fried Chicken', 0.132529466082, 0, False)
+Entity: (u'Roster', 0.570073701683, 7996, True)
+Entity: (u'Player', 0.195771275537, 233993, False)
+TargetType: Other
+Pattern matches: ERT = 245, ERMRT = 372, ERMRERT = 0
+Query: what characters are featured in batman: the dark knight returns
+Entity: (u'Batman: The Dark Knight Returns', 0.999466132799, 14977, True)
+Entity: (u'Batman: The Dark Knight', 1.0, 4114, True)
+Entity: (u'Batman: The Dark Knight Returns', 1.0, 14977, False)
+Entity: (u'The Dark Knight', 0.97140198999, 36688, True)
+Entity: (u'INXS', 0.999852085593, 40558, False)
+Entity: (u'The Dark (Game expansion)', 0.314162760503, 1112, True)
+Entity: (u'The Dark', 0.242120041143, 857, True)
+Entity: (u'Knight', 0.618326421638, 399319, True)
+Entity: (u'Batman', 0.608938484599, 398670, True)
+Entity: (u'Characters', 0.305673921723, 437, True)
+Entity: (u'Roanoke Colony', 0.188136710592, 4599, False)
+Entity: (u'Rate of return', 0.158967650637, 12791, False)
+Entity: (u'Return statement', 0.153134352594, 3324, False)
+Entity: (u'Knight', 0.117281780693, 20578, True)
+Entity: (u'Profit', 0.113756764088, 1020, False)
+TargetType: Other
+Pattern matches: ERT = 146, ERMRT = 172, ERMRERT = 2
+Query: what year did sgt. pepper's lonely hearts club band win a grammy
+Entity: (u"Sgt. Pepper's Lonely Hearts Club Band", 0.824388232472, 15522, True)
+Entity: (u"Sgt. Pepper's Lonely Hearts Club Band", 1.0, 15522, False)
+Entity: (u"Sgt. Pepper's Lonely Hearts Club Band", 0.987216180118, 15522, False)
+Entity: (u"Sgt. Pepper's Lonely Hearts Club Band (Musical comedy Film)", 0.633333231667, 3, False)
+Entity: (u"Sgt. Pepper's Lonely Hearts Club Band", 1.0, 15522, False)
+Entity: (u"Sgt. Pepper's Lonely Hearts Club Band", 1.0, 15522, False)
+Entity: (u'Hearts Club Band', 0.9, 27, True)
+Entity: (u'Lonely Hearts Club (Musical Recording) #8', 0.263157894737, 5, True)
+Entity: (u'The Elements: Fire', 0.586207, 14, False)
+Entity: (u'Vienna', 0.536389533942, 1803316, False)
+Entity: (u'Capsicum', 0.516352936356, 34308, False)
+Entity: (u"S'lonely (Musical Recording)", 0.5, 0, True)
+Entity: (u"S'lonely (m/0nr549q)", 0.5, 0, True)
+Entity: (u'Grammy Awards', 0.413793, 1382103, False)
+Entity: (u'Lonely Hearts', 0.247845144768, 975, True)
+Entity: (u'Lonely Hearts (TV Episode) #17', 0.209499505273, 0, True)
+Entity: (u'Lonelyhearts', 0.197341060535, 910, True)
+Entity: (u'Wine (Industry)', 0.185528239276, 54219, False)
+Entity: (u'WINA', 0.159024205093, 1543, True)
+Entity: (u'Bell pepper', 0.157643077354, 11804, False)
+Entity: (u'Peppers', 0.126830657417, 8427, True)
+Entity: (u'Penny Bun', 0.102678251129, 10653, False)
+Entity: (u'Chili pepper', 0.101446110399, 48304, False)
+Entity: (u'Grammy Awards', 0.984965614022, 1382103, False)
+Entity: (u'Musical ensemble', 0.758942050083, 120561, False)
+Entity: (u'Year', 0.708396384259, 1064748, True)
+Entity: (u'Heart of Midlothian F.C.', 0.468627541346, 338441, False)
+Entity: (u'Club (Organisation type)', 0.363012355292, 309602, True)
+Entity: (u'Hearts', 0.271722898169, 8565, True)
+Entity: (u'Year', 0.244091331527, 366879, True)
+Entity: (u'Football team', 0.18228838619, 41934, False)
+Entity: (u'Nightclub', 0.106943699663, 89188, False)
+Entity: (u'Heart', 0.101232644547, 43467, False)
+TargetType: Date
+Pattern matches: ERT = 354, ERMRT = 404, ERMRERT = 0
+Query: in what events did ian thorpe compete in the 2004 summer olympics
+Entity: (u'The 2004 Summer Olympics', 1.0, 0, True)
+Entity: (u'2004 Summer Olympics', 0.769728905515, 82494, True)
+Entity: (u'Jos\xe9 Luis Rodr\xedguez Zapatero', 1.0, 62797, False)
+Entity: (u'Ian Thorpe', 0.999960092585, 25057, True)
+Entity: (u'Michael Phelps', 0.838709841311, 321255, False)
+Entity: (u'Summer Olympic Games', 0.587111801353, 114045, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Summer', 0.746314173315, 46922, True)
+Entity: (u'Olympic Games', 0.472683419347, 4131205, False)
+Entity: (u'Great Chinese Famine', 0.104448880073, 201, False)
+Entity: (u'2004', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 117, ERMRT = 235, ERMRERT = 10
+Query: who said that_s one small step for man, one giant leap for mankind
+Entity: (u"That's one small step for man, one giant leap for mankind.", 1.0, 0, True)
+Entity: (u'Neil Armstrong', 1.0, 109568, False)
+Entity: (u'Apollo 11', 1.0, 78522, False)
+Entity: (u'One giant leap for mankind', 0.333333333333, 0, True)
+Entity: (u'One giant leap for mankind', 0.333333333333, 0, True)
+Entity: (u'One giant leap for mankind', 0.333333333333, 0, True)
+Entity: (u'Neil Armstrong', 0.773584924706, 109568, False)
+Entity: (u'Apollo 11', 0.226415075294, 78522, False)
+Entity: (u'One Giant Leap (TV Episode) #2', 0.480883811767, 0, True)
+Entity: (u'One Small Step', 0.364922138498, 258, True)
+Entity: (u'Milo\u0161 Forman', 0.251927975194, 14969, False)
+Entity: (u'1 Giant Leap', 0.24338087007, 500, False)
+Entity: (u'Forman', 0.219067397408, 1388, True)
+Entity: (u'Man One (Musical Recording)', 0.166666666667, 0, True)
+Entity: (u'Man One (Film character) #1', 0.166666666667, 0, True)
+Entity: (u'Man One (Film character) #2', 0.166666666667, 0, True)
+Entity: (u'Man One', 0.166666666667, 0, True)
+Entity: (u'Man One (m/0mk1fy5)', 0.166666666667, 0, True)
+Entity: (u'Man One (Film Actor)', 0.166666666667, 0, True)
+Entity: (u'Forman (United States of America) #1', 0.15608540361, 51, True)
+Entity: (u'One Giant Leap', 0.129965384618, 267, True)
+Entity: (u'Neil Armstrong', 0.111696611736, 109568, False)
+Entity: (u'Phillip Forman', 0.104056859614, 53, False)
+Entity: (u'Giant Leap (Musical Recording) #1', 0.5, 0, True)
+Entity: (u'For Mankind (m/0ks7ct4)', 0.5, 0, True)
+Entity: (u'Giant Leap (m/0mtw__8)', 0.5, 0, True)
+Entity: (u'For Mankind (Musical Recording)', 0.5, 0, True)
+Entity: (u'One Giant (Musical Recording)', 0.333333333333, 0, True)
+Entity: (u'One Giant', 0.333333333333, 0, True)
+Entity: (u'One Giant (m/0qcnxr2)', 0.333333333333, 0, True)
+Entity: (u'Milo\u0161 Forman', 0.251927975194, 14969, False)
+Entity: (u'Small Step (m/0m8t_bd)', 0.25, 0, True)
+Entity: (u"That's One (Musical Recording) #2", 0.25, 0, True)
+Entity: (u"That's One (Musical Recording) #1", 0.25, 0, True)
+Entity: (u'Small Step (Musical Recording) #2', 0.25, 0, True)
+Entity: (u'Small Step (Musical Recording) #1', 0.25, 0, True)
+Entity: (u"That's One (m/0l9qyb0)", 0.25, 0, True)
+Entity: (u"That's One (m/0l1_6zj)", 0.25, 0, True)
+Entity: (u'Small Step (m/0mpx3sh)', 0.25, 0, True)
+Entity: (u'Forman', 0.219067397408, 1388, True)
+Entity: (u'Man', 0.206535202098, 11222, True)
+Entity: (u'Forman (United States of America) #1', 0.15608540361, 51, True)
+Entity: (u'MAN SE', 0.151657247177, 16871, False)
+Entity: (u'Metropolitan area network', 0.111062729079, 6099, False)
+Entity: (u'Phillip Forman', 0.104056859614, 53, False)
+Entity: (u'Mick Foley', 0.687743294626, 81703, False)
+Entity: (u'Honda Life', 0.681921748725, 187, False)
+Entity: (u'ISO 10303', 0.346520685266, 578, False)
+Entity: (u"April Fool's Day", 0.31110102966, 391799, False)
+Entity: (u'Lightweight Extensible Authentication Protocol', 0.234521994607, 3889, False)
+Entity: (u'Man', 0.206535202098, 11222, True)
+Entity: (u'MAN SE', 0.151657247177, 16871, False)
+Entity: (u'Human', 0.129847429773, 309595, False)
+Entity: (u'Law Enforcement Against Prohibition', 0.126833376685, 24171, False)
+Entity: (u'ISO 10303-21', 0.12214677762, 9, False)
+Entity: (u'Metropolitan area network', 0.111062729079, 6099, False)
+TargetType: person, organization, employer, character
+Pattern matches: ERT = 352, ERMRT = 664, ERMRERT = 0
+Query: for what country did bernard lagat play in the 2000 summer olympics
+Entity: (u'2000 Summer Olympics', 0.87082027121, 0, True)
+Entity: (u'2000 Summer Olympics', 1.0, 0, False)
+Entity: (u'Bernard Lagat', 1.0, 12343, True)
+Entity: (u'Summer Olympic Games', 0.587111801353, 114045, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Summer', 0.746314173315, 46922, True)
+Entity: (u'Country (Musical genre)', 0.622210463229, 91958, True)
+Entity: (u'Olympic Games', 0.472683419347, 4131205, False)
+Entity: (u'Country (Quotation Subject)', 0.275617851037, 97485, True)
+Entity: (u'2000', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 123, ERMRT = 170, ERMRERT = 22
+Query: how many protected sites does the u.s. national park service govern
+Entity: (u'U.S. National Park Service', 0.999996880352, 641096, True)
+Entity: (u'U.S. National Park Service', 0.999998440174, 641096, False)
+Entity: (u'U.S. National Park Service', 1.0, 641096, False)
+Entity: (u'National park', 0.8215525761, 542492, True)
+Entity: (u'United States of America', 0.596041510844, 149531631, False)
+Entity: (u'The US Open (Tennis)', 0.45714250449, 370050, False)
+Entity: (u'United States nationality law', 0.314286243265, 1086, False)
+Entity: (u"United States men's national soccer team", 0.228571252245, 14987, False)
+Entity: (u'Protected sites', 0.2, 0, True)
+Entity: (u'Protected sites', 0.2, 0, True)
+Entity: (u'Protected Sites', 0.2, 0, True)
+Entity: (u'Protected Sites', 0.2, 0, True)
+Entity: (u'Protected Sites', 0.2, 0, True)
+Entity: (u'Th\xe9us', 0.175952614665, 4, False)
+Entity: (u'Website (Industry)', 0.727014828905, 2213214, False)
+TargetType: Other
+Pattern matches: ERT = 231, ERMRT = 406, ERMRERT = 0
+Query: how many teams are in the atlantic division of the eastern conference
+Entity: (u'The Atlantic Division', 0.5, 0, True)
+Entity: (u'The Atlantic Division (Above the Rim)', 0.5, 0, True)
+Entity: (u'Eastern world', 0.998361998362, 2438, False)
+Entity: (u'The Atlantic', 0.931640450795, 120498, True)
+Entity: (u'Eastern Conference', 0.530178369259, 61675, True)
+Entity: (u'Atlantic Division (Ice Hockey Division) #1', 0.457125276418, 6734, True)
+Entity: (u'Atlantic Division', 0.394860729976, 6240, True)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Eastern Conference (Ice Hockey Conference) #1', 0.308972510467, 2876, True)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'Atlantic Ocean', 0.507599893262, 1933169, False)
+Entity: (u'Team', 0.375677017016, 414089, False)
+Entity: (u'Division', 0.349891009711, 50276, True)
+Entity: (u'TEAMS', 0.2881285462, 944, True)
+Entity: (u'Atlantic Records', 0.260835475396, 122063, False)
+Entity: (u'Division', 0.200118925707, 901, True)
+Entity: (u'Team sport', 0.109776154415, 12837, False)
+TargetType: Other
+Pattern matches: ERT = 98, ERMRT = 116, ERMRERT = 0
+Query: how many wins did the philadelphia eagles have in the 2008 nfl season
+Entity: (u'2008 NFL season', 1.0, 215, True)
+Entity: (u'Philadelphia Eagles', 0.999994631507, 745084, True)
+Entity: (u'National Football League regular season', 1.0, 5241, False)
+Entity: (u'All in the Timing', 0.99914893617, 1174, False)
+Entity: (u'German federal election, March 1933', 0.348180888537, 0, False)
+Entity: (u'Lewis Cass', 0.147169070805, 7645, False)
+Entity: (u'Inthe', 0.143579278312, 0, True)
+Entity: (u'National Football League', 0.965051298405, 4480683, False)
+Entity: (u'Windows Internet Name Service', 0.41313406189, 8181, False)
+Entity: (u'Win\u2013loss record', 0.336865360793, 296795, False)
+Entity: (u'Season', 0.283846106731, 10457, True)
+Entity: (u'Season', 0.277508146975, 29811, True)
+Entity: (u'Winning percentage', 0.17235362415, 2656, False)
+Entity: (u'2008', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 91, ERMRT = 178, ERMRERT = 33
+Query: in 1982 who were the primetieme emmy award for comedy series nominees
+Entity: (u'Award (Chivalric Title)', 1.0, 214152, False)
+Entity: (u'Emmy Award', 0.961690893815, 651786, True)
+Entity: (u'Television comedy', 0.738231871669, 7963, False)
+Entity: (u'1982 FIFA World Cup', 0.71009907012, 2361, False)
+Entity: (u'1982 Hama massacre', 0.170949617853, 1527, False)
+Entity: (u'1982 Lebanon War', 0.118349788037, 6412, False)
+Entity: (u'Resident Evil: Degeneration', 0.410762587684, 6609, False)
+Entity: (u'80th Academy Awards', 0.138570825224, 5229, False)
+Entity: (u'1982', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 69, ERMRT = 66, ERMRERT = 0
+Query: how many conferences have been held at the los angeles convention center
+Entity: (u'Los Angeles Convention Center', 0.999974762133, 39622, True)
+Entity: (u'Conservation status', 1.0, 766, False)
+Entity: (u'Los Angeles', 0.939958737191, 6201871, True)
+Entity: (u'Convention center', 0.621692107248, 451472, True)
+Entity: (u'Held at', 0.333333333333, 0, True)
+Entity: (u'Held at', 0.333333333333, 0, True)
+Entity: (u'Held At', 0.333333333333, 0, True)
+Entity: (u'Basilica', 0.293750323438, 69333, False)
+Entity: (u'Microsoft Word', 0.162499353125, 2289945, False)
+Entity: (u'Open Letter to Hobbyists', 0.1500002875, 276, False)
+Entity: (u'Bombardier Aerospace and Embraer S.A. government subsidy controversy', 0.143750035938, 0, False)
+Entity: (u'Academic conference', 0.385188011381, 19812, False)
+Entity: (u'Convention', 0.215992591058, 131520, False)
+TargetType: Other
+Pattern matches: ERT = 119, ERMRT = 111, ERMRERT = 0
+Query: what percentage of the grapes in a 1966 chateau latour grand vin are merlot
+Entity: (u'1966 Chateau Latour Grand Vin', 1.0, 0, True)
+Entity: (u'Ch\xe2teau Latour', 0.995318857428, 12677, False)
+Entity: (u'Vinare', 0.970509388204, 82, True)
+Entity: (u'The Grapes', 0.698196367581, 13, True)
+Entity: (u'Indonesia', 0.156723062025, 4593180, False)
+Entity: (u'Ina (Poland)', 0.15450174101, 206, True)
+Entity: (u"Institut national de l'audiovisuel", 0.127218376819, 1555, False)
+Entity: (u'Percentage (m/0h6zk)', 0.992868170152, 69552, True)
+Entity: (u'Merlot', 0.984847507899, 244384, True)
+Entity: (u'Grape', 0.948400694834, 39245, False)
+Entity: (u'1966', 0, 0, True)
+TargetType: Other
+Pattern matches: ERT = 115, ERMRT = 271, ERMRERT = 6
+Query: how many engineers worked on the design and construction of the plymouth breakwater
+Entity: (u'Design and Construction of the Plymouth Breakwater', 1.0, 0, True)
+Entity: (u'Statue of Liberty', 0.436402487002, 260200, False)
+Entity: (u'Plymouth Breakwater', 0.991666666667, 119, True)
+Entity: (u'The Plymouth', 0.5, 0, True)
+Entity: (u'The Plymouth', 0.5, 0, True)
+Entity: (u'Cirrus SR22', 0.421404936043, 6998, False)
+Entity: (u'The Design', 0.410440783497, 23, True)
+Entity: (u'Lagopus', 0.210770954847, 272, False)
+Entity: (u'Happy Nation', 0.164664808474, 38, False)
+Entity: (u'Soviet Union', 0.164664808474, 5858281, False)
+Entity: (u'Worked On', 0.147982057471, 0, True)
+Entity: (u'Worked On', 0.147982057471, 0, True)
+Entity: (u'Worked On', 0.147982057471, 0, True)
+Entity: (u'worked on', 0.147982057471, 0, True)
+Entity: (u'Worked on', 0.147982057471, 0, True)
+Entity: (u'Worked on', 0.147982057471, 0, True)
+Entity: (u'David Horowitz', 0.144905183608, 65415, False)
+Entity: (u'You Only Move Twice (TV Episode)', 0.112107655171, 0, False)
+Entity: (u'Construction', 0.839494647276, 118556, True)
+Entity: (u'Design', 0.787730412566, 197431, True)
+Entity: (u'Breakwater', 0.700340956747, 7937, True)
+Entity: (u'Engineer', 0.640751546391, 32338, False)
+Entity: (u'Plymouth', 0.614971937328, 156440, True)
+Entity: (u'Breakwater (Rhythm and blues Artist)', 0.128001760546, 104, True)
+TargetType: Other
+Pattern matches: ERT = 232, ERMRT = 263, ERMRERT = 6
