@@ -837,7 +837,6 @@ class QueryCandidateExtender:
         #print relations
         # Find the relations that match.
         for rel in relations:
-            print rel
             # Ignore mediators here.
             if rel in self.mediator_relations:
                 continue
