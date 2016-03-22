@@ -160,6 +160,36 @@ def main():
     for index in xrange(len(er_error)):
         query = er_error[index]
         results = translator.translate_and_execute_query(query)
+        if (len(results) > 0):
+            for i in xrange(len(results)):
+                if (i > 10):
+                    break
+                candidate = results[i].query_candidate
+                sparql_query = candidate.to_sparql_query()
+                result_rows = results[i].query_result_rows
+                result = []
+                for r in result_rows:
+                    if len(r) > 1:
+                        result.append("%s (%s)" % (r[1], r[0]))
+                    else:
+                        result.append("%s" % r[0])
+
+                extractor = FeatureExtractor(True, False, None)
+                features = extractor.extract_features(candidate)
+
+                root_name = "%d Root Node: %s\n" % (i, candidate.root_node.entity.name.encode('utf-8'))
+                query_str = "%d SPARQL query: %s\n" % (i, sparql_query.encode('utf-8'))
+                graph_str = "%d Candidate Graph: %s\n" % (i, candidate.graph_as_string().encode('utf-8'))
+                graph_str_simple = "%d Simple Candidate Graph: %s" % (i, candidate.graph_as_simple_string().encode('utf-8'))
+                result_str = "%d Result: %s\n" % (i+1, (" ".join(result)).encode('utf-8'))
+                feature_str = "%d Features: %s\n" % (i, str(features).encode('utf-8'))
+                writeFile(test_file, root_name, "a")
+                #writeFile(test_file, graph_str, "a")
+                writeFile(test_file, graph_str_simple, "a")
+                #writeFile(test_file, feature_str, "a")
+                #writeFile(test_file, query_str, "a")
+                writeFile(test_file, result_str, "a")
+        writeFile(test_file, "\n", "a")
 
 
     """

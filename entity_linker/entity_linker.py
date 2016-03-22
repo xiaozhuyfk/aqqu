@@ -13,6 +13,7 @@ from util import normalize_entity_name, remove_number_suffix,\
     remove_prefixes_from_name, remove_suffixes_from_name
 import globals
 from query_translator.tagme import TagMe
+from query_translator.util import writeFile, test_file
 
 logger = logging.getLogger(__name__)
 
@@ -346,20 +347,27 @@ class EntityLinker:
         # First find all candidates.
         identified_entities = []
 
+        excluded = []
+        no_entities = []
+        low_score = []
+
         for start in range(n_tokens):
             for end in range(start + 1, n_tokens + 1):
                 entity_tokens = tokens[start:end]
-                if not self.is_entity_occurrence(tokens, start, end):
-                    continue
                 entity_str = ' '.join([t.token for t in entity_tokens])
+                if not self.is_entity_occurrence(tokens, start, end):
+                    excluded.append(entity_str)
+                    continue
                 logger.debug(u"Checking if '{0}' is an entity.".format(entity_str))
                 entities = self.surface_index.get_entities_for_surface(entity_str)
                 # No suggestions.
                 if len(entities) == 0:
+                    no_entities.append(entity_str)
                     continue
                 for e, surface_score in entities:
                     # Ignore entities with low surface score.
                     if surface_score < min_surface_score:
+                        low_score.append(entity_str)
                         continue
                     perfect_match = False
                     # Check if the main name of the entity exactly matches the text.
@@ -370,6 +378,13 @@ class EntityLinker:
                                           perfect_match)
                     # self.boost_entity_score(ie)
                     identified_entities.append(ie)
+
+        excluded_str = "Excluded: %s\n" % str(excluded)
+        no_entities_str = "No Entities in Index: %s\n" % str(no_entities)
+        low_score_str = "Low Surface Score: %s\n" % str(low_score)
+        writeFile(test_file, excluded_str, "a")
+        writeFile(test_file, no_entities_str, "a")
+        writeFile(test_file, low_score_str, "a")
 
         identified_entities.extend(self.identify_dates(tokens))
         duration = (time.time() - start_time) * 1000
