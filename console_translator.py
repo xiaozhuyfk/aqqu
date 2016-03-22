@@ -13,7 +13,7 @@ import globals
 import scorer_globals
 from query_translator.features import FeatureExtractor
 from query_translator.translator import QueryTranslator
-from query_translator.util import writeFile, test_file, rank_error, rank_pos, wq_index, wq_test, rm_error
+from query_translator.util import writeFile, test_file, rank_error, rank_pos, wq_index, wq_test, rm_error, er_error
 from query_translator.ranker import feature_diff
 
 logging.basicConfig(format = "%(asctime)s : %(levelname)s "
@@ -44,13 +44,7 @@ def main():
 
     writeFile(test_file, "", "w")
 
-    """
-    linker = translator.entity_linker
-    entities = linker.surface_index.get_entities_for_surface("spanish")
-    for (e, score) in entities:
-        print e.name, score
-    """
-
+    # ranking error test
     """
     for i in xrange(len(rank_error)):
         query = rank_error[i]
@@ -125,6 +119,8 @@ def main():
         writeFile(test_file, "\n", "a")
     """
 
+    # relation matching error test
+    """
     for index in xrange(len(rm_error)):
         query = rm_error[index]
         results = translator.translate_and_execute_query(query)
@@ -158,6 +154,13 @@ def main():
                 #writeFile(test_file, query_str, "a")
                 writeFile(test_file, result_str, "a")
         writeFile(test_file, "\n", "a")
+    """
+
+    # entity linking error test
+    for index in xrange(len(er_error)):
+        query = er_error[index]
+        results = translator.translate_and_execute_query(query)
+
 
     """
     while True:

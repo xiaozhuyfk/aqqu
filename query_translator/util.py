@@ -270,7 +270,33 @@ rm_error = [
 ]
 
 er_error = [
-
+    "when did japan end as a musical group",
+    "what sort of weave is used to make tweed",
+    "what bicycle models does raleigh manufacture",
+    "how many writing systems are used in japanese",
+    "what characters were on the cover of batman #1",
+    "how many episodes of taylor made piano were there",
+    "who is the present newscaster on cbs evening news",
+    "did the big bang exhibit at the science museum cost money",
+    "in what season of stargate sg-1 is the episode show and tell",
+    "how many beers come a can",
+    "what are the christian holidays",
+    "what are the texts of taoism",
+    "in 1982 who were the primetieme emmy award for comedy series nominees",
+    "what year was the album decade released",
+    "how many countries are in south america",
+    "what area did the meiji constitution govern",
+    "when was 300 released",
+    "who founded the red cross",
+    "how many awards did big daddy win",
+    "what is the state flower of alaska",
+    "what is the highest drop on stealth",
+    "what is currency code for uk currency",
+    "how many countries is spanish spoken in",
+    "what musicians have died of lung cancer",
+    "how many monarchs are from the house of tutor",
+    "who was the editor in chief of die welt in 2000",
+    "what sport did scott anderson play in the 1992 summer olympics"
 ]
 
 
