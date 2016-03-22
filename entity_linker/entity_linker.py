@@ -350,6 +350,7 @@ class EntityLinker:
         excluded = []
         no_entities = []
         low_score = []
+        accept = []
 
         for start in range(n_tokens):
             for end in range(start + 1, n_tokens + 1):
@@ -364,6 +365,8 @@ class EntityLinker:
                 if len(entities) == 0:
                     no_entities.append(entity_str)
                     continue
+
+                accept.append(entity_str)
                 for e, surface_score in entities:
                     # Ignore entities with low surface score.
                     if surface_score < min_surface_score:
@@ -382,9 +385,11 @@ class EntityLinker:
         excluded_str = "Excluded: %s\n" % str(excluded)
         no_entities_str = "No Entities in Index: %s\n" % str(no_entities)
         low_score_str = "Low Surface Score: %s\n" % str(low_score)
+        accept_str = "Accept: %s\n" % str(accept)
         writeFile(test_file, excluded_str, "a")
         writeFile(test_file, no_entities_str, "a")
         writeFile(test_file, low_score_str, "a")
+        writeFile(test_file, accept_str, "a")
 
         identified_entities.extend(self.identify_dates(tokens))
         duration = (time.time() - start_time) * 1000
