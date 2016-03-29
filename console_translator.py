@@ -53,7 +53,7 @@ def main():
     query = """
 PREFIX : <http://rdf.freebase.com/key/wikipedia.en_id>
  SELECT DISTINCT ?0 where {
- :m.025s6bf .
+ :m.025s6bf :.
 } LIMIT 300
     """
     print backend.query_json(query)

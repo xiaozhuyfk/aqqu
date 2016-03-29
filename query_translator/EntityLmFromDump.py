@@ -14,9 +14,9 @@ what's my output:
 import site
 site.addsitedir('/bos/usr0/cx/PyCode/ExplicitSemanticEncoder')
 
-from EseUtils.FreebaseDumpParser import FreebaseDumpParserC
-from EseUtils.FreebaseDumpReader import FreebaseDumpReaderC
-from EseUtils.EseTextBase import EseLmC
+from FreebaseDumpParser import FreebaseDumpParserC
+from FreebaseDumpReader import FreebaseDumpReaderC
+from EseTextBase import EseLmC
 import ConfigParser
 import json
 
@@ -24,38 +24,38 @@ import json
 lTargetField = ['Name','Desp','Alias']
 
 
-        
+
 
 def Process(DumpInName,TargetIdIn,OutPre):
-    
+
     reader = FreebaseDumpReaderC()
     reader.open(DumpInName)
     Parser = FreebaseDumpParserC()
     global lTargetField
-    
+
     sTargetId = set([item.split('\t')[0] for item in open(TargetIdIn).read().splitlines()])
-    
+
     lOut = [open(OutPre + '_' + field, 'w') for field in lTargetField]
-    
+
     for cnt,lvCol in enumerate(reader):
-        
+
         if 0 == (cnt % 1000):
             print 'read [%d] obj' %(cnt)
-        
+
         ObjId = Parser.GetObjId(lvCol)
         if not ObjId in sTargetId:
             continue
-        
+
         lText = [Parser.GetField(lvCol, field) for field in lTargetField]
         lLm = [EseLmC(text) for text in lText]
-        
+
         for out, lm in zip(lOut,lLm):
             print >>out, ObjId + '\t' + json.dumps(lm.hTerm)
-            
-    
+
+
     for out in lOut:
         out.close()
-        
+
     print 'finished'
     return
 
@@ -69,17 +69,16 @@ if 2 != len(sys.argv):
     print '[%s]' %(ConfSec)
     print 'DumpIn=\nTargetId=\nOut=\n'
     sys.exit()
-    
+
 conf = ConfigParser.SafeConfigParser()
 conf.read(sys.argv[1])
 
 DumpIn = conf.get(ConfSec,'DumpIn')
-TargetId = conf.get(ConfSec,'TargetId')            
+TargetId = conf.get(ConfSec,'TargetId')
 OutPre = conf.get(ConfSec,'Out')
 
 Process(DumpIn, TargetId, OutPre)
-            
-        
-        
-        
-        
+
+
+
+
