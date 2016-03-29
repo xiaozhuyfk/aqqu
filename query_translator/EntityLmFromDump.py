@@ -93,7 +93,11 @@ def test():
             print 'read [%d] obj' %(cnt)
 
         ObjId = Parser.GetObjId(lvCol)
-        print ObjId
+        wiki = Parser.GetWikiId(lvCol)
+        if (ObjId):
+            #print ObjId
+        if (wiki):
+            print wiki
 
 test()
 
