@@ -7,6 +7,7 @@ Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 
 """
 import logging
+import globals
 
 import sys
 import globals
@@ -24,6 +25,7 @@ logger = logging.getLogger(__name__)
 
 
 def main():
+    """
     import argparse
     parser = argparse.ArgumentParser(description = "Console based translation.")
     parser.add_argument("ranker_name",
@@ -43,8 +45,10 @@ def main():
     translator.set_scorer(ranker)
 
     writeFile(test_file, "", "w")
+    """
 
-    backend = translator.sparql_backend
+    config_params = globals.config
+    backend = globals.get_sparql_backend(config_params)
     query = "PREFIX fb: <http://rdf.freebase.com/ns/> SELECT DISTINCT ?0 where {fb:m.025s6bf fb:chemistry.chemical_element.discovery_date ?0 . FILTER (?0 != fb:m.025s6bf) } LIMIT 300"
     print backend.query_json(query)
 
