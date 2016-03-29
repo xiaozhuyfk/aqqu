@@ -51,7 +51,7 @@ def main():
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
     query = """
-PREFIX fb: <http://rdf.freebase.com/ns/>
+PREFIX : <http://rdf.freebase.com/ns/>
  SELECT DISTINCT ?key where {
  :m.025s6bf :chemistry.chemical_element.discovery_date ?key .
 } LIMIT 300
