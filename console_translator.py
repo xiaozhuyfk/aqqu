@@ -53,7 +53,7 @@ def main():
     query = """
 PREFIX : <http://rdf.freebase.com/ns/>
  SELECT DISTINCT ?0 where {
- :m.025s6bf :type.object.key ?0 .
+ :m.025s6bf :type.object.id ?0 .
 } LIMIT 300
     """
     print backend.query_json(query)
