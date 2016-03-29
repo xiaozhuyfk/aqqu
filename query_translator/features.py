@@ -249,14 +249,18 @@ class FeatureExtractor(object):
         mid = source.entity.entity.id
 
         (bow, total) = wiki.bag_of_words(mid)
-        score = 1.0
-        for token in relation_tokens:
-            if (token in bow):
-                score *= (bow[token] + 1.0) / (total + 1.0)
-            else:
-                score *= 1.0 / (total + 1.0)
 
-        features["relation_bow"] = score
+        if (bow and total):
+            score = 1.0
+            for token in relation_tokens:
+                if (token in bow):
+                    score *= (bow[token] + 1.0) / (total + 1.0)
+                else:
+                    score *= 1.0 / (total + 1.0)
+
+            features["relation_bow"] = score
+        else:
+            features["relation_bow"] = 0
 
         return features
 

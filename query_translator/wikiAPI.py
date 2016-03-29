@@ -120,6 +120,8 @@ class Wiki(object):
     def bag_of_words(self, entity):
         entity = entity.encode('utf-8')
         id = self.get_wiki_id(entity)
+        if (id == None):
+            return (None, None)
 
         url = self.wiki + "?" + "curid=" + id
         html = urllib2.urlopen(url).read().decode('utf8')
@@ -171,7 +173,13 @@ class Wiki(object):
 
     def get_wiki_id(self, entity):
         bag = self.mqlRead(entity)
-        return bag["result"]["key"]["value"]
+        if bag:
+            if ("result" in bag and "key" in bag["result"] and "value" in bag["result"]["key"]):
+                return bag["result"]["key"]["value"]
+            else:
+                return None
+        else:
+            return None
 
     def get_wiki_page(self, entity):
         entity = entity.encode('utf-8')
