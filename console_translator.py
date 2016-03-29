@@ -36,7 +36,6 @@ def main():
                         help = "The configuration file to use.")
     args = parser.parse_args()
     globals.read_configuration(args.config)
-    """
     if args.ranker_name not in scorer_globals.scorers_dict:
         logger.error("%s is not a valid ranker" % args.ranker_name)
         logger.error("Valid rankers are: %s " % (" ".join(scorer_globals.scorers_dict.keys())))
@@ -46,18 +45,6 @@ def main():
     translator.set_scorer(ranker)
 
     writeFile(test_file, "", "w")
-    """
-
-    config_params = globals.config
-    backend = globals.get_sparql_backend(config_params)
-    query = """
-PREFIX : <http://rdf.freebase.com/key/wikipedia.en_id>
- SELECT DISTINCT ?0 where {
- :m.025s6bf :.
-} LIMIT 300
-    """
-    print backend.query_json(query)
-
 
     # ranking error test
     """
@@ -135,7 +122,6 @@ PREFIX : <http://rdf.freebase.com/key/wikipedia.en_id>
     """
 
     # relation matching error test
-    """
     for index in xrange(len(rm_error)):
         query = rm_error[index]
         results = translator.translate_and_execute_query(query)
@@ -144,6 +130,7 @@ PREFIX : <http://rdf.freebase.com/key/wikipedia.en_id>
                 if (i > 10):
                     break
                 candidate = results[i].query_candidate
+
                 sparql_query = candidate.to_sparql_query()
                 result_rows = results[i].query_result_rows
                 result = []
@@ -155,6 +142,13 @@ PREFIX : <http://rdf.freebase.com/key/wikipedia.en_id>
 
                 extractor = FeatureExtractor(True, False, None)
                 features = extractor.extract_features(candidate)
+                extension = candidate.current_extension
+                relation = candidate.relations[-1]
+                last_node = candidate.nodes[-1]
+
+                extension_str = "Extension: %s\n" % extension.name
+                relation_str = "Last relation: %s\n" % relation.name
+                last_node_str = "Last node: %s\n" % last_node.name
 
                 root_name = "%d Root Node: %s\n" % (index, candidate.root_node.entity.name.encode('utf-8'))
                 query_str = "%d SPARQL query: %s\n" % (index, sparql_query.encode('utf-8'))
@@ -165,11 +159,15 @@ PREFIX : <http://rdf.freebase.com/key/wikipedia.en_id>
                 writeFile(test_file, root_name, "a")
                 #writeFile(test_file, graph_str, "a")
                 writeFile(test_file, graph_str_simple, "a")
-                writeFile(test_file, feature_str, "a")
+                #writeFile(test_file, feature_str, "a")
                 #writeFile(test_file, query_str, "a")
+
+                writeFile(test_file, extension_str, "a")
+                writeFile(test_file, relation_str, "a")
+                writeFile(test_file, last_node_str, "a")
+
                 writeFile(test_file, result_str, "a")
         writeFile(test_file, "\n", "a")
-    """
 
     """
     # entity linking error test
