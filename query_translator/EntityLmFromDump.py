@@ -93,7 +93,10 @@ def test():
             print 'read [%d] obj' %(cnt)
 
         for (mid, wiki) in Parser.FetchWikiPair(lvCol):
-            print Parser.DiscardPrefix(mid), wiki
+            mid = Parser.DiscardPrefix(mid)
+            if (mid.split(".")[0] != "m"):
+                continue
+            print mid, wiki
 
 
 
