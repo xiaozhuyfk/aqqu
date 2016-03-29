@@ -143,8 +143,9 @@ def main():
                 extractor = FeatureExtractor(True, False, None)
                 features = extractor.extract_features(candidate)
                 extension = candidate.current_extension
-                relation = candidate.relations[-1]
+                relation = candidate.relations[0]
                 last_node = candidate.nodes[-1]
+                print relation.name
                 print relation.source_node.entity.entity.id
                 #print len(candidate.relations), candidate.pattern
 
