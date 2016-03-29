@@ -50,7 +50,7 @@ def main():
 
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
-    query = "PREFIX fb: <http://rdf.freebase.com/ns/> select ?key {:m.01tp2v  :type.object.key ?key .} ORDER BY ?key LIMIT 300"
+    query = "PREFIX fb: <http://rdf.freebase.com/ns/> select ?key {fb:m.01tp2v  fb:type.object.key ?key .} ORDER BY ?key LIMIT 300"
     print backend.query_json(query)
 
 
