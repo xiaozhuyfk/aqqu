@@ -145,8 +145,8 @@ def main():
                 extension = candidate.current_extension
                 relation = candidate.relations[0]
                 last_node = candidate.nodes[-1]
-                print relation.name
-                print relation.source_node.entity.entity.id
+                #print relation.name
+                #print relation.source_node.entity.entity.id
                 #print len(candidate.relations), candidate.pattern
 
                 extension_str = "Extension: %s\n" % extension.name

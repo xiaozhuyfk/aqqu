@@ -42,12 +42,13 @@ class Wiki(object):
             normal.append(stem)
 
         bow = {}
+        total = len(normal)
         for stem in normal:
             if (stem in bow):
                 bow[stem] += 1
             else:
                 bow[stem] = 1
-        return bow
+        return (bow, total)
 
 
 

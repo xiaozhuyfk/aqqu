@@ -10,6 +10,7 @@ Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 from query_candidate import QueryCandidate
 from collections import defaultdict
 import math
+import wikiAPI
 
 N_GRAM_STOPWORDS = {'be', 'do', '?', 'the', 'of', 'is', 'are', 'in', 'was',
                     'did', 'does', 'a', 'for', 'have', 'there', 'on', 'has',
@@ -240,9 +241,22 @@ class FeatureExtractor(object):
 
 
         # extract relation wiki bow score
+        wiki = Wiki()
+
         relation = candidate.relations[0]
+        relation_tokens = relation.name.split(".")
         source = relation.source_node
         mid = source.entity.entity.id
+
+        (bow, total) = wiki.bag_of_words(mid)
+        score = 1.0
+        for token in relation_tokens:
+            if (token in bow):
+                score *= (bow[token] + 1.0) / (total + 1.0)
+            else:
+                score *= 1.0 / (total + 1.0)
+
+        features["relation_bow"] = score
 
         return features
 
