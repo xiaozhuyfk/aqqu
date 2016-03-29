@@ -53,7 +53,7 @@ def main():
     query = """
 PREFIX fb: <http://rdf.freebase.com/ns/>
  SELECT DISTINCT ?key where {
- fb:m.025s6bf fb:chemistry.chemical_element.discovery_date ?0 .
+ fb:m.025s6bf fb:chemistry.chemical_element.discovery_date ?key .
 } LIMIT 300
     """
     print backend.query_json(query)
