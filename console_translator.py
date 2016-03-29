@@ -44,6 +44,11 @@ def main():
 
     writeFile(test_file, "", "w")
 
+    backend = translator.sparql_backend
+    query = "PREFIX fb: <http://rdf.freebase.com/ns/> SELECT DISTINCT ?0 where {fb:m.025s6bf fb:chemistry.chemical_element.discovery_date ?0 . FILTER (?0 != fb:m.025s6bf) } LIMIT 300"
+    print backend.query_json(query)
+
+
     # ranking error test
     """
     for i in xrange(len(rank_error)):
@@ -156,6 +161,7 @@ def main():
         writeFile(test_file, "\n", "a")
     """
 
+    """
     # entity linking error test
     for index in xrange(len(er_error)):
         query = er_error[index]
@@ -190,6 +196,7 @@ def main():
                 #writeFile(test_file, query_str, "a")
                 writeFile(test_file, result_str, "a")
         writeFile(test_file, "\n", "a")
+    """
 
 
     """
