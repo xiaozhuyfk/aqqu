@@ -94,7 +94,7 @@ def test():
 
         ObjId = Parser.GetObjId(lvCol)
         wiki = Parser.GetWikiId(lvCol)
-        if (ObjId):
+        #if (ObjId):
             #print ObjId
         if (wiki):
             print wiki
