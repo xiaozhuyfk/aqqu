@@ -138,7 +138,7 @@ class Wiki(object):
                 if (s not in string.punctuation and s not in string.whitespace):
                     punc = False
                     break
-            if (punc || stem in self.stopwords):
+            if (punc or stem in self.stopwords):
                 continue
             normal.append(stem)
 
