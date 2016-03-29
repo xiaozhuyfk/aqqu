@@ -80,9 +80,8 @@ class FreebaseDumpParserC(object):
             lStr.append((mid, wiki))
         return lStr
 
-    @staticmethod
-    def FetchWikiPair(lvCol):
-        return FreebaseDumpParserC.FetchPairStringWithEdge(lvCol, self.WikiEnIdEdge)
+    def FetchWikiPair(self, lvCol):
+        return self.FetchPairStringWithEdge(lvCol, self.WikiEnIdEdge)
 
     @staticmethod
     def FetchTargetStringWithEdge(lvCol,Edge):
