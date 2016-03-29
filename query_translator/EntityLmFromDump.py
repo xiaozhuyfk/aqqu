@@ -92,8 +92,8 @@ def test():
         if 0 == (cnt % 1000):
             print 'read [%d] obj' %(cnt)
 
-        for pair in Parser.FetchWikiPair(lvCol):
-            print pair
+        for (mid, wiki) in Parser.FetchWikiPair(lvCol):
+            print Parser.DiscardPrefix(mid), wiki
 
 
 
