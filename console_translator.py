@@ -52,8 +52,8 @@ def main():
     backend = globals.get_sparql_backend(config_params)
     query = """
 PREFIX : <http://rdf.freebase.com/ns/>
- SELECT DISTINCT ?key where {
- :m.025s6bf :type.object.key ?key .
+ SELECT DISTINCT ?0 where {
+ :m.025s6bf :type.object.key ?0 .
 } LIMIT 300
     """
     print backend.query_json(query)
