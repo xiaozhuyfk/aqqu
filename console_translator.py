@@ -50,7 +50,7 @@ def main():
 
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
-    query = "PREFIX fb: <http://rdf.freebase.com/ns/> SELECT DISTINCT ?0 where {fb:m.025s6bf fb:chemistry.chemical_element.discovery_date ?0 . FILTER (?0 != fb:m.025s6bf) } LIMIT 300"
+    query = "PREFIX fb: <http://rdf.freebase.com/ns/> SELECT DISTINCT ?0 where {fb:m.025s6bf fb:wikipedia.en_id ?0 . FILTER (?0 != fb:m.025s6bf) } LIMIT 300"
     print backend.query_json(query)
 
 
