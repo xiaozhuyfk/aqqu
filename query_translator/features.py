@@ -236,7 +236,7 @@ class FeatureExtractor(object):
         if self.relation_score_model:
             rank_score = self.relation_score_model.score(candidate)
             features['relation_score'] = rank_score.score
-        features["dummy"] = 0
+
         return features
 
     def extract_ngram_features(self, candidate):
