@@ -237,6 +237,13 @@ class FeatureExtractor(object):
             rank_score = self.relation_score_model.score(candidate)
             features['relation_score'] = rank_score.score
 
+
+
+        # extract relation wiki bow score
+        relation = candidate.relations[0]
+        source = relation.source_node
+        mid = source.entity.entity.id
+
         return features
 
     def extract_ngram_features(self, candidate):
