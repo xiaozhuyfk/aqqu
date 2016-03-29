@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 
 
 def main():
-    """
+
     import argparse
     parser = argparse.ArgumentParser(description = "Console based translation.")
     parser.add_argument("ranker_name",
@@ -36,6 +36,7 @@ def main():
                         help = "The configuration file to use.")
     args = parser.parse_args()
     globals.read_configuration(args.config)
+    """
     if args.ranker_name not in scorer_globals.scorers_dict:
         logger.error("%s is not a valid ranker" % args.ranker_name)
         logger.error("Valid rankers are: %s " % (" ".join(scorer_globals.scorers_dict.keys())))
