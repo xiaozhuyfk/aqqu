@@ -62,6 +62,7 @@ def Process(DumpInName,TargetIdIn,OutPre):
 
 import sys
 
+"""
 ConfSec = 'EntityLmFromDump'
 if 2 != len(sys.argv):
     print 'I simply fetch field texts for entity in Freebase'
@@ -78,7 +79,15 @@ TargetId = conf.get(ConfSec,'TargetId')
 OutPre = conf.get(ConfSec,'Out')
 
 Process(DumpIn, TargetId, OutPre)
+"""
 
+def test():
+    file = "/data/freebase-rdf-latest.gz"
+    reader = FreebaseDumpReaderC()
+    reader.open(file)
+    Parser = FreebaseDumpParserC()
+
+test()
 
 
 
