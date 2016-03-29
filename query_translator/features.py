@@ -10,7 +10,7 @@ Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 from query_candidate import QueryCandidate
 from collections import defaultdict
 import math
-import wikiAPI
+from wikiAPI import Wiki
 
 N_GRAM_STOPWORDS = {'be', 'do', '?', 'the', 'of', 'is', 'are', 'in', 'was',
                     'did', 'does', 'a', 'for', 'have', 'there', 'on', 'has',
