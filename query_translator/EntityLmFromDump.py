@@ -35,7 +35,7 @@ def Process(DumpInName,TargetIdIn,OutPre):
 
     sTargetId = set([item.split('\t')[0] for item in open(TargetIdIn).read().splitlines()])
 
-    lOut = [open(OutPre + '_' + field, 'w') for field in lTargetField]
+    #lOut = [open(OutPre + '_' + field, 'w') for field in lTargetField]
 
     for cnt,lvCol in enumerate(reader):
 
@@ -46,15 +46,15 @@ def Process(DumpInName,TargetIdIn,OutPre):
         if not ObjId in sTargetId:
             continue
 
-        lText = [Parser.GetField(lvCol, field) for field in lTargetField]
-        lLm = [EseLmC(text) for text in lText]
+        #lText = [Parser.GetField(lvCol, field) for field in lTargetField]
+        #lLm = [EseLmC(text) for text in lText]
 
-        for out, lm in zip(lOut,lLm):
-            print >>out, ObjId + '\t' + json.dumps(lm.hTerm)
+        #for out, lm in zip(lOut,lLm):
+        #   print >>out, ObjId + '\t' + json.dumps(lm.hTerm)
 
 
-    for out in lOut:
-        out.close()
+    #for out in lOut:
+    #    out.close()
 
     print 'finished'
     return
