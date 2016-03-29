@@ -96,7 +96,7 @@ def test():
 
         for (mid, wiki) in Parser.FetchWikiPair(lvCol):
             mid = Parser.DiscardPrefix(mid)
-            if (mid.[0] != "m"):
+            if (mid[0] != "m"):
                 continue
             d[mid] = wiki
 
