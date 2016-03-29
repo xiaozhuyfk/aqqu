@@ -87,6 +87,14 @@ def test():
     reader.open(file)
     Parser = FreebaseDumpParserC()
 
+    for cnt,lvCol in enumerate(reader):
+
+        if 0 == (cnt % 1000):
+            print 'read [%d] obj' %(cnt)
+
+        ObjId = Parser.GetObjId(lvCol)
+        print ObjId
+
 test()
 
 
