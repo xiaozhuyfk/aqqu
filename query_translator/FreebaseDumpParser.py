@@ -28,19 +28,19 @@ class FreebaseDumpParserC(object):
     def GetObjId(lvCol):
         if lvCol == []:
             return ""
-        return FreebaseDumpParserC.GetIdForCol(lvCol[0][0])        
-    
+        return FreebaseDumpParserC.GetIdForCol(lvCol[0][0])
+
     @staticmethod
     def DiscardPrefix(col):
         if len(col) < 2:
             return col
         if (col[0] != '<') | (col[len(col) - 1] !=">"):
-            return col    
+            return col
         mid = col.strip("<").strip(">")
         vCol = mid.split("/")
         target = vCol[len(vCol)-1]
         return '/' + target.replace('.','/')
-    
+
     @staticmethod
     def GetIdForCol(col):
         target = FreebaseDumpParserC.DiscardPrefix(col)
@@ -49,7 +49,7 @@ class FreebaseDumpParserC(object):
         if (target[:len('/m/')] == "/m/") | (target[:len('/en/')]=='/en/'):
             return target
         return ""
-    
+
     @staticmethod
     def FetchTargetsWithEdge(lvCol,Edge):
         '''
@@ -61,13 +61,35 @@ class FreebaseDumpParserC(object):
                 lTar.append(vCol[2])
 
         return lTar
-    
+
+    @staticmethod
+    def FetchPairWithEdge(lvCol, Edge):
+        lTar = []
+        for vCol in lvCol:
+            if vCol[1] == Edge:
+                lTar.append((vCol[0], vCol[2]))
+        return lTar
+
+    @staticmethod
+    def FetchPairStringWithEdge(lvCol, Edge):
+        lTar = FreebaseDumpParserC.FetchPairWithEdge(lvCol, Edge)
+        lStr = []
+        for (mid, wiki) in lTar:
+            if (not FreebaseDumpParserC.IsString(mid)) or (not FreebaseDumpParserC.IsString(wiki)):
+                continue
+            lStr.append((mid, wiki))
+        return lStr
+
+    @staticmethod
+    def FetchWikiPair(lvCol):
+        return FreebaseDumpParserC.FetchPairStringWithEdge(lvCol, self.WikiEnIdEdge)
+
     @staticmethod
     def FetchTargetStringWithEdge(lvCol,Edge):
         '''
         same, but only look for english strings
         '''
-        lTar = FreebaseDumpParserC.FetchTargetsWithEdge(lvCol, Edge)        
+        lTar = FreebaseDumpParserC.FetchTargetsWithEdge(lvCol, Edge)
 #         print 'curent obj:%s' %(json.dumps(lvCol))
 #         print 'edge [%s] get targets [%s]' %(Edge,json.dumps(lTar))
         lStr = []
@@ -79,7 +101,7 @@ class FreebaseDumpParserC(object):
                 lStr.append(text)
 #         print 'get text [%s]' %(json.dumps(lStr))
         return lStr
-    
+
     def GetField(self,lvCol,field):
         if field.title() == 'Name':
             return self.GetName(lvCol)
@@ -87,27 +109,27 @@ class FreebaseDumpParserC(object):
             return self.GetDesp(lvCol)
         if field.title() == 'Alias':
             return '\n'.join(self.GetAlias(lvCol))
-        
+
         raise NotImplementedError
-    
+
     def GetName(self,lvCol):
         lStr = self.FetchTargetStringWithEdge(lvCol, self.NameEdge)
         if [] == lStr:
             return ""
         return lStr[0]
-    
+
     def GetAlias(self,lvCol):
         return self.FetchTargetStringWithEdge(lvCol, self.AliasEdge)
-    
+
     def GetDesp(self,lvCol):
         return '\n'.join(self.FetchTargetStringWithEdge(lvCol, self.DespEdge))
-    
+
     def GetWikiId(self,lvCol):
         lWikiId = self.FetchTargetStringWithEdge(lvCol, self.WikiEnIdEdge)
         if [] == lWikiId:
             return ""
         return lWikiId[0]
-    
+
     def GetNeighbor(self,lvCol):
         lNeighbor = []
         for vCol in lvCol:
@@ -116,14 +138,14 @@ class FreebaseDumpParserC(object):
                 NeighborEdge = self.DiscardPrefix(vCol[1])
                 lNeighbor.append([NeighborEdge,NeighborId])
         return lNeighbor
-    
+
     def GetWikiUrl(self,lvCol):
         lWikiUrl = []
         for edge in self.lWikiUrlEdge:
             lTar = self.FetchTargetsWithEdge(lvCol, edge)
 #             if [] != lTar:
 #                 print 'wiki target %s' %(json.dumps(lTar))
-            
+
             for tar in lTar:
                 if not 'http' in tar:
                     continue
@@ -133,23 +155,23 @@ class FreebaseDumpParserC(object):
 #         if [] != lWikiUrl:
 #             print 'wikiurl: %s' %(json.dumps(lWikiUrl))
         return lWikiUrl
-    
+
     def GetType(self,lvCol):
         lTar = self.FetchTargetsWithEdge(lvCol, self.TypeEdge)
         lType = []
         for tar in lTar:
             Type = self.DiscardPrefix(tar)
 #             if '/common' == Type[:len('/common')]:
-#                 continue          
+#                 continue
             lType.append(Type)
         return lType
-    
+
     def GetNotable(self,lvCol):
         lTar = self.FetchTargetsWithEdge(lvCol, self.NotableEdge)
         if [] == lTar:
             return ""
-        return self.DiscardPrefix(lTar[0]) 
-    
+        return self.DiscardPrefix(lTar[0])
+
     @staticmethod
     def IsString(s):
         if s[0] != '\"':
@@ -160,8 +182,8 @@ class FreebaseDumpParserC(object):
         if vCol[0][-1] == '\"':
             return True
         return False
-    
-    @staticmethod     
+
+    @staticmethod
     def SegLanguageTag(s):
         vCol = s.split("@")
         lang = ""
@@ -169,5 +191,4 @@ class FreebaseDumpParserC(object):
         if (len(vCol) >= 2):
             lang = vCol[1]
         return text,lang
-        
-    
+

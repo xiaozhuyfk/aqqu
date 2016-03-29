@@ -92,12 +92,10 @@ def test():
         if 0 == (cnt % 1000):
             print 'read [%d] obj' %(cnt)
 
-        ObjId = Parser.GetObjId(lvCol)
-        wiki = Parser.GetWikiId(lvCol)
-        if (ObjId):
-            print ObjId
-        if (wiki):
-            print wiki
+        for pair in Parser.FetchWikiPair(lvCol):
+            print pair
+
+
 
 test()
 
