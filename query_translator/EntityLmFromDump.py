@@ -87,17 +87,20 @@ def test():
     reader.open(file)
     Parser = FreebaseDumpParserC()
 
+
+    d = {}
     for cnt,lvCol in enumerate(reader):
 
-        if 0 == (cnt % 1000):
-            print 'read [%d] obj' %(cnt)
+        #if 0 == (cnt % 1000):
+        #    print 'read [%d] obj' %(cnt)
 
         for (mid, wiki) in Parser.FetchWikiPair(lvCol):
             mid = Parser.DiscardPrefix(mid)
-            if (mid.split(".")[0] != "m"):
+            if (mid.[0] != "m"):
                 continue
-            print mid, wiki
+            d[mid] = wiki
 
+    return d
 
 
 test()
