@@ -16,9 +16,9 @@ site.addsitedir('/bos/usr0/cx/PyCode/ExplicitSemanticEncoder')
 
 from FreebaseDumpParser import FreebaseDumpParserC
 from FreebaseDumpReader import FreebaseDumpReaderC
-from EseTextBase import EseLmC
+#from EseTextBase import EseLmC
 import ConfigParser
-import json
+#import json
 
 
 lTargetField = ['Name','Desp','Alias']
