@@ -36,6 +36,7 @@ def main():
                         help = "The configuration file to use.")
     args = parser.parse_args()
     globals.read_configuration(args.config)
+    """
     if args.ranker_name not in scorer_globals.scorers_dict:
         logger.error("%s is not a valid ranker" % args.ranker_name)
         logger.error("Valid rankers are: %s " % (" ".join(scorer_globals.scorers_dict.keys())))
@@ -45,6 +46,19 @@ def main():
     translator.set_scorer(ranker)
 
     writeFile(test_file, "", "w")
+    """
+
+    #test
+    config_params = globals.config
+    backend = globals.get_sparql_backend(config_params)
+    query = """
+PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.025s6bf fb:chemistry.chemical_element.discovery_date ?0 .
+ FILTER (?0 != fb:m.025s6bf)
+} LIMIT 300
+    """
+    print backend.query_json(query)
 
     # ranking error test
     """

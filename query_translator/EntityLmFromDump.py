@@ -86,7 +86,7 @@ edges = [
     "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique"
 ]
 
-result_file = "../testresult/dump/pairs.log"
+result_file = "../testresult/dump/pairs"
 
 def test():
     file = "/data/freebase-rdf-latest.gz"
@@ -101,10 +101,15 @@ def test():
         if 0 == (cnt % 1000):
             print 'read [%d] obj' %(cnt)
 
-        for (e1, e2) in Parser.FetchPairWithEdge(lvCol, edges[0]):
-            e1 = Parser.DiscardPrefix(e1)
-            e2 = Parser.DiscardPrefix(e2)
-            print e1, e2
+        for edge in edges:
+            edge_name = edge.split(".")[-1]
+            target_file = result_file + "-" + edge_name + ".log"
+            for (e1, e2) in Parser.FetchPairWithEdge(lvCol, edge):
+                e1 = Parser.DiscardPrefix(e1)
+                e2 = Parser.DiscardPrefix(e2)
+                content = e1 + "\t" + e2
+                print edge_name, e1, e2
+                writeFile(target_file, content, "a")
 
     return d
 
