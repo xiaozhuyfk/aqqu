@@ -240,6 +240,7 @@ class FeatureExtractor(object):
 
 
 
+        '''
         # extract relation wiki bow score
         wiki = Wiki()
 
@@ -261,6 +262,7 @@ class FeatureExtractor(object):
             features["relation_bow"] = score
         else:
             features["relation_bow"] = 0
+        '''
 
         return features
 
