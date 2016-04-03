@@ -107,11 +107,13 @@ def test():
             target_file = result_file + "-" + edge_name + ".log"
             for (e1, e2) in Parser.FetchPairWithEdge(lvCol, edge):
                 print e1
+                '''
                 e1 = Parser.DiscardPrefix(e1)
                 e2 = Parser.DiscardPrefix(e2)
                 content = e1 + "\t" + e2
                 print edge_name, e1, e2
                 writeFile(target_file, content, "a")
+                '''
 
     return d
 
