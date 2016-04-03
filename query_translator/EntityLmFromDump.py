@@ -95,8 +95,8 @@ def test():
     d = {}
     for cnt,lvCol in enumerate(reader):
 
-        #if 0 == (cnt % 1000):
-        #    print 'read [%d] obj' %(cnt)
+        if 0 == (cnt % 1000):
+            print 'read [%d] obj' %(cnt)
 
         for (mid, wiki) in Parser.FetchPairWithEdge(lvCol, edges[0]):
             mid = Parser.DiscardPrefix(mid)
