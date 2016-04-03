@@ -62,7 +62,7 @@ PREFIX fb: <http://rdf.freebase.com/key/>
     query = '''
         SELECT ?name where {
         ?x <http://rdf.freebase.com/ns/type.object.name> ?name.
-        }
+        } LIMIT 2000000
     '''
 
     print backend.query_json(query)
