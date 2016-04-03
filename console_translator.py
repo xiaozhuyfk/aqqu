@@ -67,7 +67,7 @@ PREFIX fb: <http://rdf.freebase.com/key/>
 
     query = '''
         SELECT ?wiki where {
-        <http://rdf.freebase> <http://rdf.freebase.com/key/wikipedia.en_id> ?wiki.
+        <http://rdf.freebase.com/ns/m.025s6bf> <http://rdf.freebase.com/key/wikipedia.en_id> ?wiki.
         } LIMIT 2000000
     '''
 
