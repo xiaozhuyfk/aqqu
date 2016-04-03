@@ -6,6 +6,8 @@ Copyright 2015, University of Freiburg.
 Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 
 """
+
+import collections
 import logging
 import globals
 from query_translator.util import writeFile
