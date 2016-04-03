@@ -82,7 +82,7 @@ Process(DumpIn, TargetId, OutPre)
 """
 
 edges = [
-    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_type"
+    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique"
 ]
 
 def test():
