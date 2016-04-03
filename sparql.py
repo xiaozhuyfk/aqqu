@@ -33,7 +33,7 @@ PAIR_QUERY_FORMAT = '''
 E2_FORMAT = '''
 PREFIX fb: <http://rdf.freebase.com/ns/>
  SELECT DISTINCT ?0 where {
- fb:%s fb:%s ?0 .
+ fb:%s fb:type.object.name ?0 .
  FILTER (?0 != fb:m.025s6bf)
 }
 '''
@@ -54,10 +54,6 @@ def main():
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
 
-    TranslationResult = collections.namedtuple('TranslationResult',
-                                                   ['query_result_rows'],
-                                                   verbose = False)
-
     for edge in edges:
         edge_name = edge.split(".")[-1]
         target_file = result_file + "_" + edge_name + ".log"
@@ -66,16 +62,12 @@ def main():
         edge_rel = FreebaseDumpParserC.DiscardPrefix(edge)
 
         result = backend.query_json(PAIR_QUERY_FORMAT % edge)
-        '''
         for pair in result:
             e1 = pair[0]
             e2 = pair[1]
             content = e1 + "\t" + e2 + "\n"
             #writeFile(target_file, content, 'a')
             print backend.query_json(E2_FORMAT % (e1, edge_rel))
-        '''
-        r = TranslationResult(result)
-        print r
 
 if __name__ == "__main__":
     main()
