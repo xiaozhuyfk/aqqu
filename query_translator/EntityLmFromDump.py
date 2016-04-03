@@ -81,6 +81,10 @@ OutPre = conf.get(ConfSec,'Out')
 Process(DumpIn, TargetId, OutPre)
 """
 
+edges = [
+    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_type"
+]
+
 def test():
     file = "/data/freebase-rdf-latest.gz"
     reader = FreebaseDumpReaderC()
@@ -94,7 +98,7 @@ def test():
         #if 0 == (cnt % 1000):
         #    print 'read [%d] obj' %(cnt)
 
-        for (mid, wiki) in Parser.FetchWikiPair(lvCol):
+        for (mid, wiki) in Parser.FetchPairWithEdge(lvCol, edges[0]):
             mid = Parser.DiscardPrefix(mid)
             if (mid[0] != "m"):
                 continue
@@ -103,7 +107,7 @@ def test():
     return d
 
 
-#test()
+test()
 
 
 
