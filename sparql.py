@@ -67,7 +67,7 @@ def main():
             e2 = pair[1]
             content = e1 + "\t" + e2 + "\n"
             #writeFile(target_file, content, 'a')
-            print backend.query_json(E2_FORMAT % (e1, edge_rel))
+            print backend.query_json(E2_FORMAT % e1)
 
 if __name__ == "__main__":
     main()
