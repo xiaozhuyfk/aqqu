@@ -52,7 +52,7 @@ def main():
         for pair in result:
             e1 = pair[0]
             e2 = pair[1]
-            content = e1 + "\t" + e2
+            content = e1 + "\t" + e2 + "\n"
             writeFile(target_file, content, 'a')
 
 if __name__ == "__main__":
