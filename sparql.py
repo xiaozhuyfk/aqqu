@@ -9,7 +9,7 @@ Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 import logging
 import globals
 from query_translator.util import writeFile
-import query_translator.FreebaseDumpParser
+from query_translator.FreebaseDumpParser import FreebaseDumpParserC
 
 logging.basicConfig(format = "%(asctime)s : %(levelname)s "
                              ": %(module)s : %(message)s",
@@ -53,17 +53,19 @@ def main():
     backend = globals.get_sparql_backend(config_params)
 
     for edge in edges:
-        print query_translator.FreebaseDumpParser.FreebaseDumpParserC.DiscardPrefix(edge)
         edge_name = edge.split(".")[-1]
         target_file = result_file + "_" + edge_name + ".log"
         writeFile(target_file, "", 'w')
+
+        edge_rel = FreebaseDumpParserC.DiscardPrefix(edge)
 
         result = backend.query_json(PAIR_QUERY_FORMAT % edge)
         for pair in result:
             e1 = pair[0]
             e2 = pair[1]
             content = e1 + "\t" + e2 + "\n"
-            writeFile(target_file, content, 'a')
+            #writeFile(target_file, content, 'a')
+            print backend.query_json(E2_FORMAT % (e1, edge_rel))
 
 if __name__ == "__main__":
     main()
