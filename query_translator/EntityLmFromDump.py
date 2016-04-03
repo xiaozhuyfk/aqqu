@@ -83,7 +83,8 @@ Process(DumpIn, TargetId, OutPre)
 """
 
 edges = [
-    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique"
+    #"http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique",
+    "<http://rdf.freebase.com/key/wikipedia.en_id>"
 ]
 
 result_file = "../testresult/dump/pairs"
@@ -105,6 +106,7 @@ def test():
             edge_name = edge.split(".")[-1]
             target_file = result_file + "-" + edge_name + ".log"
             for (e1, e2) in Parser.FetchPairWithEdge(lvCol, edge):
+                print e1
                 e1 = Parser.DiscardPrefix(e1)
                 e2 = Parser.DiscardPrefix(e2)
                 content = e1 + "\t" + e2

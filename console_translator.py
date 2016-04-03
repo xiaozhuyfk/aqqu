@@ -65,6 +65,12 @@ PREFIX fb: <http://rdf.freebase.com/key/>
         } LIMIT 2000000
     '''
 
+    query = '''
+        SELECT ?wiki where {
+        <http://rdf.freebase> <http://rdf.freebase.com/key/wikipedia.en_id> ?wiki.
+        } LIMIT 2000000
+    '''
+
     print backend.query_json(query)
 
     # ranking error test
