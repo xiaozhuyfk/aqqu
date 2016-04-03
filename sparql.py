@@ -74,8 +74,8 @@ def main():
             #writeFile(target_file, content, 'a')
             print backend.query_json(E2_FORMAT % (e1, edge_rel))
         '''
-        result = TranslationResult(query_result)
-        print result
+        r = TranslationResult(result)
+        print r
 
 if __name__ == "__main__":
     main()
