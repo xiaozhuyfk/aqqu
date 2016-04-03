@@ -8,6 +8,7 @@ Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 """
 import logging
 import globals
+from query_translator.util import writeFile
 
 logging.basicConfig(format = "%(asctime)s : %(levelname)s "
                              ": %(module)s : %(message)s",
@@ -43,8 +44,11 @@ def main():
     backend = globals.get_sparql_backend(config_params)
 
     for edge in edges:
-        print backend.query_json(PAIR_QUERY_FORMAT % edge)
-
+        result = backend.query_json(PAIR_QUERY_FORMAT % edge)
+        for pair in result:
+            e1 = pair[0]
+            e2 = pair[1]
+            print e1, e2
 
 if __name__ == "__main__":
     main()
