@@ -44,7 +44,7 @@ def main():
 
     query = '''
         SELECT ?e1 ?e2 where {
-        ?e1 %s ?e2.
+        ?e1 <%s> ?e2.
         }
     '''
 
