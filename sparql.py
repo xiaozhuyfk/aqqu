@@ -52,6 +52,15 @@ def main():
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
 
+    query = '''
+    PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:m.05x7b fb:architecture.structure.architect ?0 .
+ FILTER (?0 != fb:m.05x7b)
+} LIMIT 300
+    '''
+    print backend.query_json(query)
+
     for edge in edges:
         edge_name = edge.split(".")[-1]
         target_file = result_file + "_" + edge_name + ".log"
