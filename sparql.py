@@ -44,11 +44,15 @@ def main():
     backend = globals.get_sparql_backend(config_params)
 
     for edge in edges:
+        edge_name = edge.split(".")[-1]
+        target_file = result_file + "-" + edge_name + ".log"
         result = backend.query_json(PAIR_QUERY_FORMAT % edge)
         for pair in result:
             e1 = pair[0]
             e2 = pair[1]
-            print e1, e2
+            content = e1 + "\t" + e2
+            #writeFile(target_file, content, 'a')
+            print edge_name, e1, e2, target_file
 
 if __name__ == "__main__":
     main()
