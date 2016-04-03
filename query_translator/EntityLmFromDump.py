@@ -19,6 +19,7 @@ from FreebaseDumpReader import FreebaseDumpReaderC
 #from EseTextBase import EseLmC
 import ConfigParser
 #import json
+from util import writeFile
 
 
 lTargetField = ['Name','Desp','Alias']
@@ -85,6 +86,8 @@ edges = [
     "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique"
 ]
 
+result_file = "../testresult/dump/pairs.log"
+
 def test():
     file = "/data/freebase-rdf-latest.gz"
     reader = FreebaseDumpReaderC()
@@ -98,11 +101,10 @@ def test():
         if 0 == (cnt % 1000):
             print 'read [%d] obj' %(cnt)
 
-        for (mid, wiki) in Parser.FetchPairWithEdge(lvCol, edges[0]):
-            mid = Parser.DiscardPrefix(mid)
-            if (mid[0] != "m"):
-                continue
-            d[mid] = wiki
+        for (e1, e2) in Parser.FetchPairWithEdge(lvCol, edges[0]):
+            e1 = Parser.DiscardPrefix(e1)
+            e2 = Parser.DiscardPrefix(e2)
+            print e1, e2
 
     return d
 
