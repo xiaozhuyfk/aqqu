@@ -20,6 +20,12 @@ edges = [
     "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique"
 ]
 
+PAIR_QUERY_FORMAT = '''
+        SELECT ?e1 ?e2 where {
+        ?e1 <%s> ?e2.
+        }
+    '''
+
 
 def main():
 
@@ -36,19 +42,8 @@ def main():
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
 
-    query = '''
-        SELECT ?name where {
-        ?x <http://rdf.freebase.com/ns/type.object.name> ?name.
-        } LIMIT 2000000
-    '''
-
-    query = '''
-        SELECT ?e1 ?e2 where {
-        ?e1 <%s> ?e2.
-        }
-    '''
-
-    print backend.query_json(query % edges[0])
+    for edge in edges:
+        print backend.query_json(PAIR_QUERY_FORMAT % edge)
 
 
 if __name__ == "__main__":
