@@ -52,14 +52,9 @@ def main():
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
 
-    query = '''
-    PREFIX fb: <http://rdf.freebase.com/ns/>
- SELECT DISTINCT ?0 where {
- fb:m.05x7b fb:architecture.structure.architect ?0 .
- FILTER (?0 != fb:m.05x7b)
-} LIMIT 300
-    '''
-    print backend.query_json(query)
+    TranslationResult = collections.namedtuple('TranslationResult',
+                                                   ['query_result_rows'],
+                                                   verbose = False)
 
     for edge in edges:
         edge_name = edge.split(".")[-1]
@@ -69,12 +64,16 @@ def main():
         edge_rel = FreebaseDumpParserC.DiscardPrefix(edge)
 
         result = backend.query_json(PAIR_QUERY_FORMAT % edge)
+        '''
         for pair in result:
             e1 = pair[0]
             e2 = pair[1]
             content = e1 + "\t" + e2 + "\n"
             #writeFile(target_file, content, 'a')
             print backend.query_json(E2_FORMAT % (e1, edge_rel))
+        '''
+        result = TranslationResult(query_result)
+        print result
 
 if __name__ == "__main__":
     main()
