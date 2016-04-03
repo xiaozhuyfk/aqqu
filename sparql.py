@@ -40,7 +40,7 @@ def main():
     query = '''
         SELECT ?e1 ?e2 where {
         ?e1 <http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique> ?e2.
-        } LIMIT
+        }
     '''
 
     print backend.query_json(query)
