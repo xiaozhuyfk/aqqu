@@ -135,6 +135,7 @@ PREFIX fb: <http://rdf.freebase.com/ns/>
         writeFile(test_file, "\n", "a")
     """
 
+    """
     # relation matching error test
     for index in xrange(len(rm_error)):
         query = rm_error[index]
@@ -185,6 +186,7 @@ PREFIX fb: <http://rdf.freebase.com/ns/>
 
                 writeFile(test_file, result_str, "a")
         writeFile(test_file, "\n", "a")
+    """
 
     """
     # entity linking error test
