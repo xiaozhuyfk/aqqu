@@ -15,6 +15,11 @@ logging.basicConfig(format = "%(asctime)s : %(levelname)s "
 
 logger = logging.getLogger(__name__)
 
+result_file = "testresult/dump/pairs"
+edges = [
+    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique"
+]
+
 
 def main():
 
@@ -39,11 +44,11 @@ def main():
 
     query = '''
         SELECT ?e1 ?e2 where {
-        ?e1 <http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique> ?e2.
+        ?e1 %s ?e2.
         }
     '''
 
-    print backend.query_json(query)
+    print backend.query_json(query % edges[0])
 
 
 if __name__ == "__main__":
