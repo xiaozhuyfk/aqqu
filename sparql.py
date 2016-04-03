@@ -30,17 +30,10 @@ PAIR_QUERY_FORMAT = '''
         }
     '''
 
-E2_FORMAT = '''
+ENTITY_NAME_FORMAT = '''
 PREFIX fb: <http://rdf.freebase.com/ns/>
  SELECT DISTINCT ?0 where {
  fb:%s fb:type.object.name ?0 .
-}
-'''
-
-E1_FORMAT = '''
-PREFIX fb: <http://rdf.freebase.com/ns/>
- SELECT DISTINCT ?0 where {
- ?0 fb:type.object.name fb:%s .
 }
 '''
 
@@ -73,7 +66,7 @@ def main():
             e2 = pair[1]
             content = e1 + "\t" + e2 + "\n"
             #writeFile(target_file, content, 'a')
-            print backend.query_json(E2_FORMAT % e1), backend.query_json(E1_FORMAT % e2)
+            print backend.query_json(ENTITY_NAME_FORMAT % e1), backend.query_json(ENTITY_NAME_FORMAT % e2)
 
 if __name__ == "__main__":
     main()
