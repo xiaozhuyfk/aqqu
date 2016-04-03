@@ -45,14 +45,15 @@ def main():
 
     for edge in edges:
         edge_name = edge.split(".")[-1]
-        target_file = result_file + "-" + edge_name + ".log"
+        target_file = result_file + "_" + edge_name + ".log"
+        writeFile(target_file, "", 'w')
+
         result = backend.query_json(PAIR_QUERY_FORMAT % edge)
         for pair in result:
             e1 = pair[0]
             e2 = pair[1]
             content = e1 + "\t" + e2
-            #writeFile(target_file, content, 'a')
-            print edge_name, e1, e2, target_file
+            writeFile(target_file, content, 'a')
 
 if __name__ == "__main__":
     main()
