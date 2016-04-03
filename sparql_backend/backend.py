@@ -257,7 +257,7 @@ class SPARQLHTTPBackend(object):
 
 
 def main():
-    sparql = SPARQLHTTPBackend('localhost', '1111', '/sparql')
+    sparql = SPARQLHTTPBackend('filicudi', '8999', '/sparql')
     query = '''
     PREFIX fb: <http://rdf.freebase.com/ns/>
     SELECT DISTINCT ?x
