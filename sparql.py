@@ -9,6 +9,7 @@ Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 import logging
 import globals
 from query_translator.util import writeFile
+import query_translator.FreebaseDumpParser
 
 logging.basicConfig(format = "%(asctime)s : %(levelname)s "
                              ": %(module)s : %(message)s",
@@ -18,14 +19,22 @@ logger = logging.getLogger(__name__)
 
 result_file = "testresult/dump/pairs"
 edges = [
-    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique"
+    "<http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique>"
 ]
 
 PAIR_QUERY_FORMAT = '''
         SELECT ?e1 ?e2 where {
-        ?e1 <%s> ?e2.
+        ?e1 %s ?e2.
         }
     '''
+
+E2_FORMAT = '''
+PREFIX fb: <http://rdf.freebase.com/ns/>
+ SELECT DISTINCT ?0 where {
+ fb:%s fb:%s ?0 .
+ FILTER (?0 != fb:m.025s6bf)
+}
+'''
 
 
 def main():
@@ -44,6 +53,7 @@ def main():
     backend = globals.get_sparql_backend(config_params)
 
     for edge in edges:
+        print query_translator.FreebaseDumpParser.FreebaseDumpParserC.DiscardPrefix(edge)
         edge_name = edge.split(".")[-1]
         target_file = result_file + "_" + edge_name + ".log"
         writeFile(target_file, "", 'w')
