@@ -58,6 +58,13 @@ PREFIX fb: <http://rdf.freebase.com/key/>
  FILTER (?0 != fb:m.025s6bf)
 } LIMIT 300
     """
+
+    query = '''
+        SELECT ?name where {
+        ?x <http://rdf.freebase.com/ns/type.object.name> ?name.
+        FILTER (lang(?name) != "en")
+        } LIMIT 100
+    '''
     print backend.query_json(query)
 
     # ranking error test
