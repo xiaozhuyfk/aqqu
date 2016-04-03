@@ -66,8 +66,8 @@ PREFIX fb: <http://rdf.freebase.com/key/>
     '''
 
     query = '''
-        SELECT ?wiki where {
-        ?x <http://rdf.freebase.com/key/wikipedia.en_id> ?wiki.
+        SELECT ?e1 ?e2 where {
+        ?e1 <http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique> ?e2.
         } LIMIT 2000000
     '''
 
