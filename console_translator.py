@@ -36,7 +36,7 @@ def main():
                         help = "The configuration file to use.")
     args = parser.parse_args()
     globals.read_configuration(args.config)
-    """
+
     if args.ranker_name not in scorer_globals.scorers_dict:
         logger.error("%s is not a valid ranker" % args.ranker_name)
         logger.error("Valid rankers are: %s " % (" ".join(scorer_globals.scorers_dict.keys())))
@@ -46,32 +46,6 @@ def main():
     translator.set_scorer(ranker)
 
     writeFile(test_file, "", "w")
-    """
-
-    #test
-    config_params = globals.config
-    backend = globals.get_sparql_backend(config_params)
-    query = """
-PREFIX fb: <http://rdf.freebase.com/key/>
- SELECT DISTINCT ?0 where {
- fb:m.025s6bf fb:wikipedia.en_id ?0 .
- FILTER (?0 != fb:m.025s6bf)
-} LIMIT 300
-    """
-
-    query = '''
-        SELECT ?name where {
-        ?x <http://rdf.freebase.com/ns/type.object.name> ?name.
-        } LIMIT 2000000
-    '''
-
-    query = '''
-        SELECT ?e1 ?e2 where {
-        ?e1 <http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique> ?e2.
-        } LIMIT 2000000
-    '''
-
-    print backend.query_json(query)
 
     # ranking error test
     """
@@ -238,8 +212,6 @@ PREFIX fb: <http://rdf.freebase.com/key/>
         writeFile(test_file, "\n", "a")
     """
 
-
-    """
     while True:
         sys.stdout.write("enter question> ")
         sys.stdout.flush()
@@ -261,7 +233,6 @@ PREFIX fb: <http://rdf.freebase.com/key/>
                     result.append("%s" % r[0])
             logger.info("SPARQL query: %s" % sparql_query)
             logger.info("Result: %s " % " ".join(result))
-    """
 
 if __name__ == "__main__":
     main()
