@@ -66,8 +66,8 @@ def main():
             e2 = pair[1]
             content = e1 + "\t" + e2 + "\n"
             #writeFile(target_file, content, 'a')
-            e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0].encode('utf-8')
-            e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0].encode('utf-8')
+            e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0][0].encode('utf-8')
+            e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0][0].encode('utf-8')
             print e1_name, e2_name
 
 if __name__ == "__main__":
