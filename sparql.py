@@ -21,12 +21,12 @@ logger = logging.getLogger(__name__)
 
 result_file = "testresult/dump/pairs"
 edges = [
-    "<http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique>"
+    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique"
 ]
 
 PAIR_QUERY_FORMAT = '''
         SELECT ?e1 ?e2 where {
-        ?e1 %s ?e2.
+        ?e1 <%s> ?e2.
         }
     '''
 
