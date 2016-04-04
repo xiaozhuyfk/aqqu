@@ -264,8 +264,10 @@ class FeatureExtractor(object):
                         score *= 1.0 / (total + 1.0)
 
                 features["relation_bow"] = score
+                self.relation_bow_scores[candidate] = score
             else:
                 features["relation_bow"] = 0
+                self.relation_bow_scores[candidate] = 0
 
         return features
 
