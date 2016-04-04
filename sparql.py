@@ -109,4 +109,4 @@ def main():
 
 
 if __name__ == "__main__":
-    clueweb_batch("sample.txt")
+    clueweb_batch("query.txt")
