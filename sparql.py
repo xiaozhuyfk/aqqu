@@ -13,6 +13,10 @@ import globals
 from query_translator.util import writeFile
 from query_translator.FreebaseDumpParser import FreebaseDumpParserC
 
+import json
+import requests
+
+
 logging.basicConfig(format = "%(asctime)s : %(levelname)s "
                              ": %(module)s : %(message)s",
                     level = logging.INFO)
@@ -37,6 +41,15 @@ PREFIX fb: <http://rdf.freebase.com/ns/>
 }
 '''
 
+
+def fetch_documents(query):
+    url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi?"
+    parameters = {
+        "q" : query
+    }
+
+    r = requests.get(url, params = parameters)
+    print r.json()
 
 def main():
 
@@ -74,4 +87,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    fetch_documents("#1(harry potter)")
