@@ -91,7 +91,7 @@ class FeatureExtractor(object):
         self.relation_score_model = relation_score_model
         self.entity_features = entity_features
 
-        self.relation_bow_scores = {}
+        self.mid_bow = {}
 
     def extract_features(self, candidate):
         """Extract features from the query candidate.
@@ -244,30 +244,29 @@ class FeatureExtractor(object):
 
         # extract relation wiki bow score
         wiki = Wiki()
+        relation = candidate.relations[0]
+        relation_tokens = relation.name.split(".")
+        source = relation.source_node
+        mid = source.entity.entity.id
 
-        if (candidate in self.relation_bow_scores):
-            features["relation_bow"] = self.relation_bow_scores[candidate]
+        if (mid in self.mid_bow):
+            (bow, total) = self.mid_bow[mid]
         else:
-            relation = candidate.relations[0]
-            relation_tokens = relation.name.split(".")
-            source = relation.source_node
-            mid = source.entity.entity.id
-
             (bow, total) = wiki.bag_of_words(mid)
+            self.mid_bow[mid] = (bow, total)
 
-            if (bow and total):
-                score = 1.0
-                for token in relation_tokens:
-                    if (token in bow):
-                        score *= (bow[token] + 1.0) / (total + 1.0)
-                    else:
-                        score *= 1.0 / (total + 1.0)
+        # compute relation score
+        if (bow and total):
+            score = 0.0
+            for token in relation_tokens:
+                if (token in bow):
+                    score += (bow[token] + 1.0) / (total + 1.0)
+                else:
+                    score += 1.0 / (total + 1.0)
 
-                features["relation_bow"] = score
-                self.relation_bow_scores[candidate] = score
-            else:
-                features["relation_bow"] = 0
-                self.relation_bow_scores[candidate] = 0
+            features["relation_bow"] = score
+        else:
+            features["relation_bow"] = 0
 
         return features
 
