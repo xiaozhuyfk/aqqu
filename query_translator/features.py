@@ -17,6 +17,7 @@ N_GRAM_STOPWORDS = {'be', 'do', '?', 'the', 'of', 'is', 'are', 'in', 'was',
                     'to', 'by', 's', 'some', 'were', 'at', 'been', 'do',
                     'and', 'an', 'as'}
 
+mid_bow = {}
 
 def get_n_grams(tokens, n=2):
     """Return n-grams for the given text tokens.
@@ -91,7 +92,6 @@ class FeatureExtractor(object):
         self.relation_score_model = relation_score_model
         self.entity_features = entity_features
 
-        self.mid_bow = {}
 
     def extract_features(self, candidate):
         """Extract features from the query candidate.
@@ -249,11 +249,11 @@ class FeatureExtractor(object):
         source = relation.source_node
         mid = source.entity.entity.id
 
-        if (mid in self.mid_bow):
-            (bow, total) = self.mid_bow[mid]
+        if (mid in mid_bow):
+            (bow, total) = mid_bow[mid]
         else:
             (bow, total) = wiki.bag_of_words(mid)
-            self.mid_bow[mid] = (bow, total)
+            mid_bow[mid] = (bow, total)
 
         # compute relation score
         if (bow and total):
