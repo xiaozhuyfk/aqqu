@@ -43,7 +43,7 @@ PREFIX fb: <http://rdf.freebase.com/ns/>
 
 
 def fetch_documents(query):
-    url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi?"
+    url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi"
     headers = {
         'User-Agent' : "My User Agent 1.0",
         'From' : "hongyul@andrew.cmu.edu"
@@ -54,7 +54,7 @@ def fetch_documents(query):
     }
 
     r = requests.get(url, params = parameters, headers = headers)
-    print r.json()
+    print r.text
 
 def main():
 
