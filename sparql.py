@@ -12,8 +12,6 @@ import logging
 import globals
 from query_translator.util import writeFile
 from query_translator.FreebaseDumpParser import FreebaseDumpParserC
-
-import json
 import requests
 
 
@@ -42,6 +40,7 @@ PREFIX fb: <http://rdf.freebase.com/ns/>
 '''
 
 
+
 def fetch_documents(query):
     url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi"
     headers = {
@@ -53,8 +52,26 @@ def fetch_documents(query):
         "q" : query
     }
 
-    r = requests.get(url, params = parameters, headers = headers)
+    #r = requests.get(url, params = parameters, headers = headers)
+    #print r.text
+
+def clueweb_batch(query_file):
+    url = "http://boston.lti.cs.cmu.edu/Services/clueweb12_batch/upload.cgi"
+    headers = {
+        'User-Agent' : "My User Agent 1.0",
+        'From' : "hongyul@andrew.cmu.edu"
+    }
+
+    parameters = {
+        "indextype" : "cataparams",
+        "countmax" : 100,
+        "formattype" : 0,
+        "infile" : query_file
+    }
+
+    r = requests.post(url, headers=headers, data = parameters)
     print r.text
+
 
 def main():
 
@@ -92,4 +109,4 @@ def main():
 
 
 if __name__ == "__main__":
-    fetch_documents("#1(harry potter)")
+    clueweb_batch("sample.txt")
