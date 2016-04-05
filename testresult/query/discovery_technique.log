@@ -1,0 +1,67 @@
+
+<parameters>
+    <index>/bos/tmp6/indexes/ClueWeb12_B13_index</index>
+    <count>100</count>
+    <trecFormat>true</trecFormat>
+    
+    <query>
+        <type>indri</type>
+        <number>1</number>
+        <text>HAT-P-9b	Transit</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>2</number>
+        <text>HD 173416 b	Doppler spectroscopy (radial velocity)</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>3</number>
+        <text>HAT-P-1 b	Transit</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>4</number>
+        <text>XO-3 b	Doppler spectroscopy (radial velocity)</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>5</number>
+        <text>HD 68988 b	Doppler spectroscopy (radial velocity)</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>6</number>
+        <text>HAT-P-7 b	Transit</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>7</number>
+        <text>HD 209458 b	Transit</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>8</number>
+        <text>Kepler-6 b	Transit</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>9</number>
+        <text>Epsilon Eridani b	Doppler spectroscopy (radial velocity)</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>10</number>
+        <text>Kepler-8 b	Transit</text>
+    </query>
+
+</parameters>
