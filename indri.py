@@ -27,11 +27,11 @@ def dumpindex(args):
 
 
 def dumpindex_get_internal_id(external):
-    internal = dumpindex(['di', 'docno', external])
+    internal = dumpindex(['di', 'docno', external])[:-2]
     print [internal]
 
 def dumpindex_get_external_id(internal):
-    external = dumpindex(['dn', internal])
+    external = dumpindex(['dn', internal])[:-2]
     print [external]
 
 def dumpindex_get_document_text(internal):
