@@ -104,7 +104,8 @@ def fetch_bow(query_file):
 def output_bow(bow, filename):
     path = bow_dir + filename + ".log"
     writeFile(path, "", "w")
-    result = sorted(bow.items(), key=operator.itemgetter(1)).reverse()
+    result = sorted(bow.items(), key=operator.itemgetter(1))
+    result.reverse()
     for (term, tf) in result:
         content = term + "\t" + str(tf) + "\n"
         writeFile(path, content, "a")
