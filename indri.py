@@ -67,7 +67,7 @@ def indri_run_query(query_file):
     return out[:-1]
 
 def fetch_document_bow(internal):
-    bow = {}
+    bow = Counter()
     vector = dumpindex_get_document_vector(internal)
     lines = vector.split("\n")
     for line in lines[5:]:
@@ -78,7 +78,7 @@ def fetch_document_bow(internal):
         term = tokens[2]
         if (term != "[OOV]" or tf != 0):
             bow[term] = tf
-    return Counter(bow)
+    return bow
 
 def fetch_documents(query_file):
     trec = indri_run_query(query_file)
@@ -95,7 +95,7 @@ def fetch_documents(query_file):
 
 def fetch_bow(query_file):
     documents = fetch_documents(query_file)
-    bow = Counter({})
+    bow = Counter()
     for internal in documents:
         bow += fetch_document_bow(internal)
     return bow
@@ -138,6 +138,6 @@ def clueweb_batch(query_file):
 """
 
 if __name__ == "__main__":
-    #print output_bow(fetch_bow("../query/query_parameter.txt"), "dummy")
-    print indri_run_query("../query/query_parameter.txt")
-    print fetch_bow("../query/query_parameter.txt")
+    print output_bow(fetch_bow("../query/query_parameter.txt"), "dummy")
+    #print indri_run_query("../query/query_parameter.txt")
+    #print fetch_bow("../query/query_parameter.txt")
