@@ -19,7 +19,7 @@ index = "/bos/tmp6/indexes/ClueWeb12_B13_index/"
 PARAM_FORMAT = '''
 <parameters>
     <index>/bos/tmp6/indexes/ClueWeb12_B13_index</index>
-    <count>100</count>
+    <count>10</count>
     <trecFormat>true</trecFormat>
     %s
 </parameters>
