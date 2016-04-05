@@ -31,10 +31,6 @@ def fetch_documents(query):
 
 def clueweb_batch(query_file):
     url = "http://localhost:1111/lemur.cgi"
-    headers = {
-        'User-Agent' : "My User Agent 1.0",
-        'From' : "hongyul@andrew.cmu.edu"
-    }
 
     parameters = {
         "query" : "harry potter"
