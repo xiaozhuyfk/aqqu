@@ -175,5 +175,5 @@ if __name__ == "__main__":
     #print output_bow(fetch_query_bow("../query/query_parameter.txt"), "dummy")
     #print indri_run_query("../query/query_parameter.txt")
     #print fetch_bow("../query/query_parameter.txt")
-    #fetch_relation_bow("discovery_technique")
-    print fetch_documents("testresult/query/discovery_technique.log")
+    fetch_relation_bow("discovery_technique")
+    #print fetch_documents("testresult/query/discovery_technique.log")
