@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 result_file = "testresult/dump/"
 edges = [
     "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique",
-    "http://rdf.freebase.com/ns/common.topic.alias",
+    #"http://rdf.freebase.com/ns/common.topic.alias",
     "http://rdf.freebase.com/interests.collection_category.name_of_collection_activity",
     "http://rdf.freebase.com/media_common.completion_of_unfinished_work.finisher",
     "http://rdf.freebase.com/computer.programming_language_paradigm.languages",
@@ -67,6 +67,8 @@ def main():
         target_file = result_file + edge_name + ".log"
         writeFile(target_file, "", 'w')
 
+        print "Finding pairs for relation: " + edge_name
+
         edge_rel = FreebaseDumpParserC.DiscardPrefix(edge)
 
         result = backend.query_json(PAIR_QUERY_FORMAT % edge)
@@ -77,6 +79,12 @@ def main():
             #writeFile(target_file, content, 'a')
             e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0][0].encode('utf-8')
             e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0][0].encode('utf-8')
+            e1_paren = e1_name.find("(")
+            e2_paren = e2_name.find("(")
+
+            e1_name = e1_name[:e1_paren]
+            e2_name = e2_name[:e2_paren]
+
             #content = e1_name + "\t" + e2_name + "\n"
             content = QUERY_FORMAT % (e1_name, e2_name) + "\n"
             writeFile(target_file, content, 'a')
