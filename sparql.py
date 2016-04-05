@@ -24,11 +24,11 @@ logger = logging.getLogger(__name__)
 result_file = "testresult/dump/"
 edges = [
     "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique",
-    "http://rdf.freebase.com/ns/projects.project.actual_completion_date",
-    "http://rdf.freebase.com/ns/digicams.digital_camera.lcd_pixels",
-    "http://rdf.freebase.com/ns/meteorology.tropical_cyclone.direct_fatalities",
     "http://rdf.freebase.com/ns/common.topic.alias",
-    "http://rdf.freebase.com/interests.collection_category.name_of_collection_activity"
+    "http://rdf.freebase.com/interests.collection_category.name_of_collection_activity",
+    "http://rdf.freebase.com/media_common.completion_of_unfinished_work.finisher",
+    "http://rdf.freebase.com/computer.programming_language_paradigm.languages",
+    "http://rdf.freebase.com/book.literary_series.works_in_this_series"
 ]
 
 PAIR_QUERY_FORMAT = '''
@@ -64,7 +64,7 @@ def main():
 
     for edge in edges:
         edge_name = edge.split(".")[-1]
-        target_file = result_file + "_" + edge_name + ".log"
+        target_file = result_file + edge_name + ".log"
         writeFile(target_file, "", 'w')
 
         edge_rel = FreebaseDumpParserC.DiscardPrefix(edge)
@@ -75,7 +75,6 @@ def main():
             e2 = pair[1]
             #content = e1 + "\t" + e2 + "\n"
             #writeFile(target_file, content, 'a')
-
             e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0][0].encode('utf-8')
             e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0][0].encode('utf-8')
             #content = e1_name + "\t" + e2_name + "\n"
