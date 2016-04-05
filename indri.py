@@ -68,6 +68,8 @@ def fetch_document_bow(internal):
     vector = dumpindex_get_document_vector(internal)
     lines = vector.split("\n")
     for line in lines[5:]:
+        if (not line[0].isdigit()):
+            continue
         tokens = line.split(" ")
         tf = int(tokens[1])
         term = tokens[2]
