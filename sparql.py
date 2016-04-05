@@ -21,9 +21,14 @@ logging.basicConfig(format = "%(asctime)s : %(levelname)s "
 
 logger = logging.getLogger(__name__)
 
-result_file = "testresult/dump/pairs"
+result_file = "testresult/dump/"
 edges = [
-    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique"
+    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique",
+    "http://rdf.freebase.com/ns/projects.project.actual_completion_date",
+    "http://rdf.freebase.com/ns/digicams.digital_camera.lcd_pixels",
+    "http://rdf.freebase.com/ns/meteorology.tropical_cyclone.direct_fatalities",
+    "http://rdf.freebase.com/ns/common.topic.alias",
+    "http://rdf.freebase.com/interests.collection_category.name_of_collection_activity"
 ]
 
 PAIR_QUERY_FORMAT = '''
@@ -39,40 +44,7 @@ PREFIX fb: <http://rdf.freebase.com/ns/>
 }
 '''
 
-QUERY_FORMAT = "#20(#1(%s) #1(%s))"
-
-
-
-def fetch_documents(query):
-    url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi"
-    headers = {
-        'User-Agent' : "My User Agent 1.0",
-        'From' : "hongyul@andrew.cmu.edu"
-    }
-
-    parameters = {
-        "q" : query
-    }
-
-    #r = requests.get(url, params = parameters, headers = headers)
-    #print r.text
-
-def clueweb_batch(query_file):
-    url = "http://boston.lti.cs.cmu.edu/Services/clueweb12_batch/upload.cgi"
-    headers = {
-        'User-Agent' : "My User Agent 1.0",
-        'From' : "hongyul@andrew.cmu.edu"
-    }
-
-    parameters = {
-        "indextype" : "cataparams",
-        "countmax" : 100,
-        "formattype" : 0,
-        "infile" : query_file
-    }
-
-    r = requests.post(url, headers=headers, data = parameters)
-    print r.text
+QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
 
 
 def main():
@@ -112,4 +84,4 @@ def main():
 
 
 if __name__ == "__main__":
-    clueweb_batch("query.txt")
+    main()

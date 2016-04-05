@@ -40,6 +40,11 @@ bow_dir = "testresult/bow/"
 internals = {}
 vectors = {}
 
+relations = [
+    "discovery_technique",
+
+]
+
 def dumpindex(args):
     cmd = ['dumpindex', index]
     cmd.extend(args)
@@ -155,6 +160,9 @@ def fetch_relation_bow(relation_name):
     return bow
 
 
+def main():
+    for relation in relations:
+        fetch_relation_bow(relation)
 
 """
 def fetch_documents(query):
@@ -186,5 +194,6 @@ if __name__ == "__main__":
     #print output_bow(fetch_query_bow("../query/query_parameter.txt"), "dummy")
     #print indri_run_query("../query/query_parameter.txt")
     #print fetch_bow("../query/query_parameter.txt")
-    fetch_relation_bow("discovery_technique")
+    #fetch_relation_bow("discovery_technique")
     #print fetch_documents("testresult/query/discovery_technique.log")
+    main()
