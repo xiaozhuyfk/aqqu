@@ -23,8 +23,7 @@ def fetch_documents(query):
     }
 
     parameters = {
-        "q" : query
-        #"getdocext" : "clueweb12-1313wb-10-13464"
+        "getparseddoc" : "36443723"
     }
 
     r = requests.get(url, params = parameters, headers = headers)
