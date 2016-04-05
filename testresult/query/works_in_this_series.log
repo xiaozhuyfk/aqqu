@@ -1,307 +1,907 @@
 
 <parameters>
     <index>/bos/tmp6/indexes/ClueWeb12_B13_index</index>
-    <count>100</count>
+    <count>10</count>
     <trecFormat>true</trecFormat>
     
     <query>
         <type>indri</type>
         <number>1</number>
-        <text>#uw20(#1(Spooksvill) #1(The Creature in the Teache))</text>
+        <text>#uw20(#1(Spooksville) #1(The Creature in the Teacher))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>2</number>
-        <text>#uw20(#1(Seven Citadel) #1(The Dead Kingdo))</text>
+        <text>#uw20(#1(Seven Citadels) #1(The Dead Kingdom))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>3</number>
-        <text>#uw20(#1(Seven Citadel) #1(The Children of the Win))</text>
+        <text>#uw20(#1(Seven Citadels) #1(The Children of the Wind))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>4</number>
-        <text>#uw20(#1(Seven Citadel) #1(Prince of the Godbor))</text>
+        <text>#uw20(#1(Seven Citadels) #1(Prince of the Godborn))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>5</number>
-        <text>#uw20(#1(Very Short Introduction) #1(Egyptian myt))</text>
+        <text>#uw20(#1(Very Short Introductions) #1(Egyptian myth))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>6</number>
-        <text>#uw20(#1(Star Wars:The Last of the Jed) #1(The Last of the Jedi: Dark Warnin))</text>
+        <text>#uw20(#1(Star Wars:The Last of the Jedi) #1(The Last of the Jedi: Dark Warning))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>7</number>
-        <text>#uw20(#1(Hachidaish�) #1(Shūi Wakash�))</text>
+        <text>#uw20(#1(Hachidaishū) #1(Shūi Wakashū))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>8</number>
-        <text>#uw20(#1(Doctor Who Missing Adventure) #1(System Shoc))</text>
+        <text>#uw20(#1(Doctor Who Missing Adventures) #1(System Shock))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>9</number>
-        <text>#uw20(#1(The Papers of Thomas Jefferson, Main Serie) #1(The Papers of Thomas Jefferson, Volume 17: July 1790 to November 179))</text>
+        <text>#uw20(#1(The Papers of Thomas Jefferson, Main Series) #1(The Papers of Thomas Jefferson, Volume 17: July 1790 to November 1790))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>10</number>
-        <text>#uw20(#1(The Papers of Thomas Jefferson, Main Serie) #1(The Papers of Thomas Jefferson, Volume 18: 4 November 1790 to 24 January 179))</text>
+        <text>#uw20(#1(The Papers of Thomas Jefferson, Main Series) #1(The Papers of Thomas Jefferson, Volume 18: 4 November 1790 to 24 January 1791))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>11</number>
-        <text>#uw20(#1(The Selected Papers of Elizabeth Cady Stanton and Susan B. Anthon) #1(The Selected Papers of Elizabeth Cady Stanton & Susan B. Anthony, Vol. 2: Against an Aristocracy of Sex, 1866-187))</text>
+        <text>#uw20(#1(The Selected Papers of Elizabeth Cady Stanton and Susan B. Anthony) #1(The Selected Papers of Elizabeth Cady Stanton & Susan B. Anthony, Vol. 2: Against an Aristocracy of Sex, 1866-1873))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>12</number>
-        <text>#uw20(#1(The Correspondence of Reginald Pol) #1(The Correspondence of Reginald Pole, Vol. 3: A Calendar, 1555-1558: Restoring the English Churc))</text>
+        <text>#uw20(#1(The Correspondence of Reginald Pole) #1(The Correspondence of Reginald Pole, Vol. 3: A Calendar, 1555-1558: Restoring the English Church))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>13</number>
-        <text>#uw20(#1(The Correspondence of Reginald Pol) #1(The Correspondence of Reginald Pole, Vol. 4: A Biographical Companion: The British Isle))</text>
+        <text>#uw20(#1(The Correspondence of Reginald Pole) #1(The Correspondence of Reginald Pole, Vol. 4: A Biographical Companion: The British Isles))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>14</number>
-        <text>#uw20(#1(The Correspondence of Reginald Pol) #1(The Correspondence of Reginald Pole, Vol. 5: A Biographical Companion: the Continent and Pole's Househo))</text>
+        <text>#uw20(#1(The Correspondence of Reginald Pole) #1(The Correspondence of Reginald Pole, Vol. 5: A Biographical Companion: the Continent and Pole's Househol))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>15</number>
-        <text>#uw20(#1(The Dresden File) #1(Ghost Stor))</text>
+        <text>#uw20(#1(The Dresden Files) #1(Ghost Story))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>16</number>
-        <text>#uw20(#1(Pax Britanni) #1(Unnatural Histor))</text>
+        <text>#uw20(#1(Pax Britannia) #1(Unnatural History))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>17</number>
-        <text>#uw20(#1(Big Nat) #1(Big Nate Makes the Grad))</text>
+        <text>#uw20(#1(Big Nate) #1(Big Nate Makes the Grade))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>18</number>
-        <text>#uw20(#1(Ketuvi) #1(The Song of Solomo))</text>
+        <text>#uw20(#1(Ketuvim) #1(The Song of Solomon))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>19</number>
-        <text>#uw20(#1(Sonnets on Eminent Character) #1(To Fayett))</text>
+        <text>#uw20(#1(Sonnets on Eminent Characters) #1(To Fayette))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>20</number>
-        <text>#uw20(#1(Captain Underpant) #1(The Adventures of Super Diaper Bab))</text>
+        <text>#uw20(#1(Captain Underpants) #1(The Adventures of Super Diaper Baby))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>21</number>
-        <text>#uw20(#1(Captain Underpant) #1(The Captain Underpants Cartoon-O-Rama, Book 1: Heroes, Villains, and Super Creep))</text>
+        <text>#uw20(#1(Captain Underpants) #1(The Captain Underpants Cartoon-O-Rama, Book 1: Heroes, Villains, and Super Creeps))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>22</number>
-        <text>#uw20(#1(Captain Underpant) #1(The Adventures of Ook and Gluk: Kung-Fu Cavemen from the Futur))</text>
+        <text>#uw20(#1(Captain Underpants) #1(The Adventures of Ook and Gluk: Kung-Fu Cavemen from the Future))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>23</number>
-        <text>#uw20(#1(Captain Underpant) #1(Captain Underpants and the Big, Bad Battle of the Bionic Booger Boy, Part 1: The Night of the Nasty Nostril Nugget))</text>
+        <text>#uw20(#1(Captain Underpants) #1(Captain Underpants and the Big, Bad Battle of the Bionic Booger Boy, Part 1: The Night of the Nasty Nostril Nuggets))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>24</number>
-        <text>#uw20(#1(Captain Underpant) #1(Captain Underpants and the Revolting Revenge of the Radioactive Robo-Boxer))</text>
+        <text>#uw20(#1(Captain Underpants) #1(Captain Underpants and the Revolting Revenge of the Radioactive Robo-Boxers))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>25</number>
-        <text>#uw20(#1(Engines of God/Priscilla ) #1(Chind))</text>
+        <text>#uw20(#1(Engines of God/Priscilla ) #1(Chindi))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>26</number>
-        <text>#uw20(#1(Jason Bourne Serie) #1(The Bourne Sanctio))</text>
+        <text>#uw20(#1(Jason Bourne Series) #1(The Bourne Sanction))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>27</number>
-        <text>#uw20(#1(Jason Bourne Serie) #1(The Bourne Deceptio))</text>
+        <text>#uw20(#1(Jason Bourne Series) #1(The Bourne Deception))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>28</number>
-        <text>#uw20(#1(The 39 Clue) #1(The Sword Thie))</text>
+        <text>#uw20(#1(The 39 Clues) #1(The Sword Thief))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>29</number>
-        <text>#uw20(#1(The 39 Clue) #1(The Sword Thie))</text>
+        <text>#uw20(#1(The 39 Clues) #1(The Sword Thief))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>30</number>
-        <text>#uw20(#1(Elizabeth Chas) #1(Murder in Scorpi))</text>
+        <text>#uw20(#1(Elizabeth Chase) #1(Murder in Scorpio))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>31</number>
-        <text>#uw20(#1(Time Machin) #1(Last of the Dinosaur))</text>
+        <text>#uw20(#1(Time Machine) #1(Last of the Dinosaurs))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>32</number>
-        <text>#uw20(#1(Worlds of Powe) #1(Blaster Maste))</text>
+        <text>#uw20(#1(Worlds of Power) #1(Blaster Master))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>33</number>
-        <text>#uw20(#1(Worlds of Powe) #1(Castlevania II: Simon's Ques))</text>
+        <text>#uw20(#1(Worlds of Power) #1(Castlevania II: Simon's Quest))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>34</number>
-        <text>#uw20(#1(Worlds of Powe) #1(Worlds of Power #1))</text>
+        <text>#uw20(#1(Worlds of Power) #1(Worlds of Power #1:))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>35</number>
-        <text>#uw20(#1(Jason Bourne Serie) #1(The Bourne Objectiv))</text>
+        <text>#uw20(#1(Jason Bourne Series) #1(The Bourne Objective))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>36</number>
-        <text>#uw20(#1(The 39 Clue) #1(The Viper's Nes))</text>
+        <text>#uw20(#1(The 39 Clues) #1(The Viper's Nest))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>37</number>
-        <text>#uw20(#1(The 39 Clue) #1(The Viper's Nes))</text>
+        <text>#uw20(#1(The 39 Clues) #1(The Viper's Nest))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>38</number>
-        <text>#uw20(#1(Jason Bourne Serie) #1(The Bourne Betraya))</text>
+        <text>#uw20(#1(Jason Bourne Series) #1(The Bourne Betrayal))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>39</number>
-        <text>#uw20(#1(The 39 Clue) #1(Vespers Risin))</text>
+        <text>#uw20(#1(The 39 Clues) #1(Vespers Rising))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>40</number>
-        <text>#uw20(#1(Cahills vs. Vesper) #1(The Dead of Nigh))</text>
+        <text>#uw20(#1(Cahills vs. Vespers) #1(The Dead of Night))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>41</number>
-        <text>#uw20(#1(Seven Wonder) #1(The Colossus Rise))</text>
+        <text>#uw20(#1(Seven Wonders) #1(The Colossus Rises))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>42</number>
-        <text>#uw20(#1(Fifth Imperiu) #1(Empire from the Ashe))</text>
+        <text>#uw20(#1(Fifth Imperium) #1(Empire from the Ashes))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>43</number>
-        <text>#uw20(#1(The Collected Stories of Philip K. Dic) #1(The Days of Perky Pa))</text>
+        <text>#uw20(#1(The Collected Stories of Philip K. Dick) #1(The Days of Perky Pat))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>44</number>
-        <text>#uw20(#1(Meskli) #1(Heavy Plane))</text>
+        <text>#uw20(#1(Mesklin) #1(Heavy Planet))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>45</number>
-        <text>#uw20(#1(Resident Evi) #1(Resident Evil: Nemesi))</text>
+        <text>#uw20(#1(Resident Evil) #1(Resident Evil: Nemesis))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>46</number>
-        <text>#uw20(#1(Dark Ange) #1(Skin gam))</text>
+        <text>#uw20(#1(Dark Angel) #1(Skin game))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>47</number>
-        <text>#uw20(#1(The Complete Stories of Theodore Sturgeo) #1(The perfect hos))</text>
+        <text>#uw20(#1(The Complete Stories of Theodore Sturgeon) #1(The perfect host))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>48</number>
-        <text>#uw20(#1(The Complete Stories of Theodore Sturgeo) #1(The man who lost the se))</text>
+        <text>#uw20(#1(The Complete Stories of Theodore Sturgeon) #1(The man who lost the sea))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>49</number>
-        <text>#uw20(#1(Star Wars Republic Command) #1(Return of the Jed))</text>
+        <text>#uw20(#1(Star Wars Republic Commando) #1(Return of the Jedi))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>50</number>
-        <text>#uw20(#1(Saga of the Well of Soul) #1(The sea is full of star))</text>
+        <text>#uw20(#1(Saga of the Well of Souls) #1(The sea is full of stars))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>51</number>
+        <text>#uw20(#1(Secret History) #1(The Man With the Golden Torc))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>52</number>
+        <text>#uw20(#1(Jani Kilian) #1(Code of Conduct))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>53</number>
+        <text>#uw20(#1(Lamb Among the Stars) #1(The Shadow And Night))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>54</number>
+        <text>#uw20(#1(MechWarrior Dark Age) #1(The ruins of power))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>55</number>
+        <text>#uw20(#1(Taylor's Ark) #1(The lady and the tiger))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>56</number>
+        <text>#uw20(#1(Longknife Family) #1(The price of peace))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>57</number>
+        <text>#uw20(#1(Resident Evil) #1(Resident Evil: Underworld))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>58</number>
+        <text>#uw20(#1(The Federalist Papers) #1(Federalist No. 9))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>59</number>
+        <text>#uw20(#1(Company) #1(Black Projects, White Knights))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>60</number>
+        <text>#uw20(#1(The Complete Stories of Theodore Sturgeon) #1(Killdozer!))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>61</number>
+        <text>#uw20(#1(Eloise Books) #1(Eloise in Moscow))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>62</number>
+        <text>#uw20(#1(Lensman series) #1(Triplanetary))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>63</number>
+        <text>#uw20(#1(The Year's Best Science Fiction) #1(The Year's Best Science Fiction: Seventh Annual Collection))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>64</number>
+        <text>#uw20(#1(Bold as Love) #1(Midnight Lamp))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>65</number>
+        <text>#uw20(#1(The Destroyer) #1(Mugger Blood))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>66</number>
+        <text>#uw20(#1(Baby-Sitters Little Sister) #1(Karen's Roller Skates))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>67</number>
+        <text>#uw20(#1(Able Team) #1(Royal Flush))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>68</number>
+        <text>#uw20(#1(The Works of Jonathan Edwards) #1(The Works of Jonathan Edwards, Vol. 3: Original Sin))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>69</number>
+        <text>#uw20(#1(Opposing Viewpoints series) #1(Discrimination))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>70</number>
+        <text>#uw20(#1(Walt Disney's Fun-to-Learn Library) #1(Simple Science))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>71</number>
+        <text>#uw20(#1(Necroscope) #1(Necroscope II: Wamphyri))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>72</number>
+        <text>#uw20(#1(Rivers of America Series) #1(The Salinas))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>73</number>
+        <text>#uw20(#1(The Adventures of Odysseus) #1(King of Ithaca))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>74</number>
+        <text>#uw20(#1(The Adventures of Odysseus) #1(The Gates of Troy))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>75</number>
+        <text>#uw20(#1(The Adventures of Odysseus) #1(The Armour of Achilles))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>76</number>
+        <text>#uw20(#1(Very Short Introductions) #1(The Soviet Union))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>77</number>
+        <text>#uw20(#1(Very Short Introductions) #1(Dictionaries))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>78</number>
+        <text>#uw20(#1(Gallagher Girls Series) #1(Cross my heart and hope to spy))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>79</number>
+        <text>#uw20(#1(The Famous Five) #1(Five Go To Mystery Moor))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>80</number>
+        <text>#uw20(#1(A Life of Faith) #1(Millie's courageous days))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>81</number>
+        <text>#uw20(#1(A Life of Faith) #1(Millie's Grand Adventure))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>82</number>
+        <text>#uw20(#1(A Life of Faith) #1(Millie's Unsettled Season, Book 1))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>83</number>
+        <text>#uw20(#1(A Life of Faith) #1(Millie's Faithful Heart, Book 4))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>84</number>
+        <text>#uw20(#1(A Life of Faith) #1(Millie's Steadfast Love, Book 5))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>85</number>
+        <text>#uw20(#1(A Life of Faith) #1(Millie's Remarkable Journey, Book 3))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>86</number>
+        <text>#uw20(#1(For Dummies) #1(Zune for dummies))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>87</number>
+        <text>#uw20(#1(Gallagher Girls Series) #1(Only the Good Spy Young))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>88</number>
+        <text>#uw20(#1(Kara no Kyōkai) #1(A study in murder part 1))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>89</number>
+        <text>#uw20(#1(Rivers of America Series) #1(he Chagres: River of Westward Passage))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>90</number>
+        <text>#uw20(#1(Maburaho) #1(Urge Overkill))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>91</number>
+        <text>#uw20(#1(Baby-Sitters Little Sister) #1(Karen's Big Job))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>92</number>
+        <text>#uw20(#1(Company's Coming) #1(Kids Do Baking))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>93</number>
+        <text>#uw20(#1(Company's Coming) #1(Christmas Gifts From the Kitchen))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>94</number>
+        <text>#uw20(#1(The Executioner) #1(Dead Man Running))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>95</number>
+        <text>#uw20(#1(The Executioner) #1(Death Gamble))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>96</number>
+        <text>#uw20(#1(A Life of Faith) #1(Millie's Reluctant Sacrifice))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>97</number>
+        <text>#uw20(#1(The Tiara Club) #1(Princess Ellie and the Enchanted Fawn))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>98</number>
+        <text>#uw20(#1(Athena Force) #1(Justice))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>99</number>
+        <text>#uw20(#1(Wicked) #1(Resurrection))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>100</number>
+        <text>#uw20(#1(Opposing Viewpoints series) #1(Energy Alternatives: Opposing Viewpoints))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>101</number>
+        <text>#uw20(#1(Honey Bunch) #1(Honey Bunch Her First Trip on the Great Lakes))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>102</number>
+        <text>#uw20(#1(How and Why Wonder Books) #1(The How and Why Wonder Book of Stars))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>103</number>
+        <text>#uw20(#1(Warhammer) #1(The Bloody Handed))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>104</number>
+        <text>#uw20(#1(For Dummies) #1(Medical Terminology for Dummies))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>105</number>
+        <text>#uw20(#1(For Dummies) #1(Lean for Dummies))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>106</number>
+        <text>#uw20(#1(For Dummies) #1(Six Sigma for Dummies))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>107</number>
+        <text>#uw20(#1(Very Short Introductions) #1(Beauty))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>108</number>
+        <text>#uw20(#1(Very Short Introductions) #1(Cancer))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>109</number>
+        <text>#uw20(#1(Very Short Introductions) #1(Environmental Economics))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>110</number>
+        <text>#uw20(#1(For Dummies) #1(Six Sigma Workbook for Dummies))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>111</number>
+        <text>#uw20(#1(World of Art) #1(Hellenistic Sculpture))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>112</number>
+        <text>#uw20(#1(Solange) #1(The Railway Carriage))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>113</number>
+        <text>#uw20(#1(For Dummies) #1(JavaScript And AJAX for Dummies))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>114</number>
+        <text>#uw20(#1(For Dummies) #1(Marketing Research Kit for Dummies))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>115</number>
+        <text>#uw20(#1(For Dummies) #1(Photoshop CS3 for Dummies))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>116</number>
+        <text>#uw20(#1(For Dummies) #1(Comparative Religion for Dummies))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>117</number>
+        <text>#uw20(#1(For Dummies) #1(Building Web Sites All-in-One for Dummies))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>118</number>
+        <text>#uw20(#1(For Dummies) #1(Lawn Care for Dummies))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>119</number>
+        <text>#uw20(#1(Gallagher Girls Series) #1(Out of Sight, Out of Time))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>120</number>
+        <text>#uw20(#1(Imran Series) #1(Dhuaein ka Hisaar))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>121</number>
+        <text>#uw20(#1(The Trailsman) #1(Texas Hellion))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>122</number>
+        <text>#uw20(#1(The Trailsman) #1(Prairie Firestorm))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>123</number>
+        <text>#uw20(#1(The Trailsman) #1(Northwoods Nightmare))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>124</number>
+        <text>#uw20(#1(Big Nate) #1(I Smell a Pop Quiz!))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>125</number>
+        <text>#uw20(#1(Bloodlines Series) #1(Bloodlines))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>126</number>
+        <text>#uw20(#1(Bloodlines) #1(Bloodlines))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>127</number>
+        <text>#uw20(#1(Beyonders Trilogy) #1(Beyonders: A World Without Heroes))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>128</number>
+        <text>#uw20(#1(Beyonders Trilogy) #1(Chasing the Prophecy))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>129</number>
+        <text>#uw20(#1(Shikyō) #1(Ōkagami))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>130</number>
+        <text>#uw20(#1(The Asian Saga) #1(Tai-Pan: A Novel of Hong Kong))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>131</number>
+        <text>#uw20(#1(Horror High) #1(Sudden Death))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>132</number>
+        <text>#uw20(#1(Twenty-Four Histories) #1(Book of Zhou))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>133</number>
+        <text>#uw20(#1(Ægypt) #1(Love & Sleep))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>134</number>
+        <text>#uw20(#1(Ægypt) #1(Ægypt))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>135</number>
+        <text>#uw20(#1(Book of The Art) #1(The Great and Secret Show))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>136</number>
+        <text>#uw20(#1(The Art Trilogy) #1(The Great and Secret Show))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>137</number>
+        <text>#uw20(#1(Risha Cadigan, Vampire) #1(Worse Than Death))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>138</number>
+        <text>#uw20(#1(Christopher Family Chronicles) #1(Shelley's Heart))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>139</number>
+        <text>#uw20(#1(The Books of Abarat) #1(Absolute Midnight))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>140</number>
+        <text>#uw20(#1(Palliser novels) #1(The Duke's Children))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>141</number>
+        <text>#uw20(#1(Rigante) #1(Stormrider))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>142</number>
+        <text>#uw20(#1(Conan of Cimmeria ) #1(The Coming of Conan))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>143</number>
+        <text>#uw20(#1(The Death Gate Cycle) #1(The Seventh Gate))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>144</number>
+        <text>#uw20(#1(Left Behind) #1(Armageddon))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>145</number>
+        <text>#uw20(#1(Between The Wars) #1(Jerusalem Commands))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>146</number>
+        <text>#uw20(#1(Goosebumps) #1(Monster Blood III))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>147</number>
+        <text>#uw20(#1(Hunted Earth) #1(The Shattered Sphere))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>148</number>
+        <text>#uw20(#1(in Death) #1(Conspiracy in Death))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>149</number>
+        <text>#uw20(#1(Masters of Rome) #1(Antony and Cleopatra))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>150</number>
+        <text>#uw20(#1(The Lionwolf Series) #1(Cast a Bright Shadow))</text>
     </query>
 
 </parameters>

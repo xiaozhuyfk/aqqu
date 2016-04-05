@@ -1,307 +1,907 @@
 
 <parameters>
     <index>/bos/tmp6/indexes/ClueWeb12_B13_index</index>
-    <count>100</count>
+    <count>10</count>
     <trecFormat>true</trecFormat>
     
     <query>
         <type>indri</type>
         <number>1</number>
-        <text>#uw20(#1(Procedural programmin) #1(colorFort))</text>
+        <text>#uw20(#1(Procedural programming) #1(colorForth))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>2</number>
-        <text>#uw20(#1(Stack-oriented programming languag) #1(colorFort))</text>
+        <text>#uw20(#1(Stack-oriented programming language) #1(colorForth))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>3</number>
-        <text>#uw20(#1(Functional programmin) #1(Charit))</text>
+        <text>#uw20(#1(Functional programming) #1(Charity))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>4</number>
-        <text>#uw20(#1(Knowledge Representation Languag) #1(Web Ontology Languag))</text>
+        <text>#uw20(#1(Knowledge Representation Language) #1(Web Ontology Language))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>5</number>
-        <text>#uw20(#1(Object-oriented programmin) #1(Jav))</text>
+        <text>#uw20(#1(Object-oriented programming) #1(Java))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>6</number>
-        <text>#uw20(#1(Write once, run anywher) #1(Jav))</text>
+        <text>#uw20(#1(Write once, run anywhere) #1(Java))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>7</number>
-        <text>#uw20(#1(Structured programmin) #1(Jav))</text>
+        <text>#uw20(#1(Structured programming) #1(Java))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>8</number>
-        <text>#uw20(#1(Generic programmin) #1(Jav))</text>
+        <text>#uw20(#1(Generic programming) #1(Java))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>9</number>
-        <text>#uw20(#1(Imperative programmin) #1(Jav))</text>
+        <text>#uw20(#1(Imperative programming) #1(Java))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>10</number>
-        <text>#uw20(#1(Virtual machin) #1(Jav))</text>
+        <text>#uw20(#1(Virtual machine) #1(Java))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>11</number>
-        <text>#uw20(#1(Strong typin) #1(Jav))</text>
+        <text>#uw20(#1(Strong typing) #1(Java))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>12</number>
-        <text>#uw20(#1(Object-oriented programmin) #1(I))</text>
+        <text>#uw20(#1(Object-oriented programming) #1(Io))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>13</number>
-        <text>#uw20(#1(Prototype-based programmin) #1(I))</text>
+        <text>#uw20(#1(Prototype-based programming) #1(Io))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>14</number>
-        <text>#uw20(#1(Structured programmin) #1(Open Programming Languag))</text>
+        <text>#uw20(#1(Structured programming) #1(Open Programming Language))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>15</number>
-        <text>#uw20(#1(Imperative programmin) #1(Open Programming Languag))</text>
+        <text>#uw20(#1(Imperative programming) #1(Open Programming Language))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>16</number>
-        <text>#uw20(#1(Object-oriented programmin) #1(Cur))</text>
+        <text>#uw20(#1(Object-oriented programming) #1(Curl))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>17</number>
-        <text>#uw20(#1(Multi-paradigm programming languag) #1(Cur))</text>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(Curl))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>18</number>
-        <text>#uw20(#1(Markup languag) #1(Cur))</text>
+        <text>#uw20(#1(Markup language) #1(Curl))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>19</number>
-        <text>#uw20(#1(Object-oriented programmin) #1(ELEN))</text>
+        <text>#uw20(#1(Object-oriented programming) #1(ELENA))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>20</number>
-        <text>#uw20(#1(Functional programmin) #1(Co))</text>
+        <text>#uw20(#1(Functional programming) #1(Coq))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>21</number>
-        <text>#uw20(#1(Object-oriented programmin) #1())</text>
+        <text>#uw20(#1(Object-oriented programming) #1(T))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>22</number>
-        <text>#uw20(#1(Functional programmin) #1())</text>
+        <text>#uw20(#1(Functional programming) #1(T))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>23</number>
-        <text>#uw20(#1(Multi-paradigm programming languag) #1())</text>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(T))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>24</number>
-        <text>#uw20(#1(Imperative programmin) #1())</text>
+        <text>#uw20(#1(Imperative programming) #1(T))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>25</number>
-        <text>#uw20(#1(Functional programmin) #1(M))</text>
+        <text>#uw20(#1(Functional programming) #1(ML))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>26</number>
-        <text>#uw20(#1(Multi-paradigm programming languag) #1(M))</text>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(ML))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>27</number>
-        <text>#uw20(#1(Imperative programmin) #1(M))</text>
+        <text>#uw20(#1(Imperative programming) #1(ML))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>28</number>
-        <text>#uw20(#1(Type inferenc) #1(M))</text>
+        <text>#uw20(#1(Type inference) #1(ML))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>29</number>
-        <text>#uw20(#1(Mathematic) #1(Agd))</text>
+        <text>#uw20(#1(Mathematics) #1(Agda))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>30</number>
-        <text>#uw20(#1(Functional programmin) #1(Agd))</text>
+        <text>#uw20(#1(Functional programming) #1(Agda))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>31</number>
-        <text>#uw20(#1(Declarative programmin) #1(Agd))</text>
+        <text>#uw20(#1(Declarative programming) #1(Agda))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>32</number>
-        <text>#uw20(#1(Strong typin) #1(Agd))</text>
+        <text>#uw20(#1(Strong typing) #1(Agda))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>33</number>
-        <text>#uw20(#1(Dependent typ) #1(Agd))</text>
+        <text>#uw20(#1(Dependent type) #1(Agda))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>34</number>
-        <text>#uw20(#1(Functional programmin) #1(Idri))</text>
+        <text>#uw20(#1(Functional programming) #1(Idris))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>35</number>
-        <text>#uw20(#1(Object-oriented programmin) #1(ActionScrip))</text>
+        <text>#uw20(#1(Object-oriented programming) #1(ActionScript))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>36</number>
-        <text>#uw20(#1(Functional programmin) #1(ActionScrip))</text>
+        <text>#uw20(#1(Functional programming) #1(ActionScript))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>37</number>
-        <text>#uw20(#1(Multi-paradigm programming languag) #1(ActionScrip))</text>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(ActionScript))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>38</number>
-        <text>#uw20(#1(Prototype-based programmin) #1(ActionScrip))</text>
+        <text>#uw20(#1(Prototype-based programming) #1(ActionScript))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>39</number>
-        <text>#uw20(#1(Imperative programmin) #1(ActionScrip))</text>
+        <text>#uw20(#1(Imperative programming) #1(ActionScript))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>40</number>
-        <text>#uw20(#1(Multi-paradigm programming languag) #1(Hax))</text>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(Haxe))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>41</number>
-        <text>#uw20(#1(Object-oriented programmin) #1(Scal))</text>
+        <text>#uw20(#1(Object-oriented programming) #1(Scala))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>42</number>
-        <text>#uw20(#1(Functional programmin) #1(Scal))</text>
+        <text>#uw20(#1(Functional programming) #1(Scala))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>43</number>
-        <text>#uw20(#1(Multi-paradigm programming languag) #1(Scal))</text>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(Scala))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>44</number>
-        <text>#uw20(#1(Concurrent computin) #1(Scal))</text>
+        <text>#uw20(#1(Concurrent computing) #1(Scala))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>45</number>
-        <text>#uw20(#1(Imperative programmin) #1(Scal))</text>
+        <text>#uw20(#1(Imperative programming) #1(Scala))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>46</number>
-        <text>#uw20(#1(Object-oriented programmin) #1(Mini))</text>
+        <text>#uw20(#1(Object-oriented programming) #1(MiniD))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>47</number>
-        <text>#uw20(#1(Multi-paradigm programming languag) #1(Mini))</text>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(MiniD))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>48</number>
-        <text>#uw20(#1(Imperative programmin) #1(Mini))</text>
+        <text>#uw20(#1(Imperative programming) #1(MiniD))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>49</number>
-        <text>#uw20(#1(Procedural programmin) #1(AMO))</text>
+        <text>#uw20(#1(Procedural programming) #1(AMOS))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>50</number>
-        <text>#uw20(#1(Imperative programmin) #1(AMO))</text>
+        <text>#uw20(#1(Imperative programming) #1(AMOS))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>51</number>
+        <text>#uw20(#1(Object-oriented programming) #1(Inform))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>52</number>
+        <text>#uw20(#1(Procedural programming) #1(Inform))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>53</number>
+        <text>#uw20(#1(Logic programming) #1(Inform))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>54</number>
+        <text>#uw20(#1(Declarative programming) #1(Inform))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>55</number>
+        <text>#uw20(#1(Object-oriented programming) #1(MetaL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>56</number>
+        <text>#uw20(#1(Functional programming) #1(MetaL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>57</number>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(MetaL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>58</number>
+        <text>#uw20(#1(Imperative programming) #1(MetaL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>59</number>
+        <text>#uw20(#1(Logic programming) #1(MetaL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>60</number>
+        <text>#uw20(#1(Functional programming) #1(Erlang))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>61</number>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(Erlang))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>62</number>
+        <text>#uw20(#1(Concurrent computing) #1(Erlang))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>63</number>
+        <text>#uw20(#1(Actor model) #1(Erlang))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>64</number>
+        <text>#uw20(#1(Functional programming) #1(Clojure))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>65</number>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(Clojure))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>66</number>
+        <text>#uw20(#1(Concurrent computing) #1(Clojure))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>67</number>
+        <text>#uw20(#1(Logic programming) #1(Prolog))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>68</number>
+        <text>#uw20(#1(Declarative programming) #1(Prolog))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>69</number>
+        <text>#uw20(#1(Functional programming) #1(Elixir))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>70</number>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(Elixir))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>71</number>
+        <text>#uw20(#1(Concurrent computing) #1(Elixir))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>72</number>
+        <text>#uw20(#1(Structured programming) #1(COMAL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>73</number>
+        <text>#uw20(#1(Procedural programming) #1(ALGOL W))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>74</number>
+        <text>#uw20(#1(Structured programming) #1(ALGOL W))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>75</number>
+        <text>#uw20(#1(Imperative programming) #1(ALGOL W))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>76</number>
+        <text>#uw20(#1(Structured programming) #1(Modula-2+))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>77</number>
+        <text>#uw20(#1(Imperative programming) #1(Modula-2+))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>78</number>
+        <text>#uw20(#1(Functional programming) #1(Euclid))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>79</number>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(Euclid))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>80</number>
+        <text>#uw20(#1(Structured programming) #1(Euclid))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>81</number>
+        <text>#uw20(#1(Imperative programming) #1(Euclid))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>82</number>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(Icon))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>83</number>
+        <text>#uw20(#1(Structured programming) #1(Icon))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>84</number>
+        <text>#uw20(#1(Knowledge Representation Language) #1(DAML+OIL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>85</number>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(PostScript))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>86</number>
+        <text>#uw20(#1(Procedural programming) #1(PostScript))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>87</number>
+        <text>#uw20(#1(Stack-oriented programming language) #1(PostScript))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>88</number>
+        <text>#uw20(#1(Concatenative programming language) #1(PostScript))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>89</number>
+        <text>#uw20(#1(Procedural programming) #1(PL/SQL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>90</number>
+        <text>#uw20(#1(Imperative programming) #1(PL/SQL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>91</number>
+        <text>#uw20(#1(Procedural programming) #1(Cobra))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>92</number>
+        <text>#uw20(#1(Object-oriented programming) #1(Embarcadero Delphi))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>93</number>
+        <text>#uw20(#1(Array programming) #1(A+))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>94</number>
+        <text>#uw20(#1(Functional programming) #1(K))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>95</number>
+        <text>#uw20(#1(Database programming) #1(K))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>96</number>
+        <text>#uw20(#1(Array programming) #1(K))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>97</number>
+        <text>#uw20(#1(Functional programming) #1(Q))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>98</number>
+        <text>#uw20(#1(Array programming) #1(Q))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>99</number>
+        <text>#uw20(#1(Mathematics) #1(APL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>100</number>
+        <text>#uw20(#1(Operator) #1(APL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>101</number>
+        <text>#uw20(#1(Functional programming) #1(APL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>102</number>
+        <text>#uw20(#1(Structured programming) #1(APL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>103</number>
+        <text>#uw20(#1(Combinatory logic) #1(APL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>104</number>
+        <text>#uw20(#1(Array programming) #1(APL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>105</number>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(Factor))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>106</number>
+        <text>#uw20(#1(Stack-oriented programming language) #1(Factor))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>107</number>
+        <text>#uw20(#1(Concatenative programming language) #1(Factor))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>108</number>
+        <text>#uw20(#1(Imperative programming) #1(AMPL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>109</number>
+        <text>#uw20(#1(Declarative programming) #1(AMPL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>110</number>
+        <text>#uw20(#1(Structured programming) #1(Pascal))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>111</number>
+        <text>#uw20(#1(Imperative programming) #1(Pascal))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>112</number>
+        <text>#uw20(#1(Object-oriented programming) #1(Sather))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>113</number>
+        <text>#uw20(#1(Functional programming) #1(Sather))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>114</number>
+        <text>#uw20(#1(Object-oriented programming) #1(Simula))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>115</number>
+        <text>#uw20(#1(Design by contract) #1(Eiffel))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>116</number>
+        <text>#uw20(#1(Object-oriented programming) #1(Eiffel))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>117</number>
+        <text>#uw20(#1(Object-oriented programming) #1(Mantra))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>118</number>
+        <text>#uw20(#1(Dynamic programming language) #1(Mantra))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>119</number>
+        <text>#uw20(#1(Object-oriented programming) #1(D))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>120</number>
+        <text>#uw20(#1(Functional programming) #1(D))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>121</number>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(D))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>122</number>
+        <text>#uw20(#1(Imperative programming) #1(D))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>123</number>
+        <text>#uw20(#1(Object-oriented programming) #1(Vala))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>124</number>
+        <text>#uw20(#1(Structured programming) #1(Vala))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>125</number>
+        <text>#uw20(#1(Imperative programming) #1(Vala))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>126</number>
+        <text>#uw20(#1(Parallel computing) #1(Cilk))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>127</number>
+        <text>#uw20(#1(Procedural programming) #1(Cilk))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>128</number>
+        <text>#uw20(#1(Structured programming) #1(Cilk))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>129</number>
+        <text>#uw20(#1(Imperative programming) #1(Cilk))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>130</number>
+        <text>#uw20(#1(Functional programming) #1(REBOL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>131</number>
+        <text>#uw20(#1(Dynamic programming language) #1(REBOL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>132</number>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(REBOL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>133</number>
+        <text>#uw20(#1(Structured programming) #1(REBOL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>134</number>
+        <text>#uw20(#1(Prototype-based programming) #1(REBOL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>135</number>
+        <text>#uw20(#1(Imperative programming) #1(REBOL))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>136</number>
+        <text>#uw20(#1(Object-oriented programming) #1(SuperCollider))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>137</number>
+        <text>#uw20(#1(Object-oriented programming) #1(C++))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>138</number>
+        <text>#uw20(#1(Functional programming) #1(C++))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>139</number>
+        <text>#uw20(#1(Multi-paradigm programming language) #1(C++))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>140</number>
+        <text>#uw20(#1(Procedural programming) #1(C++))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>141</number>
+        <text>#uw20(#1(Generic programming) #1(C++))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>142</number>
+        <text>#uw20(#1(Object-oriented programming) #1(J))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>143</number>
+        <text>#uw20(#1(Functional programming) #1(J))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>144</number>
+        <text>#uw20(#1(Array programming) #1(J))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>145</number>
+        <text>#uw20(#1(Function-level programming) #1(J))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>146</number>
+        <text>#uw20(#1(Mathematics) #1(Haskell))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>147</number>
+        <text>#uw20(#1(Functional programming) #1(Haskell))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>148</number>
+        <text>#uw20(#1(Interpreted language) #1(Haskell))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>149</number>
+        <text>#uw20(#1(Type inference) #1(Haskell))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>150</number>
+        <text>#uw20(#1(Combinatory logic) #1(Haskell))</text>
     </query>
 
 </parameters>
