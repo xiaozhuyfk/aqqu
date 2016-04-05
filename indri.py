@@ -7,11 +7,6 @@ Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 
 """
 
-import collections
-import logging
-import globals
-from query_translator.util import writeFile
-from query_translator.FreebaseDumpParser import FreebaseDumpParserC
 import requests
 import subprocess
 
@@ -45,6 +40,12 @@ def dumpindex_get_document_vector(internal):
     vector = dumpindex(['dv', internal])[:-1]
     return vector
 
+def indri_run_query(query_file):
+    cmd = ["IndriRunQuery", query_file]
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr = subprocess.PIPE)
+    out, err = p.communicate()
+    return out
+
 def fetch_document_bow(internal):
     bow = {}
     vector = dumpindex_get_document_vector(internal)
@@ -57,6 +58,12 @@ def fetch_document_bow(internal):
             bow[term] = tf
     print bow
     return bow
+
+
+
+
+
+
 
 def fetch_documents(query):
     url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi"
