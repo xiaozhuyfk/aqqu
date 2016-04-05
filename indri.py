@@ -9,6 +9,8 @@ Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 
 import requests
 import subprocess
+import operator
+from query_translator.util import readFile, writeFile
 
 
 index = "/bos/tmp6/indexes/ClueWeb12_B13_index/"
@@ -28,7 +30,7 @@ query_parameter = '''
 
 pair_dir = "testresult/dump/"
 query_dir = "testresult/query/"
-bow_dir = "testresult/bow"
+bow_dir = "testresult/bow/"
 
 def dumpindex(args):
     cmd = ['dumpindex', index]
@@ -99,6 +101,13 @@ def fetch_bow(query_file):
     return bow
 
 
+def output_bow(bow, filename):
+    path = bow_dir + filename + ".log"
+    writeFile(path, "", "w")
+    result = sorted(bow.items(), key=operator.itemgetter(1)).reverse()
+    for (term, tf) in result:
+        content = term + "\t" + str(tf) + "\n"
+        writeFile(path, content, "a")
 
 
 """
