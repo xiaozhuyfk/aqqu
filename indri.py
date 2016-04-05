@@ -23,7 +23,8 @@ def fetch_documents(query):
     }
 
     parameters = {
-        "getdocext" : "clueweb12-1313wb-10-13464"
+        "q" : query
+        #"getdocext" : "clueweb12-1313wb-10-13464"
     }
 
     r = requests.get(url, params = parameters, headers = headers)
@@ -41,4 +42,4 @@ def clueweb_batch(query_file):
 
 
 if __name__ == "__main__":
-    fetch_documents("query.txt")
+    fetch_documents("harry potter")
