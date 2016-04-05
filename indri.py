@@ -16,17 +16,21 @@ from collections import Counter
 
 index = "/bos/tmp6/indexes/ClueWeb12_B13_index/"
 
-query_parameter = '''
+PARAM_FORMAT = '''
 <parameters>
     <index>/bos/tmp6/indexes/ClueWeb12_B13_index</index>
     <count>100</count>
     <trecFormat>true</trecFormat>
+    %s
+</parameters>
+'''
+
+QUERY_FORMAT = '''
     <query>
         <type>indri</type>
         <number>%d</number>
         <text>%s</text>
     </query>
-</parameters>
 '''
 
 pair_dir = "testresult/dump/"
@@ -67,6 +71,7 @@ def indri_run_query(query_file):
     return out[:-1]
 
 def fetch_document_bow(internal):
+    print "Fetching BOW for document %s" % internal
     bow = Counter()
     vector = dumpindex_get_document_vector(internal)
     lines = vector.split("\n")
@@ -93,7 +98,9 @@ def fetch_documents(query_file):
         documents.append(internal)
     return documents
 
-def fetch_bow(query_file):
+def fetch_query_bow(query_file):
+    print "Fetching BOW for query " + query_file
+
     documents = fetch_documents(query_file)
     bow = Counter()
     for internal in documents:
@@ -103,12 +110,38 @@ def fetch_bow(query_file):
 
 def output_bow(bow, filename):
     path = bow_dir + filename + ".log"
+    print "Writing BOW result to " + path
+
     writeFile(path, "", "w")
     result = sorted(bow.items(), key=operator.itemgetter(1))
     result.reverse()
     for (term, tf) in result:
-        content = term + "\t" + str(tf) + "\n"
+        content = term + " " + str(tf) + "\n"
         writeFile(path, content, "a")
+
+
+def fetch_relation_bow(relation_name):
+    print "Fetching BOW for relation: " + relation_name
+
+    query_file_path = pair_dir + relation_name + ".log"
+    query_content = readFile(query_file_path)
+    count = 1
+    query = ""
+    for line in query_content.split("\n"):
+        if (line == ""):
+            continue
+        query += QUERY_FORMAT % (count, line)
+        query += "\n"
+
+    parameter = PARAM_FORMAT % query
+    parameter_path = query_dir + relation_name + ".log"
+    writeFile(parameter_path, parameter, "w")
+
+    bow = fetch_query_bow(parameter_path)
+    output_bow(bow, relation_name)
+
+    return bow
+
 
 
 """
@@ -138,6 +171,7 @@ def clueweb_batch(query_file):
 """
 
 if __name__ == "__main__":
-    print output_bow(fetch_bow("../query/query_parameter.txt"), "dummy")
+    #print output_bow(fetch_query_bow("../query/query_parameter.txt"), "dummy")
     #print indri_run_query("../query/query_parameter.txt")
     #print fetch_bow("../query/query_parameter.txt")
+    fetch_relation_bow("discovery_technique")

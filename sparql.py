@@ -39,6 +39,8 @@ PREFIX fb: <http://rdf.freebase.com/ns/>
 }
 '''
 
+QUERY_FORMAT = "#20(#1(%s) #1(%s))"
+
 
 
 def fetch_documents(query):
@@ -104,7 +106,8 @@ def main():
 
             e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0][0].encode('utf-8')
             e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0][0].encode('utf-8')
-            content = e1_name + "\t" + e2_name + "\n"
+            #content = e1_name + "\t" + e2_name + "\n"
+            content = QUERY_FORMAT % (e1_name, e2_name) + "\n"
             writeFile(target_file, content, 'a')
 
 
