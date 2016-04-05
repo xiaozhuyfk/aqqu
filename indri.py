@@ -36,7 +36,7 @@ def clueweb_batch(query_file):
         "query" : "harry potter"
     }
 
-    r = requests.get(url, params = parameters, headers = headers)
+    r = requests.get(url, params = parameters)
     print r.text
 
 
