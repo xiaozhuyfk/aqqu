@@ -16,10 +16,11 @@ index = "/bos/tmp6/indexes/ClueWeb12_B13_index/"
 query_parameter = '''
 <parameters>
     <index>/bos/tmp6/indexes/ClueWeb12_B13_index</index>
+    <count>100</count>
     <trecFormat>true</trecFormat>
     <query>
         <type>indri</type>
-        <number>27257</number>
+        <number>%d</number>
         <text>%s</text>
     </query>
 </parameters>
@@ -77,8 +78,20 @@ def fetch_document_bow(internal):
 
 def fetch_documents(query_file):
     trec = indri_run_query(query_file)
+    documents = []
     for line in trec.split("\n"):
-        print [line]
+        tokens = line.split(" ")
+        external = tokens[2]
+        internal = dumpindex_get_internal_id(external)
+        documents.append(internal)
+    return documents
+
+def fetch_bow(query_file):
+    documents = fetch_documents(query_file)
+    bow = {}
+    for internal in documents:
+        bow.update(fetch_document_bow(internal))
+    return bow
 
 
 
@@ -110,4 +123,4 @@ def clueweb_batch(query_file):
 """
 
 if __name__ == "__main__":
-    print fetch_documents("../query/query_parameter.txt")
+    print fetch_bow("../query/query_parameter.txt")
