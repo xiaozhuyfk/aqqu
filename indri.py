@@ -27,10 +27,15 @@ def dumpindex(args):
 
 
 def dumpindex_get_internal_id(external):
-    print dumpindex(['di', 'docno', external])
+    internal = dumpindex(['di', 'docno', external])
+    print [internal]
 
 def dumpindex_get_external_id(internal):
-    print dumpindex(['dn', internal])
+    external = dumpindex(['dn', internal])
+    print [external]
+
+def dumpindex_get_document_text(internal):
+    pass
 
 def fetch_documents(query):
     url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi"
