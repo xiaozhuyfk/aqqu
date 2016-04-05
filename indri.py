@@ -30,7 +30,7 @@ def fetch_documents(query):
     #print r.text
 
 def clueweb_batch(query_file):
-    url = "http://localhost:80/home/hongyul/share/indri/cgi/lemur.cgi"
+    url = "http://localhost:80/share/indri/cgi/lemur.cgi"
     headers = {
         'User-Agent' : "My User Agent 1.0",
         'From' : "hongyul@andrew.cmu.edu"
