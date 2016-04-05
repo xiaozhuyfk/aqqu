@@ -27,15 +27,15 @@ def dumpindex(args):
 
 
 def dumpindex_get_internal_id(external):
-    internal = dumpindex(['di', 'docno', external])[:-2]
-    print [internal]
+    internal = dumpindex(['di', 'docno', external])[:-1]
+    return internal
 
 def dumpindex_get_external_id(internal):
-    external = dumpindex(['dn', internal])[:-2]
-    print [external]
+    external = dumpindex(['dn', internal])[:-1]
+    return external
 
 def dumpindex_get_document_text(internal):
-    pass
+    text = dumpindex(['dt', internal])
 
 def fetch_documents(query):
     url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi"
@@ -63,4 +63,4 @@ def clueweb_batch(query_file):
 
 
 if __name__ == "__main__":
-    dumpindex_get_external_id("4233518")
+    print dumpindex_get_external_id(4233518)
