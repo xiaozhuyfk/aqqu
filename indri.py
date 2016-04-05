@@ -125,4 +125,4 @@ def clueweb_batch(query_file):
 """
 
 if __name__ == "__main__":
-    print indri_run_query("../query/query_parameter.txt")
+    print [indri_run_query("../query/query_parameter.txt")]
