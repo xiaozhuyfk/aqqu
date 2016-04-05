@@ -42,7 +42,9 @@ vectors = {}
 
 relations = [
     "discovery_technique",
-
+    "languages",
+    "name_of_collection_activity",
+    "works_in_this_series"
 ]
 
 def dumpindex(args):
@@ -146,7 +148,7 @@ def fetch_relation_bow(relation_name):
             continue
         query += QUERY_FORMAT % (count, line)
         count += 1
-        if (count > 10):
+        if (count > 50):
             break
 
 
