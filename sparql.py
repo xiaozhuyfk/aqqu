@@ -77,17 +77,20 @@ def main():
             e2 = pair[1]
             #content = e1 + "\t" + e2 + "\n"
             #writeFile(target_file, content, 'a')
-            e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0][0].encode('utf-8')
-            e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0][0].encode('utf-8')
-            e1_paren = e1_name.find("(")
-            e2_paren = e2_name.find("(")
+            try:
+                e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0][0].encode('utf-8')
+                e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0][0].encode('utf-8')
+                e1_paren = e1_name.find("(")
+                e2_paren = e2_name.find("(")
 
-            e1_name = e1_name[:e1_paren]
-            e2_name = e2_name[:e2_paren]
+                e1_name = e1_name[:e1_paren]
+                e2_name = e2_name[:e2_paren]
 
-            #content = e1_name + "\t" + e2_name + "\n"
-            content = QUERY_FORMAT % (e1_name, e2_name) + "\n"
-            writeFile(target_file, content, 'a')
+                #content = e1_name + "\t" + e2_name + "\n"
+                content = QUERY_FORMAT % (e1_name, e2_name) + "\n"
+                writeFile(target_file, content, 'a')
+            except:
+                continue
 
 
 if __name__ == "__main__":
