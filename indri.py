@@ -49,11 +49,11 @@ def fetch_document_bow(internal):
     bow = {}
     vector = dumpindex_get_document_vector(internal)
     lines = vector.split("\n")
-    for line in lines:
+    for line in lines[5:]:
         tokens = line.split(" ")
         tf = int(tokens[1])
         term = tokens[2]
-        if (term != "[OOV]"):
+        if (term != "[OOV]" or tf != 0):
             bow[term] = tf
     print bow
     return bow
