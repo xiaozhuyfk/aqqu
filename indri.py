@@ -25,7 +25,6 @@ def dumpindex(args):
     out, err = p.communicate()
     return out
 
-
 def dumpindex_get_internal_id(external):
     internal = dumpindex(['di', 'docno', external])[:-1]
     return internal
@@ -35,7 +34,22 @@ def dumpindex_get_external_id(internal):
     return external
 
 def dumpindex_get_document_text(internal):
-    text = dumpindex(['dt', internal])
+    text = dumpindex(['dt', internal])[:-1]
+    return text
+
+def dumpindex_get_document_data(internal):
+    data = dumpindex(['dd', internal])[:-1]
+    return data
+
+def dumpindex_get_document_vector(internal):
+    vector = dumpindex(['dv', internal])[:-1]
+    return vector
+
+def fetch_document_bow(internal):
+    vector = dumpindex_get_document_vector(internal)
+    lines = vector.split("\n")
+    for line in lines:
+        print [line]
 
 def fetch_documents(query):
     url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi"
@@ -63,4 +77,4 @@ def clueweb_batch(query_file):
 
 
 if __name__ == "__main__":
-    print dumpindex_get_external_id(4233518)
+    print fetch_document_bow("4233518")
