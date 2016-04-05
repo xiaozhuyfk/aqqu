@@ -137,4 +137,4 @@ def clueweb_batch(query_file):
 """
 
 if __name__ == "__main__":
-    print fetch_bow("../query/query_parameter.txt")
+    print output_bow(fetch_bow("../query/query_parameter.txt"), "dummy")
