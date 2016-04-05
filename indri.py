@@ -80,6 +80,9 @@ def fetch_document_bow(internal):
 
 def fetch_documents(query_file):
     trec = indri_run_query(query_file)
+    if (trec == ""):
+        return []
+
     documents = []
     for line in trec.split("\n"):
         tokens = line.split(" ")
@@ -125,4 +128,4 @@ def clueweb_batch(query_file):
 """
 
 if __name__ == "__main__":
-    print [indri_run_query("../query/query_parameter.txt")]
+    print fetch_bow("../query/query_parameter.txt")
