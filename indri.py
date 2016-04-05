@@ -13,7 +13,21 @@ import globals
 from query_translator.util import writeFile
 from query_translator.FreebaseDumpParser import FreebaseDumpParserC
 import requests
+import subprocess
 
+
+index = "/bos/tmp6/indexes/ClueWeb12_B13_index/"
+
+def dumpindex(args):
+    cmd = ['dumpindex', index]
+    cmd.extend(args)
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr = subprocess.PIPE)
+    out, err = p.communicate()
+    print out
+
+
+def dumpindex_get_internal_id(external):
+    dumpindex(['di', 'docno', external])
 
 def fetch_documents(query):
     url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi"
@@ -23,7 +37,7 @@ def fetch_documents(query):
     }
 
     parameters = {
-        "getparseddoc" : "36443723"
+        "" : "4233518"
     }
 
     r = requests.get(url, params = parameters, headers = headers)
@@ -41,4 +55,4 @@ def clueweb_batch(query_file):
 
 
 if __name__ == "__main__":
-    fetch_documents("harry potter")
+    dumpindex_get_internal_id("harry potter")
