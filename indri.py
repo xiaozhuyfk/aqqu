@@ -132,6 +132,8 @@ def fetch_relation_bow(relation_name):
             continue
         query += QUERY_FORMAT % (count, line)
         count += 1
+        if (count > 10):
+            break
 
 
     parameter = PARAM_FORMAT % query
