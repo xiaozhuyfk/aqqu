@@ -91,4 +91,4 @@ def clueweb_batch(query_file):
 
 
 if __name__ == "__main__":
-    print fetch_document_bow("4233518")
+    print indri_run_query("../query/query_parameter.txt")
