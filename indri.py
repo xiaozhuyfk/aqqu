@@ -55,4 +55,4 @@ def clueweb_batch(query_file):
 
 
 if __name__ == "__main__":
-    dumpindex_get_internal_id("harry potter")
+    dumpindex_get_internal_id("clueweb12-0103wb-69-23089")
