@@ -23,15 +23,14 @@ def dumpindex(args):
     cmd.extend(args)
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr = subprocess.PIPE)
     out, err = p.communicate()
-
     return out
 
 
 def dumpindex_get_internal_id(external):
-    dumpindex(['di', 'docno', external])
+    print dumpindex(['di', 'docno', external])
 
 def dumpindex_get_external_id(internal):
-    dumpindex(['dn', internal])
+    print dumpindex(['dn', internal])
 
 def fetch_documents(query):
     url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi"
