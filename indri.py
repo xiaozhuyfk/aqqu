@@ -148,7 +148,7 @@ def fetch_relation_bow(relation_name):
             continue
         query += QUERY_FORMAT % (count, line)
         count += 1
-        if (count > 50):
+        if (count > 150):
             break
 
 
