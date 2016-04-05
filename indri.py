@@ -46,10 +46,17 @@ def dumpindex_get_document_vector(internal):
     return vector
 
 def fetch_document_bow(internal):
+    bow = {}
     vector = dumpindex_get_document_vector(internal)
     lines = vector.split("\n")
     for line in lines:
-        print [line]
+        tokens = line.split(" ")
+        tf = int(tokens[1])
+        term = tokens[2]
+        if (term != "[OOV]"):
+            bow[term] = tf
+    print bow
+    return bow
 
 def fetch_documents(query):
     url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi"
