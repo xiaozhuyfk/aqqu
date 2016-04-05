@@ -25,10 +25,10 @@ result_file = "testresult/dump/"
 edges = [
     "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique",
     #"http://rdf.freebase.com/ns/common.topic.alias",
-    "http://rdf.freebase.com/interests.collection_category.name_of_collection_activity",
-    "http://rdf.freebase.com/media_common.completion_of_unfinished_work.finisher",
-    "http://rdf.freebase.com/computer.programming_language_paradigm.languages",
-    "http://rdf.freebase.com/book.literary_series.works_in_this_series"
+    "http://rdf.freebase.com/ns/interests.collection_category.name_of_collection_activity",
+    "http://rdf.freebase.com/ns/media_common.completion_of_unfinished_work.finisher",
+    "http://rdf.freebase.com/ns/computer.programming_language_paradigm.languages",
+    "http://rdf.freebase.com/ns/book.literary_series.works_in_this_series"
 ]
 
 PAIR_QUERY_FORMAT = '''
