@@ -7,301 +7,301 @@
     <query>
         <type>indri</type>
         <number>1</number>
-        <text>#uw20(#1(Fomalhaut ) #1(Direct imagin))</text>
+        <text>#uw20(#1(Procedural programmin) #1(colorFort))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>2</number>
-        <text>#uw20(#1(SCR 1845 ) #1(Direct imagin))</text>
+        <text>#uw20(#1(Stack-oriented programming languag) #1(colorFort))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>3</number>
-        <text>#uw20(#1(HR 8799 ) #1(Direct imagin))</text>
+        <text>#uw20(#1(Functional programmin) #1(Charit))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>4</number>
-        <text>#uw20(#1(HR 8799 ) #1(Direct imagin))</text>
+        <text>#uw20(#1(Knowledge Representation Languag) #1(Web Ontology Languag))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>5</number>
-        <text>#uw20(#1(P) #1(Direct imagin))</text>
+        <text>#uw20(#1(Object-oriented programmin) #1(Jav))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>6</number>
-        <text>#uw20(#1(Neptun) #1(Direct imagin))</text>
+        <text>#uw20(#1(Write once, run anywher) #1(Jav))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>7</number>
-        <text>#uw20(#1(2M1207 ) #1(Direct imagin))</text>
+        <text>#uw20(#1(Structured programmin) #1(Jav))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>8</number>
-        <text>#uw20(#1(Arietid) #1(Direct imagin))</text>
+        <text>#uw20(#1(Generic programmin) #1(Jav))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>9</number>
-        <text>#uw20(#1(HR 8799 ) #1(Direct imagin))</text>
+        <text>#uw20(#1(Imperative programmin) #1(Jav))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>10</number>
-        <text>#uw20(#1(AB Pic ) #1(Direct imagin))</text>
+        <text>#uw20(#1(Virtual machin) #1(Jav))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>11</number>
-        <text>#uw20(#1(GQ Lup ) #1(Direct imagin))</text>
+        <text>#uw20(#1(Strong typin) #1(Jav))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>12</number>
-        <text>#uw20(#1(CT Cha ) #1(Direct imagin))</text>
+        <text>#uw20(#1(Object-oriented programmin) #1(I))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>13</number>
-        <text>#uw20(#1(HAT-P-9) #1(Transi))</text>
+        <text>#uw20(#1(Prototype-based programmin) #1(I))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>14</number>
-        <text>#uw20(#1(HAT-P-1 ) #1(Transi))</text>
+        <text>#uw20(#1(Structured programmin) #1(Open Programming Languag))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>15</number>
-        <text>#uw20(#1(HAT-P-7 ) #1(Transi))</text>
+        <text>#uw20(#1(Imperative programmin) #1(Open Programming Languag))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>16</number>
-        <text>#uw20(#1(HD 209458 ) #1(Transi))</text>
+        <text>#uw20(#1(Object-oriented programmin) #1(Cur))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>17</number>
-        <text>#uw20(#1(Kepler-6 ) #1(Transi))</text>
+        <text>#uw20(#1(Multi-paradigm programming languag) #1(Cur))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>18</number>
-        <text>#uw20(#1(Kepler-8 ) #1(Transi))</text>
+        <text>#uw20(#1(Markup languag) #1(Cur))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>19</number>
-        <text>#uw20(#1(OGLE-TR-10) #1(Transi))</text>
+        <text>#uw20(#1(Object-oriented programmin) #1(ELEN))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>20</number>
-        <text>#uw20(#1(PH) #1(Transi))</text>
+        <text>#uw20(#1(Functional programmin) #1(Co))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>21</number>
-        <text>#uw20(#1(HAT-P-13) #1(Transi))</text>
+        <text>#uw20(#1(Object-oriented programmin) #1())</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>22</number>
-        <text>#uw20(#1(HD 80606 ) #1(Transi))</text>
+        <text>#uw20(#1(Functional programmin) #1())</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>23</number>
-        <text>#uw20(#1(WASP-6 ) #1(Transi))</text>
+        <text>#uw20(#1(Multi-paradigm programming languag) #1())</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>24</number>
-        <text>#uw20(#1(Kepler-4 ) #1(Transi))</text>
+        <text>#uw20(#1(Imperative programmin) #1())</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>25</number>
-        <text>#uw20(#1(WASP-33 ) #1(Transi))</text>
+        <text>#uw20(#1(Functional programmin) #1(M))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>26</number>
-        <text>#uw20(#1(SWEEPS-1) #1(Transi))</text>
+        <text>#uw20(#1(Multi-paradigm programming languag) #1(M))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>27</number>
-        <text>#uw20(#1(OGLE-TR-132 ) #1(Transi))</text>
+        <text>#uw20(#1(Imperative programmin) #1(M))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>28</number>
-        <text>#uw20(#1(WASP-1 ) #1(Transi))</text>
+        <text>#uw20(#1(Type inferenc) #1(M))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>29</number>
-        <text>#uw20(#1(WASP-5 ) #1(Transi))</text>
+        <text>#uw20(#1(Mathematic) #1(Agd))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>30</number>
-        <text>#uw20(#1(WASP-11 ) #1(Transi))</text>
+        <text>#uw20(#1(Functional programmin) #1(Agd))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>31</number>
-        <text>#uw20(#1(Kepler-5 ) #1(Transi))</text>
+        <text>#uw20(#1(Declarative programmin) #1(Agd))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>32</number>
-        <text>#uw20(#1(TrES-1) #1(Transi))</text>
+        <text>#uw20(#1(Strong typin) #1(Agd))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>33</number>
-        <text>#uw20(#1(HAT-P-11 ) #1(Transi))</text>
+        <text>#uw20(#1(Dependent typ) #1(Agd))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>34</number>
-        <text>#uw20(#1(Kepler-7 ) #1(Transi))</text>
+        <text>#uw20(#1(Functional programmin) #1(Idri))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>35</number>
-        <text>#uw20(#1(HAT-P-14) #1(Transi))</text>
+        <text>#uw20(#1(Object-oriented programmin) #1(ActionScrip))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>36</number>
-        <text>#uw20(#1(Kepler-9 ) #1(Transi))</text>
+        <text>#uw20(#1(Functional programmin) #1(ActionScrip))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>37</number>
-        <text>#uw20(#1(Kepler-9 ) #1(Transi))</text>
+        <text>#uw20(#1(Multi-paradigm programming languag) #1(ActionScrip))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>38</number>
-        <text>#uw20(#1(Kepler-9) #1(Transi))</text>
+        <text>#uw20(#1(Prototype-based programmin) #1(ActionScrip))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>39</number>
-        <text>#uw20(#1(Lupus-TR-3 ) #1(Transi))</text>
+        <text>#uw20(#1(Imperative programmin) #1(ActionScrip))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>40</number>
-        <text>#uw20(#1(HD 173416 ) #1(Doppler spectroscopy ))</text>
+        <text>#uw20(#1(Multi-paradigm programming languag) #1(Hax))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>41</number>
-        <text>#uw20(#1(XO-3 ) #1(Doppler spectroscopy ))</text>
+        <text>#uw20(#1(Object-oriented programmin) #1(Scal))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>42</number>
-        <text>#uw20(#1(HD 68988 ) #1(Doppler spectroscopy ))</text>
+        <text>#uw20(#1(Functional programmin) #1(Scal))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>43</number>
-        <text>#uw20(#1(Epsilon Eridani ) #1(Doppler spectroscopy ))</text>
+        <text>#uw20(#1(Multi-paradigm programming languag) #1(Scal))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>44</number>
-        <text>#uw20(#1(GJ 3634 ) #1(Doppler spectroscopy ))</text>
+        <text>#uw20(#1(Concurrent computin) #1(Scal))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>45</number>
-        <text>#uw20(#1(HD 4313 ) #1(Doppler spectroscopy ))</text>
+        <text>#uw20(#1(Imperative programmin) #1(Scal))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>46</number>
-        <text>#uw20(#1(HD 330075 ) #1(Doppler spectroscopy ))</text>
+        <text>#uw20(#1(Object-oriented programmin) #1(Mini))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>47</number>
-        <text>#uw20(#1(Alpha Centauri B) #1(Doppler spectroscopy ))</text>
+        <text>#uw20(#1(Multi-paradigm programming languag) #1(Mini))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>48</number>
-        <text>#uw20(#1(HD 12661 ) #1(Doppler spectroscopy ))</text>
+        <text>#uw20(#1(Imperative programmin) #1(Mini))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>49</number>
-        <text>#uw20(#1(HD 80606 ) #1(Doppler spectroscopy ))</text>
+        <text>#uw20(#1(Procedural programmin) #1(AMO))</text>
     </query>
 
     <query>
         <type>indri</type>
         <number>50</number>
-        <text>#uw20(#1(HD 4308 ) #1(Doppler spectroscopy ))</text>
+        <text>#uw20(#1(Imperative programmin) #1(AMO))</text>
     </query>
 
 </parameters>

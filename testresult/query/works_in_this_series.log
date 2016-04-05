@@ -1,0 +1,307 @@
+
+<parameters>
+    <index>/bos/tmp6/indexes/ClueWeb12_B13_index</index>
+    <count>100</count>
+    <trecFormat>true</trecFormat>
+    
+    <query>
+        <type>indri</type>
+        <number>1</number>
+        <text>#uw20(#1(Spooksvill) #1(The Creature in the Teache))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>2</number>
+        <text>#uw20(#1(Seven Citadel) #1(The Dead Kingdo))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>3</number>
+        <text>#uw20(#1(Seven Citadel) #1(The Children of the Win))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>4</number>
+        <text>#uw20(#1(Seven Citadel) #1(Prince of the Godbor))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>5</number>
+        <text>#uw20(#1(Very Short Introduction) #1(Egyptian myt))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>6</number>
+        <text>#uw20(#1(Star Wars:The Last of the Jed) #1(The Last of the Jedi: Dark Warnin))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>7</number>
+        <text>#uw20(#1(Hachidaish≈) #1(Sh≈´i Wakash≈))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>8</number>
+        <text>#uw20(#1(Doctor Who Missing Adventure) #1(System Shoc))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>9</number>
+        <text>#uw20(#1(The Papers of Thomas Jefferson, Main Serie) #1(The Papers of Thomas Jefferson, Volume 17: July 1790 to November 179))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>10</number>
+        <text>#uw20(#1(The Papers of Thomas Jefferson, Main Serie) #1(The Papers of Thomas Jefferson, Volume 18: 4 November 1790 to 24 January 179))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>11</number>
+        <text>#uw20(#1(The Selected Papers of Elizabeth Cady Stanton and Susan B. Anthon) #1(The Selected Papers of Elizabeth Cady Stanton & Susan B. Anthony, Vol. 2: Against an Aristocracy of Sex, 1866-187))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>12</number>
+        <text>#uw20(#1(The Correspondence of Reginald Pol) #1(The Correspondence of Reginald Pole, Vol. 3: A Calendar, 1555-1558: Restoring the English Churc))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>13</number>
+        <text>#uw20(#1(The Correspondence of Reginald Pol) #1(The Correspondence of Reginald Pole, Vol. 4: A Biographical Companion: The British Isle))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>14</number>
+        <text>#uw20(#1(The Correspondence of Reginald Pol) #1(The Correspondence of Reginald Pole, Vol. 5: A Biographical Companion: the Continent and Pole's Househo))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>15</number>
+        <text>#uw20(#1(The Dresden File) #1(Ghost Stor))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>16</number>
+        <text>#uw20(#1(Pax Britanni) #1(Unnatural Histor))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>17</number>
+        <text>#uw20(#1(Big Nat) #1(Big Nate Makes the Grad))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>18</number>
+        <text>#uw20(#1(Ketuvi) #1(The Song of Solomo))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>19</number>
+        <text>#uw20(#1(Sonnets on Eminent Character) #1(To Fayett))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>20</number>
+        <text>#uw20(#1(Captain Underpant) #1(The Adventures of Super Diaper Bab))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>21</number>
+        <text>#uw20(#1(Captain Underpant) #1(The Captain Underpants Cartoon-O-Rama, Book 1: Heroes, Villains, and Super Creep))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>22</number>
+        <text>#uw20(#1(Captain Underpant) #1(The Adventures of Ook and Gluk: Kung-Fu Cavemen from the Futur))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>23</number>
+        <text>#uw20(#1(Captain Underpant) #1(Captain Underpants and the Big, Bad Battle of the Bionic Booger Boy, Part 1: The Night of the Nasty Nostril Nugget))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>24</number>
+        <text>#uw20(#1(Captain Underpant) #1(Captain Underpants and the Revolting Revenge of the Radioactive Robo-Boxer))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>25</number>
+        <text>#uw20(#1(Engines of God/Priscilla ) #1(Chind))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>26</number>
+        <text>#uw20(#1(Jason Bourne Serie) #1(The Bourne Sanctio))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>27</number>
+        <text>#uw20(#1(Jason Bourne Serie) #1(The Bourne Deceptio))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>28</number>
+        <text>#uw20(#1(The 39 Clue) #1(The Sword Thie))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>29</number>
+        <text>#uw20(#1(The 39 Clue) #1(The Sword Thie))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>30</number>
+        <text>#uw20(#1(Elizabeth Chas) #1(Murder in Scorpi))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>31</number>
+        <text>#uw20(#1(Time Machin) #1(Last of the Dinosaur))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>32</number>
+        <text>#uw20(#1(Worlds of Powe) #1(Blaster Maste))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>33</number>
+        <text>#uw20(#1(Worlds of Powe) #1(Castlevania II: Simon's Ques))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>34</number>
+        <text>#uw20(#1(Worlds of Powe) #1(Worlds of Power #1))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>35</number>
+        <text>#uw20(#1(Jason Bourne Serie) #1(The Bourne Objectiv))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>36</number>
+        <text>#uw20(#1(The 39 Clue) #1(The Viper's Nes))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>37</number>
+        <text>#uw20(#1(The 39 Clue) #1(The Viper's Nes))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>38</number>
+        <text>#uw20(#1(Jason Bourne Serie) #1(The Bourne Betraya))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>39</number>
+        <text>#uw20(#1(The 39 Clue) #1(Vespers Risin))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>40</number>
+        <text>#uw20(#1(Cahills vs. Vesper) #1(The Dead of Nigh))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>41</number>
+        <text>#uw20(#1(Seven Wonder) #1(The Colossus Rise))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>42</number>
+        <text>#uw20(#1(Fifth Imperiu) #1(Empire from the Ashe))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>43</number>
+        <text>#uw20(#1(The Collected Stories of Philip K. Dic) #1(The Days of Perky Pa))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>44</number>
+        <text>#uw20(#1(Meskli) #1(Heavy Plane))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>45</number>
+        <text>#uw20(#1(Resident Evi) #1(Resident Evil: Nemesi))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>46</number>
+        <text>#uw20(#1(Dark Ange) #1(Skin gam))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>47</number>
+        <text>#uw20(#1(The Complete Stories of Theodore Sturgeo) #1(The perfect hos))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>48</number>
+        <text>#uw20(#1(The Complete Stories of Theodore Sturgeo) #1(The man who lost the se))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>49</number>
+        <text>#uw20(#1(Star Wars Republic Command) #1(Return of the Jed))</text>
+    </query>
+
+    <query>
+        <type>indri</type>
+        <number>50</number>
+        <text>#uw20(#1(Saga of the Well of Soul) #1(The sea is full of star))</text>
+    </query>
+
+</parameters>
