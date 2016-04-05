@@ -11,6 +11,7 @@ import requests
 import subprocess
 import operator
 from query_translator.util import readFile, writeFile
+from collections import Counter
 
 
 index = "/bos/tmp6/indexes/ClueWeb12_B13_index/"
@@ -77,8 +78,7 @@ def fetch_document_bow(internal):
         term = tokens[2]
         if (term != "[OOV]" or tf != 0):
             bow[term] = tf
-    print bow
-    return bow
+    return Counter(bow)
 
 def fetch_documents(query_file):
     trec = indri_run_query(query_file)
@@ -95,9 +95,9 @@ def fetch_documents(query_file):
 
 def fetch_bow(query_file):
     documents = fetch_documents(query_file)
-    bow = {}
+    bow = Counter({})
     for internal in documents:
-        bow.update(fetch_document_bow(internal))
+        bow += fetch_document_bow(internal)
     return bow
 
 
@@ -140,3 +140,4 @@ def clueweb_batch(query_file):
 if __name__ == "__main__":
     #print output_bow(fetch_bow("../query/query_parameter.txt"), "dummy")
     print indri_run_query("../query/query_parameter.txt")
+    print fetch_bow("../query/query_parameter.txt")
