@@ -23,11 +23,11 @@ def fetch_documents(query):
     }
 
     parameters = {
-        "q" : query
+        "getdocext" : "clueweb12-1313wb-10-13464"
     }
 
-    #r = requests.get(url, params = parameters, headers = headers)
-    #print r.text
+    r = requests.get(url, params = parameters, headers = headers)
+    print r.text
 
 def clueweb_batch(query_file):
     url = "http://localhost:1111/lemur.cgi"
@@ -41,4 +41,4 @@ def clueweb_batch(query_file):
 
 
 if __name__ == "__main__":
-    clueweb_batch("query.txt")
+    fetch_documents("query.txt")
