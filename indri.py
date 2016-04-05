@@ -37,6 +37,9 @@ pair_dir = "testresult/dump/"
 query_dir = "testresult/query/"
 bow_dir = "testresult/bow/"
 
+internals = {}
+vectors = {}
+
 def dumpindex(args):
     cmd = ['dumpindex', index]
     cmd.extend(args)
@@ -45,7 +48,10 @@ def dumpindex(args):
     return out
 
 def dumpindex_get_internal_id(external):
-    internal = dumpindex(['di', 'docno', external])[:-1]
+    if (external in internals):
+        internal = interals[external]
+    else:
+        internal = dumpindex(['di', 'docno', external])[:-1]
     return internal
 
 def dumpindex_get_external_id(internal):
@@ -61,7 +67,10 @@ def dumpindex_get_document_data(internal):
     return data
 
 def dumpindex_get_document_vector(internal):
-    vector = dumpindex(['dv', internal])[:-1]
+    if (internal in vectors):
+        vector = vectors[internal]
+    else:
+        vector = dumpindex(['dv', internal])[:-1]
     return vector
 
 def indri_run_query(query_file):
