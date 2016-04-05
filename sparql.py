@@ -24,23 +24,22 @@ logger = logging.getLogger(__name__)
 result_file = "testresult/dump/"
 edges = [
     "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique",
-    #"http://rdf.freebase.com/ns/common.topic.alias",
     "http://rdf.freebase.com/ns/interests.collection_category.name_of_collection_activity",
-    "http://rdf.freebase.com/ns/media_common.completion_of_unfinished_work.finisher",
     "http://rdf.freebase.com/ns/computer.programming_language_paradigm.languages",
-    "http://rdf.freebase.com/ns/book.literary_series.works_in_this_series"
+    "http://rdf.freebase.com/ns/book.literary_series.works_in_this_series",
+    "http://rdf.freebase.com/ns/common.topic.alias"
 ]
 
 PAIR_QUERY_FORMAT = '''
         SELECT ?e1 ?e2 where {
-        ?e1 <%s> ?e2.
+            ?e1 <%s> ?e2.
         }
     '''
 
 ENTITY_NAME_FORMAT = '''
 PREFIX fb: <http://rdf.freebase.com/ns/>
- SELECT DISTINCT ?0 where {
- fb:%s fb:type.object.name ?0 .
+SELECT DISTINCT ?0 where {
+    fb:%s fb:type.object.name ?0 .
 }
 '''
 
