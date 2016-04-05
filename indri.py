@@ -13,6 +13,22 @@ import subprocess
 
 index = "/bos/tmp6/indexes/ClueWeb12_B13_index/"
 
+query_parameter = '''
+<parameters>
+    <index>/bos/tmp6/indexes/ClueWeb12_B13_index</index>
+    <trecFormat>true</trecFormat>
+    <query>
+        <type>indri</type>
+        <number>27257</number>
+        <text>%s</text>
+    </query>
+</parameters>
+'''
+
+pair_dir = "testresult/dump/"
+query_dir = "testresult/query/"
+bow_dir = "testresult/bow"
+
 def dumpindex(args):
     cmd = ['dumpindex', index]
     cmd.extend(args)
@@ -44,7 +60,7 @@ def indri_run_query(query_file):
     cmd = ["IndriRunQuery", query_file]
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr = subprocess.PIPE)
     out, err = p.communicate()
-    return out
+    return out[:-1]
 
 def fetch_document_bow(internal):
     bow = {}
@@ -59,12 +75,15 @@ def fetch_document_bow(internal):
     print bow
     return bow
 
+def fetch_documents(query_file):
+    trec = indri_run_query(query_file)
+    for line in trec.split("\n"):
+        print [line]
 
 
 
 
-
-
+"""
 def fetch_documents(query):
     url = "http://boston.lti.cs.cmu.edu/Services/clueweb09_catb/lemur.cgi"
     headers = {
@@ -88,7 +107,7 @@ def clueweb_batch(query_file):
 
     r = requests.get(url, params = parameters)
     print r.text
-
+"""
 
 if __name__ == "__main__":
-    print indri_run_query("../query/query_parameter.txt")
+    print fetch_documents("../query/query_parameter.txt")
