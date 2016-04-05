@@ -82,8 +82,10 @@ def main():
                 e1_paren = e1_name.find("(")
                 e2_paren = e2_name.find("(")
 
-                e1_name = e1_name[:e1_paren]
-                e2_name = e2_name[:e2_paren]
+                if (e1_paren != -1):
+                    e1_name = e1_name[:e1_paren]
+                if (e2_paren != -1):
+                    e2_name = e2_name[:e2_paren]
 
                 #content = e1_name + "\t" + e2_name + "\n"
                 content = QUERY_FORMAT % (e1_name, e2_name) + "\n"
