@@ -131,7 +131,8 @@ def fetch_relation_bow(relation_name):
         if (line == ""):
             continue
         query += QUERY_FORMAT % (count, line)
-        query += "\n"
+        count += 1
+
 
     parameter = PARAM_FORMAT % query
     parameter_path = query_dir + relation_name + ".log"
