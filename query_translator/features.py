@@ -19,6 +19,9 @@ N_GRAM_STOPWORDS = {'be', 'do', '?', 'the', 'of', 'is', 'are', 'in', 'was',
 
 mid_bow = {}
 
+rel_candidate_bow = {}
+
+
 def get_n_grams(tokens, n=2):
     """Return n-grams for the given text tokens.
 

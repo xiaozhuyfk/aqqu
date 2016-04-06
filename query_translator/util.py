@@ -366,5 +366,48 @@ def writeFile(filename, contents, mode = "wt"):
     return True
 
 
+
+import pysftp
+
+def sftp_get(remote_path, local_path):
+    with pysftp.Connection('boston.lti.cs.cmu.edu',
+                           username='hongyul',
+                           password='Wdsfzyd106@') as sftp:
+        sftp.get(remotepath = remote_path, localpath = local_path)
+
+def sftp_get_d(remote_path, local_path):
+    with pysftp.Connection('boston.lti.cs.cmu.edu',
+                           username='hongyul',
+                           password='Wdsfzyd106@') as sftp:
+        sftp.get_d(remote_path, local_path)
+
+def sftp_get_r(remote_path, local_path):
+    with pysftp.Connection('boston.lti.cs.cmu.edu',
+                           username='hongyul',
+                           password='Wdsfzyd106@') as sftp:
+        sftp.get_r(remote_path, local_path)
+
+def sftp_put(local_path, remote_path):
+    with pysftp.Connection('boston.lti.cs.cmu.edu',
+                           username='hongyul',
+                           password='Wdsfzyd106@') as sftp:
+        sftp.put(local_path, remote_path)
+
+def sftp_put_d(local_path, remote_path):
+    with pysftp.Connection('boston.lti.cs.cmu.edu',
+                           username='hongyul',
+                           password='Wdsfzyd106@') as sftp:
+        sftp.put_d(local_path, remote_path)
+
+def sftp_put_r(local_path, remote_path):
+    with pysftp.Connection('boston.lti.cs.cmu.edu',
+                           username='hongyul',
+                           password='Wdsfzyd106@') as sftp:
+        sftp.put_r(local_path, remote_path)
+
+
 if __name__ == '__main__':
-    print edit_distance('this is a house', 'this is not a house')
+    #print edit_distance('this is a house', 'this is not a house')
+    #sftp_get("/home/hongyul/Python-2.7.11.tgz", "/Users/Hongyu1/Desktop/Python.tgz")
+    #sftp_get_r("/home/hongyul/query", "/Users/Hongyu1/Desktop")
+    sftp_put("/Users/Hongyu1/Desktop/Python.tgz", "/home/hongyul/haha.tgz")
