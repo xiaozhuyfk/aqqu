@@ -7,9 +7,9 @@ Elmar Haussmann <haussmann@cs.uni-freiburg.de>
 
 """
 
-import requests
 import subprocess
 import operator
+import sys
 from query_translator.util import readFile, writeFile
 from collections import Counter
 
@@ -162,9 +162,9 @@ def fetch_relation_bow(relation_name):
     return bow
 
 
-def main():
-    for relation in relations:
-        fetch_relation_bow(relation)
+def main(argv):
+    print argv
+    fetch_relation_bow(argv[0])
 
 if __name__ == "__main__":
     #print output_bow(fetch_query_bow("../query/query_parameter.txt"), "dummy")
@@ -172,4 +172,4 @@ if __name__ == "__main__":
     #print fetch_bow("../query/query_parameter.txt")
     #fetch_relation_bow("discovery_technique")
     #print fetch_documents("testresult/query/discovery_technique.log")
-    main()
+    main(sys.argv[1:])

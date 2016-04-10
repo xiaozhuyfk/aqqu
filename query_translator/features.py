@@ -261,6 +261,7 @@ class FeatureExtractor(object):
         else:
             edge = "http://rdf.freebase.com/ns/" + relation_name
             file_name = relation_name.replace(".", "_") + ".log"
+            queries = []
 
             PAIR_QUERY_FORMAT = '''
                 SELECT ?e1 ?e2 where {
@@ -274,6 +275,36 @@ class FeatureExtractor(object):
                     fb:%s fb:type.object.name ?0 .
                 }
             '''
+
+            QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
+
+            # construct search engine queries
+            result = backend.query_json(PAIR_QUERY_FORMAT % edge)
+            for pair in result:
+                e1 = pair[0]
+                e2 = pair[1]
+
+                if (not e1.startswith("m.")):
+                    continue
+
+                e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0][0].encode('utf-8')
+                e1_paren = e1_name.find("(")
+                if (e1_paren != -1):
+                        e1_name = e1_name[:e1_paren]
+
+                if (e2.startswith("m.")):
+                    e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0][0].encode('utf-8')
+                    e2_paren = e2_name.find("(")
+                    if (e2_paren != -1):
+                        e2_name = e2_name[:e2_paren]
+                else:
+                    e2_name = e2
+
+                query = QUERY_FORMAT % (e1_name, e2_name)
+                queries.append(query)
+
+            # retrieve BOW
+
 
 
 
