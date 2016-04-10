@@ -66,7 +66,9 @@ def main():
     globals.read_configuration(args.config)
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
+    print args
 
+    '''
     for edge in edges:
         edge_name = edge.split(".")[-1]
         target_file = result_file + edge_name + ".log"
@@ -98,7 +100,7 @@ def main():
                 writeFile(target_file, content, 'a')
             except:
                 continue
-
+'''
 
 if __name__ == "__main__":
     main()
