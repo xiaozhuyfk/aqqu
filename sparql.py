@@ -59,6 +59,7 @@ def main():
     parser.add_argument("ranker_name",
                         default = "WQ_Ranker",
                         help = "The ranker to use.")
+    parser.add_argument("relation_name")
     parser.add_argument("--config",
                         default = "config.cfg",
                         help = "The configuration file to use.")
