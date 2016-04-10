@@ -23,11 +23,12 @@ logger = logging.getLogger(__name__)
 
 result_file = "testresult/dump/"
 edges = [
-    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique",
-    "http://rdf.freebase.com/ns/interests.collection_category.name_of_collection_activity",
-    "http://rdf.freebase.com/ns/computer.programming_language_paradigm.languages",
-    "http://rdf.freebase.com/ns/book.literary_series.works_in_this_series"
+    #"http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique",
+    #"http://rdf.freebase.com/ns/interests.collection_category.name_of_collection_activity",
+    #"http://rdf.freebase.com/ns/computer.programming_language_paradigm.languages",
+    #"http://rdf.freebase.com/ns/book.literary_series.works_in_this_series"
     #"http://rdf.freebase.com/ns/common.topic.alias"
+    "http://rdf.freebase.com/ns/projects.project.actual_completion_date"
 ]
 
 PAIR_QUERY_FORMAT = '''
