@@ -67,6 +67,10 @@ def main():
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
 
+    result = backend.query_json(RELATION_QUERY_FORMAT)
+    print result
+
+    '''
     for edge in edges:
         edge_name = edge.split(".")[-1]
         target_file = result_file + edge_name + ".log"
@@ -78,7 +82,6 @@ def main():
 
         result = backend.query_json(RELATION_QUERY_FORMAT)
         print result
-        '''
         result = backend.query_json(PAIR_QUERY_FORMAT % edge)
         for pair in result:
             e1 = pair[0]
