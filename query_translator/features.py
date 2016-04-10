@@ -247,7 +247,7 @@ class FeatureExtractor(object):
 
         # extract relation wiki bow score
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
-        extract_kl_rel_feature(candidate)
+        self.extract_kl_rel_feature(candidate)
 
         return features
 
