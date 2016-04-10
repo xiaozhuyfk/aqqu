@@ -23,10 +23,10 @@ logger = logging.getLogger(__name__)
 
 result_file = "testresult/dump/"
 edges = [
-    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique",
-    "http://rdf.freebase.com/ns/interests.collection_category.name_of_collection_activity",
-    "http://rdf.freebase.com/ns/computer.programming_language_paradigm.languages",
-    "http://rdf.freebase.com/ns/book.literary_series.works_in_this_series"
+    "astronomy.astronomical_discovery.discovery_technique"
+    #"http://rdf.freebase.com/ns/interests.collection_category.name_of_collection_activity",
+    #"http://rdf.freebase.com/ns/computer.programming_language_paradigm.languages",
+    #"http://rdf.freebase.com/ns/book.literary_series.works_in_this_series"
     #"http://rdf.freebase.com/ns/common.topic.alias"
 ]
 
@@ -67,10 +67,6 @@ def main():
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
 
-    result = backend.query_json(RELATION_QUERY_FORMAT)
-    print result
-
-    '''
     for edge in edges:
         edge_name = edge.split(".")[-1]
         target_file = result_file + edge_name + ".log"
@@ -80,9 +76,9 @@ def main():
 
         edge_rel = FreebaseDumpParserC.DiscardPrefix(edge)
 
-        result = backend.query_json(RELATION_QUERY_FORMAT)
-        print result
         result = backend.query_json(PAIR_QUERY_FORMAT % edge)
+        print result
+        '''
         for pair in result:
             e1 = pair[0]
             e2 = pair[1]
