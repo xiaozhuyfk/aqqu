@@ -405,6 +405,12 @@ def sftp_put_r(local_path, remote_path):
                            password='Wdsfzyd106@') as sftp:
         sftp.put_r(local_path, remote_path)
 
+def sftp_execute(command):
+    with pysftp.Connection('boston.lti.cs.cmu.edu',
+                           username='hongyul',
+                           password='Wdsfzyd106@') as sftp:
+        sftp.execute(command)
+
 
 if __name__ == '__main__':
     #print edit_distance('this is a house', 'this is not a house')

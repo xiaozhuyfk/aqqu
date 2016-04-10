@@ -12,6 +12,7 @@ import operator
 import sys
 from query_translator.util import readFile, writeFile
 from collections import Counter
+import random
 
 
 index = "/bos/tmp6/indexes/ClueWeb12_B13_index/"
@@ -143,7 +144,13 @@ def fetch_relation_bow(relation_name):
     query_content = readFile(query_file_path)
     count = 1
     query = ""
-    for line in query_content.split("\n"):
+
+    lines = query_content.split("\n")
+
+    if (len(lines) > 150):
+        lines = random.sample(lines, 150)
+
+    for line in lines:
         if (line == ""):
             continue
         query += QUERY_FORMAT % (count, line)
@@ -163,8 +170,8 @@ def fetch_relation_bow(relation_name):
 
 
 def main(argv):
-    print argv
     #fetch_relation_bow(argv[0])
+    print argv
 
 if __name__ == "__main__":
     #print output_bow(fetch_query_bow("../query/query_parameter.txt"), "dummy")

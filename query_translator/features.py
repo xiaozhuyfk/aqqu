@@ -11,6 +11,8 @@ from query_candidate import QueryCandidate
 from collections import defaultdict
 import math
 from wikiAPI import Wiki
+from util import writeFile
+from util import sftp_put, sftp_execute
 
 N_GRAM_STOPWORDS = {'be', 'do', '?', 'the', 'of', 'is', 'are', 'in', 'was',
                     'did', 'does', 'a', 'for', 'have', 'there', 'on', 'has',
@@ -256,12 +258,19 @@ class FeatureExtractor(object):
         relation_name = relation.name
         backend = candidate.sparql_backend
 
+        aws_dump_dir = "/research/backup/aqqu/testresult/dump/"
+        aws_query_dir = "/research/backup/aqqu/testresult/query/"
+        aws_bow_dir = "/research/backup/aqqu/testresult/bow/"
+        boston_dump_dir = "/home/hongyul/aqqu/testresult/dump/"
+        boston_query_dir = "/home/hongyul/aqqu/testresult/query/"
+        boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
+
         if (relation_name in rel_bow):
             bow = rel_bow[relation_name]
         else:
             edge = "http://rdf.freebase.com/ns/" + relation_name
-            file_name = relation_name.replace(".", "_") + ".log"
-            queries = []
+            rel = relation_name.replace(".", "_")
+            dump_file = aws_dump_dir + rel + ".log"
 
             PAIR_QUERY_FORMAT = '''
                 SELECT ?e1 ?e2 where {
@@ -279,6 +288,8 @@ class FeatureExtractor(object):
             QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
 
             # construct search engine queries
+            writeFile(dump_file, "", "w")
+
             result = backend.query_json(PAIR_QUERY_FORMAT % edge)
             for pair in result:
                 e1 = pair[0]
@@ -300,11 +311,13 @@ class FeatureExtractor(object):
                 else:
                     e2_name = e2
 
-                query = QUERY_FORMAT % (e1_name, e2_name)
-                queries.append(query)
+                query = QUERY_FORMAT % (e1_name, e2_name) + "\n"
+                writeFile(dump_file, query, "a")
 
             # retrieve BOW
-
+            boston_dump_file = boston_dump_dir + rel + ".log"
+            sftp_put(dump_file, boston_dump_file)
+            sftp_execute("/home/hongyul/init_env/python /home/hongyul/aqqu/indri.py " + rel)
 
 
 
