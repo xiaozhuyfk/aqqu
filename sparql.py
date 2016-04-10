@@ -43,6 +43,12 @@ SELECT DISTINCT ?0 where {
 }
 '''
 
+RELATION_QUERY_FORMAT = '''
+SELECT ?e1 ?r ?e2 where {
+    ?e1 ?r ?e2.
+}
+'''
+
 QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
 
 
@@ -70,6 +76,9 @@ def main():
 
         edge_rel = FreebaseDumpParserC.DiscardPrefix(edge)
 
+        result = backend.query_json(RELATION_QUERY_FORMAT)
+        print result
+        '''
         result = backend.query_json(PAIR_QUERY_FORMAT % edge)
         for pair in result:
             e1 = pair[0]
@@ -92,6 +101,7 @@ def main():
                 writeFile(target_file, content, 'a')
             except:
                 continue
+        '''
 
 
 if __name__ == "__main__":
