@@ -11,8 +11,8 @@ from query_candidate import QueryCandidate
 from collections import defaultdict
 import math
 from wikiAPI import Wiki
-from util import writeFile
-from util import sftp_put, sftp_execute
+from util import writeFile, readFile
+from util import sftp_put, sftp_execute, sftp_get
 
 N_GRAM_STOPWORDS = {'be', 'do', '?', 'the', 'of', 'is', 'are', 'in', 'was',
                     'did', 'does', 'a', 'for', 'have', 'there', 'on', 'has',
@@ -318,6 +318,11 @@ class FeatureExtractor(object):
             boston_dump_file = boston_dump_dir + rel + ".log"
             sftp_put(dump_file, boston_dump_file)
             sftp_execute("/home/hongyul/init_env/python /home/hongyul/aqqu/indri.py " + rel)
+
+            # fetch bow file
+            boston_bow_file = boston_bow_dir + rel + ".log"
+            aws_bow_file = aws_bow_dir + rel + ".log"
+            sftp_get(boston_bow_file, aws_bow_file)
 
 
 

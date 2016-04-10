@@ -103,7 +103,9 @@ def test():
             print 'read [%d] obj' %(cnt)
 
         for vCol in lvCol:
-            print vCol[1]
+            e1 = vCol[0]
+            e1 = Parser.DiscardPrefix(e1)
+            print e1
     '''
         for edge in edges:
             edge_name = edge.split(".")[-1]
