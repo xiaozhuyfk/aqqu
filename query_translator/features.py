@@ -19,7 +19,7 @@ N_GRAM_STOPWORDS = {'be', 'do', '?', 'the', 'of', 'is', 'are', 'in', 'was',
 
 mid_bow = {}
 
-rel_candidate_bow = {}
+rel_bow = {}
 
 
 def get_n_grams(tokens, n=2):
@@ -254,7 +254,29 @@ class FeatureExtractor(object):
     def extract_kl_rel_feature(self, candidate):
         relation = candidate.relations[-1]
         relation_name = relation.name
-        print relation_name
+        backend = candidate.sparql_backend
+
+        if (relation_name in rel_bow):
+            bow = rel_bow[relation_name]
+        else:
+            edge = "http://rdf.freebase.com/ns/" + relation_name
+            file_name = relation_name.replace(".", "_") + ".log"
+
+            PAIR_QUERY_FORMAT = '''
+                SELECT ?e1 ?e2 where {
+                    ?e1 <%s> ?e2.
+                }
+            '''
+
+            ENTITY_NAME_FORMAT = '''
+                PREFIX fb: <http://rdf.freebase.com/ns/>
+                SELECT DISTINCT ?0 where {
+                    fb:%s fb:type.object.name ?0 .
+                }
+            '''
+
+
+
 
     def extract_wiki_rel_feature(self, candidate):
         # extract relation wiki bow score

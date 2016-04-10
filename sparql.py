@@ -59,7 +59,6 @@ def main():
     parser.add_argument("ranker_name",
                         default = "WQ_Ranker",
                         help = "The ranker to use.")
-    parser.add_argument("relation_name")
     parser.add_argument("--config",
                         default = "config.cfg",
                         help = "The configuration file to use.")
@@ -67,9 +66,7 @@ def main():
     globals.read_configuration(args.config)
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
-    print args
 
-    '''
     for edge in edges:
         edge_name = edge.split(".")[-1]
         target_file = result_file + edge_name + ".log"
@@ -83,8 +80,11 @@ def main():
         for pair in result:
             e1 = pair[0]
             e2 = pair[1]
+            print e1, e2
             #content = e1 + "\t" + e2 + "\n"
             #writeFile(target_file, content, 'a')
+
+            '''
             try:
                 e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0][0].encode('utf-8')
                 e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0][0].encode('utf-8')
@@ -101,7 +101,7 @@ def main():
                 writeFile(target_file, content, 'a')
             except:
                 continue
-'''
+            '''
 
 if __name__ == "__main__":
     main()
