@@ -46,7 +46,7 @@ SELECT DISTINCT ?0 where {
 RELATION_QUERY_FORMAT = '''
 SELECT ?r where {
     ?e1 ?r ?e2.
-} LIMIT 300
+} LIMIT 20000
 '''
 
 QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
