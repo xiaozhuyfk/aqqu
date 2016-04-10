@@ -246,6 +246,18 @@ class FeatureExtractor(object):
 
 
         # extract relation wiki bow score
+        #features["relation_bow"] = extract_wiki_rel_feature(candidate)
+        extract_kl_rel_feature(candidate)
+
+        return features
+
+    def extract_kl_rel_feature(self, candidate):
+        relation = candidate.relations[-1]
+        relation_name = relation.name
+        print relation_name
+
+    def extract_wiki_rel_feature(self, candidate):
+        # extract relation wiki bow score
         wiki = Wiki()
         relation = candidate.relations[0]
         relation_tokens = relation.name.split(".")
@@ -267,11 +279,9 @@ class FeatureExtractor(object):
                 else:
                     score += 1.0 / (total + 1.0)
 
-            features["relation_bow"] = score
+            return score
         else:
-            features["relation_bow"] = 0
-
-        return features
+            return 0
 
     def extract_ngram_features(self, candidate):
         """Extract ngram features from the single candidate.
