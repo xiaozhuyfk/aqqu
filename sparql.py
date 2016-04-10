@@ -23,10 +23,10 @@ logger = logging.getLogger(__name__)
 
 result_file = "testresult/dump/"
 edges = [
-    "astronomy.astronomical_discovery.discovery_technique"
-    #"http://rdf.freebase.com/ns/interests.collection_category.name_of_collection_activity",
-    #"http://rdf.freebase.com/ns/computer.programming_language_paradigm.languages",
-    #"http://rdf.freebase.com/ns/book.literary_series.works_in_this_series"
+    "http://rdf.freebase.com/ns/astronomy.astronomical_discovery.discovery_technique",
+    "http://rdf.freebase.com/ns/interests.collection_category.name_of_collection_activity",
+    "http://rdf.freebase.com/ns/computer.programming_language_paradigm.languages",
+    "http://rdf.freebase.com/ns/book.literary_series.works_in_this_series"
     #"http://rdf.freebase.com/ns/common.topic.alias"
 ]
 
@@ -75,10 +75,8 @@ def main():
         print "Finding pairs for relation: " + edge_name
 
         edge_rel = FreebaseDumpParserC.DiscardPrefix(edge)
-
         result = backend.query_json(PAIR_QUERY_FORMAT % edge)
-        print result
-        '''
+
         for pair in result:
             e1 = pair[0]
             e2 = pair[1]
@@ -100,7 +98,6 @@ def main():
                 writeFile(target_file, content, 'a')
             except:
                 continue
-        '''
 
 
 if __name__ == "__main__":
