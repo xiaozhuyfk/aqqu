@@ -45,7 +45,7 @@ SELECT DISTINCT ?0 where {
 
 RELATION_QUERY_FORMAT = '''
 SELECT ?r where {
-    e1 ?r e2.
+    ?e1 ?r ?e2.
 }
 '''
 
