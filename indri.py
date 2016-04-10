@@ -164,7 +164,7 @@ def fetch_relation_bow(relation_name):
 
 def main(argv):
     print argv
-    fetch_relation_bow(argv[0])
+    #fetch_relation_bow(argv[0])
 
 if __name__ == "__main__":
     #print output_bow(fetch_query_bow("../query/query_parameter.txt"), "dummy")
