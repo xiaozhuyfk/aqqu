@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-python indri.py $1
+../init_env/bin/python indri.py $1

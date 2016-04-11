@@ -171,10 +171,18 @@ def fetch_relation_bow(relation_name):
 import os
 
 def main(argv):
-    #fetch_relation_bow(argv[0])
-    #writeFile(argv[0] + ".txt", argv[0], "w")
-    #print argv
+    index = int(argv[0])
     files = os.listdir("/home/hongyul/aqqu/testresult/dump")
+    size = len(files) / 8.0
+
+    if (size == 0):
+        size = 1
+
+    if (index == 7):
+        files = files[index*size:]
+    else:
+        files = files[index*size:(index+1)*size]
+
     for filename in files:
         if (not filename.endswith(".log")):
             continue
