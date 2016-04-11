@@ -42,9 +42,9 @@ def main():
         for vCol in lvCol:
             e1 = vCol[0]
             e1 = Parser.DiscardPrefix(e1).decode('utf-8')
-            edge = vCol[1]
+            edge = vCol[1].decode('utf-8')
             e2 = Parser.DiscardPrefix(vCol[2]).decode('utf-8')
-            if e1.startswith("m."):
+            if e1.startswith("m.") and edge.startswith("<http://rdf.freebase.com"):
                 at_index = e2.find("@")
                 url_index = e2.find("^")
 
@@ -55,7 +55,9 @@ def main():
                 elif (url_index != -1):
                     e2 = e2[:url_index]
 
-                print edge
+                relation_name = Parser.DiscardPrefix(edge)
+
+                print edge, relation_name
 
 
 if __name__ == "__main__":
