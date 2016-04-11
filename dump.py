@@ -4,13 +4,14 @@ import globals
 from query_translator.util import writeFile
 from query_translator.FreebaseDumpParser import FreebaseDumpParserC
 from query_translator.FreebaseDumpReader import FreebaseDumpReaderC
+from query_translator.util import sftp_get, sftp_put, sftp_execute
 
 
 
-aws_raw_dir = "/research/backup/aqqu/testresult/raw/"
-aws_dump_dir = "/research/backup/aqqu/testresult/dump/"
-aws_query_dir = "/research/backup/aqqu/testresult/query/"
-aws_bow_dir = "/research/backup/aqqu/testresult/bow/"
+aws_raw_dir = "/data/raw/"
+aws_dump_dir = "/data/dump/"
+aws_query_dir = "/data/query/"
+aws_bow_dir = "/data/bow/"
 boston_dump_dir = "/home/hongyul/aqqu/testresult/dump/"
 boston_query_dir = "/home/hongyul/aqqu/testresult/query/"
 boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
@@ -38,8 +39,11 @@ SELECT ?r where {
 QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
 
 def process(backend, reader, Parser):
+    print "Processing dump file..."
+
     # process all triples and extract relation pairs and queries
     relations = set()
+    filenames = set()
     for cnt,lvCol in enumerate(reader):
         if 0 == (cnt % 1000):
             print 'read [%d] obj' %(cnt)
@@ -85,19 +89,30 @@ def process(backend, reader, Parser):
 
                 aws_raw_file = aws_raw_dir + rel + ".log"
                 aws_dump_file = aws_dump_dir + rel + ".log"
-                print e1, e2
-                print e1_name, e2_name
-                '''
+
                 if (edge not in relations):
                     writeFile(aws_raw_file, "", "w")
                     writeFile(aws_dump_file, "", "w")
                     relations.add(edge)
+                    filenames.add(rel)
+
                 pair = e1 + "\t" + e2 + "\n"
                 query = QUERY_FORMAT % (e1_name, e2_name) + "\n"
 
                 writeFile(aws_raw_file, pair, "a")
                 writeFile(aws_dump_file, query, "a")
-                '''
+    print "Done processing dump file."
+    return (relations, filenames)
+
+def run_indri(filenames):
+    print "Start fetching BOW with indri."
+
+    for rel in filenames:
+        aws_dump_file = aws_dump_dir + rel + ".log"
+        boston_dump_file = boston_dump_dir + rel + ".log"
+        sftp_put(aws_dump_file, boston_dump_file)
+        sftp_execute("/home/hongyul/init_env/python /home/hongyul/aqqu/indri.py " + rel)
+
 
 
 def main():
@@ -120,7 +135,7 @@ def main():
     reader.open(file)
     Parser = FreebaseDumpParserC()
 
-    process(backend, reader, Parser)
+    relations, filenames = process(backend, reader, Parser)
 
 
 
