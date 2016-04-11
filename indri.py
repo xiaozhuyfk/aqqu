@@ -34,9 +34,9 @@ QUERY_FORMAT = '''
     </query>
 '''
 
-pair_dir = "testresult/dump/"
-query_dir = "testresult/query/"
-bow_dir = "testresult/bow/"
+pair_dir = "/home/hongyul/aqqu/testresult/dump/"
+query_dir = "/home/hongyul/aqqu/testresult/query/"
+bow_dir = "/home/hongyul/aqqu/testresult/bow/"
 
 internals = {}
 vectors = {}
