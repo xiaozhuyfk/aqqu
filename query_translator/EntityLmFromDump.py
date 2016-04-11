@@ -104,9 +104,9 @@ def test():
 
         for vCol in lvCol:
             e1 = vCol[0]
-            e1 = Parser.DiscardPrefix(e1).encode('utf-8')
-            r = Parser.DiscardPrefix(vCol[1]).encode('utf-8')
-            e2 = Parser.DiscardPrefix(vCol[2]).encode('utf-8')
+            e1 = str(Parser.DiscardPrefix(e1)).encode('utf-8')
+            r = str(Parser.DiscardPrefix(vCol[1])).encode('utf-8')
+            e2 = str(Parser.DiscardPrefix(vCol[2])).encode('utf-8')
             if e1.startswith("m."):
                 print r, e2
 
