@@ -81,15 +81,19 @@ def main():
                 elif (url_index != -1):
                     e2 = e2[:url_index]
 
-                e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)
-                print e1, e1_name
-                e1_name = e1_name[0][0].encode("utf-8")
+                e1_result = backend.query_json(ENTITY_NAME_FORMAT % e1)
+                if (e1_result == []):
+                    continue
+                e1_name = e1_result[0][0].encode("utf-8")
                 e1_paren = e1_name.find("(")
                 if (e1_paren != -1):
                         e1_name = e1_name[:e1_paren]
 
                 if (e2.startswith("m.")):
-                    e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0][0].encode('utf-8')
+                    e2_result = backend.query_json(ENTITY_NAME_FORMAT % e2)
+                    if (e2_result == []):
+                        continue
+                    e2_name = e2_result[0][0].encode("utf-8")
                     e2_paren = e2_name.find("(")
                     if (e2_paren != -1):
                         e2_name = e2_name[:e2_paren]
