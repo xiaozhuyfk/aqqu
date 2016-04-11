@@ -172,6 +172,7 @@ def fetch_relation_bow(relation_name):
 def main(argv):
     #fetch_relation_bow(argv[0])
     writeFile(argv[0], argv[0], "w")
+    print argv
 
 if __name__ == "__main__":
     #print output_bow(fetch_query_bow("../query/query_parameter.txt"), "dummy")
