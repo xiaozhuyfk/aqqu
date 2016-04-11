@@ -416,4 +416,5 @@ if __name__ == '__main__':
     #print edit_distance('this is a house', 'this is not a house')
     #sftp_get("/home/hongyul/Python-2.7.11.tgz", "/Users/Hongyu1/Desktop/Python.tgz")
     #sftp_get_r("/home/hongyul/query", "/Users/Hongyu1/Desktop")
-    sftp_put("/Users/Hongyu1/Desktop/Python.tgz", "/home/hongyul/haha.tgz")
+    #sftp_put("/Users/Hongyu1/Desktop/Python.tgz", "/home/hongyul/haha.tgz")
+    sftp_execute("/home/hongyul/init_env/python /home/hongyul/aqqu/indri.py haha")
