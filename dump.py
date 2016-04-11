@@ -7,12 +7,14 @@ from query_translator.FreebaseDumpReader import FreebaseDumpReaderC
 
 
 
+aws_raw_dir = "/research/backup/aqqu/testresult/raw/"
 aws_dump_dir = "/research/backup/aqqu/testresult/dump/"
 aws_query_dir = "/research/backup/aqqu/testresult/query/"
 aws_bow_dir = "/research/backup/aqqu/testresult/bow/"
 boston_dump_dir = "/home/hongyul/aqqu/testresult/dump/"
 boston_query_dir = "/home/hongyul/aqqu/testresult/query/"
 boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
+
 
 PAIR_QUERY_FORMAT = '''
         SELECT ?e1 ?e2 where {
@@ -79,7 +81,9 @@ def main():
                 elif (url_index != -1):
                     e2 = e2[:url_index]
 
-                e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0][0].encode('utf-8')
+                e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)
+                print e1, e1_name
+                e1_name = e1_name[0][0].encode("utf-8")
                 e1_paren = e1_name.find("(")
                 if (e1_paren != -1):
                         e1_name = e1_name[:e1_paren]
