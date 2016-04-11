@@ -421,7 +421,7 @@ import os
 
 def get_filenames():
     path = "/data/dumps.txt"
-    for filename in os.listdir("../testresult/dump"):
+    for filename in os.listdir("/data/dump"):
         content = filename + "\n"
         writeFile(path, filename, "a")
 
