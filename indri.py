@@ -82,6 +82,7 @@ def dumpindex_get_document_vector(internal):
     return vector
 
 def indri_run_query(query_file):
+    print "IndriRunQuery", query_file
     cmd = ["IndriRunQuery", query_file]
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr = subprocess.PIPE)
     out, err = p.communicate()
