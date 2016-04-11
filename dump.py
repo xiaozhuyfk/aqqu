@@ -50,9 +50,9 @@ def process(backend, reader, Parser):
 
         for vCol in lvCol:
             e1 = vCol[0]
-            e1 = Parser.DiscardPrefix(e1).decode('utf-8')
+            e1 = Parser.DiscardPrefix(e1).encode('utf-8', 'ignore')
             edge = vCol[1].decode('utf-8')
-            e2 = Parser.DiscardPrefix(vCol[2]).decode('utf-8')
+            e2 = Parser.DiscardPrefix(vCol[2]).encode('utf-8', 'ignore')
             if e1.startswith("m.") and edge.startswith("<http://rdf.freebase.com"):
                 at_index = e2.find("@")
                 url_index = e2.find("^")
@@ -67,7 +67,7 @@ def process(backend, reader, Parser):
                 e1_result = backend.query_json(ENTITY_NAME_FORMAT % e1)
                 if (e1_result == []):
                     continue
-                e1_name = e1_result[0][0].decode("utf-8")
+                e1_name = e1_result[0][0].encode("utf-8", 'ignore')
                 e1_paren = e1_name.find("(")
                 if (e1_paren != -1):
                         e1_name = e1_name[:e1_paren]
@@ -76,12 +76,12 @@ def process(backend, reader, Parser):
                     e2_result = backend.query_json(ENTITY_NAME_FORMAT % e2)
                     if (e2_result == []):
                         continue
-                    e2_name = e2_result[0][0].decode("utf-8")
+                    e2_name = e2_result[0][0].encode("utf-8", 'ignore')
                     e2_paren = e2_name.find("(")
                     if (e2_paren != -1):
                         e2_name = e2_name[:e2_paren]
                 else:
-                    e2_name = e2.decode('utf-8')
+                    e2_name = e2.encode('utf-8', 'ignore')
 
 
                 relation_name = Parser.DiscardPrefix(edge)
