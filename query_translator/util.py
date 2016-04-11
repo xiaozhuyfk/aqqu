@@ -420,7 +420,7 @@ def sftp_listdir(remote_path):
 import os
 
 def get_filenames():
-    path = "../dumps.txt"
+    path = "/data/dumps.txt"
     for filename in os.listdir("../testresult/dump"):
         content = filename + "\n"
         writeFile(path, filename, "a")
