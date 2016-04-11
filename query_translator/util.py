@@ -417,6 +417,14 @@ def sftp_listdir(remote_path):
                            password='Wdsfzyd106@') as sftp:
         return sftp.listdir(remote_path)
 
+import os
+
+def get_filenames():
+    path = "../dumps.txt"
+    for filename in os.listdir("../testresult/dump"):
+        content = filename + "\n"
+        writeFile(path, filename, "a")
+
 
 if __name__ == '__main__':
     #print edit_distance('this is a house', 'this is not a house')
@@ -424,4 +432,5 @@ if __name__ == '__main__':
     #sftp_get_r("/home/hongyul/query", "/Users/Hongyu1/Desktop")
     #sftp_put("/Users/Hongyu1/Desktop/Python.tgz", "/home/hongyul/haha.tgz")
     #print sftp_execute("../init_env/bin/python indri.py name_of_collection_activity")
-    print sftp_listdir("/home/hongyul/")
+    #print sftp_listdir("/home/hongyul/")
+    get_filenames()
