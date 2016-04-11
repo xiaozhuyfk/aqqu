@@ -148,15 +148,15 @@ def fetch_relation_bow(relation_name):
 
     lines = query_content.split("\n")
 
-    if (len(lines) > 150):
-        lines = random.sample(lines, 150)
+    if (len(lines) > 30):
+        lines = random.sample(lines, 30)
 
     for line in lines:
         if (line == ""):
             continue
         query += QUERY_FORMAT % (count, line)
         count += 1
-        if (count > 150):
+        if (count > 30):
             break
 
 
