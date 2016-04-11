@@ -433,4 +433,5 @@ if __name__ == '__main__':
     #sftp_put("/Users/Hongyu1/Desktop/Python.tgz", "/home/hongyul/haha.tgz")
     #print sftp_execute("../init_env/bin/python indri.py name_of_collection_activity")
     #print sftp_listdir("/home/hongyul/")
-    get_filenames()
+    #get_filenames()
+    sftp_put("/data/dump.tar.gz", "/home/hongyul/aqqu/testresult/dump")
