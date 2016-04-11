@@ -105,8 +105,11 @@ def test():
         for vCol in lvCol:
             e1 = vCol[0]
             e1 = Parser.DiscardPrefix(e1)
+            r = Parser.DiscardPrefix(vCol[1])
+            e2 = Parser.DiscardPrefix(vCol[2])
             if e1.startswith("m."):
-                print e1
+                print r, e2
+
     '''
         for edge in edges:
             edge_name = edge.split(".")[-1]
