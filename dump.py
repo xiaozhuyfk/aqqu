@@ -37,31 +37,10 @@ SELECT ?r where {
 
 QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
 
-
-def main():
-    import argparse
-    parser = argparse.ArgumentParser(description = "Console based translation.")
-    parser.add_argument("ranker_name",
-                        default = "WQ_Ranker",
-                        help = "The ranker to use.")
-    parser.add_argument("--config",
-                        default = "config.cfg",
-                        help = "The configuration file to use.")
-    args = parser.parse_args()
-    globals.read_configuration(args.config)
-    config_params = globals.config
-    backend = globals.get_sparql_backend(config_params)
-
-
-    file = "/data/freebase-rdf-latest.gz"
-    reader = FreebaseDumpReaderC()
-    reader.open(file)
-    Parser = FreebaseDumpParserC()
-
+def process(backend, reader, Parser):
+    # process all triples and extract relation pairs and queries
     relations = set()
-
     for cnt,lvCol in enumerate(reader):
-
         if 0 == (cnt % 1000):
             print 'read [%d] obj' %(cnt)
 
@@ -104,15 +83,44 @@ def main():
                 relation_name = Parser.DiscardPrefix(edge)
                 rel = relation_name.replace(".", "_")
 
+                aws_raw_file = aws_raw_dir + rel + ".log"
                 aws_dump_file = aws_dump_dir + rel + ".log"
+                print e1, e2
                 print e1_name, e2_name
-
                 '''
                 if (edge not in relations):
+                    writeFile(aws_raw_file, "", "w")
                     writeFile(aws_dump_file, "", "w")
                     relations.add(edge)
-                query = QUERY_FORMAT % (e1, e2)
+                pair = e1 + "\t" + e2 + "\n"
+                query = QUERY_FORMAT % (e1_name, e2_name) + "\n"
+
+                writeFile(aws_raw_file, pair, "a")
+                writeFile(aws_dump_file, query, "a")
                 '''
+
+
+def main():
+    import argparse
+    parser = argparse.ArgumentParser(description = "Console based translation.")
+    parser.add_argument("ranker_name",
+                        default = "WQ_Ranker",
+                        help = "The ranker to use.")
+    parser.add_argument("--config",
+                        default = "config.cfg",
+                        help = "The configuration file to use.")
+    args = parser.parse_args()
+    globals.read_configuration(args.config)
+    config_params = globals.config
+    backend = globals.get_sparql_backend(config_params)
+
+
+    file = "/data/freebase-rdf-latest.gz"
+    reader = FreebaseDumpReaderC()
+    reader.open(file)
+    Parser = FreebaseDumpParserC()
+
+    process(backend, reader, Parser)
 
 
 
