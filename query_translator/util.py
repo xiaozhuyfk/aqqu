@@ -423,7 +423,7 @@ def get_filenames():
     path = "/data/dumps.txt"
     for filename in os.listdir("/data/dump"):
         content = filename + "\n"
-        writeFile(path, filename, "a")
+        writeFile(path, content, "a")
 
 
 if __name__ == '__main__':
