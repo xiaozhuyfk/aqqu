@@ -50,9 +50,9 @@ def process(backend, reader, Parser):
 
         for vCol in lvCol:
             e1 = vCol[0]
-            e1 = Parser.DiscardPrefix(e1).encode('utf-8', 'ignore')
+            e1 = Parser.DiscardPrefix(e1).decode('utf-8', 'ignore')
             edge = vCol[1].decode('utf-8')
-            e2 = Parser.DiscardPrefix(vCol[2]).encode('utf-8', 'ignore')
+            e2 = Parser.DiscardPrefix(vCol[2]).decode('utf-8', 'ignore')
             if e1.startswith("m.") and edge.startswith("<http://rdf.freebase.com"):
                 at_index = e2.find("@")
                 url_index = e2.find("^")
