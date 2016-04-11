@@ -168,11 +168,18 @@ def fetch_relation_bow(relation_name):
 
     return bow
 
+import os
 
 def main(argv):
-    fetch_relation_bow(argv[0])
+    #fetch_relation_bow(argv[0])
     #writeFile(argv[0] + ".txt", argv[0], "w")
     #print argv
+    files = os.listdir("/home/hongyul/aqqu/testresult/dump")
+    for filename in files:
+        if (not filename.endswith(".log")):
+            continue
+        relation_name = filename[:-4]
+        fetch_relation_bow(relation_name)
 
 if __name__ == "__main__":
     #print output_bow(fetch_query_bow("../query/query_parameter.txt"), "dummy")
