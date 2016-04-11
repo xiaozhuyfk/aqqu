@@ -14,8 +14,30 @@ boston_dump_dir = "/home/hongyul/aqqu/testresult/dump/"
 boston_query_dir = "/home/hongyul/aqqu/testresult/query/"
 boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
 
+PAIR_QUERY_FORMAT = '''
+        SELECT ?e1 ?e2 where {
+            ?e1 <%s> ?e2.
+        }
+    '''
+
+ENTITY_NAME_FORMAT = '''
+PREFIX fb: <http://rdf.freebase.com/ns/>
+SELECT DISTINCT ?0 where {
+    fb:%s fb:type.object.name ?0 .
+}
+'''
+
+RELATION_QUERY_FORMAT = '''
+SELECT ?r where {
+    ?e1 ?r ?e2.
+} LIMIT 20000
+'''
+
+QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
+
 
 def main():
+    '''
     import argparse
     parser = argparse.ArgumentParser(description = "Console based translation.")
     parser.add_argument("ranker_name",
@@ -28,11 +50,14 @@ def main():
     globals.read_configuration(args.config)
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
+    '''
 
     file = "/data/freebase-rdf-latest.gz"
     reader = FreebaseDumpReaderC()
     reader.open(file)
     Parser = FreebaseDumpParserC()
+
+    relations = set()
 
     for cnt,lvCol in enumerate(reader):
 
@@ -56,8 +81,20 @@ def main():
                     e2 = e2[:url_index]
 
                 relation_name = Parser.DiscardPrefix(edge)
+                rel = relation_name.replace(".", "_")
 
-                print edge, relation_name
+                aws_dump_file = aws_dump_dir + rel + ".log"
+                print e1, e2
+
+                '''
+                if (edge not in relations):
+                    writeFile(aws_dump_file, "", "w")
+                    relations.add(edge)
+                query = QUERY_FORMAT % (e1, e2)
+                '''
+
+
+
 
 
 if __name__ == "__main__":
