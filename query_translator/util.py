@@ -370,43 +370,43 @@ def writeFile(filename, contents, mode = "wt"):
 import pysftp
 
 def sftp_get(remote_path, local_path):
-    with pysftp.Connection('boston.lti.cs.cmu.edu',
+    with pysftp.Connection('boston-cluster.lti.cs.cmu.edu',
                            username='hongyul',
                            password='Wdsfzyd106@') as sftp:
         sftp.get(remotepath = remote_path, localpath = local_path)
 
 def sftp_get_d(remote_path, local_path):
-    with pysftp.Connection('boston.lti.cs.cmu.edu',
+    with pysftp.Connection('boston-cluster.lti.cs.cmu.edu',
                            username='hongyul',
                            password='Wdsfzyd106@') as sftp:
         sftp.get_d(remote_path, local_path)
 
 def sftp_get_r(remote_path, local_path):
-    with pysftp.Connection('boston.lti.cs.cmu.edu',
+    with pysftp.Connection('boston-cluster.lti.cs.cmu.edu',
                            username='hongyul',
                            password='Wdsfzyd106@') as sftp:
         sftp.get_r(remote_path, local_path)
 
 def sftp_put(local_path, remote_path):
-    with pysftp.Connection('boston.lti.cs.cmu.edu',
+    with pysftp.Connection('boston-cluster.lti.cs.cmu.edu',
                            username='hongyul',
                            password='Wdsfzyd106@') as sftp:
         sftp.put(local_path, remote_path)
 
 def sftp_put_d(local_path, remote_path):
-    with pysftp.Connection('boston.lti.cs.cmu.edu',
+    with pysftp.Connection('boston-cluster.lti.cs.cmu.edu',
                            username='hongyul',
                            password='Wdsfzyd106@') as sftp:
         sftp.put_d(local_path, remote_path)
 
 def sftp_put_r(local_path, remote_path):
-    with pysftp.Connection('boston.lti.cs.cmu.edu',
+    with pysftp.Connection('boston-cluster.lti.cs.cmu.edu',
                            username='hongyul',
                            password='Wdsfzyd106@') as sftp:
         sftp.put_r(local_path, remote_path)
 
 def sftp_execute(command):
-    with pysftp.Connection('boston.lti.cs.cmu.edu',
+    with pysftp.Connection('boston-cluster.lti.cs.cmu.edu',
                            username='hongyul',
                            password='Wdsfzyd106@') as sftp:
         sftp.execute(command)
