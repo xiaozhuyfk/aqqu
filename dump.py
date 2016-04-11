@@ -111,7 +111,7 @@ def run_indri(filenames):
         aws_dump_file = aws_dump_dir + rel + ".log"
         boston_dump_file = boston_dump_dir + rel + ".log"
         sftp_put(aws_dump_file, boston_dump_file)
-        sftp_execute("/home/hongyul/init_env/python /home/hongyul/aqqu/indri.py " + rel)
+        sftp_execute("../init_env/python indri.py " + rel)
 
 
 

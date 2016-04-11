@@ -409,8 +409,7 @@ def sftp_execute(command):
     with pysftp.Connection('boston-cluster.lti.cs.cmu.edu',
                            username='hongyul',
                            password='Wdsfzyd106@') as sftp:
-        with sftp.cd("/home/hongyul/aqqu"):
-            sftp.execute(command)
+        sftp.execute("cd aqqu; " + command)
 
 
 if __name__ == '__main__':
@@ -418,4 +417,4 @@ if __name__ == '__main__':
     #sftp_get("/home/hongyul/Python-2.7.11.tgz", "/Users/Hongyu1/Desktop/Python.tgz")
     #sftp_get_r("/home/hongyul/query", "/Users/Hongyu1/Desktop")
     #sftp_put("/Users/Hongyu1/Desktop/Python.tgz", "/home/hongyul/haha.tgz")
-    print sftp_execute("../init_env/python indri.py haha")
+    print sftp_execute("ls")
