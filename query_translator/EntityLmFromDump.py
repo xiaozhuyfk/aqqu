@@ -108,7 +108,17 @@ def test():
             r = Parser.DiscardPrefix(vCol[1]).decode('utf-8')
             e2 = Parser.DiscardPrefix(vCol[2]).decode('utf-8')
             if e1.startswith("m."):
-                print r, e2
+                at_index = e2.find("@")
+                url_index = e2.find("^")
+
+                if (at_index != -1 and url_index != -1):
+                    e2 = e2[:min(at_index, url_index)]
+                elif (at_index != -1):
+                    e2 = e2[:at_index]
+                elif (url_index != -1):
+                    e2 = e2[:url_index]
+
+                print e2
 
     '''
         for edge in edges:
