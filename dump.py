@@ -90,11 +90,13 @@ def process(backend, reader, Parser):
                 aws_raw_file = aws_raw_dir + rel + ".log"
                 aws_dump_file = aws_dump_dir + rel + ".log"
 
+                '''
                 if (edge not in relations):
                     writeFile(aws_raw_file, "", "w")
                     writeFile(aws_dump_file, "", "w")
                     relations.add(edge)
                     filenames.add(rel)
+                '''
 
                 pair = e1 + "\t" + e2 + "\n"
                 query = QUERY_FORMAT % (e1_name, e2_name) + "\n"
@@ -106,7 +108,7 @@ def process(backend, reader, Parser):
                     continue
 
     print "Done processing dump file."
-    return (relations, filenames)
+    #return (relations, filenames)
 
 def run_indri(filenames):
     print "Start fetching BOW with indri."
