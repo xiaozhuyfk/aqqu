@@ -19,7 +19,7 @@ boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
 
 PAIR_QUERY_FORMAT = '''
         SELECT ?e1 ?e2 where {
-            ?e1 <%s> ?e2.
+            ?e1 %s ?e2.
         }
     '''
 
@@ -99,8 +99,11 @@ def process(backend, reader, Parser):
                 pair = e1 + "\t" + e2 + "\n"
                 query = QUERY_FORMAT % (e1_name, e2_name) + "\n"
 
-                writeFile(aws_raw_file, pair, "a")
-                writeFile(aws_dump_file, query, "a")
+                try:
+                    writeFile(aws_raw_file, pair, "a")
+                    writeFile(aws_dump_file, query, "a")
+                except:
+                    print "Writing error:", e1, e2, e1_name, e2_name
     print "Done processing dump file."
     return (relations, filenames)
 
