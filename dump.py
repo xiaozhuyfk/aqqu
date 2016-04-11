@@ -37,7 +37,6 @@ QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
 
 
 def main():
-    '''
     import argparse
     parser = argparse.ArgumentParser(description = "Console based translation.")
     parser.add_argument("ranker_name",
@@ -50,7 +49,7 @@ def main():
     globals.read_configuration(args.config)
     config_params = globals.config
     backend = globals.get_sparql_backend(config_params)
-    '''
+
 
     file = "/data/freebase-rdf-latest.gz"
     reader = FreebaseDumpReaderC()
@@ -80,11 +79,25 @@ def main():
                 elif (url_index != -1):
                     e2 = e2[:url_index]
 
+                e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0][0].encode('utf-8')
+                e1_paren = e1_name.find("(")
+                if (e1_paren != -1):
+                        e1_name = e1_name[:e1_paren]
+
+                if (e2.startswith("m.")):
+                    e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0][0].encode('utf-8')
+                    e2_paren = e2_name.find("(")
+                    if (e2_paren != -1):
+                        e2_name = e2_name[:e2_paren]
+                else:
+                    e2_name = e2
+
+
                 relation_name = Parser.DiscardPrefix(edge)
                 rel = relation_name.replace(".", "_")
 
                 aws_dump_file = aws_dump_dir + rel + ".log"
-                print e1, e2
+                print e1_name, e2_name
 
                 '''
                 if (edge not in relations):
