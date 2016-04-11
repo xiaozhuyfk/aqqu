@@ -103,7 +103,8 @@ def process(backend, reader, Parser):
                     writeFile(aws_raw_file, pair, "a")
                     writeFile(aws_dump_file, query, "a")
                 except:
-                    print "Writing error:", e1, e2, e1_name, e2_name
+                    continue
+
     print "Done processing dump file."
     return (relations, filenames)
 
