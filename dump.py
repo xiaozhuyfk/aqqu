@@ -81,7 +81,7 @@ def process(backend, reader, Parser):
                     if (e2_paren != -1):
                         e2_name = e2_name[:e2_paren]
                 else:
-                    e2_name = e2
+                    e2_name = e2.encode('utf-8')
 
 
                 relation_name = Parser.DiscardPrefix(edge)

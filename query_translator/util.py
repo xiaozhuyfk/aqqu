@@ -418,3 +418,4 @@ if __name__ == '__main__':
     #sftp_get_r("/home/hongyul/query", "/Users/Hongyu1/Desktop")
     #sftp_put("/Users/Hongyu1/Desktop/Python.tgz", "/home/hongyul/haha.tgz")
     print sftp_execute("../init_env/bin/python indri.py name_of_collection_activity")
+    print 'haha'
