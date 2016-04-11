@@ -173,7 +173,7 @@ import os
 def main(argv):
     index = int(argv[0])
     files = os.listdir("/home/hongyul/aqqu/testresult/dump")
-    size = len(files) / 8.0
+    size = len(files) / 8
 
     if (size == 0):
         size = 1
