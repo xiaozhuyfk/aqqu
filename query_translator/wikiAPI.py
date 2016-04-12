@@ -115,7 +115,12 @@ class Wiki(object):
             "other",
             "ought",
             "our",
-            "ours"
+            "ours",
+            "the",
+            "to",
+            "s",
+            "that",
+            "this"
         ]
 
     def bag_of_words(self, entity):

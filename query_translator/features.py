@@ -393,7 +393,6 @@ class FeatureExtractor(object):
                 r_mid = result[0]
                 r_mid = "/" + r_mid.replace(".", "/")
 
-                print "Rmid: ", r_mid
                 if (r_mid in mid_bow):
                     bow += mid_bow[r_mid]
                 else:
@@ -409,13 +408,13 @@ class FeatureExtractor(object):
         source = candidate.root_node
         mid = source.entity.entity.id
         mid = "/" + mid.replace(".", "/")
-        print "Root mid: ", mid
 
         if (mid in mid_bow):
             bow += mid_bow[mid]
         else:
             new = wiki.bag_of_words(mid)[0]
             if (new == None):
+                print "Root mid %s has not bow." % mid
                 return 0.0
 
             mid_bow[mid] = new
@@ -425,10 +424,9 @@ class FeatureExtractor(object):
             for token in relation.name.split("."):
                 rels.add(token)
 
-        print rels
-
         size = len(rels)
         if (size == 0):
+            print "Rel size is 0."
             return 0.0
 
         for token in rels:
