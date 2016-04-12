@@ -116,8 +116,9 @@ class FeatureExtractor(object):
                 tokens = line.split(" ")
                 term = " ".join(tokens[:-1])
                 tf = int(tokens[-1])
-                counter[rel] = tf
+                counter[term] = tf
             bow[rel] = counter
+        print set(bow)
         return bow
 
 
