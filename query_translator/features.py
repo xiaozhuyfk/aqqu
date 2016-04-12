@@ -391,6 +391,8 @@ class FeatureExtractor(object):
         for result in results:
             if result[0].startswith("m."):
                 r_mid = result[0]
+                r_mid = "/" + r_mid.replace(".", "/")
+
                 print "Rmid: ", r_mid
                 if (r_mid in mid_bow):
                     bow += mid_bow[r_mid]
@@ -403,8 +405,10 @@ class FeatureExtractor(object):
             else:
                 print "Rel: ", result[0]
                 rels.add(result[0])
+
         source = candidate.root_node
         mid = source.entity.entity.id
+        mid = "/" + mid.replace(".", "/")
         print "Root mid: ", mid
 
         if (mid in mid_bow):
