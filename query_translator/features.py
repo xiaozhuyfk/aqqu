@@ -305,7 +305,7 @@ class FeatureExtractor(object):
                 p = (bow[token] + 1.0) / (total + 1.0)
             else:
                 p = 1.0 / (total + 1.0)
-            kl += q_inv * math.log(q_inv / p)
+            kl -= q_inv * math.log(p)
 
         """
         aws_dump_dir = "/research/backup/aqqu/testresult/dump/"
