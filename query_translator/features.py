@@ -99,6 +99,7 @@ class FeatureExtractor(object):
         self.relation_score_model = relation_score_model
         self.entity_features = entity_features
 
+        '''
         bow = {}
         bow_file_dir = "/research/backup/aqqu/testresult/bow/"
         for filename in os.listdir(bow_file_dir):
@@ -118,6 +119,8 @@ class FeatureExtractor(object):
             bow[rel] = counter
 
         self.relation_bow = bow
+        '''
+        self.relation_bow = {}
 
 
     def extract_features(self, candidate):
