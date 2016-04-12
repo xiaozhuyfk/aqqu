@@ -99,12 +99,14 @@ class FeatureExtractor(object):
         self.relation_score_model = relation_score_model
         self.entity_features = entity_features
 
-        '''
+        print "Extracting Relation BOWs..."
         bow = {}
         bow_file_dir = "/research/backup/aqqu/testresult/bow/"
         for filename in os.listdir(bow_file_dir):
             if (not filename.endswith(".log")):
                 continue
+
+            print "Processing realtion file: " + filename
             rel = filename[:-4]
 
             counter = Counter()
@@ -119,8 +121,6 @@ class FeatureExtractor(object):
             bow[rel] = counter
 
         self.relation_bow = bow
-        '''
-        self.relation_bow = {}
 
 
     def extract_features(self, candidate):
@@ -274,7 +274,7 @@ class FeatureExtractor(object):
 
         # extract relation wiki bow score
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
-        self.extract_kl_rel_feature(candidate)
+        features["relation_kl"] = self.extract_kl_rel_feature(candidate)
 
         return features
 
@@ -283,7 +283,7 @@ class FeatureExtractor(object):
         relation_name = relation.name
         query = candidate.query
         backend = candidate.sparql_backend
-        print [i.token for i in query.query_tokens]
+        tokens = [i.token for i in query.query_tokens]
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
@@ -292,7 +292,11 @@ class FeatureExtractor(object):
             #print ("Relation BOW of %s not found." % relation_name)
             return 0.0
 
-
+        kl = 0.0
+        total = sum(bow.values())
+        for token in tokens:
+            p = (bow[token] + 1.0) / (total + 1.0)
+            kl += math.log(p)
 
         """
         aws_dump_dir = "/research/backup/aqqu/testresult/dump/"
@@ -362,7 +366,7 @@ class FeatureExtractor(object):
             sftp_get(boston_bow_file, aws_bow_file)
         """
 
-
+        return kl
 
 
     def extract_wiki_rel_feature(self, candidate):
