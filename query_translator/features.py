@@ -276,7 +276,6 @@ class FeatureExtractor(object):
         # extract relation wiki bow score
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
         features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
-        print features["relation_wiki"]
 
         kl = self.extract_kl_rel_feature(candidate)
         if (kl > 0):
@@ -389,7 +388,7 @@ class FeatureExtractor(object):
         bow = Counter()
         rels = set()
 
-        for result in results:
+        for result in results[:5]:
             if result[0].startswith("m."):
                 r_mid = result[0]
                 r_mid = "/" + r_mid.replace(".", "/")
@@ -414,7 +413,7 @@ class FeatureExtractor(object):
         else:
             new, total = wiki.bag_of_words(mid)
             if (new == None):
-                print "Root mid %s has no bow." % mid
+                #print "Root mid %s has no bow." % mid
                 return 0.0
 
             mid_bow[mid] = new
