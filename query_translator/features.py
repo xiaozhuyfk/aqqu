@@ -274,7 +274,11 @@ class FeatureExtractor(object):
 
         # extract relation wiki bow score
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
-        features["relation_kl"] = self.extract_kl_rel_feature(candidate)
+        kl = self.extract_kl_rel_feature(candidate)
+        if (kl > 0):
+            features["relation_kl"] = kl
+        else:
+            features["relation_kl"] = 0.0
 
         return features
 
@@ -296,7 +300,10 @@ class FeatureExtractor(object):
         total = sum(bow.values())
         q_inv = 1.0 / len(tokens)
         for token in tokens:
-            p = (bow[token] + 1.0) / (total + 1.0)
+            if (token in bow):
+                p = (bow[token] + 1.0) / (total + 1.0)
+            else:
+                p = 1.0 / (total + 1.0)
             kl += q_inv * math.log(q_inv / p)
 
         """
