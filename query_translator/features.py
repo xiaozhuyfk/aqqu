@@ -294,9 +294,10 @@ class FeatureExtractor(object):
 
         kl = 0.0
         total = sum(bow.values())
+        q_inv = 1.0 / len(tokens)
         for token in tokens:
             p = (bow[token] + 1.0) / (total + 1.0)
-            kl += math.log(p)
+            kl += q_inv * math.log(q_inv / p)
 
         """
         aws_dump_dir = "/research/backup/aqqu/testresult/dump/"
