@@ -102,7 +102,7 @@ class FeatureExtractor(object):
 
     def init_relation_bow(self):
         bow = {}
-        bow_file_dir = "/research/backup/aqqu/testresult/bow"
+        bow_file_dir = "/research/backup/aqqu/testresult/bow/"
         for filename in os.listdir(bow_file_dir):
             if (not filename.endswith(".log")):
                 continue
