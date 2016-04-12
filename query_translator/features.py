@@ -118,7 +118,6 @@ class FeatureExtractor(object):
                 tf = int(tokens[-1])
                 counter[term] = tf
             bow[rel] = counter
-        print set(bow)
         return bow
 
 
