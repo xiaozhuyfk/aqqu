@@ -397,7 +397,7 @@ class FeatureExtractor(object):
                 if (r_mid in mid_bow):
                     bow += mid_bow[r_mid]
                 else:
-                    new = wiki.bag_of_words(r_mid)[0]
+                    new, total = wiki.bag_of_words(r_mid)
                     if (new == None):
                         continue
                     mid_bow[r_mid] = new
@@ -412,9 +412,9 @@ class FeatureExtractor(object):
         if (mid in mid_bow):
             bow += mid_bow[mid]
         else:
-            new = wiki.bag_of_words(mid)[0]
+            new, total = wiki.bag_of_words(mid)
             if (new == None):
-                print "Root mid %s has not bow." % mid
+                print "Root mid %s has no bow." % mid
                 return 0.0
 
             mid_bow[mid] = new
@@ -425,10 +425,6 @@ class FeatureExtractor(object):
                 rels.add(token)
 
         size = len(rels)
-        if (size == 0):
-            print "Rel size is 0."
-            return 0.0
-
         for token in rels:
             p = (bow[token] + 1.0) / (sum(bow.values()) + 1.0)
             score *= math.pow(p, 1.0 / size)
