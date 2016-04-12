@@ -51,8 +51,7 @@ relations = [
 def dumpindex(args):
     cmd = ['dumpindex', index]
     cmd.extend(args)
-    cmd_str = " ".join(cmd)
-    p = subprocess.Popen(cmd_str, stdout = subprocess.PIPE, stderr = subprocess.STDOUT, shell=True)
+    p = subprocess.Popen(cmd, stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
     out, err = p.communicate()
     return out
 
@@ -85,8 +84,7 @@ def dumpindex_get_document_vector(internal):
 def indri_run_query(query_file):
     print "IndriRunQuery", query_file
     cmd = ["IndriRunQuery", query_file]
-    cmd_str = " ".join(cmd)
-    p = subprocess.Popen(cmd_str, stdout = subprocess.PIPE, stderr = subprocess.STDOUT, shell=True)
+    p = subprocess.Popen(cmd, stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
     out, err = p.communicate()
     return out[:-1]
 

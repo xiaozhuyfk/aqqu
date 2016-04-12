@@ -13,6 +13,8 @@ import math
 from wikiAPI import Wiki
 from util import writeFile, readFile
 from util import sftp_put, sftp_execute, sftp_get
+import os
+from collections import Counter
 
 N_GRAM_STOPWORDS = {'be', 'do', '?', 'the', 'of', 'is', 'are', 'in', 'was',
                     'did', 'does', 'a', 'for', 'have', 'there', 'on', 'has',
@@ -96,6 +98,27 @@ class FeatureExtractor(object):
         # and the resulting score is added as an extracted feature.
         self.relation_score_model = relation_score_model
         self.entity_features = entity_features
+        self.relation_bow = self.init_relation_bow()
+
+    def init_relation_bow(self):
+        bow = {}
+        bow_file_dir = "/research/backup/aqqu/testresult/bow"
+        for filename in os.listdir(bow_file_dir):
+            if (not filename.endswith(".log")):
+                continue
+            rel = filename[:-4]
+
+            counter = Counter()
+            lines = readFile(bow_file_dir + filename).split("\n")
+            for line in lines:
+                if (line == ""):
+                    continue
+                tokens = line.split(" ")
+                term = " ".join(tokens[:-1])
+                tf = int(tokens[-1])
+                counter[rel] = tf
+            bow[rel] = counter
+        return bow
 
 
     def extract_features(self, candidate):
@@ -258,6 +281,20 @@ class FeatureExtractor(object):
         relation_name = relation.name
         backend = candidate.sparql_backend
 
+        rel = relation_name.replace(".", "_")
+        if (rel in self.relation_bow):
+            bow = self.relation_bow[rel]
+        else:
+            print ("Relation BOW of %s not found." % relation_name)
+            return 0.0
+
+        query = candidate.query
+        print query
+
+
+
+
+        """
         aws_dump_dir = "/research/backup/aqqu/testresult/dump/"
         aws_query_dir = "/research/backup/aqqu/testresult/query/"
         aws_bow_dir = "/research/backup/aqqu/testresult/bow/"
@@ -323,6 +360,7 @@ class FeatureExtractor(object):
             boston_bow_file = boston_bow_dir + rel + ".log"
             aws_bow_file = aws_bow_dir + rel + ".log"
             sftp_get(boston_bow_file, aws_bow_file)
+        """
 
 
 
