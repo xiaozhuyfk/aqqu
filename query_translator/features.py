@@ -98,9 +98,7 @@ class FeatureExtractor(object):
         # and the resulting score is added as an extracted feature.
         self.relation_score_model = relation_score_model
         self.entity_features = entity_features
-        self.relation_bow = self.init_relation_bow()
 
-    def init_relation_bow(self):
         bow = {}
         bow_file_dir = "/research/backup/aqqu/testresult/bow/"
         for filename in os.listdir(bow_file_dir):
@@ -118,7 +116,8 @@ class FeatureExtractor(object):
                 tf = int(tokens[-1])
                 counter[term] = tf
             bow[rel] = counter
-        return bow
+
+        self.relation_bow = bow
 
 
     def extract_features(self, candidate):
