@@ -289,7 +289,7 @@ class FeatureExtractor(object):
             return 0.0
 
         query = candidate.query
-        print query
+        print query.query_tokens
 
 
 
