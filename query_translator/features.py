@@ -25,6 +25,27 @@ mid_bow = {}
 
 rel_bow = {}
 
+print "Extracting Relation BOWs..."
+bow = {}
+bow_file_dir = "/research/backup/aqqu/testresult/bow/"
+for filename in os.listdir(bow_file_dir):
+    if (not filename.endswith(".log")):
+        continue
+
+    print "Processing realtion file: " + filename
+    rel = filename[:-4]
+
+    counter = Counter()
+    lines = readFile(bow_file_dir + filename).split("\n")
+    for line in lines:
+        if (line == ""):
+            continue
+        tokens = line.split(" ")
+        term = " ".join(tokens[:-1])
+        tf = int(tokens[-1])
+        counter[term] = tf
+    bow[rel] = counter
+
 
 def get_n_grams(tokens, n=2):
     """Return n-grams for the given text tokens.
@@ -99,26 +120,6 @@ class FeatureExtractor(object):
         self.relation_score_model = relation_score_model
         self.entity_features = entity_features
 
-        print "Extracting Relation BOWs..."
-        bow = {}
-        bow_file_dir = "/research/backup/aqqu/testresult/bow/"
-        for filename in os.listdir(bow_file_dir):
-            if (not filename.endswith(".log")):
-                continue
-
-            print "Processing realtion file: " + filename
-            rel = filename[:-4]
-
-            counter = Counter()
-            lines = readFile(bow_file_dir + filename).split("\n")
-            for line in lines:
-                if (line == ""):
-                    continue
-                tokens = line.split(" ")
-                term = " ".join(tokens[:-1])
-                tf = int(tokens[-1])
-                counter[term] = tf
-            bow[rel] = counter
 
         self.relation_bow = bow
 
