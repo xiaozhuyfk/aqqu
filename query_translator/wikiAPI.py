@@ -9,6 +9,7 @@ import urllib2
 import nltk
 import requests
 from bs4 import BeautifulSoup
+from collections import Counter
 
 
 class Wiki(object):
@@ -144,7 +145,7 @@ class Wiki(object):
                 continue
             normal.append(stem)
 
-        bow = {}
+        bow = Counter()
         total = len(normal)
         for stem in normal:
             if (stem in bow):

@@ -275,7 +275,7 @@ class FeatureExtractor(object):
 
         # extract relation wiki bow score
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
-        self.extract_wiki_rel_feature(candidate)
+        features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
 
         kl = self.extract_kl_rel_feature(candidate)
         if (kl > 0):
@@ -383,14 +383,45 @@ class FeatureExtractor(object):
     def extract_wiki_rel_feature(self, candidate):
         # extract relation wiki bow score
         wiki = Wiki()
-        relation = candidate.relations[0]
+        results = candidate.get_result()
+        score = 1.0
+        bow = Counter()
+        rels = set()
+        for result in results:
+            if result[0].startswith("m."):
+                r_mid = result[0]
+                bow += mid_bow.get(r_mid, wiki.bag_of_words(r_mid)[0])
+            else:
+                rels.add(result[0])
+        source = candidate.root_node
+        mid = source.entity.entity.id
+        bow += mid_bow.get(mid, wiki.bag_of_words(mid)[0])
+
+        for relation in candidate.relations:
+            for token in relation.name.split("."):
+                rels.add(token)
+
+        size = len(rels)
+        if (size == 0):
+            return 0.0
+
+        for token in rels:
+            p = (bow[token] + 1.0) / (sum(bow.values()) + 1.0)
+            score *= math.pow(p, 1.0 / size)
+
+        '''
+        relation = candidate.relations[-1]
         relation_tokens = relation.name.split(".")
         source = relation.source_node
         mid = source.entity.entity.id
-        backend = candidate.sparql_backend
 
-        print candidate.get_result()
-        '''
+        results = candidate.get_result()
+        for result in results:
+            if len(result) == 2:
+                r_mid = result[0]
+            else:
+                pass
+
         if (mid in mid_bow):
             (bow, total) = mid_bow[mid]
         else:
@@ -410,6 +441,7 @@ class FeatureExtractor(object):
         else:
             return 0
         '''
+        return score
 
     def extract_ngram_features(self, candidate):
         """Extract ngram features from the single candidate.
