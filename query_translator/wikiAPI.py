@@ -179,13 +179,13 @@ class Wiki(object):
 
     def get_wiki_id(self, entity):
         bag = self.mqlRead(entity)
-        if bag:
-            if ("result" in bag and "key" in bag["result"] and "value" in bag["result"]["key"]):
-                return bag["result"]["key"]["value"]
-            else:
-                return None
-        else:
+        try:
+            id = bag["result"]["key"]["value"]
+        except:
             return None
+
+        return id
+
 
     def get_wiki_page(self, entity):
         entity = entity.encode('utf-8')

@@ -388,6 +388,7 @@ class FeatureExtractor(object):
         score = 1.0
         bow = Counter()
         rels = set()
+
         for result in results:
             if result[0].startswith("m."):
                 r_mid = result[0]
@@ -402,7 +403,6 @@ class FeatureExtractor(object):
                     mid_bow[r_mid] = new
                     bow += new
             else:
-                print "Rel: ", result[0]
                 rels.add(result[0])
 
         source = candidate.root_node
