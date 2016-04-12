@@ -32,7 +32,7 @@ for filename in os.listdir(bow_file_dir):
     if (not filename.endswith(".log")):
         continue
 
-    print "Processing realtion file: " + filename
+    print "Processing relation file: " + filename
     rel = filename[:-4]
 
     counter = Counter()
@@ -391,12 +391,31 @@ class FeatureExtractor(object):
         for result in results:
             if result[0].startswith("m."):
                 r_mid = result[0]
-                bow += mid_bow.get(r_mid, wiki.bag_of_words(r_mid)[0])
+                print "Rmid: ", r_mid
+                if (r_mid in mid_bow):
+                    bow += mid_bow[r_mid]
+                else:
+                    new = wiki.bag_of_words(r_mid)[0]
+                    if (new == None):
+                        continue
+                    mid_bow[r_mid] = new
+                    bow += new
             else:
+                print "Rel: ", result[0]
                 rels.add(result[0])
         source = candidate.root_node
         mid = source.entity.entity.id
-        bow += mid_bow.get(mid, wiki.bag_of_words(mid)[0])
+        print "Root mid: ", mid
+
+        if (mid in mid_bow):
+            bow += mid_bow[mid]
+        else:
+            new = wiki.bag_of_words(mid)[0]
+            if (new == None):
+                return 0.0
+
+            mid_bow[mid] = new
+            bow += new
 
         for relation in candidate.relations:
             for token in relation.name.split("."):
