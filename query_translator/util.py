@@ -420,8 +420,8 @@ def sftp_listdir(remote_path):
 import os
 
 def get_filenames():
-    path = "/data/dumps.txt"
-    for filename in os.listdir("/data/dump"):
+    path = "/home/hongyul/bow.txt"
+    for filename in os.listdir("/home/hongyul/aqqu/testresult/bow"):
         content = filename + "\n"
         writeFile(path, content, "a")
 
@@ -433,5 +433,5 @@ if __name__ == '__main__':
     #sftp_put("/Users/Hongyu1/Desktop/Python.tgz", "/home/hongyul/haha.tgz")
     #print sftp_execute("../init_env/bin/python indri.py name_of_collection_activity")
     #print sftp_listdir("/home/hongyul/")
-    #get_filenames()
-    sftp_put("/data/dump.tar.gz", "/home/hongyul/aqqu/testresult/dump")
+    get_filenames()
+    #sftp_put("/data/dump.tar.gz", "/home/hongyul/aqqu/testresult/dump")
