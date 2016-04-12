@@ -275,6 +275,8 @@ class FeatureExtractor(object):
 
         # extract relation wiki bow score
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
+        self.extract_wiki_rel_feature(candidate)
+
         kl = self.extract_kl_rel_feature(candidate)
         if (kl > 0):
             features["relation_kl"] = kl
@@ -385,7 +387,10 @@ class FeatureExtractor(object):
         relation_tokens = relation.name.split(".")
         source = relation.source_node
         mid = source.entity.entity.id
+        backend = candidate.sparql_backend
 
+        print candidate.get_result()
+        '''
         if (mid in mid_bow):
             (bow, total) = mid_bow[mid]
         else:
@@ -404,6 +409,7 @@ class FeatureExtractor(object):
             return score
         else:
             return 0
+        '''
 
     def extract_ngram_features(self, candidate):
         """Extract ngram features from the single candidate.
