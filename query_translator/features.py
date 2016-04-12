@@ -281,7 +281,9 @@ class FeatureExtractor(object):
     def extract_kl_rel_feature(self, candidate):
         relation = candidate.relations[-1]
         relation_name = relation.name
+        query = candidate.query
         backend = candidate.sparql_backend
+        print query.query_tokens
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
@@ -289,10 +291,6 @@ class FeatureExtractor(object):
         else:
             #print ("Relation BOW of %s not found." % relation_name)
             return 0.0
-
-        query = candidate.query
-        print query.query_tokens
-
 
 
 
