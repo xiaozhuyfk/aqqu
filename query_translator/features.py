@@ -285,7 +285,7 @@ class FeatureExtractor(object):
         if (rel in self.relation_bow):
             bow = self.relation_bow[rel]
         else:
-            print ("Relation BOW of %s not found." % relation_name)
+            #print ("Relation BOW of %s not found." % relation_name)
             return 0.0
 
         query = candidate.query
