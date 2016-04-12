@@ -283,7 +283,7 @@ class FeatureExtractor(object):
         relation_name = relation.name
         query = candidate.query
         backend = candidate.sparql_backend
-        print query.query_tokens
+        print [i.token for i in query.query_tokens]
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
