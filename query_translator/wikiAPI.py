@@ -197,4 +197,4 @@ class Wiki(object):
         return r.json()["query"]["pages"][str(id)]["revisions"][0]["*"]
 
 
-Wiki().bag_of_words("/m/011jq0qx")
+print Wiki().bag_of_words("/m/0c3qy")

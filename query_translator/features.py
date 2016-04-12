@@ -425,6 +425,8 @@ class FeatureExtractor(object):
             for token in relation.name.split("."):
                 rels.add(token)
 
+        print rels
+
         size = len(rels)
         if (size == 0):
             return 0.0
