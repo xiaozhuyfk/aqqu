@@ -12,4 +12,8 @@ virtuoso-opensource/
 .project
 .pydevproject
 *.so
+testresult/dump
+testresult/raw
+testresult/query
+testresult/bow
 
