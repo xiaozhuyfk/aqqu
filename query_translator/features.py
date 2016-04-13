@@ -25,6 +25,17 @@ mid_bow = {}
 
 rel_bow = {}
 
+relation_set = set()
+
+aws_raw_dir = "/data/raw/"
+aws_dump_dir = "/data/dump/"
+aws_query_dir = "/data/query/"
+aws_bow_dir = "/data/bow/"
+boston_dump_dir = "/home/hongyul/aqqu/testresult/dump/"
+boston_query_dir = "/home/hongyul/aqqu/testresult/query/"
+boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
+
+'''
 print "Extracting Relation BOWs..."
 bow = {}
 bow_file_dir = "/research/backup/aqqu/testresult/bow/"
@@ -45,6 +56,7 @@ for filename in os.listdir(bow_file_dir):
         tf = int(tokens[-1])
         counter[term] = tf
     bow[rel] = counter
+'''
 
 
 def get_n_grams(tokens, n=2):
@@ -274,16 +286,91 @@ class FeatureExtractor(object):
 
 
         # extract relation wiki bow score
-        #features["relation_bow"] = extract_wiki_rel_feature(candidate)
-        features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
+        self.extract_relations(candidate)
 
-        kl = self.extract_kl_rel_feature(candidate)
-        if (kl > 0):
-            features["relation_kl"] = kl
-        else:
-            features["relation_kl"] = 0.0
+        #features["relation_bow"] = extract_wiki_rel_feature(candidate)
+        #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
+
+        #kl = self.extract_kl_rel_feature(candidate)
+        #if (kl > 0):
+        #    features["relation_kl"] = kl
+        #else:
+        #    features["relation_kl"] = 0.0
 
         return features
+
+    def extract_relations(self, candidate):
+        backend = candidate.sparql_backend
+
+        for relation in candidate.relations:
+            relation_name = relation.name
+            rel = relation_name.replace(".", "_")
+            if (rel not in relation_set):
+                print "Processing relation: ", relation_name
+
+                relation_set.add(rel)
+                content = relation_name + "\n"
+                writeFile("/research/backup/aqqu/testresult/relations.log", content, "a")
+
+                edge = "http://rdf.freebase.com/ns/" + relation_name
+                aws_raw_file = aws_raw_dir + rel + ".log"
+                aws_dump_file = aws_dump_dir + rel + ".log"
+
+                PAIR_QUERY_FORMAT = '''
+                SELECT ?e1 ?e2 where {
+                    ?e1 <%s> ?e2.
+                }
+                '''
+
+                ENTITY_NAME_FORMAT = '''
+                PREFIX fb: <http://rdf.freebase.com/ns/>
+                SELECT DISTINCT ?0 where {
+                    fb:%s fb:type.object.name ?0 .
+                }
+                '''
+
+                QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
+
+                # construct search engine queries
+                writeFile(aws_raw_file, "", "w")
+                writeFile(aws_dump_file, "", "w")
+
+                result = backend.query_json(PAIR_QUERY_FORMAT % edge)
+                for pair in result:
+                    e1 = pair[0]
+                    e2 = pair[1]
+
+                    if (not e1.startswith("m.")):
+                        continue
+
+                    e1_result = backend.query_json(ENTITY_NAME_FORMAT % e1)
+                    if (e1_result == []):
+                        continue
+                    e1_name = e1_result[0][0].encode("utf-8", 'ignore')
+                    e1_paren = e1_name.find("(")
+                    if (e1_paren != -1):
+                        e1_name = e1_name[:e1_paren]
+
+                    if (e2.startswith("m.")):
+                        e2_result = backend.query_json(ENTITY_NAME_FORMAT % e2)
+                        if (e2_result == []):
+                            continue
+                        e2_name = e2_result[0][0].encode("utf-8", 'ignore')
+                        e2_paren = e2_name.find("(")
+                        if (e2_paren != -1):
+                            e2_name = e2_name[:e2_paren]
+                    else:
+                        e2_name = e2.encode('utf-8', 'ignore')
+
+                    pair = e1 + "\t" + e2 + "\n"
+                    query = QUERY_FORMAT % (e1_name, e2_name) + "\n"
+
+                    try:
+                        writeFile(aws_raw_file, pair, "a")
+                        writeFile(aws_dump_file, query, "a")
+                    except:
+                        continue
+
 
     def extract_kl_rel_feature(self, candidate):
         relation = candidate.relations[-1]

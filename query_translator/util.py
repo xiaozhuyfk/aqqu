@@ -419,9 +419,15 @@ def sftp_listdir(remote_path):
 
 import os
 
-def get_filenames():
+def get_bows():
     path = "/home/hongyul/bow.txt"
     for filename in os.listdir("/home/hongyul/aqqu/testresult/bow"):
+        content = filename + "\n"
+        writeFile(path, content, "a")
+
+def get_dumps():
+    path = "/data/dump.txt"
+    for filename in os.listdir("/data/dump"):
         content = filename + "\n"
         writeFile(path, content, "a")
 
