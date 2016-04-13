@@ -320,7 +320,7 @@ class FeatureExtractor(object):
                 PAIR_QUERY_FORMAT = '''
                 SELECT ?e1 ?e2 where {
                     ?e1 <%s> ?e2.
-                } LIMIT 2000
+                }
                 '''
 
                 ENTITY_NAME_FORMAT = '''
@@ -337,6 +337,10 @@ class FeatureExtractor(object):
                 writeFile(aws_dump_file, "", "w")
 
                 result = backend.query_json(PAIR_QUERY_FORMAT % edge)
+                if (result == None):
+                    writeFile("/research/backup/aqqu/testresult/relation_fail.log", relation_name + "\n", "a")
+                    continue
+
                 for pair in result:
                     e1 = pair[0]
                     e2 = pair[1]
@@ -345,7 +349,7 @@ class FeatureExtractor(object):
                         continue
 
                     e1_result = backend.query_json(ENTITY_NAME_FORMAT % e1)
-                    if (e1_result == []):
+                    if (e1_result == [] || e1_result == None):
                         continue
                     e1_name = e1_result[0][0].encode("utf-8", 'ignore')
                     e1_paren = e1_name.find("(")
@@ -354,7 +358,7 @@ class FeatureExtractor(object):
 
                     if (e2.startswith("m.")):
                         e2_result = backend.query_json(ENTITY_NAME_FORMAT % e2)
-                        if (e2_result == []):
+                        if (e2_result == [] || e2_result == None):
                             continue
                         e2_name = e2_result[0][0].encode("utf-8", 'ignore')
                         e2_paren = e2_name.find("(")
