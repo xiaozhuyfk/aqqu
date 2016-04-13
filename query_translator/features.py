@@ -320,7 +320,7 @@ class FeatureExtractor(object):
                 PAIR_QUERY_FORMAT = '''
                 SELECT ?e1 ?e2 where {
                     ?e1 <%s> ?e2.
-                }
+                } LIMIT 2097151
                 '''
 
                 ENTITY_NAME_FORMAT = '''
