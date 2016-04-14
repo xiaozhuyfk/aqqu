@@ -39,7 +39,11 @@ print "Extracting Relation BOWs..."
 bow = {}
 bow_file_dir = "/research/backup/aqqu/testresult/bow/"
 
-writeFile("/research/backup/aqqu/testresult/relations.log", "", "w")
+for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n"):
+    if (line == ""):
+        continue
+    relation_set.add(line)
+
 
 '''
 for filename in os.listdir(bow_file_dir):
@@ -308,10 +312,10 @@ class FeatureExtractor(object):
         for relation in candidate.relations:
             relation_name = relation.name
             rel = relation_name.replace(".", "_")
-            if (rel not in relation_set):
+            if (relation_name not in relation_set):
                 print "Processing relation: ", relation_name
 
-                relation_set.add(rel)
+                relation_set.add(relation_name)
                 content = relation_name + "\n"
                 writeFile("/research/backup/aqqu/testresult/relations.log", content, "a")
 
