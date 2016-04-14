@@ -39,6 +39,8 @@ print "Extracting Relation BOWs..."
 bow = {}
 bow_file_dir = "/research/backup/aqqu/testresult/bow/"
 
+writeFile("/research/backup/aqqu/testresult/relations.log", "", "w")
+
 '''
 for filename in os.listdir(bow_file_dir):
     if (not filename.endswith(".log")):
@@ -313,6 +315,7 @@ class FeatureExtractor(object):
                 content = relation_name + "\n"
                 writeFile("/research/backup/aqqu/testresult/relations.log", content, "a")
 
+                """
                 edge = "http://rdf.freebase.com/ns/" + relation_name
                 aws_raw_file = aws_raw_dir + rel + ".log"
                 aws_dump_file = aws_dump_dir + rel + ".log"
@@ -375,6 +378,7 @@ class FeatureExtractor(object):
                         writeFile(aws_dump_file, query, "a")
                     except:
                         continue
+                """
 
 
     def extract_kl_rel_feature(self, candidate):
