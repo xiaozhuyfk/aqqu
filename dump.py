@@ -20,7 +20,7 @@ boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
 
 PAIR_QUERY_FORMAT = '''
         SELECT ?e1 ?e2 where {
-            ?e1 %s ?e2.
+            ?e1 <%s> ?e2.
             FILTER (lang(?e1) = "en")
         } LIMIT 2000
     '''
@@ -42,7 +42,11 @@ QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
 
 
 def process_relations(backend, relations, size, index):
+    print "Processing relations for partition", index
+
     num = len(relations) / size
+    print "Processing %d relations" % num
+
     if (num == 0):
         num = 1
 
@@ -103,6 +107,7 @@ def process_relations(backend, relations, size, index):
                 writeFile(aws_dump_file, query, "a")
             except:
                 continue
+    print "Done processing for partition", index
 
 
 def process(backend, reader, Parser):
@@ -203,10 +208,10 @@ def main():
     backend = globals.get_sparql_backend(config_params)
 
 
-    file = "/data/freebase-rdf-latest.gz"
-    reader = FreebaseDumpReaderC()
-    reader.open(file)
-    Parser = FreebaseDumpParserC()
+    #file = "/data/freebase-rdf-latest.gz"
+    #reader = FreebaseDumpReaderC()
+    #reader.open(file)
+    #Parser = FreebaseDumpParserC()
 
     #relations, filenames = process(backend, reader, Parser)
 
