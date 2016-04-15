@@ -56,6 +56,8 @@ def process_relations(backend, relations, size, index):
         rels = relations[index*num:(index+1)*num]
 
     for relation_name in rels:
+        print relation_name
+
         if relation_name == "":
             continue
 
