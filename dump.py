@@ -218,13 +218,9 @@ def main():
     #relations, filenames = process(backend, reader, Parser)
 
 
-    #content = readFile("/research/backup/aqqu/testresult/relations.log")
-    #relations = content.split("\n")
-    #process_relations(backend, relations, 8, i)
-    print args.partition
-
-
-
+    content = readFile("/research/backup/aqqu/testresult/relations.log")
+    relations = content.split("\n")
+    process_relations(backend, relations, 8, args.partition)
 
 
 if __name__ == "__main__":
