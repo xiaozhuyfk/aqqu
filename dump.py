@@ -220,7 +220,7 @@ def main():
 
     content = readFile("/research/backup/aqqu/testresult/relations.log")
     relations = content.split("\n")
-    process_relations(backend, relations, 8, args.partition)
+    process_relations(backend, relations, 8, int(args.partition))
 
 
 if __name__ == "__main__":
