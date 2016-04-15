@@ -221,7 +221,7 @@ def main():
     #content = readFile("/research/backup/aqqu/testresult/relations.log")
     #relations = content.split("\n")
     #process_relations(backend, relations, 8, i)
-    print args[1]
+    print args.partition
 
 
 
