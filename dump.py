@@ -21,7 +21,6 @@ boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
 PAIR_QUERY_FORMAT = '''
         SELECT ?e1 ?e2 where {
             ?e1 <%s> ?e2.
-            FILTER (lang(?e1) = "en")
         } LIMIT 2000
     '''
 
