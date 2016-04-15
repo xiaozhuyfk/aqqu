@@ -55,3 +55,59 @@ output = /home/hongyul/condor/condor7.job.out
 log = /tmp/hongyul7.job.log
 error = /home/hongyul/condor/condor7.job.err
 queue
+
+executable = /home/hongyul/aqqu/condor.sh
+arguments = 8
+output = /home/hongyul/condor/condor8.job.out
+log = /tmp/hongyu8.job.log
+error = /home/hongyul/condor/condor8.job.err
+queue
+
+executable = /home/hongyul/aqqu/condor.sh
+arguments = 9
+output = /home/hongyul/condor/condor9.job.out
+log = /tmp/hongyul9.job.log
+error = /home/hongyul/condor/condor9.job.err
+queue
+
+executable = /home/hongyul/aqqu/condor.sh
+arguments = 10
+output = /home/hongyul/condor/condor10.job.out
+log = /tmp/hongyul10.job.log
+error = /home/hongyul/condor/condor10.job.err
+queue
+
+executable = /home/hongyul/aqqu/condor.sh
+arguments = 11
+output = /home/hongyul/condor/condor11.job.out
+log = /tmp/hongyul11.job.log
+error = /home/hongyul/condor/condor11.job.err
+queue
+
+executable = /home/hongyul/aqqu/condor.sh
+arguments = 12
+output = /home/hongyul/condor/condor12.job.out
+log = /tmp/hongyul12.job.log
+error = /home/hongyul/condor/condor12.job.err
+queue
+
+executable = /home/hongyul/aqqu/condor.sh
+arguments = 13
+output = /home/hongyul/condor/condor13.job.out
+log = /tmp/hongyul13.job.log
+error = /home/hongyul/condor/condor13.job.err
+queue
+
+executable = /home/hongyul/aqqu/condor.sh
+arguments = 14
+output = /home/hongyul/condor/condor14.job.out
+log = /tmp/hongyul14.job.log
+error = /home/hongyul/condor/condor14.job.err
+queue
+
+executable = /home/hongyul/aqqu/condor.sh
+arguments = 15
+output = /home/hongyul/condor/condor15.job.out
+log = /tmp/hongyul15.job.log
+error = /home/hongyul/condor/condor15.job.err
+queue
