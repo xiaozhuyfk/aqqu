@@ -199,6 +199,8 @@ def main():
     parser.add_argument("ranker_name",
                         default = "WQ_Ranker",
                         help = "The ranker to use.")
+    parser.add_argument("partition",
+                        default = 0)
     parser.add_argument("--config",
                         default = "config.cfg",
                         help = "The configuration file to use.")
@@ -216,10 +218,10 @@ def main():
     #relations, filenames = process(backend, reader, Parser)
 
 
-    content = readFile("/research/backup/aqqu/testresult/relations.log")
-    relations = content.split("\n")
-    for i in xrange(8):
-        thread.start_new_thread(process_relations, (backend, relations, 8, i))
+    #content = readFile("/research/backup/aqqu/testresult/relations.log")
+    #relations = content.split("\n")
+    #process_relations(backend, relations, 8, i)
+    print args[1]
 
 
 
