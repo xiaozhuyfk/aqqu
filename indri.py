@@ -148,15 +148,15 @@ def fetch_relation_bow(relation_name):
 
     lines = query_content.split("\n")
 
-    if (len(lines) > 30):
-        lines = random.sample(lines, 30)
+    if (len(lines) > 150):
+        lines = random.sample(lines, 150)
 
     for line in lines:
         if (line == ""):
             continue
         query += QUERY_FORMAT % (count, line)
         count += 1
-        if (count > 30):
+        if (count > 150):
             break
 
 
@@ -173,7 +173,7 @@ import os
 
 def main(argv):
     index = int(argv[0])
-    files = os.listdir("/home/hongyul/aqqu/testresult/dump")
+    files = os.listdir("/home/hongyul/aqqu/testresult/dumpaqqu")
     size = len(files) / 8
 
     if (size == 0):
