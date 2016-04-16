@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-cd /home/hongyul/aqqu; /home/hongyul/init_env/bin/python indri.py $1
+cd /home/hongyul/aqqu; ../init_env/bin/python indri.py $1
