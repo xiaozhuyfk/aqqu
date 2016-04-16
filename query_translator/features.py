@@ -37,15 +37,17 @@ boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
 
 print "Extracting Relation BOWs..."
 bow = {}
-bow_file_dir = "/research/backup/aqqu/testresult/bow/"
+bow_file_dir = "/research/backup/aqqu/testresult/bowaqqu/"
+#bow_file_dir = "/research/backup/aqqu/testresult/bow/"
 
+"""
 for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n"):
     if (line == ""):
         continue
     relation_set.add(line)
+"""
 
-
-'''
+writeFile("/research/backup/aqqu/testresult/relation_fail.log", "", "w")
 for filename in os.listdir(bow_file_dir):
     if (not filename.endswith(".log")):
         continue
@@ -63,7 +65,7 @@ for filename in os.listdir(bow_file_dir):
         tf = int(tokens[-1])
         counter[term] = tf
     bow[rel] = counter
-'''
+
 
 
 def get_n_grams(tokens, n=2):
@@ -293,16 +295,16 @@ class FeatureExtractor(object):
 
 
         # extract relation wiki bow score
-        self.extract_relations(candidate)
+        #self.extract_relations(candidate)
 
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
         #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
 
-        #kl = self.extract_kl_rel_feature(candidate)
-        #if (kl > 0):
-        #    features["relation_kl"] = kl
-        #else:
-        #    features["relation_kl"] = 0.0
+        kl = self.extract_kl_rel_feature(candidate)
+        if (kl > 0):
+            features["relation_kl"] = kl
+        else:
+            features["relation_kl"] = 0.0
 
         return features
 
@@ -389,14 +391,13 @@ class FeatureExtractor(object):
         relation = candidate.relations[-1]
         relation_name = relation.name
         query = candidate.query
-        backend = candidate.sparql_backend
         tokens = [i.token for i in query.query_tokens]
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
             bow = self.relation_bow[rel]
         else:
-            #print ("Relation BOW of %s not found." % relation_name)
+            writeFile("/research/backup/aqqu/testresult/relation_fail.lgo", "Relation BOW of %s not found." % relation_name, "a")
             return 0.0
 
         kl = 0.0
