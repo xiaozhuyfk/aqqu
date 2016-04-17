@@ -47,7 +47,6 @@ for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n
     relation_set.add(line)
 """
 
-'''
 writeFile("/research/backup/aqqu/testresult/relation_fail.log", "", "w")
 for filename in os.listdir(bow_file_dir):
     if (not filename.endswith(".log")):
@@ -66,7 +65,6 @@ for filename in os.listdir(bow_file_dir):
         tf = int(tokens[-1])
         counter[term] = tf
     bow[rel] = counter
-'''
 
 
 def get_n_grams(tokens, n=2):
@@ -301,13 +299,8 @@ class FeatureExtractor(object):
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
         #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
 
-        '''
         kl = self.extract_kl_rel_feature(candidate)
-        if (kl > 0):
-            features["relation_kl"] = kl
-        else:
-            features["relation_kl"] = 0.0
-        '''
+        features["relation_kl"] = kl
 
         return features
 
