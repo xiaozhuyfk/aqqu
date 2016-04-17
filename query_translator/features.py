@@ -300,11 +300,13 @@ class FeatureExtractor(object):
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
         #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
 
+        '''
         kl = self.extract_kl_rel_feature(candidate)
         if (kl > 0):
             features["relation_kl"] = kl
         else:
             features["relation_kl"] = 0.0
+        '''
 
         return features
 
