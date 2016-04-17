@@ -47,6 +47,7 @@ for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n
     relation_set.add(line)
 """
 
+'''
 writeFile("/research/backup/aqqu/testresult/relation_fail.log", "", "w")
 for filename in os.listdir(bow_file_dir):
     if (not filename.endswith(".log")):
@@ -65,7 +66,7 @@ for filename in os.listdir(bow_file_dir):
         tf = int(tokens[-1])
         counter[term] = tf
     bow[rel] = counter
-
+'''
 
 
 def get_n_grams(tokens, n=2):
