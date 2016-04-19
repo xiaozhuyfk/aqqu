@@ -154,11 +154,9 @@ def process(backend, reader, Parser):
                         e2_name = e2_name[:e2_paren]
                 else:
                     e2_name = e2.encode('utf-8', 'ignore')
-
-
-                relation_name = Parser.DiscardPrefix(edge)
                 '''
 
+                relation_name = Parser.DiscardPrefix(edge)
                 rel = relation_name.replace(".", "_")
                 aws_raw_file = aws_raw_dir + rel + ".log"
                 #aws_dump_file = aws_dump_dir + rel + ".log"
