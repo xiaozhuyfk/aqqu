@@ -115,8 +115,6 @@ def process(backend, reader, Parser):
     print "Processing dump file..."
 
     # process all triples and extract relation pairs and queries
-    relations = set()
-    filenames = set()
     for cnt,lvCol in enumerate(reader):
         if 0 == (cnt % 1000):
             print 'read [%d] obj' %(cnt)
@@ -137,6 +135,7 @@ def process(backend, reader, Parser):
                 elif (url_index != -1):
                     e2 = e2[:url_index]
 
+                '''
                 e1_result = backend.query_json(ENTITY_NAME_FORMAT % e1)
                 if (e1_result == []):
                     continue
@@ -159,9 +158,10 @@ def process(backend, reader, Parser):
 
                 relation_name = Parser.DiscardPrefix(edge)
                 rel = relation_name.replace(".", "_")
+                '''
 
                 aws_raw_file = aws_raw_dir + rel + ".log"
-                aws_dump_file = aws_dump_dir + rel + ".log"
+                #aws_dump_file = aws_dump_dir + rel + ".log"
 
                 '''
                 if (edge not in relations):
@@ -172,11 +172,11 @@ def process(backend, reader, Parser):
                 '''
 
                 pair = e1 + "\t" + e2 + "\n"
-                query = QUERY_FORMAT % (e1_name, e2_name) + "\n"
+                #query = QUERY_FORMAT % (e1_name, e2_name) + "\n"
 
                 try:
                     writeFile(aws_raw_file, pair, "a")
-                    writeFile(aws_dump_file, query, "a")
+                    #writeFile(aws_dump_file, query, "a")
                 except:
                     continue
 
@@ -211,17 +211,17 @@ def main():
     backend = globals.get_sparql_backend(config_params)
 
 
-    #file = "/data/freebase-rdf-latest.gz"
-    #reader = FreebaseDumpReaderC()
-    #reader.open(file)
-    #Parser = FreebaseDumpParserC()
+    file = "/data/freebase-rdf-latest.gz"
+    reader = FreebaseDumpReaderC()
+    reader.open(file)
+    Parser = FreebaseDumpParserC()
 
-    #relations, filenames = process(backend, reader, Parser)
+    process(backend, reader, Parser)
 
 
-    content = readFile("/research/backup/aqqu/testresult/relations.log")
-    relations = content.split("\n")
-    process_relations(backend, relations, 8, int(args.partition))
+    #content = readFile("/research/backup/aqqu/testresult/relations.log")
+    #relations = content.split("\n")
+    #process_relations(backend, relations, 8, int(args.partition))
 
 
 if __name__ == "__main__":
