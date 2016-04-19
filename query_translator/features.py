@@ -393,7 +393,7 @@ class FeatureExtractor(object):
         if (rel in self.relation_bow):
             bow = self.relation_bow[rel]
         else:
-            writeFile("/research/backup/aqqu/testresult/relation_fail.lgo", "Relation BOW of %s not found." % relation_name, "a")
+            writeFile("/research/backup/aqqu/testresult/relation_fail.log", "Relation BOW of %s not found." % relation_name, "a")
             return 0.0
 
         kl = 0.0
