@@ -157,9 +157,9 @@ def process(backend, reader, Parser):
 
 
                 relation_name = Parser.DiscardPrefix(edge)
-                rel = relation_name.replace(".", "_")
                 '''
 
+                rel = relation_name.replace(".", "_")
                 aws_raw_file = aws_raw_dir + rel + ".log"
                 #aws_dump_file = aws_dump_dir + rel + ".log"
 
