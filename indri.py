@@ -117,7 +117,7 @@ def fetch_documents(query_file):
         documents.append(internal)
     return documents
 
-def fetch_query_bow(query_file):
+def fetch_query_bow(query_file, queries):
     print "Fetching BOW for query " + query_file
 
     documents = fetch_documents(query_file)
@@ -138,6 +138,8 @@ def output_bow(bow, filename):
         content = term + " " + str(tf) + "\n"
         writeFile(path, content, "a")
 
+def process_query(query):
+    pass
 
 def fetch_relation_bow(relation_name):
     print "Fetching BOW for relation: " + relation_name
@@ -148,6 +150,7 @@ def fetch_relation_bow(relation_name):
     query = ""
 
     lines = query_content.split("\n")
+    print len(lines)
 
     if (len(lines) > 100):
         lines = random.sample(lines, 100)
@@ -165,7 +168,7 @@ def fetch_relation_bow(relation_name):
     parameter_path = query_dir + relation_name + ".log"
     #writeFile(parameter_path, parameter, "w")
 
-    bow = fetch_query_bow(parameter_path)
+    bow = fetch_query_bow(parameter_path, lines)
     #output_bow(bow, relation_name)
 
     return bow
