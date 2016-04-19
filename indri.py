@@ -197,4 +197,5 @@ if __name__ == "__main__":
     #print fetch_bow("../query/query_parameter.txt")
     #fetch_relation_bow("discovery_technique")
     #print fetch_documents("testresult/query/discovery_technique.log")
-    main(sys.argv[1:])
+    #main(sys.argv[1:])
+    fetch_relation_bow("astronomy_astronomical_discovery_discovery_technique")
