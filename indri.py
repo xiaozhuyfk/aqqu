@@ -109,7 +109,7 @@ def fetch_documents(query_file):
         return []
 
     documents = []
-    print len(trec.split("\n"))
+    print trec
     for line in trec.split("\n"):
         tokens = line.split(" ")
         external = tokens[2]
