@@ -125,15 +125,16 @@ def process(backend, reader, Parser):
             edge = vCol[1].decode('utf-8')
             e2 = Parser.DiscardPrefix(vCol[2]).decode('utf-8', 'ignore')
             if e1.startswith("m.") and edge.startswith("<http://rdf.freebase.com"):
+                '''
                 at_index = e2.find("@")
                 url_index = e2.find("^")
-
                 if (at_index != -1 and url_index != -1):
                     e2 = e2[:min(at_index, url_index)]
                 elif (at_index != -1):
                     e2 = e2[:at_index]
                 elif (url_index != -1):
                     e2 = e2[:url_index]
+                '''
 
                 '''
                 e1_result = backend.query_json(ENTITY_NAME_FORMAT % e1)
