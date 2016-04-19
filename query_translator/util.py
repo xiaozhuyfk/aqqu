@@ -431,6 +431,16 @@ def get_dumps():
         content = filename + "\n"
         writeFile(path, content, "a")
 
+def test():
+    d = set()
+    for line in readFile("../testresult/relation_fail.log").split("\n"):
+        if line == "":
+            continue
+        if line not in d:
+            d.add(line)
+    print d
+    print len(d)
+
 
 if __name__ == '__main__':
     #print edit_distance('this is a house', 'this is not a house')
@@ -439,5 +449,6 @@ if __name__ == '__main__':
     #sftp_put("/Users/Hongyu1/Desktop/Python.tgz", "/home/hongyul/haha.tgz")
     #print sftp_execute("../init_env/bin/python indri.py name_of_collection_activity")
     #print sftp_listdir("/home/hongyul/")
-    get_filenames()
+    #get_filenames()
     #sftp_put("/data/dump.tar.gz", "/home/hongyul/aqqu/testresult/dump")
+    test()

@@ -37,8 +37,8 @@ boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
 
 print "Extracting Relation BOWs..."
 bow = {}
-#bow_file_dir = "/research/backup/aqqu/testresult/bowaqqu/"
-bow_file_dir = "/research/backup/aqqu/testresult/bow/"
+bow_file_dir = "/research/backup/aqqu/testresult/bowaqqu/"
+#bow_file_dir = "/research/backup/aqqu/testresult/bow/"
 
 """
 for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n"):
@@ -48,6 +48,7 @@ for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n
 """
 
 writeFile("/research/backup/aqqu/testresult/relation_fail.log", "", "w")
+bow_total = {}
 for filename in os.listdir(bow_file_dir):
     if (not filename.endswith(".log")):
         continue
@@ -57,6 +58,7 @@ for filename in os.listdir(bow_file_dir):
 
     counter = Counter()
     lines = readFile(bow_file_dir + filename).split("\n")
+    total = 0
     for line in lines:
         if (line == ""):
             continue
@@ -64,7 +66,9 @@ for filename in os.listdir(bow_file_dir):
         term = " ".join(tokens[:-1])
         tf = int(tokens[-1])
         counter[term] = tf
+        total += tf
     bow[rel] = counter
+    bow_total[rel] = total
 
 
 def get_n_grams(tokens, n=2):
@@ -397,7 +401,7 @@ class FeatureExtractor(object):
             return 0.0
 
         kl = 0.0
-        total = sum(bow.values())
+        total = bow_total[rel]
         q_inv = 1.0 / len(tokens)
         for token in tokens:
             if (token in bow):
