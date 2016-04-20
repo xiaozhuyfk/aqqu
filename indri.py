@@ -109,8 +109,8 @@ def fetch_documents(query_file):
         return []
 
     documents = []
-    print trec
     for line in trec.split("\n"):
+        print line
         tokens = line.split(" ")
         qid = int(tokens[0])
         external = tokens[2]
