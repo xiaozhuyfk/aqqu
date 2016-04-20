@@ -191,7 +191,7 @@ def fetch_documents(query_file):
     for line in trec.split("\n"):
         if line == "":
             continue
-        if line[0] == "#":
+        if not line[0].isdigit():
             print "Fail to parse line: %s" % line
 
         tokens = line.split(" ")
@@ -255,12 +255,6 @@ def fetch_relation_bow(relation_name):
         query += QUERY_FORMAT % (count, line)
         pair = process_query(line)
         queries.append(pair)
-
-        '''
-        line = DUMP_QUERY_FORMAT % (pair[0], pair[1])
-        print line
-        query += QUERY_FORMAT % (count, line)
-        '''
 
         count += 1
         if (count > 100):
