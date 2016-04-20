@@ -88,8 +88,8 @@ def indri_run_query(query_file):
     out, err = p.communicate()
     return out[:-1]
 
-def fetch_document_bow(internal):
-    print "Fetching BOW for document %s" % internal
+def fetch_document_bow(internal, e1, e2):
+    print "Fetching BOW for document %s with query %s %s" % (internal, e1, e2)
     bow = Counter()
     vector = dumpindex_get_document_vector(internal)
     lines = vector.split("\n")
@@ -112,9 +112,10 @@ def fetch_documents(query_file):
     print trec
     for line in trec.split("\n"):
         tokens = line.split(" ")
+        qid = int(tokens[0])
         external = tokens[2]
         internal = dumpindex_get_internal_id(external)
-        documents.append(internal)
+        documents.append((qid, internal))
     return documents
 
 def fetch_query_bow(query_file, queries):
@@ -122,8 +123,9 @@ def fetch_query_bow(query_file, queries):
 
     documents = fetch_documents(query_file)
     bow = Counter()
-    for internal in documents:
-        bow += fetch_document_bow(internal)
+    for qid, internal in documents:
+        pair = queries[qid-1]
+        bow += fetch_document_bow(internal, pair[0], pair[1])
     return bow
 
 
@@ -138,8 +140,13 @@ def output_bow(bow, filename):
         content = term + " " + str(tf) + "\n"
         writeFile(path, content, "a")
 
+
+import re
+
 def process_query(query):
-    pass
+    p = r'#uw20\(#1\((.*)\) #1\((.*)\)\)'
+    match = re.match(p, query)
+    return (match.group(1), match.group(2))
 
 def fetch_relation_bow(relation_name):
     print "Fetching BOW for relation: " + relation_name
@@ -150,8 +157,7 @@ def fetch_relation_bow(relation_name):
     query = ""
 
     lines = query_content.split("\n")
-    print len(lines)
-
+    queries = []
     if (len(lines) > 100):
         lines = random.sample(lines, 100)
 
@@ -159,6 +165,8 @@ def fetch_relation_bow(relation_name):
         if (line == ""):
             continue
         query += QUERY_FORMAT % (count, line)
+        queries.append(process_query(line))
+
         count += 1
         if (count > 100):
             break
@@ -168,7 +176,7 @@ def fetch_relation_bow(relation_name):
     parameter_path = query_dir + relation_name + ".log"
     #writeFile(parameter_path, parameter, "w")
 
-    bow = fetch_query_bow(parameter_path, lines)
+    bow = fetch_query_bow(parameter_path, queries)
     #output_bow(bow, relation_name)
 
     return bow
