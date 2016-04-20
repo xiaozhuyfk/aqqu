@@ -91,19 +91,39 @@ def indri_run_query(query_file):
     return out[:-1]
 
 def fetch_document_bow(internal, e1, e2):
-    print "Fetching BOW for document %s with query %s %s" % (internal, e1, e2)
-    bow = Counter()
+    print "Fetching BOW for document %s with query (%s, %s)" % (internal, e1, e2)
+    bow_long = Counter()
+    bow_short = Counter()
     vector = dumpindex_get_document_vector(internal)
     lines = vector.split("\n")
+    terms = []
     for line in lines[5:]:
         if (not line[0].isdigit()):
             continue
         tokens = line.split(" ")
-        tf = int(tokens[1])
         term = tokens[2]
-        if (term != "[OOV]" or tf != 0):
-            bow[term] = tf
-    return bow
+        terms.append(term)
+
+    shorts = []
+    longs = []
+    for i in xrange(len(terms)):
+        term = terms[i]
+        if (term == e1) and (e2 in terms[i: i+21]):
+            index = terms[i: i+21].index(e2)
+            short_sentence = terms[i: index+1]
+            long_sentence = terms[max(0, i-5): index + 6]
+            shorts.append(short_sentence)
+            longs.append(long_sentence)
+
+    for i in xrange(len(shorts)):
+        l = longs[i]
+        s = shorts[i]
+        for term in l:
+            bow_long[term] += 1
+        for term in s:
+            bow_short[term] += 1
+
+    return (bow_long, bow_short)
 
 def fetch_documents(query_file):
     trec = indri_run_query(query_file)
@@ -112,7 +132,11 @@ def fetch_documents(query_file):
 
     documents = []
     for line in trec.split("\n"):
-        print line
+        if line == "":
+            continue
+        if line[0] == "#":
+            print "Fail to parse line: #s" % line
+
         tokens = line.split(" ")
         qid = int(tokens[0])
         external = tokens[2]
@@ -124,11 +148,14 @@ def fetch_query_bow(query_file, queries):
     print "Fetching BOW for query " + query_file
 
     documents = fetch_documents(query_file)
-    bow = Counter()
+    bow_long = Counter()
+    bow_short = Counter()
     for qid, internal in documents:
         pair = queries[qid-1]
-        bow += fetch_document_bow(internal, pair[0], pair[1])
-    return bow
+        result = fetch_document_bow(internal, pair[0], pair[1])
+        bow_long += result[0]
+        bow_short += result[1]
+    return (bow_long, bow_short)
 
 
 def output_bow(bow, filename):
@@ -186,7 +213,9 @@ def fetch_relation_bow(relation_name):
     parameter_path = query_dir + relation_name + ".log"
     writeFile(parameter_path, parameter, "w")
 
-    bow = fetch_query_bow(parameter_path, queries)
+    bow_long, bow_short = fetch_query_bow(parameter_path, queries)
+    print bow_long
+    print bow_short
     #output_bow(bow, relation_name)
 
     return bow
