@@ -143,11 +143,11 @@ def fetch_document_bow(internal, e1, e2):
         l = longs[i]
         s = shorts[i]
         for term in l:
-            if term == "[OOV]":
+            if (term == "[OOV]") or (term in entities1) or (term in entities2):
                 continue
             bow_long[term] += 1
         for term in s:
-            if term == "[OOV]":
+            if (term == "[OOV]") or (term in entities1) or (term in entities2):
                 continue
             bow_short[term] += 1
 
