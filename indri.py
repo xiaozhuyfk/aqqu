@@ -50,6 +50,17 @@ relations = [
     "works_in_this_series"
 ]
 
+def kstem(stem):
+    cmd = ['java',
+           '-classpath',
+           'kstem.jar',
+           'org.lemurproject.kstem.KrovetzStemmer',
+           '-w',
+           stem]
+    p = subprocess.Popen(cmd, stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
+    out, err = p.communicate()
+    return out.split(" ")[1][:-1]
+
 def dumpindex(args):
     cmd = ['../bin/dumpindex', index]
     cmd.extend(args)
@@ -106,6 +117,10 @@ def fetch_document_bow(internal, e1, e2):
 
     shorts = []
     longs = []
+    entities1 = [kstem(stem) for stem in e1.split(" ")]
+    entities2 = [kstem(stem) for stem in e2.split(" ")]
+    print entities1, entities2
+
     for i in xrange(len(terms)):
         term = terms[i]
         if (term == e1) and (e2 in terms[i: i+21]):
@@ -218,7 +233,6 @@ def fetch_relation_bow(relation_name):
     print bow_short
     #output_bow(bow, relation_name)
 
-    return bow
 
 import os
 
@@ -249,3 +263,4 @@ if __name__ == "__main__":
     #print fetch_documents("testresult/query/discovery_technique.log")
     #main(sys.argv[1:])
     fetch_relation_bow("astronomy_astronomical_discovery_discovery_technique")
+    #print kstem("imaging")
