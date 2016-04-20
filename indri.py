@@ -222,6 +222,7 @@ def fetch_relation_bow(relation_name):
         if (line == ""):
             continue
         line = line.replace("'", "")
+        line = line.replace('"', "")
         query += QUERY_FORMAT % (count, line)
         pair = process_query(line)
         queries.append(pair)
