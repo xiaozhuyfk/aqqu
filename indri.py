@@ -184,7 +184,7 @@ def fetch_relation_bow(relation_name):
 
     parameter = PARAM_FORMAT % query
     parameter_path = query_dir + relation_name + ".log"
-    #writeFile(parameter_path, parameter, "w")
+    writeFile(parameter_path, parameter, "w")
 
     bow = fetch_query_bow(parameter_path, queries)
     #output_bow(bow, relation_name)
