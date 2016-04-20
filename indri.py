@@ -272,7 +272,7 @@ def fetch_relation_bow(relation_name):
     long_filename = long_bow_dir + relation_name + ".log"
     short_filename = short_bow_dir + relation_name + ".log"
     output_bow(bow_long, long_filename)
-    ouput_bow(bow_short, short_filename)
+    output_bow(bow_short, short_filename)
 
 
 import os
