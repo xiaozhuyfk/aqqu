@@ -163,7 +163,7 @@ def fetch_documents(query_file):
         if line == "":
             continue
         if line[0] == "#":
-            print "Fail to parse line: #s" % line
+            print "Fail to parse line: %s" % line
 
         tokens = line.split(" ")
         qid = int(tokens[0])
