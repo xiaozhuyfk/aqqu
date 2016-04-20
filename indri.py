@@ -39,6 +39,8 @@ DUMP_QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
 pair_dir = "/home/hongyul/aqqu/testresult/dumpaqqu/"
 query_dir = "/home/hongyul/aqqu/testresult/queryaqqu/"
 bow_dir = "/home/hongyul/aqqu/testresult/bowaqqu/"
+long_bow_dir = "/home/hongyul/aqqu/testresult/bowlong/"
+short_bow_dir = "/home/hongyul/aqqu/testresult/bowshort/"
 
 internals = {}
 vectors = {}
@@ -216,8 +218,7 @@ def fetch_query_bow(query_file, queries):
     return (bow_long, bow_short)
 
 
-def output_bow(bow, filename):
-    path = bow_dir + filename + ".log"
+def output_bow(bow, path):
     print "Writing BOW result to " + path
 
     writeFile(path, "", "w")
@@ -267,9 +268,11 @@ def fetch_relation_bow(relation_name):
     writeFile(parameter_path, parameter, "w")
 
     bow_long, bow_short = fetch_query_bow(parameter_path, queries)
-    print bow_long
-    print bow_short
-    #output_bow(bow, relation_name)
+
+    long_filename = long_bow_dir + relation_name + ".log"
+    short_filename = short_bow_dir + relation_name + ".log"
+    output_bow(bow_long, long_filename)
+    ouput_bow(bow_short, short_filename)
 
 
 import os
@@ -299,7 +302,7 @@ if __name__ == "__main__":
     #print fetch_bow("../query/query_parameter.txt")
     #fetch_relation_bow("discovery_technique")
     #print fetch_documents("testresult/query/discovery_technique.log")
-    #main(sys.argv[1:])
-    fetch_relation_bow("organization_organization_partnerships")
+    main(sys.argv[1:])
+    #fetch_relation_bow("organization_organization_partnerships")
     #print kstem("imaging")
     #fetch_document_bow("51953232", "HD 209458 b", "Transit")
