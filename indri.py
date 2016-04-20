@@ -78,7 +78,8 @@ fail_chars = [
     ",",
     ".",
     ";",
-    ":"
+    ":",
+    "#"
 ]
 
 def kstem(stem):
@@ -252,11 +253,21 @@ def fetch_relation_bow(relation_name):
     for line in lines:
         if (line == ""):
             continue
-        for ch in fail_chars:
-            line = line.replace(ch, "")
-        query += QUERY_FORMAT % (count, line)
+        #for ch in fail_chars:
+        #    line = line.replace(ch, "")
+        #query += QUERY_FORMAT % (count, line)
+
         pair = process_query(line)
         queries.append(pair)
+        e1, e2 = pair
+
+        for ch in fail_chars:
+            e1 = e1.replace(ch, "")
+            e2 = e2.replace(ch, "")
+
+        dump_query = DUMP_QUERY_FORMAT % (e1, e2)
+        query += QUERY_FORMAT % (count, dump_query)
+
 
         count += 1
         if (count > 100):
@@ -302,7 +313,7 @@ if __name__ == "__main__":
     #print fetch_bow("../query/query_parameter.txt")
     #fetch_relation_bow("discovery_technique")
     #print fetch_documents("testresult/query/discovery_technique.log")
-    main(sys.argv[1:])
-    #fetch_relation_bow("organization_organization_partnerships")
+    #main(sys.argv[1:])
+    fetch_relation_bow("base_barbie_barbie_theme_dolls_with_this_theme")
     #print kstem("imaging")
     #fetch_document_bow("51953232", "HD 209458 b", "Transit")
