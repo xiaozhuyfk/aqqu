@@ -34,6 +34,8 @@ QUERY_FORMAT = '''
     </query>
 '''
 
+DUMP_QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
+
 pair_dir = "/home/hongyul/aqqu/testresult/dumpaqqu/"
 query_dir = "/home/hongyul/aqqu/testresult/queryaqqu/"
 bow_dir = "/home/hongyul/aqqu/testresult/bowaqqu/"
@@ -146,7 +148,7 @@ import re
 def process_query(query):
     p = r'#uw20\(#1\((.*)\) #1\((.*)\)\)'
     match = re.match(p, query)
-    return (match.group(1), match.group(2))
+    return (match.group(1).strip(), match.group(2).strip())
 
 def fetch_relation_bow(relation_name):
     print "Fetching BOW for relation: " + relation_name
@@ -165,7 +167,11 @@ def fetch_relation_bow(relation_name):
         if (line == ""):
             continue
         query += QUERY_FORMAT % (count, line)
-        queries.append(process_query(line))
+        pair = process_query(line)
+        queries.append(pair)
+
+        line = DUMP_QUERY_FORMAT % (pair[0], pair[1])
+        query += QUERY_FORMAT % (count, line)
 
         count += 1
         if (count > 100):
