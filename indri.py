@@ -166,13 +166,16 @@ def fetch_relation_bow(relation_name):
     for line in lines:
         if (line == ""):
             continue
+        line.replace("'", "")
         query += QUERY_FORMAT % (count, line)
         pair = process_query(line)
         queries.append(pair)
 
+        '''
         line = DUMP_QUERY_FORMAT % (pair[0], pair[1])
         print line
         query += QUERY_FORMAT % (count, line)
+        '''
 
         count += 1
         if (count > 100):
