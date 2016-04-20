@@ -193,6 +193,7 @@ def fetch_documents(query_file):
             continue
         if not line[0].isdigit():
             print "Fail to parse line: %s" % line
+            continue
 
         tokens = line.split(" ")
         qid = int(tokens[0])
