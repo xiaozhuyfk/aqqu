@@ -124,17 +124,13 @@ def fetch_document_bow(internal, e1, e2):
     while i < len(terms):
         term = terms[i]
         if (term == entities1[0]) and (entities2[0] in terms[i: i+21]):
-            print "haha"
             index = terms[i: i+21].index(entities2[0])
             short_sentence = terms[i: i+index+1]
             long_sentence = terms[max(0, i-5): i+index + 6]
-            print short_sentence, long_sentence
-
             shorts.append(short_sentence)
             longs.append(long_sentence)
             i += index
         elif (term == entities2[0]) and (entities1[0] in terms[i:i+21]):
-            print "hehe"
             index = terms[i:i+21].index(entities1[0])
             short_sentence = terms[i:i+index+1]
             long_sentence = terms[max(0, i-5): i+index+6]
@@ -147,12 +143,13 @@ def fetch_document_bow(internal, e1, e2):
         l = longs[i]
         s = shorts[i]
         for term in l:
+            if term == "[OOV]":
+                continue
             bow_long[term] += 1
         for term in s:
+            if term == "[OOV]":
+                continue
             bow_short[term] += 1
-
-    print bow_long
-    print bow_short
 
     return (bow_long, bow_short)
 
@@ -278,6 +275,6 @@ if __name__ == "__main__":
     #fetch_relation_bow("discovery_technique")
     #print fetch_documents("testresult/query/discovery_technique.log")
     #main(sys.argv[1:])
-    #fetch_relation_bow("astronomy_astronomical_discovery_discovery_technique")
+    fetch_relation_bow("astronomy_astronomical_discovery_discovery_technique")
     #print kstem("imaging")
-    fetch_document_bow("51953232", "HD 209458 b", "Transit")
+    #fetch_document_bow("51953232", "HD 209458 b", "Transit")
