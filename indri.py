@@ -50,6 +50,32 @@ relations = [
     "works_in_this_series"
 ]
 
+fail_chars = [
+    "'",
+    '"',
+    "&",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "*",
+    "_",
+    "+",
+    "=",
+    "|",
+    "\\",
+    "?",
+    "/",
+    "~",
+    "`",
+    "[",
+    "]",
+    "{",
+    "}"
+]
+
 def kstem(stem):
     cmd = ['java',
            '-classpath',
@@ -221,8 +247,8 @@ def fetch_relation_bow(relation_name):
     for line in lines:
         if (line == ""):
             continue
-        line = line.replace("'", "")
-        line = line.replace('"', "")
+        for ch in fail_chars:
+            line = line.replace(ch, "")
         query += QUERY_FORMAT % (count, line)
         pair = process_query(line)
         queries.append(pair)
