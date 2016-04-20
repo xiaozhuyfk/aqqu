@@ -128,6 +128,8 @@ def fetch_document_bow(internal, e1, e2):
             index = terms[i: i+21].index(entities2[0])
             short_sentence = terms[i: index+1]
             long_sentence = terms[max(0, i-5): index + 6]
+            print short_sentence, long_sentence
+
             shorts.append(short_sentence)
             longs.append(long_sentence)
             i += index
