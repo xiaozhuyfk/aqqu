@@ -119,16 +119,25 @@ def fetch_document_bow(internal, e1, e2):
     longs = []
     entities1 = [kstem(stem) for stem in e1.split(" ")]
     entities2 = [kstem(stem) for stem in e2.split(" ")]
-    print entities1, entities2
 
-    for i in xrange(len(terms)):
+    i = 0
+    while i < len(terms):
         term = terms[i]
-        if (term == e1) and (e2 in terms[i: i+21]):
-            index = terms[i: i+21].index(e2)
+        if (term == entities1[0]) and (entities2[0] in terms[i: i+21]):
+            index = terms[i: i+21].index(entities2[0])
             short_sentence = terms[i: index+1]
             long_sentence = terms[max(0, i-5): index + 6]
             shorts.append(short_sentence)
             longs.append(long_sentence)
+            i += index
+        elif (term == entities2[0]) and (entities1[0] in terms[i:i+21]):
+            index = terms[i:i+21].index(entities1[0])
+            short_sentence = terms[i:index+1]
+            long_sentence = terms[max(0, i-5): index+6]
+            shorts.append(short_sentence)
+            longs.append(long_sentence)
+            i += index
+        i += 1
 
     for i in xrange(len(shorts)):
         l = longs[i]
