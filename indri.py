@@ -300,6 +300,6 @@ if __name__ == "__main__":
     #fetch_relation_bow("discovery_technique")
     #print fetch_documents("testresult/query/discovery_technique.log")
     #main(sys.argv[1:])
-    fetch_relation_bow("organization_organization_member_member_of")
+    fetch_relation_bow("organization_organization_partnerships")
     #print kstem("imaging")
     #fetch_document_bow("51953232", "HD 209458 b", "Transit")
