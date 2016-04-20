@@ -124,6 +124,7 @@ def fetch_document_bow(internal, e1, e2):
     while i < len(terms):
         term = terms[i]
         if (term == entities1[0]) and (entities2[0] in terms[i: i+21]):
+            print "haha"
             index = terms[i: i+21].index(entities2[0])
             short_sentence = terms[i: index+1]
             long_sentence = terms[max(0, i-5): index + 6]
@@ -131,6 +132,7 @@ def fetch_document_bow(internal, e1, e2):
             longs.append(long_sentence)
             i += index
         elif (term == entities2[0]) and (entities1[0] in terms[i:i+21]):
+            print "hehe"
             index = terms[i:i+21].index(entities1[0])
             short_sentence = terms[i:index+1]
             long_sentence = terms[max(0, i-5): index+6]
