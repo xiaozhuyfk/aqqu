@@ -171,6 +171,7 @@ def fetch_relation_bow(relation_name):
         queries.append(pair)
 
         line = DUMP_QUERY_FORMAT % (pair[0], pair[1])
+        print line
         query += QUERY_FORMAT % (count, line)
 
         count += 1
