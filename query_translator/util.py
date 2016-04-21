@@ -463,4 +463,5 @@ if __name__ == '__main__':
     #print sftp_listdir("/home/hongyul/")
     #get_filenames()
     #sftp_put("/data/dump.tar.gz", "/home/hongyul/aqqu/testresult/dump")
-    test()
+    #test()
+    print kstem("imaging")
