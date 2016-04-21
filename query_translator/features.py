@@ -11,8 +11,7 @@ from query_candidate import QueryCandidate
 from collections import defaultdict
 import math
 from wikiAPI import Wiki
-from util import writeFile, readFile
-from util import sftp_put, sftp_execute, sftp_get
+from util import writeFile, readFile, kstem
 import os
 from collections import Counter
 
@@ -37,7 +36,7 @@ boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
 
 print "Extracting Relation BOWs..."
 bow = {}
-bow_file_dir = "/research/backup/aqqu/testresult/bowaqqu/"
+bow_file_dir = "/research/backup/aqqu/testresult/bowlong/"
 #bow_file_dir = "/research/backup/aqqu/testresult/bow/"
 
 """
@@ -391,7 +390,7 @@ class FeatureExtractor(object):
         relation = candidate.relations[-1]
         relation_name = relation.name
         query = candidate.query
-        tokens = [i.token for i in query.query_tokens]
+        tokens = [kstem(i.token) for i in query.query_tokens]
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):

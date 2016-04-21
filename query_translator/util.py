@@ -441,6 +441,18 @@ def test():
     print d
     print len(d)
 
+import subprocess
+def kstem(stem):
+    cmd = ['java',
+           '-classpath',
+           'kstem.jar',
+           'org.lemurproject.kstem.KrovetzStemmer',
+           '-w',
+           stem]
+    p = subprocess.Popen(cmd, stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
+    out, err = p.communicate()
+    return out.split(" ")[1][:-1]
+
 
 if __name__ == '__main__':
     #print edit_distance('this is a house', 'this is not a house')
