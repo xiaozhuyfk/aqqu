@@ -303,7 +303,6 @@ class FeatureExtractor(object):
         #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
 
         kl = self.extract_kl_rel_feature(candidate)
-        print kl
         features["relation_kl"] = kl
 
         return features
@@ -392,7 +391,6 @@ class FeatureExtractor(object):
         relation_name = relation.name
         query = candidate.query
         tokens = [kstem(i.token) for i in query.query_tokens]
-        print tokens
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
