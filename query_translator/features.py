@@ -391,10 +391,11 @@ class FeatureExtractor(object):
         relation_name = relation.name
         query = candidate.query
         tokens = [kstem(i.token) for i in query.query_tokens]
+        print tokens
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
-            bow = self.relation_bow[rel]
+            bowlong = self.relation_bow[rel]
         else:
             writeFile("/research/backup/aqqu/testresult/relation_fail.log", "%s\n" % relation_name, "a")
             return 0.0
@@ -404,7 +405,7 @@ class FeatureExtractor(object):
         q_inv = 1.0 / len(tokens)
         for token in tokens:
             if (token in bow):
-                p = (bow[token] + 1.0) / (total + 1.0)
+                p = (bowlong[token] + 1.0) / (total + 1.0)
             else:
                 p = 1.0 / (total + 1.0)
             kl -= q_inv * math.log(p)
