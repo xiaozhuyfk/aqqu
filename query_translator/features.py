@@ -303,7 +303,7 @@ class FeatureExtractor(object):
         #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
 
         kl = self.extract_kl_rel_feature(candidate)
-        features["relation_kl"] = kl
+        features["relation_kl"] = 1.0 / kl
 
         return features
 
