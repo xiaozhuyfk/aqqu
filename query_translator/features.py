@@ -391,6 +391,7 @@ class FeatureExtractor(object):
         relation_name = relation.name
         query = candidate.query
         tokens = [kstem(i.token) for i in query.query_tokens]
+        print tokens
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
