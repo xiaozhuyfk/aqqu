@@ -390,7 +390,7 @@ class FeatureExtractor(object):
         relation = candidate.relations[-1]
         relation_name = relation.name
         tokens = candidate.query_stems
-        print [t.tokens for t in candidate.query.identified_entities.tokens]
+        print [t.token for t in ie.tokens for ie in candidate.query.identified_entities]
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
@@ -411,6 +411,8 @@ class FeatureExtractor(object):
             else:
                 p = 1.0 / (total + 1.0)
             kl -= q_inv * math.log(p)
+
+        print relation_name, kl
 
         """
         aws_dump_dir = "/research/backup/aqqu/testresult/dump/"
