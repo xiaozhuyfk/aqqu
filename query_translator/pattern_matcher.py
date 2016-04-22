@@ -27,6 +27,7 @@ for line in readFile("/research/backup/aqqu/testresult/querystems.log").split("\
         continue
     pair = line.split("\t")
     question = pair[0]
+    print "Loading query stems for", question
     stems = pair[1].split(" ")
     aqqu_query_stems[question] = stems
 
