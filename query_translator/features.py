@@ -303,7 +303,7 @@ class FeatureExtractor(object):
         #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
 
         kl = self.extract_kl_rel_feature(candidate)
-        features["relation_kl"] = 1.0 / kl
+        features["relation_kl"] = kl
 
         return features
 
@@ -390,6 +390,7 @@ class FeatureExtractor(object):
         relation = candidate.relations[-1]
         relation_name = relation.name
         tokens = candidate.query_stems
+        print [t.tokens for t in candidate.query.identified_entities.tokens]
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
@@ -401,12 +402,15 @@ class FeatureExtractor(object):
         kl = 0.0
         total = bow_total[rel]
         q_inv = 1.0 / len(tokens)
+        if (total <= 0.0):
+            return 0.0
+
         for token in tokens:
             if (token in bowlong):
                 p = (bowlong[token] + 1.0) / (total + 1.0)
             else:
                 p = 1.0 / (total + 1.0)
-            kl -= q_inv * math.log(q_inv / p)
+            kl -= q_inv * math.log(p)
 
         """
         aws_dump_dir = "/research/backup/aqqu/testresult/dump/"

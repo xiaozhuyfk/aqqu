@@ -135,7 +135,7 @@ def indri_run_query(query_file):
     out, err = p.communicate()
     return out[:-1]
 
-def fetch_document_bow(internal, e1, e2, rel):
+def fetch_document_bow(internal, e1, e2, rel, score_norm):
     print "Fetching BOW for document %s with query (%s, %s)" % (internal, e1, e2)
     bow_long = Counter()
     bow_short = Counter()
@@ -210,8 +210,9 @@ def fetch_documents(query_file):
         tokens = line.split(" ")
         qid = int(tokens[0])
         external = tokens[2]
+        score = float(tokens[4])
         internal = dumpindex_get_internal_id(external)
-        documents.append((qid, internal))
+        documents.append((qid, internal, score))
     return documents
 
 def fetch_query_bow(query_file, queries, rel):
@@ -225,9 +226,14 @@ def fetch_query_bow(query_file, queries, rel):
     writeFile(slong_file, "", "w")
     writeFile(sshort_file, "", "w")
 
-    for qid, internal in documents:
+    scores = [triple[2] for triple in documents]
+    max_score = max(scores)
+    min_score = min(scores)
+
+    for qid, internal, score in documents:
         pair = queries[qid-1]
-        result = fetch_document_bow(internal, pair[0], pair[1], rel)
+        score_norm = (score - min_score) / (max_score - min_score)
+        result = fetch_document_bow(internal, pair[0], pair[1], rel, score_norm)
         bow_long += result[0]
         bow_short += result[1]
     return (bow_long, bow_short)
