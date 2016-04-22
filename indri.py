@@ -14,6 +14,7 @@ from query_translator.util import readFile, writeFile
 from collections import Counter
 import random
 import math
+import os
 
 
 index = "/bos/tmp6/indexes/ClueWeb12_B13_index/"
@@ -46,6 +47,7 @@ long_score_bow_dir = "/home/hongyul/aqqu/testresult/bowlongscore/"
 short_score_bow_dir = "/home/hongyul/aqqu/testresult/bowshortscore/"
 long_sentence_dir = "/home/hongyul/aqqu/testresult/slong/"
 short_sentence_dir = "/home/hongyul/aqqu/testresult/sshort/"
+trec_dir = "/home/hongyul/aqqu/testresult/trec/"
 
 internals = {}
 vectors = {}
@@ -86,6 +88,17 @@ fail_chars = [
     ":",
     "#"
 ]
+
+
+trec_results = {}
+trec_files = os.listdir("/home/hongyul/aqqu/testresult/dumpaqqu")
+for filename in trec_files:
+    if not filename.endswith(".log"):
+        continue
+    rel = filename[:-4]
+    trec_filename = trec_dir + filename
+    trec_results[rel] = readFile(trec_filename)
+
 
 def kstem(stem):
     cmd = ['java',
@@ -202,12 +215,28 @@ def fetch_document_bow(internal, e1, e2, rel, score_norm):
 
     return (bow_long, bow_short, bow_long_score, bow_short_score)
 
-def fetch_documents(query_file):
+def fetch_documents(query_file, rel):
+    if (rel in trec_results):
+        trec = trec_results[rel]
+        documents = []
+        for line in trec.split("\n"):
+            if line == "":
+                continue
+            tokens = line.split(" ")
+            qid = int(tokens[0])
+            internal = int(tokens[6])
+            score = float(tokens[4])
+
+            documents.append((qid, internal, score))
+        return documents
+
+    # rel not in trec results
     trec = indri_run_query(query_file)
     if (trec == ""):
         return []
 
     documents = []
+    content = ""
     for line in trec.split("\n"):
         if line == "":
             continue
@@ -221,12 +250,18 @@ def fetch_documents(query_file):
         score = float(tokens[4])
         internal = dumpindex_get_internal_id(external)
         documents.append((qid, internal, score))
+
+        line += " " + str(internal) + "\n"
+        content += line
+    trec_file = trec_dir + rel + ".log"
+    writeFile(trec_file, content, "w")
+
     return documents
 
 def fetch_query_bow(query_file, queries, rel):
     print "Fetching BOW for query " + query_file
 
-    documents = fetch_documents(query_file)
+    documents = fetch_documents(query_file, rel)
     bow_long = Counter()
     bow_short = Counter()
     bow_long_score = Counter()
@@ -322,8 +357,6 @@ def fetch_relation_bow(relation_name):
     output_bow(bow_long_score, longscore_filename)
     output_bow(bow_short_score, shortscore_filename)
 
-
-import os
 
 def process(argv):
     index = int(argv[0])
