@@ -302,6 +302,8 @@ class QueryCandidate:
         # An indicator whether the candidate matches the answer type
         self.matches_answer_type = None
 
+        self.query_stems = [kstem(i.token) for i in query.query_tokens]
+
     def get_relation_names(self):
         return sorted([r.name for r in self.relations])
 

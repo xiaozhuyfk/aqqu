@@ -389,9 +389,7 @@ class FeatureExtractor(object):
     def extract_kl_rel_feature(self, candidate):
         relation = candidate.relations[-1]
         relation_name = relation.name
-        query = candidate.query
-        tokens = [kstem(i.token) for i in query.query_tokens]
-        print tokens
+        tokens = candidate.query_stems
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):

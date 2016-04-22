@@ -450,9 +450,9 @@ def kstem(stem):
            '-w',
            stem]
     p = subprocess.Popen(cmd, stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
-    p.wait()
     out, err = p.communicate()
-    return out.split(" ")[1][:-1]
+    result = out.split(" ")[1][:-1]
+    return result
 
 
 if __name__ == '__main__':
