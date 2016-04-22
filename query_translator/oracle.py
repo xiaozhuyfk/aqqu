@@ -96,6 +96,8 @@ class EntityOracle:
                                 or mid.startswith('/un/'):
                             e = DateValue(span_str, get_value_for_year(span_str))
                             ie = IdentifiedEntity(span, e.name, e, perfect_match=True)
+                            ie.start = j
+                            ie.end = i
                             identified_entities.append(ie)
                         else:
                             entity = entity_linker.get_entity_for_mid(mid)
@@ -105,6 +107,8 @@ class EntityOracle:
                                                       entity, entity.score,
                                                       1.0,
                                                       perfect_match=True)
+                                ie.start = j
+                                ie.start = i
                                 identified_entities.append(ie)
                             else:
                                 logger.warn("Oracle entity does not exist:"

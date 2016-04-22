@@ -130,6 +130,9 @@ class IdentifiedEntity():
         # matched the tokens.
         self.perfect_match = perfect_match
 
+        self.start = 0
+        self.end = 0
+
     def as_string(self):
         t = ','.join(["%s" % t.token
                       for t in self.tokens])
@@ -257,13 +260,16 @@ class EntityLinker:
         '''
         # Very simplistic for now.
         identified_dates = []
-        for t in tokens:
+        for i in xrange(len(tokens)):
+            t = tokens[i]
             if t.pos == 'CD':
                 # A simple match for years.
                 if re.match(self.year_re, t.token):
                     year = t.token
                     e = DateValue(year, get_value_for_year(year))
                     ie = IdentifiedEntity([t], e.name, e, perfect_match=True)
+                    ie.start = i
+                    ie.end = i+1
                     identified_dates.append(ie)
         return identified_dates
 
@@ -370,6 +376,8 @@ class EntityLinker:
                     ie = IdentifiedEntity(tokens[start:end],
                                           e.name, e, e.score, surface_score,
                                           perfect_match)
+                    ie.start = start
+                    ie.end = end
                     # self.boost_entity_score(ie)
                     identified_entities.append(ie)
 
