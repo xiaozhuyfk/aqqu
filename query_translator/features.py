@@ -14,6 +14,7 @@ from wikiAPI import Wiki
 from util import writeFile, readFile, kstem
 import os
 from collections import Counter
+import string
 
 N_GRAM_STOPWORDS = {'be', 'do', '?', 'the', 'of', 'is', 'are', 'in', 'was',
                     'did', 'does', 'a', 'for', 'have', 'there', 'on', 'has',
@@ -389,8 +390,9 @@ class FeatureExtractor(object):
     def extract_kl_rel_feature(self, candidate):
         relation = candidate.relations[-1]
         relation_name = relation.name
-        tokens = candidate.query_stems
+        tokens = [x for x in candidate.query_stems if x not in string.punctuation]
         tokens_exclude = tokens[:candidate.root_node.entity.start] + tokens[candidate.root_node.entity.end:]
+        print tokens
         print tokens_exclude
         #print [[t.token for t in ie.tokens] for ie in candidate.query.identified_entities]
         #print "Reference: ", [t.token for t in candidate.root_node.entity.tokens]
