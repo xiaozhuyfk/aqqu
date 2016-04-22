@@ -403,7 +403,7 @@ class FeatureExtractor(object):
         total = bow_total[rel]
         q_inv = 1.0 / len(tokens)
         for token in tokens:
-            if (token in bow):
+            if (token in bowlong):
                 p = (bowlong[token] + 1.0) / (total + 1.0)
             else:
                 p = 1.0 / (total + 1.0)
