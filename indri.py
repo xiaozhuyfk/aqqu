@@ -225,7 +225,7 @@ def fetch_documents(query_file, rel):
                 continue
             tokens = line.split(" ")
             qid = int(tokens[0])
-            internal = int(tokens[6])
+            internal = tokens[6]
             score = float(tokens[4])
 
             documents.append((qid, internal, score))
