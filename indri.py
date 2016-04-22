@@ -91,10 +91,11 @@ fail_chars = [
 
 
 trec_results = {}
-trec_files = os.listdir("/home/hongyul/aqqu/testresult/dumpaqqu")
+trec_files = os.listdir("/home/hongyul/aqqu/testresult/trec/")
 for filename in trec_files:
     if not filename.endswith(".log"):
         continue
+    print "Loading TREC results for", filename
     rel = filename[:-4]
     trec_filename = trec_dir + filename
     trec_results[rel] = readFile(trec_filename)
