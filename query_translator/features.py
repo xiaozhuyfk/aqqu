@@ -305,6 +305,7 @@ class FeatureExtractor(object):
 
         kl, kl_exclude = self.extract_kl_rel_feature(candidate)
         features["relation_kl"] = kl
+        features["relation_kl_exclude_entity"] = kl_exclude
 
         return features
 
@@ -392,11 +393,6 @@ class FeatureExtractor(object):
         relation_name = relation.name
         tokens = [x for x in candidate.query_stems if x not in string.punctuation]
         tokens_exclude = tokens[:candidate.root_node.entity.start] + tokens[candidate.root_node.entity.end:]
-        print tokens
-        print tokens_exclude
-        #print [[t.token for t in ie.tokens] for ie in candidate.query.identified_entities]
-        #print "Reference: ", [t.token for t in candidate.root_node.entity.tokens]
-        #print "Stems: ", tokens[candidate.root_node.entity.start:candidate.root_node.entity.end]
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
@@ -429,8 +425,6 @@ class FeatureExtractor(object):
 
         kl = math.pow(math.e, kl)
         kl_exclude = math.pow(math.e, kl_exclude)
-
-        print relation_name, kl, kl_exclude
 
         return (kl, kl_exclude)
 
