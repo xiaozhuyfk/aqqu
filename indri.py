@@ -290,7 +290,7 @@ import os
 
 def process(argv):
     index = int(argv[0])
-    relations = readFile("/home/hongyul/testresult/relations.log").split("\n")
+    relations = readFile("/home/hongyul/aqqu/testresult/relations.log").split("\n")
     size = len(relations) / 16
 
     if (size == 0):
