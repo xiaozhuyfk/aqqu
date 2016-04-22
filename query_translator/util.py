@@ -450,6 +450,7 @@ def kstem(stem):
            '-w',
            stem]
     p = subprocess.Popen(cmd, stdout = subprocess.PIPE, stderr = subprocess.STDOUT)
+    p.wait()
     out, err = p.communicate()
     return out.split(" ")[1][:-1]
 
@@ -465,3 +466,5 @@ if __name__ == '__main__':
     #sftp_put("/data/dump.tar.gz", "/home/hongyul/aqqu/testresult/dump")
     #test()
     print kstem("imaging")
+    print kstem("discovered")
+    print kstem("looping")
