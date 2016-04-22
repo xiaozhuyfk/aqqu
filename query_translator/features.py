@@ -302,7 +302,7 @@ class FeatureExtractor(object):
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
         #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
 
-        kl = self.extract_kl_rel_feature(candidate)
+        kl, kl_exclude = self.extract_kl_rel_feature(candidate)
         features["relation_kl"] = kl
 
         return features
@@ -390,9 +390,11 @@ class FeatureExtractor(object):
         relation = candidate.relations[-1]
         relation_name = relation.name
         tokens = candidate.query_stems
+        tokens_exclude = tokens[:candidate.root_node.entity.start] + tokens[candidate.root_node.entity.end:]
+        print tokens_exclude
         #print [[t.token for t in ie.tokens] for ie in candidate.query.identified_entities]
-        print "Reference: ", [t.token for t in candidate.root_node.entity.tokens]
-        print "Stems: ", tokens[candidate.root_node.entity.start:candidate.root_node.entity.end]
+        #print "Reference: ", [t.token for t in candidate.root_node.entity.tokens]
+        #print "Stems: ", tokens[candidate.root_node.entity.start:candidate.root_node.entity.end]
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
@@ -405,86 +407,30 @@ class FeatureExtractor(object):
         total = bow_total[rel]
         q_inv = 1.0 / len(tokens)
         if (total <= 0.0):
-            return 0.0
+            return (0.0, 0.0)
 
         for token in tokens:
             if (token in bowlong):
                 p = (bowlong[token] + 1.0) / (total + 1.0)
             else:
                 p = 1.0 / (total + 1.0)
-            kl -= q_inv * math.log(p)
+            kl -= q_inv * math.log(q_inv / p)
 
-        print relation_name, kl
+        kl_exclude = 0.0
+        q_inv = 1.0 / len(tokens_exclude)
+        for token in tokens_exclude:
+            if (token in bowlong):
+                p = (bowlong[token] + 1.0) / (total + 1.0)
+            else:
+                p = 1.0 / (total + 1.0)
+            kl_exclude -= q_inv * math.log(q_inv / p)
 
-        """
-        aws_dump_dir = "/research/backup/aqqu/testresult/dump/"
-        aws_query_dir = "/research/backup/aqqu/testresult/query/"
-        aws_bow_dir = "/research/backup/aqqu/testresult/bow/"
-        boston_dump_dir = "/home/hongyul/aqqu/testresult/dump/"
-        boston_query_dir = "/home/hongyul/aqqu/testresult/query/"
-        boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
+        kl = math.pow(math.e, kl)
+        kl_exclude = math.pow(math.e, kl_exclude)
 
-        if (relation_name in rel_bow):
-            bow = rel_bow[relation_name]
-        else:
-            edge = "http://rdf.freebase.com/ns/" + relation_name
-            rel = relation_name.replace(".", "_")
-            dump_file = aws_dump_dir + rel + ".log"
+        print relation_name, kl, kl_exclude
 
-            PAIR_QUERY_FORMAT = '''
-                SELECT ?e1 ?e2 where {
-                    ?e1 <%s> ?e2.
-                }
-            '''
-
-            ENTITY_NAME_FORMAT = '''
-                PREFIX fb: <http://rdf.freebase.com/ns/>
-                SELECT DISTINCT ?0 where {
-                    fb:%s fb:type.object.name ?0 .
-                }
-            '''
-
-            QUERY_FORMAT = "#uw20(#1(%s) #1(%s))"
-
-            # construct search engine queries
-            writeFile(dump_file, "", "w")
-
-            result = backend.query_json(PAIR_QUERY_FORMAT % edge)
-            for pair in result:
-                e1 = pair[0]
-                e2 = pair[1]
-
-                if (not e1.startswith("m.")):
-                    continue
-
-                e1_name = backend.query_json(ENTITY_NAME_FORMAT % e1)[0][0].encode('utf-8')
-                e1_paren = e1_name.find("(")
-                if (e1_paren != -1):
-                        e1_name = e1_name[:e1_paren]
-
-                if (e2.startswith("m.")):
-                    e2_name = backend.query_json(ENTITY_NAME_FORMAT % e2)[0][0].encode('utf-8')
-                    e2_paren = e2_name.find("(")
-                    if (e2_paren != -1):
-                        e2_name = e2_name[:e2_paren]
-                else:
-                    e2_name = e2
-
-                query = QUERY_FORMAT % (e1_name, e2_name) + "\n"
-                writeFile(dump_file, query, "a")
-
-            # retrieve BOW
-            boston_dump_file = boston_dump_dir + rel + ".log"
-            sftp_put(dump_file, boston_dump_file)
-            sftp_execute("/home/hongyul/init_env/python /home/hongyul/aqqu/indri.py " + rel)
-
-            # fetch bow file
-            boston_bow_file = boston_bow_dir + rel + ".log"
-            aws_bow_file = aws_bow_dir + rel + ".log"
-            sftp_get(boston_bow_file, aws_bow_file)
-        """
-
-        return kl
+        return (kl, kl_exclude)
 
 
     def extract_wiki_rel_feature(self, candidate):
