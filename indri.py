@@ -13,6 +13,7 @@ import sys
 from query_translator.util import readFile, writeFile
 from collections import Counter
 import random
+import math
 
 
 index = "/bos/tmp6/indexes/ClueWeb12_B13_index/"
@@ -41,6 +42,8 @@ query_dir = "/home/hongyul/aqqu/testresult/queryaqqu/"
 bow_dir = "/home/hongyul/aqqu/testresult/bowaqqu/"
 long_bow_dir = "/home/hongyul/aqqu/testresult/bowlong/"
 short_bow_dir = "/home/hongyul/aqqu/testresult/bowshort/"
+long_score_bow_dir = "/home/hongyul/aqqu/testresult/bowlongscore/"
+short_score_bow_dir = "/home/hongyul/aqqu/testresult/bowshortscore/"
 long_sentence_dir = "/home/hongyul/aqqu/testresult/slong/"
 short_sentence_dir = "/home/hongyul/aqqu/testresult/sshort/"
 
@@ -139,6 +142,9 @@ def fetch_document_bow(internal, e1, e2, rel, score_norm):
     print "Fetching BOW for document %s with query (%s, %s)" % (internal, e1, e2)
     bow_long = Counter()
     bow_short = Counter()
+    bow_long_score = Counter()
+    bow_short_score = Counter()
+
     vector = dumpindex_get_document_vector(internal)
     lines = vector.split("\n")
     terms = []
@@ -182,17 +188,19 @@ def fetch_document_bow(internal, e1, e2, rel, score_norm):
             if (term == "[OOV]") or (term in entities1) or (term in entities2):
                 continue
             bow_long[term] += 1
+            bow_long_score[term] += score_norm
         for term in s:
             if (term == "[OOV]") or (term in entities1) or (term in entities2):
                 continue
             bow_short[term] += 1
+            bow_short_score[term] += score_norm
 
         slong = " ".join(l) + "\n"
         sshort = " ".join(s) + "\n"
         writeFile(slong_file, slong, 'a')
         writeFile(sshort_file, sshort, 'a')
 
-    return (bow_long, bow_short)
+    return (bow_long, bow_short, bow_long_score, bow_short_score)
 
 def fetch_documents(query_file):
     trec = indri_run_query(query_file)
@@ -221,22 +229,26 @@ def fetch_query_bow(query_file, queries, rel):
     documents = fetch_documents(query_file)
     bow_long = Counter()
     bow_short = Counter()
+    bow_long_score = Counter()
+    bow_short_score = Counter()
+
     slong_file = long_sentence_dir + rel + ".log"
     sshort_file = short_sentence_dir + rel + ".log"
     writeFile(slong_file, "", "w")
     writeFile(sshort_file, "", "w")
 
-    scores = [triple[2] for triple in documents]
-    max_score = max(scores)
-    min_score = min(scores)
-
     for qid, internal, score in documents:
         pair = queries[qid-1]
-        score_norm = (score - min_score) / (max_score - min_score)
-        result = fetch_document_bow(internal, pair[0], pair[1], rel, score_norm)
+        result = fetch_document_bow(internal,
+                                    pair[0],
+                                    pair[1],
+                                    rel,
+                                    math.pow(math.e, score))
         bow_long += result[0]
         bow_short += result[1]
-    return (bow_long, bow_short)
+        bow_long_score += result[2]
+        bow_short_score += result[3]
+    return (bow_long, bow_short, bow_long_score, bow_short_score)
 
 
 def output_bow(bow, path):
@@ -298,12 +310,17 @@ def fetch_relation_bow(relation_name):
     parameter_path = query_dir + relation_name + ".log"
     writeFile(parameter_path, parameter, "w")
 
-    bow_long, bow_short = fetch_query_bow(parameter_path, queries, relation_name)
+    bow_long, bow_short, bow_long_score, bow_short_score = fetch_query_bow(parameter_path, queries, relation_name)
 
     long_filename = long_bow_dir + relation_name + ".log"
     short_filename = short_bow_dir + relation_name + ".log"
-    output_bow(bow_long, long_filename)
-    output_bow(bow_short, short_filename)
+    longscore_filename = long_score_bow_dir + relation_name + ".log"
+    shortscore_filename = short_score_bow_dir + relation_name + ".log"
+
+    #output_bow(bow_long, long_filename)
+    #output_bow(bow_short, short_filename)
+    output_bow(bow_long_score, longscore_filename)
+    output_bow(bow_short_score, shortscore_filename)
 
 
 import os
@@ -357,4 +374,5 @@ if __name__ == "__main__":
     #fetch_relation_bow("base_barbie_barbie_theme_dolls_with_this_theme")
     #print kstem("imaging")
     #fetch_document_bow("51953232", "HD 209458 b", "Transit")
-    process(sys.argv[1:])
+    #process(sys.argv[1:])
+    fetch_relation_bow("base_barbie_barbie_theme_dolls_with_this_theme")
