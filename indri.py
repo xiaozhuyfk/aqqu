@@ -20,7 +20,7 @@ index = "/bos/tmp6/indexes/ClueWeb12_B13_index/"
 PARAM_FORMAT = '''
 <parameters>
     <index>/bos/tmp6/indexes/ClueWeb12_B13_index</index>
-    <count>10</count>
+    <count>20</count>
     <trecFormat>true</trecFormat>
     %s
 </parameters>
@@ -41,6 +41,8 @@ query_dir = "/home/hongyul/aqqu/testresult/queryaqqu/"
 bow_dir = "/home/hongyul/aqqu/testresult/bowaqqu/"
 long_bow_dir = "/home/hongyul/aqqu/testresult/bowlong/"
 short_bow_dir = "/home/hongyul/aqqu/testresult/bowshort/"
+long_sentence_dir = "/home/hongyul/aqqu/testresult/slong/"
+short_sentence_dir = "/home/hongyul/aqqu/testresult/sshort/"
 
 internals = {}
 vectors = {}
@@ -133,7 +135,7 @@ def indri_run_query(query_file):
     out, err = p.communicate()
     return out[:-1]
 
-def fetch_document_bow(internal, e1, e2):
+def fetch_document_bow(internal, e1, e2, rel):
     print "Fetching BOW for document %s with query (%s, %s)" % (internal, e1, e2)
     bow_long = Counter()
     bow_short = Counter()
@@ -151,6 +153,8 @@ def fetch_document_bow(internal, e1, e2):
     longs = []
     entities1 = [kstem(stem) for stem in e1.split(" ")]
     entities2 = [kstem(stem) for stem in e2.split(" ")]
+    slong_file = long_sentence_dir + rel + ".log"
+    sshort_file = short_sentence_dir + rel + ".log"
 
     i = 0
     while i < len(terms):
@@ -183,6 +187,11 @@ def fetch_document_bow(internal, e1, e2):
                 continue
             bow_short[term] += 1
 
+        slong = " ".join(l) + "\n"
+        sshort = " ".join(s) + "\n"
+        writeFile(slong_file, slong, 'a')
+        writeFile(sshort_file, sshort, 'a')
+
     return (bow_long, bow_short)
 
 def fetch_documents(query_file):
@@ -205,15 +214,20 @@ def fetch_documents(query_file):
         documents.append((qid, internal))
     return documents
 
-def fetch_query_bow(query_file, queries):
+def fetch_query_bow(query_file, queries, rel):
     print "Fetching BOW for query " + query_file
 
     documents = fetch_documents(query_file)
     bow_long = Counter()
     bow_short = Counter()
+    slong_file = long_sentence_dir + rel + ".log"
+    sshort_file = short_sentence_dir + rel + ".log"
+    writeFile(slong_file, "", "w")
+    writeFile(sshort_file, "", "w")
+
     for qid, internal in documents:
         pair = queries[qid-1]
-        result = fetch_document_bow(internal, pair[0], pair[1])
+        result = fetch_document_bow(internal, pair[0], pair[1], rel)
         bow_long += result[0]
         bow_short += result[1]
     return (bow_long, bow_short)
@@ -278,7 +292,7 @@ def fetch_relation_bow(relation_name):
     parameter_path = query_dir + relation_name + ".log"
     writeFile(parameter_path, parameter, "w")
 
-    bow_long, bow_short = fetch_query_bow(parameter_path, queries)
+    bow_long, bow_short = fetch_query_bow(parameter_path, queries, relation_name)
 
     long_filename = long_bow_dir + relation_name + ".log"
     short_filename = short_bow_dir + relation_name + ".log"
@@ -287,6 +301,26 @@ def fetch_relation_bow(relation_name):
 
 
 import os
+
+def process(argv):
+    index = int(argv[0])
+    relations = readFile("/home/hongyul/aqqu/testresult/relations.log").split("\n")
+    size = len(relations) / 16
+
+    if (size == 0):
+        size = 1
+
+    if (index == 15):
+        relations = relations[index*size:]
+    else:
+        relations = relations[index*size:(index+1)*size]
+
+    for relation in relations:
+        if (relation == ""):
+            continue
+        rel = relation.replace(".", "_")
+        fetch_relation_bow(rel)
+
 
 def main(argv):
     index = int(argv[0])
@@ -314,6 +348,7 @@ if __name__ == "__main__":
     #fetch_relation_bow("discovery_technique")
     #print fetch_documents("testresult/query/discovery_technique.log")
     #main(sys.argv[1:])
-    fetch_relation_bow("base_barbie_barbie_theme_dolls_with_this_theme")
+    #fetch_relation_bow("base_barbie_barbie_theme_dolls_with_this_theme")
     #print kstem("imaging")
     #fetch_document_bow("51953232", "HD 209458 b", "Transit")
+    process(sys.argv[1:])

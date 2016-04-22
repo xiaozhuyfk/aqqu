@@ -303,7 +303,7 @@ class FeatureExtractor(object):
         #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
 
         kl = self.extract_kl_rel_feature(candidate)
-        features["relation_kl"] = kl
+        features["relation_kl"] = 1.0 / kl
 
         return features
 
@@ -406,7 +406,7 @@ class FeatureExtractor(object):
                 p = (bowlong[token] + 1.0) / (total + 1.0)
             else:
                 p = 1.0 / (total + 1.0)
-            kl -= q_inv * math.log(p)
+            kl -= q_inv * math.log(q_inv / p)
 
         """
         aws_dump_dir = "/research/backup/aqqu/testresult/dump/"
