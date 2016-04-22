@@ -13,6 +13,7 @@ from answer_type import AnswerType
 from alignment import WordembeddingSynonyms, WordDerivations
 import globals
 import math
+from util import kstem
 
 logger = logging.getLogger(__name__)
 

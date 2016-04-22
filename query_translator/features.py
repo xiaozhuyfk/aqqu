@@ -390,6 +390,7 @@ class FeatureExtractor(object):
         relation = candidate.relations[-1]
         relation_name = relation.name
         tokens = candidate.query_stems
+        print tokens
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
