@@ -411,5 +411,5 @@ if __name__ == "__main__":
     #fetch_relation_bow("base_barbie_barbie_theme_dolls_with_this_theme")
     #print kstem("imaging")
     #fetch_document_bow("51953232", "HD 209458 b", "Transit")
-    #process(sys.argv[1:])
-    fetch_relation_bow("base_barbie_barbie_theme_dolls_with_this_theme")
+    process(sys.argv[1:])
+    #fetch_relation_bow("base_barbie_barbie_theme_dolls_with_this_theme")
