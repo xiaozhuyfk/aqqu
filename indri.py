@@ -302,6 +302,8 @@ def process(argv):
         relations = relations[index*size:(index+1)*size]
 
     for relation in relations:
+        if (relation == ""):
+            continue
         rel = relation.replace(".", "_")
         fetch_relation_bow(rel)
 
