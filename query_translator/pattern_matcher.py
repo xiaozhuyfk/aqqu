@@ -13,12 +13,26 @@ from answer_type import AnswerType
 from alignment import WordembeddingSynonyms, WordDerivations
 import globals
 import math
-from util import kstem
+from util import kstem, readFile, writeFile
+import os
 
 logger = logging.getLogger(__name__)
 
 CONTENT_POS_TAGS = {'NN', 'NNS', 'VB', 'VBD', 'VBN', 'VBZ', 'CD', 'NNP',
                     'JJ', 'VBP', 'JJS', 'RB'}
+
+aqqu_query_stems = {}
+for line in readFile("/research/backup/aqqu/testresult/querystems.log").split("\n"):
+    if (line == ""):
+        continue
+    pair = line.split("\t")
+    question = pair[0]
+    stems = pair[1].split(" ")
+    aqqu_query_stems[question] = stems
+
+
+
+
 
 
 def get_relation_suffix(relation, suffix_length=3):
@@ -242,7 +256,13 @@ class QueryPatternMatcher:
         self.extender = extender
         self.query = query
         self.sparql_backend = sparql_backend
-        self.query_stems = [kstem(i.token) for i in query.query_tokens]
+        if (query.query_text in aqqu_query_stems):
+            self.query_stems = aqqu_query_stems[query.query_text]
+        else:
+            stem_lists = [kstem(i.token) for i in query.query_tokens]
+            self.query_stems = stem_lists
+            line = query.query_text + "\t" + " ".join(stem_lists) + "\n"
+            writeFile("/research/backup/aqqu/testresult/querystems.log", line, "a")
 
     def construct_initial_query_candidates(self):
         '''
