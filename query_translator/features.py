@@ -391,7 +391,8 @@ class FeatureExtractor(object):
         relation_name = relation.name
         tokens = candidate.query_stems
         #print [[t.token for t in ie.tokens] for ie in candidate.query.identified_entities]
-        print tokens[candidate.root_node.entity.start:candidate.root_node.entity.end]
+        print "Reference: ", [t.token for t in candidate.root_node.entity.tokens]
+        print "Stems: "tokens[candidate.root_node.entity.start:candidate.root_node.entity.end]
 
         rel = relation_name.replace(".", "_")
         if (rel in self.relation_bow):
