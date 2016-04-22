@@ -302,7 +302,7 @@ class QueryCandidate:
         # An indicator whether the candidate matches the answer type
         self.matches_answer_type = None
 
-        self.query_stems = [kstem(i.token) for i in query.query_tokens]
+        self.query_stems = []
 
     def get_relation_names(self):
         return sorted([r.name for r in self.relations])
@@ -485,6 +485,8 @@ class QueryCandidate:
     def __deepcopy__(self, memo):
         # Create a new empty query candidate
         new_qc = QueryCandidate(self.query, self.sparql_backend, None)
+        new_qc.query_stems = self.query_stems
+
         # Copy the root node, and adjust all pointers to the new candidate.
         memo[id(self)] = new_qc
         new_root = copy.deepcopy(self.root_node, memo)

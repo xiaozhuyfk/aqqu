@@ -241,6 +241,7 @@ class QueryPatternMatcher:
         self.extender = extender
         self.query = query
         self.sparql_backend = sparql_backend
+        self.query_stems = [kstem(i.token) for i in query.query_tokens]
 
     def construct_initial_query_candidates(self):
         '''
@@ -253,6 +254,8 @@ class QueryPatternMatcher:
                 logger.info("Ignoring %s as start entity." % entity.name)
                 continue
             query_candidate = qc.QueryCandidate(self.query, self.sparql_backend)
+            query_candidate.query_stems = self.query_stems
+
             entity_node = qc.QueryCandidateNode(entity.name, entity,
                                                 query_candidate)
             query_candidate.root_node = entity_node
