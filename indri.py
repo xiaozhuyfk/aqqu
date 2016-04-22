@@ -89,7 +89,7 @@ fail_chars = [
     "#"
 ]
 
-
+'''
 trec_results = {}
 trec_files = os.listdir("/home/hongyul/aqqu/testresult/trec/")
 for filename in trec_files:
@@ -99,6 +99,7 @@ for filename in trec_files:
     rel = filename[:-4]
     trec_filename = trec_dir + filename
     trec_results[rel] = readFile(trec_filename)
+'''
 
 
 def kstem(stem):
@@ -217,6 +218,7 @@ def fetch_document_bow(internal, e1, e2, rel, score_norm):
     return (bow_long, bow_short, bow_long_score, bow_short_score)
 
 def fetch_documents(query_file, rel):
+    '''
     if (rel in trec_results):
         trec = trec_results[rel]
         documents = []
@@ -230,6 +232,7 @@ def fetch_documents(query_file, rel):
 
             documents.append((qid, internal, score))
         return documents
+    '''
 
     # rel not in trec results
     trec = indri_run_query(query_file)
@@ -237,7 +240,7 @@ def fetch_documents(query_file, rel):
         return []
 
     documents = []
-    content = ""
+    #content = ""
     for line in trec.split("\n"):
         if line == "":
             continue
@@ -252,10 +255,10 @@ def fetch_documents(query_file, rel):
         internal = dumpindex_get_internal_id(external)
         documents.append((qid, internal, score))
 
-        line += " " + str(internal) + "\n"
-        content += line
-    trec_file = trec_dir + rel + ".log"
-    writeFile(trec_file, content, "w")
+        #line += " " + str(internal) + "\n"
+        #content += line
+    #trec_file = trec_dir + rel + ".log"
+    #writeFile(trec_file, content, "w")
 
     return documents
 
