@@ -288,6 +288,24 @@ def fetch_relation_bow(relation_name):
 
 import os
 
+def process(argv):
+    index = int(argv[0])
+    relations = readFile("/home/hongyul/testresult/relations.log").split("\n")
+    size = len(relations) / 16
+
+    if (size == 0):
+        size = 1
+
+    if (index == 15):
+        relations = relations[index*size:]
+    else:
+        relations = relations[index*size:(index+1)*size]
+
+    for relation in relations:
+        rel = relation.replace(".", "_")
+        fetch_relation_bow(rel)
+
+
 def main(argv):
     index = int(argv[0])
     files = os.listdir("/home/hongyul/aqqu/testresult/dumpaqqu")
@@ -313,7 +331,8 @@ if __name__ == "__main__":
     #print fetch_bow("../query/query_parameter.txt")
     #fetch_relation_bow("discovery_technique")
     #print fetch_documents("testresult/query/discovery_technique.log")
-    main(sys.argv[1:])
+    #main(sys.argv[1:])
     #fetch_relation_bow("base_barbie_barbie_theme_dolls_with_this_theme")
     #print kstem("imaging")
     #fetch_document_bow("51953232", "HD 209458 b", "Transit")
+    process_query(sys.argv[1:])
