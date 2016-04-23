@@ -199,7 +199,7 @@ def main():
     parser.add_argument("ranker_name",
                         default = "WQ_Ranker",
                         help = "The ranker to use.")
-    #parser.add_argument("partition", default = 0)
+    parser.add_argument("partition", default = 0)
     parser.add_argument("--config",
                         default = "config.cfg",
                         help = "The configuration file to use.")
