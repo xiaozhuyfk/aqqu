@@ -364,7 +364,7 @@ def fetch_relation_bow(relation_name):
 
 def process(argv):
     index = int(argv[0])
-    relations = readFile("/home/hongyul/aqqu/testresult/relations.log").split("\n")
+    relations = readFile("/home/hongyul/aqqu/testresult/relation_fail.log").split("\n")
     size = len(relations) / 16
 
     if (size == 0):
