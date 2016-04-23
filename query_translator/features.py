@@ -37,7 +37,7 @@ boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
 
 print "Extracting Relation BOWs..."
 bow = {}
-bow_file_dir = "/research/backup/aqqu/testresult/bowshort/"
+bow_file_dir = "/research/backup/aqqu/testresult/bowlong/"
 #bow_file_dir = "/research/backup/aqqu/testresult/bow/"
 
 """
