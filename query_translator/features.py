@@ -48,7 +48,7 @@ for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n
 '''
 
 
-writeFile("/research/backup/aqqu/testresult/relation_fail.log", "", "w")
+#writeFile("/research/backup/aqqu/testresult/relation_fail.log", "", "w")
 bow_total = {}
 for filename in os.listdir(bow_file_dir):
     if (not filename.endswith(".log")):

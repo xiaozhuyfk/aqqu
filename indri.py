@@ -356,8 +356,8 @@ def fetch_relation_bow(relation_name):
     longscore_filename = long_score_bow_dir + relation_name + ".log"
     shortscore_filename = short_score_bow_dir + relation_name + ".log"
 
-    #output_bow(bow_long, long_filename)
-    #output_bow(bow_short, short_filename)
+    output_bow(bow_long, long_filename)
+    output_bow(bow_short, short_filename)
     output_bow(bow_long_score, longscore_filename)
     output_bow(bow_short_score, shortscore_filename)
 
