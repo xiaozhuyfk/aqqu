@@ -209,17 +209,17 @@ def main():
     backend = globals.get_sparql_backend(config_params)
 
 
-    file = "/data/freebase-rdf-latest.gz"
-    reader = FreebaseDumpReaderC()
-    reader.open(file)
-    Parser = FreebaseDumpParserC()
+    #file = "/data/freebase-rdf-latest.gz"
+    #reader = FreebaseDumpReaderC()
+    #$reader.open(file)
+    #Parser = FreebaseDumpParserC()
 
-    process(backend, reader, Parser)
+    #process(backend, reader, Parser)
 
 
-    #content = readFile("/research/backup/aqqu/testresult/relations.log")
-    #relations = content.split("\n")
-    #process_relations(backend, relations, 8, int(args.partition))
+    content = readFile("/research/backup/aqqu/testresult/relation_fail.log")
+    relations = content.split("\n")
+    process_relations(backend, relations, 8, int(args.partition))
 
 
 if __name__ == "__main__":
