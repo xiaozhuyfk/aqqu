@@ -40,12 +40,13 @@ bow = {}
 bow_file_dir = "/research/backup/aqqu/testresult/bowshort/"
 #bow_file_dir = "/research/backup/aqqu/testresult/bow/"
 
-"""
+'''
 for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n"):
     if (line == ""):
         continue
     relation_set.add(line)
-"""
+'''
+
 
 writeFile("/research/backup/aqqu/testresult/relation_fail.log", "", "w")
 bow_total = {}
@@ -298,7 +299,7 @@ class FeatureExtractor(object):
 
 
         # extract relation wiki bow score
-        #self.extract_relations(candidate)
+        # self.extract_relations(candidate)
 
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
         #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
@@ -399,7 +400,7 @@ class FeatureExtractor(object):
             bowlong = self.relation_bow[rel]
         else:
             writeFile("/research/backup/aqqu/testresult/relation_fail.log", "%s\n" % relation_name, "a")
-            return 0.0
+            return (0.0, 0.0)
 
         kl = 0.0
         total = bow_total[rel]
