@@ -36,9 +36,10 @@ boston_query_dir = "/home/hongyul/aqqu/testresult/query/"
 boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
 
 print "Extracting Relation BOWs..."
-bow = {}
-bow_file_dir = "/research/backup/aqqu/testresult/bowlong/"
-#bow_file_dir = "/research/backup/aqqu/testresult/bow/"
+rel_bowlong = {}
+rel_bowshort = {}
+bow_long_dir = "/research/backup/aqqu/testresult/bowlong/"
+bow_short_dir = "/research/backup/aqqu/testresult/bowshort/"
 
 '''
 for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n"):
@@ -49,8 +50,10 @@ for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n
 
 
 #writeFile("/research/backup/aqqu/testresult/relation_fail.log", "", "w")
-bow_total = {}
-for filename in os.listdir(bow_file_dir):
+bowlong_total = {}
+bowshort_total = {}
+
+for filename in os.listdir(bow_long_dir):
     if (not filename.endswith(".log")):
         continue
 
@@ -58,18 +61,41 @@ for filename in os.listdir(bow_file_dir):
     rel = filename[:-4]
 
     counter = Counter()
-    lines = readFile(bow_file_dir + filename).split("\n")
+    lines = readFile(bow_long_dir + filename).split("\n")
     total = 0
     for line in lines:
         if (line == ""):
             continue
         tokens = line.split(" ")
         term = " ".join(tokens[:-1])
-        tf = int(tokens[-1])
+        tf = float(tokens[-1])
         counter[term] = tf
         total += tf
-    bow[rel] = counter
-    bow_total[rel] = total
+    rel_bowlong[rel] = counter
+    bowlong_total[rel] = total
+
+for filename in os.listdir(bow_short_dir):
+    if (not filename.endswith(".log")):
+        continue
+
+    print "Processing relation file: " + filename
+    rel = filename[:-4]
+
+    counter = Counter()
+    lines = readFile(bow_short_dir + filename).split("\n")
+    total = 0
+    for line in lines:
+        if (line == ""):
+            continue
+        tokens = line.split(" ")
+        term = " ".join(tokens[:-1])
+        tf = float(tokens[-1])
+        counter[term] = tf
+        total += tf
+    rel_bowshort[rel] = counter
+    bowshort_total[rel] = total
+
+
 
 
 def get_n_grams(tokens, n=2):
@@ -144,9 +170,6 @@ class FeatureExtractor(object):
         # and the resulting score is added as an extracted feature.
         self.relation_score_model = relation_score_model
         self.entity_features = entity_features
-
-
-        self.relation_bow = bow
 
 
     def extract_features(self, candidate):
@@ -304,9 +327,11 @@ class FeatureExtractor(object):
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
         #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
 
-        kl, kl_exclude = self.extract_kl_rel_feature(candidate)
+        kl, kl_exclude, kl_short, kl_exclude_short = self.extract_kl_rel_feature(candidate)
         features["relation_kl"] = kl
         features["relation_kl_exclude_entity"] = kl_exclude
+        features["relation_kl_short"] = kl_short
+        features["relation_kl_exclude_entity_short"] = kl_exclude_short
 
         return features
 
@@ -396,17 +421,18 @@ class FeatureExtractor(object):
         tokens_exclude = tokens[:candidate.root_node.entity.start] + tokens[candidate.root_node.entity.end:]
 
         rel = relation_name.replace(".", "_")
-        if (rel in self.relation_bow):
-            bowlong = self.relation_bow[rel]
+        if (rel in rel_bowlong):
+            bowlong = rel_bowlong[rel]
+            bowshort = rel_bowshort[rel]
         else:
             writeFile("/research/backup/aqqu/testresult/relation_fail.log", "%s\n" % relation_name, "a")
-            return (0.0, 0.0)
+            return (0.0, 0.0, 0.0, 0.0)
 
         kl = 0.0
-        total = bow_total[rel]
+        total = bowlong_total[rel]
         q_inv = 1.0 / len(tokens)
         if (total <= 0.0):
-            return (0.0, 0.0)
+            return (0.0, 0.0, 0.0, 0.0)
 
         for token in tokens:
             if (token in bowlong):
@@ -427,7 +453,34 @@ class FeatureExtractor(object):
         kl = math.pow(math.e, kl)
         kl_exclude = math.pow(math.e, kl_exclude)
 
-        return (kl, kl_exclude)
+
+
+        kl_short = 0.0
+        total = bowshort_total[rel]
+        q_inv = 1.0 / len(tokens)
+        if (total <= 0.0):
+            return (0.0, 0.0, 0.0, 0.0)
+
+        for token in tokens:
+            if (token in bowshort):
+                p = (bowshort[token] + 1.0) / (total + 1.0)
+            else:
+                p = 1.0 / (total + 1.0)
+            kl_short -= q_inv * math.log(q_inv / p)
+
+        kl_exclude_short = 0.0
+        q_inv = 1.0 / len(tokens_exclude)
+        for token in tokens_exclude:
+            if (token in bowlong):
+                p = (bowshort[token] + 1.0) / (total + 1.0)
+            else:
+                p = 1.0 / (total + 1.0)
+            kl_exclude_short -= q_inv * math.log(q_inv / p)
+
+        kl_short = math.pow(math.e, kl_short)
+        kl_exclude_short = math.pow(math.e, kl_exclude_short)
+
+        return (kl, kl_exclude, kl_short, kl_exclude_short)
 
 
     def extract_wiki_rel_feature(self, candidate):

@@ -468,4 +468,3 @@ if __name__ == '__main__':
     print kstem("imaging")
     print kstem("discovered")
     print kstem("looping")
-    print kstem("?")
