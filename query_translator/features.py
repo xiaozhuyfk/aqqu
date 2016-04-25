@@ -316,8 +316,9 @@ class FeatureExtractor(object):
         if self.n_gram_features:
             features.update(self.extract_ngram_features(candidate))
         if self.relation_score_model:
-            rank_score = self.relation_score_model.score(candidate)
-            features['relation_score'] = rank_score.score
+            pass
+            #rank_score = self.relation_score_model.score(candidate)
+            #features['relation_score'] = rank_score.score
 
 
 
