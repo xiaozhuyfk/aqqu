@@ -328,11 +328,13 @@ class FeatureExtractor(object):
         #features["relation_bow"] = extract_wiki_rel_feature(candidate)
         #features["relation_wiki"] = self.extract_wiki_rel_feature(candidate)
 
+        '''
         kl, kl_exclude, kl_short, kl_exclude_short = self.extract_kl_rel_feature(candidate)
         features["relation_kl"] = kl
         features["relation_kl_exclude_entity"] = kl_exclude
         features["relation_kl_short"] = kl_short
         features["relation_kl_exclude_entity_short"] = kl_exclude_short
+        '''
 
         return features
 
