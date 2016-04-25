@@ -38,7 +38,7 @@ boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
 print "Extracting Relation BOWs..."
 rel_bowlong = {}
 rel_bowshort = {}
-bow_long_dir = "/research/backup/aqqu/testresult/bowlongscore/"
+bow_long_dir = "/research/backup/aqqu/testresult/bowshort/"
 bow_short_dir = "/research/backup/aqqu/testresult/bowshortscore/"
 
 '''
