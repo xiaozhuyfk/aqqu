@@ -556,7 +556,7 @@ class RelationNgramScorer(MLModel):
         # The index of the correct label.
         self.correct_index = -1
         self.feature_extractor = FeatureExtractor(False,
-                                                  True,
+                                                  False,
                                                   entity_features=False)
 
     def get_relscorer_suffix(self):
