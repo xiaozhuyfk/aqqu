@@ -38,8 +38,8 @@ boston_bow_dir = "/home/hongyul/aqqu/testresult/bow"
 print "Extracting Relation BOWs..."
 rel_bowlong = {}
 rel_bowshort = {}
-bow_long_dir = "/research/backup/aqqu/testresult/bowshort/"
-bow_short_dir = "/research/backup/aqqu/testresult/bowshortscore/"
+bow_long_dir = "/research/backup/aqqu/testresult/bowlong/"
+bow_short_dir = "/research/backup/aqqu/testresult/bowlongscore/"
 
 '''
 for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n"):
