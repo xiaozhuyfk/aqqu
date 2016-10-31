@@ -21,3 +21,7 @@ testresult/bowlong
 testresult/bowshort
 testresult/bowlongscore
 testresult/bowshortscore
+.vs/
+VAMA.jsproj
+VAMA.sln
+taco.json

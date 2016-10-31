@@ -257,6 +257,7 @@ class QueryPatternMatcher:
         self.extender = extender
         self.query = query
         self.sparql_backend = sparql_backend
+        """
         if (query.query_text in aqqu_query_stems):
             self.query_stems = aqqu_query_stems[query.query_text]
         else:
@@ -264,6 +265,7 @@ class QueryPatternMatcher:
             self.query_stems = stem_lists
             line = query.query_text + "\t" + " ".join(stem_lists) + "\n"
             writeFile("/research/backup/aqqu/testresult/querystems.log", line, "a")
+        """
 
     def construct_initial_query_candidates(self):
         '''
