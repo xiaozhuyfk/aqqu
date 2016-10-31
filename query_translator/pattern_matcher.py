@@ -280,7 +280,7 @@ class QueryPatternMatcher:
                 logger.info("Ignoring %s as start entity." % entity.name)
                 continue
             query_candidate = qc.QueryCandidate(self.query, self.sparql_backend)
-            query_candidate.query_stems = self.query_stems
+            #query_candidate.query_stems = self.query_stems
 
             entity_node = qc.QueryCandidateNode(entity.name, entity,
                                                 query_candidate)
