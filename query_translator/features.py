@@ -48,7 +48,7 @@ for line in readFile("/research/backup/aqqu/testresult/relations.log").split("\n
     relation_set.add(line)
 '''
 
-
+"""
 #writeFile("/research/backup/aqqu/testresult/relation_fail.log", "", "w")
 bowlong_total = {}
 bowshort_total = {}
@@ -94,6 +94,7 @@ for filename in os.listdir(bow_short_dir):
         total += tf
     rel_bowshort[rel] = counter
     bowshort_total[rel] = total
+"""
 
 
 
