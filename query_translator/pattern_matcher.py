@@ -21,6 +21,7 @@ logger = logging.getLogger(__name__)
 CONTENT_POS_TAGS = {'NN', 'NNS', 'VB', 'VBD', 'VBN', 'VBZ', 'CD', 'NNP',
                     'JJ', 'VBP', 'JJS', 'RB'}
 
+"""
 aqqu_query_stems = {}
 for line in readFile("/research/backup/aqqu/testresult/querystems.log").split("\n"):
     if (line == ""):
@@ -30,6 +31,7 @@ for line in readFile("/research/backup/aqqu/testresult/querystems.log").split("\
     print "Loading query stems for", question
     stems = pair[1].split(" ")
     aqqu_query_stems[question] = stems
+"""
 
 
 
